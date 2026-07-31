@@ -32,10 +32,20 @@ def cli():
 
 
 @cli.command()
-def auth():
+@click.option("--code", default=None, help="Skip the interactive prompt: exchange this verifier code directly.")
+@click.option("--show-url", is_flag=True, help="Just print the authorize URL and exit (no exchange).")
+def auth(code, show_url):
     """One-time (or as-needed) Yahoo login. Opens a URL for you to approve access,
     then asks you to paste back the verifier code Yahoo shows you."""
-    _oauth().interactive_login()
+    oauth = _oauth()
+    if show_url:
+        print(oauth.authorize_url())
+        return
+    if code:
+        oauth.exchange_code(code)
+        print("Login successful — token saved.")
+        return
+    oauth.interactive_login()
 
 
 @cli.command()
