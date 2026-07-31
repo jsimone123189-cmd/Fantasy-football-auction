@@ -1,24 +1,31 @@
-"""Yahoo OAuth2 login for installed apps (out-of-band / manual-code flow).
+"""Yahoo OAuth2 login without a running web server.
 
-Yahoo's fantasy API only exposes a user's own leagues/draft history behind
-OAuth2, and since this app has no web server to catch a redirect, we use the
-"oob" (out-of-band) redirect_uri: the user opens the authorize URL in any
-browser, approves access, and pastes the resulting verifier code back here.
+Yahoo's app-registration form rejects the classic "oob" (out-of-band)
+redirect_uri as an invalid URI, so this uses a redirect_uri that doesn't need
+to actually resolve to anything (default: https://localhost:8080 — must
+exactly match whatever URI you registered the app with, set YAHOO_REDIRECT_URI
+in .env if you used something else). After approving access, Yahoo sends the
+browser to that URI with ?code=... in the query string; the page itself will
+fail to load (nothing is listening on localhost), but the code is still
+sitting right there in the address bar to copy — or just paste the whole URL,
+see extract_code() below.
 """
 from __future__ import annotations
 
 import base64
 import json
+import os
 import time
 from dataclasses import dataclass
 from pathlib import Path
 from typing import Optional
+from urllib.parse import parse_qs, urlparse
 
 import requests
 
 AUTHORIZE_URL = "https://api.login.yahoo.com/oauth2/request_auth"
 TOKEN_URL = "https://api.login.yahoo.com/oauth2/get_token"
-REDIRECT_URI = "oob"
+DEFAULT_REDIRECT_URI = "https://localhost:8080"
 
 DEFAULT_TOKEN_PATH = Path("data/.credentials/token.json")
 
@@ -28,6 +35,19 @@ EXPIRY_SAFETY_MARGIN_SECONDS = 60
 
 class YahooAuthError(RuntimeError):
     pass
+
+
+def extract_code(code_or_url: str) -> str:
+    """Accepts either a bare verifier code or the full redirected URL
+    (e.g. https://localhost:8080/?code=XXXX&...) and returns just the code."""
+    value = code_or_url.strip()
+    if value.startswith("http://") or value.startswith("https://"):
+        params = parse_qs(urlparse(value).query)
+        codes = params.get("code")
+        if not codes:
+            raise YahooAuthError(f"No 'code' query parameter found in URL: {value}")
+        return codes[0]
+    return value
 
 
 @dataclass
@@ -61,6 +81,7 @@ class YahooOAuth:
         client_id: str,
         client_secret: str,
         token_path: Path = DEFAULT_TOKEN_PATH,
+        redirect_uri: Optional[str] = None,
     ):
         if not client_id or not client_secret:
             raise YahooAuthError(
@@ -71,6 +92,7 @@ class YahooOAuth:
         self.client_id = client_id
         self.client_secret = client_secret
         self.token_path = Path(token_path)
+        self.redirect_uri = redirect_uri or os.environ.get("YAHOO_REDIRECT_URI", DEFAULT_REDIRECT_URI)
         self._token: Optional[Token] = self._load_token()
 
     # -- persistence --------------------------------------------------
@@ -88,19 +110,20 @@ class YahooOAuth:
         self.token_path.write_text(json.dumps(token.to_dict(), indent=2))
         self._token = token
 
-    # -- oob authorize/exchange flow -----------------------------------
+    # -- authorize/exchange flow -----------------------------------
 
     def authorize_url(self) -> str:
         return (
             f"{AUTHORIZE_URL}?client_id={self.client_id}"
-            f"&redirect_uri={REDIRECT_URI}&response_type=code&language=en-us"
+            f"&redirect_uri={self.redirect_uri}&response_type=code&language=en-us"
         )
 
     def _basic_auth_header(self) -> str:
         raw = f"{self.client_id}:{self.client_secret}".encode("utf-8")
         return base64.b64encode(raw).decode("ascii")
 
-    def exchange_code(self, code: str) -> Token:
+    def exchange_code(self, code_or_url: str) -> Token:
+        code = extract_code(code_or_url)
         resp = requests.post(
             TOKEN_URL,
             headers={
@@ -109,8 +132,8 @@ class YahooOAuth:
             },
             data={
                 "grant_type": "authorization_code",
-                "redirect_uri": REDIRECT_URI,
-                "code": code.strip(),
+                "redirect_uri": self.redirect_uri,
+                "code": code,
             },
             timeout=30,
         )
@@ -127,7 +150,7 @@ class YahooOAuth:
             },
             data={
                 "grant_type": "refresh_token",
-                "redirect_uri": REDIRECT_URI,
+                "redirect_uri": self.redirect_uri,
                 "refresh_token": self._token.refresh_token,
             },
             timeout=30,
@@ -163,9 +186,9 @@ class YahooOAuth:
         return self._token.access_token
 
     def interactive_login(self, code_input=input) -> None:
-        """Prints the authorize URL and prompts the user to paste back the code."""
+        """Prints the authorize URL and prompts the user to paste back the code (or full redirect URL)."""
         print("Open this URL in a browser, log in, and approve access:\n")
         print(f"  {self.authorize_url()}\n")
-        code = code_input("Paste the verifier code Yahoo gives you: ")
+        code = code_input("Paste the verifier code (or the full redirected URL): ")
         self.exchange_code(code)
         print("Login successful — token saved.")

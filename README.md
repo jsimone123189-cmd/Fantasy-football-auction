@@ -34,8 +34,14 @@ cp .env.example .env
 
 Go to <https://developer.yahoo.com/apps/> → **Create an App**.
 
-- Redirect URI(s): `oob`
-- API Permissions: check **Fantasy Sports** (Read)
+- Redirect URI(s): `https://localhost:8080` (Yahoo's form rejects the older
+  `oob` value as an invalid URI; if you use a different URI, set
+  `YAHOO_REDIRECT_URI` in `.env` to match exactly)
+- OAuth Client Type: **Confidential Client**
+- API Permissions: if a **Fantasy Sports** option is listed, check it; if it
+  isn't (Yahoo's permission list has been inconsistent), leave permissions
+  unchecked and create the app anyway — the first API call will fail loudly
+  if a permission really was required, and we go find the right toggle then.
 
 Copy the generated **Client ID (Consumer Key)** and **Client Secret (Consumer
 Secret)** into `.env` as `YAHOO_CLIENT_ID` / `YAHOO_CLIENT_SECRET`.
@@ -52,10 +58,13 @@ automatically.)
 draft-helper auth
 ```
 
-Opens a Yahoo authorize URL for you to visit in any browser and approve; Yahoo
-then shows you a short verifier code — paste it back into the terminal. The
-resulting token is cached in `data/.credentials/token.json` (gitignored) and
-auto-refreshes after that, so you generally only do this once.
+Opens a Yahoo authorize URL for you to visit in any browser and approve.
+Since the redirect URI doesn't point at a real server, the page will fail to
+load afterwards — that's expected. Copy the full URL from the address bar
+(it'll contain `?code=...`) and paste that whole thing back at the prompt;
+`draft-helper auth --code "<pasted code or URL>"` also works non-interactively.
+The resulting token is cached in `data/.credentials/token.json` (gitignored)
+and auto-refreshes after that, so you generally only do this once.
 
 ### 3. Pull your draft history
 
