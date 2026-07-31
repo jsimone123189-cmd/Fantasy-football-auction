@@ -1,0 +1,6 @@
+requests>=2.31
+click>=8.1
+pandas>=2.0
+python-dotenv>=1.0
+tabulate>=0.9
+pytest>=7.4

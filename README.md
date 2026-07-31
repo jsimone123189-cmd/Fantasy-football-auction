@@ -1,2 +1,181 @@
-# Fantasy-football-auction
-Smart fantasy football auction strategy
+# Fantasy Football Auction Draft Helper
+
+A draft assistant built entirely from **your own league's** Yahoo auction draft
+history — no generic rankings, no guessing. It profiles what each owner
+actually does at the table, prices this year's players against your league's
+real historical spending curve, and gives you a live inflation-adjusted bid
+assistant for draft night.
+
+Three things it produces:
+
+1. **Owner tendency profiles** — who overpays for RBs, who front-loads their
+   budget, who plays stars-and-scrubs vs. balanced, who actually uses their
+   keepers.
+2. **Pre-draft cheat sheet** — target prices for this year's players, derived
+   from what your league has historically paid for a player of that
+   caliber/position, not a generic auction calculator.
+3. **Live draft assistant** — a terminal REPL you run during the actual
+   auction: log picks as they happen, see suggested max bids that adjust to
+   real-time inflation, and check opponents' remaining budget/roster caps.
+
+Everything is computed from your league's own numbers — the only external
+input you provide is this year's player projections (there's no year-1 data
+for rookies/new arrivals in your Yahoo history, obviously).
+
+## Setup
+
+```bash
+python -m venv .venv && source .venv/bin/activate
+pip install -e .
+cp .env.example .env
+```
+
+### 1. Register a Yahoo app (one-time)
+
+Go to <https://developer.yahoo.com/apps/> → **Create an App**.
+
+- Redirect URI(s): `oob`
+- API Permissions: check **Fantasy Sports** (Read)
+
+Copy the generated **Client ID (Consumer Key)** and **Client Secret (Consumer
+Secret)** into `.env` as `YAHOO_CLIENT_ID` / `YAHOO_CLIENT_SECRET`.
+
+Find your league's numeric ID from its Yahoo URL, e.g.
+`https://football.fantasysports.yahoo.com/f1/123456` → `123456`, and set
+`YAHOO_LEAGUE_ID` in `.env`. (This ID is stable across seasons for a renewed
+league; the full `league_key` changes every year and is resolved
+automatically.)
+
+### 2. Log in
+
+```bash
+draft-helper auth
+```
+
+Opens a Yahoo authorize URL for you to visit in any browser and approve; Yahoo
+then shows you a short verifier code — paste it back into the terminal. The
+resulting token is cached in `data/.credentials/token.json` (gitignored) and
+auto-refreshes after that, so you generally only do this once.
+
+### 3. Pull your draft history
+
+```bash
+draft-helper fetch-history
+```
+
+Auto-discovers every season of your league (by `YAHOO_LEAGUE_ID`) and caches
+each auction season's picks to `data/raw/{season}_draft.csv`. Non-auction
+seasons (if your league started as snake) are skipped automatically.
+
+If your league was ever recreated on Yahoo (different league_id in some
+years), run `draft-helper leagues` to see everything Yahoo has on file for
+your account and pass explicit years with
+`--league-keys "2019=406.l.12345,2020=414.l.12345"`.
+
+**Keepers**: Yahoo's API doesn't reliably expose which picks were keepers in
+auction draft results. If you want keeper stats to be accurate, fill in
+`data/keepers/{season}.csv` (copy `data/keepers/template.csv`) with
+`team_name,player_name,is_keeper` for that season — cross-check against
+Yahoo's draft recap page, which marks keepers visually. Optional; everything
+else works fine without it.
+
+## Using it
+
+### Owner tendency profiles
+
+```bash
+draft-helper profiles
+draft-helper profiles --csv profiles.csv   # also save for use in `live`
+```
+
+### Pre-draft cheat sheet
+
+Supply this year's player projections as a CSV with `player_name`,
+`position`, and either `projected_rank` (1 = best at that position) or
+`projected_points` (rank is derived automatically). See
+`data/projections/template.csv`.
+
+```bash
+draft-helper cheat-sheet \
+  --projections data/projections/2026.csv \
+  --num-teams 10 \
+  --budget-per-team 200 \
+  --keepers data/keepers/2026_locked.csv \
+  --out cheat_sheet_2026.csv
+```
+
+`--keepers` here is optional and different from the history-backfill file
+above — it's this year's already-locked keepers (`player_name,cost,team_name`),
+removed from the pool and their cost deducted from the total budget before
+pricing everyone else.
+
+### Live draft assistant
+
+```bash
+draft-helper live \
+  --projections data/projections/2026.csv \
+  --teams "Alice's Team,Bob's Team,..." \
+  --budget-per-team 200 \
+  --roster-size 16 \
+  --profiles-csv profiles.csv
+```
+
+Then, during the draft:
+
+```
+draft> value Christian McCaffrey        # suggested max bid right now
+draft> pick Christian McCaffrey / Alice's Team / 62
+draft> budgets                          # remaining budget + max bid per team
+draft> board 20                         # top 20 undrafted players by suggested max
+draft> tendencies alice                 # reminder of that owner's historical patterns
+draft> quit                             # saves the full pick log to draft_log.csv
+```
+
+Suggested max bid = your league's historical price for a player of that
+position/rank, scaled by real-time inflation (how much money is left in the
+room relative to how much value is still on the board) — the same approach
+tools like auction inflation calculators use, but calibrated to your league's
+actual spending patterns instead of a generic market.
+
+## How the numbers work
+
+- **Position/rank price curve** (`draft_helper/analysis/inflation.py`):
+  for each historical season, players are ranked within their position by
+  final auction cost, and that cost is expressed as a share of the season's
+  total dollars spent. Averaging that share across your drafted seasons gives
+  a "what an RB1, RB2, ... in your league actually goes for" baseline, which
+  scales cleanly to any given year's total budget.
+- **Inflation**: `(dollars still in the room) / (baseline value still on the
+  board)`. Above 1.0 means the room is bidding hot; below 1.0 means bargains
+  are out there. Recomputed after every logged pick.
+- **Tendency profiles** (`draft_helper/analysis/tendencies.py`): per-owner
+  position spend share vs. league average that year, early-vs-late budget
+  pace, roster concentration (stars-and-scrubs vs. balanced), and keeper
+  usage — all from your league's actual pick log, matched across seasons by
+  Yahoo's stable manager GUID so it still works when someone renames their
+  team.
+
+## A note on the Yahoo API integration
+
+`draft_helper/yahoo_client.py` was written against Yahoo's documented JSON
+response shape but hasn't been exercised against a live account — that needs
+your login, which only you can do. The parsing is defensive (see
+`draft_helper/parsing.py`), but if `fetch-history` ever comes back with
+missing names/positions/costs, run:
+
+```bash
+draft-helper debug-endpoint "/league/<league_key>/draftresults"
+```
+
+to dump the raw JSON for that endpoint and compare it against the
+`extract_*`-style logic in `yahoo_client.py` — that's the one part of this
+project that couldn't be tested end-to-end ahead of time. Everything else
+(the analysis math, CLI, live assistant) is covered by the test suite in
+`tests/` and has been run against synthetic data.
+
+## Development
+
+```bash
+pip install -r requirements.txt
+pytest
+```
