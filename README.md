@@ -88,6 +88,16 @@ auction draft results. If you want keeper stats to be accurate, fill in
 Yahoo's draft recap page, which marks keepers visually. Optional; everything
 else works fine without it.
 
+**Running the fetch on a different machine than you run analysis on**: the
+Yahoo login (`auth`) and data pull (`fetch-history`) need a network that can
+reach `api.login.yahoo.com` / `fantasysports.yahooapis.com` — a sandboxed
+environment may block that. `data/raw/*.csv` is tracked in git specifically
+so this splits cleanly: run steps 1–3 wherever has real network access,
+`git push` the resulting `data/raw/` CSVs, then `git pull` and run everything
+downstream (`profiles`, `cheat-sheet`, `live`) wherever's convenient. Nothing
+sensitive crosses that boundary — `data/.credentials/token.json` and `.env`
+stay local and gitignored; only the draft results (player/team/cost) sync.
+
 ## Using it
 
 ### Owner tendency profiles
