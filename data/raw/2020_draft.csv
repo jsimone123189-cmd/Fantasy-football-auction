@@ -1,0 +1,200 @@
+season,league_key,pick,round,team_key,team_name,manager_name,manager_guid,player_key,player_name,position,nfl_team,cost,is_keeper
+2020,,1,,,The Chubbsters,,,,Nick Chubb,RB,Hou,50,False
+2020,,2,,,Running is exercise,,,,Travis Kelce,TE,KC,41,False
+2020,,3,,,Here Kitty Kitty,,,,Christian McCaffrey,RB,SF,85,False
+2020,,4,,,Home Sweet Mahomes,,,,Saquon Barkley,RB,Phi,72,False
+2020,,5,,,Home Sweet Mahomes,,,,Derrick Henry,RB,Bal,50,False
+2020,,6,,,The Wet Bandits,,,,Austin Ekeler,RB,Was,44,False
+2020,,7,,,Here Kitty Kitty,,,,Alvin Kamara,RB,NO,50,False
+2020,,8,,,Surrender Your Booty,,,,Ezekiel Elliott,RB,Dal,63,False
+2020,,9,,,Cookin up the White,,,,Kenyan Drake,RB,Bal,42,False
+2020,,10,,,Running is exercise,,,,Raheem Mostert,RB,LV,23,False
+2020,,11,,,Home Sweet Mahomes,,,,Patrick Mahomes,QB,KC,36,False
+2020,,12,,,Running is exercise,,,,Tyreek Hill,WR,Mia,46,False
+2020,,13,,,The ALL-IR team,,,,Michael Thomas,WR,NO,62,False
+2020,,14,,,The Verticoli,,,,Chase Edmonds,RB,Was,3,True
+2020,,15,,,Running is exercise,,,,Clyde Edwards-Helaire,RB,KC,51,False
+2020,,16,,,Kyler the Creator,,,,Dalvin Cook,RB,Dal,58,False
+2020,,17,,,The Chubbsters,,,,DeAndre Hopkins,WR,Bal,44,False
+2020,,18,,,Surrender Your Booty,,,,Robert Woods,WR,Pit,26,False
+2020,,19,,,The Verticoli,,,,Davante Adams,WR,LAR,52,False
+2020,,20,,,My3Sons,,,,James Conner,RB,Ari,31,False
+2020,,21,,,My3Sons,,,,Miles Sanders,RB,Dal,48,False
+2020,,22,,,The Verticoli,,,,Leonard Fournette,RB,Buf,27,False
+2020,,23,,,My3Sons,,,,JuJu Smith-Schuster,WR,NYG,25,False
+2020,,24,,,Kyler the Creator,,,,Mark Andrews,TE,Bal,28,False
+2020,,25,,,The Verticoli,,,,Odell Beckham Jr.,WR,NYG,27,False
+2020,,26,,,Running is exercise,,,,Tyler Higbee,TE,LAR,11,False
+2020,,27,,,Boyd Rage,,,,Joe Mixon,RB,Hou,45,False
+2020,,28,,,Cookin up the White,,,,Julio Jones,WR,Phi,48,False
+2020,,29,,,Boyd Rage,,,,Amari Cooper,WR,Buf,27,False
+2020,,30,,,My3Sons,,,,A.J. Brown,WR,NE,25,False
+2020,,31,,,The Verticoli,,,,Todd Gurley,RB,Atl,26,False
+2020,,32,,,My3Sons,,,,Melvin Gordon III,RB,Bal,14,False
+2020,,33,,,The Wet Bandits,,,,Chris Carson,RB,Sea,29,False
+2020,,34,,,Here Kitty Kitty,,,,T.Y. Hilton,WR,Dal,17,False
+2020,,35,,,The Chubbsters,,,,Cam Newton,QB,Car,6,False
+2020,,36,,,The Verticoli,,,,Terry McLaurin,WR,Was,15,False
+2020,,37,,,The ALL-IR team,,,,Adam Thielen,WR,Pit,35,False
+2020,,38,,,The Chubbsters,,,,Daniel Jones,QB,Ind,4,False
+2020,,39,,,Boyd Rage,,,,Josh Jacobs,RB,GB,48,False
+2020,,40,,,The Wet Bandits,,,,Chris Godwin Jr.,WR,TB,30,False
+2020,,41,,,The Verticoli,,,,Dak Prescott,QB,Dal,10,False
+2020,,42,,,The Wet Bandits,,,,Jonathan Taylor,RB,Ind,15,False
+2020,,43,,,The Chubbsters,,,,Tyler Lockett,WR,LV,18,False
+2020,,44,,,The Verticoli,,,,Kareem Hunt,RB,KC,9,False
+2020,,45,,,The ALL-IR team,,,,Mark Ingram II,RB,NO,19,False
+2020,,46,,,Cookin up the White,,,,D'Andre Swift,RB,Chi,14,False
+2020,,47,,,Home Sweet Mahomes,,,,Will Fuller V,WR,Mia,11,False
+2020,,48,,,Kyler the Creator,,,,Kyler Murray,QB,Min,10,False
+2020,,49,,,Kyler the Creator,,,,DK Metcalf,WR,Pit,13,False
+2020,,50,,,The Verticoli,,,,Rob Gronkowski,TE,TB,6,False
+2020,,51,,,The ALL-IR team,,,,Marlon Mack,RB,Ari,7,False
+2020,,52,,,The Wet Bandits,,,,Calvin Ridley,WR,Ten,15,False
+2020,,53,,,The Wet Bandits,,,,Zach Ertz,TE,Was,14,False
+2020,,54,,,The Chubbsters,,,,DJ Chark,WR,Atl,10,False
+2020,,55,,,Surrender Your Booty,,,,Russell Wilson,QB,NYG,8,False
+2020,,56,,,Surrender Your Booty,,,,David Montgomery,RB,Hou,13,False
+2020,,57,,,Cookin up the White,,,,Cooper Kupp,WR,Sea,20,False
+2020,,58,,,Kyler the Creator,,,,Allen Robinson,WR,Det,30,False
+2020,,59,,,Surrender Your Booty,,,,Mike Evans,WR,SF,32,False
+2020,,60,,,Running is exercise,,,,Jared Cook,TE,LAC,7,False
+2020,,61,,,Kyler the Creator,,,,Stefon Diggs,WR,NE,12,False
+2020,,62,,,The Wet Bandits,,,,Allen Lazard,WR,NYJ,4,False
+2020,,63,,,Running is exercise,,,,49ers,DEF,SF,1,False
+2020,,64,,,The ALL-IR team,,,,Le'Veon Bell,RB,TB,26,False
+2020,,65,,,Cookin up the White,,,,David Johnson,RB,NO,30,False
+2020,,66,,,The Chubbsters,,,,Latavius Murray,RB,Buf,3,False
+2020,,67,,,Home Sweet Mahomes,,,,Ravens,DEF,Bal,2,False
+2020,,68,,,Running is exercise,,,,Matt Breida,RB,SF,6,False
+2020,,69,,,Boyd Rage,,,,Keenan Allen,WR,LAC,18,False
+2020,,70,,,The ALL-IR team,,,,Cam Akers,RB,Sea,12,False
+2020,,71,,,Cookin up the White,,,,Deshaun Watson,QB,Cle,8,False
+2020,,72,,,Boyd Rage,,,,Tyler Boyd,WR,Ten,9,False
+2020,,73,,,Boyd Rage,,,,Matthew Stafford,QB,LAR,1,False
+2020,,74,,,Here Kitty Kitty,,,,DeSean Jackson,WR,Bal,2,False
+2020,,75,,,Kyler the Creator,,,,DJ Moore,WR,Buf,26,False
+2020,,76,,,The Chubbsters,,,,Darren Waller,TE,Mia,11,False
+2020,,77,,,Surrender Your Booty,,,,DeVante Parker,WR,NE,14,False
+2020,,78,,,Cookin up the White,,,,Christian Kirk,WR,SF,4,False
+2020,,79,,,Surrender Your Booty,,,,Jordan Howard,RB,NO,4,False
+2020,,80,,,The ALL-IR team,,,,Hollywood Brown,WR,Phi,9,False
+2020,,81,,,The Verticoli,,,,Hunter Henry,TE,NE,4,False
+2020,,82,,,My3Sons,,,,Chiefs,DEF,KC,1,False
+2020,,84,,,Cookin up the White,,,,Steelers,DEF,Pit,2,False
+2020,,85,,,Here Kitty Kitty,,,,Michael Gallup,WR,Was,14,False
+2020,,86,,,The Verticoli,,,,Ryquell Armstead,RB,NO,3,False
+2020,,87,,,The Chubbsters,,,,Ronald Jones,RB,Dal,12,False
+2020,,88,,,The Chubbsters,,,,Jarvis Landry,WR,NO,9,False
+2020,,89,,,My3Sons,,,,Josh Allen,QB,Buf,4,False
+2020,,90,,,My3Sons,,,,Matt Ryan,QB,Ind,2,False
+2020,,91,,,My3Sons,,,,Aaron Rodgers,QB,Pit,6,False
+2020,,92,,,The Wet Bandits,,,,Marvin Jones Jr.,WR,Det,6,False
+2020,,93,,,My3Sons,,,,Darius Slayton,WR,NYG,4,False
+2020,,94,,,Boyd Rage,,,,Ryan Tannehill,QB,Ten,2,False
+2020,,95,,,Surrender Your Booty,,,,Evan Engram,TE,Den,6,False
+2020,,96,,,The Verticoli,,,,Bills,DEF,Buf,2,False
+2020,,97,,,The ALL-IR team,,,,CeeDee Lamb,WR,Dal,7,False
+2020,,98,,,The Verticoli,,,,Anthony Miller,WR,Bal,1,False
+2020,,99,,,My3Sons,,,,J.K. Dobbins,RB,Den,5,False
+2020,,100,,,My3Sons,,,,Carson Wentz,QB,Min,7,False
+2020,,101,,,Here Kitty Kitty,,,,Joe Burrow,QB,Cin,4,False
+2020,,102,,,Surrender Your Booty,,,,Sterling Shepard,WR,TB,3,False
+2020,,103,,,Boyd Rage,,,,Phillip Lindsay,RB,Ind,8,False
+2020,,104,,,Here Kitty Kitty,,,,A.J. Green,WR,Ari,10,False
+2020,,105,,,Cookin up the White,,,,Hayden Hurst,TE,LAC,9,False
+2020,,106,,,My3Sons,,,,Jalen Reagor,WR,Mia,4,False
+2020,,107,,,Kyler the Creator,,,,T.J. Hockenson,TE,Min,2,False
+2020,,108,,,Surrender Your Booty,,,,Zack Moss,RB,Cin,5,False
+2020,,109,,,The Chubbsters,,,,James White,RB,NE,5,False
+2020,,110,,,Kyler the Creator,,,,Antonio Gibson,RB,NE,3,False
+2020,,111,,,The Wet Bandits,,,,Diontae Johnson,WR,Cle,5,False
+2020,,112,,,The Chubbsters,,,,Tevin Coleman,RB,SF,7,False
+2020,,113,,,Boyd Rage,,,,Boston Scott,RB,Pit,5,False
+2020,,114,,,The ALL-IR team,,,,Brandin Cooks,WR,NO,8,False
+2020,,115,,,My3Sons,,,,John Brown,WR,Buf,5,False
+2020,,116,,,Here Kitty Kitty,,,,Noah Fant,TE,NO,4,False
+2020,,117,,,Home Sweet Mahomes,,,,Tarik Cohen,RB,Car,3,False
+2020,,118,,,Kyler the Creator,,,,Alexander Mattison,RB,Mia,6,False
+2020,,119,,,The Wet Bandits,,,,Austin Hooper,TE,Atl,3,False
+2020,,120,,,The Wet Bandits,,,,Deebo Samuel,WR,SF,5,False
+2020,,121,,,Boyd Rage,,,,Jerry Jeudy,WR,Cle,5,False
+2020,,122,,,The Verticoli,,,,Robbie Chosen,WR,Was,1,False
+2020,,123,,,The Chubbsters,,,,Darrell Henderson Jr.,RB,LAR,4,False
+2020,,124,,,Kyler the Creator,,,,Adrian Peterson,RB,Sea,4,False
+2020,,125,,,Here Kitty Kitty,,,,Josh Gordon,WR,Ten,1,False
+2020,,126,,,Here Kitty Kitty,,,,Ben Roethlisberger,QB,Pit,3,False
+2020,,127,,,The Wet Bandits,,,,Kerryon Johnson,RB,SF,3,False
+2020,,128,,,Home Sweet Mahomes,,,,Mike Williams,WR,Pit,2,False
+2020,,129,,,The ALL-IR team,,,,Eagles,DEF,Phi,1,False
+2020,,130,,,Surrender Your Booty,,,,Mike Gesicki,TE,Cin,3,False
+2020,,132,,,Surrender Your Booty,,,,Tony Pollard,RB,Ten,5,False
+2020,,133,,,Boyd Rage,,,,Patriots,DEF,NE,1,False
+2020,,134,,,The Verticoli,,,,Devin Duvernay,WR,Ari,1,False
+2020,,135,,,The Wet Bandits,,,,Baker Mayfield,QB,TB,3,False
+2020,,136,,,The Chubbsters,,,,Henry Ruggs III,WR,LV,3,False
+2020,,137,,,The Chubbsters,,,,Will Dissly,TE,LAC,4,False
+2020,,138,,,Kyler the Creator,,,,Bears,DEF,Chi,1,False
+2020,,139,,,The Wet Bandits,,,,Sony Michel,RB,LAC,3,False
+2020,,140,,,Cookin up the White,,,,Breshad Perriman,WR,TB,3,False
+2020,,141,,,The ALL-IR team,,,,Eric Ebron,TE,Pit,1,False
+2020,,142,,,My3Sons,,,,Dallas Goedert,TE,Phi,3,False
+2020,,143,,,Home Sweet Mahomes,,,,Mohamed Sanu,WR,Mia,1,False
+2020,,144,,,Kyler the Creator,,,,Jared Goff,QB,Det,2,False
+2020,,145,,,The Wet Bandits,,,,Ke'Shawn Vaughn,RB,SF,3,False
+2020,,146,,,The Verticoli,,,,Justin Jackson,RB,Det,1,False
+2020,,147,,,The Wet Bandits,,,,Duke Johnson,RB,Buf,2,False
+2020,,148,,,The Chubbsters,,,,Vikings,DEF,Min,1,False
+2020,,149,,,Here Kitty Kitty,,,,Antonio Brown,WR,TB,1,False
+2020,,150,,,Home Sweet Mahomes,,,,Damien Harris,RB,Buf,2,False
+2020,,151,,,Cookin up the White,,,,Chris Herndon,TE,Min,1,False
+2020,,152,,,The ALL-IR team,,,,Kirk Cousins,QB,LV,1,False
+2020,,153,,,My3Sons,,,,Justin Jefferson,WR,Min,4,False
+2020,,154,,,Home Sweet Mahomes,,,,Sammy Watkins,WR,Bal,1,False
+2020,,155,,,Surrender Your Booty,,,,Michael Pittman Jr.,WR,Pit,1,False
+2020,,156,,,Boyd Rage,,,,Blake Jarwin,TE,Dal,1,False
+2020,,157,,,Here Kitty Kitty,,,,Jonnu Smith,TE,Pit,2,False
+2020,,158,,,Here Kitty Kitty,,,,Brandon Aiyuk,WR,SF,3,True
+2020,,159,,,Boyd Rage,,,,N'Keal Harry,WR,Sea,2,False
+2020,,160,,,Cookin up the White,,,,Mecole Hardman Jr.,WR,Buf,3,False
+2020,,161,,,The ALL-IR team,,,,Jack Doyle,TE,Ind,1,False
+2020,,162,,,Cookin up the White,,,,Golden Tate,WR,Ten,2,False
+2020,,163,,,Surrender Your Booty,,,,AJ Dillon,RB,Car,3,False
+2020,,165,,,Kyler the Creator,,,,Nyheim Miller-Hines,RB,LAC,2,False
+2020,,166,,,Home Sweet Mahomes,,,,Kenny Stills,WR,NO,2,False
+2020,,167,,,Kyler the Creator,,,,Anthony McFarland,RB,Mia,1,False
+2020,,168,,,Cookin up the White,,,,Preston Williams,WR,Car,3,False
+2020,,169,,,The ALL-IR team,,,,Titans,DEF,Ten,1,False
+2020,,170,,,Home Sweet Mahomes,,,,Jerick McKinnon,RB,KC,1,False
+2020,,171,,,Surrender Your Booty,,,,Saints,DEF,NO,1,False
+2020,,172,,,Boyd Rage,,,,Joshua Kelley,RB,Ten,1,False
+2020,,173,,,Running is exercise,,,,Jimmy Garoppolo,QB,LAR,1,False
+2020,,174,,,Here Kitty Kitty,,,,Jace Sternberger,TE,Buf,1,False
+2020,,175,,,Kyler the Creator,,,,Hunter Renfrow,WR,Car,1,False
+2020,,176,,,Cookin up the White,,,,Parris Campbell,WR,Dal,1,False
+2020,,177,,,The ALL-IR team,,,,Carlos Hyde,RB,Jax,1,False
+2020,,178,,,Home Sweet Mahomes,,,,Larry Fitzgerald,WR,Ari,1,False
+2020,,179,,,Surrender Your Booty,,,,Gardner Minshew II,QB,Ari,6,False
+2020,,180,,,Boyd Rage,,,,Curtis Samuel,WR,Buf,1,False
+2020,,181,,,Running is exercise,,,,Devonta Freeman,RB,Bal,1,False
+2020,,182,,,Here Kitty Kitty,,,,Colts,DEF,Ind,1,False
+2020,,183,,,Kyler the Creator,,,,Tua Tagovailoa,QB,Atl,1,False
+2020,,184,,,Cookin up the White,,,,Sam Darnold,QB,Sea,1,False
+2020,,185,,,The ALL-IR team,,,,James Washington,WR,Atl,1,False
+2020,,186,,,Home Sweet Mahomes,,,,Teddy Bridgewater,QB,Det,1,False
+2020,,187,,,Running is exercise,,,,Royce Freeman,RB,LAC,1,False
+2020,,188,,,Here Kitty Kitty,,,,Denzel Mims,WR,Dal,1,False
+2020,,189,,,Running is exercise,,,,Rams,DEF,LAR,1,False
+2020,,190,,,Here Kitty Kitty,,,,Jalen Hurts,QB,Phi,1,False
+2020,,191,,,Running is exercise,,,,Jamaal Williams,RB,NO,1,False
+2020,,192,,,Running is exercise,,,,O.J. Howard,TE,Hou,1,False
+2020,,193,,,Running is exercise,,,,Alshon Jeffery,WR,Phi,1,False
+2020,,195,,,Home Sweet Mahomes,,,,Emmanuel Sanders,WR,Buf,8,False
+2020,,196,,,Boyd Rage,,,,George Kittle,TE,SF,25,False
+2020,,197,,,My3Sons,,,,Aaron Jones Sr.,RB,Min,12,False
+2020,,198,,,The Wet Bandits,,,,Lamar Jackson,QB,Bal,7,True
+2020,,199,,,Cookin up the White,,,,Courtland Sutton,WR,Den,8,False
+2020,,200,,,The Chubbsters,,,,Jamison Crowder,WR,Was,7,False
+2020,,202,,,Surrender Your Booty,,,,Devin Singletary,RB,NYG,7,False
+2020,,203,,,The Verticoli,,,,Kenny Golladay,WR,NYG,10,False
+2020,,204,,,Running is exercise,,,,Tom Brady,QB,TB,6,False

@@ -1,0 +1,169 @@
+season,league_key,pick,round,team_key,team_name,manager_name,manager_guid,player_key,player_name,position,nfl_team,cost,is_keeper
+2022,,1,,,Surrender Your Booty,,,,Joe Mixon,RB,Hou,53,False
+2022,,2,,,The Verticoli,,,,Jonathan Taylor,RB,Ind,72,False
+2022,,3,,,Josh Jacobs Jingl...,,,,Christian McCaffrey,RB,SF,69,False
+2022,,4,,,Josh Jacobs Jingl...,,,,Derrick Henry,RB,Bal,58,False
+2022,,5,,,Scary Terry,,,,David Montgomery,RB,Hou,21,False
+2022,,6,,,Team Mel,,,,CeeDee Lamb,WR,Dal,41,False
+2022,,7,,,The Wet Bandits,,,,Aaron Jones Sr.,RB,Min,49,False
+2022,,8,,,Team Mel,,,,Cooper Kupp,WR,Sea,61,False
+2022,,9,,,Cobra Kyler,,,,Alvin Kamara,RB,NO,46,False
+2022,,10,,,My3Sons,,,,Javonte Williams,RB,Dal,38,False
+2022,,11,,,Surrender Your Booty,,,,Austin Ekeler,RB,Was,59,False
+2022,,12,,,Dillon' Em Softly,,,,Saquon Barkley,RB,Phi,47,False
+2022,,13,,,Waddle Waddle Wad...,,,,Josh Allen,QB,Buf,30,False
+2022,,14,,,Team Mel,,,,Travis Kelce,TE,KC,37,False
+2022,,15,,,Scary Terry,,,,Stefon Diggs,WR,NE,44,False
+2022,,16,,,Running is exercise,,,,Darren Waller,TE,Mia,17,False
+2022,,17,,,Cobra Kyler,,,,Devin Singletary,RB,NYG,12,False
+2022,,18,,,Pop Lockett Drop It,,,,Najee Harris,RB,LAC,49,False
+2022,,19,,,Waddle Waddle Wad...,,,,Ja'Marr Chase,WR,Cin,59,False
+2022,,20,,,Pop Lockett Drop It,,,,Dalvin Cook,RB,Dal,58,False
+2022,,21,,,My3Sons,,,,Davante Adams,WR,LAR,40,False
+2022,,22,,,Running is exercise,,,,A.J. Brown,WR,NE,24,False
+2022,,23,,,Running is exercise,,,,Elijah Mitchell,RB,Phi,24,False
+2022,,24,,,The Verticoli,,,,Lamar Jackson,QB,Bal,21,False
+2022,,25,,,Running is exercise,,,,Justin Herbert,QB,LAC,16,False
+2022,,26,,,Team Mel,,,,Patrick Mahomes,QB,KC,20,False
+2022,,27,,,Dillon' Em Softly,,,,D'Andre Swift,RB,Chi,51,False
+2022,,28,,,The Verticoli,,,,Jalen Hurts,QB,Phi,13,False
+2022,,29,,,Cobra Kyler,,,,Kyler Murray,QB,Min,11,False
+2022,,30,,,The Wet Bandits,,,,Ezekiel Elliott,RB,Dal,31,False
+2022,,31,,,Scary Terry,,,,Terry McLaurin,WR,Was,21,False
+2022,,32,,,Running is exercise,,,,Mike Evans,WR,SF,31,False
+2022,,33,,,Pop Lockett Drop It,,,,Tyreek Hill,WR,Mia,37,False
+2022,,34,,,Running is exercise,,,,DK Metcalf,WR,Pit,21,False
+2022,,35,,,Scary Terry,,,,Nick Chubb,RB,Hou,37,False
+2022,,36,,,The Verticoli,,,,Mark Andrews,TE,Bal,34,False
+2022,,37,,,My3Sons,,,,Bills,DEF,Buf,3,False
+2022,,38,,,The Verticoli,,,,Tee Higgins,WR,Cin,22,False
+2022,,39,,,Team Mel,,,,Packers,DEF,GB,1,False
+2022,,40,,,Waddle Waddle Wad...,,,,Dameon Pierce,RB,Phi,19,False
+2022,,41,,,The Verticoli,,,,J.K. Dobbins,RB,Den,21,False
+2022,,42,,,Cobra Kyler,,,,Rashaad Penny,RB,Phi,13,False
+2022,,43,,,Waddle Waddle Wad...,,,,Jerry Jeudy,WR,Cle,13,False
+2022,,44,,,Running is exercise,,,,Breece Hall,RB,NYJ,24,False
+2022,,45,,,Cobra Kyler,,,,Chris Godwin Jr.,WR,TB,13,False
+2022,,46,,,Running is exercise,,,,Gabe Davis,WR,Buf,13,False
+2022,,47,,,Josh Jacobs Jingl...,,,,Josh Jacobs,RB,GB,20,False
+2022,,48,,,Scary Terry,,,,Damien Harris,RB,Buf,12,False
+2022,,49,,,The Wet Bandits,,,,Dalton Schultz,TE,Hou,14,False
+2022,,50,,,Josh Jacobs Jingl...,,,,Tony Pollard,RB,Ten,11,False
+2022,,51,,,Waddle Waddle Wad...,,,,Chase Edmonds,RB,Was,21,False
+2022,,52,,,Team Mel,,,,Miles Sanders,RB,Dal,8,False
+2022,,53,,,My3Sons,,,,Kyle Pitts Sr.,TE,Atl,26,False
+2022,,54,,,Waddle Waddle Wad...,,,,Rhamondre Stevenson,RB,NE,13,False
+2022,,55,,,My3Sons,,,,Rashod Bateman,WR,Bal,10,False
+2022,,56,,,Running is exercise,,,,49ers,DEF,SF,1,False
+2022,,57,,,Dillon' Em Softly,,,,Allen Lazard,WR,NYJ,12,False
+2022,,58,,,Waddle Waddle Wad...,,,,Elijah Moore,WR,Phi,10,False
+2022,,59,,,Cobra Kyler,,,,Clyde Edwards-Helaire,RB,KC,14,False
+2022,,60,,,My3Sons,,,,Antonio Gibson,RB,NE,14,False
+2022,,61,,,Josh Jacobs Jingl...,,,,Broncos,DEF,Den,1,False
+2022,,62,,,Dillon' Em Softly,,,,George Kittle,TE,SF,25,False
+2022,,63,,,Team Mel,,,,Isaiah Likely,TE,NYG,3,False
+2022,,64,,,The Wet Bandits,,,,Keenan Allen,WR,LAC,27,False
+2022,,65,,,Cobra Kyler,,,,Kareem Hunt,RB,KC,12,False
+2022,,66,,,Waddle Waddle Wad...,,,,Michael Carter,RB,Ten,7,False
+2022,,67,,,Cobra Kyler,,,,Hollywood Brown,WR,Phi,10,False
+2022,,68,,,Dillon' Em Softly,,,,Diontae Johnson,WR,Cle,13,False
+2022,,69,,,Running is exercise,,,,DJ Moore,WR,Buf,22,False
+2022,,70,,,Dillon' Em Softly,,,,Dallas Goedert,TE,Phi,9,False
+2022,,71,,,My3Sons,,,,Tom Brady,QB,TB,5,False
+2022,,72,,,Surrender Your Booty,,,,Darnell Mooney,WR,NYG,9,False
+2022,,73,,,Waddle Waddle Wad...,,,,Cole Kmet,TE,Chi,5,False
+2022,,74,,,My3Sons,,,,Trey Lance,QB,LAC,6,False
+2022,,75,,,The Wet Bandits,,,,Russell Wilson,QB,NYG,11,False
+2022,,76,,,Cobra Kyler,,,,Amon-Ra St. Brown,WR,Det,15,False
+2022,,77,,,The Wet Bandits,,,,Melvin Gordon III,RB,Bal,11,False
+2022,,78,,,Team Mel,,,,Amari Cooper,WR,Buf,5,False
+2022,,79,,,Surrender Your Booty,,,,Courtland Sutton,WR,Den,19,False
+2022,,80,,,Cobra Kyler,,,,JuJu Smith-Schuster,WR,NYG,24,False
+2022,,81,,,My3Sons,,,,Dak Prescott,QB,Dal,9,False
+2022,,82,,,Josh Jacobs Jingl...,,,,Brandon Aiyuk,WR,SF,5,False
+2022,,83,,,Pop Lockett Drop It,,,,Matthew Stafford,QB,LAR,6,False
+2022,,84,,,Scary Terry,,,,DeVonta Smith,WR,Phi,3,False
+2022,,85,,,Surrender Your Booty,,,,Brian Robinson,RB,Atl,5,False
+2022,,86,,,The Wet Bandits,,,,Allen Robinson,WR,Det,24,False
+2022,,87,,,Team Mel,,,,Tua Tagovailoa,QB,Atl,3,False
+2022,,88,,,Dillon' Em Softly,,,,Hunter Renfrow,WR,Car,11,False
+2022,,89,,,My3Sons,,,,Cordarrelle Patterson,RB,NO,6,False
+2022,,90,,,Scary Terry,,,,Michael Thomas,WR,NO,9,False
+2022,,91,,,Pop Lockett Drop It,,,,T.J. Hockenson,TE,Min,8,False
+2022,,92,,,Surrender Your Booty,,,,Dawson Knox,TE,Buf,6,False
+2022,,93,,,Scary Terry,,,,Drake London,WR,Atl,7,False
+2022,,94,,,My3Sons,,,,George Pickens,WR,Dal,4,False
+2022,,95,,,The Wet Bandits,,,,Buccaneers,DEF,TB,2,False
+2022,,96,,,My3Sons,,,,Robert Woods,WR,Pit,4,False
+2022,,97,,,Josh Jacobs Jingl...,,,,Albert Okwuegbunam Jr.,TE,LV,5,False
+2022,,98,,,Cobra Kyler,,,,Christian Kirk,WR,SF,5,False
+2022,,99,,,Dillon' Em Softly,,,,Darrell Henderson Jr.,RB,LAR,6,False
+2022,,100,,,Running is exercise,,,,David Njoku,TE,LAC,2,False
+2022,,101,,,Team Mel,,,,Kenneth Walker III,RB,KC,4,False
+2022,,102,,,The Verticoli,,,,Isaiah McKenzie,WR,Mia,2,False
+2022,,103,,,Running is exercise,,,,Isiah Pacheco,RB,Det,2,False
+2022,,104,,,Surrender Your Booty,,,,Kirk Cousins,QB,LV,4,False
+2022,,105,,,Team Mel,,,,Hunter Henry,TE,NE,4,False
+2022,,106,,,Scary Terry,,,,Zach Ertz,TE,Was,12,False
+2022,,107,,,Pop Lockett Drop It,,,,Alexander Mattison,RB,Mia,2,False
+2022,,108,,,Pop Lockett Drop It,,,,Julio Jones,WR,Phi,1,False
+2022,,109,,,Surrender Your Booty,,,,James Robinson,RB,NO,3,False
+2022,,110,,,Surrender Your Booty,,,,Brandin Cooks,WR,NO,25,False
+2022,,111,,,Team Mel,,,,Rams,DEF,LAR,1,False
+2022,,112,,,Cobra Kyler,,,,Pat Freiermuth,TE,Pit,8,False
+2022,,113,,,Pop Lockett Drop It,,,,Adam Thielen,WR,Pit,19,False
+2022,,114,,,My3Sons,,,,DeAndre Hopkins,WR,Bal,12,False
+2022,,115,,,The Wet Bandits,,,,Tyler Boyd,WR,Ten,3,False
+2022,,116,,,Dillon' Em Softly,,,,Aaron Rodgers,QB,Pit,5,False
+2022,,117,,,Scary Terry,,,,Derek Carr,QB,NO,3,False
+2022,,118,,,The Wet Bandits,,,,Jamaal Williams,RB,NO,6,False
+2022,,119,,,Pop Lockett Drop It,,,,Chase Claypool,WR,Buf,3,False
+2022,,120,,,Dillon' Em Softly,,,,Tyler Lockett,WR,LV,7,False
+2022,,121,,,Josh Jacobs Jingl...,,,,Chris Olave,WR,NO,3,False
+2022,,122,,,Scary Terry,,,,James Cook III,RB,Buf,5,False
+2022,,123,,,Cobra Kyler,,,,Patriots,DEF,NE,1,False
+2022,,124,,,Surrender Your Booty,,,,Michael Gallup,WR,Was,3,False
+2022,,125,,,Scary Terry,,,,Colts,DEF,Ind,2,False
+2022,,126,,,The Wet Bandits,,,,Khalil Herbert,RB,NYJ,6,False
+2022,,127,,,Running is exercise,,,,Trevor Lawrence,QB,Jax,2,False
+2022,,128,,,Scary Terry,,,,Justin Fields,QB,KC,1,False
+2022,,129,,,Josh Jacobs Jingl...,,,,Treylon Burks,WR,Was,6,False
+2022,,130,,,The Wet Bandits,,,,Raheem Mostert,RB,LV,3,False
+2022,,131,,,Pop Lockett Drop It,,,,Nyheim Miller-Hines,RB,LAC,1,False
+2022,,132,,,Josh Jacobs Jingl...,,,,Tyler Allgeier,RB,Ari,5,False
+2022,,133,,,Pop Lockett Drop It,,,,Kadarius Toney,WR,Cle,4,False
+2022,,134,,,The Verticoli,,,,Alec Pierce,WR,Ind,1,False
+2022,,135,,,Waddle Waddle Wad...,,,,Saints,DEF,NO,1,False
+2022,,136,,,Surrender Your Booty,,,,Rachaad White,RB,Was,4,False
+2022,,137,,,Running is exercise,,,,Chargers,DEF,LAC,1,False
+2022,,138,,,Dillon' Em Softly,,,,Ravens,DEF,Bal,1,False
+2022,,139,,,The Wet Bandits,,,,J.D. McKissic,RB,Was,1,False
+2022,,140,,,Dillon' Em Softly,,,,Kenny Gainwell,RB,TB,2,False
+2022,,141,,,Josh Jacobs Jingl...,,,,DeVante Parker,WR,NE,1,False
+2022,,142,,,Team Mel,,,,Russell Gage Jr.,WR,SF,1,False
+2022,,143,,,Josh Jacobs Jingl...,,,,Marquez Valdes-Scantling,WR,Dal,2,False
+2022,,144,,,Waddle Waddle Wad...,,,,Rondale Moore,WR,Min,1,False
+2022,,145,,,Surrender Your Booty,,,,Bengals,DEF,Cin,1,False
+2022,,146,,,Dillon' Em Softly,,,,Skyy Moore,WR,GB,1,False
+2022,,147,,,Pop Lockett Drop It,,,,Eagles,DEF,Phi,1,False
+2022,,148,,,Josh Jacobs Jingl...,,,,Zamir White,RB,LV,3,False
+2022,,149,,,Pop Lockett Drop It,,,,Jahan Dotson,WR,Atl,2,False
+2022,,150,,,Waddle Waddle Wad...,,,,Garrett Wilson,WR,NYJ,1,False
+2022,,151,,,Waddle Waddle Wad...,,,,Jameson Williams,WR,Det,3,False
+2022,,152,,,The Verticoli,,,,Mecole Hardman Jr.,WR,Buf,1,False
+2022,,153,,,Surrender Your Booty,,,,Romeo Doubs,WR,NE,2,False
+2022,,154,,,The Verticoli,,,,Joshua Palmer,WR,Buf,1,False
+2022,,155,,,The Verticoli,,,,DJ Chark,WR,Atl,1,False
+2022,,156,,,The Verticoli,,,,Kenny Golladay,WR,NYG,1,False
+2022,,157,,,The Verticoli,,,,Chiefs,DEF,KC,1,False
+2022,,158,,,Pop Lockett Drop It,,,,AJ Dillon,RB,Car,9,True
+2022,,159,,,The Verticoli,,,,James Conner,RB,Ari,9,True
+2022,,160,,,Josh Jacobs Jingl...,,,,Joe Burrow,QB,Cin,7,True
+2022,,161,,,My3Sons,,,,Justin Jefferson,WR,Min,14,True
+2022,,162,,,Surrender Your Booty,,,,Travis Etienne Jr.,RB,NO,7,True
+2022,,163,,,Waddle Waddle Wad...,,,,Jaylen Waddle,WR,Den,13,True
+2022,,164,,,Dillon' Em Softly,,,,Cam Akers,RB,Sea,9,True
+2022,,165,,,Team Mel,,,,Leonard Fournette,RB,Buf,11,True
+2022,,166,,,Scary Terry,,,,Deebo Samuel,WR,SF,11,True
+2022,,167,,,Cobra Kyler,,,,Mike Williams,WR,Pit,12,True
+2022,,168,,,The Wet Bandits,,,,Michael Pittman Jr.,WR,Pit,9,True

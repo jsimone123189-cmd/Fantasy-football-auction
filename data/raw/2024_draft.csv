@@ -1,0 +1,169 @@
+season,league_key,pick,round,team_key,team_name,manager_name,manager_guid,player_key,player_name,position,nfl_team,cost,is_keeper
+2024,,1,,,Ju-jeudyfruits,,,,Christian McCaffrey,RB,SF,83,False
+2024,,2,,,Team Mel,,,,Garrett Wilson,WR,NYJ,52,False
+2024,,3,,,System of a Downs,,,,Tyreek Hill,WR,Mia,70,False
+2024,,4,,,Team Mel,,,,Breece Hall,RB,NYJ,64,False
+2024,,5,,,System of a Downs,,,,Kyren Williams,RB,LAR,49,False
+2024,,6,,,Team Mel,,,,Justin Jefferson,WR,Min,60,False
+2024,,7,,,System of a Downs,,,,Marvin Harrison Jr.,WR,Ari,35,False
+2024,,8,,,Surrender Your Booty,,,,Jonathan Taylor,RB,Ind,55,False
+2024,,9,,,Wild Bill,,,,CeeDee Lamb,WR,Dal,60,False
+2024,,10,,,Tinis & Weenies,,,,A.J. Brown,WR,NE,51,False
+2024,,11,,,The Wet Bandits,,,,Saquon Barkley,RB,Phi,51,False
+2024,,12,,,Hawk Nacua,,,,Bijan Robinson,RB,Atl,65,False
+2024,,13,,,Wild Bill,,,,Isaiah Pacheco,RB,Det,41,False
+2024,,14,,,Hawk Nacua,,,,Puka Nacua,WR,LAR,39,False
+2024,,15,,,Just Joshin It,,,,Ja'Marr Chase,WR,Cin,62,False
+2024,,16,,,The Verticoli,,,,Amon-Ra St. Brown,WR,Det,70,False
+2024,,17,,,Ju-jeudyfruits,,,,Davante Adams,WR,LAR,31,False
+2024,,18,,,Tinis & Weenies,,,,Patrick Mahomes,QB,KC,16,False
+2024,,19,,,The Tortured Pitt...,,,,Travis Etienne Jr.,RB,NO,37,False
+2024,,20,,,Bye Week,,,,Derrick Henry,RB,Bal,47,False
+2024,,21,,,Tinis & Weenies,,,,Travis Kelce,TE,KC,30,False
+2024,,22,,,The Verticoli,,,,Jalen Hurts,QB,Phi,23,False
+2024,,23,,,Wild Bill,,,,DJ Moore,WR,Buf,25,False
+2024,,24,,,The Verticoli,,,,Jahmyr Gibbs,RB,Det,46,False
+2024,,25,,,The Tortured Pitt...,,,,De'Von Achane,RB,Mia,40,False
+2024,,26,,,The Verticoli,,,,Josh Jacobs,RB,GB,32,False
+2024,,27,,,The Tortured Pitt...,,,,Drake London,WR,Atl,32,False
+2024,,28,,,Surrender Your Booty,,,,Deebo Samuel,WR,SF,31,False
+2024,,29,,,Just Joshin It,,,,Josh Allen,QB,Buf,24,False
+2024,,30,,,The Tortured Pitt...,,,,Chris Olave,WR,NO,32,False
+2024,,31,,,Wild Bill,,,,Mark Andrews,TE,Bal,19,False
+2024,,32,,,Just Joshin It,,,,David Montgomery,RB,Hou,30,False
+2024,,33,,,Ju-jeudyfruits,,,,Lamar Jackson,QB,Bal,17,False
+2024,,34,,,Bye Week,,,,Malik Nabers,WR,NYG,19,False
+2024,,35,,,System of a Downs,,,,Brandon Aiyuk,WR,SF,21,False
+2024,,36,,,The Wet Bandits,,,,Cooper Kupp,WR,Sea,33,False
+2024,,37,,,Hawk Nacua,,,,Raheem Mostert,RB,LV,21,False
+2024,,38,,,Surrender Your Booty,,,,Jaylen Waddle,WR,Den,29,False
+2024,,39,,,Tinis & Weenies,,,,Joe Mixon,RB,Hou,27,False
+2024,,40,,,Bye Week,,,,Kenneth Walker III,RB,KC,35,False
+2024,,41,,,Hawk Nacua,,,,James Cook III,RB,Buf,36,False
+2024,,42,,,The Tortured Pitt...,,,,DeVonta Smith,WR,Phi,22,False
+2024,,43,,,Team Mel,,,,C.J. Stroud,QB,Hou,12,False
+2024,,44,,,The Verticoli,,,,Jordan Addison,WR,Min,4,False
+2024,,45,,,Bye Week,,,,Stefon Diggs,WR,NE,10,False
+2024,,46,,,Tinis & Weenies,,,,Amari Cooper,WR,Buf,17,False
+2024,,47,,,The Wet Bandits,,,,DK Metcalf,WR,Pit,26,False
+2024,,48,,,Bye Week,,,,Michael Pittman Jr.,WR,Pit,10,False
+2024,,49,,,Ju-jeudyfruits,,,,Aaron Jones Sr.,RB,Min,14,False
+2024,,50,,,Surrender Your Booty,,,,Trey McBride,TE,Ari,18,False
+2024,,51,,,Surrender Your Booty,,,,Alvin Kamara,RB,NO,28,False
+2024,,52,,,The Wet Bandits,,,,Kyler Murray,QB,Min,14,False
+2024,,53,,,Hawk Nacua,,,,George Pickens,WR,Dal,11,False
+2024,,54,,,Wild Bill,,,,Zamir White,RB,LV,11,False
+2024,,55,,,Bye Week,,,,Tee Higgins,WR,Cin,11,False
+2024,,56,,,Tinis & Weenies,,,,Rhamondre Stevenson,RB,NE,10,False
+2024,,57,,,Ju-jeudyfruits,,,,George Kittle,TE,SF,18,False
+2024,,58,,,Surrender Your Booty,,,,Rashee Rice,WR,KC,10,False
+2024,,59,,,Wild Bill,,,,Diontae Johnson,WR,Cle,3,False
+2024,,60,,,Hawk Nacua,,,,Tank Dell,RB,Hou,11,False
+2024,,61,,,The Wet Bandits,,,,James Conner,RB,Ari,27,False
+2024,,62,,,Wild Bill,,,,Dak Prescott,QB,Dal,7,False
+2024,,63,,,The Wet Bandits,,,,Najee Harris,RB,LAC,12,False
+2024,,64,,,Bye Week,,,,Joe Burrow,QB,Cin,10,False
+2024,,65,,,Just Joshin It,,,,Dalton Kincaid,TE,Buf,14,False
+2024,,66,,,Tinis & Weenies,,,,Jaylen Warren,RB,Pit,5,False
+2024,,67,,,Just Joshin It,,,,Keenan Allen,WR,LAC,9,False
+2024,,68,,,Ju-jeudyfruits,,,,D'Andre Swift,RB,Chi,15,False
+2024,,69,,,The Tortured Pitt...,,,,Kyle Pitts Sr.,TE,Atl,10,False
+2024,,70,,,Just Joshin It,,,,Terry McLaurin,WR,Was,11,False
+2024,,71,,,Bye Week,,,,Devin Singletary,RB,NYG,5,False
+2024,,72,,,Wild Bill,,,,Calvin Ridley,WR,Ten,9,False
+2024,,73,,,Tinis & Weenies,,,,Tony Pollard,RB,Ten,9,False
+2024,,74,,,The Wet Bandits,,,,Evan Engram,TE,Den,7,False
+2024,,75,,,The Wet Bandits,,,,Javonte Williams,RB,Dal,9,False
+2024,,76,,,The Tortured Pitt...,,,,Chris Godwin Jr.,WR,TB,9,False
+2024,,77,,,Bye Week,,,,Caleb Williams,QB,Chi,5,False
+2024,,78,,,Bye Week,,,,Xavier Worthy,WR,KC,4,False
+2024,,79,,,Team Mel,,,,Brock Purdy,QB,SF,3,False
+2024,,80,,,Bye Week,,,,Brian Robinson,RB,Atl,8,False
+2024,,81,,,Wild Bill,,,,Hollywood Brown,WR,Phi,4,False
+2024,,82,,,Just Joshin It,,,,Christian Kirk,WR,SF,5,False
+2024,,83,,,Bye Week,,,,Jaxon Smith-Njigba,WR,Sea,3,False
+2024,,84,,,The Wet Bandits,,,,Jayden Reed,WR,GB,5,False
+2024,,85,,,Hawk Nacua,,,,Dallas Goedert,TE,Phi,2,False
+2024,,86,,,The Tortured Pitt...,,,,Tyjae Spears,RB,Ten,3,False
+2024,,87,,,Just Joshin It,,,,Zack Moss,RB,Cin,7,False
+2024,,88,,,Bye Week,,,,49ers,DEF,SF,5,False
+2024,,89,,,Just Joshin It,,,,Jayden Daniels,QB,Was,5,False
+2024,,90,,,Wild Bill,,,,Austin Ekeler,RB,Was,4,False
+2024,,91,,,Just Joshin It,,,,Romeo Doubs,WR,NE,2,False
+2024,,92,,,Just Joshin It,,,,Chase Brown,RB,Cin,5,False
+2024,,93,,,Just Joshin It,,,,Nick Chubb,RB,Hou,10,False
+2024,,94,,,Just Joshin It,,,,Jerome Ford,RB,Was,10,False
+2024,,95,,,Tinis & Weenies,,,,Jake Ferguson,TE,Dal,2,False
+2024,,96,,,The Tortured Pitt...,,,,Rome Odunze,WR,Chi,4,False
+2024,,97,,,Tinis & Weenies,,,,Ravens,DEF,Bal,3,False
+2024,,98,,,Bye Week,,,,Brock Bowers,TE,LV,3,False
+2024,,99,,,System of a Downs,,,,David Njoku,TE,LAC,2,False
+2024,,100,,,Wild Bill,,,,Brian Thomas Jr.,WR,Jax,3,False
+2024,,101,,,Hawk Nacua,,,,Jordan Love,QB,GB,8,False
+2024,,102,,,Wild Bill,,,,Ezekiel Elliott,RB,Dal,5,False
+2024,,103,,,Surrender Your Booty,,,,Gus Edwards,RB,LAC,2,False
+2024,,104,,,The Tortured Pitt...,,,,Jonathon Brooks,RB,Car,3,False
+2024,,105,,,The Wet Bandits,,,,Blake Corum,RB,LAR,1,False
+2024,,106,,,Just Joshin It,,,,Jets,DEF,NYJ,4,False
+2024,,107,,,The Verticoli,,,,Tyler Lockett,WR,LV,2,False
+2024,,108,,,Wild Bill,,,,Christian Watson,WR,GB,3,False
+2024,,109,,,Tinis & Weenies,,,,Aaron Rodgers,QB,Pit,1,False
+2024,,110,,,The Verticoli,,,,Trey Benson,RB,Ari,2,False
+2024,,111,,,Wild Bill,,,,Cowboys,DEF,Dal,4,False
+2024,,112,,,Tinis & Weenies,,,,Chiefs,DEF,KC,4,False
+2024,,113,,,Surrender Your Booty,,,,Rashid Shaheed,WR,Sea,1,False
+2024,,114,,,Ju-jeudyfruits,,,,Browns,DEF,Cle,2,False
+2024,,115,,,The Tortured Pitt...,,,,Jameson Williams,WR,Det,2,False
+2024,,116,,,The Tortured Pitt...,,,,Jared Goff,QB,Det,2,False
+2024,,117,,,Ju-jeudyfruits,,,,Courtland Sutton,WR,Den,2,False
+2024,,118,,,Tinis & Weenies,,,,Miles Sanders,RB,Dal,1,False
+2024,,119,,,Hawk Nacua,,,,Jaleel McLaughlin,RB,Den,2,False
+2024,,120,,,Ju-jeudyfruits,,,,Ladd McConkey,WR,LAC,1,False
+2024,,121,,,Hawk Nacua,,,,Dontayvion Wicks,WR,Phi,2,False
+2024,,122,,,The Verticoli,,,,Joshua Palmer,WR,Buf,2,False
+2024,,123,,,The Verticoli,,,,Steelers,DEF,Pit,2,False
+2024,,124,,,The Wet Bandits,,,,Saints,DEF,NO,1,False
+2024,,125,,,The Tortured Pitt...,,,,Tua Tagovailoa,QB,Atl,3,False
+2024,,126,,,Team Mel,,,,DeAndre Hopkins,WR,Bal,1,False
+2024,,127,,,System of a Downs,,,,Ty Chandler,RB,NO,1,False
+2024,,128,,,The Verticoli,,,,Dalton Schultz,TE,Hou,2,False
+2024,,129,,,Hawk Nacua,,,,Tyler Allgeier,RB,Ari,1,False
+2024,,130,,,Surrender Your Booty,,,,Rico Dowdle,RB,Pit,1,False
+2024,,131,,,Surrender Your Booty,,,,Trevor Lawrence,QB,Jax,2,False
+2024,,132,,,The Wet Bandits,,,,Curtis Samuel,WR,Buf,1,False
+2024,,133,,,Surrender Your Booty,,,,Eagles,DEF,Phi,2,False
+2024,,134,,,The Verticoli,,,,Zach Charbonnet,RB,Sea,2,False
+2024,,135,,,System of a Downs,,,,Bucky Irving,RB,TB,1,False
+2024,,136,,,Ju-jeudyfruits,,,,Chuba Hubbard,RB,Car,1,False
+2024,,137,,,Hawk Nacua,,,,Bills,DEF,Buf,1,False
+2024,,138,,,Surrender Your Booty,,,,Jaylen Wright,RB,Mia,1,False
+2024,,139,,,The Verticoli,,,,Kirk Cousins,QB,LV,1,False
+2024,,140,,,The Wet Bandits,,,,Mike Williams,WR,Pit,1,False
+2024,,141,,,The Tortured Pitt...,,,,Vikings,DEF,Min,1,False
+2024,,142,,,Team Mel,,,,Pat Freiermuth,TE,Pit,1,False
+2024,,143,,,System of a Downs,,,,Ray Davis,RB,Buf,1,False
+2024,,144,,,Ju-jeudyfruits,,,,Luke Musgrave,TE,GB,1,False
+2024,,145,,,Hawk Nacua,,,,Khalil Shakir,WR,Buf,1,False
+2024,,146,,,Surrender Your Booty,,,,T.J. Hockenson,TE,Min,1,False
+2024,,147,,,The Verticoli,,,,Dolphins,DEF,Mia,1,False
+2024,,148,,,Team Mel,,,,Khalil Herbert,RB,NYJ,1,False
+2024,,149,,,System of a Downs,,,,Tyrone Tracy Jr.,RB,NYG,1,False
+2024,,150,,,Ju-jeudyfruits,,,,Deneric Prince,RB,NE,1,False
+2024,,151,,,Hawk Nacua,,,,Dameon Pierce,RB,Phi,1,False
+2024,,152,,,Team Mel,,,,Bears,DEF,Chi,1,False
+2024,,153,,,System of a Downs,,,,Kimani Vidal,RB,LAC,1,False
+2024,,154,,,Ju-jeudyfruits,,,,Jerry Jeudy,WR,Cle,1,False
+2024,,155,,,Team Mel,,,,Jakobi Meyers,WR,Jax,1,False
+2024,,156,,,System of a Downs,,,,Josh Downs,WR,Ind,1,False
+2024,,157,,,Team Mel,,,,Keon Coleman,WR,Buf,1,False
+2024,,158,,,System of a Downs,,,,Texans,DEF,Hou,1,False
+2024,,159,,,Team Mel,,,,Cole Kmet,TE,Chi,1,False
+2024,,160,,,System of a Downs,,,,Matthew Stafford,QB,LAR,1,False
+2024,,161,,,Team Mel,,,,Antonio Gibson,RB,NE,1,False
+2024,,162,,,Team Mel,,,,Broncos,DEF,Den,1,False
+2024,,163,,,Ju-jeudyfruits,,,,Zay Flowers,WR,Bal,13,True
+2024,,164,,,The Verticoli,,,,Sam LaPorta,TE,Det,11,True
+2024,,165,,,Surrender Your Booty,,,,Rachaad White,RB,Was,19,True
+2024,,166,,,System of a Downs,,,,Anthony Richardson Sr.,QB,Ind,15,True
+2024,,167,,,The Wet Bandits,,,,Nico Collins,WR,Hou,12,True
+2024,,168,,,Tinis & Weenies,,,,Mike Evans,WR,SF,19,True
