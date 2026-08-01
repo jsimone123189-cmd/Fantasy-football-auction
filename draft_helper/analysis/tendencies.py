@@ -29,6 +29,31 @@ def build_tendency_profiles(df: pd.DataFrame) -> pd.DataFrame:
     season_median_pick = df.groupby("season")["pick"].transform("median")
     df["is_early_pick"] = df["pick"] <= season_median_pick
 
+    # League-wide baselines per season, so pace/shape are judged relative to
+    # how this specific league's auctions actually run (half the picks are
+    # always $1 dregs at the end, so >50% of $ going early is the norm, not
+    # a personality trait — what matters is who's *more* front-loaded than
+    # everyone else that year).
+    def _season_hhi(sg: pd.DataFrame) -> float:
+        t = sg["cost"].sum()
+        if not t:
+            return 0.0
+        shares = (sg.groupby("position")["cost"].sum() / t).to_numpy()
+        return float((shares**2).sum())
+
+    league_early_share = {}
+    league_hhi = {}
+    for season, sg in df.groupby("season"):
+        season_total_cost = sg["cost"].sum()
+        league_early_share[season] = (
+            sg.loc[sg["is_early_pick"], "cost"].sum() / season_total_cost if season_total_cost else 0.0
+        )
+        # average per-team HHI that season (each team's own position mix)
+        team_hhis = [
+            _season_hhi(tg) for _, tg in sg.groupby("team_name") if tg["cost"].sum()
+        ]
+        league_hhi[season] = sum(team_hhis) / len(team_hhis) if team_hhis else 0.0
+
     profiles = []
     for manager_key, g in df.groupby("manager_key"):
         name_mode = g["manager_name"].mode()
@@ -61,6 +86,25 @@ def build_tendency_profiles(df: pd.DataFrame) -> pd.DataFrame:
         early_spend = g.loc[g["is_early_pick"], "cost"].sum()
         pct_spent_early = early_spend / team_total if team_total else 0.0
 
+        # Per-season ratios vs this league's own norm that year, then averaged —
+        # same pattern as position bias above, so a manager who paces/concentrates
+        # exactly like everyone else in this league scores ~1.0x, not "extreme".
+        pace_ratios, shape_ratios = [], []
+        for season, sg in g.groupby("season"):
+            sg_total = sg["cost"].sum()
+            if not sg_total:
+                continue
+            sg_early_share = sg.loc[sg["is_early_pick"], "cost"].sum() / sg_total
+            lg_early_share = league_early_share.get(season)
+            if lg_early_share:
+                pace_ratios.append(sg_early_share / lg_early_share)
+            sg_hhi = _season_hhi(sg)
+            lg_hhi = league_hhi.get(season)
+            if lg_hhi:
+                shape_ratios.append(sg_hhi / lg_hhi)
+        pace_index = sum(pace_ratios) / len(pace_ratios) if pace_ratios else 1.0
+        shape_index = sum(shape_ratios) / len(shape_ratios) if shape_ratios else 1.0
+
         keeper_g = g[g["is_keeper"]]
         keeper_rate = len(keeper_g) / len(g) if len(g) else 0.0
         avg_keeper_cost = keeper_g["cost"].mean() if not keeper_g.empty else None
@@ -79,7 +123,9 @@ def build_tendency_profiles(df: pd.DataFrame) -> pd.DataFrame:
                 "total_spend": float(team_total),
                 "avg_pick_cost": float(g["cost"].mean()) if len(g) else 0.0,
                 "pct_budget_early": round(float(pct_spent_early), 3),
+                "pace_index": round(float(pace_index), 3),
                 "position_concentration_hhi": round(hhi, 3),
+                "shape_index": round(float(shape_index), 3),
                 "top_pick_share": round(float(top_pick_share), 3),
                 "keeper_rate": round(float(keeper_rate), 3),
                 "avg_keeper_cost": None if avg_keeper_cost is None else round(float(avg_keeper_cost), 1),
@@ -105,20 +151,27 @@ def format_profile_text(row: pd.Series) -> str:
             f"(spend share at that position vs league average that year)"
         )
 
-    if row["pct_budget_early"] >= 0.55:
-        pace = "front-loads"
-    elif row["pct_budget_early"] <= 0.45:
-        pace = "back-loads"
+    if row["pace_index"] >= 1.1:
+        pace = "front-loads more than the league norm"
+    elif row["pace_index"] <= 0.9:
+        pace = "back-loads more than the league norm"
     else:
-        pace = "spends evenly across"
+        pace = "paces spending about like everyone else"
     lines.append(
-        f"  Spending pace: {pace} the draft "
-        f"({row['pct_budget_early']*100:.0f}% of budget gone by the draft's halfway point)"
+        f"  Spending pace: {pace} "
+        f"({row['pct_budget_early']*100:.0f}% of budget gone by the draft's halfway point, "
+        f"{row['pace_index']:.2f}x the league's own average pace that year)"
     )
 
-    shape = "stars-and-scrubs" if row["position_concentration_hhi"] >= 0.22 else "balanced roster builder"
+    if row["shape_index"] >= 1.1:
+        shape = "more stars-and-scrubs than the league norm"
+    elif row["shape_index"] <= 0.9:
+        shape = "more balanced than the league norm"
+    else:
+        shape = "about as balanced as everyone else"
     lines.append(
-        f"  Roster shape: {shape} (single biggest pick = {row['top_pick_share']*100:.0f}% of total spend)"
+        f"  Roster shape: {shape} (single biggest pick = {row['top_pick_share']*100:.0f}% of total spend, "
+        f"{row['shape_index']:.2f}x the league's own concentration that year)"
     )
 
     if row["num_seasons"] >= 2:

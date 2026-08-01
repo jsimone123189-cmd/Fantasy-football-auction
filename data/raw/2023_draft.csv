@@ -1,167 +1,167 @@
 season,league_key,pick,round,team_key,team_name,manager_name,manager_guid,player_key,player_name,position,nfl_team,cost,is_keeper
-2023,,1,,,The Verticoli,,,,Jonathan Taylor,RB,Ind,52,False
-2023,,2,,,Near Far Wherever...,,,,Ja'Marr Chase,WR,Cin,67,False
-2023,,3,,,Herb Your Enthusiasm,,,,Justin Jefferson,WR,Min,67,False
-2023,,4,,,The Verticoli,,,,Bijan Robinson,RB,Atl,45,False
-2023,,5,,,Run CMC,,,,Christian McCaffrey,RB,SF,62,False
-2023,,6,,,Dobbin' for Apples,,,,Amon-Ra St. Brown,WR,Det,40,False
-2023,,7,,,Team Mel,,,,Travis Kelce,TE,KC,61,False
-2023,,8,,,Ju-jeudyfruits,,,,A.J. Brown,WR,NE,52,False
-2023,,9,,,FlyEaglesFly,,,,Tony Pollard,RB,Ten,48,False
-2023,,10,,,The Verticoli,,,,Cooper Kupp,WR,Sea,51,False
-2023,,11,,,The Wet Bandits,,,,Josh Jacobs,RB,GB,37,False
-2023,,12,,,Ju-jeudyfruits,,,,Austin Ekeler,RB,Was,54,False
-2023,,13,,,Dobbin' for Apples,,,,Nick Chubb,RB,Hou,58,False
-2023,,14,,,The Wet Bandits,,,,CeeDee Lamb,WR,Dal,44,False
-2023,,15,,,Surrender Your Booty,,,,Tyreek Hill,WR,Mia,60,False
-2023,,16,,,Team Mel,,,,Patrick Mahomes,QB,KC,38,False
-2023,,17,,,The Verticoli,,,,Rhamondre Stevenson,RB,NE,26,False
-2023,,18,,,Surrender Your Booty,,,,Josh Allen,QB,Buf,32,False
-2023,,19,,,My3Sons,,,,Jalen Hurts,QB,Phi,34,False
-2023,,20,,,My3Sons,,,,Joe Burrow,QB,Cin,19,False
-2023,,21,,,My3Sons,,,,DeVonta Smith,WR,Phi,30,False
-2023,,22,,,When Quads Met Calf,,,,Breece Hall,RB,NYJ,20,False
-2023,,23,,,Surrender Your Booty,,,,Stefon Diggs,WR,NE,50,False
-2023,,24,,,My3Sons,,,,Najee Harris,RB,LAC,21,False
-2023,,25,,,When Quads Met Calf,,,,Travis Etienne Jr.,RB,NO,27,False
-2023,,26,,,When Quads Met Calf,,,,Saquon Barkley,RB,Phi,57,False
-2023,,27,,,Run CMC,,,,Davante Adams,WR,LAR,47,False
-2023,,28,,,FlyEaglesFly,,,,Aaron Jones Sr.,RB,Min,22,False
-2023,,29,,,Near Far Wherever...,,,,Mark Andrews,TE,Bal,24,False
-2023,,30,,,The Wet Bandits,,,,Joe Mixon,RB,Hou,28,False
-2023,,31,,,Team Mel,,,,49ers,DEF,SF,3,False
-2023,,32,,,FlyEaglesFly,,,,Jaylen Waddle,WR,Den,31,False
-2023,,33,,,Run CMC,,,,Derrick Henry,RB,Bal,51,False
-2023,,34,,,Near Far Wherever...,,,,Jahmyr Gibbs,RB,Det,42,False
-2023,,35,,,Herb Your Enthusiasm,,,,Tee Higgins,WR,Cin,29,False
-2023,,36,,,When Quads Met Calf,,,,DK Metcalf,WR,Pit,28,False
-2023,,37,,,When Quads Met Calf,,,,Deebo Samuel,WR,SF,22,False
-2023,,38,,,Dobbin' for Apples,,,,J.K. Dobbins,RB,Den,20,False
-2023,,39,,,Herb Your Enthusiasm,,,,Calvin Ridley,WR,Ten,25,False
-2023,,40,,,FlyEaglesFly,,,,George Kittle,TE,SF,17,False
-2023,,41,,,FlyEaglesFly,,,,Cam Akers,RB,Sea,17,False
-2023,,42,,,Team Mel,,,,Dallas Goedert,TE,Phi,13,False
-2023,,43,,,Team Mel,,,,Isiah Pacheco,RB,Det,12,False
-2023,,44,,,The Wet Bandits,,,,Lamar Jackson,QB,Bal,21,False
-2023,,45,,,My3Sons,,,,DJ Moore,WR,Buf,12,False
-2023,,46,,,Dobbin' for Apples,,,,Patriots,DEF,NE,3,False
-2023,,47,,,Dobbin' for Apples,,,,Tyler Lockett,WR,LV,15,False
-2023,,48,,,Ju-jeudyfruits,,,,Justin Fields,QB,KC,16,False
-2023,,49,,,Herb Your Enthusiasm,,,,Justin Herbert,QB,LAC,18,False
-2023,,50,,,My3Sons,,,,DeAndre Hopkins,WR,Bal,13,False
-2023,,51,,,The Wet Bandits,,,,Keenan Allen,WR,LAC,20,False
-2023,,52,,,Herb Your Enthusiasm,,,,Alexander Mattison,RB,Mia,17,False
-2023,,53,,,Ju-jeudyfruits,,,,Jerry Jeudy,WR,Cle,11,False
-2023,,54,,,FlyEaglesFly,,,,Michael Pittman Jr.,WR,Pit,8,False
-2023,,55,,,Team Mel,,,,Kadarius Toney,WR,Cle,6,False
-2023,,56,,,Team Mel,,,,Kenneth Walker III,RB,KC,19,False
-2023,,57,,,FlyEaglesFly,,,,Trevor Lawrence,QB,Jax,10,False
-2023,,58,,,The Wet Bandits,,,,Darren Waller,TE,Mia,12,False
-2023,,59,,,The Verticoli,,,,Terry McLaurin,WR,Was,12,False
-2023,,60,,,Surrender Your Booty,,,,Miles Sanders,RB,Dal,15,False
-2023,,61,,,Run CMC,,,,Diontae Johnson,WR,Cle,8,False
-2023,,62,,,Dobbin' for Apples,,,,Pat Freiermuth,TE,Pit,8,False
-2023,,63,,,Team Mel,,,,D'Andre Swift,RB,Chi,11,False
-2023,,64,,,My3Sons,,,,Dalvin Cook,RB,Dal,9,False
-2023,,65,,,Ju-jeudyfruits,,,,Javonte Williams,RB,Dal,11,False
-2023,,66,,,Team Mel,,,,Jerick McKinnon,RB,KC,5,False
-2023,,67,,,FlyEaglesFly,,,,Chris Godwin Jr.,WR,TB,15,False
-2023,,68,,,Near Far Wherever...,,,,Rashaad Penny,RB,Phi,8,False
-2023,,69,,,Near Far Wherever...,,,,Dameon Pierce,RB,Phi,25,False
-2023,,70,,,Herb Your Enthusiasm,,,,James Conner,RB,Ari,22,False
-2023,,71,,,The Verticoli,,,,David Montgomery,RB,Hou,6,False
-2023,,72,,,Ju-jeudyfruits,,,,Brandon Aiyuk,WR,SF,21,False
-2023,,73,,,My3Sons,,,,Hollywood Brown,WR,Phi,8,False
-2023,,74,,,Team Mel,,,,Daniel Jones,QB,Ind,5,False
-2023,,75,,,My3Sons,,,,Alvin Kamara,RB,NO,18,False
-2023,,76,,,My3Sons,,,,Mike Evans,WR,SF,9,False
-2023,,77,,,Dobbin' for Apples,,,,Jahan Dotson,WR,Atl,10,False
-2023,,78,,,My3Sons,,,,Aaron Rodgers,QB,Pit,2,False
-2023,,79,,,When Quads Met Calf,,,,Evan Engram,TE,Den,5,False
-2023,,80,,,FlyEaglesFly,,,,Dak Prescott,QB,Dal,2,False
-2023,,81,,,Dobbin' for Apples,,,,Anthony Richardson Sr.,QB,Ind,5,False
-2023,,82,,,Run CMC,,,,David Njoku,TE,LAC,2,False
-2023,,83,,,Surrender Your Booty,,,,Mike Williams,WR,Pit,8,False
-2023,,84,,,FlyEaglesFly,,,,AJ Dillon,RB,Car,4,False
-2023,,85,,,FlyEaglesFly,,,,James Cook III,RB,Buf,14,False
-2023,,86,,,Run CMC,,,,Deshaun Watson,QB,Cle,4,False
-2023,,87,,,FlyEaglesFly,,,,Jordan Addison,WR,Min,8,False
-2023,,88,,,Team Mel,,,,Odell Beckham Jr.,WR,NYG,5,False
-2023,,89,,,Ju-jeudyfruits,,,,Eagles,DEF,Phi,9,False
-2023,,90,,,Surrender Your Booty,,,,Christian Watson,WR,GB,9,False
-2023,,91,,,Team Mel,,,,Treylon Burks,WR,Was,5,False
-2023,,92,,,The Wet Bandits,,,,George Pickens,WR,Dal,10,False
-2023,,93,,,Ju-jeudyfruits,,,,JuJu Smith-Schuster,WR,NYG,3,False
-2023,,94,,,Run CMC,,,,Elijah Moore,WR,Phi,4,False
-2023,,95,,,The Wet Bandits,,,,Khalil Herbert,RB,NYJ,13,False
-2023,,96,,,My3Sons,,,,Brian Robinson,RB,Atl,6,False
-2023,,97,,,Surrender Your Booty,,,,Samaje Perine,RB,Cin,3,False
-2023,,98,,,Near Far Wherever...,,,,Geno Smith,QB,NYJ,2,False
-2023,,99,,,Near Far Wherever...,,,,Michael Thomas,WR,NO,7,False
-2023,,100,,,Run CMC,,,,Brandin Cooks,WR,NO,3,False
-2023,,101,,,My3Sons,,,,Courtland Sutton,WR,Den,6,False
-2023,,102,,,Team Mel,,,,Russell Wilson,QB,NYG,1,False
-2023,,103,,,My3Sons,,,,Dalton Kincaid,RB,Buf,1,False
-2023,,104,,,When Quads Met Calf,,,,Tua Tagovailoa,QB,Atl,1,False
-2023,,105,,,Dobbin' for Apples,,,,Jameson Williams,WR,Det,5,False
-2023,,106,,,When Quads Met Calf,,,,Jared Goff,QB,Det,4,False
-2023,,107,,,Dobbin' for Apples,,,,Gabe Davis,WR,Buf,8,False
-2023,,108,,,When Quads Met Calf,,,,Jamaal Williams,RB,NO,2,False
-2023,,109,,,Surrender Your Booty,,,,Marvin Mims Jr.,WR,Den,2,False
-2023,,110,,,The Verticoli,,,,Chig Okonkwo,TE,Was,1,False
-2023,,111,,,Dobbin' for Apples,,,,Zach Charbonnet,RB,Sea,9,False
-2023,,112,,,Dobbin' for Apples,,,,Skyy Moore,WR,GB,3,False
-2023,,113,,,Ju-jeudyfruits,,,,Zay Flowers,WR,Bal,3,False
-2023,,114,,,When Quads Met Calf,,,,Quentin Johnston,WR,LAC,5,False
-2023,,115,,,Run CMC,,,,D'Onta Foreman,RB,Cle,1,False
-2023,,116,,,Surrender Your Booty,,,,Kirk Cousins,QB,LV,3,False
-2023,,117,,,Run CMC,,,,Jaxon Smith-Njigba,WR,Sea,4,False
-2023,,118,,,Ju-jeudyfruits,,,,Elijah Mitchell,RB,Phi,2,False
-2023,,119,,,Surrender Your Booty,,,,Tyler Higbee,TE,LAR,1,False
-2023,,120,,,The Verticoli,,,,Brock Purdy,QB,SF,1,False
-2023,,121,,,Near Far Wherever...,,,,Kendre Miller,RB,NO,4,False
-2023,,122,,,The Wet Bandits,,,,Jakobi Meyers,WR,Jax,2,False
-2023,,123,,,Ju-jeudyfruits,,,,Zach Ertz,TE,Was,1,False
-2023,,124,,,When Quads Met Calf,,,,Cole Kmet,TE,Chi,1,False
-2023,,125,,,FlyEaglesFly,,,,Bills,DEF,Buf,2,False
-2023,,126,,,Surrender Your Booty,,,,Jaylen Warren,RB,Pit,2,False
-2023,,127,,,Near Far Wherever...,,,,Rashod Bateman,WR,Bal,3,False
-2023,,128,,,Near Far Wherever...,,,,Tyler Boyd,WR,Ten,4,False
-2023,,129,,,Herb Your Enthusiasm,,,,Tank Bigsby,RB,Phi,3,False
-2023,,130,,,When Quads Met Calf,,,,Cowboys,DEF,Dal,4,False
-2023,,131,,,Near Far Wherever...,,,,Deon Jackson,RB,Det,5,False
-2023,,132,,,Ju-jeudyfruits,,,,Clyde Edwards-Helaire,RB,KC,3,False
-2023,,133,,,When Quads Met Calf,,,,Jalin Hyatt,WR,NYG,1,False
-2023,,134,,,The Wet Bandits,,,,Ezekiel Elliott,RB,Dal,2,False
-2023,,135,,,FlyEaglesFly,,,,Kenny Gainwell,RB,TB,2,False
-2023,,137,,,The Wet Bandits,,,,Antonio Gibson,RB,NE,6,False
-2023,,138,,,The Verticoli,,,,Jets,DEF,NYJ,1,False
-2023,,139,,,Dobbin' for Apples,,,,Roschon Johnson,RB,Chi,2,False
-2023,,140,,,Near Far Wherever...,,,,Chiefs,DEF,KC,2,False
-2023,,141,,,Run CMC,,,,Bengals,DEF,Cin,1,False
-2023,,142,,,The Wet Bandits,,,,Broncos,DEF,Den,1,False
-2023,,143,,,Surrender Your Booty,,,,Greg Dulcich,TE,Mia,1,False
-2023,,144,,,The Wet Bandits,,,,Nico Collins,WR,Hou,2,True
-2023,,145,,,Near Far Wherever...,,,,Bryce Young,QB,Car,1,False
-2023,,146,,,Herb Your Enthusiasm,,,,Adam Thielen,WR,Pit,1,False
-2023,,147,,,Run CMC,,,,Tyjae Spears,RB,Ten,1,False
-2023,,148,,,The Wet Bandits,,,,Jeff Wilson Jr.,RB,Mia,1,False
-2023,,149,,,Surrender Your Booty,,,,De'Von Achane,RB,Mia,1,False
-2023,,150,,,The Verticoli,,,,Tyler Allgeier,RB,Ari,1,False
-2023,,151,,,Near Far Wherever...,,,,Rashee Rice,WR,KC,1,False
-2023,,152,,,Herb Your Enthusiasm,,,,Chase Brown,RB,Cin,1,False
-2023,,153,,,The Verticoli,,,,Sam LaPorta,TE,Det,1,True
-2023,,154,,,Herb Your Enthusiasm,,,,Raheem Mostert,RB,LV,1,False
-2023,,155,,,The Verticoli,,,,Allen Lazard,WR,NYJ,1,False
-2023,,156,,,Herb Your Enthusiasm,,,,Kareem Hunt,RB,KC,1,False
-2023,,157,,,The Verticoli,,,,Sam Howell,QB,Dal,1,False
-2023,,158,,,Herb Your Enthusiasm,,,,Saints,DEF,NO,1,False
-2023,,159,,,The Verticoli,,,,Ravens,DEF,Bal,1,False
-2023,,160,,,Herb Your Enthusiasm,,,,Keaontay Ingram,RB,KC,1,False
-2023,,161,,,Herb Your Enthusiasm,,,,T.J. Hockenson,TE,Min,13,False
-2023,,162,,,Near Far Wherever...,,,,Chris Olave,WR,NO,8,False
-2023,,163,,,Surrender Your Booty,,,,Rachaad White,RB,Was,9,True
-2023,,164,,,Dobbin' for Apples,,,,Garrett Wilson,WR,NYJ,6,False
-2023,,165,,,Run CMC,,,,Christian Kirk,WR,SF,10,False
-2023,,166,,,Team Mel,,,,Amari Cooper,WR,Buf,10,False
-2023,,167,,,When Quads Met Calf,,,,Drake London,WR,Atl,12,False
+2023,,1,,,The Verticoli,Jamison,jamison.greene9151@gmail.com,,Jonathan Taylor,RB,Ind,52,False
+2023,,2,,,Near Far Wherever...,justin s,jsimone123189@gmail.com,,Ja'Marr Chase,WR,Cin,67,False
+2023,,3,,,Herb Your Enthusiasm,Lou,lsimone@holyfamily.edu,,Justin Jefferson,WR,Min,67,False
+2023,,4,,,The Verticoli,Jamison,jamison.greene9151@gmail.com,,Bijan Robinson,RB,Atl,45,False
+2023,,5,,,Run CMC,William,william--hidden--,,Christian McCaffrey,RB,SF,62,False
+2023,,6,,,Dobbin' for Apples,gregg,greg_grosso@yahoo.com,,Amon-Ra St. Brown,WR,Det,40,False
+2023,,7,,,Team Mel,Malvyn,malvynpaulino@gmail.com,,Travis Kelce,TE,KC,61,False
+2023,,8,,,Ju-jeudyfruits,Kerri,kerri@simone,,A.J. Brown,WR,NE,52,False
+2023,,9,,,FlyEaglesFly,CMK21,christopher.m.krause@gmail.com,,Tony Pollard,RB,Ten,48,False
+2023,,10,,,The Verticoli,Jamison,jamison.greene9151@gmail.com,,Cooper Kupp,WR,Sea,51,False
+2023,,11,,,The Wet Bandits,Bob Zanneo,zanneob@lschs.org,,Josh Jacobs,RB,GB,37,False
+2023,,12,,,Ju-jeudyfruits,Kerri,kerri@simone,,Austin Ekeler,RB,Was,54,False
+2023,,13,,,Dobbin' for Apples,gregg,greg_grosso@yahoo.com,,Nick Chubb,RB,Hou,58,False
+2023,,14,,,The Wet Bandits,Bob Zanneo,zanneob@lschs.org,,CeeDee Lamb,WR,Dal,44,False
+2023,,15,,,Surrender Your Booty,Scott,scott.cipoletti@gmail.com,,Tyreek Hill,WR,Mia,60,False
+2023,,16,,,Team Mel,Malvyn,malvynpaulino@gmail.com,,Patrick Mahomes,QB,KC,38,False
+2023,,17,,,The Verticoli,Jamison,jamison.greene9151@gmail.com,,Rhamondre Stevenson,RB,NE,26,False
+2023,,18,,,Surrender Your Booty,Scott,scott.cipoletti@gmail.com,,Josh Allen,QB,Buf,32,False
+2023,,19,,,My3Sons,My3Sons,garofolo22@gmail.com,,Jalen Hurts,QB,Phi,34,False
+2023,,20,,,My3Sons,My3Sons,garofolo22@gmail.com,,Joe Burrow,QB,Cin,19,False
+2023,,21,,,My3Sons,My3Sons,garofolo22@gmail.com,,DeVonta Smith,WR,Phi,30,False
+2023,,22,,,When Quads Met Calf,Ryan,rbutzko@gmail.com,,Breece Hall,RB,NYJ,20,False
+2023,,23,,,Surrender Your Booty,Scott,scott.cipoletti@gmail.com,,Stefon Diggs,WR,NE,50,False
+2023,,24,,,My3Sons,My3Sons,garofolo22@gmail.com,,Najee Harris,RB,LAC,21,False
+2023,,25,,,When Quads Met Calf,Ryan,rbutzko@gmail.com,,Travis Etienne Jr.,RB,NO,27,False
+2023,,26,,,When Quads Met Calf,Ryan,rbutzko@gmail.com,,Saquon Barkley,RB,Phi,57,False
+2023,,27,,,Run CMC,William,william--hidden--,,Davante Adams,WR,LAR,47,False
+2023,,28,,,FlyEaglesFly,CMK21,christopher.m.krause@gmail.com,,Aaron Jones Sr.,RB,Min,22,False
+2023,,29,,,Near Far Wherever...,justin s,jsimone123189@gmail.com,,Mark Andrews,TE,Bal,24,False
+2023,,30,,,The Wet Bandits,Bob Zanneo,zanneob@lschs.org,,Joe Mixon,RB,Hou,28,False
+2023,,31,,,Team Mel,Malvyn,malvynpaulino@gmail.com,,49ers,DEF,SF,3,False
+2023,,32,,,FlyEaglesFly,CMK21,christopher.m.krause@gmail.com,,Jaylen Waddle,WR,Den,31,False
+2023,,33,,,Run CMC,William,william--hidden--,,Derrick Henry,RB,Bal,51,False
+2023,,34,,,Near Far Wherever...,justin s,jsimone123189@gmail.com,,Jahmyr Gibbs,RB,Det,42,False
+2023,,35,,,Herb Your Enthusiasm,Lou,lsimone@holyfamily.edu,,Tee Higgins,WR,Cin,29,False
+2023,,36,,,When Quads Met Calf,Ryan,rbutzko@gmail.com,,DK Metcalf,WR,Pit,28,False
+2023,,37,,,When Quads Met Calf,Ryan,rbutzko@gmail.com,,Deebo Samuel,WR,SF,22,False
+2023,,38,,,Dobbin' for Apples,gregg,greg_grosso@yahoo.com,,J.K. Dobbins,RB,Den,20,False
+2023,,39,,,Herb Your Enthusiasm,Lou,lsimone@holyfamily.edu,,Calvin Ridley,WR,Ten,25,False
+2023,,40,,,FlyEaglesFly,CMK21,christopher.m.krause@gmail.com,,George Kittle,TE,SF,17,False
+2023,,41,,,FlyEaglesFly,CMK21,christopher.m.krause@gmail.com,,Cam Akers,RB,Sea,17,False
+2023,,42,,,Team Mel,Malvyn,malvynpaulino@gmail.com,,Dallas Goedert,TE,Phi,13,False
+2023,,43,,,Team Mel,Malvyn,malvynpaulino@gmail.com,,Isiah Pacheco,RB,Det,12,False
+2023,,44,,,The Wet Bandits,Bob Zanneo,zanneob@lschs.org,,Lamar Jackson,QB,Bal,21,False
+2023,,45,,,My3Sons,My3Sons,garofolo22@gmail.com,,DJ Moore,WR,Buf,12,False
+2023,,46,,,Dobbin' for Apples,gregg,greg_grosso@yahoo.com,,Patriots,DEF,NE,3,False
+2023,,47,,,Dobbin' for Apples,gregg,greg_grosso@yahoo.com,,Tyler Lockett,WR,LV,15,False
+2023,,48,,,Ju-jeudyfruits,Kerri,kerri@simone,,Justin Fields,QB,KC,16,False
+2023,,49,,,Herb Your Enthusiasm,Lou,lsimone@holyfamily.edu,,Justin Herbert,QB,LAC,18,False
+2023,,50,,,My3Sons,My3Sons,garofolo22@gmail.com,,DeAndre Hopkins,WR,Bal,13,False
+2023,,51,,,The Wet Bandits,Bob Zanneo,zanneob@lschs.org,,Keenan Allen,WR,LAC,20,False
+2023,,52,,,Herb Your Enthusiasm,Lou,lsimone@holyfamily.edu,,Alexander Mattison,RB,Mia,17,False
+2023,,53,,,Ju-jeudyfruits,Kerri,kerri@simone,,Jerry Jeudy,WR,Cle,11,False
+2023,,54,,,FlyEaglesFly,CMK21,christopher.m.krause@gmail.com,,Michael Pittman Jr.,WR,Pit,8,False
+2023,,55,,,Team Mel,Malvyn,malvynpaulino@gmail.com,,Kadarius Toney,WR,Cle,6,False
+2023,,56,,,Team Mel,Malvyn,malvynpaulino@gmail.com,,Kenneth Walker III,RB,KC,19,False
+2023,,57,,,FlyEaglesFly,CMK21,christopher.m.krause@gmail.com,,Trevor Lawrence,QB,Jax,10,False
+2023,,58,,,The Wet Bandits,Bob Zanneo,zanneob@lschs.org,,Darren Waller,TE,Mia,12,False
+2023,,59,,,The Verticoli,Jamison,jamison.greene9151@gmail.com,,Terry McLaurin,WR,Was,12,False
+2023,,60,,,Surrender Your Booty,Scott,scott.cipoletti@gmail.com,,Miles Sanders,RB,Dal,15,False
+2023,,61,,,Run CMC,William,william--hidden--,,Diontae Johnson,WR,Cle,8,False
+2023,,62,,,Dobbin' for Apples,gregg,greg_grosso@yahoo.com,,Pat Freiermuth,TE,Pit,8,False
+2023,,63,,,Team Mel,Malvyn,malvynpaulino@gmail.com,,D'Andre Swift,RB,Chi,11,False
+2023,,64,,,My3Sons,My3Sons,garofolo22@gmail.com,,Dalvin Cook,RB,Dal,9,False
+2023,,65,,,Ju-jeudyfruits,Kerri,kerri@simone,,Javonte Williams,RB,Dal,11,False
+2023,,66,,,Team Mel,Malvyn,malvynpaulino@gmail.com,,Jerick McKinnon,RB,KC,5,False
+2023,,67,,,FlyEaglesFly,CMK21,christopher.m.krause@gmail.com,,Chris Godwin Jr.,WR,TB,15,False
+2023,,68,,,Near Far Wherever...,justin s,jsimone123189@gmail.com,,Rashaad Penny,RB,Phi,8,False
+2023,,69,,,Near Far Wherever...,justin s,jsimone123189@gmail.com,,Dameon Pierce,RB,Phi,25,False
+2023,,70,,,Herb Your Enthusiasm,Lou,lsimone@holyfamily.edu,,James Conner,RB,Ari,22,False
+2023,,71,,,The Verticoli,Jamison,jamison.greene9151@gmail.com,,David Montgomery,RB,Hou,6,False
+2023,,72,,,Ju-jeudyfruits,Kerri,kerri@simone,,Brandon Aiyuk,WR,SF,21,False
+2023,,73,,,My3Sons,My3Sons,garofolo22@gmail.com,,Hollywood Brown,WR,Phi,8,False
+2023,,74,,,Team Mel,Malvyn,malvynpaulino@gmail.com,,Daniel Jones,QB,Ind,5,False
+2023,,75,,,My3Sons,My3Sons,garofolo22@gmail.com,,Alvin Kamara,RB,NO,18,False
+2023,,76,,,My3Sons,My3Sons,garofolo22@gmail.com,,Mike Evans,WR,SF,9,False
+2023,,77,,,Dobbin' for Apples,gregg,greg_grosso@yahoo.com,,Jahan Dotson,WR,Atl,10,False
+2023,,78,,,My3Sons,My3Sons,garofolo22@gmail.com,,Aaron Rodgers,QB,Pit,2,False
+2023,,79,,,When Quads Met Calf,Ryan,rbutzko@gmail.com,,Evan Engram,TE,Den,5,False
+2023,,80,,,FlyEaglesFly,CMK21,christopher.m.krause@gmail.com,,Dak Prescott,QB,Dal,2,False
+2023,,81,,,Dobbin' for Apples,gregg,greg_grosso@yahoo.com,,Anthony Richardson Sr.,QB,Ind,5,False
+2023,,82,,,Run CMC,William,william--hidden--,,David Njoku,TE,LAC,2,False
+2023,,83,,,Surrender Your Booty,Scott,scott.cipoletti@gmail.com,,Mike Williams,WR,Pit,8,False
+2023,,84,,,FlyEaglesFly,CMK21,christopher.m.krause@gmail.com,,AJ Dillon,RB,Car,4,False
+2023,,85,,,FlyEaglesFly,CMK21,christopher.m.krause@gmail.com,,James Cook III,RB,Buf,14,False
+2023,,86,,,Run CMC,William,william--hidden--,,Deshaun Watson,QB,Cle,4,False
+2023,,87,,,FlyEaglesFly,CMK21,christopher.m.krause@gmail.com,,Jordan Addison,WR,Min,8,False
+2023,,88,,,Team Mel,Malvyn,malvynpaulino@gmail.com,,Odell Beckham Jr.,WR,NYG,5,False
+2023,,89,,,Ju-jeudyfruits,Kerri,kerri@simone,,Eagles,DEF,Phi,9,False
+2023,,90,,,Surrender Your Booty,Scott,scott.cipoletti@gmail.com,,Christian Watson,WR,GB,9,False
+2023,,91,,,Team Mel,Malvyn,malvynpaulino@gmail.com,,Treylon Burks,WR,Was,5,False
+2023,,92,,,The Wet Bandits,Bob Zanneo,zanneob@lschs.org,,George Pickens,WR,Dal,10,False
+2023,,93,,,Ju-jeudyfruits,Kerri,kerri@simone,,JuJu Smith-Schuster,WR,NYG,3,False
+2023,,94,,,Run CMC,William,william--hidden--,,Elijah Moore,WR,Phi,4,False
+2023,,95,,,The Wet Bandits,Bob Zanneo,zanneob@lschs.org,,Khalil Herbert,RB,NYJ,13,False
+2023,,96,,,My3Sons,My3Sons,garofolo22@gmail.com,,Brian Robinson,RB,Atl,6,False
+2023,,97,,,Surrender Your Booty,Scott,scott.cipoletti@gmail.com,,Samaje Perine,RB,Cin,3,False
+2023,,98,,,Near Far Wherever...,justin s,jsimone123189@gmail.com,,Geno Smith,QB,NYJ,2,False
+2023,,99,,,Near Far Wherever...,justin s,jsimone123189@gmail.com,,Michael Thomas,WR,NO,7,False
+2023,,100,,,Run CMC,William,william--hidden--,,Brandin Cooks,WR,NO,3,False
+2023,,101,,,My3Sons,My3Sons,garofolo22@gmail.com,,Courtland Sutton,WR,Den,6,False
+2023,,102,,,Team Mel,Malvyn,malvynpaulino@gmail.com,,Russell Wilson,QB,NYG,1,False
+2023,,103,,,My3Sons,My3Sons,garofolo22@gmail.com,,Dalton Kincaid,RB,Buf,1,False
+2023,,104,,,When Quads Met Calf,Ryan,rbutzko@gmail.com,,Tua Tagovailoa,QB,Atl,1,False
+2023,,105,,,Dobbin' for Apples,gregg,greg_grosso@yahoo.com,,Jameson Williams,WR,Det,5,False
+2023,,106,,,When Quads Met Calf,Ryan,rbutzko@gmail.com,,Jared Goff,QB,Det,4,False
+2023,,107,,,Dobbin' for Apples,gregg,greg_grosso@yahoo.com,,Gabe Davis,WR,Buf,8,False
+2023,,108,,,When Quads Met Calf,Ryan,rbutzko@gmail.com,,Jamaal Williams,RB,NO,2,False
+2023,,109,,,Surrender Your Booty,Scott,scott.cipoletti@gmail.com,,Marvin Mims Jr.,WR,Den,2,False
+2023,,110,,,The Verticoli,Jamison,jamison.greene9151@gmail.com,,Chig Okonkwo,TE,Was,1,False
+2023,,111,,,Dobbin' for Apples,gregg,greg_grosso@yahoo.com,,Zach Charbonnet,RB,Sea,9,False
+2023,,112,,,Dobbin' for Apples,gregg,greg_grosso@yahoo.com,,Skyy Moore,WR,GB,3,False
+2023,,113,,,Ju-jeudyfruits,Kerri,kerri@simone,,Zay Flowers,WR,Bal,3,False
+2023,,114,,,When Quads Met Calf,Ryan,rbutzko@gmail.com,,Quentin Johnston,WR,LAC,5,False
+2023,,115,,,Run CMC,William,william--hidden--,,D'Onta Foreman,RB,Cle,1,False
+2023,,116,,,Surrender Your Booty,Scott,scott.cipoletti@gmail.com,,Kirk Cousins,QB,LV,3,False
+2023,,117,,,Run CMC,William,william--hidden--,,Jaxon Smith-Njigba,WR,Sea,4,False
+2023,,118,,,Ju-jeudyfruits,Kerri,kerri@simone,,Elijah Mitchell,RB,Phi,2,False
+2023,,119,,,Surrender Your Booty,Scott,scott.cipoletti@gmail.com,,Tyler Higbee,TE,LAR,1,False
+2023,,120,,,The Verticoli,Jamison,jamison.greene9151@gmail.com,,Brock Purdy,QB,SF,1,False
+2023,,121,,,Near Far Wherever...,justin s,jsimone123189@gmail.com,,Kendre Miller,RB,NO,4,False
+2023,,122,,,The Wet Bandits,Bob Zanneo,zanneob@lschs.org,,Jakobi Meyers,WR,Jax,2,False
+2023,,123,,,Ju-jeudyfruits,Kerri,kerri@simone,,Zach Ertz,TE,Was,1,False
+2023,,124,,,When Quads Met Calf,Ryan,rbutzko@gmail.com,,Cole Kmet,TE,Chi,1,False
+2023,,125,,,FlyEaglesFly,CMK21,christopher.m.krause@gmail.com,,Bills,DEF,Buf,2,False
+2023,,126,,,Surrender Your Booty,Scott,scott.cipoletti@gmail.com,,Jaylen Warren,RB,Pit,2,False
+2023,,127,,,Near Far Wherever...,justin s,jsimone123189@gmail.com,,Rashod Bateman,WR,Bal,3,False
+2023,,128,,,Near Far Wherever...,justin s,jsimone123189@gmail.com,,Tyler Boyd,WR,Ten,4,False
+2023,,129,,,Herb Your Enthusiasm,Lou,lsimone@holyfamily.edu,,Tank Bigsby,RB,Phi,3,False
+2023,,130,,,When Quads Met Calf,Ryan,rbutzko@gmail.com,,Cowboys,DEF,Dal,4,False
+2023,,131,,,Near Far Wherever...,justin s,jsimone123189@gmail.com,,Deon Jackson,RB,Det,5,False
+2023,,132,,,Ju-jeudyfruits,Kerri,kerri@simone,,Clyde Edwards-Helaire,RB,KC,3,False
+2023,,133,,,When Quads Met Calf,Ryan,rbutzko@gmail.com,,Jalin Hyatt,WR,NYG,1,False
+2023,,134,,,The Wet Bandits,Bob Zanneo,zanneob@lschs.org,,Ezekiel Elliott,RB,Dal,2,False
+2023,,135,,,FlyEaglesFly,CMK21,christopher.m.krause@gmail.com,,Kenny Gainwell,RB,TB,2,False
+2023,,137,,,The Wet Bandits,Bob Zanneo,zanneob@lschs.org,,Antonio Gibson,RB,NE,6,False
+2023,,138,,,The Verticoli,Jamison,jamison.greene9151@gmail.com,,Jets,DEF,NYJ,1,False
+2023,,139,,,Dobbin' for Apples,gregg,greg_grosso@yahoo.com,,Roschon Johnson,RB,Chi,2,False
+2023,,140,,,Near Far Wherever...,justin s,jsimone123189@gmail.com,,Chiefs,DEF,KC,2,False
+2023,,141,,,Run CMC,William,william--hidden--,,Bengals,DEF,Cin,1,False
+2023,,142,,,The Wet Bandits,Bob Zanneo,zanneob@lschs.org,,Broncos,DEF,Den,1,False
+2023,,143,,,Surrender Your Booty,Scott,scott.cipoletti@gmail.com,,Greg Dulcich,TE,Mia,1,False
+2023,,144,,,The Wet Bandits,Bob Zanneo,zanneob@lschs.org,,Nico Collins,WR,Hou,2,True
+2023,,145,,,Near Far Wherever...,justin s,jsimone123189@gmail.com,,Bryce Young,QB,Car,1,False
+2023,,146,,,Herb Your Enthusiasm,Lou,lsimone@holyfamily.edu,,Adam Thielen,WR,Pit,1,False
+2023,,147,,,Run CMC,William,william--hidden--,,Tyjae Spears,RB,Ten,1,False
+2023,,148,,,The Wet Bandits,Bob Zanneo,zanneob@lschs.org,,Jeff Wilson Jr.,RB,Mia,1,False
+2023,,149,,,Surrender Your Booty,Scott,scott.cipoletti@gmail.com,,De'Von Achane,RB,Mia,1,False
+2023,,150,,,The Verticoli,Jamison,jamison.greene9151@gmail.com,,Tyler Allgeier,RB,Ari,1,False
+2023,,151,,,Near Far Wherever...,justin s,jsimone123189@gmail.com,,Rashee Rice,WR,KC,1,False
+2023,,152,,,Herb Your Enthusiasm,Lou,lsimone@holyfamily.edu,,Chase Brown,RB,Cin,1,False
+2023,,153,,,The Verticoli,Jamison,jamison.greene9151@gmail.com,,Sam LaPorta,TE,Det,1,True
+2023,,154,,,Herb Your Enthusiasm,Lou,lsimone@holyfamily.edu,,Raheem Mostert,RB,LV,1,False
+2023,,155,,,The Verticoli,Jamison,jamison.greene9151@gmail.com,,Allen Lazard,WR,NYJ,1,False
+2023,,156,,,Herb Your Enthusiasm,Lou,lsimone@holyfamily.edu,,Kareem Hunt,RB,KC,1,False
+2023,,157,,,The Verticoli,Jamison,jamison.greene9151@gmail.com,,Sam Howell,QB,Dal,1,False
+2023,,158,,,Herb Your Enthusiasm,Lou,lsimone@holyfamily.edu,,Saints,DEF,NO,1,False
+2023,,159,,,The Verticoli,Jamison,jamison.greene9151@gmail.com,,Ravens,DEF,Bal,1,False
+2023,,160,,,Herb Your Enthusiasm,Lou,lsimone@holyfamily.edu,,Keaontay Ingram,RB,KC,1,False
+2023,,161,,,Herb Your Enthusiasm,Lou,lsimone@holyfamily.edu,,T.J. Hockenson,TE,Min,13,False
+2023,,162,,,Near Far Wherever...,justin s,jsimone123189@gmail.com,,Chris Olave,WR,NO,8,False
+2023,,163,,,Surrender Your Booty,Scott,scott.cipoletti@gmail.com,,Rachaad White,RB,Was,9,True
+2023,,164,,,Dobbin' for Apples,gregg,greg_grosso@yahoo.com,,Garrett Wilson,WR,NYJ,6,False
+2023,,165,,,Run CMC,William,william--hidden--,,Christian Kirk,WR,SF,10,False
+2023,,166,,,Team Mel,Malvyn,malvynpaulino@gmail.com,,Amari Cooper,WR,Buf,10,False
+2023,,167,,,When Quads Met Calf,Ryan,rbutzko@gmail.com,,Drake London,WR,Atl,12,False

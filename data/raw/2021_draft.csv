@@ -1,169 +1,169 @@
 season,league_key,pick,round,team_key,team_name,manager_name,manager_guid,player_key,player_name,position,nfl_team,cost,is_keeper
-2021,,1,,,Surrender Your Booty,,,,Joe Mixon,RB,Hou,46,False
-2021,,2,,,Running is exercise,,,,Derrick Henry,RB,Bal,55,False
-2021,,3,,,Running is exercise,,,,Gus Edwards,RB,LAC,27,False
-2021,,4,,,The Wet Bandits,,,,Ezekiel Elliott,RB,Dal,54,False
-2021,,5,,,The Verticoli,,,,Christian McCaffrey,RB,SF,77,False
-2021,,6,,,Saquon Bustley,,,,Saquon Barkley,RB,Phi,57,False
-2021,,7,,,Waddle Waddle Wad...,,,,Nick Chubb,RB,Hou,51,False
-2021,,8,,,Running is exercise,,,,George Kittle,TE,SF,26,False
-2021,,9,,,Team Mel,,,,Patrick Mahomes,QB,KC,41,False
-2021,,10,,,Build The Waller,,,,Darren Waller,TE,Mia,31,False
-2021,,11,,,Build The Waller,,,,Calvin Ridley,WR,Ten,41,False
-2021,,12,,,Team Mel,,,,Travis Kelce,TE,KC,50,False
-2021,,13,,,Pitt's Creek,,,,Najee Harris,RB,LAC,44,False
-2021,,14,,,Surrender Your Booty,,,,J.K. Dobbins,RB,Den,6,False
-2021,,15,,,My3Sons,,,,Javonte Williams,RB,Dal,16,False
-2021,,16,,,The Wet Bandits,,,,Aaron Jones Sr.,RB,Min,54,False
-2021,,17,,,Team Mel,,,,Dalvin Cook,RB,Dal,80,False
-2021,,18,,,Pitt's Creek,,,,Alvin Kamara,RB,NO,83,False
-2021,,19,,,The Verticoli,,,,Jonathan Taylor,RB,Ind,60,False
-2021,,20,,,Waddle Waddle Wad...,,,,Terry McLaurin,WR,Was,32,False
-2021,,21,,,King Of The North,,,,Mike Evans,WR,SF,25,False
-2021,,22,,,Nuk If You Buck,,,,Clyde Edwards-Helaire,RB,KC,33,False
-2021,,23,,,King Of The North,,,,Allen Robinson,WR,Det,29,False
-2021,,24,,,My3Sons,,,,Josh Allen,QB,Buf,27,False
-2021,,25,,,King Of The North,,,,Josh Jacobs,RB,GB,24,False
-2021,,26,,,Surrender Your Booty,,,,DK Metcalf,WR,Pit,36,False
-2021,,27,,,Surrender Your Booty,,,,Michael Carter,RB,Ten,8,False
-2021,,28,,,King Of The North,,,,Aaron Rodgers,QB,Pit,21,False
-2021,,29,,,My3Sons,,,,A.J. Brown,WR,NE,28,False
-2021,,30,,,King Of The North,,,,Chris Carson,RB,Sea,30,False
-2021,,31,,,Nuk If You Buck,,,,Austin Ekeler,RB,Was,62,False
-2021,,32,,,Surrender Your Booty,,,,Stefon Diggs,WR,NE,40,False
-2021,,33,,,Nuk If You Buck,,,,Chris Godwin Jr.,WR,TB,24,False
-2021,,34,,,Running is exercise,,,,David Montgomery,RB,Hou,24,False
-2021,,35,,,Saquon Bustley,,,,Miles Sanders,RB,Dal,27,False
-2021,,36,,,Waddle Waddle Wad...,,,,Jonnu Smith,TE,Pit,6,False
-2021,,37,,,Running is exercise,,,,Julio Jones,WR,Phi,20,False
-2021,,38,,,My3Sons,,,,Davante Adams,WR,LAR,52,False
-2021,,39,,,The Verticoli,,,,Kenny Golladay,WR,NYG,11,False
-2021,,40,,,Running is exercise,,,,Antonio Brown,WR,TB,13,False
-2021,,41,,,My3Sons,,,,Chase Claypool,WR,Buf,16,False
-2021,,42,,,Surrender Your Booty,,,,D'Andre Swift,RB,Chi,22,False
-2021,,43,,,The Wet Bandits,,,,DJ Moore,WR,Buf,18,False
-2021,,44,,,Nuk If You Buck,,,,Mark Andrews,TE,Bal,12,False
-2021,,45,,,Build The Waller,,,,James Robinson,RB,NO,33,False
-2021,,46,,,Nuk If You Buck,,,,DeAndre Hopkins,WR,Bal,43,False
-2021,,47,,,Surrender Your Booty,,,,Darrell Henderson Jr.,RB,LAR,24,False
-2021,,48,,,My3Sons,,,,Robert Tonyan,TE,Pit,7,False
-2021,,49,,,Team Mel,,,,Leonard Fournette,RB,Buf,6,False
-2021,,50,,,Saquon Bustley,,,,Tyreek Hill,WR,Mia,45,False
-2021,,51,,,My3Sons,,,,Mike Davis,RB,Bal,27,False
-2021,,52,,,King Of The North,,,,Mecole Hardman Jr.,WR,Buf,6,False
-2021,,53,,,Running is exercise,,,,Jerry Jeudy,WR,Cle,12,False
-2021,,54,,,Build The Waller,,,,Keenan Allen,WR,LAC,35,False
-2021,,55,,,Waddle Waddle Wad...,,,,Tyler Boyd,WR,Ten,10,False
-2021,,56,,,Waddle Waddle Wad...,,,,Justin Herbert,QB,LAC,8,False
-2021,,57,,,Pitt's Creek,,,,Tyler Lockett,WR,LV,11,False
-2021,,58,,,Nuk If You Buck,,,,Jalen Hurts,QB,Phi,8,False
-2021,,59,,,The Verticoli,,,,Dak Prescott,QB,Dal,11,False
-2021,,60,,,The Wet Bandits,,,,Tee Higgins,WR,Cin,9,False
-2021,,61,,,Pitt's Creek,,,,Kyle Pitts Sr.,TE,Atl,20,False
-2021,,62,,,My3Sons,,,,Michael Thomas,WR,NO,11,False
-2021,,63,,,Build The Waller,,,,Adam Thielen,WR,Pit,16,False
-2021,,64,,,Waddle Waddle Wad...,,,,Jaylen Waddle,WR,Den,8,False
-2021,,65,,,Surrender Your Booty,,,,Kareem Hunt,RB,KC,8,False
-2021,,66,,,King Of The North,,,,Damien Harris,RB,Buf,19,False
-2021,,67,,,Waddle Waddle Wad...,,,,DeVonta Smith,WR,Phi,6,False
-2021,,68,,,The Wet Bandits,,,,T.J. Hockenson,TE,Min,8,False
-2021,,69,,,The Verticoli,,,,Amari Cooper,WR,Buf,19,False
-2021,,70,,,Waddle Waddle Wad...,,,,Trey Sermon,RB,Pit,11,False
-2021,,71,,,Waddle Waddle Wad...,,,,Cooper Kupp,WR,Sea,18,False
-2021,,72,,,King Of The North,,,,Patriots,DEF,NE,3,False
-2021,,73,,,Build The Waller,,,,Russell Wilson,QB,NYG,9,False
-2021,,74,,,Saquon Bustley,,,,Kyler Murray,QB,Min,8,False
-2021,,75,,,The Verticoli,,,,Gabe Davis,WR,Buf,3,False
-2021,,76,,,Team Mel,,,,Denzel Mims,WR,Dal,1,False
-2021,,77,,,The Verticoli,,,,James Conner,RB,Ari,4,False
-2021,,78,,,King Of The North,,,,Raheem Mostert,RB,LV,8,False
-2021,,79,,,The Wet Bandits,,,,Diontae Johnson,WR,Cle,8,False
-2021,,80,,,Running is exercise,,,,Odell Beckham Jr.,WR,NYG,6,False
-2021,,81,,,Pitt's Creek,,,,Robert Woods,WR,Pit,23,False
-2021,,82,,,King Of The North,,,,Will Fuller V,WR,Mia,2,False
-2021,,83,,,Waddle Waddle Wad...,,,,Myles Gaskin,RB,Sea,13,False
-2021,,84,,,King Of The North,,,,Brandin Cooks,WR,NO,6,False
-2021,,85,,,Saquon Bustley,,,,Dallas Goedert,TE,Phi,3,False
-2021,,86,,,The Wet Bandits,,,,Michael Pittman Jr.,WR,Pit,4,False
-2021,,87,,,King Of The North,,,,Rob Gronkowski,TE,TB,3,False
-2021,,88,,,Team Mel,,,,Zach Ertz,TE,Was,3,False
-2021,,89,,,Running is exercise,,,,Rams,DEF,LAR,1,False
-2021,,90,,,Build The Waller,,,,Melvin Gordon III,RB,Bal,5,False
-2021,,91,,,Nuk If You Buck,,,,Nyheim Miller-Hines,RB,LAC,3,False
-2021,,92,,,Saquon Bustley,,,,Deebo Samuel,WR,SF,6,False
-2021,,93,,,Saquon Bustley,,,,Robbie Chosen,WR,Was,3,False
-2021,,94,,,The Wet Bandits,,,,JuJu Smith-Schuster,WR,NYG,5,False
-2021,,95,,,Waddle Waddle Wad...,,,,Ronald Jones,RB,Dal,19,False
-2021,,96,,,King Of The North,,,,David Johnson,RB,NO,3,False
-2021,,97,,,Saquon Bustley,,,,Logan Thomas,TE,SF,6,False
-2021,,98,,,The Wet Bandits,,,,AJ Dillon,RB,Car,4,False
-2021,,99,,,Running is exercise,,,,Evan Engram,TE,Den,2,False
-2021,,100,,,Team Mel,,,,Chiefs,DEF,KC,1,False
-2021,,101,,,Running is exercise,,,,J.D. McKissic,RB,Was,1,False
-2021,,102,,,The Wet Bandits,,,,Noah Fant,TE,NO,3,False
-2021,,103,,,Saquon Bustley,,,,Ja'Marr Chase,WR,Cin,15,False
-2021,,104,,,Build The Waller,,,,Ryan Tannehill,QB,Ten,3,False
-2021,,105,,,Saquon Bustley,,,,Zack Moss,RB,Cin,8,False
-2021,,106,,,Build The Waller,,,,Trevor Lawrence,QB,Jax,2,False
-2021,,107,,,Saquon Bustley,,,,DJ Chark,WR,Atl,3,False
-2021,,108,,,Build The Waller,,,,Tyler Higbee,TE,LAR,3,False
-2021,,109,,,Pitt's Creek,,,,Elijah Moore,WR,Phi,1,False
-2021,,110,,,Waddle Waddle Wad...,,,,Gerald Everett,TE,Chi,2,False
-2021,,111,,,Team Mel,,,,T.Y. Hilton,WR,Dal,1,False
-2021,,112,,,Saquon Bustley,,,,Matthew Stafford,QB,LAR,5,False
-2021,,113,,,The Wet Bandits,,,,Corey Davis,WR,NYJ,4,False
-2021,,114,,,Surrender Your Booty,,,,Darnell Mooney,WR,NYG,3,False
-2021,,115,,,Pitt's Creek,,,,Joe Burrow,QB,Cin,2,False
-2021,,116,,,Nuk If You Buck,,,,Michael Gallup,WR,Was,2,False
-2021,,117,,,Build The Waller,,,,Marquez Callaway,WR,LV,3,False
-2021,,118,,,The Wet Bandits,,,,Devin Singletary,RB,NYG,13,False
-2021,,119,,,Saquon Bustley,,,,Bills,DEF,Buf,2,False
-2021,,120,,,Pitt's Creek,,,,Justin Fields,QB,KC,1,False
-2021,,121,,,Surrender Your Booty,,,,Mike Gesicki,TE,Cin,2,False
-2021,,122,,,The Wet Bandits,,,,Jamaal Williams,RB,NO,3,False
-2021,,123,,,Running is exercise,,,,Matt Ryan,QB,Ind,1,False
-2021,,124,,,Build The Waller,,,,Curtis Samuel,WR,Buf,4,False
-2021,,125,,,Surrender Your Booty,,,,Kirk Cousins,QB,LV,1,False
-2021,,126,,,The Verticoli,,,,Jarvis Landry,WR,NO,2,False
-2021,,127,,,Nuk If You Buck,,,,Sony Michel,RB,LAC,4,False
-2021,,128,,,Waddle Waddle Wad...,,,,Trey Lance,QB,LAC,1,False
-2021,,129,,,Pitt's Creek,,,,Terrace Marshall Jr.,WR,Mia,1,False
-2021,,130,,,The Verticoli,,,,Hunter Henry,TE,NE,1,False
-2021,,131,,,My3Sons,,,,Kenyan Drake,RB,Bal,2,False
-2021,,132,,,Running is exercise,,,,Commanders,DEF,Was,1,False
-2021,,133,,,Nuk If You Buck,,,,Cole Beasley,WR,NYG,1,False
-2021,,134,,,Surrender Your Booty,,,,Steelers,DEF,Pit,1,False
-2021,,135,,,My3Sons,,,,Tony Pollard,RB,Ten,1,False
-2021,,136,,,Build The Waller,,,,Phillip Lindsay,RB,Ind,5,False
-2021,,137,,,Nuk If You Buck,,,,Giovani Bernard,RB,TB,2,False
-2021,,138,,,The Verticoli,,,,Daniel Jones,QB,Ind,1,False
-2021,,139,,,Team Mel,,,,Hollywood Brown,WR,Phi,1,False
-2021,,140,,,Nuk If You Buck,,,,Ben Roethlisberger,QB,Pit,1,False
-2021,,141,,,Nuk If You Buck,,,,Laviska Shenault Jr.,WR,Buf,2,False
-2021,,142,,,My3Sons,,,,Damien Williams,RB,Ari,1,False
-2021,,143,,,Build The Waller,,,,Cam Akers,RB,Sea,4,False
-2021,,144,,,Pitt's Creek,,,,A.J. Green,WR,Ari,1,False
-2021,,145,,,The Verticoli,,,,Marvin Jones Jr.,WR,Det,1,False
-2021,,146,,,Team Mel,,,,Baker Mayfield,QB,TB,1,False
-2021,,147,,,Pitt's Creek,,,,Jakobi Meyers,WR,Jax,3,False
-2021,,148,,,Surrender Your Booty,,,,Sterling Shepard,WR,TB,1,False
-2021,,149,,,My3Sons,,,,49ers,DEF,SF,1,False
-2021,,150,,,Pitt's Creek,,,,Latavius Murray,RB,Buf,1,False
-2021,,151,,,The Verticoli,,,,Randall Cobb,WR,NYJ,1,False
-2021,,152,,,Team Mel,,,,Cowboys,DEF,Dal,1,False
-2021,,153,,,Nuk If You Buck,,,,Russell Gage Jr.,WR,SF,3,False
-2021,,154,,,Surrender Your Booty,,,,Travis Etienne Jr.,RB,NO,2,False
-2021,,155,,,My3Sons,,,,Carson Wentz,QB,Min,2,False
-2021,,156,,,Pitt's Creek,,,,Rondale Moore,WR,Min,1,False
-2021,,157,,,The Verticoli,,,,Buccaneers,DEF,TB,1,False
-2021,,158,,,Team Mel,,,,Derek Carr,QB,NO,1,False
-2021,,159,,,Team Mel,,,,Alexander Mattison,RB,Mia,1,False
-2021,,160,,,Build The Waller,,,,Antonio Gibson,RB,NE,8,True
-2021,,161,,,Pitt's Creek,,,,Brandon Aiyuk,WR,SF,8,True
-2021,,162,,,King Of The North,,,,Mike Williams,WR,Pit,7,True
-2021,,163,,,The Wet Bandits,,,,Lamar Jackson,QB,Bal,12,True
-2021,,164,,,Team Mel,,,,CeeDee Lamb,WR,Dal,12,True
-2021,,165,,,Running is exercise,,,,Tom Brady,QB,TB,11,True
-2021,,166,,,Waddle Waddle Wad...,,,,Courtland Sutton,WR,Den,13,True
-2021,,167,,,The Verticoli,,,,Chase Edmonds,RB,Was,8,True
-2021,,168,,,My3Sons,,,,Justin Jefferson,WR,Min,9,True
+2021,,1,,,Surrender Your Booty,Scott,scott.cipoletti@gmail.com,,Joe Mixon,RB,Hou,46,False
+2021,,2,,,Running is exercise,jeff,jeffpilling96@gmail.com,,Derrick Henry,RB,Bal,55,False
+2021,,3,,,Running is exercise,jeff,jeffpilling96@gmail.com,,Gus Edwards,RB,LAC,27,False
+2021,,4,,,The Wet Bandits,Bob Zanneo,zanneob@lschs.org,,Ezekiel Elliott,RB,Dal,54,False
+2021,,5,,,The Verticoli,Jamison,jamison.greene9151@gmail.com,,Christian McCaffrey,RB,SF,77,False
+2021,,6,,,Saquon Bustley,Ryan,rbutzko@gmail.com,,Saquon Barkley,RB,Phi,57,False
+2021,,7,,,Waddle Waddle Wad...,gregg,greg_grosso@yahoo.com,,Nick Chubb,RB,Hou,51,False
+2021,,8,,,Running is exercise,jeff,jeffpilling96@gmail.com,,George Kittle,TE,SF,26,False
+2021,,9,,,Team Mel,Malvyn,malvynpaulino@gmail.com,,Patrick Mahomes,QB,KC,41,False
+2021,,10,,,Build The Waller,Jack,jmclaughlintu@gmail.com,,Darren Waller,TE,Mia,31,False
+2021,,11,,,Build The Waller,Jack,jmclaughlintu@gmail.com,,Calvin Ridley,WR,Ten,41,False
+2021,,12,,,Team Mel,Malvyn,malvynpaulino@gmail.com,,Travis Kelce,TE,KC,50,False
+2021,,13,,,Pitt's Creek,justin s,jsimone123189@gmail.com,,Najee Harris,RB,LAC,44,False
+2021,,14,,,Surrender Your Booty,Scott,scott.cipoletti@gmail.com,,J.K. Dobbins,RB,Den,6,False
+2021,,15,,,My3Sons,My3Sons,garofolo22@gmail.com,,Javonte Williams,RB,Dal,16,False
+2021,,16,,,The Wet Bandits,Bob Zanneo,zanneob@lschs.org,,Aaron Jones Sr.,RB,Min,54,False
+2021,,17,,,Team Mel,Malvyn,malvynpaulino@gmail.com,,Dalvin Cook,RB,Dal,80,False
+2021,,18,,,Pitt's Creek,justin s,jsimone123189@gmail.com,,Alvin Kamara,RB,NO,83,False
+2021,,19,,,The Verticoli,Jamison,jamison.greene9151@gmail.com,,Jonathan Taylor,RB,Ind,60,False
+2021,,20,,,Waddle Waddle Wad...,gregg,greg_grosso@yahoo.com,,Terry McLaurin,WR,Was,32,False
+2021,,21,,,King Of The North,William,william--hidden--,,Mike Evans,WR,SF,25,False
+2021,,22,,,Nuk If You Buck,Lou,lsimone@holyfamily.edu,,Clyde Edwards-Helaire,RB,KC,33,False
+2021,,23,,,King Of The North,William,william--hidden--,,Allen Robinson,WR,Det,29,False
+2021,,24,,,My3Sons,My3Sons,garofolo22@gmail.com,,Josh Allen,QB,Buf,27,False
+2021,,25,,,King Of The North,William,william--hidden--,,Josh Jacobs,RB,GB,24,False
+2021,,26,,,Surrender Your Booty,Scott,scott.cipoletti@gmail.com,,DK Metcalf,WR,Pit,36,False
+2021,,27,,,Surrender Your Booty,Scott,scott.cipoletti@gmail.com,,Michael Carter,RB,Ten,8,False
+2021,,28,,,King Of The North,William,william--hidden--,,Aaron Rodgers,QB,Pit,21,False
+2021,,29,,,My3Sons,My3Sons,garofolo22@gmail.com,,A.J. Brown,WR,NE,28,False
+2021,,30,,,King Of The North,William,william--hidden--,,Chris Carson,RB,Sea,30,False
+2021,,31,,,Nuk If You Buck,Lou,lsimone@holyfamily.edu,,Austin Ekeler,RB,Was,62,False
+2021,,32,,,Surrender Your Booty,Scott,scott.cipoletti@gmail.com,,Stefon Diggs,WR,NE,40,False
+2021,,33,,,Nuk If You Buck,Lou,lsimone@holyfamily.edu,,Chris Godwin Jr.,WR,TB,24,False
+2021,,34,,,Running is exercise,jeff,jeffpilling96@gmail.com,,David Montgomery,RB,Hou,24,False
+2021,,35,,,Saquon Bustley,Ryan,rbutzko@gmail.com,,Miles Sanders,RB,Dal,27,False
+2021,,36,,,Waddle Waddle Wad...,gregg,greg_grosso@yahoo.com,,Jonnu Smith,TE,Pit,6,False
+2021,,37,,,Running is exercise,jeff,jeffpilling96@gmail.com,,Julio Jones,WR,Phi,20,False
+2021,,38,,,My3Sons,My3Sons,garofolo22@gmail.com,,Davante Adams,WR,LAR,52,False
+2021,,39,,,The Verticoli,Jamison,jamison.greene9151@gmail.com,,Kenny Golladay,WR,NYG,11,False
+2021,,40,,,Running is exercise,jeff,jeffpilling96@gmail.com,,Antonio Brown,WR,TB,13,False
+2021,,41,,,My3Sons,My3Sons,garofolo22@gmail.com,,Chase Claypool,WR,Buf,16,False
+2021,,42,,,Surrender Your Booty,Scott,scott.cipoletti@gmail.com,,D'Andre Swift,RB,Chi,22,False
+2021,,43,,,The Wet Bandits,Bob Zanneo,zanneob@lschs.org,,DJ Moore,WR,Buf,18,False
+2021,,44,,,Nuk If You Buck,Lou,lsimone@holyfamily.edu,,Mark Andrews,TE,Bal,12,False
+2021,,45,,,Build The Waller,Jack,jmclaughlintu@gmail.com,,James Robinson,RB,NO,33,False
+2021,,46,,,Nuk If You Buck,Lou,lsimone@holyfamily.edu,,DeAndre Hopkins,WR,Bal,43,False
+2021,,47,,,Surrender Your Booty,Scott,scott.cipoletti@gmail.com,,Darrell Henderson Jr.,RB,LAR,24,False
+2021,,48,,,My3Sons,My3Sons,garofolo22@gmail.com,,Robert Tonyan,TE,Pit,7,False
+2021,,49,,,Team Mel,Malvyn,malvynpaulino@gmail.com,,Leonard Fournette,RB,Buf,6,False
+2021,,50,,,Saquon Bustley,Ryan,rbutzko@gmail.com,,Tyreek Hill,WR,Mia,45,False
+2021,,51,,,My3Sons,My3Sons,garofolo22@gmail.com,,Mike Davis,RB,Bal,27,False
+2021,,52,,,King Of The North,William,william--hidden--,,Mecole Hardman Jr.,WR,Buf,6,False
+2021,,53,,,Running is exercise,jeff,jeffpilling96@gmail.com,,Jerry Jeudy,WR,Cle,12,False
+2021,,54,,,Build The Waller,Jack,jmclaughlintu@gmail.com,,Keenan Allen,WR,LAC,35,False
+2021,,55,,,Waddle Waddle Wad...,gregg,greg_grosso@yahoo.com,,Tyler Boyd,WR,Ten,10,False
+2021,,56,,,Waddle Waddle Wad...,gregg,greg_grosso@yahoo.com,,Justin Herbert,QB,LAC,8,False
+2021,,57,,,Pitt's Creek,justin s,jsimone123189@gmail.com,,Tyler Lockett,WR,LV,11,False
+2021,,58,,,Nuk If You Buck,Lou,lsimone@holyfamily.edu,,Jalen Hurts,QB,Phi,8,False
+2021,,59,,,The Verticoli,Jamison,jamison.greene9151@gmail.com,,Dak Prescott,QB,Dal,11,False
+2021,,60,,,The Wet Bandits,Bob Zanneo,zanneob@lschs.org,,Tee Higgins,WR,Cin,9,False
+2021,,61,,,Pitt's Creek,justin s,jsimone123189@gmail.com,,Kyle Pitts Sr.,TE,Atl,20,False
+2021,,62,,,My3Sons,My3Sons,garofolo22@gmail.com,,Michael Thomas,WR,NO,11,False
+2021,,63,,,Build The Waller,Jack,jmclaughlintu@gmail.com,,Adam Thielen,WR,Pit,16,False
+2021,,64,,,Waddle Waddle Wad...,gregg,greg_grosso@yahoo.com,,Jaylen Waddle,WR,Den,8,False
+2021,,65,,,Surrender Your Booty,Scott,scott.cipoletti@gmail.com,,Kareem Hunt,RB,KC,8,False
+2021,,66,,,King Of The North,William,william--hidden--,,Damien Harris,RB,Buf,19,False
+2021,,67,,,Waddle Waddle Wad...,gregg,greg_grosso@yahoo.com,,DeVonta Smith,WR,Phi,6,False
+2021,,68,,,The Wet Bandits,Bob Zanneo,zanneob@lschs.org,,T.J. Hockenson,TE,Min,8,False
+2021,,69,,,The Verticoli,Jamison,jamison.greene9151@gmail.com,,Amari Cooper,WR,Buf,19,False
+2021,,70,,,Waddle Waddle Wad...,gregg,greg_grosso@yahoo.com,,Trey Sermon,RB,Pit,11,False
+2021,,71,,,Waddle Waddle Wad...,gregg,greg_grosso@yahoo.com,,Cooper Kupp,WR,Sea,18,False
+2021,,72,,,King Of The North,William,william--hidden--,,Patriots,DEF,NE,3,False
+2021,,73,,,Build The Waller,Jack,jmclaughlintu@gmail.com,,Russell Wilson,QB,NYG,9,False
+2021,,74,,,Saquon Bustley,Ryan,rbutzko@gmail.com,,Kyler Murray,QB,Min,8,False
+2021,,75,,,The Verticoli,Jamison,jamison.greene9151@gmail.com,,Gabe Davis,WR,Buf,3,False
+2021,,76,,,Team Mel,Malvyn,malvynpaulino@gmail.com,,Denzel Mims,WR,Dal,1,False
+2021,,77,,,The Verticoli,Jamison,jamison.greene9151@gmail.com,,James Conner,RB,Ari,4,False
+2021,,78,,,King Of The North,William,william--hidden--,,Raheem Mostert,RB,LV,8,False
+2021,,79,,,The Wet Bandits,Bob Zanneo,zanneob@lschs.org,,Diontae Johnson,WR,Cle,8,False
+2021,,80,,,Running is exercise,jeff,jeffpilling96@gmail.com,,Odell Beckham Jr.,WR,NYG,6,False
+2021,,81,,,Pitt's Creek,justin s,jsimone123189@gmail.com,,Robert Woods,WR,Pit,23,False
+2021,,82,,,King Of The North,William,william--hidden--,,Will Fuller V,WR,Mia,2,False
+2021,,83,,,Waddle Waddle Wad...,gregg,greg_grosso@yahoo.com,,Myles Gaskin,RB,Sea,13,False
+2021,,84,,,King Of The North,William,william--hidden--,,Brandin Cooks,WR,NO,6,False
+2021,,85,,,Saquon Bustley,Ryan,rbutzko@gmail.com,,Dallas Goedert,TE,Phi,3,False
+2021,,86,,,The Wet Bandits,Bob Zanneo,zanneob@lschs.org,,Michael Pittman Jr.,WR,Pit,4,False
+2021,,87,,,King Of The North,William,william--hidden--,,Rob Gronkowski,TE,TB,3,False
+2021,,88,,,Team Mel,Malvyn,malvynpaulino@gmail.com,,Zach Ertz,TE,Was,3,False
+2021,,89,,,Running is exercise,jeff,jeffpilling96@gmail.com,,Rams,DEF,LAR,1,False
+2021,,90,,,Build The Waller,Jack,jmclaughlintu@gmail.com,,Melvin Gordon III,RB,Bal,5,False
+2021,,91,,,Nuk If You Buck,Lou,lsimone@holyfamily.edu,,Nyheim Miller-Hines,RB,LAC,3,False
+2021,,92,,,Saquon Bustley,Ryan,rbutzko@gmail.com,,Deebo Samuel,WR,SF,6,False
+2021,,93,,,Saquon Bustley,Ryan,rbutzko@gmail.com,,Robbie Chosen,WR,Was,3,False
+2021,,94,,,The Wet Bandits,Bob Zanneo,zanneob@lschs.org,,JuJu Smith-Schuster,WR,NYG,5,False
+2021,,95,,,Waddle Waddle Wad...,gregg,greg_grosso@yahoo.com,,Ronald Jones,RB,Dal,19,False
+2021,,96,,,King Of The North,William,william--hidden--,,David Johnson,RB,NO,3,False
+2021,,97,,,Saquon Bustley,Ryan,rbutzko@gmail.com,,Logan Thomas,TE,SF,6,False
+2021,,98,,,The Wet Bandits,Bob Zanneo,zanneob@lschs.org,,AJ Dillon,RB,Car,4,False
+2021,,99,,,Running is exercise,jeff,jeffpilling96@gmail.com,,Evan Engram,TE,Den,2,False
+2021,,100,,,Team Mel,Malvyn,malvynpaulino@gmail.com,,Chiefs,DEF,KC,1,False
+2021,,101,,,Running is exercise,jeff,jeffpilling96@gmail.com,,J.D. McKissic,RB,Was,1,False
+2021,,102,,,The Wet Bandits,Bob Zanneo,zanneob@lschs.org,,Noah Fant,TE,NO,3,False
+2021,,103,,,Saquon Bustley,Ryan,rbutzko@gmail.com,,Ja'Marr Chase,WR,Cin,15,False
+2021,,104,,,Build The Waller,Jack,jmclaughlintu@gmail.com,,Ryan Tannehill,QB,Ten,3,False
+2021,,105,,,Saquon Bustley,Ryan,rbutzko@gmail.com,,Zack Moss,RB,Cin,8,False
+2021,,106,,,Build The Waller,Jack,jmclaughlintu@gmail.com,,Trevor Lawrence,QB,Jax,2,False
+2021,,107,,,Saquon Bustley,Ryan,rbutzko@gmail.com,,DJ Chark,WR,Atl,3,False
+2021,,108,,,Build The Waller,Jack,jmclaughlintu@gmail.com,,Tyler Higbee,TE,LAR,3,False
+2021,,109,,,Pitt's Creek,justin s,jsimone123189@gmail.com,,Elijah Moore,WR,Phi,1,False
+2021,,110,,,Waddle Waddle Wad...,gregg,greg_grosso@yahoo.com,,Gerald Everett,TE,Chi,2,False
+2021,,111,,,Team Mel,Malvyn,malvynpaulino@gmail.com,,T.Y. Hilton,WR,Dal,1,False
+2021,,112,,,Saquon Bustley,Ryan,rbutzko@gmail.com,,Matthew Stafford,QB,LAR,5,False
+2021,,113,,,The Wet Bandits,Bob Zanneo,zanneob@lschs.org,,Corey Davis,WR,NYJ,4,False
+2021,,114,,,Surrender Your Booty,Scott,scott.cipoletti@gmail.com,,Darnell Mooney,WR,NYG,3,False
+2021,,115,,,Pitt's Creek,justin s,jsimone123189@gmail.com,,Joe Burrow,QB,Cin,2,False
+2021,,116,,,Nuk If You Buck,Lou,lsimone@holyfamily.edu,,Michael Gallup,WR,Was,2,False
+2021,,117,,,Build The Waller,Jack,jmclaughlintu@gmail.com,,Marquez Callaway,WR,LV,3,False
+2021,,118,,,The Wet Bandits,Bob Zanneo,zanneob@lschs.org,,Devin Singletary,RB,NYG,13,False
+2021,,119,,,Saquon Bustley,Ryan,rbutzko@gmail.com,,Bills,DEF,Buf,2,False
+2021,,120,,,Pitt's Creek,justin s,jsimone123189@gmail.com,,Justin Fields,QB,KC,1,False
+2021,,121,,,Surrender Your Booty,Scott,scott.cipoletti@gmail.com,,Mike Gesicki,TE,Cin,2,False
+2021,,122,,,The Wet Bandits,Bob Zanneo,zanneob@lschs.org,,Jamaal Williams,RB,NO,3,False
+2021,,123,,,Running is exercise,jeff,jeffpilling96@gmail.com,,Matt Ryan,QB,Ind,1,False
+2021,,124,,,Build The Waller,Jack,jmclaughlintu@gmail.com,,Curtis Samuel,WR,Buf,4,False
+2021,,125,,,Surrender Your Booty,Scott,scott.cipoletti@gmail.com,,Kirk Cousins,QB,LV,1,False
+2021,,126,,,The Verticoli,Jamison,jamison.greene9151@gmail.com,,Jarvis Landry,WR,NO,2,False
+2021,,127,,,Nuk If You Buck,Lou,lsimone@holyfamily.edu,,Sony Michel,RB,LAC,4,False
+2021,,128,,,Waddle Waddle Wad...,gregg,greg_grosso@yahoo.com,,Trey Lance,QB,LAC,1,False
+2021,,129,,,Pitt's Creek,justin s,jsimone123189@gmail.com,,Terrace Marshall Jr.,WR,Mia,1,False
+2021,,130,,,The Verticoli,Jamison,jamison.greene9151@gmail.com,,Hunter Henry,TE,NE,1,False
+2021,,131,,,My3Sons,My3Sons,garofolo22@gmail.com,,Kenyan Drake,RB,Bal,2,False
+2021,,132,,,Running is exercise,jeff,jeffpilling96@gmail.com,,Commanders,DEF,Was,1,False
+2021,,133,,,Nuk If You Buck,Lou,lsimone@holyfamily.edu,,Cole Beasley,WR,NYG,1,False
+2021,,134,,,Surrender Your Booty,Scott,scott.cipoletti@gmail.com,,Steelers,DEF,Pit,1,False
+2021,,135,,,My3Sons,My3Sons,garofolo22@gmail.com,,Tony Pollard,RB,Ten,1,False
+2021,,136,,,Build The Waller,Jack,jmclaughlintu@gmail.com,,Phillip Lindsay,RB,Ind,5,False
+2021,,137,,,Nuk If You Buck,Lou,lsimone@holyfamily.edu,,Giovani Bernard,RB,TB,2,False
+2021,,138,,,The Verticoli,Jamison,jamison.greene9151@gmail.com,,Daniel Jones,QB,Ind,1,False
+2021,,139,,,Team Mel,Malvyn,malvynpaulino@gmail.com,,Hollywood Brown,WR,Phi,1,False
+2021,,140,,,Nuk If You Buck,Lou,lsimone@holyfamily.edu,,Ben Roethlisberger,QB,Pit,1,False
+2021,,141,,,Nuk If You Buck,Lou,lsimone@holyfamily.edu,,Laviska Shenault Jr.,WR,Buf,2,False
+2021,,142,,,My3Sons,My3Sons,garofolo22@gmail.com,,Damien Williams,RB,Ari,1,False
+2021,,143,,,Build The Waller,Jack,jmclaughlintu@gmail.com,,Cam Akers,RB,Sea,4,False
+2021,,144,,,Pitt's Creek,justin s,jsimone123189@gmail.com,,A.J. Green,WR,Ari,1,False
+2021,,145,,,The Verticoli,Jamison,jamison.greene9151@gmail.com,,Marvin Jones Jr.,WR,Det,1,False
+2021,,146,,,Team Mel,Malvyn,malvynpaulino@gmail.com,,Baker Mayfield,QB,TB,1,False
+2021,,147,,,Pitt's Creek,justin s,jsimone123189@gmail.com,,Jakobi Meyers,WR,Jax,3,False
+2021,,148,,,Surrender Your Booty,Scott,scott.cipoletti@gmail.com,,Sterling Shepard,WR,TB,1,False
+2021,,149,,,My3Sons,My3Sons,garofolo22@gmail.com,,49ers,DEF,SF,1,False
+2021,,150,,,Pitt's Creek,justin s,jsimone123189@gmail.com,,Latavius Murray,RB,Buf,1,False
+2021,,151,,,The Verticoli,Jamison,jamison.greene9151@gmail.com,,Randall Cobb,WR,NYJ,1,False
+2021,,152,,,Team Mel,Malvyn,malvynpaulino@gmail.com,,Cowboys,DEF,Dal,1,False
+2021,,153,,,Nuk If You Buck,Lou,lsimone@holyfamily.edu,,Russell Gage Jr.,WR,SF,3,False
+2021,,154,,,Surrender Your Booty,Scott,scott.cipoletti@gmail.com,,Travis Etienne Jr.,RB,NO,2,False
+2021,,155,,,My3Sons,My3Sons,garofolo22@gmail.com,,Carson Wentz,QB,Min,2,False
+2021,,156,,,Pitt's Creek,justin s,jsimone123189@gmail.com,,Rondale Moore,WR,Min,1,False
+2021,,157,,,The Verticoli,Jamison,jamison.greene9151@gmail.com,,Buccaneers,DEF,TB,1,False
+2021,,158,,,Team Mel,Malvyn,malvynpaulino@gmail.com,,Derek Carr,QB,NO,1,False
+2021,,159,,,Team Mel,Malvyn,malvynpaulino@gmail.com,,Alexander Mattison,RB,Mia,1,False
+2021,,160,,,Build The Waller,Jack,jmclaughlintu@gmail.com,,Antonio Gibson,RB,NE,8,True
+2021,,161,,,Pitt's Creek,justin s,jsimone123189@gmail.com,,Brandon Aiyuk,WR,SF,8,True
+2021,,162,,,King Of The North,William,william--hidden--,,Mike Williams,WR,Pit,7,True
+2021,,163,,,The Wet Bandits,Bob Zanneo,zanneob@lschs.org,,Lamar Jackson,QB,Bal,12,True
+2021,,164,,,Team Mel,Malvyn,malvynpaulino@gmail.com,,CeeDee Lamb,WR,Dal,12,True
+2021,,165,,,Running is exercise,jeff,jeffpilling96@gmail.com,,Tom Brady,QB,TB,11,True
+2021,,166,,,Waddle Waddle Wad...,gregg,greg_grosso@yahoo.com,,Courtland Sutton,WR,Den,13,True
+2021,,167,,,The Verticoli,Jamison,jamison.greene9151@gmail.com,,Chase Edmonds,RB,Was,8,True
+2021,,168,,,My3Sons,My3Sons,garofolo22@gmail.com,,Justin Jefferson,WR,Min,9,True
