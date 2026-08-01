@@ -134,6 +134,21 @@ p { max-width: 68ch; }
 .former-note { font-size: 13px; color: var(--ink-faint); line-height: 1.7; }
 .former-note b { color: var(--ink-dim); }
 
+.target-grid { display: flex; flex-direction: column; gap: 10px; margin: 16px 0; }
+.target-row {
+  display: grid; grid-template-columns: 1fr auto; gap: 4px 12px; align-items: baseline;
+  background: var(--bg-elevated); border: 1px solid var(--line-strong); border-radius: 10px; padding: 12px 14px;
+}
+.target-row .pn { font-weight: 800; font-size: 14px; }
+.target-row .pos { font-size: 11px; color: var(--ink-faint); font-weight: 600; margin-left: 6px; }
+.target-row .px { font-family: var(--font-mono); font-weight: 800; font-size: 15px; color: var(--accent); text-align: right; }
+.target-row .why { grid-column: 1 / -1; font-size: 12px; color: var(--ink-dim); line-height: 1.5; margin-top: 2px; }
+.watch {
+  display: inline-block; font-size: 10px; font-weight: 700; padding: 2px 8px; border-radius: 999px;
+  background: var(--danger-bg, rgba(193,85,61,0.16)); color: var(--danger); margin-top: 4px;
+}
+.avoid-row .px { color: var(--danger); }
+
 ol.plan { padding-left: 22px; margin: 0; }
 ol.plan li { margin-bottom: 16px; font-size: 15px; }
 ol.plan li b { color: var(--accent); }
@@ -208,8 +223,11 @@ table.dollars td.num { font-family: var(--font-mono); text-align: right; }
     <p>Your own results back this up in miniature: your single best season, <b>2022</b> (10&ndash;4, 1,678 PF
       &mdash; your highest ever by nearly 200 points), was also your <i>most</i> concentrated RB-heavy draft on
       record (85% RB share, one pick eating 73% of your position spend). But your two <i>worst</i> finishes
-      (2020, 11th; 2021, 12th) were also RB-heavy builds (68% and 64% RB share). Same general shape, wildly
-      different outcomes &mdash; the allocation wasn't the variable, the players you picked within it were.</p>
+      (2020, 11th; 2021, 12th) were also RB-heavy builds (68% and 64% RB share). Same general shape, opposite
+      outcomes &mdash; the allocation alone doesn't explain either result. This data can't separate player
+      evaluation from plain injury luck (a stars-and-scrubs build is especially exposed if your one or two RB
+      studs get hurt), and 2020/2021 may well have been hit by both. Read it as "allocation isn't the lever,"
+      not "your picks were bad those years."</p>
   </section>
 
   <section>
@@ -248,6 +266,27 @@ table.dollars td.num { font-family: var(--font-mono); text-align: right; }
       tier (~$15)</b>, <b>1 DEF grabbed for $1&ndash;$3</b>. Your $15 keeper (Quinshon Judkins) already covers
       one of those RB slots before the auction even opens, effectively giving you ~$185 to build the rest of
       the roster with.</p>
+    <p style="margin-top:14px;">Slot-by-slot spend template for that ~$185, built from the tables above
+      (Judkins fills one RB bench/FLEX spot for free):</p>
+    <div class="table-wrap">
+      <table class="dollars">
+        <thead><tr><th>Roster slot</th><th class="num">Target $</th></tr></thead>
+        <tbody>
+          <tr><td>RB1 (start)</td><td class="num mono">$50&ndash;60</td></tr>
+          <tr><td>FLEX &mdash; RB2 or WR2</td><td class="num mono">$40&ndash;50</td></tr>
+          <tr><td>WR1 (start)</td><td class="num mono">$35&ndash;48</td></tr>
+          <tr><td>FLEX &mdash; RB3 or WR3</td><td class="num mono">$15&ndash;25</td></tr>
+          <tr><td>TE (start) &mdash; pay-up path</td><td class="num mono">$40+ <span style="color:var(--ink-faint)">(or $10&ndash;13 punt path)</span></td></tr>
+          <tr><td>QB (start)</td><td class="num mono">$8&ndash;15</td></tr>
+          <tr><td>DEF (start)</td><td class="num mono">$1&ndash;3</td></tr>
+          <tr><td>Bench (5&ndash;6 spots)</td><td class="num mono">$1&ndash;5 each</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <p style="margin-top:14px;">That's a guide, not a formula &mdash; the whole point of the value-zone section
+      below is that <i>which</i> player fills each slot matters more than hitting these numbers exactly. Punting
+      TE (going $10&ndash;13 instead of $40+) is the single biggest lever if you want extra room elsewhere,
+      since it frees up $27&ndash;30 for one more RB/WR upgrade.</p>
   </section>
 
   <section>
@@ -395,6 +434,138 @@ table.dollars td.num { font-family: var(--font-mono); text-align: right; }
   </section>
 
   <section>
+    <h2 class="section-title">Your target board</h2>
+    <p>Named 2026 players at the value-zone plateaus, priced from your league's real curve, with which owners'
+      history says to expect competition. Not a full board &mdash; the players most worth planning around.</p>
+
+    <h3 style="font-size:14px; margin:22px 0 4px; color:var(--ink-dim);">Running back</h3>
+    <div class="target-grid">
+      <div class="target-row">
+        <span class="pn">James Cook III<span class="pos">RB5</span></span><span class="px">$55</span>
+        <span class="why">Top of the RB5&ndash;9 plateau (only ~5% price drop per rank in this range) &mdash;
+          if you're going stars-and-scrubs like your history suggests, this tier is where to land it.
+          <span class="watch">watch: CMK21 (RB 1.24x)</span></span>
+      </div>
+      <div class="target-row">
+        <span class="pn">Ashton Jeanty<span class="pos">RB6</span></span><span class="px">$52</span>
+        <span class="why">Same plateau, rookie-year workload profile. <span class="watch">watch: Bob Zanneo, Scott, Kerri (all RB 1.05&ndash;1.11x)</span></span>
+      </div>
+      <div class="target-row">
+        <span class="pn">Derrick Henry<span class="pos">RB9</span></span><span class="px">$47</span>
+        <span class="why">Bottom of the same flat tier &mdash; if the room pushes Cook/Jeanty past plateau
+          price, Henry is the fallback at a real discount for similar tier value.</span>
+      </div>
+      <div class="target-row">
+        <span class="pn">Kenneth Walker III<span class="pos">RB16</span></span><span class="px">$25</span>
+        <span class="why">Start of the RB16&ndash;20 plateau, right after the RB13&ndash;15 crash. No rush to
+          get here early &mdash; it holds value through pick 20.</span>
+      </div>
+      <div class="target-row">
+        <span class="pn">TreVeyon Henderson<span class="pos">RB21</span></span><span class="px">$19</span>
+        <span class="why">Real 2026 sleeper signal (lead role in a Patriots offense expected to lean on him) at
+          a plateau price &mdash; upside beyond his rank if the role holds.</span>
+      </div>
+    </div>
+
+    <h3 style="font-size:14px; margin:22px 0 4px; color:var(--ink-dim);">Wide receiver</h3>
+    <div class="target-grid">
+      <div class="target-row">
+        <span class="pn">Ladd McConkey<span class="pos">WR11</span></span><span class="px">$28</span>
+        <span class="why">First rank past the WR10 cliff &mdash; the room pays a real premium for WR10 that
+          the talent gap likely doesn't justify. <span class="watch">watch: gregg (WR 1.31x)</span></span>
+      </div>
+      <div class="target-row">
+        <span class="pn">Brian Thomas Jr.<span class="pos">WR12</span></span><span class="px">$27</span>
+        <span class="why">Same plateau as McConkey, one rank later. <span class="watch">watch: gregg, Lou (WR 1.09&ndash;1.31x)</span></span>
+      </div>
+      <div class="target-row">
+        <span class="pn">Rome Odunze<span class="pos">WR26</span></span><span class="px">$12</span>
+        <span class="why">Deep into the flat WR tail &mdash; cheap flex/bench depth with real target-share
+          upside in a maturing offense.</span>
+      </div>
+    </div>
+
+    <h3 style="font-size:14px; margin:22px 0 4px; color:var(--ink-dim);">Quarterback &amp; tight end</h3>
+    <div class="target-grid">
+      <div class="target-row">
+        <span class="pn">Bo Nix<span class="pos">QB8</span></span><span class="px">$8</span>
+        <span class="why">Right at the cheap-streamer tier your league already prices QB into (avg $15 total
+          for two QBs). Don't pay QB2&ndash;5 prices when this exists.</span>
+      </div>
+      <div class="target-row">
+        <span class="pn">Sam LaPorta<span class="pos">TE6</span></span><span class="px">$11</span>
+        <span class="why">Start of the TE6+ plateau, right after the brutal TE1&rarr;TE5 cliff run. The
+          rational punt-TE landing spot if you're not fighting for TE1.
+          <span class="watch">watch: Malvyn will likely already be out of the TE market by here</span></span>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <h2 class="section-title">Keeper stash candidates for 2027</h2>
+    <p>Same keeper rule applies going forward (draft price + $10 next year, capped at a $10-or-under original
+      price). These are cheap 2026 targets worth grabbing partly <i>because</i> a cheap hit becomes a great
+      keeper next season &mdash; speculative by nature, treat as late-round/bench dart throws, not plan-around picks.</p>
+    <div class="target-grid">
+      <div class="target-row">
+        <span class="pn">Josh Downs<span class="pos">WR43</span></span><span class="px">$4</span>
+        <span class="why">Real situational signal: Michael Pittman Jr.'s departure opens 100+ Colts targets
+          with Downs positioned to absorb them. At $4, this is the highest-upside-per-dollar name on the whole
+          board &mdash; and a $14 keeper next year if it hits.</span>
+      </div>
+      <div class="target-row">
+        <span class="pn">TreVeyon Henderson<span class="pos">RB21</span></span><span class="px">$19</span>
+        <span class="why">Already listed above as a live target &mdash; priced just over the $10 keeper
+          threshold, so it's a 2026 asset first and a maybe-keeper second, not both at once.</span>
+      </div>
+      <div class="target-row">
+        <span class="pn">Rachaad White<span class="pos">RB36</span></span><span class="px">$6</span>
+        <span class="why">Cheap enough to keep outright if his workload stabilizes; low-cost dart with a real
+          NFL role, not a pure lottery ticket.</span>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <h2 class="section-title">Overvalued this year &mdash; don't chase</h2>
+    <p>Where real 2026 outlook signal and this room's known habits point toward the same players going for more
+      than they're worth:</p>
+    <div class="target-grid">
+      <div class="target-row avoid-row">
+        <span class="pn">De'Von Achane<span class="pos">RB7</span></span><span class="px">$50</span>
+        <span class="why">Sits at the top of the RB5&ndash;9 plateau on name value, but Miami changed
+          quarterback, head coach, and scheme this offseason &mdash; real situational risk the market hasn't
+          fully priced out yet. Cook, Jeanty, or Henry (same tier, same section above) are safer bets at
+          similar money.</span>
+      </div>
+      <div class="target-row avoid-row">
+        <span class="pn">Alvin Kamara<span class="pos">RB17</span></span><span class="px">$24</span>
+        <span class="why">Classic name-recognition trap: real 2026 signal has Travis Etienne taking the lead
+          carry share in New Orleans, but Kamara's reputation will likely keep his price above his current
+          role's value. <span class="watch">watch: Kerri, CMK21 (both overweight RB)</span> paying up on the name.</span>
+      </div>
+      <div class="target-row avoid-row">
+        <span class="pn">Garrett Wilson<span class="pos">WR18</span></span><span class="px">$18</span>
+        <span class="why">A talented 2022 first-rounder the room will want to believe in, but he's finished
+          outside the top 20 PPR wideouts in three of his four seasons. <span class="watch">watch: gregg (WR 1.31x)</span>
+          is the most likely to reach for the name over the production.</span>
+      </div>
+      <div class="target-row avoid-row">
+        <span class="pn">Lamar Jackson / Jayden Daniels<span class="pos">QB2 / QB4</span></span><span class="px">$25 / $17</span>
+        <span class="why">Both being drafted as top-5 QBs again despite real 2025 volatility &mdash; the room
+          "forgives" name-brand QBs fast. <span class="watch">watch: Malvyn, Kassandra, Jillian (all heavy QB spenders)</span>
+          most likely to pay full price here when Bo Nix exists at $8.</span>
+      </div>
+      <div class="target-row avoid-row">
+        <span class="pn">TE2&ndash;TE5 tier<span class="pos">Bowers / Loveland / Warren / Kraft</span></span><span class="px">$13&ndash;28</span>
+        <span class="why">The single worst structural value on the board: expensive enough to hurt, not
+          elite enough to be worth it, sitting right after your league's steepest cliff (TE1&rarr;TE2, &minus;36%).
+          <span class="watch">watch: Malvyn will drive this whether you bid or not</span> &mdash; let him.</span>
+      </div>
+    </div>
+  </section>
+
+  <section>
     <h2 class="section-title">Departed for 2026</h2>
     <p class="former-note"><b>Jeff (Simone)</b> and <b>William</b> are both out this year &mdash; Katie and
       Uncle Lou take their place. William was almost perfectly average on every axis (the least exploitable
@@ -462,7 +633,10 @@ table.dollars td.num { font-family: var(--font-mono); text-align: right; }
     team-seasons, 6 champions). Position biases and pace/shape indices are each owner's spend compared to the
     league's own average that season, not an absolute scale &mdash; a 1.0x means "exactly like everyone else
     that year." Roster reflects the 2026 lineup (Katie and Uncle Lou in; Jeff Simone and William out). Scoring:
-    0.5 PPR, no kicker, standard passing/rushing/receiving TD split. Companion tool: the live draft assistant
+    0.5 PPR, no kicker, standard passing/rushing/receiving TD split. Target-board $ figures come from your
+    league's own price curve, which is fully verified; the situational notes (coaching changes, target-share
+    shifts, injury/role risk) come from current outside analysis pulled in July/August 2026 and are the one
+    part of this report worth double-checking closer to draft day. Companion tool: the live draft assistant
     for draft night itself.
   </footer>
 
