@@ -13,6 +13,7 @@ from .analysis.inflation import build_position_rank_curve
 from .analysis.tendencies import build_tendency_profiles, format_profile_text
 from .auth import YahooOAuth
 from .live_assistant import LiveDraftShell
+from .web import generate_html as generate_live_web_html
 from .yahoo_client import YahooFantasyClient
 
 load_dotenv()
@@ -156,6 +157,43 @@ def live(projections, teams, budget_per_team, roster_size, profiles_csv, log_pat
     profile_df = pd.read_csv(profiles_csv) if profiles_csv else None
     shell = LiveDraftShell(proj, curve, team_list, budget_per_team, roster_size, profile_df, log_path)
     shell.cmdloop()
+
+
+@cli.command("live-web")
+@click.option("--projections", required=True, help="CSV with player_name, position, and projected_rank or projected_points.")
+@click.option("--teams", required=True, help="Comma-separated team names to pre-fill (editable in the page's Setup tab).")
+@click.option("--num-teams", default=None, type=int, help="Defaults to the count of --teams.")
+@click.option("--budget-per-team", default=lambda: float(os.environ.get("LEAGUE_BUDGET", 200)), type=float)
+@click.option("--roster-size", required=True, type=int, help="Total roster spots per team.")
+@click.option("--title", default="Draft Assistant")
+@click.option("--eyebrow", default="Live Draft Assistant")
+@click.option("--out", "out_path", default="draft_assistant.html")
+def live_web(projections, teams, num_teams, budget_per_team, roster_size, title, eyebrow, out_path):
+    """Generate the self-contained live-draft web page (see README) as a static HTML file.
+
+    Publish the resulting file (e.g. via an Artifact) or just open it in a
+    browser -- everything runs client-side, no server needed, so it stays
+    fast under a live auction's bid timer.
+    """
+    df = storage.load_all_drafts()
+    if df.empty:
+        raise click.ClickException("No cached draft data found. Run `fetch-history` first.")
+    curve = build_position_rank_curve(df)
+    proj = load_projections(projections)
+    team_list = [t.strip() for t in teams.split(",")]
+    html = generate_live_web_html(
+        curve,
+        proj,
+        num_teams or len(team_list),
+        budget_per_team,
+        roster_size,
+        team_list,
+        title=title,
+        eyebrow=eyebrow,
+    )
+    with open(out_path, "w") as f:
+        f.write(html)
+    print(f"Wrote {out_path} ({len(html)} bytes)")
 
 
 if __name__ == "__main__":

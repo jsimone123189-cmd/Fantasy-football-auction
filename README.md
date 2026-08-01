@@ -156,6 +156,36 @@ room relative to how much value is still on the board) — the same approach
 tools like auction inflation calculators use, but calibrated to your league's
 actual spending patterns instead of a generic market.
 
+### Live draft assistant — phone web version
+
+For an actual timed live auction, typing CLI commands is slower than you
+want it to be. `draft-helper live-web` generates the same suggested-bid math
+as a self-contained, tap-based HTML page — no server, no network calls once
+loaded, so it stays fast under a bid timer:
+
+```bash
+draft-helper live-web \
+  --projections data/projections/2026.csv \
+  --teams "Alice,Bob,Carol,..." \
+  --roster-size 14 \
+  --budget-per-team 200 \
+  --out draft_assistant.html
+```
+
+Open the resulting file in a phone browser (or publish it somewhere and
+open the link). It has four tabs: **Nominate** (search a player, tap the
+team, enter the price — get an instant suggested max bid), **Board** (top
+undrafted players by suggested max, filterable by position), **Budgets**
+(everyone's remaining $ and max possible bid, color-coded), and **Setup**
+(edit tonight's team list / budget / roster size, or reset for a new
+draft). State autosaves to the browser's local storage as you go, so an
+accidental reload mid-draft doesn't lose your log — there's also an
+**Undo last pick** button for mis-taps.
+
+This intentionally does *not* show owner tendency history — that's a
+separate, pre-draft-only concern (see below) — because a live tool used
+under time pressure should stay narrowly focused on the mechanics.
+
 ## How the numbers work
 
 - **Position/rank price curve** (`draft_helper/analysis/inflation.py`):
