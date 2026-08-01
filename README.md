@@ -169,8 +169,16 @@ draft-helper live-web \
   --teams "Alice,Bob,Carol,..." \
   --roster-size 14 \
   --budget-per-team 200 \
+  --keepers data/keepers/2026_locked.csv \
   --out draft_assistant.html
 ```
+
+`--keepers` is optional: a CSV of `player_name,position,team_name,cost` for
+players already locked to a roster before the auction starts (see
+`data/keepers/2026_locked.csv` for the format). Each keeper is pre-logged as
+a pick when the page loads — their cost comes off that team's budget and
+they never show up as nominatable, without you having to remember to log
+them manually on draft night.
 
 Open the resulting file in a phone browser (or publish it somewhere and
 open the link). It has four tabs: **Nominate** (search a player, tap the
@@ -203,6 +211,13 @@ under time pressure should stay narrowly focused on the mechanics.
   usage — all from your league's actual pick log, matched across seasons by
   Yahoo's stable manager GUID so it still works when someone renames their
   team.
+- **`data/standings.csv`**: season/team/wins/losses/PF/PA/finish for every
+  team-season on file, used one-off to check whether any draft-day spending
+  pattern actually predicts winning (see the strategy report) — short
+  answer, in this league's history: no single position-allocation metric
+  does. Not wired into a CLI command since it's pre-draft analysis, not a
+  repeated operation; regenerate by hand from Yahoo's Standings tab (with
+  season selector) if you want to refresh it next year.
 
 ## A note on the Yahoo API integration
 

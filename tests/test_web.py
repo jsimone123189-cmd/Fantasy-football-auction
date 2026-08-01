@@ -45,3 +45,24 @@ def test_generate_html_has_no_leftover_placeholders():
     assert "{data_json}" not in html
     assert "{title}" not in html
     assert html.count("<title>") == 1
+
+
+def test_generate_html_embeds_keepers_for_prelogging():
+    curve = make_curve()
+    proj = pd.DataFrame(
+        [
+            {"player_name": "Star RB", "position": "RB", "projected_rank": 1},
+            {"player_name": "Backup RB", "position": "RB", "projected_rank": 2},
+        ]
+    )
+    keepers = pd.DataFrame([{"player_name": "Rookie Sleeper", "position": "RB", "team_name": "A", "cost": 15}])
+    html = generate_html(
+        curve, proj, num_teams=1, budget_per_team=200, roster_size=5, team_names=["A", "B"], keepers=keepers
+    )
+    match = re.search(r'<script id="draftData" type="application/json">(.*?)</script>', html, re.S)
+    data = json.loads(match.group(1))
+    assert data["keepers"] == [
+        {"name": "Rookie Sleeper", "pos": "RB", "team": "A", "price": 15.0, "baseline": 15.0}
+    ]
+    # keeper isn't part of the ranked projections pool -- only pre-logged client-side
+    assert "Rookie Sleeper" not in {p["name"] for p in data["players"]}

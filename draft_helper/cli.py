@@ -167,8 +167,9 @@ def live(projections, teams, budget_per_team, roster_size, profiles_csv, log_pat
 @click.option("--roster-size", required=True, type=int, help="Total roster spots per team.")
 @click.option("--title", default="Draft Assistant")
 @click.option("--eyebrow", default="Live Draft Assistant")
+@click.option("--keepers", default=None, help="Optional CSV of locked keepers: player_name,position,team_name,cost.")
 @click.option("--out", "out_path", default="draft_assistant.html")
-def live_web(projections, teams, num_teams, budget_per_team, roster_size, title, eyebrow, out_path):
+def live_web(projections, teams, num_teams, budget_per_team, roster_size, title, eyebrow, keepers, out_path):
     """Generate the self-contained live-draft web page (see README) as a static HTML file.
 
     Publish the resulting file (e.g. via an Artifact) or just open it in a
@@ -181,6 +182,7 @@ def live_web(projections, teams, num_teams, budget_per_team, roster_size, title,
     curve = build_position_rank_curve(df)
     proj = load_projections(projections)
     team_list = [t.strip() for t in teams.split(",")]
+    keeper_df = pd.read_csv(keepers) if keepers else None
     html = generate_live_web_html(
         curve,
         proj,
@@ -189,6 +191,7 @@ def live_web(projections, teams, num_teams, budget_per_team, roster_size, title,
         roster_size,
         team_list,
         title=title,
+        keepers=keeper_df,
         eyebrow=eyebrow,
     )
     with open(out_path, "w") as f:

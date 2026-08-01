@@ -367,13 +367,8 @@ table.board td.px {{ color: var(--accent); }}
 
   var DEFAULT_TEAMS = {default_teams_json};
 
-  function loadState() {{
-    var raw = null;
-    try {{ raw = localStorage.getItem(STORAGE_KEY); }} catch (e) {{}}
-    if (raw) {{
-      try {{ return JSON.parse(raw); }} catch (e) {{}}
-    }}
-    return {{
+  function freshState() {{
+    var state = {{
       budgetPerTeam: DATA.budget,
       rosterSize: DATA.rosterSize,
       teamNames: DEFAULT_TEAMS.slice(),
@@ -381,6 +376,37 @@ table.board td.px {{ color: var(--accent); }}
       pool: DATA.players.map(function (p) {{ return Object.assign({{ drafted: false }}, p); }}),
       log: []
     }};
+    applyKeepers(state);
+    return state;
+  }}
+
+  // Locked-in keepers are already on a roster before the auction starts --
+  // pre-logged as picks so their $ comes off that team's budget and they
+  // never show up as nominatable in the live pool.
+  function applyKeepers(state) {{
+    (DATA.keepers || []).forEach(function (k) {{
+      if (state.teamNames.indexOf(k.team) === -1) state.teamNames.push(k.team);
+      var t = state.teams[k.team] || {{ spent: 0, picks: [] }};
+      t.spent += k.price;
+      t.picks.push(k.name);
+      state.teams[k.team] = t;
+      var existing = state.pool.filter(function (p) {{ return p.name === k.name; }})[0];
+      if (existing) {{
+        existing.drafted = true;
+      }} else {{
+        state.pool.push({{ name: k.name, pos: k.pos, rank: 0, baseline: k.baseline, drafted: true }});
+      }}
+      state.log.push({{ name: k.name, pos: k.pos, team: k.team, price: k.price, baseline: k.baseline, keeper: true }});
+    }});
+  }}
+
+  function loadState() {{
+    var raw = null;
+    try {{ raw = localStorage.getItem(STORAGE_KEY); }} catch (e) {{}}
+    if (raw) {{
+      try {{ return JSON.parse(raw); }} catch (e) {{}}
+    }}
+    return freshState();
   }}
 
   var state = loadState();
@@ -678,6 +704,8 @@ table.board td.px {{ color: var(--accent); }}
     state.log = [];
     ensureTeams();
     Object.keys(state.teams).forEach(function (k) {{ state.teams[k] = {{ spent: 0, picks: [] }}; }});
+    applyKeepers(state);
+    ensureTeams();
     selectedTeam = state.teamNames[0] || null;
     save();
     showToast("Draft reset with " + state.teamNames.length + " teams.");
@@ -704,7 +732,13 @@ def generate_html(
     title: str = "Draft Assistant",
     eyebrow: str = "Live Draft Assistant",
     storage_key: str = "draft-assistant-v1",
+    keepers: pd.DataFrame | None = None,
 ) -> str:
+    """keepers: optional DataFrame with player_name, position, team_name, cost --
+    players already locked to a roster before the auction starts. Pre-logged
+    as picks in the generated page so their $ comes off that team's budget
+    and they never appear as nominatable.
+    """
     total_budget = num_teams * budget_per_team
     players = []
     for _, row in projections.iterrows():
@@ -712,7 +746,20 @@ def generate_html(
         players.append({"name": row["player_name"], "pos": row["position"], "rank": int(row["projected_rank"]), "baseline": bv})
     players.sort(key=lambda p: -p["baseline"])
 
-    data = {"players": players, "budget": budget_per_team, "rosterSize": roster_size}
+    keeper_list = []
+    if keepers is not None:
+        for _, row in keepers.iterrows():
+            keeper_list.append(
+                {
+                    "name": row["player_name"],
+                    "pos": row["position"],
+                    "team": row["team_name"],
+                    "price": float(row["cost"]),
+                    "baseline": float(row["cost"]),
+                }
+            )
+
+    data = {"players": players, "budget": budget_per_team, "rosterSize": roster_size, "keepers": keeper_list}
     return TEMPLATE.format(
         title=title,
         eyebrow=eyebrow,
