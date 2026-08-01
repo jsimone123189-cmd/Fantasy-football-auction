@@ -1,0 +1,137 @@
+player_name,position,projected_rank
+Josh Allen,QB,1
+Lamar Jackson,QB,2
+Drake Maye,QB,3
+Jayden Daniels,QB,4
+Patrick Mahomes,QB,5
+Joe Burrow,QB,6
+Jalen Hurts,QB,7
+Bo Nix,QB,8
+Jared Goff,QB,9
+Justin Herbert,QB,10
+C.J. Stroud,QB,11
+Kyler Murray,QB,12
+Brock Purdy,QB,13
+Baker Mayfield,QB,14
+Trevor Lawrence,QB,15
+Caleb Williams,QB,16
+Justin Fields,QB,17
+Matthew Stafford,QB,18
+Dak Prescott,QB,19
+Jordan Love,QB,20
+Jahmyr Gibbs,RB,1
+Bijan Robinson,RB,2
+Christian McCaffrey,RB,3
+Jonathan Taylor,RB,4
+James Cook III,RB,5
+Ashton Jeanty,RB,6
+De'Von Achane,RB,7
+Saquon Barkley,RB,8
+Derrick Henry,RB,9
+Josh Jacobs,RB,10
+Kyren Williams,RB,11
+Omarion Hampton,RB,12
+Breece Hall,RB,13
+Chase Brown,RB,14
+Bucky Irving,RB,15
+Kenneth Walker III,RB,16
+Alvin Kamara,RB,17
+David Montgomery,RB,18
+Isiah Pacheco,RB,19
+Chuba Hubbard,RB,20
+TreVeyon Henderson,RB,21
+RJ Harvey,RB,22
+Tony Pollard,RB,23
+Rhamondre Stevenson,RB,24
+Javonte Williams,RB,25
+Aaron Jones Sr.,RB,26
+Joe Mixon,RB,27
+Najee Harris,RB,28
+Zach Charbonnet,RB,29
+Tyrone Tracy Jr.,RB,30
+Travis Etienne Jr.,RB,31
+D'Andre Swift,RB,32
+J.K. Dobbins,RB,33
+Jaylen Warren,RB,34
+Brian Robinson,RB,35
+Rachaad White,RB,36
+Austin Ekeler,RB,37
+Devin Singletary,RB,38
+Jerome Ford,RB,39
+Tank Bigsby,RB,40
+Ja'Marr Chase,WR,1
+Puka Nacua,WR,2
+Jaxon Smith-Njigba,WR,3
+Amon-Ra St. Brown,WR,4
+A.J. Brown,WR,5
+Nico Collins,WR,6
+Malik Nabers,WR,7
+Justin Jefferson,WR,8
+CeeDee Lamb,WR,9
+Drake London,WR,10
+Ladd McConkey,WR,11
+Brian Thomas Jr.,WR,12
+Marvin Harrison Jr.,WR,13
+Tyreek Hill,WR,14
+Davante Adams,WR,15
+DK Metcalf,WR,16
+Terry McLaurin,WR,17
+Garrett Wilson,WR,18
+Tee Higgins,WR,19
+DJ Moore,WR,20
+Courtland Sutton,WR,21
+Zay Flowers,WR,22
+George Pickens,WR,23
+Jameson Williams,WR,24
+Jordan Addison,WR,25
+Rome Odunze,WR,26
+Mike Evans,WR,27
+Chris Olave,WR,28
+Calvin Ridley,WR,29
+Xavier Worthy,WR,30
+Jaylen Waddle,WR,31
+Deebo Samuel,WR,32
+Keenan Allen,WR,33
+Jerry Jeudy,WR,34
+Rashee Rice,WR,35
+Travis Hunter,WR,36
+Emeka Egbuka,WR,37
+Matthew Golden,WR,38
+Tetairoa McMillan,WR,39
+Ricky Pearsall,WR,40
+Jauan Jennings,WR,41
+Khalil Shakir,WR,42
+Josh Downs,WR,43
+Rashod Bateman,WR,44
+Darnell Mooney,WR,45
+Trey McBride,TE,1
+Brock Bowers,TE,2
+Colston Loveland,TE,3
+Tyler Warren,TE,4
+Tucker Kraft,TE,5
+Sam LaPorta,TE,6
+George Kittle,TE,7
+Travis Kelce,TE,8
+T.J. Hockenson,TE,9
+Mark Andrews,TE,10
+David Njoku,TE,11
+Dalton Kincaid,TE,12
+Evan Engram,TE,13
+Jonnu Smith,TE,14
+Dallas Goedert,TE,15
+Broncos,DEF,1
+Steelers,DEF,2
+Eagles,DEF,3
+Vikings,DEF,4
+Ravens,DEF,5
+Bills,DEF,6
+Texans,DEF,7
+Rams,DEF,8
+49ers,DEF,9
+Packers,DEF,10
+Jets,DEF,11
+Bears,DEF,12
+Chiefs,DEF,13
+Lions,DEF,14
+Cardinals,DEF,15
+Patriots,DEF,16
