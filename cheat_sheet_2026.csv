@@ -1,137 +1,244 @@
-player_name,position,projected_rank,target_price
-Jahmyr Gibbs,RB,1,77.6
-Bijan Robinson,RB,2,69.7
-Christian McCaffrey,RB,3,65.7
-Ja'Marr Chase,WR,1,63.0
-Puka Nacua,WR,2,59.0
-Jonathan Taylor,RB,4,57.1
-James Cook III,RB,5,54.5
-Jaxon Smith-Njigba,WR,3,52.8
-Ashton Jeanty,RB,6,51.6
-De'Von Achane,RB,7,50.1
-Amon-Ra St. Brown,WR,4,49.1
-Saquon Barkley,RB,8,48.6
-A.J. Brown,WR,5,48.1
-Derrick Henry,RB,9,46.2
-Josh Jacobs,RB,10,43.2
-Trey McBride,TE,1,43.1
-Nico Collins,WR,6,43.0
-Malik Nabers,WR,7,40.2
-Kyren Williams,RB,11,39.5
-Omarion Hampton,RB,12,37.1
-Justin Jefferson,WR,8,35.8
-Josh Allen,QB,1,34.1
-Breece Hall,RB,13,33.9
-CeeDee Lamb,WR,9,33.1
-Chase Brown,RB,14,30.1
-Drake London,WR,10,28.6
-Brock Bowers,TE,2,27.7
-Ladd McConkey,WR,11,27.6
-Brian Thomas Jr.,WR,12,26.7
-Bucky Irving,RB,15,26.5
-Kenneth Walker III,RB,16,25.4
-Marvin Harrison Jr.,WR,13,25.2
-Lamar Jackson,QB,2,24.7
-Alvin Kamara,RB,17,24.2
-Tyreek Hill,WR,14,23.9
-David Montgomery,RB,18,23.7
-Davante Adams,WR,15,22.5
-Isiah Pacheco,RB,19,22.0
-Colston Loveland,TE,3,21.5
-Drake Maye,QB,3,21.2
-DK Metcalf,WR,16,20.8
-Chuba Hubbard,RB,20,20.2
-Terry McLaurin,WR,17,19.7
-TreVeyon Henderson,RB,21,18.5
-Garrett Wilson,WR,18,18.0
-Tyler Warren,TE,4,17.3
-Tee Higgins,WR,19,16.8
-Jayden Daniels,QB,4,16.5
-RJ Harvey,RB,22,16.3
-DJ Moore,WR,20,15.5
-Tony Pollard,RB,23,15.3
-Patrick Mahomes,QB,5,15.0
-Courtland Sutton,WR,21,14.8
-Zay Flowers,WR,22,14.3
-Rhamondre Stevenson,RB,24,14.3
-Javonte Williams,RB,25,13.3
-George Pickens,WR,23,13.3
-Tucker Kraft,TE,5,12.9
-Jameson Williams,WR,24,12.8
-Aaron Jones Sr.,RB,26,12.1
-Jordan Addison,WR,25,11.9
-Joe Mixon,RB,27,11.8
-Joe Burrow,QB,6,11.8
-Rome Odunze,WR,26,11.6
-Mike Evans,WR,27,11.3
-Najee Harris,RB,28,11.3
-Sam LaPorta,TE,6,11.1
-Chris Olave,WR,28,10.9
-Jalen Hurts,QB,7,10.6
-Calvin Ridley,WR,29,10.3
-Xavier Worthy,WR,30,10.1
-Zach Charbonnet,RB,29,9.9
-Tyrone Tracy Jr.,RB,30,9.4
-Jaylen Waddle,WR,31,9.4
-Deebo Samuel,WR,32,9.2
-George Kittle,TE,7,9.2
-Keenan Allen,WR,33,9.1
-Travis Etienne Jr.,RB,31,8.7
-Bo Nix,QB,8,8.4
-D'Andre Swift,RB,32,8.1
-Jerry Jeudy,WR,34,7.9
-Rashee Rice,WR,35,7.7
-J.K. Dobbins,RB,33,7.6
-Travis Hunter,WR,36,7.4
-Travis Kelce,TE,8,7.1
-Emeka Egbuka,WR,37,7.1
-Jaylen Warren,RB,34,7.1
-Matthew Golden,WR,38,6.6
-Jared Goff,QB,9,6.6
-Brian Robinson,RB,35,6.4
-Rachaad White,RB,36,6.1
-Justin Herbert,QB,10,6.0
-Tetairoa McMillan,WR,39,5.9
-Austin Ekeler,RB,37,5.5
-T.J. Hockenson,TE,9,5.4
-Devin Singletary,RB,38,5.2
-Ricky Pearsall,WR,40,5.0
-C.J. Stroud,QB,11,5.0
-Jerome Ford,RB,39,4.9
-Broncos,DEF,1,4.9
-Jauan Jennings,WR,41,4.9
-Khalil Shakir,WR,42,4.5
-Tank Bigsby,RB,40,4.4
-Kyler Murray,QB,12,4.2
-Josh Downs,WR,43,4.2
-Mark Andrews,TE,10,4.0
-Rashod Bateman,WR,44,3.7
-Darnell Mooney,WR,45,3.7
-Brock Purdy,QB,13,3.5
-David Njoku,TE,11,3.2
-Baker Mayfield,QB,14,3.0
-Dalton Kincaid,TE,12,3.0
-Steelers,DEF,2,3.0
-Evan Engram,TE,13,2.9
-Eagles,DEF,3,2.5
-Trevor Lawrence,QB,15,2.5
-Jonnu Smith,TE,14,2.4
-Caleb Williams,QB,16,2.2
-Vikings,DEF,4,2.2
-Dallas Goedert,TE,15,2.0
-Ravens,DEF,5,1.8
-Bills,DEF,6,1.5
-Justin Fields,QB,17,1.5
-Matthew Stafford,QB,18,1.2
-Texans,DEF,7,1.2
-Dak Prescott,QB,19,1.2
-Rams,DEF,8,1.2
-Jordan Love,QB,20,1.0
-49ers,DEF,9,1.0
-Packers,DEF,10,1.0
-Jets,DEF,11,1.0
-Bears,DEF,12,1.0
-Chiefs,DEF,13,1.0
-Lions,DEF,14,1.0
-Cardinals,DEF,15,1.0
-Patriots,DEF,16,1.0
+rank,player_name,position,projected_rank,target_price
+1,Jahmyr Gibbs,RB,1,77.6
+2,Bijan Robinson,RB,2,69.7
+3,Christian McCaffrey,RB,3,65.7
+4,Ja'Marr Chase,WR,1,63.0
+5,Puka Nacua,WR,2,59.0
+6,Jonathan Taylor,RB,4,57.1
+7,James Cook III,RB,5,54.5
+8,Jaxon Smith-Njigba,WR,3,52.8
+9,Ashton Jeanty,RB,6,51.6
+10,De'Von Achane,RB,7,50.1
+11,Amon-Ra St. Brown,WR,4,49.1
+12,Saquon Barkley,RB,8,48.6
+13,A.J. Brown,WR,5,48.1
+14,Derrick Henry,RB,9,46.2
+15,Josh Jacobs,RB,10,43.2
+16,Trey McBride,TE,1,43.1
+17,Nico Collins,WR,6,43.0
+18,Malik Nabers,WR,7,40.2
+19,Kyren Williams,RB,11,39.5
+20,Omarion Hampton,RB,12,37.1
+21,Justin Jefferson,WR,8,35.8
+22,Josh Allen,QB,1,34.1
+23,Breece Hall,RB,13,33.9
+24,CeeDee Lamb,WR,9,33.1
+25,Chase Brown,RB,14,30.1
+26,Drake London,WR,10,28.6
+27,Brock Bowers,TE,2,27.7
+28,Ladd McConkey,WR,11,27.6
+29,Brian Thomas Jr.,WR,12,26.7
+30,Bucky Irving,RB,15,26.5
+31,Kenneth Walker III,RB,16,25.4
+32,Marvin Harrison Jr.,WR,13,25.2
+33,Lamar Jackson,QB,2,24.7
+34,Alvin Kamara,RB,17,24.2
+35,Tyreek Hill,WR,14,23.9
+36,David Montgomery,RB,18,23.7
+37,Davante Adams,WR,15,22.5
+38,Isiah Pacheco,RB,19,22.0
+39,Colston Loveland,TE,3,21.5
+40,Drake Maye,QB,3,21.2
+41,DK Metcalf,WR,16,20.8
+42,Chuba Hubbard,RB,20,20.2
+43,Terry McLaurin,WR,17,19.7
+44,TreVeyon Henderson,RB,21,18.5
+45,Garrett Wilson,WR,18,18.0
+46,Tyler Warren,TE,4,17.3
+47,Tee Higgins,WR,19,16.8
+48,Jayden Daniels,QB,4,16.5
+49,RJ Harvey,RB,22,16.3
+50,DJ Moore,WR,20,15.5
+51,Tony Pollard,RB,23,15.3
+52,Patrick Mahomes,QB,5,15.0
+53,Courtland Sutton,WR,21,14.8
+54,Rhamondre Stevenson,RB,24,14.3
+55,Zay Flowers,WR,22,14.3
+56,George Pickens,WR,23,13.3
+57,Javonte Williams,RB,25,13.3
+58,Tucker Kraft,TE,5,12.9
+59,Jameson Williams,WR,24,12.8
+60,Aaron Jones Sr.,RB,26,12.1
+61,Jordan Addison,WR,25,11.9
+62,Joe Burrow,QB,6,11.8
+63,Joe Mixon,RB,27,11.8
+64,Rome Odunze,WR,26,11.6
+65,Najee Harris,RB,28,11.3
+66,Mike Evans,WR,27,11.3
+67,Sam LaPorta,TE,6,11.1
+68,Chris Olave,WR,28,10.9
+69,Jalen Hurts,QB,7,10.6
+70,Calvin Ridley,WR,29,10.3
+71,Xavier Worthy,WR,30,10.1
+72,Zach Charbonnet,RB,29,9.9
+73,Tyrone Tracy Jr.,RB,30,9.4
+74,Jaylen Waddle,WR,31,9.4
+75,Deebo Samuel,WR,32,9.2
+76,George Kittle,TE,7,9.2
+77,Keenan Allen,WR,33,9.1
+78,Travis Etienne Jr.,RB,31,8.7
+79,Bo Nix,QB,8,8.4
+80,D'Andre Swift,RB,32,8.1
+81,Jerry Jeudy,WR,34,7.9
+82,Rashee Rice,WR,35,7.7
+83,J.K. Dobbins,RB,33,7.6
+84,Travis Hunter,WR,36,7.4
+85,Jaylen Warren,RB,34,7.1
+86,Emeka Egbuka,WR,37,7.1
+87,Travis Kelce,TE,8,7.1
+88,Jared Goff,QB,9,6.6
+89,Matthew Golden,WR,38,6.6
+90,Brian Robinson,RB,35,6.4
+91,Rachaad White,RB,36,6.1
+92,Justin Herbert,QB,10,6.0
+93,Tetairoa McMillan,WR,39,5.9
+94,Austin Ekeler,RB,37,5.5
+95,T.J. Hockenson,TE,9,5.4
+96,Devin Singletary,RB,38,5.2
+97,C.J. Stroud,QB,11,5.0
+98,Ricky Pearsall,WR,40,5.0
+99,Jerome Ford,RB,39,4.9
+100,Jauan Jennings,WR,41,4.9
+101,Broncos,DEF,1,4.9
+102,Khalil Shakir,WR,42,4.5
+103,Tank Bigsby,RB,40,4.4
+104,Josh Downs,WR,43,4.2
+105,Kyler Murray,QB,12,4.2
+106,Gus Edwards,RB,41,4.0
+107,Mark Andrews,TE,10,4.0
+108,Rashod Bateman,WR,44,3.7
+109,Zamir White,RB,42,3.7
+110,Darnell Mooney,WR,45,3.7
+111,Rico Dowdle,RB,43,3.5
+112,Brock Purdy,QB,13,3.5
+113,Christian Kirk,WR,46,3.4
+114,Marvin Mims Jr.,WR,47,3.4
+115,Jayden Reed,WR,48,3.2
+116,David Njoku,TE,11,3.2
+117,Romeo Doubs,WR,49,3.0
+118,Jaylen Wright,RB,44,3.0
+119,Baker Mayfield,QB,14,3.0
+120,Dalton Kincaid,TE,12,3.0
+121,Steelers,DEF,2,3.0
+122,Evan Engram,TE,13,2.9
+123,Trey Benson,RB,45,2.9
+124,Emmett Johnson,RB,46,2.7
+125,Christian Watson,WR,50,2.7
+126,Eagles,DEF,3,2.5
+127,Adam Thielen,WR,51,2.5
+128,Trevor Lawrence,QB,15,2.5
+129,Jonnu Smith,TE,14,2.4
+130,Jonathon Brooks,RB,47,2.4
+131,Bhayshul Tuten,RB,48,2.4
+132,Caleb Williams,QB,16,2.2
+133,Michael Pittman Jr.,WR,52,2.2
+134,Vikings,DEF,4,2.2
+135,Ollie Gordon II,RB,49,2.2
+136,Diontae Johnson,WR,53,2.2
+137,Dallas Goedert,TE,15,2.0
+138,Dylan Sampson,RB,50,1.8
+139,Cam Skattebo,RB,51,1.8
+140,Jaydon Blue,RB,52,1.8
+141,Ravens,DEF,5,1.8
+142,Cooper Kupp,WR,54,1.8
+143,Zach Ertz,TE,16,1.8
+144,Cade Otton,TE,17,1.5
+145,Bills,DEF,6,1.5
+146,Stefon Diggs,WR,55,1.5
+147,Justin Fields,QB,17,1.5
+148,Ray Davis,RB,54,1.4
+149,Blake Corum,RB,55,1.3
+150,Hunter Henry,TE,18,1.3
+151,DeVonta Smith,WR,56,1.3
+152,Kimani Vidal,RB,53,1.3
+153,Rams,DEF,8,1.2
+154,Chris Godwin Jr.,WR,57,1.2
+155,Texans,DEF,7,1.2
+156,Marquise Brown,WR,58,1.2
+157,Matthew Stafford,QB,18,1.2
+158,Dak Prescott,QB,19,1.2
+159,Tyler Allgeier,RB,65,1.0
+160,Justice Hill,RB,60,1.0
+161,Braelon Allen,RB,57,1.0
+162,Kenneth Gainwell,RB,58,1.0
+163,Ty Chandler,RB,59,1.0
+164,Daniel Jones,QB,23,1.0
+165,Geno Smith,QB,22,1.0
+166,Tua Tagovailoa,QB,21,1.0
+167,Jaxson Dart,QB,32,1.0
+168,Kirk Cousins,QB,28,1.0
+169,Sam Darnold,QB,29,1.0
+170,Cam Ward,QB,30,1.0
+171,Russell Wilson,QB,31,1.0
+172,Jordan Love,QB,20,1.0
+173,Bryce Young,QB,24,1.0
+174,Jordan Mason,RB,66,1.0
+175,Woody Marks,RB,67,1.0
+176,Isaac Guerendo,RB,64,1.0
+177,J.J. McCarthy,QB,25,1.0
+178,Anthony Richardson Sr.,QB,26,1.0
+179,Michael Penix Jr.,QB,27,1.0
+180,Devin Neal,RB,68,1.0
+181,Roschon Johnson,RB,61,1.0
+182,Miles Sanders,RB,62,1.0
+183,Kaleb Johnson,RB,63,1.0
+184,Tyjae Spears,RB,56,1.0
+185,Josh Reynolds,WR,75,1.0
+186,Quentin Johnston,WR,77,1.0
+187,Wan'Dale Robinson,WR,76,1.0
+188,Skyy Moore,WR,79,1.0
+189,Jalin Hyatt,WR,78,1.0
+190,Jalen Coker,WR,69,1.0
+191,Adonai Mitchell,WR,68,1.0
+192,Xavier Legette,WR,67,1.0
+193,Jayden Higgins,WR,66,1.0
+194,Isaac TeSlaa,WR,65,1.0
+195,Luther Burden III,WR,64,1.0
+196,Tre Harris,WR,63,1.0
+197,Kyle Williams,WR,62,1.0
+198,Jack Bech,WR,61,1.0
+199,Elic Ayomanor,WR,60,1.0
+200,Curtis Samuel,WR,59,1.0
+201,Dontayvion Wicks,WR,74,1.0
+202,Tank Dell,WR,73,1.0
+203,Demario Douglas,WR,72,1.0
+204,Rashid Shaheed,WR,71,1.0
+205,Keon Coleman,WR,70,1.0
+206,Pat Freiermuth,TE,19,1.0
+207,Chig Okonkwo,TE,20,1.0
+208,Isaiah Likely,TE,21,1.0
+209,Cole Kmet,TE,22,1.0
+210,Juwan Johnson,TE,23,1.0
+211,Noah Fant,TE,24,1.0
+212,Gunnar Helm,TE,32,1.0
+213,Mason Taylor,TE,31,1.0
+214,Harold Fannin Jr.,TE,30,1.0
+215,Terrance Ferguson,TE,29,1.0
+216,Elijah Arroyo,TE,28,1.0
+217,Ja'Tavion Sanders,TE,27,1.0
+218,Brenton Strange,TE,26,1.0
+219,Luke Musgrave,TE,25,1.0
+220,49ers,DEF,9,1.0
+221,Packers,DEF,10,1.0
+222,Jets,DEF,11,1.0
+223,Bears,DEF,12,1.0
+224,Chiefs,DEF,13,1.0
+225,Lions,DEF,14,1.0
+226,Cardinals,DEF,15,1.0
+227,Patriots,DEF,16,1.0
+228,Buccaneers,DEF,17,1.0
+229,Colts,DEF,18,1.0
+230,Chargers,DEF,19,1.0
+231,Seahawks,DEF,20,1.0
+232,Commanders,DEF,21,1.0
+233,Cowboys,DEF,22,1.0
+234,Bengals,DEF,23,1.0
+235,Dolphins,DEF,24,1.0
+236,Browns,DEF,25,1.0
+237,Raiders,DEF,26,1.0
+238,Titans,DEF,27,1.0
+239,Jaguars,DEF,28,1.0
+240,Falcons,DEF,29,1.0
+241,Panthers,DEF,30,1.0
+242,Saints,DEF,31,1.0
+243,Giants,DEF,32,1.0

@@ -19,6 +19,18 @@ Justin Fields,QB,17
 Matthew Stafford,QB,18
 Dak Prescott,QB,19
 Jordan Love,QB,20
+Tua Tagovailoa,QB,21
+Geno Smith,QB,22
+Daniel Jones,QB,23
+Bryce Young,QB,24
+J.J. McCarthy,QB,25
+Anthony Richardson Sr.,QB,26
+Michael Penix Jr.,QB,27
+Kirk Cousins,QB,28
+Sam Darnold,QB,29
+Cam Ward,QB,30
+Russell Wilson,QB,31
+Jaxson Dart,QB,32
 Jahmyr Gibbs,RB,1
 Bijan Robinson,RB,2
 Christian McCaffrey,RB,3
@@ -59,6 +71,34 @@ Austin Ekeler,RB,37
 Devin Singletary,RB,38
 Jerome Ford,RB,39
 Tank Bigsby,RB,40
+Gus Edwards,RB,41
+Zamir White,RB,42
+Rico Dowdle,RB,43
+Jaylen Wright,RB,44
+Trey Benson,RB,45
+Emmett Johnson,RB,46
+Jonathon Brooks,RB,47
+Bhayshul Tuten,RB,48
+Ollie Gordon II,RB,49
+Dylan Sampson,RB,50
+Cam Skattebo,RB,51
+Jaydon Blue,RB,52
+Kimani Vidal,RB,53
+Ray Davis,RB,54
+Blake Corum,RB,55
+Tyjae Spears,RB,56
+Braelon Allen,RB,57
+Kenneth Gainwell,RB,58
+Ty Chandler,RB,59
+Justice Hill,RB,60
+Roschon Johnson,RB,61
+Miles Sanders,RB,62
+Kaleb Johnson,RB,63
+Isaac Guerendo,RB,64
+Tyler Allgeier,RB,65
+Jordan Mason,RB,66
+Woody Marks,RB,67
+Devin Neal,RB,68
 Ja'Marr Chase,WR,1
 Puka Nacua,WR,2
 Jaxon Smith-Njigba,WR,3
@@ -104,6 +144,40 @@ Khalil Shakir,WR,42
 Josh Downs,WR,43
 Rashod Bateman,WR,44
 Darnell Mooney,WR,45
+Christian Kirk,WR,46
+Marvin Mims Jr.,WR,47
+Jayden Reed,WR,48
+Romeo Doubs,WR,49
+Christian Watson,WR,50
+Adam Thielen,WR,51
+Michael Pittman Jr.,WR,52
+Diontae Johnson,WR,53
+Cooper Kupp,WR,54
+Stefon Diggs,WR,55
+DeVonta Smith,WR,56
+Chris Godwin Jr.,WR,57
+Marquise Brown,WR,58
+Curtis Samuel,WR,59
+Elic Ayomanor,WR,60
+Jack Bech,WR,61
+Kyle Williams,WR,62
+Tre Harris,WR,63
+Luther Burden III,WR,64
+Isaac TeSlaa,WR,65
+Jayden Higgins,WR,66
+Xavier Legette,WR,67
+Adonai Mitchell,WR,68
+Jalen Coker,WR,69
+Keon Coleman,WR,70
+Rashid Shaheed,WR,71
+Demario Douglas,WR,72
+Tank Dell,WR,73
+Dontayvion Wicks,WR,74
+Josh Reynolds,WR,75
+Wan'Dale Robinson,WR,76
+Quentin Johnston,WR,77
+Jalin Hyatt,WR,78
+Skyy Moore,WR,79
 Trey McBride,TE,1
 Brock Bowers,TE,2
 Colston Loveland,TE,3
@@ -119,6 +193,23 @@ Dalton Kincaid,TE,12
 Evan Engram,TE,13
 Jonnu Smith,TE,14
 Dallas Goedert,TE,15
+Zach Ertz,TE,16
+Cade Otton,TE,17
+Hunter Henry,TE,18
+Pat Freiermuth,TE,19
+Chig Okonkwo,TE,20
+Isaiah Likely,TE,21
+Cole Kmet,TE,22
+Juwan Johnson,TE,23
+Noah Fant,TE,24
+Luke Musgrave,TE,25
+Brenton Strange,TE,26
+Ja'Tavion Sanders,TE,27
+Elijah Arroyo,TE,28
+Terrance Ferguson,TE,29
+Harold Fannin Jr.,TE,30
+Mason Taylor,TE,31
+Gunnar Helm,TE,32
 Broncos,DEF,1
 Steelers,DEF,2
 Eagles,DEF,3
@@ -135,3 +226,19 @@ Chiefs,DEF,13
 Lions,DEF,14
 Cardinals,DEF,15
 Patriots,DEF,16
+Buccaneers,DEF,17
+Colts,DEF,18
+Chargers,DEF,19
+Seahawks,DEF,20
+Commanders,DEF,21
+Cowboys,DEF,22
+Bengals,DEF,23
+Dolphins,DEF,24
+Browns,DEF,25
+Raiders,DEF,26
+Titans,DEF,27
+Jaguars,DEF,28
+Falcons,DEF,29
+Panthers,DEF,30
+Saints,DEF,31
+Giants,DEF,32
