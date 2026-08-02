@@ -156,6 +156,25 @@ p { max-width: 68ch; }
 .rank-table-wrap table.dollars { margin: 0; }
 .rank-table-wrap thead th { position: sticky; top: 0; background: var(--bg-elevated); }
 
+.rank-controls { display: flex; flex-wrap: wrap; gap: 8px; align-items: center; margin: 14px 0 8px; }
+.rank-search {
+  background: var(--bg-elevated); border: 1px solid var(--line-strong); color: var(--ink);
+  border-radius: 8px; padding: 7px 10px; font-size: 13px; font-family: var(--font-body);
+  flex: 1 1 180px; min-width: 140px;
+}
+.rank-search:focus { outline: 1px solid var(--accent); }
+.pos-filter-chip {
+  background: var(--bg-elevated); border: 1px solid var(--line-strong); color: var(--ink-dim);
+  border-radius: 20px; padding: 6px 12px; font-size: 12px; font-weight: 700; cursor: pointer;
+  font-family: var(--font-body);
+}
+.pos-filter-chip.active { background: var(--accent); color: var(--accent-ink); border-color: var(--accent); }
+.rank-table-wrap table.dollars th.sortable { cursor: pointer; user-select: none; white-space: nowrap; }
+.rank-table-wrap table.dollars th.sortable:hover { color: var(--ink); }
+.rank-table-wrap table.dollars th.sortable .arrow { display: inline-block; width: 10px; opacity: 0.5; }
+.rank-table-wrap table.dollars th.sortable.active .arrow { opacity: 1; color: var(--accent); }
+.rank-count { font-size: 12px; color: var(--ink-faint); margin: 0 0 6px; }
+
 ol.plan { padding-left: 22px; margin: 0; }
 ol.plan li { margin-bottom: 16px; font-size: 15px; }
 ol.plan li b { color: var(--accent); }
@@ -579,168 +598,91 @@ table.dollars td.num { font-family: var(--font-mono); text-align: right; }
   </section>
 
   <section>
-    <h2 class="section-title">Full 2026 salary ranking (top 150)</h2>
-    <p>Every player below priced off your league's real curve -- 243 players and all 32 defenses ranked in
-      total, this table shows the top 150 (essentially everyone likely to go for more than $1). The complete
-      list is attached separately as a CSV so you can sort, filter, or drop it straight into a spreadsheet on
-      draft night.</p>
+    <h2 class="section-title">Full 2026 salary ranking</h2>
+    <p>All 243 rostered-relevant players and all 32 defenses, priced entirely off your league's real historical
+      curve. Sort any column, filter by position, or search a name -- same target-price data as the cheat sheet
+      CSV, just interactive.</p>
+    <div class="rank-controls">
+      <input id="rank-search" class="rank-search" type="text" placeholder="Search a player...">
+      <button class="pos-filter-chip active" data-pos="ALL">ALL</button>
+      <button class="pos-filter-chip" data-pos="QB">QB</button>
+      <button class="pos-filter-chip" data-pos="RB">RB</button>
+      <button class="pos-filter-chip" data-pos="WR">WR</button>
+      <button class="pos-filter-chip" data-pos="TE">TE</button>
+      <button class="pos-filter-chip" data-pos="DEF">DEF</button>
+    </div>
+    <p id="rank-count" class="rank-count">243 of 243 players</p>
     <div class="rank-table-wrap">
-      <table class="dollars">
-        <thead><tr><th>#</th><th>Player</th><th class="num">Target $</th></tr></thead>
-        <tbody>
-<tr><td class="num mono">1</td><td>Jahmyr Gibbs<span class="pos-tag2">RB</span></td><td class="num mono px">$78</td></tr>
-<tr><td class="num mono">2</td><td>Bijan Robinson<span class="pos-tag2">RB</span></td><td class="num mono px">$70</td></tr>
-<tr><td class="num mono">3</td><td>Christian McCaffrey<span class="pos-tag2">RB</span></td><td class="num mono px">$66</td></tr>
-<tr><td class="num mono">4</td><td>Ja'Marr Chase<span class="pos-tag2">WR</span></td><td class="num mono px">$63</td></tr>
-<tr><td class="num mono">5</td><td>Puka Nacua<span class="pos-tag2">WR</span></td><td class="num mono px">$59</td></tr>
-<tr><td class="num mono">6</td><td>Jonathan Taylor<span class="pos-tag2">RB</span></td><td class="num mono px">$57</td></tr>
-<tr><td class="num mono">7</td><td>James Cook III<span class="pos-tag2">RB</span></td><td class="num mono px">$54</td></tr>
-<tr><td class="num mono">8</td><td>Jaxon Smith-Njigba<span class="pos-tag2">WR</span></td><td class="num mono px">$53</td></tr>
-<tr><td class="num mono">9</td><td>Ashton Jeanty<span class="pos-tag2">RB</span></td><td class="num mono px">$52</td></tr>
-<tr><td class="num mono">10</td><td>De'Von Achane<span class="pos-tag2">RB</span></td><td class="num mono px">$50</td></tr>
-<tr><td class="num mono">11</td><td>Amon-Ra St. Brown<span class="pos-tag2">WR</span></td><td class="num mono px">$49</td></tr>
-<tr><td class="num mono">12</td><td>Saquon Barkley<span class="pos-tag2">RB</span></td><td class="num mono px">$49</td></tr>
-<tr><td class="num mono">13</td><td>A.J. Brown<span class="pos-tag2">WR</span></td><td class="num mono px">$48</td></tr>
-<tr><td class="num mono">14</td><td>Derrick Henry<span class="pos-tag2">RB</span></td><td class="num mono px">$46</td></tr>
-<tr><td class="num mono">15</td><td>Josh Jacobs<span class="pos-tag2">RB</span></td><td class="num mono px">$43</td></tr>
-<tr><td class="num mono">16</td><td>Trey McBride<span class="pos-tag2">TE</span></td><td class="num mono px">$43</td></tr>
-<tr><td class="num mono">17</td><td>Nico Collins<span class="pos-tag2">WR</span></td><td class="num mono px">$43</td></tr>
-<tr><td class="num mono">18</td><td>Malik Nabers<span class="pos-tag2">WR</span></td><td class="num mono px">$40</td></tr>
-<tr><td class="num mono">19</td><td>Kyren Williams<span class="pos-tag2">RB</span></td><td class="num mono px">$40</td></tr>
-<tr><td class="num mono">20</td><td>Omarion Hampton<span class="pos-tag2">RB</span></td><td class="num mono px">$37</td></tr>
-<tr><td class="num mono">21</td><td>Justin Jefferson<span class="pos-tag2">WR</span></td><td class="num mono px">$36</td></tr>
-<tr><td class="num mono">22</td><td>Josh Allen<span class="pos-tag2">QB</span></td><td class="num mono px">$34</td></tr>
-<tr><td class="num mono">23</td><td>Breece Hall<span class="pos-tag2">RB</span></td><td class="num mono px">$34</td></tr>
-<tr><td class="num mono">24</td><td>CeeDee Lamb<span class="pos-tag2">WR</span></td><td class="num mono px">$33</td></tr>
-<tr><td class="num mono">25</td><td>Chase Brown<span class="pos-tag2">RB</span></td><td class="num mono px">$30</td></tr>
-<tr><td class="num mono">26</td><td>Drake London<span class="pos-tag2">WR</span></td><td class="num mono px">$29</td></tr>
-<tr><td class="num mono">27</td><td>Brock Bowers<span class="pos-tag2">TE</span></td><td class="num mono px">$28</td></tr>
-<tr><td class="num mono">28</td><td>Ladd McConkey<span class="pos-tag2">WR</span></td><td class="num mono px">$28</td></tr>
-<tr><td class="num mono">29</td><td>Brian Thomas Jr.<span class="pos-tag2">WR</span></td><td class="num mono px">$27</td></tr>
-<tr><td class="num mono">30</td><td>Bucky Irving<span class="pos-tag2">RB</span></td><td class="num mono px">$26</td></tr>
-<tr><td class="num mono">31</td><td>Kenneth Walker III<span class="pos-tag2">RB</span></td><td class="num mono px">$25</td></tr>
-<tr><td class="num mono">32</td><td>Marvin Harrison Jr.<span class="pos-tag2">WR</span></td><td class="num mono px">$25</td></tr>
-<tr><td class="num mono">33</td><td>Lamar Jackson<span class="pos-tag2">QB</span></td><td class="num mono px">$25</td></tr>
-<tr><td class="num mono">34</td><td>Alvin Kamara<span class="pos-tag2">RB</span></td><td class="num mono px">$24</td></tr>
-<tr><td class="num mono">35</td><td>Tyreek Hill<span class="pos-tag2">WR</span></td><td class="num mono px">$24</td></tr>
-<tr><td class="num mono">36</td><td>David Montgomery<span class="pos-tag2">RB</span></td><td class="num mono px">$24</td></tr>
-<tr><td class="num mono">37</td><td>Davante Adams<span class="pos-tag2">WR</span></td><td class="num mono px">$22</td></tr>
-<tr><td class="num mono">38</td><td>Isiah Pacheco<span class="pos-tag2">RB</span></td><td class="num mono px">$22</td></tr>
-<tr><td class="num mono">39</td><td>Colston Loveland<span class="pos-tag2">TE</span></td><td class="num mono px">$22</td></tr>
-<tr><td class="num mono">40</td><td>Drake Maye<span class="pos-tag2">QB</span></td><td class="num mono px">$21</td></tr>
-<tr><td class="num mono">41</td><td>DK Metcalf<span class="pos-tag2">WR</span></td><td class="num mono px">$21</td></tr>
-<tr><td class="num mono">42</td><td>Chuba Hubbard<span class="pos-tag2">RB</span></td><td class="num mono px">$20</td></tr>
-<tr><td class="num mono">43</td><td>Terry McLaurin<span class="pos-tag2">WR</span></td><td class="num mono px">$20</td></tr>
-<tr><td class="num mono">44</td><td>TreVeyon Henderson<span class="pos-tag2">RB</span></td><td class="num mono px">$18</td></tr>
-<tr><td class="num mono">45</td><td>Garrett Wilson<span class="pos-tag2">WR</span></td><td class="num mono px">$18</td></tr>
-<tr><td class="num mono">46</td><td>Tyler Warren<span class="pos-tag2">TE</span></td><td class="num mono px">$17</td></tr>
-<tr><td class="num mono">47</td><td>Tee Higgins<span class="pos-tag2">WR</span></td><td class="num mono px">$17</td></tr>
-<tr><td class="num mono">48</td><td>Jayden Daniels<span class="pos-tag2">QB</span></td><td class="num mono px">$16</td></tr>
-<tr><td class="num mono">49</td><td>RJ Harvey<span class="pos-tag2">RB</span></td><td class="num mono px">$16</td></tr>
-<tr><td class="num mono">50</td><td>DJ Moore<span class="pos-tag2">WR</span></td><td class="num mono px">$16</td></tr>
-<tr><td class="num mono">51</td><td>Tony Pollard<span class="pos-tag2">RB</span></td><td class="num mono px">$15</td></tr>
-<tr><td class="num mono">52</td><td>Patrick Mahomes<span class="pos-tag2">QB</span></td><td class="num mono px">$15</td></tr>
-<tr><td class="num mono">53</td><td>Courtland Sutton<span class="pos-tag2">WR</span></td><td class="num mono px">$15</td></tr>
-<tr><td class="num mono">54</td><td>Rhamondre Stevenson<span class="pos-tag2">RB</span></td><td class="num mono px">$14</td></tr>
-<tr><td class="num mono">55</td><td>Zay Flowers<span class="pos-tag2">WR</span></td><td class="num mono px">$14</td></tr>
-<tr><td class="num mono">56</td><td>George Pickens<span class="pos-tag2">WR</span></td><td class="num mono px">$13</td></tr>
-<tr><td class="num mono">57</td><td>Javonte Williams<span class="pos-tag2">RB</span></td><td class="num mono px">$13</td></tr>
-<tr><td class="num mono">58</td><td>Tucker Kraft<span class="pos-tag2">TE</span></td><td class="num mono px">$13</td></tr>
-<tr><td class="num mono">59</td><td>Jameson Williams<span class="pos-tag2">WR</span></td><td class="num mono px">$13</td></tr>
-<tr><td class="num mono">60</td><td>Aaron Jones Sr.<span class="pos-tag2">RB</span></td><td class="num mono px">$12</td></tr>
-<tr><td class="num mono">61</td><td>Jordan Addison<span class="pos-tag2">WR</span></td><td class="num mono px">$12</td></tr>
-<tr><td class="num mono">62</td><td>Joe Burrow<span class="pos-tag2">QB</span></td><td class="num mono px">$12</td></tr>
-<tr><td class="num mono">63</td><td>Joe Mixon<span class="pos-tag2">RB</span></td><td class="num mono px">$12</td></tr>
-<tr><td class="num mono">64</td><td>Rome Odunze<span class="pos-tag2">WR</span></td><td class="num mono px">$12</td></tr>
-<tr><td class="num mono">65</td><td>Najee Harris<span class="pos-tag2">RB</span></td><td class="num mono px">$11</td></tr>
-<tr><td class="num mono">66</td><td>Mike Evans<span class="pos-tag2">WR</span></td><td class="num mono px">$11</td></tr>
-<tr><td class="num mono">67</td><td>Sam LaPorta<span class="pos-tag2">TE</span></td><td class="num mono px">$11</td></tr>
-<tr><td class="num mono">68</td><td>Chris Olave<span class="pos-tag2">WR</span></td><td class="num mono px">$11</td></tr>
-<tr><td class="num mono">69</td><td>Jalen Hurts<span class="pos-tag2">QB</span></td><td class="num mono px">$11</td></tr>
-<tr><td class="num mono">70</td><td>Calvin Ridley<span class="pos-tag2">WR</span></td><td class="num mono px">$10</td></tr>
-<tr><td class="num mono">71</td><td>Xavier Worthy<span class="pos-tag2">WR</span></td><td class="num mono px">$10</td></tr>
-<tr><td class="num mono">72</td><td>Zach Charbonnet<span class="pos-tag2">RB</span></td><td class="num mono px">$10</td></tr>
-<tr><td class="num mono">73</td><td>Tyrone Tracy Jr.<span class="pos-tag2">RB</span></td><td class="num mono px">$9</td></tr>
-<tr><td class="num mono">74</td><td>Jaylen Waddle<span class="pos-tag2">WR</span></td><td class="num mono px">$9</td></tr>
-<tr><td class="num mono">75</td><td>Deebo Samuel<span class="pos-tag2">WR</span></td><td class="num mono px">$9</td></tr>
-<tr><td class="num mono">76</td><td>George Kittle<span class="pos-tag2">TE</span></td><td class="num mono px">$9</td></tr>
-<tr><td class="num mono">77</td><td>Keenan Allen<span class="pos-tag2">WR</span></td><td class="num mono px">$9</td></tr>
-<tr><td class="num mono">78</td><td>Travis Etienne Jr.<span class="pos-tag2">RB</span></td><td class="num mono px">$9</td></tr>
-<tr><td class="num mono">79</td><td>Bo Nix<span class="pos-tag2">QB</span></td><td class="num mono px">$8</td></tr>
-<tr><td class="num mono">80</td><td>D'Andre Swift<span class="pos-tag2">RB</span></td><td class="num mono px">$8</td></tr>
-<tr><td class="num mono">81</td><td>Jerry Jeudy<span class="pos-tag2">WR</span></td><td class="num mono px">$8</td></tr>
-<tr><td class="num mono">82</td><td>Rashee Rice<span class="pos-tag2">WR</span></td><td class="num mono px">$8</td></tr>
-<tr><td class="num mono">83</td><td>J.K. Dobbins<span class="pos-tag2">RB</span></td><td class="num mono px">$8</td></tr>
-<tr><td class="num mono">84</td><td>Travis Hunter<span class="pos-tag2">WR</span></td><td class="num mono px">$7</td></tr>
-<tr><td class="num mono">85</td><td>Jaylen Warren<span class="pos-tag2">RB</span></td><td class="num mono px">$7</td></tr>
-<tr><td class="num mono">86</td><td>Emeka Egbuka<span class="pos-tag2">WR</span></td><td class="num mono px">$7</td></tr>
-<tr><td class="num mono">87</td><td>Travis Kelce<span class="pos-tag2">TE</span></td><td class="num mono px">$7</td></tr>
-<tr><td class="num mono">88</td><td>Jared Goff<span class="pos-tag2">QB</span></td><td class="num mono px">$7</td></tr>
-<tr><td class="num mono">89</td><td>Matthew Golden<span class="pos-tag2">WR</span></td><td class="num mono px">$7</td></tr>
-<tr><td class="num mono">90</td><td>Brian Robinson<span class="pos-tag2">RB</span></td><td class="num mono px">$6</td></tr>
-<tr><td class="num mono">91</td><td>Rachaad White<span class="pos-tag2">RB</span></td><td class="num mono px">$6</td></tr>
-<tr><td class="num mono">92</td><td>Justin Herbert<span class="pos-tag2">QB</span></td><td class="num mono px">$6</td></tr>
-<tr><td class="num mono">93</td><td>Tetairoa McMillan<span class="pos-tag2">WR</span></td><td class="num mono px">$6</td></tr>
-<tr><td class="num mono">94</td><td>Austin Ekeler<span class="pos-tag2">RB</span></td><td class="num mono px">$6</td></tr>
-<tr><td class="num mono">95</td><td>T.J. Hockenson<span class="pos-tag2">TE</span></td><td class="num mono px">$5</td></tr>
-<tr><td class="num mono">96</td><td>Devin Singletary<span class="pos-tag2">RB</span></td><td class="num mono px">$5</td></tr>
-<tr><td class="num mono">97</td><td>C.J. Stroud<span class="pos-tag2">QB</span></td><td class="num mono px">$5</td></tr>
-<tr><td class="num mono">98</td><td>Ricky Pearsall<span class="pos-tag2">WR</span></td><td class="num mono px">$5</td></tr>
-<tr><td class="num mono">99</td><td>Jerome Ford<span class="pos-tag2">RB</span></td><td class="num mono px">$5</td></tr>
-<tr><td class="num mono">100</td><td>Jauan Jennings<span class="pos-tag2">WR</span></td><td class="num mono px">$5</td></tr>
-<tr><td class="num mono">101</td><td>Broncos<span class="pos-tag2">DEF</span></td><td class="num mono px">$5</td></tr>
-<tr><td class="num mono">102</td><td>Khalil Shakir<span class="pos-tag2">WR</span></td><td class="num mono px">$4</td></tr>
-<tr><td class="num mono">103</td><td>Tank Bigsby<span class="pos-tag2">RB</span></td><td class="num mono px">$4</td></tr>
-<tr><td class="num mono">104</td><td>Josh Downs<span class="pos-tag2">WR</span></td><td class="num mono px">$4</td></tr>
-<tr><td class="num mono">105</td><td>Kyler Murray<span class="pos-tag2">QB</span></td><td class="num mono px">$4</td></tr>
-<tr><td class="num mono">106</td><td>Gus Edwards<span class="pos-tag2">RB</span></td><td class="num mono px">$4</td></tr>
-<tr><td class="num mono">107</td><td>Mark Andrews<span class="pos-tag2">TE</span></td><td class="num mono px">$4</td></tr>
-<tr><td class="num mono">108</td><td>Rashod Bateman<span class="pos-tag2">WR</span></td><td class="num mono px">$4</td></tr>
-<tr><td class="num mono">109</td><td>Zamir White<span class="pos-tag2">RB</span></td><td class="num mono px">$4</td></tr>
-<tr><td class="num mono">110</td><td>Darnell Mooney<span class="pos-tag2">WR</span></td><td class="num mono px">$4</td></tr>
-<tr><td class="num mono">111</td><td>Rico Dowdle<span class="pos-tag2">RB</span></td><td class="num mono px">$4</td></tr>
-<tr><td class="num mono">112</td><td>Brock Purdy<span class="pos-tag2">QB</span></td><td class="num mono px">$4</td></tr>
-<tr><td class="num mono">113</td><td>Christian Kirk<span class="pos-tag2">WR</span></td><td class="num mono px">$3</td></tr>
-<tr><td class="num mono">114</td><td>Marvin Mims Jr.<span class="pos-tag2">WR</span></td><td class="num mono px">$3</td></tr>
-<tr><td class="num mono">115</td><td>Jayden Reed<span class="pos-tag2">WR</span></td><td class="num mono px">$3</td></tr>
-<tr><td class="num mono">116</td><td>David Njoku<span class="pos-tag2">TE</span></td><td class="num mono px">$3</td></tr>
-<tr><td class="num mono">117</td><td>Romeo Doubs<span class="pos-tag2">WR</span></td><td class="num mono px">$3</td></tr>
-<tr><td class="num mono">118</td><td>Jaylen Wright<span class="pos-tag2">RB</span></td><td class="num mono px">$3</td></tr>
-<tr><td class="num mono">119</td><td>Baker Mayfield<span class="pos-tag2">QB</span></td><td class="num mono px">$3</td></tr>
-<tr><td class="num mono">120</td><td>Dalton Kincaid<span class="pos-tag2">TE</span></td><td class="num mono px">$3</td></tr>
-<tr><td class="num mono">121</td><td>Steelers<span class="pos-tag2">DEF</span></td><td class="num mono px">$3</td></tr>
-<tr><td class="num mono">122</td><td>Evan Engram<span class="pos-tag2">TE</span></td><td class="num mono px">$3</td></tr>
-<tr><td class="num mono">123</td><td>Trey Benson<span class="pos-tag2">RB</span></td><td class="num mono px">$3</td></tr>
-<tr><td class="num mono">124</td><td>Emmett Johnson<span class="pos-tag2">RB</span></td><td class="num mono px">$3</td></tr>
-<tr><td class="num mono">125</td><td>Christian Watson<span class="pos-tag2">WR</span></td><td class="num mono px">$3</td></tr>
-<tr><td class="num mono">126</td><td>Eagles<span class="pos-tag2">DEF</span></td><td class="num mono px">$2</td></tr>
-<tr><td class="num mono">127</td><td>Adam Thielen<span class="pos-tag2">WR</span></td><td class="num mono px">$2</td></tr>
-<tr><td class="num mono">128</td><td>Trevor Lawrence<span class="pos-tag2">QB</span></td><td class="num mono px">$2</td></tr>
-<tr><td class="num mono">129</td><td>Jonnu Smith<span class="pos-tag2">TE</span></td><td class="num mono px">$2</td></tr>
-<tr><td class="num mono">130</td><td>Jonathon Brooks<span class="pos-tag2">RB</span></td><td class="num mono px">$2</td></tr>
-<tr><td class="num mono">131</td><td>Bhayshul Tuten<span class="pos-tag2">RB</span></td><td class="num mono px">$2</td></tr>
-<tr><td class="num mono">132</td><td>Caleb Williams<span class="pos-tag2">QB</span></td><td class="num mono px">$2</td></tr>
-<tr><td class="num mono">133</td><td>Michael Pittman Jr.<span class="pos-tag2">WR</span></td><td class="num mono px">$2</td></tr>
-<tr><td class="num mono">134</td><td>Vikings<span class="pos-tag2">DEF</span></td><td class="num mono px">$2</td></tr>
-<tr><td class="num mono">135</td><td>Ollie Gordon II<span class="pos-tag2">RB</span></td><td class="num mono px">$2</td></tr>
-<tr><td class="num mono">136</td><td>Diontae Johnson<span class="pos-tag2">WR</span></td><td class="num mono px">$2</td></tr>
-<tr><td class="num mono">137</td><td>Dallas Goedert<span class="pos-tag2">TE</span></td><td class="num mono px">$2</td></tr>
-<tr><td class="num mono">138</td><td>Dylan Sampson<span class="pos-tag2">RB</span></td><td class="num mono px">$2</td></tr>
-<tr><td class="num mono">139</td><td>Cam Skattebo<span class="pos-tag2">RB</span></td><td class="num mono px">$2</td></tr>
-<tr><td class="num mono">140</td><td>Jaydon Blue<span class="pos-tag2">RB</span></td><td class="num mono px">$2</td></tr>
-<tr><td class="num mono">141</td><td>Ravens<span class="pos-tag2">DEF</span></td><td class="num mono px">$2</td></tr>
-<tr><td class="num mono">142</td><td>Cooper Kupp<span class="pos-tag2">WR</span></td><td class="num mono px">$2</td></tr>
-<tr><td class="num mono">143</td><td>Zach Ertz<span class="pos-tag2">TE</span></td><td class="num mono px">$2</td></tr>
-<tr><td class="num mono">144</td><td>Cade Otton<span class="pos-tag2">TE</span></td><td class="num mono px">$2</td></tr>
-<tr><td class="num mono">145</td><td>Bills<span class="pos-tag2">DEF</span></td><td class="num mono px">$2</td></tr>
-<tr><td class="num mono">146</td><td>Stefon Diggs<span class="pos-tag2">WR</span></td><td class="num mono px">$2</td></tr>
-<tr><td class="num mono">147</td><td>Justin Fields<span class="pos-tag2">QB</span></td><td class="num mono px">$2</td></tr>
-<tr><td class="num mono">148</td><td>Ray Davis<span class="pos-tag2">RB</span></td><td class="num mono px">$1</td></tr>
-<tr><td class="num mono">149</td><td>Blake Corum<span class="pos-tag2">RB</span></td><td class="num mono px">$1</td></tr>
-<tr><td class="num mono">150</td><td>Hunter Henry<span class="pos-tag2">TE</span></td><td class="num mono px">$1</td></tr>
-        </tbody>
+      <table class="dollars" id="rank-table">
+        <thead>
+          <tr>
+            <th class="sortable active" data-key="rank">#<span class="arrow">&#9650;</span></th>
+            <th class="sortable" data-key="name">Player<span class="arrow"></span></th>
+            <th class="sortable" data-key="pos">Pos<span class="arrow"></span></th>
+            <th class="num sortable" data-key="price">Target $<span class="arrow"></span></th>
+          </tr>
+        </thead>
+        <tbody id="rank-tbody"></tbody>
       </table>
     </div>
+    <script type="application/json" id="rank-data">[{"rank":1,"name":"Jahmyr Gibbs","pos":"RB","price":77.6},{"rank":2,"name":"Bijan Robinson","pos":"RB","price":69.7},{"rank":3,"name":"Christian McCaffrey","pos":"RB","price":65.7},{"rank":4,"name":"Ja'Marr Chase","pos":"WR","price":63.0},{"rank":5,"name":"Puka Nacua","pos":"WR","price":59.0},{"rank":6,"name":"Jonathan Taylor","pos":"RB","price":57.1},{"rank":7,"name":"James Cook III","pos":"RB","price":54.5},{"rank":8,"name":"Jaxon Smith-Njigba","pos":"WR","price":52.8},{"rank":9,"name":"Ashton Jeanty","pos":"RB","price":51.6},{"rank":10,"name":"De'Von Achane","pos":"RB","price":50.1},{"rank":11,"name":"Amon-Ra St. Brown","pos":"WR","price":49.1},{"rank":12,"name":"Saquon Barkley","pos":"RB","price":48.6},{"rank":13,"name":"A.J. Brown","pos":"WR","price":48.1},{"rank":14,"name":"Derrick Henry","pos":"RB","price":46.2},{"rank":15,"name":"Josh Jacobs","pos":"RB","price":43.2},{"rank":16,"name":"Trey McBride","pos":"TE","price":43.1},{"rank":17,"name":"Nico Collins","pos":"WR","price":43.0},{"rank":18,"name":"Malik Nabers","pos":"WR","price":40.2},{"rank":19,"name":"Kyren Williams","pos":"RB","price":39.5},{"rank":20,"name":"Omarion Hampton","pos":"RB","price":37.1},{"rank":21,"name":"Justin Jefferson","pos":"WR","price":35.8},{"rank":22,"name":"Josh Allen","pos":"QB","price":34.1},{"rank":23,"name":"Breece Hall","pos":"RB","price":33.9},{"rank":24,"name":"CeeDee Lamb","pos":"WR","price":33.1},{"rank":25,"name":"Chase Brown","pos":"RB","price":30.1},{"rank":26,"name":"Drake London","pos":"WR","price":28.6},{"rank":27,"name":"Brock Bowers","pos":"TE","price":27.7},{"rank":28,"name":"Ladd McConkey","pos":"WR","price":27.6},{"rank":29,"name":"Brian Thomas Jr.","pos":"WR","price":26.7},{"rank":30,"name":"Bucky Irving","pos":"RB","price":26.5},{"rank":31,"name":"Kenneth Walker III","pos":"RB","price":25.4},{"rank":32,"name":"Marvin Harrison Jr.","pos":"WR","price":25.2},{"rank":33,"name":"Lamar Jackson","pos":"QB","price":24.7},{"rank":34,"name":"Alvin Kamara","pos":"RB","price":24.2},{"rank":35,"name":"Tyreek Hill","pos":"WR","price":23.9},{"rank":36,"name":"David Montgomery","pos":"RB","price":23.7},{"rank":37,"name":"Davante Adams","pos":"WR","price":22.5},{"rank":38,"name":"Isiah Pacheco","pos":"RB","price":22.0},{"rank":39,"name":"Colston Loveland","pos":"TE","price":21.5},{"rank":40,"name":"Drake Maye","pos":"QB","price":21.2},{"rank":41,"name":"DK Metcalf","pos":"WR","price":20.8},{"rank":42,"name":"Chuba Hubbard","pos":"RB","price":20.2},{"rank":43,"name":"Terry McLaurin","pos":"WR","price":19.7},{"rank":44,"name":"TreVeyon Henderson","pos":"RB","price":18.5},{"rank":45,"name":"Garrett Wilson","pos":"WR","price":18.0},{"rank":46,"name":"Tyler Warren","pos":"TE","price":17.3},{"rank":47,"name":"Tee Higgins","pos":"WR","price":16.8},{"rank":48,"name":"Jayden Daniels","pos":"QB","price":16.5},{"rank":49,"name":"RJ Harvey","pos":"RB","price":16.3},{"rank":50,"name":"DJ Moore","pos":"WR","price":15.5},{"rank":51,"name":"Tony Pollard","pos":"RB","price":15.3},{"rank":52,"name":"Patrick Mahomes","pos":"QB","price":15.0},{"rank":53,"name":"Courtland Sutton","pos":"WR","price":14.8},{"rank":54,"name":"Rhamondre Stevenson","pos":"RB","price":14.3},{"rank":55,"name":"Zay Flowers","pos":"WR","price":14.3},{"rank":56,"name":"George Pickens","pos":"WR","price":13.3},{"rank":57,"name":"Javonte Williams","pos":"RB","price":13.3},{"rank":58,"name":"Tucker Kraft","pos":"TE","price":12.9},{"rank":59,"name":"Jameson Williams","pos":"WR","price":12.8},{"rank":60,"name":"Aaron Jones Sr.","pos":"RB","price":12.1},{"rank":61,"name":"Jordan Addison","pos":"WR","price":11.9},{"rank":62,"name":"Joe Burrow","pos":"QB","price":11.8},{"rank":63,"name":"Joe Mixon","pos":"RB","price":11.8},{"rank":64,"name":"Rome Odunze","pos":"WR","price":11.6},{"rank":65,"name":"Najee Harris","pos":"RB","price":11.3},{"rank":66,"name":"Mike Evans","pos":"WR","price":11.3},{"rank":67,"name":"Sam LaPorta","pos":"TE","price":11.1},{"rank":68,"name":"Chris Olave","pos":"WR","price":10.9},{"rank":69,"name":"Jalen Hurts","pos":"QB","price":10.6},{"rank":70,"name":"Calvin Ridley","pos":"WR","price":10.3},{"rank":71,"name":"Xavier Worthy","pos":"WR","price":10.1},{"rank":72,"name":"Zach Charbonnet","pos":"RB","price":9.9},{"rank":73,"name":"Tyrone Tracy Jr.","pos":"RB","price":9.4},{"rank":74,"name":"Jaylen Waddle","pos":"WR","price":9.4},{"rank":75,"name":"Deebo Samuel","pos":"WR","price":9.2},{"rank":76,"name":"George Kittle","pos":"TE","price":9.2},{"rank":77,"name":"Keenan Allen","pos":"WR","price":9.1},{"rank":78,"name":"Travis Etienne Jr.","pos":"RB","price":8.7},{"rank":79,"name":"Bo Nix","pos":"QB","price":8.4},{"rank":80,"name":"D'Andre Swift","pos":"RB","price":8.1},{"rank":81,"name":"Jerry Jeudy","pos":"WR","price":7.9},{"rank":82,"name":"Rashee Rice","pos":"WR","price":7.7},{"rank":83,"name":"J.K. Dobbins","pos":"RB","price":7.6},{"rank":84,"name":"Travis Hunter","pos":"WR","price":7.4},{"rank":85,"name":"Jaylen Warren","pos":"RB","price":7.1},{"rank":86,"name":"Emeka Egbuka","pos":"WR","price":7.1},{"rank":87,"name":"Travis Kelce","pos":"TE","price":7.1},{"rank":88,"name":"Jared Goff","pos":"QB","price":6.6},{"rank":89,"name":"Matthew Golden","pos":"WR","price":6.6},{"rank":90,"name":"Brian Robinson","pos":"RB","price":6.4},{"rank":91,"name":"Rachaad White","pos":"RB","price":6.1},{"rank":92,"name":"Justin Herbert","pos":"QB","price":6.0},{"rank":93,"name":"Tetairoa McMillan","pos":"WR","price":5.9},{"rank":94,"name":"Austin Ekeler","pos":"RB","price":5.5},{"rank":95,"name":"T.J. Hockenson","pos":"TE","price":5.4},{"rank":96,"name":"Devin Singletary","pos":"RB","price":5.2},{"rank":97,"name":"C.J. Stroud","pos":"QB","price":5.0},{"rank":98,"name":"Ricky Pearsall","pos":"WR","price":5.0},{"rank":99,"name":"Jerome Ford","pos":"RB","price":4.9},{"rank":100,"name":"Jauan Jennings","pos":"WR","price":4.9},{"rank":101,"name":"Broncos","pos":"DEF","price":4.9},{"rank":102,"name":"Khalil Shakir","pos":"WR","price":4.5},{"rank":103,"name":"Tank Bigsby","pos":"RB","price":4.4},{"rank":104,"name":"Josh Downs","pos":"WR","price":4.2},{"rank":105,"name":"Kyler Murray","pos":"QB","price":4.2},{"rank":106,"name":"Gus Edwards","pos":"RB","price":4.0},{"rank":107,"name":"Mark Andrews","pos":"TE","price":4.0},{"rank":108,"name":"Rashod Bateman","pos":"WR","price":3.7},{"rank":109,"name":"Zamir White","pos":"RB","price":3.7},{"rank":110,"name":"Darnell Mooney","pos":"WR","price":3.7},{"rank":111,"name":"Rico Dowdle","pos":"RB","price":3.5},{"rank":112,"name":"Brock Purdy","pos":"QB","price":3.5},{"rank":113,"name":"Christian Kirk","pos":"WR","price":3.4},{"rank":114,"name":"Marvin Mims Jr.","pos":"WR","price":3.4},{"rank":115,"name":"Jayden Reed","pos":"WR","price":3.2},{"rank":116,"name":"David Njoku","pos":"TE","price":3.2},{"rank":117,"name":"Romeo Doubs","pos":"WR","price":3.0},{"rank":118,"name":"Jaylen Wright","pos":"RB","price":3.0},{"rank":119,"name":"Baker Mayfield","pos":"QB","price":3.0},{"rank":120,"name":"Dalton Kincaid","pos":"TE","price":3.0},{"rank":121,"name":"Steelers","pos":"DEF","price":3.0},{"rank":122,"name":"Evan Engram","pos":"TE","price":2.9},{"rank":123,"name":"Trey Benson","pos":"RB","price":2.9},{"rank":124,"name":"Emmett Johnson","pos":"RB","price":2.7},{"rank":125,"name":"Christian Watson","pos":"WR","price":2.7},{"rank":126,"name":"Eagles","pos":"DEF","price":2.5},{"rank":127,"name":"Adam Thielen","pos":"WR","price":2.5},{"rank":128,"name":"Trevor Lawrence","pos":"QB","price":2.5},{"rank":129,"name":"Jonnu Smith","pos":"TE","price":2.4},{"rank":130,"name":"Jonathon Brooks","pos":"RB","price":2.4},{"rank":131,"name":"Bhayshul Tuten","pos":"RB","price":2.4},{"rank":132,"name":"Caleb Williams","pos":"QB","price":2.2},{"rank":133,"name":"Michael Pittman Jr.","pos":"WR","price":2.2},{"rank":134,"name":"Vikings","pos":"DEF","price":2.2},{"rank":135,"name":"Ollie Gordon II","pos":"RB","price":2.2},{"rank":136,"name":"Diontae Johnson","pos":"WR","price":2.2},{"rank":137,"name":"Dallas Goedert","pos":"TE","price":2.0},{"rank":138,"name":"Dylan Sampson","pos":"RB","price":1.8},{"rank":139,"name":"Cam Skattebo","pos":"RB","price":1.8},{"rank":140,"name":"Jaydon Blue","pos":"RB","price":1.8},{"rank":141,"name":"Ravens","pos":"DEF","price":1.8},{"rank":142,"name":"Cooper Kupp","pos":"WR","price":1.8},{"rank":143,"name":"Zach Ertz","pos":"TE","price":1.8},{"rank":144,"name":"Cade Otton","pos":"TE","price":1.5},{"rank":145,"name":"Bills","pos":"DEF","price":1.5},{"rank":146,"name":"Stefon Diggs","pos":"WR","price":1.5},{"rank":147,"name":"Justin Fields","pos":"QB","price":1.5},{"rank":148,"name":"Ray Davis","pos":"RB","price":1.4},{"rank":149,"name":"Blake Corum","pos":"RB","price":1.3},{"rank":150,"name":"Hunter Henry","pos":"TE","price":1.3},{"rank":151,"name":"DeVonta Smith","pos":"WR","price":1.3},{"rank":152,"name":"Kimani Vidal","pos":"RB","price":1.3},{"rank":153,"name":"Rams","pos":"DEF","price":1.2},{"rank":154,"name":"Chris Godwin Jr.","pos":"WR","price":1.2},{"rank":155,"name":"Texans","pos":"DEF","price":1.2},{"rank":156,"name":"Marquise Brown","pos":"WR","price":1.2},{"rank":157,"name":"Matthew Stafford","pos":"QB","price":1.2},{"rank":158,"name":"Dak Prescott","pos":"QB","price":1.2},{"rank":159,"name":"Tyler Allgeier","pos":"RB","price":1.0},{"rank":160,"name":"Justice Hill","pos":"RB","price":1.0},{"rank":161,"name":"Braelon Allen","pos":"RB","price":1.0},{"rank":162,"name":"Kenneth Gainwell","pos":"RB","price":1.0},{"rank":163,"name":"Ty Chandler","pos":"RB","price":1.0},{"rank":164,"name":"Daniel Jones","pos":"QB","price":1.0},{"rank":165,"name":"Geno Smith","pos":"QB","price":1.0},{"rank":166,"name":"Tua Tagovailoa","pos":"QB","price":1.0},{"rank":167,"name":"Jaxson Dart","pos":"QB","price":1.0},{"rank":168,"name":"Kirk Cousins","pos":"QB","price":1.0},{"rank":169,"name":"Sam Darnold","pos":"QB","price":1.0},{"rank":170,"name":"Cam Ward","pos":"QB","price":1.0},{"rank":171,"name":"Russell Wilson","pos":"QB","price":1.0},{"rank":172,"name":"Jordan Love","pos":"QB","price":1.0},{"rank":173,"name":"Bryce Young","pos":"QB","price":1.0},{"rank":174,"name":"Jordan Mason","pos":"RB","price":1.0},{"rank":175,"name":"Woody Marks","pos":"RB","price":1.0},{"rank":176,"name":"Isaac Guerendo","pos":"RB","price":1.0},{"rank":177,"name":"J.J. McCarthy","pos":"QB","price":1.0},{"rank":178,"name":"Anthony Richardson Sr.","pos":"QB","price":1.0},{"rank":179,"name":"Michael Penix Jr.","pos":"QB","price":1.0},{"rank":180,"name":"Devin Neal","pos":"RB","price":1.0},{"rank":181,"name":"Roschon Johnson","pos":"RB","price":1.0},{"rank":182,"name":"Miles Sanders","pos":"RB","price":1.0},{"rank":183,"name":"Kaleb Johnson","pos":"RB","price":1.0},{"rank":184,"name":"Tyjae Spears","pos":"RB","price":1.0},{"rank":185,"name":"Josh Reynolds","pos":"WR","price":1.0},{"rank":186,"name":"Quentin Johnston","pos":"WR","price":1.0},{"rank":187,"name":"Wan'Dale Robinson","pos":"WR","price":1.0},{"rank":188,"name":"Skyy Moore","pos":"WR","price":1.0},{"rank":189,"name":"Jalin Hyatt","pos":"WR","price":1.0},{"rank":190,"name":"Jalen Coker","pos":"WR","price":1.0},{"rank":191,"name":"Adonai Mitchell","pos":"WR","price":1.0},{"rank":192,"name":"Xavier Legette","pos":"WR","price":1.0},{"rank":193,"name":"Jayden Higgins","pos":"WR","price":1.0},{"rank":194,"name":"Isaac TeSlaa","pos":"WR","price":1.0},{"rank":195,"name":"Luther Burden III","pos":"WR","price":1.0},{"rank":196,"name":"Tre Harris","pos":"WR","price":1.0},{"rank":197,"name":"Kyle Williams","pos":"WR","price":1.0},{"rank":198,"name":"Jack Bech","pos":"WR","price":1.0},{"rank":199,"name":"Elic Ayomanor","pos":"WR","price":1.0},{"rank":200,"name":"Curtis Samuel","pos":"WR","price":1.0},{"rank":201,"name":"Dontayvion Wicks","pos":"WR","price":1.0},{"rank":202,"name":"Tank Dell","pos":"WR","price":1.0},{"rank":203,"name":"Demario Douglas","pos":"WR","price":1.0},{"rank":204,"name":"Rashid Shaheed","pos":"WR","price":1.0},{"rank":205,"name":"Keon Coleman","pos":"WR","price":1.0},{"rank":206,"name":"Pat Freiermuth","pos":"TE","price":1.0},{"rank":207,"name":"Chig Okonkwo","pos":"TE","price":1.0},{"rank":208,"name":"Isaiah Likely","pos":"TE","price":1.0},{"rank":209,"name":"Cole Kmet","pos":"TE","price":1.0},{"rank":210,"name":"Juwan Johnson","pos":"TE","price":1.0},{"rank":211,"name":"Noah Fant","pos":"TE","price":1.0},{"rank":212,"name":"Gunnar Helm","pos":"TE","price":1.0},{"rank":213,"name":"Mason Taylor","pos":"TE","price":1.0},{"rank":214,"name":"Harold Fannin Jr.","pos":"TE","price":1.0},{"rank":215,"name":"Terrance Ferguson","pos":"TE","price":1.0},{"rank":216,"name":"Elijah Arroyo","pos":"TE","price":1.0},{"rank":217,"name":"Ja'Tavion Sanders","pos":"TE","price":1.0},{"rank":218,"name":"Brenton Strange","pos":"TE","price":1.0},{"rank":219,"name":"Luke Musgrave","pos":"TE","price":1.0},{"rank":220,"name":"49ers","pos":"DEF","price":1.0},{"rank":221,"name":"Packers","pos":"DEF","price":1.0},{"rank":222,"name":"Jets","pos":"DEF","price":1.0},{"rank":223,"name":"Bears","pos":"DEF","price":1.0},{"rank":224,"name":"Chiefs","pos":"DEF","price":1.0},{"rank":225,"name":"Lions","pos":"DEF","price":1.0},{"rank":226,"name":"Cardinals","pos":"DEF","price":1.0},{"rank":227,"name":"Patriots","pos":"DEF","price":1.0},{"rank":228,"name":"Buccaneers","pos":"DEF","price":1.0},{"rank":229,"name":"Colts","pos":"DEF","price":1.0},{"rank":230,"name":"Chargers","pos":"DEF","price":1.0},{"rank":231,"name":"Seahawks","pos":"DEF","price":1.0},{"rank":232,"name":"Commanders","pos":"DEF","price":1.0},{"rank":233,"name":"Cowboys","pos":"DEF","price":1.0},{"rank":234,"name":"Bengals","pos":"DEF","price":1.0},{"rank":235,"name":"Dolphins","pos":"DEF","price":1.0},{"rank":236,"name":"Browns","pos":"DEF","price":1.0},{"rank":237,"name":"Raiders","pos":"DEF","price":1.0},{"rank":238,"name":"Titans","pos":"DEF","price":1.0},{"rank":239,"name":"Jaguars","pos":"DEF","price":1.0},{"rank":240,"name":"Falcons","pos":"DEF","price":1.0},{"rank":241,"name":"Panthers","pos":"DEF","price":1.0},{"rank":242,"name":"Saints","pos":"DEF","price":1.0},{"rank":243,"name":"Giants","pos":"DEF","price":1.0}]</script>
+    <script>(function () {
+  var data = JSON.parse(document.getElementById('rank-data').textContent);
+  var tbody = document.getElementById('rank-tbody');
+  var countEl = document.getElementById('rank-count');
+  var searchEl = document.getElementById('rank-search');
+  var chips = document.querySelectorAll('.pos-filter-chip');
+  var headers = document.querySelectorAll('#rank-table th.sortable');
+  var state = { sortKey: 'rank', sortDir: 1, pos: 'ALL', q: '' };
+
+  function apply() {
+    var rows = data.filter(function (r) {
+      if (state.pos !== 'ALL' && r.pos !== state.pos) return false;
+      if (state.q && r.name.toLowerCase().indexOf(state.q) === -1) return false;
+      return true;
+    });
+    rows.sort(function (a, b) {
+      var av = a[state.sortKey], bv = b[state.sortKey];
+      if (typeof av === 'string') { av = av.toLowerCase(); bv = bv.toLowerCase(); }
+      if (av < bv) return -1 * state.sortDir;
+      if (av > bv) return 1 * state.sortDir;
+      return 0;
+    });
+    tbody.innerHTML = rows.map(function (r) {
+      return '<tr><td class="num mono">' + r.rank + '</td><td>' + r.name +
+        '<span class="pos-tag2">' + r.pos + '</span></td><td class="num mono px">$' +
+        Math.round(r.price) + '</td></tr>';
+    }).join('');
+    countEl.textContent = rows.length + ' of ' + data.length + ' players';
+  }
+
+  headers.forEach(function (h) {
+    h.addEventListener('click', function () {
+      var key = h.getAttribute('data-key');
+      if (state.sortKey === key) { state.sortDir *= -1; } else { state.sortKey = key; state.sortDir = 1; }
+      headers.forEach(function (x) { x.classList.remove('active'); x.querySelector('.arrow').textContent = ''; });
+      h.classList.add('active');
+      h.querySelector('.arrow').textContent = state.sortDir === 1 ? '\u25B2' : '\u25BC';
+      apply();
+    });
+  });
+
+  chips.forEach(function (c) {
+    c.addEventListener('click', function () {
+      chips.forEach(function (x) { x.classList.remove('active'); });
+      c.classList.add('active');
+      state.pos = c.getAttribute('data-pos');
+      apply();
+    });
+  });
+
+  searchEl.addEventListener('input', function () {
+    state.q = searchEl.value.trim().toLowerCase();
+    apply();
+  });
+
+  apply();
+})();</script>
   </section>
 
   <section>
