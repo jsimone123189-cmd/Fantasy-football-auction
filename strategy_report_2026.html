@@ -157,10 +157,9 @@ p { max-width: 68ch; }
 .rank-table-wrap thead th { position: sticky; top: 0; background: var(--bg-elevated); }
 .rank-table-wrap td, .rank-table-wrap th { white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
 .rank-table-wrap th:nth-child(1), .rank-table-wrap td:nth-child(1) { width: 34px; }
-.rank-table-wrap th:nth-child(2), .rank-table-wrap td:nth-child(2) { width: 42%; }
-.rank-table-wrap th:nth-child(3), .rank-table-wrap td:nth-child(3) { width: 46px; }
-.rank-table-wrap th:nth-child(4), .rank-table-wrap td:nth-child(4) { width: 78px; }
-.rank-table-wrap th:nth-child(5), .rank-table-wrap td:nth-child(5) { width: 70px; }
+.rank-table-wrap th:nth-child(2), .rank-table-wrap td:nth-child(2) { width: 50%; }
+.rank-table-wrap th:nth-child(3), .rank-table-wrap td:nth-child(3) { width: 78px; }
+.rank-table-wrap th:nth-child(4), .rank-table-wrap td:nth-child(4) { width: 70px; }
 
 .rank-controls { display: flex; flex-wrap: wrap; gap: 8px; align-items: center; margin: 14px 0 8px; }
 .rank-search {
@@ -651,7 +650,6 @@ table.dollars td.num { font-family: var(--font-mono); text-align: right; }
           <tr>
             <th class="sortable active" data-key="rank">#<span class="arrow">&#9650;</span></th>
             <th class="sortable" data-key="name">Player<span class="arrow"></span></th>
-            <th class="sortable" data-key="pos">Pos<span class="arrow"></span></th>
             <th class="num sortable" data-key="pts">Proj. Pts<span class="arrow"></span></th>
             <th class="num sortable" data-key="price">Target $<span class="arrow"></span></th>
           </tr>
