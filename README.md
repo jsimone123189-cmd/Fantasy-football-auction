@@ -246,6 +246,36 @@ This intentionally does *not* show owner tendency history — that's a
 separate, pre-draft-only concern (see below) — because a live tool used
 under time pressure should stay narrowly focused on the mechanics.
 
+### Post-draft grading
+
+Once the draft's done and `draft-helper live` has saved its `draft_log.csv`
+(or you've assembled one in the same format — `player_name,position,team_name,cost`),
+grade every team's actual draft:
+
+```bash
+draft-helper grade \
+  --log draft_log.csv \
+  --projections data/projections/2026.csv \
+  --out draft_grade_report.html
+```
+
+This prints a table to the terminal and writes a shareable HTML report.
+Each team gets a letter grade from two things, weighted evenly: **starting-lineup
+strength** (projected points from the best lineup that roster can actually
+field, using `--starting-slots` the same way the live tools do) and **auction
+value** (this year's fair price for each player, from your league's own
+historical curve, versus what was actually paid).
+
+It deliberately does **not** penalize a team for skipping a backup DEF,
+backup QB, or 2nd TE, the way some default auto-grade tools do. Those tools
+often simulate the whole season off the literal drafted roster, so any
+position you didn't double up on scores as a hard zero for the games your
+starter is on bye — as if you'd never make a waiver claim all year. Almost
+nobody rosters a 2nd DEF or backup QB/TE on purpose; those are streamed.
+Grading off the real players a team drafted (not a hypothetical empty bench
+slot) avoids manufacturing a penalty for a perfectly normal roster-construction
+choice. See `draft_helper/analysis/draft_grade.py` for the actual formula.
+
 ## How the numbers work
 
 - **Position/rank price curve** (`draft_helper/analysis/inflation.py`):

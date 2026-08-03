@@ -9,10 +9,12 @@ from dotenv import load_dotenv
 
 from . import fetch_history, storage
 from .analysis.cheat_sheet import generate_cheat_sheet, load_projections
+from .analysis.draft_grade import grade_draft
 from .analysis.inflation import build_position_rank_curve
 from .analysis.roster_needs import parse_slots
 from .analysis.tendencies import build_tendency_profiles, format_profile_text
 from .auth import YahooOAuth
+from .grade_report import generate_html as generate_grade_report_html
 from .live_assistant import LiveDraftShell
 from .web import generate_html as generate_live_web_html
 from .yahoo_client import YahooFantasyClient
@@ -214,6 +216,39 @@ def live_web(projections, teams, num_teams, budget_per_team, roster_size, title,
     with open(out_path, "w") as f:
         f.write(html)
     print(f"Wrote {out_path} ({len(html)} bytes)")
+
+
+@cli.command()
+@click.option("--log", "log_path", required=True, help="Completed draft log CSV (what `live` saves to draft_log.csv on quit).")
+@click.option("--projections", required=True, help="This year's projections CSV -- same file used for cheat-sheet/live-web.")
+@click.option(
+    "--starting-slots",
+    default="QB:1,RB:1,WR:1,TE:1,FLEX:3,DEF:1",
+    help="Starting lineup slots as POS:COUNT pairs, used to compute each team's best starting lineup for grading. "
+    "Default matches this league's real roster.",
+)
+@click.option("--title", default="Post-Draft Grades")
+@click.option("--eyebrow", default="Draft Recap")
+@click.option("--out", "out_path", default="draft_grade_report.html")
+def grade(log_path, projections, starting_slots, title, eyebrow, out_path):
+    """Grade every team's completed draft: starting-lineup strength plus auction value,
+    from the real players each team drafted -- never a penalty for skipping a backup
+    DEF/QB/TE the way some default auto-grade tools do (see draft_grade.py's docstring).
+    """
+    log = pd.read_csv(log_path)
+    proj = load_projections(projections)
+    slots = parse_slots(starting_slots)
+    grades = grade_draft(log, proj, starting_slots=slots)
+    if grades.empty:
+        raise click.ClickException("No picks found in the draft log.")
+    print(
+        grades[["grade", "team_name", "starting_points", "spent", "value_surplus", "needs"]]
+        .to_string(index=False)
+    )
+    html_out = generate_grade_report_html(grades, title=title, eyebrow=eyebrow)
+    with open(out_path, "w") as f:
+        f.write(html_out)
+    print(f"\nWrote {out_path} ({len(html_out)} bytes)")
 
 
 if __name__ == "__main__":
