@@ -204,7 +204,7 @@ button.ghost {{
 
 .budget-scroll {{ display: flex; gap: 10px; overflow-x: auto; padding-bottom: 4px; margin: -2px; padding: 2px 2px 8px; }}
 .budget-card {{
-  flex: none; width: 140px; border-radius: 12px; padding: 12px;
+  flex: none; width: 168px; border-radius: 12px; padding: 12px;
   border: 1px solid var(--line-strong); background: var(--bg-card);
 }}
 .budget-card.health-good {{ border-color: color-mix(in srgb, var(--good) 45%, var(--line-strong)); }}
@@ -213,6 +213,7 @@ button.ghost {{
 .budget-card .nm {{ font-weight: 800; font-size: 13px; margin-bottom: 8px; }}
 .budget-card .row {{ display: flex; justify-content: space-between; font-size: 11px; color: var(--ink-faint); margin-bottom: 2px; }}
 .budget-card .row .v {{ font-family: var(--font-mono); color: var(--ink); font-weight: 700; }}
+.budget-card .needs {{ font-size: 10px; color: var(--ink-faint); line-height: 1.4; margin-top: 8px; }}
 .pill {{
   display: inline-block; font-size: 10px; font-weight: 800; letter-spacing: 0.04em;
   padding: 3px 8px; border-radius: 999px; margin-top: 6px; text-transform: uppercase;
@@ -624,6 +625,36 @@ table.board td.px {{ color: var(--accent); }}
     }});
   }}
 
+  var FLEX_ELIGIBLE = ["RB", "WR", "TE"];
+
+  function posForName(name) {{
+    var p = state.pool.filter(function (pl) {{ return pl.name === name; }})[0];
+    return p ? p.pos : null;
+  }}
+
+  // Informational only -- tracks which starting slots (default 1 QB/RB/WR/TE,
+  // 3 FLEX, 1 DEF; see Setup) each team still needs to fill, purely for your
+  // own read of the room. Never changes any suggested price.
+  function computeNeeds(teamName) {{
+    var slots = DATA.slots || {{ QB: 1, RB: 1, WR: 1, TE: 1, FLEX: 3, DEF: 1 }};
+    var dedicated = {{}};
+    Object.keys(slots).forEach(function (k) {{ if (k !== "FLEX") dedicated[k] = slots[k]; }});
+    var flexLeft = slots.FLEX || 0;
+    var t = state.teams[teamName];
+    (t.picks || []).forEach(function (name) {{
+      var pos = posForName(name);
+      if (!pos) return;
+      if (dedicated[pos] > 0) {{ dedicated[pos] -= 1; }}
+      else if (FLEX_ELIGIBLE.indexOf(pos) !== -1 && flexLeft > 0) {{ flexLeft -= 1; }}
+    }});
+    var parts = [];
+    Object.keys(dedicated).forEach(function (k) {{
+      if (dedicated[k] > 0) parts.push(dedicated[k] > 1 ? dedicated[k] + " " + k : k);
+    }});
+    if (flexLeft > 0) parts.push(flexLeft > 1 ? flexLeft + " FLEX" : "FLEX");
+    return parts.length ? parts.join(", ") : "lineup full";
+  }}
+
   function renderBudgets() {{
     var wrap = document.getElementById("budgetScroll");
     wrap.innerHTML = "";
@@ -639,7 +670,8 @@ table.board td.px {{ color: var(--accent); }}
         '<div class="row"><span>Left</span><span class="v">' + fmt(state.budgetPerTeam - t.spent) + "</span></div>" +
         '<div class="row"><span>Spots</span><span class="v">' + spotsLeft + "</span></div>" +
         '<div class="row"><span>Max bid</span><span class="v">' + fmt(maxBid(name)) + "</span></div>" +
-        '<span class="pill health-' + h + '">' + (h === "good" ? "healthy" : h === "warn" ? "tightening" : "capped") + "</span>";
+        '<span class="pill health-' + h + '">' + (h === "good" ? "healthy" : h === "warn" ? "tightening" : "capped") + "</span>" +
+        '<div class="needs">Needs: ' + computeNeeds(name) + "</div>";
       wrap.appendChild(card);
     }});
   }}
@@ -733,6 +765,7 @@ def generate_html(
     eyebrow: str = "Live Draft Assistant",
     storage_key: str = "draft-assistant-v1",
     keepers: pd.DataFrame | None = None,
+    starting_slots: dict | None = None,
 ) -> str:
     """keepers: optional DataFrame with player_name, position, team_name, cost --
     players already locked to a roster before the auction starts. Pre-logged
@@ -759,7 +792,13 @@ def generate_html(
                 }
             )
 
-    data = {"players": players, "budget": budget_per_team, "rosterSize": roster_size, "keepers": keeper_list}
+    data = {
+        "players": players,
+        "budget": budget_per_team,
+        "rosterSize": roster_size,
+        "keepers": keeper_list,
+        "slots": starting_slots or {"QB": 1, "RB": 1, "WR": 1, "TE": 1, "FLEX": 3, "DEF": 1},
+    }
     return TEMPLATE.format(
         title=title,
         eyebrow=eyebrow,

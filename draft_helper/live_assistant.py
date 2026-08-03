@@ -14,6 +14,7 @@ from tabulate import tabulate
 
 from .analysis import tendencies as tendencies_mod
 from .analysis.inflation import baseline_value, inflation_rate
+from .analysis.roster_needs import DEFAULT_SLOTS, compute_needs, format_needs
 
 
 @dataclass
@@ -23,6 +24,7 @@ class TeamState:
     roster_spots: int
     spent: float = 0.0
     picks: list = field(default_factory=list)
+    pick_positions: list = field(default_factory=list)
 
     @property
     def remaining_budget(self) -> float:
@@ -53,6 +55,7 @@ class LiveDraftShell(cmd.Cmd):
         roster_size: int,
         tendency_profiles: pd.DataFrame | None = None,
         log_path: str = "draft_log.csv",
+        starting_slots: dict | None = None,
     ):
         super().__init__()
         self.curve = curve
@@ -63,6 +66,7 @@ class LiveDraftShell(cmd.Cmd):
         self.tendency_profiles = tendency_profiles
         self.log_path = log_path
         self.log: list[dict] = []
+        self.starting_slots = starting_slots or DEFAULT_SLOTS
 
         self.pool = projections.copy()
         self.pool["baseline_value"] = self.pool.apply(
@@ -135,6 +139,7 @@ class LiveDraftShell(cmd.Cmd):
         team = self.teams[team_name]
         team.spent += cost
         team.picks.append(player_name)
+        team.pick_positions.append(position)
         self.dollars_spent += cost
         self.baseline_value_drafted += baseline
 
@@ -154,13 +159,30 @@ class LiveDraftShell(cmd.Cmd):
         print(f"League inflation now {self._current_inflation():.2f}x")
 
     def do_budgets(self, arg):
-        "budgets: show remaining budget / max bid per team"
+        "budgets: show remaining budget / max bid / starting-lineup needs per team"
         rows = [
-            (t.name, f"${t.remaining_budget:.0f}", t.remaining_spots, f"${t.max_bid:.0f}")
+            (
+                t.name, f"${t.remaining_budget:.0f}", t.remaining_spots, f"${t.max_bid:.0f}",
+                format_needs(compute_needs(t.pick_positions, self.starting_slots)),
+            )
             for t in self.teams.values()
         ]
         rows.sort(key=lambda r: -float(r[3].lstrip("$")))
-        print(tabulate(rows, headers=["Team", "Budget left", "Spots left", "Max bid"]))
+        print(tabulate(rows, headers=["Team", "Budget left", "Spots left", "Max bid", "Starting-lineup needs"]))
+
+    def do_needs(self, arg):
+        "needs [team]: show starting-lineup needs for one team, or all teams if omitted.\n"
+        "Informational only -- doesn't change any suggested price, just tells you who\n"
+        "still needs to fill which starting slots (1 QB/RB/WR/TE, 3 FLEX, 1 DEF by default)."
+        arg = arg.strip()
+        team_names = [arg] if arg else list(self.teams)
+        for name in team_names:
+            if name not in self.teams:
+                print(f"Unknown team {name!r}. Known teams: {', '.join(self.teams)}")
+                continue
+            t = self.teams[name]
+            needs = compute_needs(t.pick_positions, self.starting_slots)
+            print(f"  {t.name:<20} {format_needs(needs)}")
 
     def do_board(self, arg):
         "board [n]: top n undrafted players by suggested max bid (default 25)"

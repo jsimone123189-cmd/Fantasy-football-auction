@@ -180,7 +180,8 @@ Then, during the draft:
 ```
 draft> value Christian McCaffrey        # suggested max bid right now
 draft> pick Christian McCaffrey / Alice's Team / 62
-draft> budgets                          # remaining budget + max bid per team
+draft> budgets                          # remaining budget + max bid + starting-lineup needs per team
+draft> needs Alice's Team               # just one team's needs (omit the name for everyone)
 draft> board 20                         # top 20 undrafted players by suggested max
 draft> tendencies alice                 # reminder of that owner's historical patterns
 draft> quit                             # saves the full pick log to draft_log.csv
@@ -191,6 +192,17 @@ position/rank, scaled by real-time inflation (how much money is left in the
 room relative to how much value is still on the board) — the same approach
 tools like auction inflation calculators use, but calibrated to your league's
 actual spending patterns instead of a generic market.
+
+**Positional needs** (`needs` / the last column of `budgets`) track each
+team's still-open *starting* slots — default `QB:1,RB:1,WR:1,TE:1,FLEX:3,DEF:1`,
+matching this league's real roster; override with `--starting-slots` if
+you're running it for a different league. This is informational only: it
+tells you who still needs a TE or has their FLEX spots open so you can read
+the room, but it never changes a suggested price. Baking scarcity into the
+price itself would be a real modeling assumption on top of the
+already-verified historical-curve pricing, so it's left as a display, not
+an automatic adjustment — the underlying `draft_helper/analysis/roster_needs.py`
+is a natural place to add that later if you want to try it.
 
 ### Live draft assistant — phone web version
 
@@ -215,6 +227,10 @@ players already locked to a roster before the auction starts (see
 a pick when the page loads — their cost comes off that team's budget and
 they never show up as nominatable, without you having to remember to log
 them manually on draft night.
+
+`--starting-slots` works the same way as the CLI version above (default
+matches this league's real roster) and drives the **Budgets** tab's
+"Needs" line per team — informational only, doesn't touch pricing.
 
 Open the resulting file in a phone browser (or publish it somewhere and
 open the link). It has four tabs: **Nominate** (search a player, tap the

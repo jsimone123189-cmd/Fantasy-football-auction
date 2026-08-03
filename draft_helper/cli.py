@@ -10,6 +10,7 @@ from dotenv import load_dotenv
 from . import fetch_history, storage
 from .analysis.cheat_sheet import generate_cheat_sheet, load_projections
 from .analysis.inflation import build_position_rank_curve
+from .analysis.roster_needs import parse_slots
 from .analysis.tendencies import build_tendency_profiles, format_profile_text
 from .auth import YahooOAuth
 from .live_assistant import LiveDraftShell
@@ -146,7 +147,14 @@ def cheat_sheet_cmd(projections, num_teams, budget_per_team, keepers, out_path):
 @click.option("--roster-size", required=True, type=int, help="Total roster spots per team.")
 @click.option("--profiles-csv", default=None, help="Optional tendency profiles CSV (from `profiles --csv`) for the `tendencies` command.")
 @click.option("--log-path", default="draft_log.csv")
-def live(projections, teams, budget_per_team, roster_size, profiles_csv, log_path):
+@click.option(
+    "--starting-slots",
+    default="QB:1,RB:1,WR:1,TE:1,FLEX:3,DEF:1",
+    help="Starting lineup slots as POS:COUNT pairs, used only for the `needs`/`budgets` positional-need "
+    "display (never affects suggested prices). FLEX is filled from RB/WR/TE. Default matches this league's "
+    "real roster; override if you're running this for a different league.",
+)
+def live(projections, teams, budget_per_team, roster_size, profiles_csv, log_path, starting_slots):
     """Start the interactive live-draft assistant."""
     df = storage.load_all_drafts()
     if df.empty:
@@ -155,7 +163,8 @@ def live(projections, teams, budget_per_team, roster_size, profiles_csv, log_pat
     proj = load_projections(projections)
     team_list = [t.strip() for t in teams.split(",")]
     profile_df = pd.read_csv(profiles_csv) if profiles_csv else None
-    shell = LiveDraftShell(proj, curve, team_list, budget_per_team, roster_size, profile_df, log_path)
+    slots = parse_slots(starting_slots)
+    shell = LiveDraftShell(proj, curve, team_list, budget_per_team, roster_size, profile_df, log_path, starting_slots=slots)
     shell.cmdloop()
 
 
@@ -168,8 +177,14 @@ def live(projections, teams, budget_per_team, roster_size, profiles_csv, log_pat
 @click.option("--title", default="Draft Assistant")
 @click.option("--eyebrow", default="Live Draft Assistant")
 @click.option("--keepers", default=None, help="Optional CSV of locked keepers: player_name,position,team_name,cost.")
+@click.option(
+    "--starting-slots",
+    default="QB:1,RB:1,WR:1,TE:1,FLEX:3,DEF:1",
+    help="Starting lineup slots as POS:COUNT pairs, used only for the Budgets tab's positional-need display "
+    "(never affects suggested prices). FLEX is filled from RB/WR/TE. Default matches this league's real roster.",
+)
 @click.option("--out", "out_path", default="draft_assistant.html")
-def live_web(projections, teams, num_teams, budget_per_team, roster_size, title, eyebrow, keepers, out_path):
+def live_web(projections, teams, num_teams, budget_per_team, roster_size, title, eyebrow, keepers, starting_slots, out_path):
     """Generate the self-contained live-draft web page (see README) as a static HTML file.
 
     Publish the resulting file (e.g. via an Artifact) or just open it in a
@@ -183,6 +198,7 @@ def live_web(projections, teams, num_teams, budget_per_team, roster_size, title,
     proj = load_projections(projections)
     team_list = [t.strip() for t in teams.split(",")]
     keeper_df = pd.read_csv(keepers) if keepers else None
+    slots = parse_slots(starting_slots)
     html = generate_live_web_html(
         curve,
         proj,
@@ -193,6 +209,7 @@ def live_web(projections, teams, num_teams, budget_per_team, roster_size, title,
         title=title,
         keepers=keeper_df,
         eyebrow=eyebrow,
+        starting_slots=slots,
     )
     with open(out_path, "w") as f:
         f.write(html)
