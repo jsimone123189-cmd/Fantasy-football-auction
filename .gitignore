@@ -6,3 +6,4 @@ venv/
 data/.credentials/
 .pytest_cache/
 *.egg-info/
+.claude/worktrees/
