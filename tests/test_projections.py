@@ -1,9 +1,10 @@
 import pandas as pd
 import pytest
 
-from draft_helper.projections.scoring import score_stat_line
+from draft_helper.projections.scoring import expected_milestone_bonus, score_stat_line
 from draft_helper.projections.team_context import TeamContext
 from draft_helper.projections.model import project_rb, project_wr_te, project_qb
+from draft_helper.projections.def_model import project_defense
 
 
 def test_score_stat_line_half_ppr():
@@ -13,8 +14,28 @@ def test_score_stat_line_half_ppr():
 
 
 def test_score_stat_line_passing_td_is_four_points():
+    # Confirmed real league rate: 1 pt / 50 passing yards (not the more common 1/25).
     pts = score_stat_line(dict(pass_yards=300, pass_td=2, interceptions=1))
-    assert pts == pytest.approx(300 * 0.04 + 2 * 4 - 2)
+    assert pts == pytest.approx(300 * 0.02 + 2 * 4 - 2)
+
+
+def test_expected_milestone_bonus_zero_when_far_below_threshold():
+    # A 150 yd/g passer essentially never hits 300 -- bonus should be ~0.
+    bonus = expected_milestone_bonus(games=17, pass_yards_per_game=150)
+    assert bonus == pytest.approx(0, abs=0.5)
+
+
+def test_expected_milestone_bonus_grows_with_average_yardage():
+    low = expected_milestone_bonus(games=17, pass_yards_per_game=230)
+    high = expected_milestone_bonus(games=17, pass_yards_per_game=320)
+    assert 0 <= low < high
+
+
+def test_expected_milestone_bonus_stacks_rush_and_pass():
+    combined = expected_milestone_bonus(games=17, pass_yards_per_game=280, rush_yards_per_game=90)
+    pass_only = expected_milestone_bonus(games=17, pass_yards_per_game=280)
+    rush_only = expected_milestone_bonus(games=17, rush_yards_per_game=90)
+    assert combined == pytest.approx(pass_only + rush_only)
 
 
 def neutral_context(implied_ppg=21.5):
@@ -100,3 +121,16 @@ def test_project_qb_includes_rushing_equity():
     # Rushing equity should meaningfully close the gap despite fewer/less efficient pass attempts.
     assert mobile_result["rush_yards"] > pocket_result["rush_yards"]
     assert mobile_result["projected_points"] > 0
+
+
+def test_project_defense_scales_with_win_total():
+    elite = project_defense("Rams", 11.5)
+    poor = project_defense("Cardinals", 3.5)
+    assert elite["projected_points"] > poor["projected_points"]
+    assert elite["floor"] < elite["projected_points"] < elite["ceiling"]
+
+
+def test_project_defense_applies_real_signal_bonus():
+    with_bonus = project_defense("Rams", 9.5)
+    without_bonus = project_defense("SomeOtherTeam", 9.5)
+    assert with_bonus["projected_points"] > without_bonus["projected_points"]

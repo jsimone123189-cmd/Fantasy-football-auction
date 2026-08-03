@@ -28,7 +28,7 @@ against the league's actual scoring rules (scoring.py).
 """
 from __future__ import annotations
 
-from .scoring import score_stat_line
+from .scoring import expected_milestone_bonus, score_stat_line
 from .team_context import TeamContext
 
 GAMES_DEFAULT = 17.0
@@ -74,8 +74,8 @@ def _risk_band(row):
     return RISK_BANDS.get(tier, RISK_BANDS["medium"]), tier
 
 
-def _finalize(stats: dict, games: float, row, extra_drivers: list[str]):
-    median = round(score_stat_line(stats), 1)
+def _finalize(stats: dict, games: float, row, extra_drivers: list[str], bonus: float = 0.0):
+    median = round(score_stat_line(stats) + bonus, 1)
     (floor_mult, ceil_mult), risk_tier = _risk_band(row)
     return {
         "games_proj": round(games, 1),
@@ -112,13 +112,16 @@ def project_rb(row, team: TeamContext) -> dict:
         rush_yards=rush_yards, rush_td=rush_td,
         receptions=receptions, rec_yards=rec_yards, rec_td=rec_td,
     )
+    bonus = expected_milestone_bonus(games, rush_yards_per_game=rush_att_pg * ypc)
     drivers = [
         f"{rush_att_pg:.1f} carries/g ({_num(row,'rush_att_pg'):.1f} baseline x "
         f"{team.run_funnel_mult:.2f} scheme/OL x {team.rb_gamescript_mult:.2f} game-script)",
         f"{ypc:.2f} YPC efficiency",
         f"{targets_pg:.1f} targets/g as receiver",
     ]
-    return _finalize(stats, games, row, drivers)
+    if bonus >= 3:
+        drivers.append(f"+{bonus:.0f} pts from expected 100/200-rush-yard game bonuses")
+    return _finalize(stats, games, row, drivers, bonus=bonus)
 
 
 def project_wr_te(row, team: TeamContext) -> dict:
@@ -150,7 +153,7 @@ def project_wr_te(row, team: TeamContext) -> dict:
         f"{team.pass_funnel_mult:.2f} scheme/pace x {team.pass_gamescript_mult:.2f} game-script)",
         f"{catch_rate*100:.0f}% catch rate, {ypt:.1f} yds/target",
     ]
-    return _finalize(stats, games, row, drivers)
+    return _finalize(stats, games, row, drivers)  # receiving yards carry no milestone bonus in this league
 
 
 def project_qb(row, team: TeamContext) -> dict:
@@ -178,12 +181,17 @@ def project_qb(row, team: TeamContext) -> dict:
         pass_yards=pass_yards, pass_td=pass_td, interceptions=interceptions,
         rush_yards=rush_yards, rush_td=rush_td,
     )
+    bonus = expected_milestone_bonus(
+        games, pass_yards_per_game=pass_att_pg * ypa, rush_yards_per_game=rush_att_pg * rush_ypc,
+    )
     drivers = [
         f"{pass_att_pg:.1f} pass att/g x {ypa:.1f} YPA, {pass_td_rate*100:.1f}% TD rate",
         f"{rush_att_pg:.1f} rush att/g at {rush_ypc:.1f} YPC ({rush_td_rate*100:.1f}% rush-TD rate)"
         if rush_att_pg >= 1.5 else "pocket passer, minimal rushing equity",
     ]
-    return _finalize(stats, games, row, drivers)
+    if bonus >= 3:
+        drivers.append(f"+{bonus:.0f} pts from expected 300/500-pass-yard (and rush-yard) game bonuses")
+    return _finalize(stats, games, row, drivers, bonus=bonus)
 
 
 PROJECTORS = {
