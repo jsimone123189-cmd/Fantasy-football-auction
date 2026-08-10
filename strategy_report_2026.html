@@ -54,6 +54,19 @@ a { color: var(--accent); }
 
 .wrap { max-width: 760px; margin: 0 auto; padding: 48px 20px 80px; }
 
+.league-tabs {
+  display: flex; gap: 6px; margin-bottom: 8px; border-bottom: 1px solid var(--line-strong);
+  overflow-x: auto;
+}
+.league-tab {
+  font: inherit; font-size: 13px; font-weight: 700; color: var(--ink-faint);
+  background: none; border: none; border-bottom: 2px solid transparent;
+  padding: 10px 14px; cursor: pointer; white-space: nowrap;
+}
+.league-tab:hover { color: var(--ink); }
+.league-tab.active { color: var(--accent); border-bottom-color: var(--accent); }
+.league-panel { padding-top: 32px; }
+
 header.hero { margin-bottom: 40px; }
 .eyebrow {
   font-size: 11px; letter-spacing: 0.16em; text-transform: uppercase;
@@ -195,6 +208,14 @@ table.dollars td.num { font-family: var(--font-mono); text-align: right; }
 </style>
 
 <div class="wrap">
+
+  <nav class="league-tabs">
+    <button class="league-tab active" data-league="topteamz">Top Teamz</button>
+    <button class="league-tab" data-league="rivals">Rivals League</button>
+    <button class="league-tab" data-league="electricblue">Electric Blue</button>
+  </nav>
+
+  <div class="league-panel" id="panel-topteamz">
 
   <header class="hero">
     <div class="eyebrow">The Top Teamz &middot; six seasons of auction history</div>
@@ -810,4 +831,69 @@ table.dollars td.num { font-family: var(--font-mono); text-align: right; }
     board updates around it. Companion tool: the live draft assistant for draft night itself.
   </footer>
 
+  </div>
+
+  <div class="league-panel" id="panel-rivals" hidden>
+    <header class="hero">
+      <div class="eyebrow">Rivals League &middot; Fantrax</div>
+      <h1 class="title">Rivals League</h1>
+      <p class="dek">Snake/standard draft, not auction &mdash; hosted on Fantrax. This tab is scaffolding for
+        now: a custom cheat sheet and pre-draft strategy notes, plus an in-season helper (waivers, start/sit,
+        matchups), the same way the Top Teamz tab works today.</p>
+    </header>
+    <section>
+      <h2 class="section-title">Coming next</h2>
+      <p>Once league rules are in (scoring format, roster/lineup slots, team count, keeper rules if any), this
+        tab fills in the same way Top Teamz did: a from-scratch snake-draft rankings board (best-player-available
+        + roster-construction tiers instead of auction dollars, since Fantrax leagues don't price by $), a
+        pre-draft strategy report, and an in-season companion. Fantrax doesn't have the same historical-draft-API
+        pull Yahoo does, so pulling past-season data here will need a different approach &mdash; worth sorting out
+        once you're set up locally.</p>
+    </section>
+  </div>
+
+  <div class="league-panel" id="panel-electricblue" hidden>
+    <header class="hero">
+      <div class="eyebrow">Electric Blue &middot; Yahoo</div>
+      <h1 class="title">Electric Blue</h1>
+      <p class="dek">Snake/standard draft, not auction &mdash; hosted on Yahoo, same platform as Top Teamz. This
+        tab is scaffolding for now: a custom cheat sheet and pre-draft strategy notes, plus an in-season helper
+        (waivers, start/sit, matchups), the same way the Top Teamz tab works today.</p>
+    </header>
+    <section>
+      <h2 class="section-title">Coming next</h2>
+      <p>Being on Yahoo means the same <code>fetch-history</code> pipeline used for Top Teamz should work here
+        once this league is authorized against the Yahoo app credentials &mdash; real historical draft data,
+        not just projections. Once league rules are in (scoring format, roster/lineup slots, team count, keeper
+        rules if any), this tab fills in with a from-scratch snake-draft rankings board (best-player-available +
+        roster-construction tiers, since snake drafts don't price by $) and a pre-draft strategy report, plus an
+        in-season companion.</p>
+    </section>
+  </div>
+
 </div>
+
+<script>(function () {
+  var tabs = document.querySelectorAll('.league-tab');
+  var panels = { topteamz: document.getElementById('panel-topteamz'),
+                 rivals: document.getElementById('panel-rivals'),
+                 electricblue: document.getElementById('panel-electricblue') };
+  var STORAGE_KEY = 'draft-report-league-tab';
+
+  function show(league) {
+    Object.keys(panels).forEach(function (k) { panels[k].hidden = k !== league; });
+    tabs.forEach(function (t) { t.classList.toggle('active', t.getAttribute('data-league') === league); });
+  }
+
+  tabs.forEach(function (t) {
+    t.addEventListener('click', function () {
+      var league = t.getAttribute('data-league');
+      show(league);
+      try { localStorage.setItem(STORAGE_KEY, league); } catch (e) {}
+    });
+  });
+
+  var saved = null;
+  try { saved = localStorage.getItem(STORAGE_KEY); } catch (e) {}
+  if (saved && panels[saved]) show(saved);
+})();</script>
