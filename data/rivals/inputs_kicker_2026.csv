@@ -1,0 +1,41 @@
+player_name,nfl_team,games_proj,fg_made_pg,fg_40_49_pg,fg_50plus_pg,xp_made_pg,fg_missed_pg,xp_missed_pg,risk_tier,role_note
+Ka'imi Fairbairn,HOU,17,2.933,1.067,0.6,1.867,0.267,0.0,low,locked-in starter
+Jason Myers,SEA,17,2.412,0.765,0.529,2.824,0.412,0.0,low,locked-in starter
+Cameron Dicker,LAC,17,2.235,0.706,0.294,2.0,0.176,0.059,low,locked-in starter
+Brandon Aubrey,DAL,17,2.118,0.588,0.647,2.765,0.353,0.059,low,locked-in starter
+Harrison Butker,KC,17,1.941,0.529,0.294,1.824,0.294,0.235,low,locked-in starter
+Will Reichard,MIN,17,1.941,0.412,0.647,1.824,0.118,0.0,low,locked-in starter
+Chase McLaughlin,TB,17,1.882,0.353,0.647,1.882,0.353,0.059,low,locked-in starter
+Cam Little,JAX,17,1.765,0.471,0.471,2.941,0.235,0.059,low,locked-in starter
+Tyler Loop,BAL,13,1.765,0.471,0.059,2.588,0.235,0.118,medium,locked-in starter (Ravens noncommittal on adding competition per ESPN)
+Blake Grupe,IND,13,1.812,0.188,0.438,1.562,0.5,0.0,medium,open competition vs Spencer Shrader in training camp (rotating camp reps per SI/Colts.com reporting)
+Nick Folk,NYJ,17,1.75,0.438,0.438,1.375,0.062,0.0,low,signed with Atlanta Falcons for 2026 - locked-in starter there (Falcons implied ~20.0 PPG per team_context data)
+Wil Lutz,DEN,17,1.647,0.176,0.235,2.294,0.235,0.0,low,locked-in starter (signed 3-yr extension through 2028)
+Joey Slye,TEN,17,1.75,0.438,0.562,1.625,0.438,0.062,low,re-signed to one-year deal - locked-in starter
+Eddy Pineiro,SF,17,2.0,0.714,0.429,2.429,0.071,0.286,low,locked-in starter
+Chris Boswell,PIT,17,1.588,0.588,0.529,2.471,0.294,0.059,low,locked-in starter
+Riley Patterson,MIA,13,1.588,0.647,0.176,2.0,0.118,0.059,medium,open competition vs free-agent signee Zane Gonzalez in training camp
+Jake Bates,DET,17,1.588,0.529,0.235,3.176,0.412,0.118,low,locked-in starter
+Andy Borregales,NE,17,1.588,0.412,0.235,3.118,0.294,0.118,low,locked-in starter
+Cairo Santos,CHI,17,1.667,0.667,0.267,2.6,0.333,0.0,low,locked-in starter
+Evan McPherson,CIN,17,1.471,0.588,0.294,2.412,0.176,0.176,low,locked-in starter
+Chad Ryland,ARI,13,1.471,0.412,0.353,2.118,0.471,0.0,medium,open competition vs Joshua Karty in training camp - job on notice per CBS Sports
+Brandon McManus,GB,17,1.714,0.214,0.214,2.286,0.429,0.071,low,locked-in starter with Green Bay
+Andre Szmyt,CLE,17,1.412,0.294,0.294,1.471,0.176,0.059,low,locked-in starter
+Ryan Fitzgerald,CAR,17,1.412,0.471,0.118,1.588,0.294,0.176,low,locked-in starter (under contract through 2027 per SI)
+Daniel Carlson,LV,10,1.294,0.353,0.294,1.235,0.294,0.059,high,elected free agency in March 2026 after Raiders signed Matt Gay as replacement - Carlson currently unsigned/no 2026 team found
+Jake Elliott,PHI,17,1.176,0.412,0.235,2.412,0.412,0.059,low,locked-in starter
+Zane Gonzalez,ATL,13,2.111,0.889,0.778,1.889,0.333,0.111,medium,signed with Miami Dolphins for 2026 - open competition vs incumbent Riley Patterson
+Jake Moody,WSH,13,2.111,0.556,0.222,1.667,0.444,0.111,medium,on Commanders roster but Matt Gay/John Parker Romo-type competition history at this spot - check current WSH depth chart closer to season; unclear starter status
+Matt Prater,BUF,17,1.2,0.4,0.067,3.067,0.133,0.2,low,locked-in starter entering 2026 with Buffalo per available reporting
+Matt Gay,LV,13,1.417,0.0,0.0,2.167,0.5,0.0,medium,signed 1-yr deal with Las Vegas Raiders to replace released Daniel Carlson - open competition vs rookie Kansei Matsuzawa in camp
+Spencer Shrader,IND,13,2.6,0.4,0.2,2.8,0.2,0.0,medium,recovered from ACL/MCL tear - open competition vs Blake Grupe in training camp for Colts starting job
+Harrison Mevis,LAR,17,1.333,0.556,0.111,4.333,0.111,0.0,low,"locked-in starter - tendered as exclusive rights free agent, enters camp as frontrunner per SI"
+Charlie Smyth,NO,17,2.0,0.5,0.667,2.167,0.667,0.0,low,on Saints roster for 2026 per team's own offseason interview coverage; role appears stabilized after 2025 struggles
+Michael Badgley,BUF,17,1.222,0.556,0.222,2.222,0.111,0.556,low,"on Bills practice squad as of Dec 2025 - behind Matt Prater on depth chart, backup/depth role for 2026"
+Parker Romo,ATL,17,1.571,0.143,0.143,1.714,0.429,0.143,low,no longer on Falcons 2026 roster (Falcons signed Nick Folk as starter) - current 2026 team not found in search
+Joshua Karty,ARI,13,1.25,0.375,0.125,2.875,0.625,0.375,medium,"released by Cardinals June 2026 - reporting conflicts on 2026 status; some sources list him competing with Chad Ryland in Arizona camp, others say he was cut - treat as uncertain/depth-level"
+Graham Gano,NYG,17,1.8,0.2,0.2,1.8,0.2,0.0,low,on Giants roster; competed with Younghoe Koo in 2025 but Koo left for NYJ in 2026 - Gano likely returns as starter if healthy
+Ben Sauls,NYG,13,2.667,0.333,0.0,2.333,0.0,0.0,medium,on Giants roster as depth/competition option behind Graham Gano for 2026
+Younghoe Koo,NYJ,13,1.0,0.333,0.0,2.167,0.5,0.167,medium,signed by Jets in May 2026 - open 3-way competition vs Cade York and Lenny Krieg for starting job
+Matthew Wright,HOU,17,1.25,0.75,0.0,1.0,0.0,0.0,low,journeyman/depth kicker - no clear locked-in 2026 starting role identified; likely camp/injury-fill candidate
