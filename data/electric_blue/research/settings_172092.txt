@@ -1,0 +1,55 @@
+League ID: 172092 (era covering 2019-2020 seasons)
+League Name: Electric Blue
+Max Teams: 12
+Draft Type: Live Standard Draft (snake)
+Live Draft Pick Time: 1 Minute 30 Seconds
+Keeper Settings: Yes, Keeper League Management enabled
+Scoring Type: Head-to-Head
+Roster Positions: QB, WR, WR, RB, RB, TE, W/R/T, K, DEF, BN x6, IR
+Fractional Points: Yes
+Negative Points: Yes
+Waiver Type: FAB w/ Continual rolling list tiebreak
+
+Offense scoring:
+  Passing yards: 25 yards/pt; bonus 1pt at 300, 3pt at 500, 25pt at 555
+  Passing TD: 4
+  Interceptions: -1
+  Rushing yards: 10 yards/pt; bonus 2pt at 100, 4pt at 200, 25pt at 297
+  Rushing TD: 6
+  Receptions: 0.5 (half PPR)
+  Receiving yards: 10 yards/pt; bonus 1pt at 100, 3pt at 200, 25pt at 337
+  Receiving TD: 6
+  Return TD: 6
+  2-point conversions: 2
+  Fumbles lost: -2
+  Offensive fumble return TD: 6
+
+Kicker scoring:
+  FG 0-19: 3
+  FG 20-29: 3
+  FG 30-39: 3
+  FG 40-49: 4
+  FG 50+: 5
+  PAT made: 1
+
+DEF/ST scoring:
+  Sack: 1
+  Interception: 2
+  Fumble recovery: 2
+  Touchdown: 6
+  Safety: 2
+  Block kick: 2
+  Kickoff/punt return TD: 6
+  Points allowed 0: 10
+  Points allowed 1-6: 7
+  Points allowed 7-13: 4
+  Points allowed 14-20: 1
+  Points allowed 21-27: 0
+  Points allowed 28-34: -1
+  Points allowed 35+: -4
+  Extra point returned: 2
+
+NOTE: this settings page was pulled in the context of league ID 172092
+(2019-2020 era). Should confirm the current (2025) league's Scoring &
+Settings page matches -- these often stay stable across a league's life
+but worth a quick check, not assumed.
