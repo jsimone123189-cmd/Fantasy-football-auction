@@ -5,7 +5,7 @@ Puka Nacua,WR,Rams,301.5,226.1,385.9,medium,"10.2 targets/g, 72% catch rate, 8.5
 CeeDee Lamb,WR,Cowboys,287.6,215.7,368.1,medium,"9.9 targets/g, 68% catch rate, 8.2 yds/target | full-PPR: every catch worth 1.0 pt (vs 0.5 in Top Teamz)",4,55.4,232.2,4,1,14.0
 Jaxon Smith-Njigba,WR,Seahawks,285.5,242.7,336.9,low,"9.3 targets/g, 70% catch rate, 8.5 yds/target | full-PPR: every catch worth 1.0 pt (vs 0.5 in Top Teamz)",5,55.4,230.1,5,1,11.0
 Amon-Ra St. Brown,WR,Lions,280.5,238.4,331.0,low,"9.3 targets/g, 75% catch rate, 7.8 yds/target | full-PPR: every catch worth 1.0 pt (vs 0.5 in Top Teamz)",6,55.4,225.1,6,1,6.0
-A.J. Brown,WR,Patriots,262.4,196.8,335.9,medium,"8.8 targets/g, 65% catch rate, 8.5 yds/target | full-PPR: every catch worth 1.0 pt (vs 0.5 in Top Teamz)",7,55.4,207.0,7,1,11.0
+A.J. Brown,WR,Patriots,262.4,165.3,372.6,high,"8.8 targets/g, 65% catch rate, 8.5 yds/target | full-PPR: every catch worth 1.0 pt (vs 0.5 in Top Teamz)",7,55.4,207.0,7,1,11.0
 Nico Collins,WR,Texans,251.9,188.9,322.4,medium,"8.9 targets/g, 66% catch rate, 8.8 yds/target | full-PPR: every catch worth 1.0 pt (vs 0.5 in Top Teamz)",8,55.4,196.5,8,1,8.0
 Drake London,WR,Falcons,249.2,186.9,319.0,medium,"9.2 targets/g, 63% catch rate, 8.0 yds/target | full-PPR: every catch worth 1.0 pt (vs 0.5 in Top Teamz)",9,55.4,193.8,9,1,11.0
 Josh Allen,QB,Bills,429.0,364.6,506.2,low,"35.0 pass att/g x 7.6 YPA, 6.2% TD rate (1pt/25 pass yds here, double Top Teamz's rate) | 8.5 rush att/g at 5.2 YPC",1,246.6,182.4,10,1,7.0
@@ -46,8 +46,8 @@ Jordyn Brooks,LB,Dolphins,263.5,224.0,310.9,low,"5.8 solo + 4.9 ast tackles/g (1
 Jeffery Simmons,DL,Titans,198.9,169.1,234.7,low,"2.6 solo + 1.9 ast tackles/g (5.3 pts/g from tackle volume alone) | 1.13 TFL/g, 0.73 sacks/g, 0.20 PD/g | Full-time starting 3-tech/interior rusher, paired with John Franklin-Myers in new defensive scheme | listed as DT",3,102.5,96.4,45,3,9.0
 Tyler Warren,TE,Colts,157.4,118.1,201.5,medium,"6.6 targets/g, 68% catch rate, 6.0 yds/target | full-PPR: every catch worth 1.0 pt (vs 0.5 in Top Teamz)",3,61.3,96.1,46,3,13.0
 Jerry Jeudy,WR,Browns,151.4,95.4,215.0,high,"6.6 targets/g, 60% catch rate, 7.5 yds/target | full-PPR: every catch worth 1.0 pt (vs 0.5 in Top Teamz)",33,55.4,96.0,47,3,11.0
-Patrick Mahomes,QB,Chiefs,341.2,290.0,402.6,low,"38.1 pass att/g x 7.2 YPA, 5.1% TD rate (1pt/25 pass yds here, double Top Teamz's rate) | 4.0 rush att/g at 5.5 YPC",4,246.6,94.6,48,3,5.0
-Joe Burrow,QB,Bengals,341.2,255.9,436.7,medium,"39.1 pass att/g x 7.6 YPA, 6.1% TD rate (1pt/25 pass yds here, double Top Teamz's rate) | 2.5 rush att/g at 4.0 YPC",5,246.6,94.6,49,4,6.0
+Joe Burrow,QB,Bengals,341.2,255.9,436.7,medium,"39.1 pass att/g x 7.6 YPA, 6.1% TD rate (1pt/25 pass yds here, double Top Teamz's rate) | 2.5 rush att/g at 4.0 YPC",5,246.6,94.6,48,3,6.0
+Patrick Mahomes,QB,Chiefs,341.2,290.0,402.6,low,"38.1 pass att/g x 7.2 YPA, 5.1% TD rate (1pt/25 pass yds here, double Top Teamz's rate) | 4.0 rush att/g at 5.5 YPC",4,246.6,94.6,49,4,5.0
 Jayden Daniels,QB,Commanders,339.4,254.5,434.4,medium,"32.3 pass att/g x 7.5 YPA, 4.5% TD rate (1pt/25 pass yds here, double Top Teamz's rate) | 8.0 rush att/g at 5.5 YPC",6,246.6,92.8,50,4,7.0
 Malik Nabers,WR,Giants,146.8,73.4,234.9,very_high,"8.6 targets/g, 65% catch rate, 8.0 yds/target | full-PPR: every catch worth 1.0 pt (vs 0.5 in Top Teamz)",34,55.4,91.4,51,4,8.0
 James Cook III,RB,Bills,289.9,246.4,342.1,low,"18.0 carries/g x 4.74 YPC | 2.6 targets/g as receiver, full-PPR",5,200.5,89.4,52,4,7.0
@@ -76,8 +76,8 @@ Derrick Henry,RB,Ravens,266.2,199.6,340.7,medium,"16.2 carries/g x 4.94 YPC | 1.
 Josh Downs,WR,Colts,120.3,90.2,154.0,medium,"5.6 targets/g, 68% catch rate, 6.0 yds/target | full-PPR: every catch worth 1.0 pt (vs 0.5 in Top Teamz)",41,55.4,64.9,75,5,13.0
 T.J. Hockenson,TE,Vikings,124.5,93.4,159.4,medium,"5.5 targets/g, 68% catch rate, 6.0 yds/target | full-PPR: every catch worth 1.0 pt (vs 0.5 in Top Teamz)",9,61.3,63.2,76,5,6.0
 Carson Schwesinger,LB,Browns,228.7,194.4,269.9,low,"4.2 solo + 5.6 ast tackles/g (10.5 pts/g from tackle volume alone) | 0.69 TFL/g, 0.16 sacks/g, 0.19 PD/g | Entrenched three-down starter | listed as ILB",4,165.8,62.9,77,5,11.0
-Christian Watson,WR,Packers,114.8,86.1,146.9,medium,"4.9 targets/g, 58% catch rate, 8.0 yds/target | full-PPR: every catch worth 1.0 pt (vs 0.5 in Top Teamz)",43,55.4,59.4,78,5,11.0
-Matthew Golden,WR,Packers,114.8,72.3,163.0,high,"4.9 targets/g, 60% catch rate, 7.0 yds/target | full-PPR: every catch worth 1.0 pt (vs 0.5 in Top Teamz)",42,55.4,59.4,79,5,11.0
+Matthew Golden,WR,Packers,114.8,72.3,163.0,high,"4.9 targets/g, 60% catch rate, 7.0 yds/target | full-PPR: every catch worth 1.0 pt (vs 0.5 in Top Teamz)",42,55.4,59.4,78,5,11.0
+Christian Watson,WR,Packers,114.8,86.1,146.9,medium,"4.9 targets/g, 58% catch rate, 8.0 yds/target | full-PPR: every catch worth 1.0 pt (vs 0.5 in Top Teamz)",43,55.4,59.4,79,5,11.0
 Mark Andrews,TE,Ravens,118.6,88.9,151.8,medium,"4.8 targets/g, 65% catch rate, 6.5 yds/target | full-PPR: every catch worth 1.0 pt (vs 0.5 in Top Teamz)",10,61.3,57.3,80,5,13.0
 Chase Brown,RB,Bengals,255.2,191.4,326.7,medium,"15.9 carries/g x 4.33 YPC | 3.2 targets/g as receiver, full-PPR",11,200.5,54.7,81,6,6.0
 Cooper Kupp,WR,Seahawks,109.5,82.1,140.2,medium,"4.9 targets/g, 68% catch rate, 6.5 yds/target | full-PPR: every catch worth 1.0 pt (vs 0.5 in Top Teamz)",44,55.4,54.1,82,6,11.0
@@ -118,13 +118,13 @@ Roquan Smith,LB,Ravens,192.1,163.3,226.7,low,"5.1 solo + 3.6 ast tackles/g (10.3
 Romeo Doubs,WR,Patriots,81.1,60.8,103.8,medium,"3.9 targets/g, 60% catch rate, 6.5 yds/target | full-PPR: every catch worth 1.0 pt (vs 0.5 in Top Teamz)",51,55.4,25.7,117,8,11.0
 Javonte Williams,RB,Cowboys,226.0,169.5,289.3,medium,"15.6 carries/g x 4.03 YPC | 3.2 targets/g as receiver, full-PPR",15,200.5,25.5,118,8,14.0
 Hunter Henry,TE,Chargers,85.6,53.9,121.6,high,"4.2 targets/g, 68% catch rate, 5.5 yds/target | full-PPR: every catch worth 1.0 pt (vs 0.5 in Top Teamz)",15,61.3,24.3,119,8,7.0
-Jordan Battle,DB,Bengals,182.8,155.4,215.7,low,"3.5 solo + 3.8 ast tackles/g (8.2 pts/g from tackle volume alone) | 0.12 TFL/g, 0.00 sacks/g, 0.35 PD/g | Starter - safety | listed as S",5,159.1,23.7,120,8,6.0
-Kam Curl,DB,Rams,182.8,155.4,215.7,low,"4.6 solo + 2.5 ast tackles/g (8.9 pts/g from tackle volume alone) | 0.00 TFL/g, 0.12 sacks/g, 0.29 PD/g | Starter - box safety | listed as S",4,159.1,23.7,121,8,11.0
+Kam Curl,DB,Rams,182.8,155.4,215.7,low,"4.6 solo + 2.5 ast tackles/g (8.9 pts/g from tackle volume alone) | 0.00 TFL/g, 0.12 sacks/g, 0.29 PD/g | Starter - box safety | listed as S",4,159.1,23.7,120,8,11.0
+Jordan Battle,DB,Bengals,182.8,155.4,215.7,low,"3.5 solo + 3.8 ast tackles/g (8.2 pts/g from tackle volume alone) | 0.12 TFL/g, 0.00 sacks/g, 0.35 PD/g | Starter - safety | listed as S",5,159.1,23.7,121,8,6.0
 Christian Kirk,WR,Texans,78.2,58.7,100.1,medium,"4.0 targets/g, 65% catch rate, 6.5 yds/target | full-PPR: every catch worth 1.0 pt (vs 0.5 in Top Teamz)",52,55.4,22.8,122,8,8.0
 Travis Etienne Jr.,RB,Saints,222.1,166.6,284.3,medium,"14.7 carries/g x 4.20 YPC | 3.5 targets/g as receiver, full-PPR",16,200.5,21.6,123,8,8.0
 Cam Little,K,Jaguars,99.0,84.1,116.8,low,"1.76 FG made/g (0.47 from 40-49, 0.47 from 50+) | 2.94 XP made/g",5,78.0,21.0,124,8,7.0
-Luther Burden III,WR,Bears,75.9,47.8,107.8,high,"4.2 targets/g, 62% catch rate, 6.0 yds/target | full-PPR: every catch worth 1.0 pt (vs 0.5 in Top Teamz)",53,55.4,20.5,125,8,10.0
-Jordan Davis,DL,Eagles,123.0,104.5,145.1,low,"1.9 solo + 2.1 ast tackles/g (4.4 pts/g from tackle volume alone) | 0.53 TFL/g, 0.27 sacks/g, 0.35 PD/g | Full-time nose tackle, run anchor with growing pass rush | listed as NT",11,102.5,20.5,126,8,10.0
+Jordan Davis,DL,Eagles,123.0,104.5,145.1,low,"1.9 solo + 2.1 ast tackles/g (4.4 pts/g from tackle volume alone) | 0.53 TFL/g, 0.27 sacks/g, 0.35 PD/g | Full-time nose tackle, run anchor with growing pass rush | listed as NT",11,102.5,20.5,125,8,10.0
+Luther Burden III,WR,Bears,75.9,47.8,107.8,high,"4.2 targets/g, 62% catch rate, 6.0 yds/target | full-PPR: every catch worth 1.0 pt (vs 0.5 in Top Teamz)",53,55.4,20.5,126,8,10.0
 Tykee Smith,DB,Buccaneers,178.2,151.5,210.3,low,"3.8 solo + 2.4 ast tackles/g (7.5 pts/g from tackle volume alone) | 0.00 TFL/g, 0.12 sacks/g, 0.81 PD/g | Starter - deep safety | listed as S",6,159.1,19.1,127,8,10.0
 Breece Hall,RB,Jets,218.7,164.0,279.9,medium,"13.5 carries/g x 4.03 YPC | 4.0 targets/g as receiver, full-PPR",17,200.5,18.2,128,8,13.0
 Eddy Pineiro,K,49ers,95.9,81.5,113.2,low,"2.00 FG made/g (0.71 from 40-49, 0.43 from 50+) | 2.43 XP made/g",6,78.0,17.9,129,9,8.0
@@ -138,8 +138,8 @@ Derwin James Jr.,DB,Chargers,174.3,148.2,205.7,low,"3.1 solo + 2.8 ast tackles/g
 Marlon Humphrey,DB,Ravens,173.2,147.2,204.4,low,"3.5 solo + 1.0 ast tackles/g (6.0 pts/g from tackle volume alone) | 0.20 TFL/g, 0.07 sacks/g, 0.87 PD/g | Starter - outside corner | listed as CB",9,159.1,14.1,137,9,13.0
 Nick Cross,DB,Colts,173.0,147.0,204.1,low,"4.2 solo + 2.8 ast tackles/g (8.5 pts/g from tackle volume alone) | 0.00 TFL/g, 0.15 sacks/g, 0.29 PD/g | Starter - box safety | listed as S",10,159.1,13.9,138,9,13.0
 Chris Boswell,K,Steelers,91.0,77.3,107.4,low,"1.59 FG made/g (0.59 from 40-49, 0.53 from 50+) | 2.47 XP made/g",8,78.0,13.0,139,9,9.0
-Marquise Brown,WR,Eagles,68.4,43.1,97.1,high,"3.4 targets/g, 60% catch rate, 7.0 yds/target | full-PPR: every catch worth 1.0 pt (vs 0.5 in Top Teamz)",55,55.4,13.0,140,9,10.0
-Will Reichard,K,Vikings,91.0,77.3,107.4,low,"1.94 FG made/g (0.41 from 40-49, 0.65 from 50+) | 1.82 XP made/g",7,78.0,13.0,141,9,6.0
+Will Reichard,K,Vikings,91.0,77.3,107.4,low,"1.94 FG made/g (0.41 from 40-49, 0.65 from 50+) | 1.82 XP made/g",7,78.0,13.0,140,9,6.0
+Marquise Brown,WR,Eagles,68.4,43.1,97.1,high,"3.4 targets/g, 60% catch rate, 7.0 yds/target | full-PPR: every catch worth 1.0 pt (vs 0.5 in Top Teamz)",55,55.4,13.0,141,9,10.0
 Charlie Smyth,K,Saints,90.7,77.1,107.0,low,"2.00 FG made/g (0.50 from 40-49, 0.67 from 50+) | 2.17 XP made/g",9,78.0,12.7,142,9,8.0
 Tyrel Dodson,LB,Dolphins,178.2,151.5,210.3,low,"4.5 solo + 3.6 ast tackles/g (9.4 pts/g from tackle volume alone) | 0.00 TFL/g, 0.00 sacks/g, 0.19 PD/g | Starter, three-down | listed as ILB",12,165.8,12.4,143,9,6.0
 Cameron Dicker,K,Chargers,90.0,76.5,106.2,low,"2.23 FG made/g (0.71 from 40-49, 0.29 from 50+) | 2.00 XP made/g",10,78.0,12.0,144,9,7.0
@@ -147,8 +147,8 @@ Jared Verse,DL,Rams,113.7,96.6,134.2,low,"2.1 solo + 1.4 ast tackles/g (4.1 pts/
 Jake Bates,K,Lions,89.0,75.6,105.0,low,"1.59 FG made/g (0.53 from 40-49, 0.23 from 50+) | 3.18 XP made/g",11,78.0,11.0,146,10,6.0
 Dane Belton,DB,Giants,170.0,144.5,200.6,low,"3.5 solo + 3.5 ast tackles/g (7.9 pts/g from tackle volume alone) | 0.00 TFL/g, 0.12 sacks/g, 0.29 PD/g | Starter - box safety | listed as S",11,159.1,10.9,147,10,8.0
 Cooper DeJean,DB,Eagles,169.7,144.2,200.2,low,"4.0 solo + 1.8 ast tackles/g (7.4 pts/g from tackle volume alone) | 0.00 TFL/g, 0.00 sacks/g, 1.00 PD/g | Starter - slot/outside corner | listed as CB",12,159.1,10.6,148,10,10.0
-Demario Davis,LB,Jets,176.4,132.3,225.8,medium,"4.4 solo + 4.0 ast tackles/g (9.6 pts/g from tackle volume alone) | 0.29 TFL/g, 0.00 sacks/g, 0.12 PD/g | Expected starter/leader for Jets defense [143 combined 2025 tackles found in research notes; solo/assist split estimated at this position's observed 52/48 average since the source didn't report the two separately -- not a fabricated total, just an estimated split.] | listed as MLB",13,165.8,10.6,149,10,13.0
-Zach Sieler,DL,Dolphins,113.1,96.1,133.5,low,"1.7 solo + 1.1 ast tackles/g (3.4 pts/g from tackle volume alone) | 0.71 TFL/g, 0.32 sacks/g, 0.12 PD/g | Team captain, full-time starting interior DL/run anchor | listed as DT",14,102.5,10.6,150,10,6.0
+Zach Sieler,DL,Dolphins,113.1,96.1,133.5,low,"1.7 solo + 1.1 ast tackles/g (3.4 pts/g from tackle volume alone) | 0.71 TFL/g, 0.32 sacks/g, 0.12 PD/g | Team captain, full-time starting interior DL/run anchor | listed as DT",14,102.5,10.6,149,10,6.0
+Demario Davis,LB,Jets,176.4,132.3,225.8,medium,"4.4 solo + 4.0 ast tackles/g (9.6 pts/g from tackle volume alone) | 0.29 TFL/g, 0.00 sacks/g, 0.12 PD/g | Expected starter/leader for Jets defense [143 combined 2025 tackles found in research notes; solo/assist split estimated at this position's observed 52/48 average since the source didn't report the two separately -- not a fabricated total, just an estimated split.] | listed as MLB",13,165.8,10.6,150,10,13.0
 Justin Herbert,QB,Chargers,256.8,218.3,303.0,low,"32.9 pass att/g x 7.3 YPA, 4.6% TD rate (1pt/25 pass yds here, double Top Teamz's rate) | 3.0 rush att/g at 4.0 YPC",12,246.6,10.2,151,10,7.0
 Andy Borregales,K,Patriots,88.0,74.8,103.8,low,"1.59 FG made/g (0.41 from 40-49, 0.23 from 50+) | 3.12 XP made/g",12,78.0,10.0,152,10,11.0
 TreVeyon Henderson,RB,Patriots,209.9,157.4,268.7,medium,"10.4 carries/g x 4.50 YPC | 4.5 targets/g as receiver, full-PPR",20,200.5,9.4,153,10,11.0
@@ -164,19 +164,19 @@ Matthew Stafford,QB,Rams,252.9,189.7,323.7,medium,"33.6 pass att/g x 7.4 YPA, 5.
 Xavier Watts,DB,Falcons,165.2,140.4,194.9,low,"3.5 solo + 2.2 ast tackles/g (6.8 pts/g from tackle volume alone) | 0.00 TFL/g, 0.00 sacks/g, 0.65 PD/g | Starter - safety | listed as S",14,159.1,6.1,163,11,11.0
 Pat Freiermuth,TE,Steelers,67.2,50.4,86.0,medium,"3.5 targets/g, 65% catch rate, 5.5 yds/target | full-PPR: every catch worth 1.0 pt (vs 0.5 in Top Teamz)",17,61.3,5.9,164,11,9.0
 Germaine Pratt,LB,Colts,169.7,127.3,217.2,medium,"4.2 solo + 3.7 ast tackles/g (9.0 pts/g from tackle volume alone) | 0.00 TFL/g, 0.00 sacks/g, 0.38 PD/g | Starter, reunited with DC in Indianapolis | listed as ILB",14,165.8,3.9,165,11,13.0
-Evan McPherson,K,Bengals,80.0,68.0,94.4,low,"1.47 FG made/g (0.59 from 40-49, 0.29 from 50+) | 2.41 XP made/g",15,78.0,2.0,166,11,6.0
-Budda Baker,DB,Cardinals,161.1,136.9,190.1,low,"3.6 solo + 3.9 ast tackles/g (8.3 pts/g from tackle volume alone) | 0.00 TFL/g, 0.03 sacks/g, 0.31 PD/g | Starter - box safety | listed as S",15,159.1,2.0,167,11,14.0
+Budda Baker,DB,Cardinals,161.1,136.9,190.1,low,"3.6 solo + 3.9 ast tackles/g (8.3 pts/g from tackle volume alone) | 0.00 TFL/g, 0.03 sacks/g, 0.31 PD/g | Starter - box safety | listed as S",15,159.1,2.0,166,11,14.0
+Evan McPherson,K,Bengals,80.0,68.0,94.4,low,"1.47 FG made/g (0.59 from 40-49, 0.29 from 50+) | 2.41 XP made/g",15,78.0,2.0,167,11,6.0
 Patrick Queen,LB,Steelers,166.0,141.1,195.9,low,"3.3 solo + 3.8 ast tackles/g (7.8 pts/g from tackle volume alone) | 0.47 TFL/g, 0.06 sacks/g, 0.23 PD/g | Starter, three-down | listed as ILB",15,165.8,0.2,168,11,9.0
 C.J. Stroud,QB,Texans,246.7,185.0,315.8,medium,"34.6 pass att/g x 6.8 YPA, 4.2% TD rate (1pt/25 pass yds here, double Top Teamz's rate) | 3.0 rush att/g at 4.5 YPC",15,246.6,0.1,169,11,8.0
-Zane Gonzalez,K,Falcons,78.0,58.5,99.8,medium,"2.11 FG made/g (0.89 from 40-49, 0.78 from 50+) | 1.89 XP made/g",16,78.0,0.0,170,11,11.0
-Chig Okonkwo,TE,Titans,61.3,38.6,87.0,high,"3.4 targets/g, 65% catch rate, 6.0 yds/target | full-PPR: every catch worth 1.0 pt (vs 0.5 in Top Teamz)",18,61.3,0.0,171,11,9.0
+Keenan Allen,WR,Free agent,55.4,27.7,88.6,very_high,"4.5 targets/g, 68% catch rate, 6.5 yds/target | full-PPR: every catch worth 1.0 pt (vs 0.5 in Top Teamz)",58,55.4,0.0,170,11,
+Chamarri Conner,DB,Chiefs,159.1,119.3,203.6,medium,"4.4 solo + 2.5 ast tackles/g (8.5 pts/g from tackle volume alone) | 0.00 TFL/g, 0.12 sacks/g, 0.12 PD/g | Starter - strong safety | listed as S",16,159.1,0.0,171,11,5.0
 Bobby Wagner,LB,Free agent (unsigned),165.8,104.5,235.4,high,"4.6 solo + 4.9 ast tackles/g (10.6 pts/g from tackle volume alone) | 0.00 TFL/g, 0.27 sacks/g, 0.23 PD/g | Unsigned as of Aug 2026 -- games_proj discounted for a landing-spot/ramp-up gap even if he signs before the draft. | listed as MLB",16,165.8,0.0,172,11,
 D'Andre Swift,RB,Bears,200.5,150.4,256.6,medium,"13.3 carries/g x 4.30 YPC | 3.7 targets/g as receiver, full-PPR",21,200.5,0.0,173,11,10.0
-Keenan Allen,WR,Free agent,55.4,27.7,88.6,very_high,"4.5 targets/g, 68% catch rate, 6.5 yds/target | full-PPR: every catch worth 1.0 pt (vs 0.5 in Top Teamz)",58,55.4,0.0,174,11,
-Chamarri Conner,DB,Chiefs,159.1,119.3,203.6,medium,"4.4 solo + 2.5 ast tackles/g (8.5 pts/g from tackle volume alone) | 0.00 TFL/g, 0.12 sacks/g, 0.12 PD/g | Starter - strong safety | listed as S",16,159.1,0.0,175,11,5.0
-Spencer Shrader,K,Colts,78.0,58.5,99.8,medium,"2.60 FG made/g (0.40 from 40-49, 0.20 from 50+) | 2.80 XP made/g",17,78.0,0.0,176,11,13.0
+Brock Purdy,QB,49ers,246.6,184.9,315.6,medium,"30.7 pass att/g x 7.8 YPA, 5.3% TD rate (1pt/25 pass yds here, double Top Teamz's rate) | 2.5 rush att/g at 4.0 YPC",16,246.6,0.0,174,11,8.0
+Zane Gonzalez,K,Falcons,78.0,58.5,99.8,medium,"2.11 FG made/g (0.89 from 40-49, 0.78 from 50+) | 1.89 XP made/g",16,78.0,0.0,175,11,11.0
+Chig Okonkwo,TE,Titans,61.3,38.6,87.0,high,"3.4 targets/g, 65% catch rate, 6.0 yds/target | full-PPR: every catch worth 1.0 pt (vs 0.5 in Top Teamz)",18,61.3,0.0,176,11,9.0
 Rashan Gary,DL,Packers,102.5,76.9,131.2,medium,"1.6 solo + 1.2 ast tackles/g (3.3 pts/g from tackle volume alone) | 0.44 TFL/g, 0.47 sacks/g, 0.00 PD/g | Uncertain -- reported a farewell message to the Packers organization, 2026 team destination not clearly confirmed in research | listed as DE",16,102.5,0.0,177,12,11.0
-Brock Purdy,QB,49ers,246.6,184.9,315.6,medium,"30.7 pass att/g x 7.8 YPA, 5.3% TD rate (1pt/25 pass yds here, double Top Teamz's rate) | 2.5 rush att/g at 4.0 YPC",16,246.6,0.0,178,12,8.0
+Spencer Shrader,K,Colts,78.0,58.5,99.8,medium,"2.60 FG made/g (0.40 from 40-49, 0.20 from 50+) | 2.80 XP made/g",17,78.0,0.0,178,12,13.0
 Xavier McKinney,DB,Packers,158.7,119.0,203.1,medium,"3.4 solo + 3.3 ast tackles/g (7.5 pts/g from tackle volume alone) | 0.00 TFL/g, 0.06 sacks/g, 0.62 PD/g | Starter - single-high/box hybrid safety | listed as S",17,159.1,-0.4,179,12,11.0
 Jeremy Chinn,DB,Raiders,158.7,119.0,203.1,medium,"4.2 solo + 3.4 ast tackles/g (8.9 pts/g from tackle volume alone) | 0.00 TFL/g, 0.07 sacks/g, 0.13 PD/g | Starter - box/hybrid safety | listed as S",18,159.1,-0.4,180,12,13.0
 Justin Madubuike,DL,Ravens,102.0,64.3,144.8,high,"2.5 solo + 1.0 ast tackles/g (4.5 pts/g from tackle volume alone) | 0.00 TFL/g, 1.00 sacks/g, 0.00 PD/g | Real 2025 season-ending injury on record -- games_proj discounted, not assumed fully recovered to a normal 17-game year. | listed as DT",17,102.5,-0.5,181,12,13.0
@@ -192,10 +192,10 @@ Payton Wilson,LB,Steelers,163.0,138.5,192.3,low,"4.4 solo + 3.1 ast tackles/g (8
 Kool-Aid McKinstry,DB,Saints,156.2,132.8,184.3,low,"3.5 solo + 1.0 ast tackles/g (6.0 pts/g from tackle volume alone) | 0.18 TFL/g, 0.00 sacks/g, 1.00 PD/g | Starter - outside corner | listed as CB",22,159.1,-2.9,191,12,8.0
 Jalen Carter,DL,Eagles,99.3,74.5,127.1,medium,"1.8 solo + 1.0 ast tackles/g (3.4 pts/g from tackle volume alone) | 0.33 TFL/g, 0.25 sacks/g, 0.58 PD/g | Full-time interior starter under Vic Fangio, 3-tech pass-rush emphasis | listed as DT",20,102.5,-3.2,192,12,10.0
 Dee Alford,DB,Falcons,155.6,132.3,183.6,low,"3.4 solo + 0.8 ast tackles/g (5.7 pts/g from tackle volume alone) | 0.00 TFL/g, 0.12 sacks/g, 0.81 PD/g | Starter - slot/outside corner | listed as CB",23,159.1,-3.5,193,13,11.0
-Nick Folk,K,Jets,74.4,63.2,87.8,low,"1.75 FG made/g (0.44 from 40-49, 0.44 from 50+) | 1.38 XP made/g",20,78.0,-3.6,194,13,13.0
-Quinnen Williams,DL,Cowboys,98.9,84.1,116.7,low,"1.7 solo + 1.8 ast tackles/g (3.9 pts/g from tackle volume alone) | 0.20 TFL/g, 0.17 sacks/g, 0.00 PD/g | Full-time starter, anchors Cowboys DL alongside Kenny Clark | listed as DT",21,102.5,-3.6,195,13,14.0
-Juwan Johnson,TE,Saints,57.4,36.2,81.5,high,"3.5 targets/g, 62% catch rate, 5.5 yds/target | full-PPR: every catch worth 1.0 pt (vs 0.5 in Top Teamz)",19,61.3,-3.9,196,13,8.0
-Devin Bush,LB,Bears,161.9,121.4,207.2,medium,"3.7 solo + 3.6 ast tackles/g (8.3 pts/g from tackle volume alone) | 0.00 TFL/g, 0.12 sacks/g, 0.00 PD/g | Expected starter | listed as ILB",18,165.8,-3.9,197,13,10.0
+Quinnen Williams,DL,Cowboys,98.9,84.1,116.7,low,"1.7 solo + 1.8 ast tackles/g (3.9 pts/g from tackle volume alone) | 0.20 TFL/g, 0.17 sacks/g, 0.00 PD/g | Full-time starter, anchors Cowboys DL alongside Kenny Clark | listed as DT",21,102.5,-3.6,194,13,14.0
+Nick Folk,K,Jets,74.4,63.2,87.8,low,"1.75 FG made/g (0.44 from 40-49, 0.44 from 50+) | 1.38 XP made/g",20,78.0,-3.6,195,13,13.0
+Devin Bush,LB,Bears,161.9,121.4,207.2,medium,"3.7 solo + 3.6 ast tackles/g (8.3 pts/g from tackle volume alone) | 0.00 TFL/g, 0.12 sacks/g, 0.00 PD/g | Expected starter | listed as ILB",18,165.8,-3.9,196,13,10.0
+Juwan Johnson,TE,Saints,57.4,36.2,81.5,high,"3.5 targets/g, 62% catch rate, 5.5 yds/target | full-PPR: every catch worth 1.0 pt (vs 0.5 in Top Teamz)",19,61.3,-3.9,197,13,8.0
 Harrison Butker,K,Chiefs,74.0,62.9,87.3,low,"1.94 FG made/g (0.53 from 40-49, 0.29 from 50+) | 1.82 XP made/g",21,78.0,-4.0,198,13,5.0
 Jalen Thompson,DB,Cowboys,155.1,131.8,183.0,low,"3.9 solo + 2.5 ast tackles/g (7.7 pts/g from tackle volume alone) | 0.07 TFL/g, 0.07 sacks/g, 0.40 PD/g | Starter - safety | listed as S",24,159.1,-4.0,199,13,14.0
 Wil Lutz,K,Broncos,74.0,62.9,87.3,low,"1.65 FG made/g (0.18 from 40-49, 0.23 from 50+) | 2.29 XP made/g",22,78.0,-4.0,200,13,10.0
@@ -209,8 +209,8 @@ Mike Jackson,DB,Panthers,153.5,130.5,181.1,low,"3.2 solo + 0.8 ast tackles/g (5.
 Keon Coleman,WR,Bills,49.1,30.9,69.7,high,"3.1 targets/g, 58% catch rate, 6.5 yds/target | full-PPR: every catch worth 1.0 pt (vs 0.5 in Top Teamz)",61,55.4,-6.3,208,13,7.0
 Geno Stone,DB,Bengals,152.8,129.9,180.3,low,"3.8 solo + 2.3 ast tackles/g (7.5 pts/g from tackle volume alone) | 0.00 TFL/g, 0.12 sacks/g, 0.23 PD/g | Starter - single-high/box hybrid | listed as S",29,159.1,-6.3,209,14,6.0
 Cole Kmet,TE,Bears,54.9,34.6,78.0,high,"3.1 targets/g, 62% catch rate, 5.5 yds/target | full-PPR: every catch worth 1.0 pt (vs 0.5 in Top Teamz)",20,61.3,-6.4,210,14,10.0
-Brandon McManus,K,Packers,70.4,59.8,83.1,low,"1.71 FG made/g (0.21 from 40-49, 0.21 from 50+) | 2.29 XP made/g",23,78.0,-7.6,211,14,11.0
-Elic Ayomanor,WR,Titans,47.8,30.1,67.9,high,"2.9 targets/g, 58% catch rate, 6.5 yds/target | full-PPR: every catch worth 1.0 pt (vs 0.5 in Top Teamz)",62,55.4,-7.6,212,14,9.0
+Elic Ayomanor,WR,Titans,47.8,30.1,67.9,high,"2.9 targets/g, 58% catch rate, 6.5 yds/target | full-PPR: every catch worth 1.0 pt (vs 0.5 in Top Teamz)",62,55.4,-7.6,211,14,9.0
+Brandon McManus,K,Packers,70.4,59.8,83.1,low,"1.71 FG made/g (0.21 from 40-49, 0.21 from 50+) | 2.29 XP made/g",23,78.0,-7.6,212,14,11.0
 Nick Emmanwori,DB,Seahawks,150.8,95.0,214.1,high,"4.0 solo + 1.8 ast tackles/g (7.3 pts/g from tackle volume alone) | 0.39 TFL/g, 0.18 sacks/g, 0.79 PD/g | Starter - hybrid box/rookie standout | listed as S",30,159.1,-8.3,213,14,11.0
 Devon Witherspoon,DB,Seahawks,150.6,112.9,192.8,medium,"4.0 solo + 2.0 ast tackles/g (7.5 pts/g from tackle volume alone) | 0.00 TFL/g, 0.04 sacks/g, 0.58 PD/g | Starter - outside corner | listed as CB",31,159.1,-8.5,214,14,11.0
 Ben Sauls,K,Giants,69.3,52.0,88.7,medium,"2.67 FG made/g (0.33 from 40-49, 0.00 from 50+) | 2.33 XP made/g",24,78.0,-8.7,215,14,8.0
@@ -218,8 +218,8 @@ Khalil Mack,DL,Chargers,93.8,70.3,120.1,medium,"1.4 solo + 1.3 ast tackles/g (3.
 Xavier Legette,WR,Panthers,46.6,29.4,66.2,high,"3.0 targets/g, 58% catch rate, 6.5 yds/target | full-PPR: every catch worth 1.0 pt (vs 0.5 in Top Teamz)",63,55.4,-8.8,217,14,5.0
 Camryn Bynum,DB,Colts,150.3,127.8,177.4,low,"2.9 solo + 1.8 ast tackles/g (5.8 pts/g from tackle volume alone) | 0.18 TFL/g, 0.06 sacks/g, 0.47 PD/g | Starter - safety | listed as S",32,159.1,-8.8,218,14,13.0
 Quentin Johnston,WR,Chargers,46.4,29.2,65.9,high,"2.8 targets/g, 58% catch rate, 7.0 yds/target | full-PPR: every catch worth 1.0 pt (vs 0.5 in Top Teamz)",64,55.4,-9.0,219,14,7.0
-Jordan Love,QB,Packers,237.3,178.0,303.7,medium,"32.3 pass att/g x 7.2 YPA, 4.9% TD rate (1pt/25 pass yds here, double Top Teamz's rate) | 3.0 rush att/g at 4.0 YPC",17,246.6,-9.3,220,14,11.0
-Riley Moss,DB,Broncos,149.8,127.3,176.8,low,"3.4 solo + 1.4 ast tackles/g (6.0 pts/g from tackle volume alone) | 0.00 TFL/g, 0.06 sacks/g, 1.12 PD/g | Starter - outside corner | listed as CB",33,159.1,-9.3,221,14,10.0
+Riley Moss,DB,Broncos,149.8,127.3,176.8,low,"3.4 solo + 1.4 ast tackles/g (6.0 pts/g from tackle volume alone) | 0.00 TFL/g, 0.06 sacks/g, 1.12 PD/g | Starter - outside corner | listed as CB",33,159.1,-9.3,220,14,10.0
+Jordan Love,QB,Packers,237.3,178.0,303.7,medium,"32.3 pass att/g x 7.2 YPA, 4.9% TD rate (1pt/25 pass yds here, double Top Teamz's rate) | 3.0 rush att/g at 4.0 YPC",17,246.6,-9.3,221,14,11.0
 Jessie Bates III,DB,Falcons,149.2,126.8,176.1,low,"3.4 solo + 2.4 ast tackles/g (6.8 pts/g from tackle volume alone) | 0.06 TFL/g, 0.00 sacks/g, 0.35 PD/g | Starter - free safety | listed as S",34,159.1,-9.9,222,14,11.0
 Graham Gano,K,Giants,68.0,57.8,80.2,low,"1.80 FG made/g (0.20 from 40-49, 0.20 from 50+) | 1.80 XP made/g",26,78.0,-10.0,223,14,8.0
 Jake Elliott,K,Eagles,68.0,57.8,80.2,low,"1.18 FG made/g (0.41 from 40-49, 0.23 from 50+) | 2.41 XP made/g",25,78.0,-10.0,224,14,10.0
@@ -244,8 +244,8 @@ Nick Bosa,DL,49ers,86.0,54.2,122.1,high,"3.0 solo + 0.0 ast tackles/g (4.5 pts/g
 Mike Sainristil,DB,Commanders,142.3,121.0,167.9,low,"2.7 solo + 1.8 ast tackles/g (5.4 pts/g from tackle volume alone) | 0.06 TFL/g, 0.00 sacks/g, 0.71 PD/g | Starter - slot corner | listed as CB",41,159.1,-16.8,243,16,7.0
 Dontayvion Wicks,WR,Eagles,38.5,24.3,54.7,high,"2.5 targets/g, 58% catch rate, 6.5 yds/target | full-PPR: every catch worth 1.0 pt (vs 0.5 in Top Teamz)",66,55.4,-16.9,244,16,10.0
 Andre Szmyt,K,Browns,60.0,51.0,70.8,low,"1.41 FG made/g (0.29 from 40-49, 0.29 from 50+) | 1.47 XP made/g",28,78.0,-18.0,245,16,11.0
-Tyler Loop,K,Ravens,59.7,44.8,76.4,medium,"1.76 FG made/g (0.47 from 40-49, 0.06 from 50+) | 2.59 XP made/g",29,78.0,-18.3,246,16,13.0
-Kyle Williams,WR,Patriots,37.1,18.6,59.4,very_high,"2.5 targets/g, 58% catch rate, 6.0 yds/target | full-PPR: every catch worth 1.0 pt (vs 0.5 in Top Teamz)",67,55.4,-18.3,247,16,11.0
+Kyle Williams,WR,Patriots,37.1,18.6,59.4,very_high,"2.5 targets/g, 58% catch rate, 6.0 yds/target | full-PPR: every catch worth 1.0 pt (vs 0.5 in Top Teamz)",67,55.4,-18.3,246,16,11.0
+Tyler Loop,K,Ravens,59.7,44.8,76.4,medium,"1.76 FG made/g (0.47 from 40-49, 0.06 from 50+) | 2.59 XP made/g",29,78.0,-18.3,247,16,13.0
 Isaiah Likely,TE,Ravens,42.8,27.0,60.8,high,"2.4 targets/g, 65% catch rate, 6.0 yds/target | full-PPR: every catch worth 1.0 pt (vs 0.5 in Top Teamz)",21,61.3,-18.5,248,16,13.0
 Azeez Al-Shaair,LB,Texans,147.2,110.4,188.4,medium,"3.0 solo + 3.4 ast tackles/g (7.1 pts/g from tackle volume alone) | 0.00 TFL/g, 0.00 sacks/g, 0.56 PD/g | Starter, three-down, Pro Bowl 2025 | listed as ILB",24,165.8,-18.6,249,16,8.0
 Tre Harris,WR,Chargers,36.6,18.3,58.6,very_high,"2.4 targets/g, 58% catch rate, 6.5 yds/target | full-PPR: every catch worth 1.0 pt (vs 0.5 in Top Teamz)",68,55.4,-18.8,250,16,7.0
@@ -270,8 +270,8 @@ Zach Ertz,TE,Free agent,33.8,16.9,54.1,very_high,"3.0 targets/g, 68% catch rate,
 Ja'Tavion Sanders,TE,Panthers,33.8,21.3,48.0,high,"2.5 targets/g, 62% catch rate, 5.5 yds/target | full-PPR: every catch worth 1.0 pt (vs 0.5 in Top Teamz)",23,61.3,-27.5,269,17,5.0
 J.K. Dobbins,RB,Broncos,172.8,108.9,245.4,high,"15.1 carries/g x 4.61 YPC | 2.0 targets/g as receiver, full-PPR",25,200.5,-27.7,270,17,10.0
 Noah Fant,TE,Saints,33.5,16.8,53.6,very_high,"2.5 targets/g, 62% catch rate, 5.5 yds/target | full-PPR: every catch worth 1.0 pt (vs 0.5 in Top Teamz)",24,61.3,-27.8,271,17,8.0
-Quan Martin,DB,Commanders,131.2,111.5,154.8,low,"3.1 solo + 2.8 ast tackles/g (6.7 pts/g from tackle volume alone) | 0.23 TFL/g, 0.00 sacks/g, 0.18 PD/g | Starter - box safety | listed as S",46,159.1,-27.9,272,17,7.0
-Daniel Jones,QB,Colts,218.7,137.8,310.6,high,"30.3 pass att/g x 6.8 YPA, 3.2% TD rate (1pt/25 pass yds here, double Top Teamz's rate) | 6.0 rush att/g at 4.5 YPC",20,246.6,-27.9,273,18,13.0
+Daniel Jones,QB,Colts,218.7,137.8,310.6,high,"30.3 pass att/g x 6.8 YPA, 3.2% TD rate (1pt/25 pass yds here, double Top Teamz's rate) | 6.0 rush att/g at 4.5 YPC",20,246.6,-27.9,272,17,13.0
+Quan Martin,DB,Commanders,131.2,111.5,154.8,low,"3.1 solo + 2.8 ast tackles/g (6.7 pts/g from tackle volume alone) | 0.23 TFL/g, 0.00 sacks/g, 0.18 PD/g | Starter - box safety | listed as S",46,159.1,-27.9,273,18,7.0
 Coby Bryant,DB,Bears,130.7,111.1,154.2,low,"2.6 solo + 1.7 ast tackles/g (5.2 pts/g from tackle volume alone) | 0.00 TFL/g, 0.00 sacks/g, 0.47 PD/g | Starter - slot/hybrid DB | listed as S/CB",47,159.1,-28.4,274,18,10.0
 Christian Gonzalez,DB,Patriots,130.5,97.9,167.0,medium,"3.9 solo + 1.1 ast tackles/g (6.6 pts/g from tackle volume alone) | 0.07 TFL/g, 0.00 sacks/g, 0.71 PD/g | Starter - outside corner | listed as CB",48,159.1,-28.6,275,18,11.0
 Joshua Karty,K,Cardinals,48.8,36.6,62.5,medium,"1.25 FG made/g (0.38 from 40-49, 0.12 from 50+) | 2.88 XP made/g",37,78.0,-29.2,276,18,14.0
@@ -299,8 +299,8 @@ Dadrion Taylor-Demerson,DB,Cardinals,121.7,91.3,155.8,medium,"2.7 solo + 2.2 ast
 Chris Jones,DL,Chiefs,65.0,55.2,76.7,low,"0.9 solo + 0.8 ast tackles/g (1.9 pts/g from tackle volume alone) | 0.00 TFL/g, 0.41 sacks/g, 0.12 PD/g | Full-time 3-tech/interior pass rusher, every-down starter | listed as DT",32,102.5,-37.5,298,19,5.0
 Matt Gay,K,Raiders,40.1,30.1,51.3,medium,"1.42 FG made/g (0.00 from 40-49, 0.00 from 50+) | 2.17 XP made/g",38,78.0,-37.9,299,19,13.0
 Harold Fannin Jr.,TE,Browns,23.4,11.7,37.4,very_high,"2.0 targets/g, 60% catch rate, 5.5 yds/target | full-PPR: every catch worth 1.0 pt (vs 0.5 in Top Teamz)",27,61.3,-37.9,300,19,11.0
-Mason Taylor,TE,Giants,23.3,11.7,37.3,very_high,"2.0 targets/g, 60% catch rate, 5.5 yds/target | full-PPR: every catch worth 1.0 pt (vs 0.5 in Top Teamz)",29,61.3,-38.0,301,19,8.0
-Brenton Strange,TE,Jaguars,23.3,11.7,37.3,very_high,"2.0 targets/g, 60% catch rate, 5.5 yds/target | full-PPR: every catch worth 1.0 pt (vs 0.5 in Top Teamz)",28,61.3,-38.0,302,19,7.0
+Brenton Strange,TE,Jaguars,23.3,11.7,37.3,very_high,"2.0 targets/g, 60% catch rate, 5.5 yds/target | full-PPR: every catch worth 1.0 pt (vs 0.5 in Top Teamz)",28,61.3,-38.0,301,19,7.0
+Mason Taylor,TE,Giants,23.3,11.7,37.3,very_high,"2.0 targets/g, 60% catch rate, 5.5 yds/target | full-PPR: every catch worth 1.0 pt (vs 0.5 in Top Teamz)",29,61.3,-38.0,302,19,8.0
 Ricky Pearsall,WR,49ers,17.1,8.6,27.4,very_high,"3.0 targets/g, 60% catch rate, 6.5 yds/target | full-PPR: every catch worth 1.0 pt (vs 0.5 in Top Teamz)",75,55.4,-38.3,303,19,8.0
 Jihaad Campbell,LB,Eagles,127.5,108.4,150.4,low,"3.6 solo + 1.1 ast tackles/g (6.3 pts/g from tackle volume alone) | 0.12 TFL/g, 0.00 sacks/g, 0.18 PD/g | Entrenched starter, ascending | listed as ILB",28,165.8,-38.3,304,19,10.0
 Vita Vea,DL,Buccaneers,63.5,47.6,81.3,medium,"0.9 solo + 1.1 ast tackles/g (2.2 pts/g from tackle volume alone) | 0.18 TFL/g, 0.27 sacks/g, 0.12 PD/g | Full-time nose/interior run-stuffer if he stays; trade destination unresolved as of Aug 2026 | listed as DT",33,102.5,-39.0,305,20,10.0
@@ -317,8 +317,8 @@ Jacory Croskey-Merritt,RB,Commanders,158.2,99.7,224.6,high,"12.7 carries/g x 4.1
 Geno Smith,QB,Jets,203.3,152.5,260.2,medium,"34.0 pass att/g x 6.8 YPA, 3.0% TD rate (1pt/25 pass yds here, double Top Teamz's rate) | 2.0 rush att/g at 3.5 YPC",23,246.6,-43.3,316,20,13.0
 Antonio Johnson,DB,Jaguars,115.5,98.2,136.3,low,"2.0 solo + 1.1 ast tackles/g (3.8 pts/g from tackle volume alone) | 0.00 TFL/g, 0.12 sacks/g, 0.53 PD/g | Starter - safety | listed as S",56,159.1,-43.6,317,20,7.0
 Terrance Ferguson,TE,Rams,15.6,7.8,25.0,very_high,"1.5 targets/g, 58% catch rate, 5.5 yds/target | full-PPR: every catch worth 1.0 pt (vs 0.5 in Top Teamz)",30,61.3,-45.7,318,20,11.0
-Elijah Arroyo,TE,Seahawks,14.9,7.5,23.8,very_high,"1.5 targets/g, 58% catch rate, 5.5 yds/target | full-PPR: every catch worth 1.0 pt (vs 0.5 in Top Teamz)",31,61.3,-46.4,319,20,11.0
-Emmanuel Forbes Jr.,DB,Rams,112.7,95.8,133.0,low,"1.9 solo + 0.8 ast tackles/g (3.4 pts/g from tackle volume alone) | 0.00 TFL/g, 0.00 sacks/g, 1.06 PD/g | Starter - outside corner | listed as CB",57,159.1,-46.4,320,20,11.0
+Emmanuel Forbes Jr.,DB,Rams,112.7,95.8,133.0,low,"1.9 solo + 0.8 ast tackles/g (3.4 pts/g from tackle volume alone) | 0.00 TFL/g, 0.00 sacks/g, 1.06 PD/g | Starter - outside corner | listed as CB",57,159.1,-46.4,319,20,11.0
+Elijah Arroyo,TE,Seahawks,14.9,7.5,23.8,very_high,"1.5 targets/g, 58% catch rate, 5.5 yds/target | full-PPR: every catch worth 1.0 pt (vs 0.5 in Top Teamz)",31,61.3,-46.4,320,20,11.0
 Rhamondre Stevenson,RB,Patriots,153.9,115.4,197.0,medium,"11.4 carries/g x 4.00 YPC | 2.5 targets/g as receiver, full-PPR",29,200.5,-46.6,321,21,11.0
 Daniel Carlson,K,Raiders,31.2,19.7,44.3,high,"1.29 FG made/g (0.35 from 40-49, 0.29 from 50+) | 1.24 XP made/g",40,78.0,-46.8,322,21,13.0
 Gunnar Helm,TE,Titans,14.2,7.1,22.7,very_high,"1.5 targets/g, 58% catch rate, 5.5 yds/target | full-PPR: every catch worth 1.0 pt (vs 0.5 in Top Teamz)",32,61.3,-47.1,323,21,9.0
@@ -398,31 +398,31 @@ Ray Davis,RB,Bills,50.2,31.6,71.3,high,"5.3 carries/g x 4.03 YPC | 1.1 targets/g
 Deion Jones,LB,Saints,13.5,8.5,19.2,high,"0.6 solo + 0.0 ast tackles/g (1.0 pts/g from tackle volume alone) | 0.00 TFL/g, 0.00 sacks/g, 0.00 PD/g | Depth/rotational, journeyman role | listed as MLB",53,165.8,-152.3,397,25,8.0
 Jerome Ford,RB,Browns,46.5,29.3,66.0,high,"4.3 carries/g x 3.65 YPC | 2.0 targets/g as receiver, full-PPR",47,200.5,-154.0,398,25,11.0
 Jaydon Blue,RB,Cowboys,42.0,21.0,67.2,very_high,"4.2 carries/g x 4.03 YPC | 1.6 targets/g as receiver, full-PPR",48,200.5,-158.5,399,25,14.0
-A.J. Haulcy,DB,Colts,0.0,0.0,0.0,medium,"0.0 solo + 0.0 ast tackles/g (0.0 pts/g from tackle volume alone) | 0.00 TFL/g, 0.00 sacks/g, 0.00 PD/g | Rookie starter - strong safety | listed as S",78,159.1,-159.1,400,25,13.0
+Caleb Downs,DB,Cowboys,0.0,0.0,0.0,medium,"0.0 solo + 0.0 ast tackles/g (0.0 pts/g from tackle volume alone) | 0.00 TFL/g, 0.00 sacks/g, 0.00 PD/g | Rookie starter - hybrid safety/slot | listed as S",77,159.1,-159.1,400,25,14.0
 Julian Blackmon,DB,FA,0.0,0.0,0.0,high,"0.0 solo + 0.0 ast tackles/g (0.0 pts/g from tackle volume alone) | 0.00 TFL/g, 0.00 sacks/g, 0.00 PD/g | Unsigned as of Aug 2026 -- games_proj discounted for a landing-spot/ramp-up gap even if he signs before the draft. | listed as S",79,159.1,-159.1,401,26,
-Caleb Downs,DB,Cowboys,0.0,0.0,0.0,medium,"0.0 solo + 0.0 ast tackles/g (0.0 pts/g from tackle volume alone) | 0.00 TFL/g, 0.00 sacks/g, 0.00 PD/g | Rookie starter - hybrid safety/slot | listed as S",77,159.1,-159.1,402,26,14.0
+A.J. Haulcy,DB,Colts,0.0,0.0,0.0,medium,"0.0 solo + 0.0 ast tackles/g (0.0 pts/g from tackle volume alone) | 0.00 TFL/g, 0.00 sacks/g, 0.00 PD/g | Rookie starter - strong safety | listed as S",78,159.1,-159.1,402,26,13.0
 Zamir White,RB,Raiders,41.1,25.9,58.4,high,"4.5 carries/g x 3.94 YPC | 1.0 targets/g as receiver, full-PPR",49,200.5,-159.4,403,26,13.0
 Jaylen Wright,RB,Dolphins,40.4,25.5,57.4,high,"4.4 carries/g x 3.94 YPC | 1.0 targets/g as receiver, full-PPR",50,200.5,-160.1,404,26,6.0
 Kenneth Gainwell,RB,Buccaneers,39.3,19.6,62.9,very_high,"4.0 carries/g x 3.90 YPC | 1.5 targets/g as receiver, full-PPR",51,200.5,-161.2,405,26,10.0
-Jeremiah Trotter Jr.,LB,Eagles,4.0,3.0,5.1,medium,"0.0 solo + 0.0 ast tackles/g (0.0 pts/g from tackle volume alone) | 0.00 TFL/g, 0.03 sacks/g, 0.06 PD/g | Rotational, competing for snaps | listed as ILB",55,165.8,-161.8,406,26,10.0
-Malcolm Rodriguez,LB,Lions,4.0,2.5,5.7,high,"0.0 solo + 0.0 ast tackles/g (0.0 pts/g from tackle volume alone) | 0.00 TFL/g, 0.00 sacks/g, 0.00 PD/g | Projected 2026 starter at WLB, but coming off ACL recovery | listed as WLB",54,165.8,-161.8,407,26,6.0
+Malcolm Rodriguez,LB,Lions,4.0,2.5,5.7,high,"0.0 solo + 0.0 ast tackles/g (0.0 pts/g from tackle volume alone) | 0.00 TFL/g, 0.00 sacks/g, 0.00 PD/g | Projected 2026 starter at WLB, but coming off ACL recovery | listed as WLB",54,165.8,-161.8,406,26,6.0
+Jeremiah Trotter Jr.,LB,Eagles,4.0,3.0,5.1,medium,"0.0 solo + 0.0 ast tackles/g (0.0 pts/g from tackle volume alone) | 0.00 TFL/g, 0.03 sacks/g, 0.06 PD/g | Rotational, competing for snaps | listed as ILB",55,165.8,-161.8,407,26,10.0
 Isaac Guerendo,RB,49ers,37.6,18.8,60.2,very_high,"4.3 carries/g x 4.30 YPC | 1.0 targets/g as receiver, full-PPR",52,200.5,-162.9,408,26,8.0
 Justice Hill,RB,Ravens,36.8,18.4,58.9,very_high,"3.2 carries/g x 4.03 YPC | 1.5 targets/g as receiver, full-PPR",53,200.5,-163.7,409,26,13.0
 Jonathon Brooks,RB,Panthers,35.8,17.9,57.3,very_high,"4.9 carries/g x 3.90 YPC | 1.5 targets/g as receiver, full-PPR",54,200.5,-164.7,410,26,5.0
-Troy Andersen,LB,Falcons,0.0,0.0,0.0,high,"0.0 solo + 0.0 ast tackles/g (0.0 pts/g from tackle volume alone) | 0.00 TFL/g, 0.00 sacks/g, 0.00 PD/g | Depth/injury question mark | listed as ILB",61,165.8,-165.8,411,26,11.0
+Tanner Muse,LB,Depth/unclear roster status,0.0,0.0,0.0,high,"0.0 solo + 0.0 ast tackles/g (0.0 pts/g from tackle volume alone) | 0.00 TFL/g, 0.00 sacks/g, 0.00 PD/g | Deep depth/special teams, not a defensive factor | listed as LB",59,165.8,-165.8,411,26,
 Josey Jewell,LB,Free agent (unsigned),0.0,0.0,0.0,high,"0.0 solo + 0.0 ast tackles/g (0.0 pts/g from tackle volume alone) | 0.00 TFL/g, 0.00 sacks/g, 0.00 PD/g | N/A -- did not play 2025, health clearance uncertain | listed as ILB",56,165.8,-165.8,412,26,
-Kamu Grugier-Hill,LB,Vikings,0.0,0.0,0.0,high,"0.0 solo + 0.0 ast tackles/g (0.0 pts/g from tackle volume alone) | 0.00 TFL/g, 0.00 sacks/g, 0.00 PD/g | Depth linebacker/special teams | listed as OLB",63,165.8,-165.8,413,26,6.0
-Arvell Reese,LB,Giants,0.0,0.0,0.0,medium,"0.0 solo + 0.0 ast tackles/g (0.0 pts/g from tackle volume alone) | 0.00 TFL/g, 0.00 sacks/g, 0.00 PD/g | Day 1 starter expected (rookie) | listed as LB",69,165.8,-165.8,414,26,8.0
-Sonny Styles,LB,Commanders,0.0,0.0,0.0,medium,"0.0 solo + 0.0 ast tackles/g (0.0 pts/g from tackle volume alone) | 0.00 TFL/g, 0.00 sacks/g, 0.00 PD/g | Day 1 starter expected (rookie) | listed as LB",68,165.8,-165.8,415,26,7.0
-Smael Mondon Jr.,LB,Eagles,0.0,0.0,0.0,high,"0.0 solo + 0.0 ast tackles/g (0.0 pts/g from tackle volume alone) | 0.00 TFL/g, 0.00 sacks/g, 0.00 PD/g | Depth/rotational | listed as ILB",67,165.8,-165.8,416,26,10.0
-Chazz Surratt,LB,Seahawks,0.0,0.0,0.0,high,"0.0 solo + 0.0 ast tackles/g (0.0 pts/g from tackle volume alone) | 0.00 TFL/g, 0.00 sacks/g, 0.00 PD/g | Special teams/depth, re-signed for 2026 | listed as ILB",66,165.8,-165.8,417,27,11.0
+Sonny Styles,LB,Commanders,0.0,0.0,0.0,medium,"0.0 solo + 0.0 ast tackles/g (0.0 pts/g from tackle volume alone) | 0.00 TFL/g, 0.00 sacks/g, 0.00 PD/g | Day 1 starter expected (rookie) | listed as LB",68,165.8,-165.8,413,26,7.0
+Junior Colson,LB,Chargers,0.0,0.0,0.0,high,"0.0 solo + 0.0 ast tackles/g (0.0 pts/g from tackle volume alone) | 0.00 TFL/g, 0.00 sacks/g, 0.00 PD/g | Real 2025 season-ending injury on record -- games_proj discounted, not assumed fully recovered to a normal 17-game year. | listed as ILB",62,165.8,-165.8,414,26,7.0
+Chazz Surratt,LB,Seahawks,0.0,0.0,0.0,high,"0.0 solo + 0.0 ast tackles/g (0.0 pts/g from tackle volume alone) | 0.00 TFL/g, 0.00 sacks/g, 0.00 PD/g | Special teams/depth, re-signed for 2026 | listed as ILB",66,165.8,-165.8,415,26,11.0
+Arvell Reese,LB,Giants,0.0,0.0,0.0,medium,"0.0 solo + 0.0 ast tackles/g (0.0 pts/g from tackle volume alone) | 0.00 TFL/g, 0.00 sacks/g, 0.00 PD/g | Day 1 starter expected (rookie) | listed as LB",69,165.8,-165.8,416,26,8.0
+Smael Mondon Jr.,LB,Eagles,0.0,0.0,0.0,high,"0.0 solo + 0.0 ast tackles/g (0.0 pts/g from tackle volume alone) | 0.00 TFL/g, 0.00 sacks/g, 0.00 PD/g | Depth/rotational | listed as ILB",67,165.8,-165.8,417,27,10.0
 Nicholas Morrow,LB,PHI (unclear active status),0.0,0.0,0.0,high,"0.0 solo + 0.0 ast tackles/g (0.0 pts/g from tackle volume alone) | 0.00 TFL/g, 0.00 sacks/g, 0.00 PD/g | Deep depth/special teams only, unclear if rostered | listed as OLB",58,165.8,-165.8,418,27,
-Josh Ross,LB,MIN (practice squad),0.0,0.0,0.0,high,"0.0 solo + 0.0 ast tackles/g (0.0 pts/g from tackle volume alone) | 0.00 TFL/g, 0.00 sacks/g, 0.00 PD/g | Deep depth/practice squad | listed as ILB",64,165.8,-165.8,419,27,
-Anfernee Orji,LB,Titans,0.0,0.0,0.0,high,"0.0 solo + 0.0 ast tackles/g (0.0 pts/g from tackle volume alone) | 0.00 TFL/g, 0.00 sacks/g, 0.00 PD/g | Uncertain -- recovering from ACL | listed as ILB",65,165.8,-165.8,420,27,9.0
-Tanner Muse,LB,Depth/unclear roster status,0.0,0.0,0.0,high,"0.0 solo + 0.0 ast tackles/g (0.0 pts/g from tackle volume alone) | 0.00 TFL/g, 0.00 sacks/g, 0.00 PD/g | Deep depth/special teams, not a defensive factor | listed as LB",59,165.8,-165.8,421,27,
-Junior Colson,LB,Chargers,0.0,0.0,0.0,high,"0.0 solo + 0.0 ast tackles/g (0.0 pts/g from tackle volume alone) | 0.00 TFL/g, 0.00 sacks/g, 0.00 PD/g | Real 2025 season-ending injury on record -- games_proj discounted, not assumed fully recovered to a normal 17-game year. | listed as ILB",62,165.8,-165.8,422,27,7.0
-De'Vondre Campbell,LB,Unsigned/out of NFL,0.0,0.0,0.0,high,"0.0 solo + 0.0 ast tackles/g (0.0 pts/g from tackle volume alone) | 0.00 TFL/g, 0.00 sacks/g, 0.00 PD/g | N/A -- not on any 2025 or 2026 roster found | listed as OLB",57,165.8,-165.8,423,27,
-Curtis Jacobs,LB,"Out of NFL (DC Defenders, UFL)",0.0,0.0,0.0,high,"0.0 solo + 0.0 ast tackles/g (0.0 pts/g from tackle volume alone) | 0.00 TFL/g, 0.00 sacks/g, 0.00 PD/g | N/A -- off NFL rosters entirely for 2026 | listed as LB",60,165.8,-165.8,424,27,
+Curtis Jacobs,LB,"Out of NFL (DC Defenders, UFL)",0.0,0.0,0.0,high,"0.0 solo + 0.0 ast tackles/g (0.0 pts/g from tackle volume alone) | 0.00 TFL/g, 0.00 sacks/g, 0.00 PD/g | N/A -- off NFL rosters entirely for 2026 | listed as LB",60,165.8,-165.8,419,27,
+Troy Andersen,LB,Falcons,0.0,0.0,0.0,high,"0.0 solo + 0.0 ast tackles/g (0.0 pts/g from tackle volume alone) | 0.00 TFL/g, 0.00 sacks/g, 0.00 PD/g | Depth/injury question mark | listed as ILB",61,165.8,-165.8,420,27,11.0
+Josh Ross,LB,MIN (practice squad),0.0,0.0,0.0,high,"0.0 solo + 0.0 ast tackles/g (0.0 pts/g from tackle volume alone) | 0.00 TFL/g, 0.00 sacks/g, 0.00 PD/g | Deep depth/practice squad | listed as ILB",64,165.8,-165.8,421,27,
+De'Vondre Campbell,LB,Unsigned/out of NFL,0.0,0.0,0.0,high,"0.0 solo + 0.0 ast tackles/g (0.0 pts/g from tackle volume alone) | 0.00 TFL/g, 0.00 sacks/g, 0.00 PD/g | N/A -- not on any 2025 or 2026 roster found | listed as OLB",57,165.8,-165.8,422,27,
+Kamu Grugier-Hill,LB,Vikings,0.0,0.0,0.0,high,"0.0 solo + 0.0 ast tackles/g (0.0 pts/g from tackle volume alone) | 0.00 TFL/g, 0.00 sacks/g, 0.00 PD/g | Depth linebacker/special teams | listed as OLB",63,165.8,-165.8,423,27,6.0
+Anfernee Orji,LB,Titans,0.0,0.0,0.0,high,"0.0 solo + 0.0 ast tackles/g (0.0 pts/g from tackle volume alone) | 0.00 TFL/g, 0.00 sacks/g, 0.00 PD/g | Uncertain -- recovering from ACL | listed as ILB",65,165.8,-165.8,424,27,9.0
 Kaleb Johnson,RB,Steelers,32.7,16.4,52.3,very_high,"4.0 carries/g x 4.00 YPC | 1.0 targets/g as receiver, full-PPR",55,200.5,-167.8,425,27,9.0
 James Conner,RB,Cardinals,31.0,19.5,44.0,high,"4.0 carries/g x 4.00 YPC | 0.9 targets/g as receiver, full-PPR",56,200.5,-169.5,426,27,14.0
 Braelon Allen,RB,Jets,30.8,15.4,49.3,very_high,"3.6 carries/g x 3.94 YPC | 1.0 targets/g as receiver, full-PPR",57,200.5,-169.7,427,27,13.0
