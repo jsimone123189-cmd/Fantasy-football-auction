@@ -113,7 +113,6 @@ def build(
             })
 
     out = pd.DataFrame(rows)
-    out = compute_vor(out)
 
     if os.path.exists(bye_weeks_path):
         byes = pd.read_csv(bye_weeks_path)[["team", "bye_week"]]
@@ -121,7 +120,34 @@ def build(
     else:
         out["bye_week"] = pd.NA
 
+    out = _rescale_to_scored_weeks(out)
+    out = compute_vor(out)
+
     return out.sort_values("overall_rank").reset_index(drop=True)
+
+
+SCORED_WEEKS = set(range(4, 13))  # Rivals only scores weeks 4-12
+FULL_SEASON_AVAILABLE_WEEKS = 16.0  # a healthy player's real season, net of their own bye
+
+
+def _rescale_to_scored_weeks(out: pd.DataFrame) -> pd.DataFrame:
+    """`projected_points`/floor/ceiling as built above are full-real-season
+    totals (17 weeks, net of the player's own bye) -- correct for Top Teamz
+    and Electric Blue, which score a normal season, but Rivals only scores
+    weeks 4-12 (9 weeks). A bye landing inside that window (weeks 4-12)
+    costs a real scored week; a bye at weeks 1-3 or 13+ costs nothing, since
+    those weeks were never going to count anyway. Rescale here so VOR (and
+    every downstream draft recommendation) reflects what this league
+    actually scores, not a generic full season.
+    """
+    out = out.copy()
+    effective_scored_weeks = out["bye_week"].apply(
+        lambda b: (len(SCORED_WEEKS) - 1) if b in SCORED_WEEKS else len(SCORED_WEEKS)
+    )
+    scale = effective_scored_weeks / FULL_SEASON_AVAILABLE_WEEKS
+    for col in ("projected_points", "floor", "ceiling"):
+        out[col] = (out[col] * scale).round(1)
+    return out
 
 
 def main():
