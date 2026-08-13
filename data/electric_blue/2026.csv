@@ -75,23 +75,23 @@ Jared Goff,QB,Lions,297.8,253.1,351.4,low,"32.3 pass att/g x 7.6 YPA, 5.9% TD ra
 DJ Moore,WR,Bills,161.2,120.9,206.3,medium,"7.7 targets/g, 62% catch rate, 7.5 yds/target",19,137.5,23.7,74,7,7.0
 T.J. Hockenson,TE,Vikings,96.5,72.4,123.5,medium,"5.5 targets/g, 68% catch rate, 6.0 yds/target",9,73.7,22.8,75,7,6.0
 Bhayshul Tuten,RB,Jaguars,162.9,102.6,231.3,high,"14.0 carries/g x 4.20 YPC | 2.5 targets/g, half-PPR",25,140.3,22.6,76,7,7.0
-Luther Burden III,WR,Bears,159.9,120.0,204.7,medium,"7.1 targets/g, 68% catch rate, 8.5 yds/target",20,137.5,22.4,77,7,10.0
-Mark Andrews,TE,Ravens,94.9,71.2,121.5,medium,"4.8 targets/g, 65% catch rate, 6.5 yds/target",10,73.7,21.2,78,7,13.0
+Mark Andrews,TE,Ravens,94.9,71.2,121.5,medium,"4.8 targets/g, 65% catch rate, 6.5 yds/target",10,73.7,21.2,77,7,13.0
+Charlie Smyth,K,NO,170.0,144.5,200.6,low,"2.00 FG made/g (0.83 under 40 @3pt, 0.50 @4pt, 0.67 @5pt) | 2.17 XP made/g",6,151.0,19.0,78,7,
 Eddy Pineiro,K,SF,170.0,144.5,200.6,low,"2.00 FG made/g (0.86 under 40 @3pt, 0.71 @4pt, 0.43 @5pt) | 2.43 XP made/g",5,151.0,19.0,79,7,
 Cameron Dicker,K,LAC,170.0,144.5,200.6,low,"2.23 FG made/g (1.23 under 40 @3pt, 0.71 @4pt, 0.29 @5pt) | 2.00 XP made/g",4,151.0,19.0,80,7,
 Bo Nix,QB,Broncos,289.6,217.2,370.7,medium,"33.7 pass att/g x 7.0 YPA, 4.2% TD rate (1pt/25 pass yds here) | 4.0 rush att/g at 4.5 YPC",11,270.6,19.0,81,7,10.0
-Charlie Smyth,K,NO,170.0,144.5,200.6,low,"2.00 FG made/g (0.83 under 40 @3pt, 0.50 @4pt, 0.67 @5pt) | 2.17 XP made/g",6,151.0,19.0,82,7,
-Rome Odunze,WR,Bears,155.0,116.3,198.5,medium,"7.3 targets/g, 60% catch rate, 7.5 yds/target",21,137.5,17.5,83,7,10.0
-DeVonta Smith,WR,Eagles,154.1,115.5,197.2,medium,"7.3 targets/g, 68% catch rate, 7.0 yds/target",22,137.5,16.6,84,7,10.0
-Jaylen Warren,RB,Steelers,154.2,115.7,197.4,medium,"12.0 carries/g x 4.30 YPC | 3.0 targets/g, half-PPR",26,140.3,13.9,85,8,9.0
-Davante Adams,WR,Rams,151.3,113.5,193.7,medium,"7.1 targets/g, 65% catch rate, 7.2 yds/target",23,137.5,13.8,86,8,11.0
-Cam Little,K,JAX,164.0,139.4,193.6,low,"1.76 FG made/g (0.82 under 40 @3pt, 0.47 @4pt, 0.47 @5pt) | 2.94 XP made/g",7,151.0,13.0,87,8,
-Tetairoa McMillan,WR,Panthers,150.3,112.7,192.3,medium,"7.1 targets/g, 58% catch rate, 7.8 yds/target",24,137.5,12.8,88,8,5.0
-George Pickens,WR,Cowboys,149.6,112.2,191.5,medium,"6.8 targets/g, 58% catch rate, 8.0 yds/target",25,137.5,12.1,89,8,14.0
-Dallas Goedert,TE,Eagles,82.8,62.1,106.0,medium,"4.9 targets/g, 68% catch rate, 6.0 yds/target",11,73.7,9.1,90,8,10.0
-Zay Flowers,WR,Ravens,145.8,109.4,186.7,medium,"7.3 targets/g, 68% catch rate, 7.0 yds/target",26,137.5,8.3,91,8,13.0
-Chris Olave,WR,Saints,145.5,109.1,186.2,medium,"7.6 targets/g, 63% catch rate, 7.5 yds/target",27,137.5,8.0,92,8,8.0
-Will Reichard,K,MIN,159.0,135.2,187.6,low,"1.94 FG made/g (0.88 under 40 @3pt, 0.41 @4pt, 0.65 @5pt) | 1.82 XP made/g",8,151.0,8.0,93,8,
+Rome Odunze,WR,Bears,155.0,116.3,198.5,medium,"7.3 targets/g, 60% catch rate, 7.5 yds/target",20,137.5,17.5,82,7,10.0
+DeVonta Smith,WR,Eagles,154.1,115.5,197.2,medium,"7.3 targets/g, 68% catch rate, 7.0 yds/target",21,137.5,16.6,83,7,10.0
+Jaylen Warren,RB,Steelers,154.2,115.7,197.4,medium,"12.0 carries/g x 4.30 YPC | 3.0 targets/g, half-PPR",26,140.3,13.9,84,7,9.0
+Davante Adams,WR,Rams,151.3,113.5,193.7,medium,"7.1 targets/g, 65% catch rate, 7.2 yds/target",22,137.5,13.8,85,8,11.0
+Cam Little,K,JAX,164.0,139.4,193.6,low,"1.76 FG made/g (0.82 under 40 @3pt, 0.47 @4pt, 0.47 @5pt) | 2.94 XP made/g",7,151.0,13.0,86,8,
+Tetairoa McMillan,WR,Panthers,150.3,112.7,192.3,medium,"7.1 targets/g, 58% catch rate, 7.8 yds/target",23,137.5,12.8,87,8,5.0
+George Pickens,WR,Cowboys,149.6,112.2,191.5,medium,"6.8 targets/g, 58% catch rate, 8.0 yds/target",24,137.5,12.1,88,8,14.0
+Dallas Goedert,TE,Eagles,82.8,62.1,106.0,medium,"4.9 targets/g, 68% catch rate, 6.0 yds/target",11,73.7,9.1,89,8,10.0
+Zay Flowers,WR,Ravens,145.8,109.4,186.7,medium,"7.3 targets/g, 68% catch rate, 7.0 yds/target",25,137.5,8.3,90,8,13.0
+Chris Olave,WR,Saints,145.5,109.1,186.2,medium,"7.6 targets/g, 63% catch rate, 7.5 yds/target",26,137.5,8.0,91,8,8.0
+Will Reichard,K,MIN,159.0,135.2,187.6,low,"1.94 FG made/g (0.88 under 40 @3pt, 0.41 @4pt, 0.65 @5pt) | 1.82 XP made/g",8,151.0,8.0,92,8,
+Luther Burden III,WR,Bears,145.3,109.0,186.0,medium,"7.1 targets/g, 68% catch rate, 7.5 yds/target",27,137.5,7.8,93,8,10.0
 Jacory Croskey-Merritt,RB,Commanders,146.0,92.0,207.3,high,"12.7 carries/g x 4.10 YPC | 2.5 targets/g, half-PPR",27,140.3,5.7,94,8,7.0
 Chase McLaughlin,K,TB,156.0,132.6,184.1,low,"1.88 FG made/g (0.88 under 40 @3pt, 0.35 @4pt, 0.65 @5pt) | 1.88 XP made/g",9,151.0,5.0,95,8,
 David Njoku,TE,Chargers,78.0,58.5,99.9,medium,"4.7 targets/g, 68% catch rate, 6.0 yds/target",12,73.7,4.3,96,8,7.0

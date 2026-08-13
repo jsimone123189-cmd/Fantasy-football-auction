@@ -27,14 +27,14 @@ George Pickens,WR,Cowboys,101.4,76.0,129.8,medium,"6.8 targets/g, 58% catch rate
 Mike Evans,WR,49ers,99.4,74.5,127.2,medium,"7.4 targets/g, 60% catch rate, 8.0 yds/target | full-PPR: every catch worth 1.0 pt (vs 0.5 in Top Teamz)",8.0,19,31.2,68.2,26,2
 Tee Higgins,WR,Bengals,98.8,74.1,126.4,medium,"7.2 targets/g, 62% catch rate, 8.2 yds/target | full-PPR: every catch worth 1.0 pt (vs 0.5 in Top Teamz)",6.0,20,31.2,67.6,27,2
 DJ Moore,WR,Bills,98.0,73.6,125.5,medium,"7.7 targets/g, 62% catch rate, 7.5 yds/target | full-PPR: every catch worth 1.0 pt (vs 0.5 in Top Teamz)",7.0,21,31.2,66.8,28,2
-Luther Burden III,WR,Bears,97.4,73.0,124.6,medium,"7.1 targets/g, 68% catch rate, 8.5 yds/target | full-PPR: every catch worth 1.0 pt (vs 0.5 in Top Teamz)",10.0,22,31.2,66.2,29,2
-DeVonta Smith,WR,Eagles,96.8,72.6,123.9,medium,"7.3 targets/g, 68% catch rate, 7.0 yds/target | full-PPR: every catch worth 1.0 pt (vs 0.5 in Top Teamz)",10.0,23,31.2,65.6,30,2
-Bijan Robinson,RB,Falcons,165.8,124.3,212.2,medium,"17.3 carries/g x 4.70 YPC | 5.5 targets/g as receiver, full-PPR",11.0,4,100.2,65.6,31,2
-Myles Garrett,DL,Browns,119.1,101.2,140.6,low,"1.8 solo + 1.7 ast tackles/g (4.0 pts/g from tackle volume alone) | 1.94 TFL/g, 1.35 sacks/g, 0.00 PD/g | Full-time starting edge rusher, no team change [60 combined 2025 tackles found in research notes; solo/assist split estimated at this position's observed 52/48 average since the source didn't report the two separately -- not a fabricated total, just an estimated split.] | listed as DE",11.0,1,55.6,63.5,32,2
-Rome Odunze,WR,Bears,94.6,71.0,121.2,medium,"7.3 targets/g, 60% catch rate, 7.5 yds/target | full-PPR: every catch worth 1.0 pt (vs 0.5 in Top Teamz)",10.0,24,31.2,63.4,33,3
-Davante Adams,WR,Rams,92.8,69.6,118.8,medium,"7.1 targets/g, 65% catch rate, 7.2 yds/target | full-PPR: every catch worth 1.0 pt (vs 0.5 in Top Teamz)",11.0,25,31.2,61.6,34,3
-Tetairoa McMillan,WR,Panthers,91.2,68.4,116.6,medium,"7.1 targets/g, 58% catch rate, 7.8 yds/target | full-PPR: every catch worth 1.0 pt (vs 0.5 in Top Teamz)",5.0,26,31.2,60.0,35,3
-Jalen Hurts,QB,Eagles,183.0,137.2,234.2,medium,"30.4 pass att/g x 7.0 YPA, 4.4% TD rate (1pt/25 pass yds here, double Top Teamz's rate) | 10.0 rush att/g at 4.0 YPC",10.0,3,123.3,59.7,36,3
+Bijan Robinson,RB,Falcons,165.8,124.3,212.2,medium,"17.3 carries/g x 4.70 YPC | 5.5 targets/g as receiver, full-PPR",11.0,4,100.2,65.6,29,2
+DeVonta Smith,WR,Eagles,96.8,72.6,123.9,medium,"7.3 targets/g, 68% catch rate, 7.0 yds/target | full-PPR: every catch worth 1.0 pt (vs 0.5 in Top Teamz)",10.0,22,31.2,65.6,30,2
+Myles Garrett,DL,Browns,119.1,101.2,140.6,low,"1.8 solo + 1.7 ast tackles/g (4.0 pts/g from tackle volume alone) | 1.94 TFL/g, 1.35 sacks/g, 0.00 PD/g | Full-time starting edge rusher, no team change [60 combined 2025 tackles found in research notes; solo/assist split estimated at this position's observed 52/48 average since the source didn't report the two separately -- not a fabricated total, just an estimated split.] | listed as DE",11.0,1,55.6,63.5,31,2
+Rome Odunze,WR,Bears,94.6,71.0,121.2,medium,"7.3 targets/g, 60% catch rate, 7.5 yds/target | full-PPR: every catch worth 1.0 pt (vs 0.5 in Top Teamz)",10.0,23,31.2,63.4,32,2
+Davante Adams,WR,Rams,92.8,69.6,118.8,medium,"7.1 targets/g, 65% catch rate, 7.2 yds/target | full-PPR: every catch worth 1.0 pt (vs 0.5 in Top Teamz)",11.0,24,31.2,61.6,33,3
+Tetairoa McMillan,WR,Panthers,91.2,68.4,116.6,medium,"7.1 targets/g, 58% catch rate, 7.8 yds/target | full-PPR: every catch worth 1.0 pt (vs 0.5 in Top Teamz)",5.0,25,31.2,60.0,34,3
+Jalen Hurts,QB,Eagles,183.0,137.2,234.2,medium,"30.4 pass att/g x 7.0 YPA, 4.4% TD rate (1pt/25 pass yds here, double Top Teamz's rate) | 10.0 rush att/g at 4.0 YPC",10.0,3,123.3,59.7,35,3
+Luther Burden III,WR,Bears,90.4,67.8,115.8,medium,"7.1 targets/g, 68% catch rate, 7.5 yds/target | full-PPR: every catch worth 1.0 pt (vs 0.5 in Top Teamz)",10.0,26,31.2,59.2,36,3
 Chris Olave,WR,Saints,90.2,67.6,115.4,medium,"7.6 targets/g, 63% catch rate, 7.5 yds/target | full-PPR: every catch worth 1.0 pt (vs 0.5 in Top Teamz)",8.0,27,31.2,59.0,37,3
 Tyler Warren,TE,Colts,88.5,66.4,113.3,medium,"6.6 targets/g, 68% catch rate, 6.0 yds/target | full-PPR: every catch worth 1.0 pt (vs 0.5 in Top Teamz)",13.0,3,30.6,57.9,38,3
 Xavier Worthy,WR,Chiefs,83.2,62.4,106.6,medium,"6.2 targets/g, 58% catch rate, 8.0 yds/target | full-PPR: every catch worth 1.0 pt (vs 0.5 in Top Teamz)",5.0,28,31.2,52.0,39,3
