@@ -956,99 +956,113 @@ table.dollars td.num { font-family: var(--font-mono); text-align: right; }
       in the sim behave identically, the spread below is purely the structural effect of snake order interacting
       with this year's real value cliffs &mdash; not a guess about how the other 15 real managers in your league
       will actually draft (nobody has history to predict that yet). Use it as a tiebreaker if you get any real
-      choice in your slot, not gospel.</p>
+      choice in your slot, not gospel. Points below are scaled to the league's real 9-week scored season (Weeks
+      4&ndash;12), so the totals read lower than a generic full-season projection &mdash; it's the ranking
+      between slots that matters, not the raw number.</p>
     <div class="target-grid">
       <div class="target-row" style="border-left: 3px solid var(--accent);">
-        <span class="pn">Your slot: #7</span><span class="px">1,925 pts</span>
-        <span class="why">Ranks 5th of 16 &mdash; solidly in the "also strong" tier, not a slot you need to worry
-          about. Gets a real look at the WR1 cliff and lands close enough to the turn that the wheel (picking
-          twice close together) works in your favor more often than not.</span>
+        <span class="pn">Your slot: #7</span><span class="px">890 pts</span>
+        <span class="why">Ranks 10th of 16 &mdash; middle of the pack, not the standout seat it looked like before
+          this year's scoring-window fix. Still gets a real crack at the WR1 tier at the top of round 1, but sits
+          on the wrong side of the turn for the DL1/LB1 cliff a round or two later. Nothing to panic about, just
+          no structural gift either &mdash; win this slot on picks, not on draft position.</span>
       </div>
       <div class="target-row">
-        <span class="pn">Best slot: #9</span><span class="px">2,073 pts</span>
-        <span class="why">Lands right as the WR1 tier is thinning but before the DL/LB value cliff &mdash; gets a
-          near-ideal mix of alpha WR, elite DL, and bell-cow LB across the first few rounds.</span>
+        <span class="pn">Best slot: #2</span><span class="px">1,054 pts</span>
+        <span class="why">Picks early enough to lock a true alpha WR, then turns right back into the same tier
+          on the way back &mdash; the cleanest "both cliffs" seat in the league.</span>
       </div>
       <div class="target-row">
-        <span class="pn">Also strong: #3, #2, #5</span><span class="px">2,011&ndash;2,065 pts</span>
-        <span class="why">Early-to-mid slots that get a full crack at the WR1 tier before it's gone &mdash; #7
-          (yours) is the 4th member of this tier.</span>
+        <span class="pn">Also strong: #11, #14, #3</span><span class="px">1,001&ndash;1,017 pts</span>
+        <span class="why">A favorable wheel (two picks close together at the turn) right as the WR1/DL1 tiers are
+          thinning, plus an early-mid slot that clears the WR1 tier before it's gone.</span>
       </div>
       <div class="target-row avoid-row">
-        <span class="pn">Worst slot: #4</span><span class="px">1,636 pts</span>
+        <span class="pn">Worst slot: #8</span><span class="px">828 pts</span>
         <span class="why watch">avoid if you have a choice</span>
-        <span class="why">Sits in the dead zone after the WR1/DL1/LB1 tiers have cleared without a favorable
-          wheel turn to make up for it.</span>
+        <span class="why">Picks right after the WR1/DL1/LB1 tiers clear with no favorable turn to make up for
+          it &mdash; the single worst combination of timing in the sim.</span>
       </div>
       <div class="target-row avoid-row">
-        <span class="pn">Also weak: #12, #13</span><span class="px">1,649&ndash;1,652 pts</span>
-        <span class="why">Middling-to-late slots with no structural turn advantage in either direction.</span>
+        <span class="pn">Also weak: #4, #10</span><span class="px">829&ndash;838 pts</span>
+        <span class="why">Same dead-zone problem as #8, slightly less severe.</span>
       </div>
     </div>
-    <p>Full 16-slot ranking (projected optimal starting-lineup points, this year's board): #9, #3, #2, #5,
-      <b>#7</b>, #10, #1, #15, #8, #14, #6, #16, #11, #13, #12, #4 (best to worst). Your #7 sits comfortably in
-      the upper third &mdash; nothing to correct for on draft day, just a normal case for taking the best VOR on
-      the board each pick.</p>
+    <p>Full 16-slot ranking (projected optimal starting-lineup points, this year's board): #2, #11, #14, #3, #15,
+      #12, #1, #5, #16, <b>#7</b>, #6, #9, #13, #10, #4, #8 (best to worst). Your #7 sits just below the median
+      &mdash; nothing to correct for on draft day, just a normal case for taking the best VOR on the board each
+      pick.</p>
   </section>
 
   <section>
     <h2 class="section-title">Your #7 targets, round by round</h2>
-    <p>Simulated your specific seat: same neutral best-value-available approach as the slot ranking above, but
-      this time tracking the actual roster slot #7 ends up with across all 18 rounds, then cross-checked every
-      pick against the real 2026 bye-week calendar. This is a realistic <i>shape</i> for your draft, not a
-      script &mdash; the other 15 real managers won't all draft by pure VOR, so treat it as a strong starting
-      board, not gospel.</p>
+    <p>Simulated your specific seat with your real constraints layered on top of pure VOR, not neutral BPA: A.J.
+      Brown is excluded entirely (hard avoid, every league, no exceptions); Jayden Daniels/Jalen Hurts, Omarion
+      Hampton, Luther Burden III, and David Montgomery get priority when they're realistically still on the board
+      near their real value; a 2nd RB is skipped until the value is a genuine collapse late (one starting RB slot
+      plus a flex that leans WR doesn't need a 2nd early investment); TE isn't rushed but is guaranteed by round
+      9; QB is guaranteed by round 6 so a 16-team replacement-level cliff never strands you; K is deferred to the
+      final two rounds, the most streamable, least-differentiated position on the board. This is a realistic
+      <i>shape</i> for your draft, not a script &mdash; the other 15 real managers won't all draft this way, so
+      treat it as a strong starting board, not gospel.</p>
     <div class="table-wrap">
       <table class="dollars">
         <thead><tr><th>Rd</th><th>Player</th><th>Pos</th><th>Team</th><th class="num">Bye</th></tr></thead>
         <tbody>
-          <tr><td>1</td><td>A.J. Brown</td><td>WR</td><td>Patriots</td><td class="num mono" style="color:var(--danger);">11</td></tr>
-          <tr><td>2</td><td>Myles Garrett</td><td>DL</td><td>Browns</td><td class="num mono" style="color:var(--danger);">11</td></tr>
-          <tr><td>3</td><td>Courtland Sutton</td><td>WR</td><td>Broncos</td><td class="num mono" style="color:var(--warn);">10</td></tr>
-          <tr><td>4</td><td>Jack Campbell</td><td>LB</td><td>Lions</td><td class="num mono">6</td></tr>
-          <tr><td>5</td><td>Blake Cashman</td><td>LB</td><td>Vikings</td><td class="num mono">6</td></tr>
-          <tr><td>6</td><td>Dallas Goedert</td><td>TE</td><td>Eagles</td><td class="num mono" style="color:var(--warn);">10</td></tr>
-          <tr><td>7</td><td>Evan Engram</td><td>TE</td><td>Broncos</td><td class="num mono" style="color:var(--warn);">10</td></tr>
-          <tr><td>8</td><td>Christian Kirk</td><td>WR</td><td>Texans</td><td class="num mono">8</td></tr>
-          <tr><td>9</td><td>Kevin Byard III</td><td>DB</td><td>Patriots</td><td class="num mono" style="color:var(--danger);">11</td></tr>
-          <tr><td>10</td><td>Cairo Santos</td><td>K</td><td>Bears</td><td class="num mono" style="color:var(--warn);">10</td></tr>
-          <tr><td>11</td><td>Budda Baker</td><td>DB</td><td>Cardinals</td><td class="num mono">14</td></tr>
-          <tr><td>12</td><td>Paulson Adebo</td><td>DB</td><td>Giants</td><td class="num mono">8</td></tr>
-          <tr><td>13</td><td>Harrison Butker</td><td>K</td><td>Chiefs</td><td class="num mono">5</td></tr>
-          <tr><td>14</td><td>Quentin Johnston</td><td>WR</td><td>Chargers</td><td class="num mono">7</td></tr>
-          <tr><td>15</td><td>Tyrone Tracy Jr.</td><td>RB</td><td>Giants</td><td class="num mono">8</td></tr>
-          <tr><td>16</td><td>Kyle Williams</td><td>WR</td><td>Patriots</td><td class="num mono" style="color:var(--danger);">11</td></tr>
-          <tr><td>17</td><td>J.K. Dobbins</td><td>RB</td><td>Broncos</td><td class="num mono" style="color:var(--warn);">10</td></tr>
-          <tr><td>18</td><td>Jaxson Dart</td><td>QB</td><td>Giants</td><td class="num mono">8</td></tr>
+          <tr><td>1</td><td>Nico Collins</td><td>WR</td><td>Texans</td><td class="num mono">8</td></tr>
+          <tr><td>2</td><td>Luther Burden III <span class="pos-tag2">target</span></td><td>WR</td><td>Bears</td><td class="num mono" style="color:var(--warn);">10</td></tr>
+          <tr><td>3</td><td>Jayden Daniels <span class="pos-tag2">target</span></td><td>QB</td><td>Commanders</td><td class="num mono">7</td></tr>
+          <tr><td>4</td><td>Omarion Hampton <span class="pos-tag2">target</span></td><td>RB</td><td>Chargers</td><td class="num mono">7</td></tr>
+          <tr><td>5</td><td>Jayden Reed</td><td>WR</td><td>Packers</td><td class="num mono" style="color:var(--danger);">11</td></tr>
+          <tr><td>6</td><td>Montez Sweat</td><td>DL</td><td>Bears</td><td class="num mono" style="color:var(--warn);">10</td></tr>
+          <tr><td>7</td><td>Tremaine Edmunds</td><td>LB</td><td>Giants</td><td class="num mono">8</td></tr>
+          <tr><td>8</td><td>Demario Davis</td><td>LB</td><td>Jets</td><td class="num mono" style="color:var(--good);">13</td></tr>
+          <tr><td>9</td><td>Cade Otton</td><td>TE</td><td>Buccaneers</td><td class="num mono" style="color:var(--warn);">10</td></tr>
+          <tr><td>10</td><td>Jalen Thompson</td><td>DB</td><td>Cowboys</td><td class="num mono" style="color:var(--good);">14</td></tr>
+          <tr><td>11</td><td>Dane Belton</td><td>DB</td><td>Giants</td><td class="num mono">8</td></tr>
+          <tr><td>12</td><td>Jack Bech</td><td>WR</td><td>Raiders</td><td class="num mono" style="color:var(--good);">13</td></tr>
+          <tr><td>13</td><td>Xavier McKinney</td><td>DB</td><td>Packers</td><td class="num mono" style="color:var(--danger);">11</td></tr>
+          <tr><td>14</td><td>Xavier Legette</td><td>WR</td><td>Panthers</td><td class="num mono">5</td></tr>
+          <tr><td>15</td><td>Sam Darnold</td><td>QB</td><td>Seahawks</td><td class="num mono" style="color:var(--danger);">11</td></tr>
+          <tr><td>16</td><td>Nick Bosa</td><td>DL</td><td>49ers</td><td class="num mono">8</td></tr>
+          <tr><td>17</td><td>Blake Grupe</td><td>K</td><td>Colts</td><td class="num mono" style="color:var(--good);">13</td></tr>
+          <tr><td>18</td><td>Riley Patterson</td><td>K</td><td>Dolphins</td><td class="num mono">6</td></tr>
         </tbody>
       </table>
     </div>
     <p style="margin-top:14px;"><span style="color:var(--warn);font-weight:800;">Amber</span> = Week 10 (semifinal)
-      bye. <span style="color:var(--danger);font-weight:800;">Red</span> = Week 11 (championship G1) bye. Rounds
-      1&ndash;5 are legitimately correct value and shouldn't be diverted for bye reasons alone; QB (Jaxson Dart)
-      going dead last confirms the "QB is deeper than it looks" read above.</p>
+      bye. <span style="color:var(--danger);font-weight:800;">Red</span> = Week 11 (championship G1) bye.
+      <span style="color:var(--good);font-weight:800;">Green</span> = Week 13+ bye &mdash; this player never
+      misses a scored week all season, which is now baked directly into their projection (not just a note): a
+      bye at Weeks 4&ndash;12 costs a real scored week, a bye at Weeks 1&ndash;3 or 13+ costs nothing, so Weeks
+      13&ndash;15 byes carry a real value bump over an otherwise-identical player on an in-window bye.</p>
     <div class="target-grid">
       <div class="target-row avoid-row">
-        <span class="pn">Week 10 landmine: 5 of 18 roster spots</span><span class="why watch">semifinal week</span>
-        <span class="why">Pure BPA stacks both tight ends (Goedert, Engram), your kicker (Santos), and bench RB
-          depth (Dobbins) all on Broncos/Eagles/Bears &mdash; all out the same week you need a full lineup to
-          survive single elimination.</span>
+        <span class="pn">Week 10 landmine: 3 of 18 roster spots</span><span class="why watch">semifinal week</span>
+        <span class="why">Burden (WR2), Sweat (DL), and Otton (TE) all land on Bears/Buccaneers &mdash; out the
+          same week you need a full lineup to survive single elimination.</span>
       </div>
       <div class="target-row avoid-row">
-        <span class="pn">Week 11 landmine: 4 of 18 roster spots</span><span class="why watch">championship G1</span>
-        <span class="why">Your best pick (A.J. Brown), your DL anchor (Garrett), your DB1 (Byard), and a bench
-          WR all land on Patriots/Browns &mdash; out together in the first half of the championship.</span>
+        <span class="pn">Week 11 landmine: 3 of 18 roster spots</span><span class="why watch">championship G1</span>
+        <span class="why">Reed (flex-caliber WR), McKinney (DB2), and Darnold (backup QB) all land on
+          Packers/Seahawks &mdash; out together in the first half of the championship.</span>
+      </div>
+      <div class="target-row" style="border-left: 3px solid var(--good);">
+        <span class="pn">Week 13+ bonus: 4 of 18 roster spots</span><span class="why watch">never misses a scored week</span>
+        <span class="why">Davis, Thompson, Bech, and Grupe are all on byes that land after the Rivals season
+          already ends &mdash; genuinely free production compared to an equal-value player with an in-window
+          bye, and it's now reflected directly in their VOR, not just a footnote.</span>
       </div>
     </div>
-    <p>The fix costs you almost nothing: rounds 1&ndash;2 (Brown, Garrett) are too far ahead in value to pass on
-      for a bye week, but rounds 6, 7, and 10 &mdash; your TE2 and K picks &mdash; have real, near-equal-value
-      alternatives that aren't on Broncos/Bears/Eagles. Check the cheat sheet below for a same-tier TE2/K before
-      autopicking the top of the board there; that alone clears three of the nine landmine spots without costing
-      real value.</p>
+    <p>The Week 10/11 landmines here are cheaper to live with than they look: rounds 1&ndash;5 (Collins, Burden,
+      Daniels, Hampton, Reed) are legitimately correct value and shouldn't be diverted for a bye week alone, and
+      by rounds 6&ndash;13 the landmine picks (Sweat, Otton, McKinney) are your TE2/DL2/DB depth, not your
+      starters at those positions &mdash; check the cheat sheet below for a same-tier alternative before
+      autopicking if you want to trade a sliver of value for one fewer landmine spot.</p>
     <p>Applied to the season structure above: rounds 1&ndash;8 are your group-stage foundation (take the board as
-      shown &mdash; floor matters more than ceiling in Weeks 4&ndash;8); rounds 9&ndash;12 are exactly where your
-      TE2/DB depth/K picks collide with the bye landmines, so that's where value-hunting shifts to bye-aware
-      value-hunting; rounds 13&ndash;18 are your only real shot at Week 9&ndash;12 ceiling plays &mdash; spend
+      shown &mdash; floor matters more than ceiling in Weeks 4&ndash;8); rounds 9&ndash;13 are exactly where your
+      TE/DB depth/DL2 picks collide with the bye landmines, so that's where value-hunting shifts to bye-aware
+      value-hunting; rounds 14&ndash;18 are your only real shot at Week 9&ndash;12 ceiling plays &mdash; spend
       them on upside/role-clarity bets, not safe-but-capped depth, since a bench player who never starts is
       worthless in single elimination.</p>
 
@@ -1074,8 +1088,12 @@ table.dollars td.num { font-family: var(--font-mono); text-align: right; }
     </div>
     <p><b>The actual call:</b> keep it live, not locked in pre-draft. If Myles Garrett (or another DL1/LB1-tier
       name) is still on the board at your round-2 pick, take him &mdash; the value is real either way. If he's
-      already gone, don't reach; take the best available WR instead and revisit DL starting around round
-      4&ndash;5, same as the base plan above.</p>
+      already gone, don't reach; take the best available WR instead (Luther Burden III at his real value, per the
+      board above) and revisit DL starting around round 6, same as the base plan above.</p>
+    <p>One more real-ADP check on round 1 itself: Bijan Robinson isn't a live option at #7 &mdash; the real
+      16-team computer mock had him gone at pick 1.2 overall, not round 2. Realistic round-1 value at your seat
+      is a tier below the true top-5 (think Nico Collins, not Chase/Jefferson/Bijan), which is what the board
+      above reflects.</p>
   </section>
 
   <section>
