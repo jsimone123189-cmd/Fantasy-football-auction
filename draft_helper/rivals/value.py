@@ -4,10 +4,21 @@ ranked by Value Over Replacement (VOR): projected points above the last
 player at that position who'd still be a normal starter across the league.
 
 Replacement rank per position = (starters/team x teams) + that position's
-share of the league's FLEX slots (RWT = RB/WR/TE). The flex-share split
-(30% RB / 60% WR / 10% TE) reflects that in a full-PPR league with only one
-dedicated RB slot but three dedicated WR slots, teams overwhelmingly start
-extra WRs and RBs in the flex, not TEs.
+share of the league's FLEX slots (RWT = RB/WR/TE).
+
+The flex-share split below is *empirically measured*, not guessed: earlier
+this project assumed 30% RB / 60% WR / 10% TE on the reasoning that 3
+dedicated WR slots vs. 1 dedicated RB slot means WR dominates the flex too.
+That reasoning is backwards for this format. Running the neutral
+best-value-available 16-team draft sim (mock_draft.py) 300 times with
+small tie-breaking jitter and checking who actually wins each team's flex
+slot converged tightly on RB 50% / WR 31% / TE 19% (4,800 flex picks
+sampled, stable to within rounding across trials) -- because with only 1
+dedicated RB slot, a team's RB2 is very often still better than its WR4
+in this scoring format (full PPR softens the receiving-back floor, and
+RB value falls off a cliff past the top tier), so RB ends up winning the
+flex more often than the slot count alone would suggest. See
+tests/test_value_flex_share.py for the reproducible measurement.
 
 `vor_round` translates VOR rank into "this is a round N pick" for a 16-team
 snake draft, which is the practical unit managers actually think in --
@@ -22,7 +33,7 @@ import pandas as pd
 NUM_TEAMS = 16
 STARTERS = {"QB": 1, "RB": 1, "WR": 3, "TE": 1, "DL": 1, "LB": 1, "DB": 1, "K": 1}
 FLEX_SLOTS_PER_TEAM = 1
-FLEX_SHARE = {"RB": 0.30, "WR": 0.60, "TE": 0.10}
+FLEX_SHARE = {"RB": 0.50, "WR": 0.3125, "TE": 0.1875}
 
 
 def replacement_ranks(num_teams: int = NUM_TEAMS) -> dict:

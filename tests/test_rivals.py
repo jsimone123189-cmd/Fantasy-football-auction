@@ -78,12 +78,18 @@ def test_replacement_ranks_no_flex_for_idp_or_kicker():
     assert ranks["QB"] == 16
 
 
-def test_replacement_ranks_wr_gets_biggest_flex_share():
+def test_replacement_ranks_rb_gets_biggest_flex_share():
+    # Empirically measured (see tests/test_value_flex_share.py): RB wins
+    # ~50% of flex slots in this format despite only 1 dedicated slot,
+    # because RB2s frequently outscore WR4s here. WR's 3 dedicated slots
+    # mean it still has a much deeper replacement rank overall, just not
+    # from flex share dominance.
     ranks = replacement_ranks(num_teams=16)
-    # 3 dedicated WR + 60% of 16 flex slots = 48 + 9.6 ~= 58
-    assert ranks["WR"] == pytest.approx(58, abs=1)
-    # 1 dedicated RB + 30% of 16 flex slots = 16 + 4.8 ~= 21
-    assert ranks["RB"] == pytest.approx(21, abs=1)
+    # 1 dedicated RB + 50% of 16 flex slots = 16 + 8 = 24
+    assert ranks["RB"] == pytest.approx(24, abs=1)
+    # 3 dedicated WR + 31.25% of 16 flex slots = 48 + 5 = 53
+    assert ranks["WR"] == pytest.approx(53, abs=1)
+    assert ranks["RB"] < ranks["WR"], "WR still has the deeper replacement rank overall (3 dedicated slots)"
 
 
 def test_compute_vor_elite_player_beats_replacement_level_player():
