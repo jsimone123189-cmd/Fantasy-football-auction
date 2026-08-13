@@ -11,11 +11,21 @@ Reads:
     built from data/research/idp_{dl,lb,db}_2026.csv)
   - data/rivals/inputs_kicker_2026.csv      (kicker per-game rate inputs,
     built from data/research/kickers_2026.csv)
+  - data/research/schedule_2026.csv         (each team's real weeks 4-12
+    opponents)
+  - data/research/defense_strength_2026.csv (real, sourced run/pass
+    defense tiers for the teams with a clear 2026 signal)
 
 Writes:
   - data/rivals/2026.csv with columns player_name, position, nfl_team,
-    projected_points, floor, ceiling, risk_tier, pos_rank, vor,
-    overall_rank, vor_round, explanation, bye_week
+    projected_points, floor, ceiling, risk_tier, points_early, points_late,
+    pos_rank, vor, overall_rank, vor_round, explanation, bye_week.
+    projected_points/floor/ceiling are the honest real-points projection
+    across Rivals' full scored season (weeks 4-12); vor/overall_rank/
+    vor_round additionally weight weeks 9-12 (the knockout bracket) more
+    heavily via LATE_WEIGHT below, per explicit request to prioritize
+    "good enough" weeks 4-8 and "best" weeks 9-12 -- see
+    _rescale_to_scored_weeks() and the vor blend in build().
 """
 from __future__ import annotations
 
@@ -26,8 +36,17 @@ import pandas as pd
 from draft_helper.projections.team_context import DEFAULT_IMPLIED_PPG, TeamContext, load_team_contexts
 
 from .model import SKILL_PROJECTORS, project_idp, project_kicker
+from .schedule_strength import (
+    DEFENSE_PATH as SCHEDULE_STRENGTH_DEFENSE_PATH,
+    EARLY_WEEKS,
+    LATE_WEEKS,
+    SCHEDULE_PATH as SCHEDULE_STRENGTH_SCHEDULE_PATH,
+    load_defense_strength,
+    load_schedule,
+    week_range_multiplier,
+)
 from .teams import idp_bucket, to_nickname
-from .value import compute_vor
+from .value import compute_vor, position_vor, rank_from_vor
 
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 SKILL_INPUTS_PATH = os.path.join(BASE_DIR, "data", "projections", "inputs_2026.csv")
@@ -35,6 +54,8 @@ TEAM_CONTEXT_PATH = os.path.join(BASE_DIR, "data", "research", "team_context_202
 IDP_INPUTS_PATH = os.path.join(BASE_DIR, "data", "rivals", "inputs_idp_2026.csv")
 KICKER_INPUTS_PATH = os.path.join(BASE_DIR, "data", "rivals", "inputs_kicker_2026.csv")
 BYE_WEEKS_PATH = os.path.join(BASE_DIR, "data", "research", "bye_weeks_2026.csv")
+SCHEDULE_PATH = SCHEDULE_STRENGTH_SCHEDULE_PATH
+DEFENSE_STRENGTH_PATH = SCHEDULE_STRENGTH_DEFENSE_PATH
 OUT_PATH = os.path.join(BASE_DIR, "data", "rivals", "2026.csv")
 
 
@@ -51,6 +72,8 @@ def build(
     idp_inputs_path=IDP_INPUTS_PATH,
     kicker_inputs_path=KICKER_INPUTS_PATH,
     bye_weeks_path=BYE_WEEKS_PATH,
+    schedule_path=SCHEDULE_PATH,
+    defense_strength_path=DEFENSE_STRENGTH_PATH,
 ) -> pd.DataFrame:
     rows = []
 
@@ -120,33 +143,87 @@ def build(
     else:
         out["bye_week"] = pd.NA
 
-    out = _rescale_to_scored_weeks(out)
-    out = compute_vor(out)
+    out = _rescale_to_scored_weeks(out, schedule_path, defense_strength_path)
+
+    # pos_rank/replacement_points stay meaningful (based on the real,
+    # unweighted point total); `vor` itself is then overwritten below with
+    # a blend of VOR computed separately per phase -- see the note on
+    # position_vor() for why that has to happen *after* VOR, not on raw
+    # points, to avoid a high-raw-scoring position (QB, in this format)
+    # swamping the blend just because of its scale.
+    out = compute_vor(out, value_col="projected_points")
+    vor_early = position_vor(out, "points_early")
+    vor_late = position_vor(out, "points_late")
+    out["vor"] = (vor_early + LATE_WEIGHT * vor_late).round(1)
+    out = rank_from_vor(out)
 
     return out.sort_values("overall_rank").reset_index(drop=True)
 
 
-SCORED_WEEKS = set(range(4, 13))  # Rivals only scores weeks 4-12
 FULL_SEASON_AVAILABLE_WEEKS = 16.0  # a healthy player's real season, net of their own bye
 
+# Weeks 9-12 (the knockout bracket) count extra toward draft value, on top
+# of the real per-phase schedule adjustment below -- this is the explicit
+# "good enough weeks 4-8, best team weeks 9-12" priority, applied as a
+# deliberate tilt on `playoff_weighted_points` (used only for VOR/rank),
+# never on `projected_points` (the honest, unweighted real projection).
+LATE_WEIGHT = 1.35
 
-def _rescale_to_scored_weeks(out: pd.DataFrame) -> pd.DataFrame:
+
+def _effective_weeks(bye_week, week_range) -> int:
+    weeks = list(week_range)
+    return len(weeks) - 1 if bye_week in weeks else len(weeks)
+
+
+def _rescale_to_scored_weeks(out: pd.DataFrame, schedule_path: str, defense_strength_path: str) -> pd.DataFrame:
     """`projected_points`/floor/ceiling as built above are full-real-season
     totals (17 weeks, net of the player's own bye) -- correct for Top Teamz
     and Electric Blue, which score a normal season, but Rivals only scores
-    weeks 4-12 (9 weeks). A bye landing inside that window (weeks 4-12)
-    costs a real scored week; a bye at weeks 1-3 or 13+ costs nothing, since
-    those weeks were never going to count anyway. Rescale here so VOR (and
-    every downstream draft recommendation) reflects what this league
-    actually scores, not a generic full season.
+    weeks 4-12 (9 weeks), split into two very different phases: weeks 4-8
+    (group stage, floor matters) and weeks 9-12 (single-elimination
+    knockout, ceiling matters -- and it's what a roster is actually built
+    for). This rescales each player's per-game rate across those two
+    phases separately, accounting for:
+      - a bye landing inside a phase costing a real game in that phase
+        only (a bye at weeks 1-3 or 13+ costs nothing in either phase)
+      - each phase's *real* schedule strength (see schedule_strength.py --
+        run defense for RBs, pass defense for QB/WR/TE, sourced from real
+        2026 preseason team data, neutral where no real signal exists)
+    `projected_points`/floor/ceiling stay the honest combined real
+    projection; `points_early`/`points_late` (this function's other output)
+    feed into a separate per-phase VOR blend in build() that applies
+    LATE_WEIGHT to the weeks 9-12 phase specifically, per the explicit
+    request to prioritize the knockout weeks while still fully counting
+    the group stage.
     """
     out = out.copy()
-    effective_scored_weeks = out["bye_week"].apply(
-        lambda b: (len(SCORED_WEEKS) - 1) if b in SCORED_WEEKS else len(SCORED_WEEKS)
+    schedule = load_schedule(schedule_path)
+    defense = load_defense_strength(defense_strength_path)
+
+    per_game_rate = out["projected_points"] / FULL_SEASON_AVAILABLE_WEEKS
+    old_points = out["projected_points"].replace(0, 1e-9)
+
+    early_weeks = out["bye_week"].apply(lambda b: _effective_weeks(b, EARLY_WEEKS))
+    late_weeks = out["bye_week"].apply(lambda b: _effective_weeks(b, LATE_WEEKS))
+
+    early_mult = out.apply(
+        lambda r: week_range_multiplier(r["nfl_team"], r["position"], EARLY_WEEKS, schedule, defense),
+        axis=1,
     )
-    scale = effective_scored_weeks / FULL_SEASON_AVAILABLE_WEEKS
-    for col in ("projected_points", "floor", "ceiling"):
-        out[col] = (out[col] * scale).round(1)
+    late_mult = out.apply(
+        lambda r: week_range_multiplier(r["nfl_team"], r["position"], LATE_WEEKS, schedule, defense),
+        axis=1,
+    )
+
+    points_early = per_game_rate * early_weeks * early_mult
+    points_late = per_game_rate * late_weeks * late_mult
+
+    real_scale = (points_early + points_late) / old_points
+    out["projected_points"] = (points_early + points_late).round(1)
+    out["floor"] = (out["floor"] * real_scale).round(1)
+    out["ceiling"] = (out["ceiling"] * real_scale).round(1)
+    out["points_early"] = points_early.round(1)
+    out["points_late"] = points_late.round(1)
     return out
 
 

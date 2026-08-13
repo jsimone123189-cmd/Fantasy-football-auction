@@ -33,29 +33,71 @@ def replacement_ranks(num_teams: int = NUM_TEAMS) -> dict:
     return ranks
 
 
-def compute_vor(df: pd.DataFrame, num_teams: int = NUM_TEAMS) -> pd.DataFrame:
-    """df needs columns: player_name, position, projected_points (median).
-    Adds: pos_rank, replacement_points, vor, overall_rank, vor_round.
+def position_replacement_points(df: pd.DataFrame, value_col: str, num_teams: int = NUM_TEAMS) -> dict:
+    """The `value_col` score of the last player at each position who'd
+    still start somewhere across `num_teams` teams (accounting for FLEX
+    demand) -- the replacement-level baseline VOR is measured against.
     """
-    out = df.copy()
-    out["pos_rank"] = out.groupby("position")["projected_points"].rank(
-        ascending=False, method="first"
-    ).astype(int)
-
     ranks = replacement_ranks(num_teams)
     replacement_points = {}
     for pos, rep_rank in ranks.items():
-        pos_df = out[out["position"] == pos].sort_values("projected_points", ascending=False)
+        pos_df = df[df["position"] == pos].sort_values(value_col, ascending=False)
         if pos_df.empty:
             replacement_points[pos] = 0.0
             continue
         idx = min(rep_rank, len(pos_df)) - 1
-        replacement_points[pos] = float(pos_df.iloc[idx]["projected_points"])
+        replacement_points[pos] = float(pos_df.iloc[idx][value_col])
+    return replacement_points
 
+
+def position_vor(df: pd.DataFrame, value_col: str, num_teams: int = NUM_TEAMS) -> pd.Series:
+    """Row-aligned VOR (`value_col` minus that row's position replacement
+    level) without sorting or ranking -- the building block `compute_vor`
+    uses, and reusable on its own when a caller needs to blend VOR from
+    more than one `value_col` (e.g. combining VOR computed separately per
+    phase of a split season) before doing a single final rank/sort.
+    Critically, computing VOR *before* blending -- rather than blending
+    raw points and taking VOR once at the end -- keeps a multi-phase blend
+    from being skewed by the sheer scale of one position's raw point
+    totals (e.g. QB volume stats in a format that scores 0.04 pt/pass
+    yard): VOR is already scale-normalized per position, so it blends
+    fairly across positions in a way raw points don't.
+    """
+    replacement_points = position_replacement_points(df, value_col, num_teams)
+    replacement = df["position"].map(replacement_points).fillna(0.0)
+    return (df[value_col] - replacement).round(1)
+
+
+def compute_vor(df: pd.DataFrame, num_teams: int = NUM_TEAMS, value_col: str = "projected_points") -> pd.DataFrame:
+    """df needs columns: player_name, position, and `value_col` (median
+    points by default). Adds: pos_rank, replacement_points, vor,
+    overall_rank, vor_round -- all computed off `value_col`, so passing a
+    weighted value (e.g. one that overweights certain weeks) shifts VOR
+    and draft order without touching the real `projected_points` column
+    used for display.
+    """
+    out = df.copy()
+    out["pos_rank"] = out.groupby("position")[value_col].rank(
+        ascending=False, method="first"
+    ).astype(int)
+
+    replacement_points = position_replacement_points(out, value_col, num_teams)
     out["replacement_points"] = out["position"].map(replacement_points).fillna(0.0)
-    out["vor"] = (out["projected_points"] - out["replacement_points"]).round(1)
+    out["vor"] = position_vor(out, value_col, num_teams)
 
     out = out.sort_values("vor", ascending=False).reset_index(drop=True)
+    out["overall_rank"] = out.index + 1
+    out["vor_round"] = out["overall_rank"].apply(lambda r: math.ceil(r / num_teams))
+    return out
+
+
+def rank_from_vor(df: pd.DataFrame, num_teams: int = NUM_TEAMS) -> pd.DataFrame:
+    """Like the tail of `compute_vor`, but for when `vor` has already been
+    computed elsewhere (e.g. a blend of per-phase VOR) instead of being
+    derived fresh from a single `value_col`. Sorts by the existing `vor`
+    column and (re)assigns overall_rank/vor_round from that order.
+    """
+    out = df.sort_values("vor", ascending=False).reset_index(drop=True)
     out["overall_rank"] = out.index + 1
     out["vor_round"] = out["overall_rank"].apply(lambda r: math.ceil(r / num_teams))
     return out
