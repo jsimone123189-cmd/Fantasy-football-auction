@@ -1404,6 +1404,44 @@ table.dollars td.num { font-family: var(--font-mono); text-align: right; }
           Godwin), so neither makes a live selection regardless of round parity.</li>
       </ul>
     </div>
+    <h3 style="font-size:15px;margin:28px 0 8px;">Scenario testing: pure best-value-available isn't actually your best strategy</h3>
+    <p>Tested 9 real drafting philosophies for this specific seat against the same real field (other 11 teams
+      always neutral best-value-available, real keepers, K/DEF deferred) &mdash; not just "take the top of the
+      board every pick," but RB-heavy, WR-heavy, Zero-RB, Hero-RB, TE-premium, QB-early, QB-late, and a
+      balanced-roster approach, then measured which one actually produces the most optimal starting-lineup
+      points:</p>
+    <div class="table-wrap">
+      <table class="dollars">
+        <thead><tr><th>Strategy</th><th class="num">Optimal pts</th><th class="num">vs. pure BPA</th></tr></thead>
+        <tbody>
+          <tr style="background:var(--good-bg,rgba(47,125,99,0.12));"><td><b>Balanced &mdash; fill every dedicated starter slot once before doubling up any position (rd 1&ndash;6)</b></td><td class="num mono" style="color:var(--good);">1,780.1</td><td class="num mono" style="color:var(--good);">+29.2</td></tr>
+          <tr><td>QB late (avoid QB through round 6)</td><td class="num mono">1,774.5</td><td class="num mono" style="color:var(--good);">+23.6</td></tr>
+          <tr><td>TE premium (force elite TE round 1&ndash;2)</td><td class="num mono">1,771.7</td><td class="num mono" style="color:var(--good);">+20.8</td></tr>
+          <tr><td>Pure best-value-available (the default/neutral approach)</td><td class="num mono">1,750.9</td><td class="num mono">&mdash;</td></tr>
+          <tr><td>Hero-RB (1 RB round 1, avoid a 2nd until round 8)</td><td class="num mono">1,739.3</td><td class="num mono" style="color:var(--danger);">&minus;11.6</td></tr>
+          <tr><td>RB-heavy (force RB rounds 1&ndash;3)</td><td class="num mono">1,708.8</td><td class="num mono" style="color:var(--danger);">&minus;42.1</td></tr>
+          <tr><td>WR-heavy (force WR rounds 1&ndash;3)</td><td class="num mono">1,698.9</td><td class="num mono" style="color:var(--danger);">&minus;52.0</td></tr>
+          <tr><td>QB early (force a QB by round 2)</td><td class="num mono">1,685.3</td><td class="num mono" style="color:var(--danger);">&minus;65.6</td></tr>
+          <tr><td>Zero-RB (avoid RB through round 5)</td><td class="num mono">1,674.1</td><td class="num mono" style="color:var(--danger);">&minus;76.8</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <p>The winner makes sense once you think about what "optimal starting points" actually measures: only your
+      <i>starting lineup</i> counts, not total roster value, so a pick that doubles up a position you've already
+      started (a 3rd WR while QB/TE still sit open) is close to wasted, even if it's the single best VOR on the
+      board that round. Filling QB, RB, RB, WR, WR, and TE exactly once each &mdash; in real best-value order,
+      just refusing to double up early &mdash; before any depth picks beats letting pure VOR double up on RB or
+      WR because that happened to be the top of the board a given round. I also tried explicitly deprioritizing
+      QB within that same "fill starters first" rule and explicitly grabbing TE before QB &mdash; both did
+      <i>worse</i> than just taking the best available starter-filling pick in order (1,775.5 and 1,752.4), so the
+      win isn't "avoid QB" or "prioritize TE," specifically &mdash; it's "don't double up before every starter
+      slot is full."</p>
+    <p style="font-size:12px;color:var(--ink-faint);">One honest limit on this: these scenarios only vary <i>your</i>
+      strategy against a neutral field. Ryan's and William's real reach tendency (above) isn't mechanically built
+      into these numbers &mdash; there's no real data on <i>which</i> specific players they reach for, only how
+      many rounds early on average, so baking that in would mean inventing positional preferences that aren't
+      backed by anything real. The odd/even-round caveat below still stands as the honest version of that
+      risk.</p>
     <div class="table-wrap">
       <table class="dollars">
         <thead><tr><th>Rd</th><th>Player</th><th>Pos</th><th>Team</th><th>Parity</th></tr></thead>
@@ -1412,11 +1450,11 @@ table.dollars td.num { font-family: var(--font-mono); text-align: right; }
           <tr><td>2</td><td>Puka Nacua</td><td>WR</td><td>Rams</td><td class="num">even &mdash; first pick</td></tr>
           <tr><td>3</td><td>Drake Maye</td><td>QB</td><td>Patriots</td><td class="num">odd &mdash; last pick</td></tr>
           <tr><td>4</td><td>Breece Hall</td><td>RB</td><td>Jets</td><td class="num">even &mdash; first pick</td></tr>
-          <tr><td>5</td><td>J.K. Dobbins</td><td>RB</td><td>Broncos</td><td class="num">odd &mdash; last pick</td></tr>
-          <tr><td>6</td><td>DJ Moore</td><td>WR</td><td>Bills</td><td class="num">even &mdash; first pick</td></tr>
+          <tr><td>5</td><td>DJ Moore</td><td>WR</td><td>Bills</td><td class="num">odd &mdash; last pick</td></tr>
+          <tr><td>6</td><td>T.J. Hockenson</td><td>TE</td><td>Vikings</td><td class="num">even &mdash; first pick</td></tr>
           <tr><td>7</td><td>Justin Herbert</td><td>QB</td><td>Chargers</td><td class="num">odd &mdash; last pick</td></tr>
           <tr><td>8</td><td>Rashee Rice</td><td>WR</td><td>Chiefs</td><td class="num">even &mdash; first pick</td></tr>
-          <tr><td>9</td><td>Isaiah Likely</td><td>TE</td><td>Ravens</td><td class="num">odd &mdash; last pick</td></tr>
+          <tr><td>9</td><td>Zach Charbonnet</td><td>RB</td><td>Seahawks</td><td class="num">odd &mdash; last pick</td></tr>
           <tr><td>10</td><td>Travis Hunter</td><td>WR</td><td>Jaguars</td><td class="num">even, keeper wash</td></tr>
           <tr><td>11</td><td>Luke Musgrave</td><td>TE</td><td>Packers</td><td class="num">odd &mdash; last pick</td></tr>
           <tr><td>12</td><td>Marvin Mims Jr.</td><td>WR</td><td>Broncos</td><td class="num">even &mdash; first pick</td></tr>
@@ -1425,16 +1463,16 @@ table.dollars td.num { font-family: var(--font-mono); text-align: right; }
         </tbody>
       </table>
     </div>
-    <p style="margin-top:14px;">K and DEF are deferred to the final 2 rounds in this board on purpose &mdash;
-      matching this league's own real 7-season history (never drafted before round 8, see above), not the
-      inflated on-paper VOR those positions get from this league's generous scoring. Rounds 3 and 7 both landing
-      on a QB (Maye, then Herbert as a depth/trade piece) is a real neutral-value outcome, not a personal
-      preference &mdash; live in the room, if a RB/WR you like is close in value at either pick, that's a
-      reasonable place to deviate.</p>
-    <p>Simulated against the real order and real keepers, this seat (slot 12) projects to <b>1,751 optimal
-      starting points</b>, ranking 6th of 12 &mdash; almost exactly the middle, with real keepers meaningfully
-      reshuffling who's actually advantaged this year (Scott, Ryan, and William all rank ahead of their raw draft
-      position would suggest, in part because their keepers are real value at a cheap round cost).</p>
+    <p style="margin-top:14px;">K and DEF are still deferred to the final 2 rounds on purpose &mdash; matching
+      this league's own real 7-season history (never drafted before round 8, see above), not the inflated
+      on-paper VOR those positions get from this league's generous scoring. Rounds 3 and 7 both landing on a QB
+      (Maye, then Herbert as depth/a trade piece) is a real neutral-value outcome within the "fill starters
+      first" rule, not a personal preference &mdash; live in the room, if a RB/WR/TE you like is close in value
+      at either pick, that's a reasonable place to deviate.</p>
+    <p>Simulated against the real order, real keepers, and this winning strategy, this seat (slot 12) projects to
+      <b>1,780 optimal starting points &mdash; 1st of 12</b>, not 6th. That's the single biggest lever available
+      to you this draft: not a specific player target, but the discipline to fill every starter slot once before
+      letting raw value tempt you into a 3rd WR or 2nd RB early.</p>
   </section>
 
   <section>
