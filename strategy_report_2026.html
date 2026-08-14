@@ -1374,12 +1374,67 @@ table.dollars td.num { font-family: var(--font-mono); text-align: right; }
   </section>
 
   <section>
-    <h2 class="section-title">One open question before this is fully draft-ready</h2>
-    <p>This is a real keeper league (keeper tools confirmed enabled in the settings). Your 2026 keeper picks
-      change the effective player pool and the effective draft order for whoever's keeping what &mdash; the cheat
-      sheet below is the open-pool ranking, not yet adjusted for anyone's actual 2026 keepers. Send those over
-      (who's keeping who, and the cost/round penalty if your league charges one) and I'll fold that in the same
-      way Top Teamz's keeper handling works.</p>
+    <h2 class="section-title">Your real 2026 draft: order, keepers, and round-by-round targets</h2>
+    <p><b>Resolved (Aug 2026):</b> real draft order and keepers are in. Slot order: 1 Ryan, 2 Scott, 3 Dan
+      Thompson, 4 Carolyn, 5 William, 6 Cortney, 7 gregg, 8 Matt, 9 Alex S, 10 Katie, 11 Jamison, <b>12 you</b>.
+      Real 2026 keepers (removed from the draftable pool entirely, auto-"picked" at their real round): Ryan
+      &mdash; Dalton Kincaid (rd 10); Dan Thompson &mdash; Khalil Shakir (rd 10); William &mdash; Chris Godwin Jr.
+      (rd 10); gregg &mdash; Quinshon Judkins (rd 12, confirmed over Colston Loveland, so Loveland is back in the
+      real pool); Alex S &mdash; Cam Skattebo (rd 10); Katie &mdash; Luther Burden III (rd 13); Jamison &mdash;
+      Tyler Allgeier (rd 13). Scott, Carolyn, Cortney, Matt, and you have no keeper.</p>
+    <p>Also worth adding while resolving this: Quinshon Judkins himself was missing from the shared player pool
+      entirely (other Browns backs' notes referenced him as the starter, but he'd never actually been researched
+      and added) &mdash; fixed with his real 2025 rookie line (230 att/827 yds/7 TD, 3.6 YPC, 26 rec, missed the
+      final 3 games) and his real, positive recovery status (fractured fibula + dislocated ankle, but confirmed
+      "full-go, no limitations" for 2026 camp). That's now reflected everywhere his projection is used, including
+      the fact that he's gregg's real keeper here.</p>
+    <div class="you-card">
+      <h3>The real tactical pattern: odd rounds are dangerous, even rounds are safe</h3>
+      <p>Because you're slot 12 in a 12-team snake, the wheel cuts two different ways depending on the round:</p>
+      <ul>
+        <li><b>Odd rounds (1, 3, 5, 7, 9, 11, 13):</b> Ryan picks 1st overall, William picks 5th, then <b>you pick
+          last (12th)</b>. Both of this league's two confirmed real reachers (Ryan +0.93 rounds, William +0.40 --
+          see the reach index above) get a turn before you every single odd round. Treat the pure-VOR board as
+          optimistic in these rounds specifically; have a real fallback ready, not just a "should still be there"
+          plan.</li>
+        <li><b>Even rounds (2, 4, 6, 8, 12, 14):</b> the snake reverses and <b>you pick first (13th, 37th, 61st...
+          overall)</b>, before Ryan or William get another turn. No reach risk from either of them in these
+          rounds &mdash; take the top of your board with confidence.</li>
+        <li>Round 10 is a wash either way: both Ryan and William are on keeper autopick that round (Kincaid,
+          Godwin), so neither makes a live selection regardless of round parity.</li>
+      </ul>
+    </div>
+    <div class="table-wrap">
+      <table class="dollars">
+        <thead><tr><th>Rd</th><th>Player</th><th>Pos</th><th>Team</th><th>Parity</th></tr></thead>
+        <tbody>
+          <tr><td>1</td><td>Saquon Barkley</td><td>RB</td><td>Eagles</td><td class="num">odd &mdash; last pick</td></tr>
+          <tr><td>2</td><td>Puka Nacua</td><td>WR</td><td>Rams</td><td class="num">even &mdash; first pick</td></tr>
+          <tr><td>3</td><td>Drake Maye</td><td>QB</td><td>Patriots</td><td class="num">odd &mdash; last pick</td></tr>
+          <tr><td>4</td><td>Breece Hall</td><td>RB</td><td>Jets</td><td class="num">even &mdash; first pick</td></tr>
+          <tr><td>5</td><td>J.K. Dobbins</td><td>RB</td><td>Broncos</td><td class="num">odd &mdash; last pick</td></tr>
+          <tr><td>6</td><td>DJ Moore</td><td>WR</td><td>Bills</td><td class="num">even &mdash; first pick</td></tr>
+          <tr><td>7</td><td>Justin Herbert</td><td>QB</td><td>Chargers</td><td class="num">odd &mdash; last pick</td></tr>
+          <tr><td>8</td><td>Rashee Rice</td><td>WR</td><td>Chiefs</td><td class="num">even &mdash; first pick</td></tr>
+          <tr><td>9</td><td>Isaiah Likely</td><td>TE</td><td>Ravens</td><td class="num">odd &mdash; last pick</td></tr>
+          <tr><td>10</td><td>Travis Hunter</td><td>WR</td><td>Jaguars</td><td class="num">even, keeper wash</td></tr>
+          <tr><td>11</td><td>Luke Musgrave</td><td>TE</td><td>Packers</td><td class="num">odd &mdash; last pick</td></tr>
+          <tr><td>12</td><td>Marvin Mims Jr.</td><td>WR</td><td>Broncos</td><td class="num">even &mdash; first pick</td></tr>
+          <tr><td>13</td><td>Lions</td><td>DEF</td><td>Lions</td><td class="num">odd &mdash; last pick</td></tr>
+          <tr><td>14</td><td>Brandon Aubrey</td><td>K</td><td>Cowboys</td><td class="num">even &mdash; first pick</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <p style="margin-top:14px;">K and DEF are deferred to the final 2 rounds in this board on purpose &mdash;
+      matching this league's own real 7-season history (never drafted before round 8, see above), not the
+      inflated on-paper VOR those positions get from this league's generous scoring. Rounds 3 and 7 both landing
+      on a QB (Maye, then Herbert as a depth/trade piece) is a real neutral-value outcome, not a personal
+      preference &mdash; live in the room, if a RB/WR you like is close in value at either pick, that's a
+      reasonable place to deviate.</p>
+    <p>Simulated against the real order and real keepers, this seat (slot 12) projects to <b>1,751 optimal
+      starting points</b>, ranking 6th of 12 &mdash; almost exactly the middle, with real keepers meaningfully
+      reshuffling who's actually advantaged this year (Scott, Ryan, and William all rank ahead of their raw draft
+      position would suggest, in part because their keepers are real value at a cheap round cost).</p>
   </section>
 
   <section>
