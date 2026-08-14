@@ -4,10 +4,14 @@ import pytest
 from draft_helper.electric_blue.scoring import (
     expected_milestone_bonus, score_defense, score_kicker, score_offense,
 )
-from draft_helper.electric_blue.dename import resolve, load_full_name_lookup
+from draft_helper.electric_blue.dename import (
+    apply as dename_apply, load_season_rosters, resolve_manager, resolve_team_name,
+)
 from draft_helper.electric_blue.parse_history import parse_file, PICK_RE
 from draft_helper.electric_blue.value import compute_vor, replacement_ranks
-from draft_helper.electric_blue.tendencies import def_and_kicker_draft_rounds, STABLE_MANAGERS
+from draft_helper.electric_blue.tendencies import (
+    def_and_kicker_draft_rounds, manager_profiles, reach_index, reach_summary,
+)
 
 
 def test_score_offense_half_ppr():
@@ -56,24 +60,102 @@ def test_parse_file_extracts_rounds_and_overall_pick(tmp_path):
 
 def test_dename_resolves_known_truncated_names(tmp_path):
     managers_csv = tmp_path / "managers.csv"
-    managers_csv.write_text("team_name,manager\nBy The Beard of Zeus,Jamison\nPassword Is Taco,Dave\n")
-    lookup = load_full_name_lookup(str(managers_csv))
-    assert resolve("By The Beard...", lookup) == "By The Beard of Zeus"
-    assert resolve("Password Is ...", lookup) == "Password Is Taco"
+    managers_csv.write_text(
+        "season,team_name,manager\n"
+        "2020,By The Beard of Zeus,Jamison\n"
+        "2020,Password Is Taco,Dave\n"
+    )
+    rosters = load_season_rosters(str(managers_csv))
+    assert resolve_team_name(2020, "By The Beard...", rosters) == "By The Beard of Zeus"
+    assert resolve_manager(2020, "By The Beard...", rosters) == "Jamison"
+    assert resolve_manager(2020, "Password Is ...", rosters) == "Dave"
 
 
 def test_dename_leaves_unresolved_names_as_partial(tmp_path):
     managers_csv = tmp_path / "managers.csv"
-    managers_csv.write_text("team_name,manager\nBy The Beard of Zeus,Jamison\n")
-    lookup = load_full_name_lookup(str(managers_csv))
-    assert resolve("Some Unknown Team...", lookup) == "Some Unknown Team"
+    managers_csv.write_text("season,team_name,manager\n2020,By The Beard of Zeus,Jamison\n")
+    rosters = load_season_rosters(str(managers_csv))
+    assert resolve_team_name(2020, "Some Unknown Team...", rosters) == "Some Unknown Team"
+    assert resolve_manager(2020, "Some Unknown Team...", rosters) is None
 
 
 def test_dename_passthrough_for_already_full_names(tmp_path):
     managers_csv = tmp_path / "managers.csv"
-    managers_csv.write_text("team_name,manager\nBy The Beard of Zeus,Jamison\n")
-    lookup = load_full_name_lookup(str(managers_csv))
-    assert resolve("Wild Bill", lookup) == "Wild Bill"
+    managers_csv.write_text("season,team_name,manager\n2020,By The Beard of Zeus,Jamison\n")
+    rosters = load_season_rosters(str(managers_csv))
+    assert resolve_team_name(2020, "Wild Bill", rosters) == "Wild Bill"
+
+
+def test_dename_is_season_specific_not_global(tmp_path):
+    # Same truncated prefix resolves differently in different seasons if
+    # the underlying full team name changed -- a real scenario in this
+    # league's history (many teams renamed across years).
+    managers_csv = tmp_path / "managers.csv"
+    managers_csv.write_text(
+        "season,team_name,manager\n"
+        "2019,Zeke and Deztroyer,Alex\n"
+        "2020,Zeke and Destroy!,Alex S\n"
+    )
+    rosters = load_season_rosters(str(managers_csv))
+    assert resolve_team_name(2019, "Zeke and...", rosters) == "Zeke and Deztroyer"
+    assert resolve_team_name(2020, "Zeke and...", rosters) == "Zeke and Destroy!"
+
+
+def test_dename_apply_resolves_every_real_historical_pick():
+    # Real-data regression check: every one of the ~1,236 historical picks
+    # in draft_history_raw.csv should resolve to a real manager via the
+    # per-season roster captures, with zero unmatched rows.
+    df = pd.read_csv("data/electric_blue/draft_history_raw.csv")
+    out = dename_apply(df)
+    assert out["manager"].isna().sum() == 0
+    assert out["manager"].nunique() >= 12  # at least the 12 real managers who've ever been in this league
+
+
+def test_manager_profiles_covers_every_manager_not_just_stable_four():
+    df = pd.read_csv("data/electric_blue/draft_history_raw.csv")
+    df = dename_apply(df)
+    profiles = manager_profiles(df)
+    # Previously only 4 managers were confidently resolved; the per-season
+    # roster data should now cover everyone who's ever drafted in this league.
+    assert len(profiles) > 4
+    assert "Jamison" in profiles["manager"].values
+
+
+def test_reach_index_leave_one_out_excludes_self():
+    df = pd.DataFrame([
+        {"manager": "A", "player_name": "Star Player", "season": 2019, "round": 1},
+        {"manager": "B", "player_name": "Star Player", "season": 2020, "round": 3},
+        {"manager": "C", "player_name": "Star Player", "season": 2021, "round": 5},
+    ])
+    out = reach_index(df, min_appearances=2)
+    row_a = out[out.manager == "A"].iloc[0]
+    # A's field_avg should be the mean of B and C's rounds only (3,5 -> 4), not including A's own round 1.
+    assert row_a["field_avg_round"] == pytest.approx(4.0)
+    assert row_a["reach_rounds"] == pytest.approx(3.0)  # took him 3 rounds earlier than the field typically has
+
+
+def test_reach_index_ignores_players_drafted_only_once():
+    df = pd.DataFrame([
+        {"manager": "A", "player_name": "One Timer", "season": 2019, "round": 5},
+    ])
+    out = reach_index(df, min_appearances=2)
+    assert out.empty
+
+
+def test_reach_summary_flags_consistent_early_drafter():
+    df = pd.DataFrame([
+        {"manager": "Reacher", "player_name": f"Player{i}", "season": 2019, "round": 2}
+        for i in range(4)
+    ] + [
+        {"manager": "Other", "player_name": f"Player{i}", "season": 2020, "round": 6}
+        for i in range(4)
+    ])
+    ridx = reach_index(df, min_appearances=2)
+    summary = reach_summary(ridx, min_instances=3)
+    reacher_row = summary[summary.manager == "Reacher"].iloc[0]
+    assert reacher_row["avg_reach_rounds"] > 0
+    other_row = summary[summary.manager == "Other"].iloc[0]
+    assert other_row["avg_reach_rounds"] < 0
 
 
 def test_replacement_ranks_no_flex_share_for_def_or_k():
@@ -111,8 +193,3 @@ def test_def_and_kicker_draft_rounds_flags_late_market_behavior():
     result = def_and_kicker_draft_rounds(df)
     assert result["def_earliest_round"] == 9
     assert result["kicker_avg_round"] == 13
-
-
-def test_stable_managers_has_four_confirmed_identities():
-    assert len(STABLE_MANAGERS) == 4
-    assert "Ron Mexico's Perro" in STABLE_MANAGERS
