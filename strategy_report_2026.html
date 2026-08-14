@@ -1301,31 +1301,76 @@ table.dollars td.num { font-family: var(--font-mono); text-align: right; }
   </div>
 
   <section>
-    <h2 class="section-title">The league's core: four managers, 2019&ndash;2025 and counting</h2>
-    <p>Four teams have kept the exact same name every single season on file &mdash; a real, confirmed identity
-      thread, not a guess. Each has a clear repeat-player pattern (drafting the same real player across multiple
-      different draft years):</p>
+    <h2 class="section-title">Owner tendencies: the real reach index (2019&ndash;2025)</h2>
+    <p><b>Update (Aug 2026):</b> this section used to cover only 4 managers &mdash; the ones who happened to keep
+      the exact same team name every season, since that was the only way to trace identity across years without
+      real roster data. You sent real Yahoo "Managers" page screenshots for all 8 seasons (2019&ndash;2026), so
+      every one of the 1,236 real historical picks now resolves to a real manager, not just those 4.</p>
+    <p>With everyone identified, the more useful question isn't "who drafts the same guy every year" (real, but a
+      minor signal &mdash; see the full table below if you want it) &mdash; it's <b>who actually drafts ahead of
+      value</b>. For every player this league has drafted 2+ times across different years, comparing one
+      manager's specific pick round against the average of every <i>other</i> time this league drafted that same
+      player (leave-one-out, so a pick never inflates its own baseline) gives a real reach signal with no external
+      ADP needed &mdash; it's the league grading itself against its own history.</p>
     <div class="target-grid">
-      <div class="target-row">
-        <span class="pn">Ron Mexico's Perro</span><span class="px">Dan Thompson</span>
-        <span class="why">Repeat picks: Aaron Jones Sr. (3x), Ja'Marr Chase (3x), Patrick Mahomes (3x)</span>
+      <div class="target-row avoid-row">
+        <span class="pn">Ryan</span><span class="px">+0.93 rd</span>
+        <span class="why watch">the real reacher</span>
+        <span class="why">Drafts repeat-valued players nearly a full round ahead of where this league has
+          otherwise had them, across 88 real instances &mdash; the most extreme, best-sampled tendency in the
+          league. Biggest example: Damien Williams round 2 in 2019 vs. a field average of round 12.</span>
       </div>
-      <div class="target-row">
-        <span class="pn">By The Beard of Zeus</span><span class="px">Jamison</span>
-        <span class="why">Repeat picks: Cooper Kupp (3x), Lamar Jackson (3x), Travis Etienne Jr. (3x)</span>
+      <div class="target-row avoid-row">
+        <span class="pn">William</span><span class="px">+0.40 rd</span>
+        <span class="why watch">a real, smaller version of the same thing</span>
+        <span class="why">93 instances, consistently a bit ahead of the field &mdash; e.g. Marlon Mack round 3 in
+          2019 vs. a field average of round 12.</span>
       </div>
-      <div class="target-row">
-        <span class="pn">Surrender Your Booty</span><span class="px">Scott</span>
-        <span class="why">Repeat picks: AJ Dillon (3x), Rachaad White (3x), Alvin Kamara (2x)</span>
-      </div>
-      <div class="target-row">
-        <span class="pn">Password Is Taco</span><span class="px">Dave</span>
-        <span class="why">Repeat picks: Miles Sanders (3x), Braelon Allen (2x), Calvin Ridley (2x) &mdash; joined 2020</span>
+      <div class="target-row" style="border-left: 3px solid var(--good);">
+        <span class="pn">justin s (you)</span><span class="px">&minus;0.56 rd</span>
+        <span class="why watch">the biggest discount-getter</span>
+        <span class="why">91 instances &mdash; you've historically landed repeat-valued players over half a round
+          later than the field typically has them, which reads as patient/value-driven rather than reaching.
+          Worth knowing about your own habits too, not just everyone else's.</span>
       </div>
     </div>
-    <p>Everyone else has renamed or turned over at least once since 2019, so their historical identity across
-      seasons can't be confidently traced without a full team/manager roster pull for each era &mdash; a real
-      gap, not filled in with a guess.</p>
+    <p>Everyone else in the league (Carolyn, Cortney, Alex S, Dan Thompson, Jamison, Dave, Scott, gregg, Drew,
+      Katie) sits close enough to neutral (&plusmn;0.3 rounds or less, on 25&ndash;94 instances each) that it's
+      noise, not a real personality trait, at this sample size &mdash; don't read anything into small deviations
+      there. Ethan and Bob only have 1 season on record each, so their numbers aren't trustworthy yet either way.</p>
+    <div class="table-wrap">
+      <table class="dollars">
+        <thead><tr><th>Manager</th><th class="num">Seasons</th><th class="num">Reach index</th><th>Biggest reach</th><th>Biggest discount</th></tr></thead>
+        <tbody>
+          <tr><td>Ryan</td><td class="num mono" style="color:var(--danger);">+0.93</td><td class="num mono">7</td><td>Damien Williams (2019, rd 2 vs. avg rd 12.0)</td><td>Joe Mixon (2025, rd 13 vs. avg rd 2.0)</td></tr>
+          <tr><td>William</td><td class="num mono" style="color:var(--danger);">+0.40</td><td class="num mono">7</td><td>Marlon Mack (2019, rd 3 vs. avg rd 12.0)</td><td>Le'Veon Bell (2021, rd 14 vs. avg rd 2.5)</td></tr>
+          <tr><td>Matt</td><td class="num mono" style="color:var(--warn);">+0.38</td><td class="num mono">5</td><td>Mike Davis (2021, rd 5 vs. avg rd 13.0)</td><td>Marlon Mack (2020, rd 12 vs. avg rd 3.0)</td></tr>
+          <tr><td>Carolyn</td><td class="num mono">+0.06</td><td class="num mono">3</td><td>Tank Dell (2024, rd 6 vs. avg rd 15.0)</td><td>Odell Beckham Jr. (2023, rd 11 vs. avg rd 3.0)</td></tr>
+          <tr><td>Cortney</td><td class="num mono">+0.04</td><td class="num mono">5</td><td>Jerick McKinnon (2023, rd 9 vs. avg rd 15.0)</td><td>Zach Ertz (2025, rd 14 vs. avg rd 5.3)</td></tr>
+          <tr><td>Alex S</td><td class="num mono">&minus;0.04</td><td class="num mono">7</td><td>Puka Nacua (2025, rd 2 vs. avg rd 12.0)</td><td>Damien Williams (2021, rd 12 vs. avg rd 2.0)</td></tr>
+          <tr><td>Dan Thompson</td><td class="num mono">&minus;0.04</td><td class="num mono">7</td><td>Josh Gordon (2019, rd 5 vs. avg rd 13.0)</td><td>Duke Johnson (2020, rd 13 vs. avg rd 5.0)</td></tr>
+          <tr><td>Jamison</td><td class="num mono">&minus;0.11</td><td class="num mono">7</td><td>Justin Fields (2023, rd 4 vs. avg rd 12.0)</td><td>Tank Dell (2023, rd 15 vs. avg rd 6.0)</td></tr>
+          <tr><td>Katie</td><td class="num mono">&minus;0.22</td><td class="num mono">2</td><td>Anthony Richardson Sr. (2024, rd 5 vs. avg rd 10.0)</td><td>Noah Fant (2024, rd 14 vs. avg rd 10.0)</td></tr>
+          <tr><td>Drew</td><td class="num mono">&minus;0.26</td><td class="num mono">4</td><td>Ravens (2020, rd 8 vs. avg rd 14.0)</td><td>Bears (2020, rd 15 vs. avg rd 8.0)</td></tr>
+          <tr><td>Dave</td><td class="num mono">&minus;0.27</td><td class="num mono">7</td><td>Tevin Coleman (2019, rd 4 vs. avg rd 11.0)</td><td>James Conner (2019, rd 13 vs. avg rd 4.2)</td></tr>
+          <tr><td>Scott</td><td class="num mono" style="color:var(--good);">&minus;0.33</td><td class="num mono">7</td><td>Rachaad White (2024, rd 3 vs. avg rd 11.3)</td><td>Justin Jefferson (2020, rd 14 vs. avg rd 3.6)</td></tr>
+          <tr><td>gregg</td><td class="num mono" style="color:var(--good);">&minus;0.42</td><td class="num mono">7</td><td>Travis Etienne Jr. (2024, rd 2 vs. avg rd 9.2)</td><td>Darren Waller (2019, rd 14 vs. avg rd 4.8)</td></tr>
+          <tr><td>justin s (you)</td><td class="num mono" style="color:var(--good);">&minus;0.56</td><td class="num mono">7</td><td>Chase Brown (2025, rd 2 vs. avg rd 11.0)</td><td>T.Y. Hilton (2021, rd 15 vs. avg rd 4.5)</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <p style="margin-top:14px;"><span style="color:var(--danger);font-weight:800;">Red</span> = real reach
+      tendency. <span style="color:var(--good);font-weight:800;">Green</span> = real discount tendency.
+      Unstyled rows are within noise range for their sample size. Repeat-player picks (drafting the same real
+      player across multiple different seasons) are a real but minor pattern for everyone in this league &mdash;
+      you personally lead it (Jalen Hurts 4x, Kyle Pitts Sr. and Nick Chubb 3x each), followed by Cortney and Dan
+      Thompson; nobody's repeat rate is extreme enough to be exploitable on its own.</p>
+    <p><b>How this becomes draft strategy:</b> send over the real 2026 draft order (which manager picks in which
+      slot) and I'll fold Ryan's and William's reach tendency directly into your round-by-round plan &mdash; e.g.
+      if either picks shortly before you, assume a name you both like is more likely to already be gone than the
+      pure VOR board suggests, so plan a real fallback rather than banking on a "should still be there" pick. The
+      discount-getters (you, gregg, Scott) are the opposite signal: less need to reach ahead of them specifically
+      since they tend to let value fall instead of jumping it.</p>
   </section>
 
   <section>
