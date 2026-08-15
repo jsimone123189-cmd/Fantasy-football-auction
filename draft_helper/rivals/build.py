@@ -167,7 +167,7 @@ FULL_SEASON_AVAILABLE_WEEKS = 16.0  # a healthy player's real season, net of the
 # "good enough weeks 4-8, best team weeks 9-12" priority, applied as a
 # deliberate tilt on `playoff_weighted_points` (used only for VOR/rank),
 # never on `projected_points` (the honest, unweighted real projection).
-LATE_WEIGHT = 1.35
+LATE_WEIGHT = 1.5
 
 
 def _effective_weeks(bye_week, week_range) -> int:
