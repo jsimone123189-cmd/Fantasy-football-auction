@@ -1084,23 +1084,29 @@ table.dollars td.num { font-family: var(--font-mono); text-align: right; }
       9; QB is guaranteed by round 6; K is deferred to the final two rounds. This is a realistic <i>shape</i> for
       your draft, not a script &mdash; the other 15 real managers won't all draft this way, so treat it as a
       strong starting board, not gospel.</p>
-    <p><b>Round 1 is a live judgment call, not something this board resolves for you (Aug 2026):</b> the internal
-      VOR sim's own pick here is Josh Allen &mdash; the model's honest answer, unpatched, for a #7 slot against
-      this league's real scoring. Real Aug 2026 ADP says elite RBs (Gibbs, Bijan, McCaffrey) and Chase are gone by
-      pick 5-6, and a name like Jonathan Taylor or CeeDee Lamb is a realistic, live option at pick 7 instead
-      &mdash; see the decision-point breakdown below for how to weigh that against the model's own pick, given
-      the confirmed RB-scarcity gap above. Rounds 2+ are the internal VOR sim as-is; no other confirmed gap this
-      large has been found past round 1.</p>
+    <p><b>Round 1, decided (Aug 2026):</b> you've ruled out a round-1 QB entirely and are leaning <b>CeeDee Lamb</b>
+      over Jonathan Taylor &mdash; a fully defensible call: Lamb clears the WR replacement line by the widest
+      margin of any position in this model, with no confirmed model-vs-market bias the way RB has, and real ADP
+      (~9th overall) says he's a live option at pick 7. Passing on Taylor means passing on the model's confirmed
+      RB-scarcity finding above, but that's a real, informed tradeoff, not an error. <b>Real consequence:</b> with
+      no QB in round 1, the "QB guaranteed by round 6" constraint from the plan below has to actually get resolved
+      somewhere &mdash; the live tension is now in <b>round 3</b>, where Luther Burden III (a real personal
+      target, real value round 3) and Jayden Daniels/Jalen Hurts (also an established real personal target, also
+      real value round 3) collide. Below takes the QB there and slides Burden to round 6 in Deebo Samuel's old
+      spot &mdash; the same real risk flagged for Omarion Hampton earlier applies here too: pushing Burden past
+      his own real value round means another team can take him first in a live draft. This is a manual patch to
+      the board reflecting your round-1 call, not a fresh full re-simulation; flag it if you want the whole board
+      properly re-run under a "no QB round 1" constraint.</p>
     <div class="table-wrap">
       <table class="dollars">
         <thead><tr><th>Rd</th><th>Player</th><th>Pos</th><th>Team</th><th class="num">Bye</th></tr></thead>
         <tbody>
-          <tr><td>1</td><td>Josh Allen <span class="pos-tag2">model pick</span></td><td>QB</td><td>Bills</td><td class="num mono">7</td></tr>
+          <tr><td>1</td><td>CeeDee Lamb <span class="pos-tag2">your call</span></td><td>WR</td><td>Cowboys</td><td class="num mono" style="color:var(--good);">14</td></tr>
           <tr><td>2</td><td>Tee Higgins</td><td>WR</td><td>Bengals</td><td class="num mono">6</td></tr>
-          <tr><td>3</td><td>Luther Burden III <span class="pos-tag2">target</span></td><td>WR</td><td>Bears</td><td class="num mono" style="color:var(--warn);">10</td></tr>
+          <tr><td>3</td><td>Jayden Daniels <span class="pos-tag2">target</span></td><td>QB</td><td>Commanders</td><td class="num mono">7</td></tr>
           <tr><td>4</td><td>Chase Brown</td><td>RB</td><td>Bengals</td><td class="num mono">6</td></tr>
           <tr><td>5</td><td>Jack Campbell</td><td>LB</td><td>Lions</td><td class="num mono">6</td></tr>
-          <tr><td>6</td><td>Deebo Samuel</td><td>WR</td><td>49ers</td><td class="num mono">8</td></tr>
+          <tr><td>6</td><td>Luther Burden III <span class="pos-tag2">target, slid from Rd 3</span></td><td>WR</td><td>Bears</td><td class="num mono" style="color:var(--warn);">10</td></tr>
           <tr><td>7</td><td>Danielle Hunter</td><td>DL</td><td>Texans</td><td class="num mono">8</td></tr>
           <tr><td>8</td><td>Marlon Humphrey</td><td>DB</td><td>Ravens</td><td class="num mono" style="color:var(--good);">13</td></tr>
           <tr><td>9</td><td>Cade Otton</td><td>TE</td><td>Buccaneers</td><td class="num mono" style="color:var(--warn);">10</td></tr>
@@ -1132,11 +1138,11 @@ table.dollars td.num { font-family: var(--font-mono); text-align: right; }
           before autopicking rounds 11 and 13 if you want to trade a sliver of value for fewer landmine spots.</span>
       </div>
       <div class="target-row" style="border-left: 3px solid var(--good);">
-        <span class="pn">Week 13+ bonus: 4 of 18 roster spots</span><span class="why watch">never misses a scored week, weighted double</span>
-        <span class="why">Humphrey, Bland, Dean, and Grupe are all on byes that land after the Rivals season
-          already ends &mdash; and because Weeks 9&ndash;12 count extra, avoiding a bye there is worth even more
-          than the raw points bump alone suggests. If round 1 goes Taylor instead of Allen (see decision point
-          below), that adds a 5th: Taylor's bye is Week 13 too.</span>
+        <span class="pn">Week 13+ bonus: 5 of 18 roster spots</span><span class="why watch">never misses a scored week, weighted double</span>
+        <span class="why">Lamb (round 1), Humphrey, Bland, Dean, and Grupe are all on byes that land after the
+          Rivals season already ends &mdash; and because Weeks 9&ndash;12 count extra, avoiding a bye there is
+          worth even more than the raw points bump alone suggests. Your round-1 pick now falls in this group as a
+          free byproduct of the real-ADP-informed call, not a targeted choice.</span>
       </div>
       <div class="target-row">
         <span class="pn">Jeremiyah Love &mdash; personal target, not a model pick</span><span class="why watch">real ADP ~pick 19&ndash;25 (RB7&ndash;9); model has him off the 18-round board entirely</span>
@@ -1157,41 +1163,38 @@ table.dollars td.num { font-family: var(--font-mono); text-align: right; }
       spend them on upside/role-clarity bets, not safe-but-capped depth, since a bench player who never starts is
       worthless in single elimination.</p>
 
-    <h3 style="font-size:15px;margin:28px 0 8px;">Live decision point: round 1, model pick vs. real-market signal</h3>
-    <p>Two different questions, two different answers, and this report isn't going to collapse them into one for
-      you at this exact spot &mdash; that's the mistake an earlier version of this section made. <b>Question 1:
-      what does this league's own VOR math say is the best pick at #7?</b> Josh Allen, unpatched, per the board
-      above. <b>Question 2: what will real managers in a similarly-drafting market actually leave on the board at
-      pick 7?</b> Real Aug 2026 ADP says Gibbs, Bijan, McCaffrey, and Chase are gone inside the top 4-5 picks, no
-      real market source takes a QB this early in any format, and A.J. Brown is a hard avoid regardless &mdash;
-      which points to <b>Jonathan Taylor</b> (real ADP ~7th) or <b>CeeDee Lamb</b> (real ADP ~9th, the fallback if
-      Taylor's gone) as what a market-following drafter takes instead.</p>
+    <h3 style="font-size:15px;margin:28px 0 8px;">Round 1, resolved: CeeDee Lamb, no QB</h3>
+    <p>You've made the call: no QB in round 1, Lamb over Taylor if both are live at pick 7. Recorded for what it
+      is &mdash; a real, informed tradeoff, not the model's own answer. The model's unpatched pick at #7 is still
+      Josh Allen (QB scoring is genuinely rich in this format); Taylor was the market-informed alternative that
+      leans directly into the confirmed RB-scarcity gap. Lamb sidesteps both: elite by the model's own math (widest
+      WR replacement-line margin of any position, no confirmed bias the way RB has) <i>and</i> a name real ADP
+      says is genuinely live at pick 7 (~9th overall). Real ADP still says Taylor going ~7th means he's a genuine
+      coin-flip to already be gone by the time your pick comes around anyway &mdash; worth knowing you're not
+      necessarily leaving him on the table by choice.</p>
+    <h3 style="font-size:15px;margin:28px 0 8px;">Round 3, the pick this decision reopens: Burden vs. the QB</h3>
+    <p>With no round-1 QB, "guaranteed by round 6" has to actually resolve somewhere, and round 3 is where it
+      collides with an already-established target: Luther Burden III's own real value round is 3, and so is
+      Jayden Daniels/Jalen Hurts's. The board above takes the QB there.</p>
     <div class="target-grid">
       <div class="target-row">
-        <span class="pn">Josh Allen &mdash; the model's own pick</span><span class="why watch">VOR rank 7, unpatched</span>
-        <span class="why">This is what the internal value math actually says clears the highest bar over
-          replacement at #7 in this league's real scoring. Trustworthy on its own terms; the open question is
-          whether "replacement level" is even the right lens for a true workhorse RB, which the finding above
-          says it structurally isn't for RB specifically &mdash; QB isn't implicated by that same finding.</span>
+        <span class="pn">Jayden Daniels &mdash; the board's pick</span><span class="why watch">VOR 60.6, bye 7 (clean)</span>
+        <span class="why">Real value round 3, no bye-week landmine attached &mdash; his Week 7 bye falls in the
+          group stage, where a bad week barely matters.</span>
       </div>
       <div class="target-row">
-        <span class="pn">Jonathan Taylor &mdash; if you trust the real-scarcity read</span><span class="why watch">real ADP ~7th, VOR rank 17</span>
-        <span class="why">A true workhorse at the exact position this format's replacement-level math is confirmed
-          to undervalue (see above). Taking him means weighting your own football judgment about elite-RB
-          scarcity over the model's raw VOR order for this one pick &mdash; a defensible call given the diagnosed
-          gap, not something the tool is telling you to do. Bye 13, never misses a scored week.</span>
-      </div>
-      <div class="target-row">
-        <span class="pn">CeeDee Lamb &mdash; the no-compromise fallback</span><span class="why watch">real ADP ~9th, VOR rank 2</span>
-        <span class="why">High on both signals at once &mdash; elite by the model's own math (clears the WR
-          replacement line by the widest margin of any position) and a name real ADP says is genuinely live at
-          pick 7, no scarcity-model caveat attached either way. Also bye 14.</span>
+        <span class="pn">Jalen Hurts &mdash; higher raw value, real cost attached</span><span class="why watch">VOR 64.2, bye 10 (semifinal landmine)</span>
+        <span class="why">Clears slightly more value than Daniels, but his Week 10 bye lands directly on the
+          semifinal &mdash; the exact landmine week already flagged for Burden and Otton. Taking him instead of
+          Daniels would put 3 of your 18 spots on that one bye, not 2.</span>
       </div>
     </div>
-    <p><b>This is your call, not the board's:</b> the model's own answer is Josh Allen. If you'd rather bank on
-      real-world RB scarcity the model doesn't fully price in yet, Taylor or Lamb are the market-informed
-      alternatives &mdash; pick whichever one is actually on the board at your real pick 7. Neither choice is
-      "wrong"; they're answers to two different questions this report used to blur together.</p>
+    <p><b>The real cost of this whole chain:</b> taking a QB in round 3 pushes Burden to round 6, three rounds past
+      his own real value round. That's the same risk already flagged for Omarion Hampton earlier in this report:
+      a personal target pushed past its real value round can simply be gone by the time you get there in a live
+      draft, taken by a team with no idea he's on your list. If Burden doesn't survive to round 6, the board's
+      round-6 fallback is whatever real WR/RB value is left at that point on the full cheat sheet below &mdash;
+      worth having a second name ready rather than assuming he'll still be there.</p>
   </section>
 
   <section>
