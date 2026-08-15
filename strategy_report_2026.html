@@ -900,6 +900,30 @@ table.dollars td.num { font-family: var(--font-mono); text-align: right; }
       ~24th; WR's moved from ~58th to ~53rd), which is why several RBs &mdash; Jonathan Taylor and Christian
       McCaffrey in particular &mdash; jumped meaningfully higher on this board than an earlier version of it had
       them.</p>
+    <p><b>Known limitation (Aug 2026), flagged rather than silently patched:</b> real Aug 2026 redraft ADP has
+      Jahmyr Gibbs as the literal consensus #1 overall pick and Bijan Robinson #2 &mdash; this board has Gibbs at
+      overall rank 10 (VOR 107.5) behind six WRs. Checked the raw inputs first: Gibbs' real 2025 (1,839 scrimmage
+      yards, 18 total TDs, 77 catches) implies almost exactly what this board already projects for him, so it's
+      not an under-cooked projection. It's the replacement-level math itself &mdash; this format's RB replacement
+      line (86.4 pts, the 24th-best RB) is more than double WR's (39.1 pts, the 53rd-best WR), so Gibbs and Chase
+      can score almost identical raw points (179.5 vs. 179.8) while Chase's VOR comes out 55% higher, because the
+      model measures distance above a replaceable committee back, not the real scarcity of a true 3-down
+      workhorse (there are only a handful league-wide; there's no equivalent scarcity of "a good enough WR3").
+      That's a genuine limitation of a smooth points-over-replacement model that real markets clearly price in and
+      this one doesn't yet.</p>
+    <p><b>Important distinction (Aug 2026):</b> real ADP and this board's value ranking answer two different
+      questions, and this report was conflating them for a few hours before this correction. ADP is a prediction
+      of <i>what other real managers will do</i> &mdash; useful for knowing what's actually still going to be on
+      the board at your pick. It is not automatically the same thing as <i>the best pick for your team under this
+      league's real scoring and roster shape</i>, which is what the VOR board is actually built to answer, and ADP
+      being "based in some reality" doesn't make it a substitute for that. So: the round-by-round board below still
+      runs entirely on the internal VOR model, unpatched, including at the exact spot (round 1) where the
+      elite-RB-scarcity gap above is confirmed. Real ADP is called out separately, as context about availability
+      and as a flag on a specific known model gap &mdash; not swapped in as if it were the value answer. The right
+      long-term fix is a real correction to how RB replacement level accounts for true bell-cow scarcity (using
+      this project's own sourced role-tier data, not an external ADP constant); that hasn't been built yet, so
+      round 1 is presented below as a live, human judgment call rather than something the tool silently resolved
+      for you.</p>
     <p>Ranking every player by points above their position's replacement level (the last player who'd still start
       somewhere across 16 teams) instead of raw points makes the real scarcity visible:</p>
     <ul>
@@ -1000,7 +1024,11 @@ table.dollars td.num { font-family: var(--font-mono); text-align: right; }
     <p style="margin-top:-6px;"><b>Correction (Aug 2026):</b> the RB/WR flex-share fix above (RB wins the flex
       ~50% of the time, not the previously-assumed 30%) reshuffled this whole ranking &mdash; slots that get a
       real bell-cow RB early now grade out much better than they did before, since elite RB production is worth
-      close to what an alpha WR is worth, not a distant second.</p>
+      close to what an alpha WR is worth, not a distant second. <b>Known open issue:</b> this simulation runs
+      entirely on the internal VOR model, which the elite-RB-scarcity finding above shows underrates Gibbs/
+      Bijan-tier production specifically &mdash; that hasn't been corrected here (or anywhere else on this page;
+      the round-by-round section below flags the same gap as a live judgment call rather than baking a fix in), so
+      treat slot rankings involving the very top picks as directionally right but not fully corrected yet.</p>
     <div class="target-grid">
       <div class="target-row" style="border-left: 3px solid var(--accent);">
         <span class="pn">Your slot: #7</span><span class="px">886 pts</span>
@@ -1056,11 +1084,18 @@ table.dollars td.num { font-family: var(--font-mono); text-align: right; }
       9; QB is guaranteed by round 6; K is deferred to the final two rounds. This is a realistic <i>shape</i> for
       your draft, not a script &mdash; the other 15 real managers won't all draft this way, so treat it as a
       strong starting board, not gospel.</p>
+    <p><b>Round 1 is a live judgment call, not something this board resolves for you (Aug 2026):</b> the internal
+      VOR sim's own pick here is Josh Allen &mdash; the model's honest answer, unpatched, for a #7 slot against
+      this league's real scoring. Real Aug 2026 ADP says elite RBs (Gibbs, Bijan, McCaffrey) and Chase are gone by
+      pick 5-6, and a name like Jonathan Taylor or CeeDee Lamb is a realistic, live option at pick 7 instead
+      &mdash; see the decision-point breakdown below for how to weigh that against the model's own pick, given
+      the confirmed RB-scarcity gap above. Rounds 2+ are the internal VOR sim as-is; no other confirmed gap this
+      large has been found past round 1.</p>
     <div class="table-wrap">
       <table class="dollars">
         <thead><tr><th>Rd</th><th>Player</th><th>Pos</th><th>Team</th><th class="num">Bye</th></tr></thead>
         <tbody>
-          <tr><td>1</td><td>Josh Allen</td><td>QB</td><td>Bills</td><td class="num mono">7</td></tr>
+          <tr><td>1</td><td>Josh Allen <span class="pos-tag2">model pick</span></td><td>QB</td><td>Bills</td><td class="num mono">7</td></tr>
           <tr><td>2</td><td>Tee Higgins</td><td>WR</td><td>Bengals</td><td class="num mono">6</td></tr>
           <tr><td>3</td><td>Luther Burden III <span class="pos-tag2">target</span></td><td>WR</td><td>Bears</td><td class="num mono" style="color:var(--warn);">10</td></tr>
           <tr><td>4</td><td>Chase Brown</td><td>RB</td><td>Bengals</td><td class="num mono">6</td></tr>
@@ -1100,7 +1135,8 @@ table.dollars td.num { font-family: var(--font-mono); text-align: right; }
         <span class="pn">Week 13+ bonus: 4 of 18 roster spots</span><span class="why watch">never misses a scored week, weighted double</span>
         <span class="why">Humphrey, Bland, Dean, and Grupe are all on byes that land after the Rivals season
           already ends &mdash; and because Weeks 9&ndash;12 count extra, avoiding a bye there is worth even more
-          than the raw points bump alone suggests.</span>
+          than the raw points bump alone suggests. If round 1 goes Taylor instead of Allen (see decision point
+          below), that adds a 5th: Taylor's bye is Week 13 too.</span>
       </div>
     </div>
     <p>Applied to the season structure above: rounds 1&ndash;9 are your group-stage foundation (take the board as
@@ -1110,28 +1146,41 @@ table.dollars td.num { font-family: var(--font-mono); text-align: right; }
       spend them on upside/role-clarity bets, not safe-but-capped depth, since a bench player who never starts is
       worthless in single elimination.</p>
 
-    <h3 style="font-size:15px;margin:28px 0 8px;">Live decision point: round 1, Josh Allen vs. the alpha-WR tier</h3>
-    <p>Josh Allen jumping to the top of this board (round 1, VOR rank 7 overall) is a real change worth flagging
-      explicitly rather than burying in a table &mdash; it's driven by three things stacking in his favor: an
-      elite floor-and-ceiling rushing profile in a format that scores QB volume heavily, a Week 7 bye that costs
-      nothing (group stage, not a knockout week), and a clean Weeks 9&ndash;12 slate with only one plus matchup
-      (Jets' weak pass defense) and nothing markedly tough. Real Aug 2026 redraft ADP would <i>never</i> put a QB
-      this early &mdash; that's a generic-format number, though, and doesn't account for Rivals' scoring or its
-      Weeks 9&ndash;12 priority the way this board does.</p>
+    <h3 style="font-size:15px;margin:28px 0 8px;">Live decision point: round 1, model pick vs. real-market signal</h3>
+    <p>Two different questions, two different answers, and this report isn't going to collapse them into one for
+      you at this exact spot &mdash; that's the mistake an earlier version of this section made. <b>Question 1:
+      what does this league's own VOR math say is the best pick at #7?</b> Josh Allen, unpatched, per the board
+      above. <b>Question 2: what will real managers in a similarly-drafting market actually leave on the board at
+      pick 7?</b> Real Aug 2026 ADP says Gibbs, Bijan, McCaffrey, and Chase are gone inside the top 4-5 picks, no
+      real market source takes a QB this early in any format, and A.J. Brown is a hard avoid regardless &mdash;
+      which points to <b>Jonathan Taylor</b> (real ADP ~7th) or <b>CeeDee Lamb</b> (real ADP ~9th, the fallback if
+      Taylor's gone) as what a market-following drafter takes instead.</p>
     <div class="target-grid">
-      <div class="target-row avoid-row">
-        <span class="pn">Treat this one as new and unproven, not settled</span><span class="why watch">low confidence on magnitude</span>
-        <span class="why">The weeks-9-12 weighting is a brand-new piece of this model (added this session) and
-          hasn't been cross-checked against a real mock draft the way the WR-tier calls elsewhere on this page
-          have. The <i>direction</i> (favor a clean-bye, favorable-matchup dual-threat QB) is sound; the exact
-          round it justifies is the part to hold loosely.</span>
+      <div class="target-row">
+        <span class="pn">Josh Allen &mdash; the model's own pick</span><span class="why watch">VOR rank 7, unpatched</span>
+        <span class="why">This is what the internal value math actually says clears the highest bar over
+          replacement at #7 in this league's real scoring. Trustworthy on its own terms; the open question is
+          whether "replacement level" is even the right lens for a true workhorse RB, which the finding above
+          says it structurally isn't for RB specifically &mdash; QB isn't implicated by that same finding.</span>
+      </div>
+      <div class="target-row">
+        <span class="pn">Jonathan Taylor &mdash; if you trust the real-scarcity read</span><span class="why watch">real ADP ~7th, VOR rank 17</span>
+        <span class="why">A true workhorse at the exact position this format's replacement-level math is confirmed
+          to undervalue (see above). Taking him means weighting your own football judgment about elite-RB
+          scarcity over the model's raw VOR order for this one pick &mdash; a defensible call given the diagnosed
+          gap, not something the tool is telling you to do. Bye 13, never misses a scored week.</span>
+      </div>
+      <div class="target-row">
+        <span class="pn">CeeDee Lamb &mdash; the no-compromise fallback</span><span class="why watch">real ADP ~9th, VOR rank 2</span>
+        <span class="why">High on both signals at once &mdash; elite by the model's own math (clears the WR
+          replacement line by the widest margin of any position) and a name real ADP says is genuinely live at
+          pick 7, no scarcity-model caveat attached either way. Also bye 14.</span>
       </div>
     </div>
-    <p><b>The actual call:</b> keep it live. If Allen's gone (plausible &mdash; he may not last to a real pick 7
-      in a room that isn't running this model), the alpha-WR tier (Chase/Lamb/Jefferson-caliber) is the correct
-      fallback and still clears the board's biggest VOR gap by a wide margin. Don't reach for a QB at the real
-      pick 7 if the value isn't actually still there &mdash; the model's case for Allen is matchup-and-format
-      specific, not "QB is always right this early."</p>
+    <p><b>This is your call, not the board's:</b> the model's own answer is Josh Allen. If you'd rather bank on
+      real-world RB scarcity the model doesn't fully price in yet, Taylor or Lamb are the market-informed
+      alternatives &mdash; pick whichever one is actually on the board at your real pick 7. Neither choice is
+      "wrong"; they're answers to two different questions this report used to blur together.</p>
   </section>
 
   <section>
