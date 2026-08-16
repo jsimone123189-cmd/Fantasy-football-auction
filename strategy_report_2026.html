@@ -1084,27 +1084,35 @@ table.dollars td.num { font-family: var(--font-mono); text-align: right; }
       9; QB is guaranteed by round 6; K is deferred to the final two rounds. This is a realistic <i>shape</i> for
       your draft, not a script &mdash; the other 15 real managers won't all draft this way, so treat it as a
       strong starting board, not gospel.</p>
-    <p><b>Round 1, decided (Aug 2026):</b> you've ruled out a round-1 QB entirely and are leaning <b>CeeDee Lamb</b>
-      over Jonathan Taylor &mdash; a fully defensible call: Lamb clears the WR replacement line by the widest
-      margin of any position in this model, with no confirmed model-vs-market bias the way RB has, and real ADP
-      says he's a live option in the pick 5-9 range. Passing on Taylor means passing on the model's confirmed
-      RB-scarcity finding above, but that's a real, informed tradeoff, not an error. <b>QB timing (Aug 2026):</b>
-      you're not taking a QB early at all &mdash; targeting <b>Dak Prescott</b> specifically, later, around his
-      real value round (6). That resolves the earlier round-3 tension cleanly: Luther Burden III keeps his own
-      real value round (3), no QB has to be forced in ahead of him, and Dak slots into round 6 in Deebo Samuel's
-      old spot instead.</p>
+    <p><b>Round 1, decided (Aug 2026):</b> you've ruled out a round-1 QB entirely and are leaning WR/RB value over
+      the model's own confirmed RB-scarcity-undervalued board. <b>Trade executed (Aug 2026):</b> the pick-5
+      trade-up went through with slot 5 (Kelly Krieger / KelKelAZ) &mdash; the real deal was pick 7 + pick 90 +
+      pick 122 for pick 5 + pick 92 + pick 124 (a real, matched 3-for-3, close in aggregate VOR to the version
+      proposed here). That changes three rounds of your actual board: round 1 is now pick 5, round 6 is pick 92,
+      round 8 is pick 124. <b>QB timing:</b> still no early QB; Dak Prescott was the target for round 6, but he's
+      realistically already gone by pick 92 in a normal draft (the neutral sim has slot 12 taking him at his own
+      pick 85, earlier than either of your old or new round-6 picks) &mdash; that was an error in this report's
+      last pass treating him as a lock, not a trade result. Getting him now would need a fresh, separate trade
+      with slot 12 using different capital, since pick 90 is already spent. Below reflects Njoku (the real per-pick
+      value at 92) instead until/unless that happens.</p>
+    <p><b>Pick 5 is a live 3-way outcome, not a settled name:</b> real Aug 2026 ADP has Chase ~4th, Lamb ~5th,
+      Taylor ~7th. Read that carefully &mdash; a player's ADP being <i>later</i> than the pick you're sitting at
+      makes them <i>more</i> likely to still be there, not less. That flips the order you'd hope for: <b>Taylor is
+      genuinely the safest bet to still be on the board at pick 5</b> (his median exit is two picks later), Lamb
+      is close to a real coin-flip (his median is pick 5 itself), and Chase is the longest shot of the three (his
+      median has already passed by pick 5). All three are documented below; take whichever is actually live.</p>
     <div class="table-wrap">
       <table class="dollars">
         <thead><tr><th>Rd</th><th>Player</th><th>Pos</th><th>Team</th><th class="num">Bye</th></tr></thead>
         <tbody>
-          <tr><td>1</td><td>CeeDee Lamb <span class="pos-tag2">your call</span></td><td>WR</td><td>Cowboys</td><td class="num mono" style="color:var(--good);">14</td></tr>
+          <tr><td>1</td><td>Taylor / Lamb / Chase <span class="pos-tag2">live at pick 5, in that likelihood order</span></td><td>RB/WR</td><td>&mdash;</td><td class="num mono">13/14/6</td></tr>
           <tr><td>2</td><td>Tee Higgins</td><td>WR</td><td>Bengals</td><td class="num mono">6</td></tr>
           <tr><td>3</td><td>Luther Burden III <span class="pos-tag2">target</span></td><td>WR</td><td>Bears</td><td class="num mono" style="color:var(--warn);">10</td></tr>
           <tr><td>4</td><td>Chase Brown</td><td>RB</td><td>Bengals</td><td class="num mono">6</td></tr>
           <tr><td>5</td><td>Jack Campbell</td><td>LB</td><td>Lions</td><td class="num mono">6</td></tr>
-          <tr><td>6</td><td>Dak Prescott <span class="pos-tag2">target</span></td><td>QB</td><td>Cowboys</td><td class="num mono" style="color:var(--good);">14</td></tr>
+          <tr><td>6</td><td>David Njoku <span class="pos-tag2">real pick-92 value, Dak not realistic here</span></td><td>TE</td><td>Chargers</td><td class="num mono">7</td></tr>
           <tr><td>7</td><td>Danielle Hunter</td><td>DL</td><td>Texans</td><td class="num mono">8</td></tr>
-          <tr><td>8</td><td>Marlon Humphrey</td><td>DB</td><td>Ravens</td><td class="num mono" style="color:var(--good);">13</td></tr>
+          <tr><td>8</td><td>Marlon Humphrey <span class="pos-tag2">now via pick 124</span></td><td>DB</td><td>Ravens</td><td class="num mono" style="color:var(--good);">13</td></tr>
           <tr><td>9</td><td>Cade Otton</td><td>TE</td><td>Buccaneers</td><td class="num mono" style="color:var(--warn);">10</td></tr>
           <tr><td>10</td><td>Kam Curl</td><td>DB</td><td>Rams</td><td class="num mono" style="color:var(--danger);">11</td></tr>
           <tr><td>11</td><td>Jared Verse</td><td>DL</td><td>Rams</td><td class="num mono" style="color:var(--danger);">11</td></tr>
@@ -1134,12 +1142,10 @@ table.dollars td.num { font-family: var(--font-mono); text-align: right; }
           before autopicking rounds 11 and 13 if you want to trade a sliver of value for fewer landmine spots.</span>
       </div>
       <div class="target-row" style="border-left: 3px solid var(--good);">
-        <span class="pn">Week 13+ bonus: 6 of 18 roster spots</span><span class="why watch">never misses a scored week, weighted double</span>
-        <span class="why">Lamb (round 1), Dak (round 6), Humphrey, Bland, Dean, and Grupe are all on byes that land
-          after the Rivals season already ends &mdash; and because Weeks 9&ndash;12 count extra, avoiding a bye
-          there is worth even more than the raw points bump alone suggests. Neither your round-1 nor round-6 pick
-          was chosen <i>for</i> the bye &mdash; it's a real, free byproduct of both being genuinely good picks on
-          their own terms.</span>
+        <span class="pn">Week 13+ bonus: 4 guaranteed, possibly 5</span><span class="why watch">never misses a scored week, weighted double</span>
+        <span class="why">Humphrey, Bland, Dean, and Grupe are locked in regardless of round 1. Round 6 no longer
+          adds one &mdash; Dak's realistically gone by pick 92 (see above), so that spot is Njoku (bye 7) instead.
+          Round 1 is still contingent: Taylor (bye 13) or Lamb (bye 14) would add a 5th; Chase (bye 6) would not.</span>
       </div>
       <div class="target-row">
         <span class="pn">Jeremiyah Love &mdash; personal target, not a model pick</span><span class="why watch">real ADP ~pick 19&ndash;25 (RB7&ndash;9); model has him off the 18-round board entirely</span>
@@ -1160,25 +1166,13 @@ table.dollars td.num { font-family: var(--font-mono); text-align: right; }
       spend them on upside/role-clarity bets, not safe-but-capped depth, since a bench player who never starts is
       worthless in single elimination.</p>
 
-    <h3 style="font-size:15px;margin:28px 0 8px;">Round 1, resolved: CeeDee Lamb, no QB</h3>
-    <p>You've made the call: no QB in round 1, Lamb over Taylor if both are live at pick 7. Recorded for what it
-      is &mdash; a real, informed tradeoff, not the model's own answer. The model's unpatched pick at #7 is still
-      Josh Allen (QB scoring is genuinely rich in this format); Taylor was the market-informed alternative that
-      leans directly into the confirmed RB-scarcity gap. Lamb sidesteps both: elite by the model's own math (widest
-      WR replacement-line margin of any position, no confirmed bias the way RB has) <i>and</i> a name real ADP
-      says is genuinely live in the pick 5-9 range. Real ADP puts him as tight as pick 5 in some Aug 2026 sources
-      &mdash; worth knowing there's real risk he (and Taylor) are both gone before pick 7, not a reason to change
-      the call, just something to have in your head on draft day.</p>
-    <h3 style="font-size:15px;margin:28px 0 8px;">Trading up to pick 5: a real, cheap way to cut that risk</h3>
-    <p>Given real ADP clusters Lamb and Taylor together around picks 5-9, moving from pick 7 to pick 5 meaningfully
-      improves your odds of landing whichever of the two is still on the board, rather than hoping one survives
-      two extra picks. The value gap itself is small (Amon-Ra St. Brown's VOR at pick 5 is 131.4 vs. Josh Allen's
-      127.2 at pick 7 &mdash; only 4.2), so this should be cheap. Real matched 3-for-3 with slot 5 (the only
-      counterparty for the whole package, per real trade practice): give <b>pick 7 + pick 122 + pick 135</b>
-      (127.2 + 13.2 + 8.0 = 148.4, sacrificing two late-value-only picks that don't cost you a real roster spot)
-      &rarr; get <b>pick 5 + pick 124 + pick 133</b> (131.4 + 12.5 + 8.2 = 152.1). Nets you a small edge (+3.7 VOR)
-      on top of the real goal, which isn't the VOR gain itself &mdash; it's insurance against losing both Lamb and
-      Taylor to the picks in between.</p>
+    <h3 style="font-size:15px;margin:28px 0 8px;">Trade executed: pick 7 &rarr; pick 5</h3>
+    <p>Real 3-for-3 with slot 5 (Kelly Krieger / KelKelAZ), the only counterparty for the whole package, per real
+      trade practice: gave <b>pick 7 + pick 90 + pick 122</b> (Josh Allen-rank pick + two mid/late throw-ins) for
+      <b>pick 5 + pick 92 + pick 124</b>. Close in aggregate VOR to what was originally proposed, executed with
+      slightly different round-6/8 legs. The real goal was never the small VOR edge &mdash; it's insurance against
+      losing both Lamb and Taylor to the picks in between, given real ADP clusters them (and Chase) tightly around
+      picks 4-7. See the live 3-way pick-5 outcome above for what's actually likely to be there.</p>
     <h3 style="font-size:15px;margin:28px 0 8px;">Your potential-target list is already bye-clean, almost perfectly</h3>
     <p>Checked bye weeks for every name currently on your radar as a potential (not required) target: Lamb (14),
       Jonathan Taylor (13), Brock Bowers (13), Trey McBride (14), Marvin Harrison Jr. (14), Jeremiyah Love (14),
@@ -1200,17 +1194,16 @@ table.dollars td.num { font-family: var(--font-mono); text-align: right; }
     <p><b>Real caveats first:</b> different league (superflex, not single-QB), one draft, a year old &mdash; treat
       this as a live hypothesis to test on draft day, not a locked read. Two concrete implications if it holds:</p>
     <div class="target-grid">
-      <div class="target-row">
-        <span class="pn">She may undervalue the pick-5 trade target</span><span class="why watch">makes her a softer trade-down partner</span>
-        <span class="why">If her instinct is "secure QB first," she's less attached to Amon-Ra St. Brown
-          specifically at pick 5 than the pure VOR math assumes &mdash; worth leading the trade conversation with
-          her known QB-first habit rather than a cold value pitch.</span>
+      <div class="target-row" style="border-left: 3px solid var(--good);">
+        <span class="pn">Confirmed: she was a soft trade-down partner</span><span class="why watch">accepted same-day, no counter</span>
+        <span class="why">Her real reply: "sure sounds fine to me... I'm early in my research but feel comfortable
+          in either spot." No pushback, no counter-offer, no sign of a locked-in target at pick 5 &mdash; consistent
+          with the QB-anchored read, and now a real data point instead of just a hypothesis.</span>
       </div>
-      <div class="target-row avoid-row">
-        <span class="pn">Real risk: she takes Josh Allen at pick 5 herself</span><span class="why watch">the model's own #7 pick could be gone before your turn</span>
-        <span class="why">Allen is the closest thing to an elite real QB1 in range at pick 5. If the habit carries
-          over to a single-QB format, he may not survive to your natural pick 7 regardless of what you do &mdash;
-          not a reason to change your round-1 plan (Lamb either way), just something to expect.</span>
+      <div class="target-row">
+        <span class="pn">She now holds pick 7, not pick 5</span><span class="why watch">the Josh Allen risk moves with the pick, not to you</span>
+        <span class="why">If her QB-first habit carries over, Allen (the model's own real value at #7) is now her
+          reach risk, not yours &mdash; you're picking at 5 now, ahead of where that would matter to your board.</span>
       </div>
     </div>
   </section>
