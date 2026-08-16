@@ -1122,13 +1122,19 @@ table.dollars td.num { font-family: var(--font-mono); text-align: right; }
           <tr><td>15</td><td>Devin Lloyd</td><td>LB</td><td>Panthers</td><td class="num mono">5</td></tr>
           <tr><td>16</td><td>Keon Coleman</td><td>WR</td><td>Bills</td><td class="num mono">7</td></tr>
           <tr><td>17</td><td>Riley Patterson</td><td>K</td><td>Dolphins</td><td class="num mono">6</td></tr>
-          <tr><td>18</td><td>Blake Grupe</td><td>K</td><td>Colts</td><td class="num mono" style="color:var(--good);">13</td></tr>
+          <tr><td>18</td><td>Daniel Jones <span class="pos-tag2">fixes a real bug &mdash; see below</span></td><td>QB</td><td>Colts</td><td class="num mono" style="color:var(--good);">13</td></tr>
         </tbody>
       </table>
     </div>
     <p style="margin-top:14px;"><span style="color:var(--warn);font-weight:800;">Amber</span> = Week 10 (semifinal)
       bye. <span style="color:var(--danger);font-weight:800;">Red</span> = Week 11 (championship G1) bye.
       <span style="color:var(--good);font-weight:800;">Green</span> = Week 13+ bye.</p>
+    <p><b>Round 18 fix (Aug 2026):</b> this board had a real, silent bug &mdash; after moving Dak out of round 6, it
+      had <i>zero</i> QBs anywhere across all 18 rounds, while round 17 and round 18 both drafted a kicker (only 1
+      K slot exists). Caught while computing the real point totals below. Fixed by swapping the redundant 2nd
+      kicker for a real, cheap late QB &mdash; Daniel Jones clears meaningful real points (123.0) even this late,
+      because QB volume stays valuable deep into this format's pool, and his bye (13) keeps the Week 13+ group
+      clean too.</p>
     <div class="target-grid">
       <div class="target-row avoid-row">
         <span class="pn">Week 10 landmine: 2 of 18 roster spots</span><span class="why watch">semifinal week</span>
@@ -1173,6 +1179,29 @@ table.dollars td.num { font-family: var(--font-mono); text-align: right; }
       slightly different round-6/8 legs. The real goal was never the small VOR edge &mdash; it's insurance against
       losing both Lamb and Taylor to the picks in between, given real ADP clusters them (and Chase) tightly around
       picks 4-7. See the live 3-way pick-5 outcome above for what's actually likely to be there.</p>
+    <h3 style="font-size:15px;margin:28px 0 8px;">Real total predicted points: before vs. after the trade</h3>
+    <p>Ran the full 18-round board through the same optimal-starting-lineup calculator used elsewhere in this
+      report, real projected points, both boards using the round-18 fix above so the comparison isn't distorted by
+      that bug on one side only. <b>Fair pre-trade baseline (Lamb at pick 7, Deebo at the real pick-90 value):
+      1,014.1 pts.</b> Post-trade, by which of the three real pick-5 outcomes actually happens:</p>
+    <div class="table-wrap">
+      <table class="dollars">
+        <thead><tr><th>Pick 5 outcome</th><th class="num">Likelihood</th><th class="num">Total pts</th><th class="num">vs. baseline</th></tr></thead>
+        <tbody>
+          <tr><td>Jonathan Taylor</td><td class="num mono">most likely</td><td class="num mono">1,001.3</td><td class="num mono" style="color:var(--danger);">&minus;12.8</td></tr>
+          <tr><td>CeeDee Lamb</td><td class="num mono">coin-flip</td><td class="num mono">1,003.5</td><td class="num mono" style="color:var(--danger);">&minus;10.6</td></tr>
+          <tr><td>Ja'Marr Chase</td><td class="num mono">longest shot</td><td class="num mono">1,020.1</td><td class="num mono" style="color:var(--good);">+6.0</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <p><b>The honest read:</b> in the two <i>more likely</i> real outcomes, total points come in slightly
+      <i>below</i> the pre-trade baseline, not above it. That's not a sign the trade was a mistake &mdash; it's
+      because the pre-trade baseline itself quietly assumed Lamb survives to pick 7, which real ADP says is
+      genuinely uncertain (a coin-flip at best). The trade's real value was never a guaranteed points increase;
+      it's insurance that converts "maybe get an elite WR/RB, maybe get stuck with the next tier down" into "get
+      one of Taylor/Lamb/Chase, guaranteed." A fair likelihood-weighted expectation (Taylor most likely, Lamb close
+      behind, Chase a long shot) lands close to a wash on raw points &mdash; the real gain is in the downside case
+      this report can't fully price: what you'd have actually gotten at pick 7 if all three were already gone.</p>
     <h3 style="font-size:15px;margin:28px 0 8px;">Your potential-target list is already bye-clean, almost perfectly</h3>
     <p>Checked bye weeks for every name currently on your radar as a potential (not required) target: Lamb (14),
       Jonathan Taylor (13), Brock Bowers (13), Trey McBride (14), Marvin Harrison Jr. (14), Jeremiyah Love (14),
