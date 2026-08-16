@@ -1081,7 +1081,8 @@ table.dollars td.num { font-family: var(--font-mono); text-align: right; }
       avoid, every league, no exceptions); Jayden Daniels or Jalen Hurts (not both), Omarion Hampton, Luther
       Burden III, and David Montgomery get tie-break priority, never a reach, at or after their real value round;
       a 2nd RB is skipped until the value is a genuine collapse late; TE isn't rushed but is guaranteed by round
-      9; QB is guaranteed by round 6; K is deferred to the final two rounds. This is a realistic <i>shape</i> for
+      9; QB gets taken at its real value window (round 3, not punted late &mdash; see below); K is deferred to the
+      final two rounds. This is a realistic <i>shape</i> for
       your draft, not a script &mdash; the other 15 real managers won't all draft this way, so treat it as a
       strong starting board, not gospel.</p>
     <p><b>Round 1, decided (Aug 2026):</b> you've ruled out a round-1 QB entirely and are leaning WR/RB value over
@@ -1115,26 +1116,34 @@ table.dollars td.num { font-family: var(--font-mono); text-align: right; }
           <tr><td>8</td><td>Marlon Humphrey <span class="pos-tag2">now via pick 124</span></td><td>DB</td><td>Ravens</td><td class="num mono" style="color:var(--good);">13</td></tr>
           <tr><td>9</td><td>Cade Otton</td><td>TE</td><td>Buccaneers</td><td class="num mono" style="color:var(--warn);">10</td></tr>
           <tr><td>10</td><td>Kam Curl</td><td>DB</td><td>Rams</td><td class="num mono" style="color:var(--danger);">11</td></tr>
-          <tr><td>11</td><td>Jared Verse</td><td>DL</td><td>Rams</td><td class="num mono" style="color:var(--danger);">11</td></tr>
+          <tr><td>11</td><td>Daniel Jones <span class="pos-tag2">real QB, swapped in for Verse &mdash; see below</span></td><td>QB</td><td>Colts</td><td class="num mono" style="color:var(--good);">13</td></tr>
           <tr><td>12</td><td>DaRon Bland</td><td>DB</td><td>Cowboys</td><td class="num mono" style="color:var(--good);">14</td></tr>
           <tr><td>13</td><td>Harold Landry</td><td>DL</td><td>Patriots</td><td class="num mono" style="color:var(--danger);">11</td></tr>
           <tr><td>14</td><td>Nakobe Dean</td><td>LB</td><td>Raiders</td><td class="num mono" style="color:var(--good);">13</td></tr>
           <tr><td>15</td><td>Devin Lloyd</td><td>LB</td><td>Panthers</td><td class="num mono">5</td></tr>
           <tr><td>16</td><td>Keon Coleman</td><td>WR</td><td>Bills</td><td class="num mono">7</td></tr>
           <tr><td>17</td><td>Riley Patterson</td><td>K</td><td>Dolphins</td><td class="num mono">6</td></tr>
-          <tr><td>18</td><td>Daniel Jones <span class="pos-tag2">fixes a real bug &mdash; see below</span></td><td>QB</td><td>Colts</td><td class="num mono" style="color:var(--good);">13</td></tr>
+          <tr><td>18</td><td>Trey Hendrickson</td><td>DL</td><td>Bengals</td><td class="num mono">6</td></tr>
         </tbody>
       </table>
     </div>
     <p style="margin-top:14px;"><span style="color:var(--warn);font-weight:800;">Amber</span> = Week 10 (semifinal)
       bye. <span style="color:var(--danger);font-weight:800;">Red</span> = Week 11 (championship G1) bye.
       <span style="color:var(--good);font-weight:800;">Green</span> = Week 13+ bye.</p>
-    <p><b>Round 18 fix (Aug 2026):</b> this board had a real, silent bug &mdash; after moving Dak out of round 6, it
-      had <i>zero</i> QBs anywhere across all 18 rounds, while round 17 and round 18 both drafted a kicker (only 1
-      K slot exists). Caught while computing the real point totals below. Fixed by swapping the redundant 2nd
-      kicker for a real, cheap late QB &mdash; Daniel Jones clears meaningful real points (123.0) even this late,
-      because QB volume stays valuable deep into this format's pool, and his bye (13) keeps the Week 13+ group
-      clean too.</p>
+    <p><b>QB, corrected properly (Aug 2026), this time actually checked against the real point totals:</b> two
+      passes ago this board had zero QBs at all after moving Dak out of round 6; the first fix punted a QB to
+      round 18 as an afterthought patch, which is a real mistake &mdash; QB is a genuinely high-value position in
+      this format (it's the model's own round-1 pick for a reason), and burying it in the worst pick on the board
+      throws away real points. The second attempt overcorrected: moving an elite QB (Burrow/Hurts/Daniels, all
+      real VOR 65-66.6) into round 3 <i>looks</i> like a free win since it barely costs anything against Luther
+      Burden III's value there (60.0) &mdash; but computing it properly against the real point totals showed it's
+      actually worse across all three real pick-5 outcomes, because dropping Burden costs this roster its best
+      flex-eligible depth (only 1 dedicated RB slot means the flex spot leans on WR depth, and Burden was winning
+      that job over a 2nd TE). <b>The actual best fix: keep Burden at round 3, take a real (if less flashy) QB
+      later at round 11 instead</b> &mdash; Daniel Jones's real value (rank 161) lines up almost exactly with pick
+      167, and even a QB this deep in the pool still clears 123.0 real points, which is what matters for the
+      single QB slot. This also happens to fix the round-11 bye problem for free: Jared Verse's Week 11 landmine
+      bye is replaced by Jones's clean Week 13+ bye.</p>
     <div class="target-grid">
       <div class="target-row avoid-row">
         <span class="pn">Week 10 landmine: 2 of 18 roster spots</span><span class="why watch">semifinal week</span>
@@ -1142,16 +1151,16 @@ table.dollars td.num { font-family: var(--font-mono); text-align: right; }
           a full lineup to survive single elimination.</span>
       </div>
       <div class="target-row avoid-row">
-        <span class="pn">Week 11 landmine: 3 of 18 roster spots</span><span class="why watch">championship G1</span>
-        <span class="why">Curl (DB2), Verse (DL2), and Landry (DL3) all land on Rams/Patriots &mdash; out together
-          in the first half of the championship. Worth checking the cheat sheet for a same-tier DL/DB alternative
-          before autopicking rounds 11 and 13 if you want to trade a sliver of value for fewer landmine spots.</span>
+        <span class="pn">Week 11 landmine: 2 of 18 roster spots</span><span class="why watch">championship G1</span>
+        <span class="why">Curl (DB2) and Landry (DL3) land on Rams/Patriots &mdash; out together in the first half
+          of the championship. Was 3 of 18 before swapping Verse for Daniel Jones at round 11 (above), which
+          removed the third.</span>
       </div>
       <div class="target-row" style="border-left: 3px solid var(--good);">
         <span class="pn">Week 13+ bonus: 4 guaranteed, possibly 5</span><span class="why watch">never misses a scored week, weighted double</span>
-        <span class="why">Humphrey, Bland, Dean, and Grupe are locked in regardless of round 1. Round 6 no longer
-          adds one &mdash; Dak's realistically gone by pick 92 (see above), so that spot is Njoku (bye 7) instead.
-          Round 1 is still contingent: Taylor (bye 13) or Lamb (bye 14) would add a 5th; Chase (bye 6) would not.</span>
+        <span class="why">Humphrey, Bland, Dean, and Daniel Jones (the new round-11 QB) are locked in regardless of
+          round 1. Round 1 is still contingent: Taylor (bye 13) or Lamb (bye 14) would add a 5th; Chase (bye 6)
+          would not.</span>
       </div>
       <div class="target-row">
         <span class="pn">Jeremiyah Love &mdash; personal target, not a model pick</span><span class="why watch">real ADP ~pick 19&ndash;25 (RB7&ndash;9); model has him off the 18-round board entirely</span>
@@ -1181,9 +1190,10 @@ table.dollars td.num { font-family: var(--font-mono); text-align: right; }
       picks 4-7. See the live 3-way pick-5 outcome above for what's actually likely to be there.</p>
     <h3 style="font-size:15px;margin:28px 0 8px;">Real total predicted points: before vs. after the trade</h3>
     <p>Ran the full 18-round board through the same optimal-starting-lineup calculator used elsewhere in this
-      report, real projected points, both boards using the round-18 fix above so the comparison isn't distorted by
-      that bug on one side only. <b>Fair pre-trade baseline (Lamb at pick 7, Deebo at the real pick-90 value):
-      1,014.1 pts.</b> Post-trade, by which of the three real pick-5 outcomes actually happens:</p>
+      report, real projected points, both boards using the round-11 QB fix above (Burden kept, Daniel Jones in
+      instead of the redundant 2nd kicker) so the comparison isn't distorted by that bug on one side only. <b>Fair
+      pre-trade baseline (Lamb at pick 7, Deebo at the real pick-90 value): 1,014.1 pts.</b> Post-trade, by which
+      of the three real pick-5 outcomes actually happens:</p>
     <div class="table-wrap">
       <table class="dollars">
         <thead><tr><th>Pick 5 outcome</th><th class="num">Likelihood</th><th class="num">Total pts</th><th class="num">vs. baseline</th></tr></thead>
