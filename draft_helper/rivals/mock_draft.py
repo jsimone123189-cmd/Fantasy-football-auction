@@ -39,16 +39,41 @@ def _snake_order(num_teams: int, rounds: int) -> list[int]:
 
 
 def simulate_draft(pool: pd.DataFrame, num_teams: int = NUM_TEAMS, rounds: int = ROUNDS) -> dict[int, list[dict]]:
-    """Returns {slot_index (0-based): [drafted player rows in pick order]}."""
+    """Returns {slot_index (0-based): [drafted player rows in pick order]}.
+
+    Pure best-value-available, with one real-world guardrail: a team never
+    leaves a mandatory starting position (STARTERS) empty when it's out of
+    slack to keep waiting. A naive pure-BPA bot has no such rule and can
+    legitimately never have a given position be the single highest-VOR
+    player at any of its specific turns across a whole draft -- e.g. once
+    RB is correctly priced as scarce, a bot picking from a slot whose turns
+    happen to fall right after each round's best RB is gone can go all 18
+    rounds without ever rostering one, leaving that starting slot at a
+    real 0 points. No actual manager would do that, and it's not a real
+    property of the slot -- it's a simulator artifact. The fix: once the
+    rounds a team has left equals the number of its still-empty mandatory
+    positions, it must fill the emptiest one instead of taking pure BPA.
+    """
     available = pool.sort_values("vor", ascending=False).to_dict("records")
     rosters = {i: [] for i in range(num_teams)}
     pos_counts = {i: {} for i in range(num_teams)}
+    picks_made = {i: 0 for i in range(num_teams)}
 
     for slot in _snake_order(num_teams, rounds):
         counts = pos_counts[slot]
+        picks_made[slot] += 1
+        rounds_remaining = rounds - picks_made[slot] + 1
+        still_empty = [pos for pos in STARTERS if counts.get(pos, 0) == 0]
+
+        force_position = None
+        if still_empty and len(still_empty) >= rounds_remaining:
+            force_position = still_empty[0]
+
         pick = None
         for idx, player in enumerate(available):
             pos = player["position"]
+            if force_position is not None and pos != force_position:
+                continue
             cap = ROSTER_MAX.get(pos)
             if cap is not None and counts.get(pos, 0) >= cap:
                 continue

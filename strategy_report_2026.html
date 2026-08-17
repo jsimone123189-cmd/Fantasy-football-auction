@@ -1030,44 +1030,38 @@ table.dollars td.num { font-family: var(--font-mono); text-align: right; }
       choice in your slot, not gospel. Points below are scaled to the league's real 9-week scored season (Weeks
       4&ndash;12), so the totals read lower than a generic full-season projection &mdash; it's the ranking
       between slots that matters, not the raw number.</p>
-    <p style="margin-top:-6px;"><b>Correction (Aug 2026):</b> the RB/WR flex-share fix reshuffled this ranking once
-      already, and the real bell-cow-scarcity fix above (see "Where the real value is") reshuffled it again, more
-      substantially &mdash; re-run from scratch with the corrected model rather than patched. The whole shape of
-      the slot ranking changed: which slots benefit from a real bell-cow RB and which don't shifted meaningfully
-      now that RB value isn't smoothed over.</p>
+    <p style="margin-top:-6px;"><b>What this section actually measures, stated plainly (Aug 2026):</b> this is "if
+      you could choose to draft <i>all 18 rounds</i> from one slot, which is structurally best" &mdash; a full
+      hypothetical slot swap. It is <b>not</b> a way to evaluate your real pick-5 trade, which only changed 3 of
+      your 18 picks (rounds 1, 6, 8) &mdash; the other 15 are still your original slot-7 sequence. An earlier
+      version of this section used this full-slot comparison to cast doubt on that trade, which was a real
+      mistake: comparing two different things and treating the mismatch as a finding. The correct, apples-to-apples
+      answer on the trade itself is the pick-for-pick comparison earlier in this report ("Real total predicted
+      points: before vs. after the trade") &mdash; that one isolates just the 3 picks that actually changed, and
+      it stands as the real verdict. This section is a separate, more academic question.</p>
+    <p><b>Also fixed here:</b> the neutral simulator had a real bug of its own, caught while checking this ranking
+      &mdash; a pure best-value-available bot has no rule against leaving a mandatory starting position empty, and
+      once RB was correctly priced as scarce, one slot's specific run of turns happened to never have an RB be the
+      single best player available, leaving it with a real, unrealistic zero at RB for all 18 rounds. No actual
+      manager would ever do that. Fixed by giving every simulated team a real "don't leave a starting slot empty"
+      rule once it's out of rounds to keep waiting &mdash; every slot now fills all 8 mandatory positions.</p>
     <div class="target-grid">
-      <div class="target-row avoid-row">
-        <span class="pn">Your current slot: #5</span><span class="px">870.1 pts</span>
-        <span class="why watch">14th of 16 under the corrected model</span>
-        <span class="why">A real structural downgrade once RB scarcity is priced correctly &mdash; #5 now lands in
-          a dead zone between tiers rather than a strong seat.</span>
-      </div>
       <div class="target-row">
-        <span class="pn">Worth knowing: your old slot #7 is now 3rd of 16</span><span class="px">1,000.3 pts</span>
-        <span class="why">Real, and worth being upfront about: the pick-5 trade was made partly reasoning from the
-          old (RB-undervaluing) model, which had #7 near the bottom. Under the corrected model, #7 grades as one of
-          the best slots in the league. This neutral sim assumes all 16 teams draft identically by pure VOR, though
-          &mdash; it doesn't capture the trade's real, specific rationale (guaranteed access to Taylor/Lamb/Chase at
-          a known pick, plus real scouting intel on KelKelAZ's QB-hoarding tendency), which don't show up in a
-          generic structural comparison like this one. Recorded honestly rather than smoothed over either way.</span>
-      </div>
-      <div class="target-row">
-        <span class="pn">Best slot: #9</span><span class="px">1,024.8 pts</span>
-        <span class="why">Also strong: #13, #7, #10 (1,000&ndash;1,003 pts) &mdash; all land a real bell-cow RB or
-          alpha WR before the tier clears, several with a favorable wheel at the round 1/2 turn.</span>
+        <span class="pn">Best slot: #2</span><span class="px">1,056.9 pts</span>
+        <span class="why">Also strong: #9, #16, #1 (1,013&ndash;1,025 pts) &mdash; land a real bell-cow RB or alpha
+          WR before the tier clears, several with a favorable wheel at the round 1/2 turn.</span>
       </div>
       <div class="target-row avoid-row">
-        <span class="pn">Worst slot: #8</span><span class="px">863.8 pts</span>
-        <span class="why watch">avoid if you have a choice</span>
-        <span class="why">Also weak: #15, #5 (869&ndash;870 pts) &mdash; picks right after both the WR1 and
-          bell-cow-RB tiers clear, no favorable turn to make up for it.</span>
+        <span class="pn">Worst slot (full-18-round hypothetical): #5</span><span class="px">932.8 pts</span>
+        <span class="why watch">16th of 16 &mdash; a structural finding about the slot, not your real roster</span>
+        <span class="why">Also weak: #14, #8 (963&ndash;965 pts). Real, but scoped correctly this time: this
+          describes drafting all 18 rounds from #5, which isn't your actual situation &mdash; you only have #5 for
+          round 1. See the pick-for-pick trade analysis above for what your real, partial move to #5 actually did
+          to your total.</span>
       </div>
     </div>
-    <p>Full 16-slot ranking (projected optimal starting-lineup points, this year's corrected board): #9, #13, #7,
-      #10, #3, #4, #2, #1, #12, #6, #16, #11, #14, <b>#5</b>, #15, #8 (best to worst). Your current #5 sits in the
-      bottom third
-      &mdash; take the best VOR on the board every pick like always, but don't expect the slot itself to do you
-      any favors this year.</p>
+    <p>Full 16-slot ranking (projected optimal starting-lineup points, this year's corrected board, bug-fixed
+      simulator): #2, #9, #16, #1, #13, #7, #10, #12, #3, #4, #11, #15, #6, #8, #14, #5 (best to worst).</p>
   </section>
 
   <section>
