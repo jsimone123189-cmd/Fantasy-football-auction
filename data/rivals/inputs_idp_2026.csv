@@ -39,14 +39,14 @@ Khalil Mack,DE,LAC,16,1.376,1.29,0.0,0.458,0.25,0.0,0.0,0.0,medium,"Starting edg
 Montez Sweat,DE,CHI,17,2.118,1.0,0.765,0.588,0.176,0.0,0.0,0.294,low,"Full-time starting edge rusher, entrenched under new coaching staff"
 Bradley Chubb,DE,Free agent (unsigned),13,1.412,1.353,0.471,0.5,0.118,0.059,0.0,0.0,high,Unsigned as of Aug 2026 -- games_proj discounted for a landing-spot/ramp-up gap even if he signs before the draft.
 Harold Landry,DE,NE,16,1.686,1.581,0.0,0.567,0.067,0.0,0.0,0.0,medium,"Starting edge rusher, signed 3yr/$43.5M deal in 2025 [49 combined 2025 tackles found in research notes; solo/assist split estimated at this position's observed 52/48 average since the source didn't report the two separately -- not a fabricated total, just an estimated split.]"
-Fred Warner,MLB,SF,12,4.667,0.0,0.0,0.0,0.333,0.167,0.0,0.5,medium,"Real 2025 season-ending injury on record -- games_proj discounted, not assumed fully recovered to a normal 17-game year."
+Fred Warner,MLB,SF,12,4.667,3.667,0.0,0.0,0.333,0.167,0.0,0.5,medium,"Real 2025 season-ending injury on record -- games_proj discounted, not assumed fully recovered to a normal 17-game year."
 Roquan Smith,ILB,BAL,17,5.067,3.6,0.0,0.0,0.0,0.0,0.2,0.0,low,"Starter, three-down, team captain"
 Zaire Franklin,ILB,GB,16,3.647,3.706,0.0,0.118,0.059,0.0,0.0,0.294,medium,"Starter at MLB, replacing Quay Walker"
 Bobby Wagner,MLB,Free agent (unsigned),13,4.647,4.882,0.0,0.265,0.0,0.0,0.118,0.235,high,Unsigned as of Aug 2026 -- games_proj discounted for a landing-spot/ramp-up gap even if he signs before the draft.
-Foyesade Oluokun,MLB,JAX,17,4.403,4.008,0.0,0.059,0.118,0.059,0.059,0.0,low,"Starter, three-down, iron man [143 combined 2025 tackles found in research notes; solo/assist split estimated at this position's observed 52/48 average since the source didn't report the two separately -- not a fabricated total, just an estimated split.]"
-Demario Davis,MLB,NYJ,16,4.403,4.008,0.294,0.0,0.118,0.059,0.0,0.118,medium,"Expected starter/leader for Jets defense [143 combined 2025 tackles found in research notes; solo/assist split estimated at this position's observed 52/48 average since the source didn't report the two separately -- not a fabricated total, just an estimated split.]"
-Blake Cashman,ILB,MIN,16,5.798,5.279,0.308,0.154,0.077,0.0,0.0,0.154,medium,"Starter, three-down when healthy [144 combined 2025 tackles found in research notes; solo/assist split estimated at this position's observed 52/48 average since the source didn't report the two separately -- not a fabricated total, just an estimated split.]"
-Ernest Jones IV,ILB,SEA,17,4.397,4.003,0.0,0.033,0.0,0.0,0.333,0.467,low,"Starter, three-down [126 combined 2025 tackles found in research notes; solo/assist split estimated at this position's observed 52/48 average since the source didn't report the two separately -- not a fabricated total, just an estimated split.]"
+Foyesade Oluokun,MLB,JAX,17,4.438,3.973,0.0,0.059,0.118,0.059,0.059,0.0,low,"Starter, three-down, iron man [143 combined 2025 tackles found in research notes; solo/assist split estimated at this position's observed 53/47 average since the source didn't report the two separately -- not a fabricated total, just an estimated split.]"
+Demario Davis,MLB,NYJ,16,4.438,3.973,0.294,0.0,0.118,0.059,0.0,0.118,medium,"Expected starter/leader for Jets defense [143 combined 2025 tackles found in research notes; solo/assist split estimated at this position's observed 53/47 average since the source didn't report the two separately -- not a fabricated total, just an estimated split.]"
+Blake Cashman,ILB,MIN,16,5.845,5.232,0.308,0.154,0.077,0.0,0.0,0.154,medium,"Starter, three-down when healthy [144 combined 2025 tackles found in research notes; solo/assist split estimated at this position's observed 53/47 average since the source didn't report the two separately -- not a fabricated total, just an estimated split.]"
+Ernest Jones IV,ILB,SEA,17,4.432,3.968,0.0,0.033,0.0,0.0,0.333,0.467,low,"Starter, three-down [126 combined 2025 tackles found in research notes; solo/assist split estimated at this position's observed 53/47 average since the source didn't report the two separately -- not a fabricated total, just an estimated split.]"
 Bobby Okereke,ILB,Free agent (unsigned),13,6.059,2.353,0.0,0.059,0.0,0.0,0.118,0.353,high,Unsigned as of Aug 2026 -- games_proj discounted for a landing-spot/ramp-up gap even if he signs before the draft.
 Kaden Elliss,OLB,NO,16,3.471,2.824,0.0,0.206,0.059,0.0,0.059,0.353,medium,"Expected starter/defensive play-caller, replacing Demario Davis"
 Nick Bolton,ILB,KC,17,4.294,4.765,0.0,0.059,0.059,0.0,0.059,0.353,low,"Starter, three-down"
@@ -75,7 +75,7 @@ Nicholas Morrow,OLB,PHI (unclear active status),14,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0
 Deion Jones,MLB,NO,14,0.643,0.0,0.0,0.0,0.0,0.0,0.0,0.0,high,"Depth/rotational, journeyman role"
 Kenneth Murray Jr.,ILB,Free agent (unsigned),13,2.235,2.529,0.0,0.059,0.0,0.059,0.0,0.118,high,Unsigned as of Aug 2026 -- games_proj discounted for a landing-spot/ramp-up gap even if he signs before the draft.
 Tanner Muse,LB,Depth/unclear roster status,14,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,high,"Deep depth/special teams, not a defensive factor"
-Robert Spillane,ILB,NE,16,0.0,0.0,0.0,0.077,0.077,0.0,0.154,0.385,medium,"Starter, three-down, defensive signal-caller (green dot)"
+Robert Spillane,ILB,NE,16,5.0,2.462,0.0,0.077,0.077,0.0,0.154,0.385,medium,"Starter, three-down, defensive signal-caller (green dot)"
 Curtis Jacobs,LB,"Out of NFL (DC Defenders, UFL)",14,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,high,N/A -- off NFL rosters entirely for 2026
 Ivan Pace Jr.,MLB,MIN,16,2.0,1.647,0.0,0.059,0.0,0.0,0.0,0.0,medium,MLB2/rotational -- Eric Wilson listed ahead at MLB1 on 2026 depth chart
 Germaine Pratt,ILB,IND,16,4.188,3.688,0.0,0.0,0.062,0.125,0.062,0.375,medium,"Starter, reunited with DC in Indianapolis"
@@ -87,7 +87,7 @@ Payton Wilson,ILB,PIT,17,4.353,3.059,0.0,0.0,0.059,0.0,0.059,0.118,low,"Starter,
 Jack Sanborn,ILB,DAL,14,2.667,3.0,0.167,0.0,0.0,0.0,0.0,0.0,high,Rotational/injury recovery
 Tyrel Dodson,ILB,MIA,17,4.5,3.562,0.0,0.0,0.062,0.062,0.062,0.188,low,"Starter, three-down"
 Matt Milano,OLB,Free agent (unsigned),13,3.0,2.583,0.0,0.292,0.083,0.0,0.0,0.0,high,Unsigned as of Aug 2026 -- games_proj discounted for a landing-spot/ramp-up gap even if he signs before the draft.
-Baron Browning,OLB,ARI,16,1.187,1.08,0.267,0.133,0.0,0.067,0.067,0.067,medium,"Rotational/situational pass rusher [34 combined 2025 tackles found in research notes; solo/assist split estimated at this position's observed 52/48 average since the source didn't report the two separately -- not a fabricated total, just an estimated split.]"
+Baron Browning,OLB,ARI,16,1.196,1.071,0.267,0.133,0.0,0.067,0.067,0.067,medium,"Rotational/situational pass rusher [34 combined 2025 tackles found in research notes; solo/assist split estimated at this position's observed 53/47 average since the source didn't report the two separately -- not a fabricated total, just an estimated split.]"
 Troy Andersen,ILB,ATL,14,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,high,Depth/injury question mark
 Nakobe Dean,ILB,LV,16,3.0,2.5,0.0,0.4,0.2,0.0,0.0,0.1,medium,"Starter, paired with Quay Walker"
 Jeremiah Trotter Jr.,ILB,PHI,16,0.0,0.0,0.0,0.031,0.0,0.0,0.0,0.062,medium,"Rotational, competing for snaps"
