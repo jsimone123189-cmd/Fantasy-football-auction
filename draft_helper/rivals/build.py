@@ -46,7 +46,7 @@ from .schedule_strength import (
     week_range_multiplier,
 )
 from .teams import idp_bucket, to_nickname
-from .value import compute_vor, position_vor, rank_from_vor
+from .value import apply_bell_cow_scarcity, compute_vor, position_vor, rank_from_vor
 
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 SKILL_INPUTS_PATH = os.path.join(BASE_DIR, "data", "projections", "inputs_2026.csv")
@@ -102,6 +102,7 @@ def build(
                 "ceiling": result["ceiling"],
                 "risk_tier": result["risk_tier"],
                 "explanation": _explain(result),
+                "rush_att_pg": row.get("rush_att_pg"),
             })
 
     if os.path.exists(idp_inputs_path):
@@ -155,6 +156,10 @@ def build(
     vor_early = position_vor(out, "points_early")
     vor_late = position_vor(out, "points_late")
     out["vor"] = (vor_early + LATE_WEIGHT * vor_late).round(1)
+    # Real, lead-role RB scarcity correction -- see apply_bell_cow_scarcity's
+    # docstring. Applied last, after the phase blend, since it's a
+    # season-long workload signal, not a per-phase one.
+    out = apply_bell_cow_scarcity(out)
     out = rank_from_vor(out)
 
     return out.sort_values("overall_rank").reset_index(drop=True)

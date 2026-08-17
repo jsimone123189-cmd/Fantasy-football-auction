@@ -102,6 +102,61 @@ def compute_vor(df: pd.DataFrame, num_teams: int = NUM_TEAMS, value_col: str = "
     return out
 
 
+BELL_COW_RUSH_ATT_THRESHOLD = 15.0
+
+
+def bell_cow_scarcity_multiplier(
+    df: pd.DataFrame, rush_att_col: str = "rush_att_pg", num_teams: int = NUM_TEAMS
+) -> float:
+    """A flat VOR replacement curve treats RB as not particularly scarce in
+    this format (its replacement level sits unusually high -- see the
+    "Known limitation" note in strategy_report_2026.html), because it
+    smooths over a real discontinuity: a small set of true 3-down,
+    lead-role backs, then a real cliff down to committee/timeshare backs
+    who are much closer to replacement level. Missing the lead-role tier
+    isn't a smooth step down the curve -- it's landing in a different,
+    categorically shallower pool.
+
+    Quantified with real, already-sourced data instead of a guessed
+    constant: `rush_att_col` >= BELL_COW_RUSH_ATT_THRESHOLD (15 carries/
+    game -- the natural clustering point in the real workload data, see
+    tests/test_value_bell_cow_scarcity.py) identifies the true lead-role
+    tier. Structural demand for that tier is `num_teams` starting slots
+    plus this format's own empirically-measured RB flex share (see
+    FLEX_SHARE above) -- i.e. `num_teams * (1 + FLEX_SHARE["RB"])` real
+    roster slots competing for lead-role production. When real bell-cow
+    supply is smaller than that real demand, the ratio between them is a
+    real, data-derived scarcity premium, not an invented number. Returns
+    1.0 (no adjustment) if supply already meets or exceeds demand.
+    """
+    if rush_att_col not in df.columns:
+        return 1.0
+    rb = df[df["position"] == "RB"]
+    supply = int((rb[rush_att_col] >= BELL_COW_RUSH_ATT_THRESHOLD).sum())
+    if supply <= 0:
+        return 1.0
+    demand = num_teams * (1 + FLEX_SHARE.get("RB", 0.0))
+    return max(1.0, demand / supply)
+
+
+def apply_bell_cow_scarcity(
+    df: pd.DataFrame, rush_att_col: str = "rush_att_pg", num_teams: int = NUM_TEAMS
+) -> pd.DataFrame:
+    """Applies `bell_cow_scarcity_multiplier` to `vor` for RBs at or above
+    the lead-role workload threshold, leaving every other player's `vor`
+    untouched. Caller is expected to re-derive overall_rank/vor_round
+    afterward (e.g. via `rank_from_vor`), since this changes sort order.
+    """
+    out = df.copy()
+    multiplier = bell_cow_scarcity_multiplier(out, rush_att_col, num_teams)
+    if multiplier == 1.0 or rush_att_col not in out.columns:
+        return out
+    out["vor"] = out["vor"].astype(float)
+    is_bell_cow = (out["position"] == "RB") & (out[rush_att_col] >= BELL_COW_RUSH_ATT_THRESHOLD)
+    out.loc[is_bell_cow, "vor"] = (out.loc[is_bell_cow, "vor"] * multiplier).round(1)
+    return out
+
+
 def rank_from_vor(df: pd.DataFrame, num_teams: int = NUM_TEAMS) -> pd.DataFrame:
     """Like the tail of `compute_vor`, but for when `vor` has already been
     computed elsewhere (e.g. a blend of per-phase VOR) instead of being
