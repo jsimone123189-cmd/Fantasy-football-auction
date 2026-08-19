@@ -19,13 +19,20 @@ Reads:
 Writes:
   - data/rivals/2026.csv with columns player_name, position, nfl_team,
     projected_points, floor, ceiling, risk_tier, points_early, points_late,
-    pos_rank, vor, overall_rank, vor_round, explanation, bye_week.
+    pos_rank, vor, overall_rank, vor_round, explanation, bye_week,
+    market_overall_pick, market_round, market_verified.
     projected_points/floor/ceiling are the honest real-points projection
     across Rivals' full scored season (weeks 4-12); vor/overall_rank/
     vor_round additionally weight weeks 9-12 (the knockout bracket) more
     heavily via LATE_WEIGHT below, per explicit request to prioritize
     "good enough" weeks 4-8 and "best" weeks 9-12 -- see
     _rescale_to_scored_weeks() and the vor blend in build().
+    market_round/market_overall_pick are real, sourced consensus ADP
+    (data/research/market_adp_2026.csv), kept deliberately separate from
+    vor_round -- see attach_market_adp()'s docstring for why the two must
+    never be conflated. market_verified=False means this player hasn't
+    been checked against real consensus and market_round is unset; do not
+    treat vor_round as a stand-in for it.
 """
 from __future__ import annotations
 
@@ -56,6 +63,7 @@ KICKER_INPUTS_PATH = os.path.join(BASE_DIR, "data", "rivals", "inputs_kicker_202
 BYE_WEEKS_PATH = os.path.join(BASE_DIR, "data", "research", "bye_weeks_2026.csv")
 SCHEDULE_PATH = SCHEDULE_STRENGTH_SCHEDULE_PATH
 DEFENSE_STRENGTH_PATH = SCHEDULE_STRENGTH_DEFENSE_PATH
+MARKET_ADP_PATH = os.path.join(BASE_DIR, "data", "research", "market_adp_2026.csv")
 OUT_PATH = os.path.join(BASE_DIR, "data", "rivals", "2026.csv")
 
 
@@ -161,8 +169,62 @@ def build(
     # season-long workload signal, not a per-phase one.
     out = apply_bell_cow_scarcity(out)
     out = rank_from_vor(out)
+    out = attach_market_adp(out, MARKET_ADP_PATH)
 
     return out.sort_values("overall_rank").reset_index(drop=True)
+
+
+def attach_market_adp(out: pd.DataFrame, market_adp_path: str) -> pd.DataFrame:
+    """Attaches real, sourced consensus ADP (data/research/market_adp_2026.csv)
+    as `market_round`/`market_overall_pick`, kept deliberately separate from
+    `vor_round`.
+
+    These answer two different real questions and must never be conflated
+    (a mistake this board made concretely with Chase Brown and Omarion
+    Hampton, Aug 2026 -- both got the internal VOR round printed as if it
+    were "the round you can expect to get him," when real market ADP had
+    them 1-3 rounds earlier): `vor_round` is our own model's opinion of a
+    player's true value relative to replacement, used to decide the best
+    pick *among what's actually still on the board*. `market_round` is
+    what real consensus (Field Yates/ESPN, other outlets, averaged where
+    they disagree) says other real managers will actually do, used to
+    predict *whether a player will still be on the board at all*. A
+    player can legitimately have very different values here -- that's not
+    a bug to reconcile, it's the whole reason VOR-based value-hunting
+    works (the gap is where you find steals).
+
+    Source ADP is pick-order data from standard-size drafts (most public
+    consensus defaults to a 10-12 team baseline); converted to this
+    league's 16-team round via ceil(pick / 16). That's a real, disclosed,
+    but approximate adjustment -- overall pick *order* is reasonably
+    format-invariant for skill positions, but this hasn't been separately
+    re-derived for a 16-team full-IDP league specifically, so treat
+    `market_round` as directionally real, not to-the-pick precise.
+
+    Coverage is intentionally partial: bulk ADP sources are blocked from
+    automated fetch in this environment, so this file holds only
+    individually verified players (skill positions, mostly rounds 1-5) --
+    not a full-board audit. Unmatched players get `market_round` = NaN and
+    `market_verified` = False; downstream code and the report must treat
+    that as "not checked against real consensus," never silently fall back
+    to treating vor_round as if it were market_round.
+    """
+    out = out.copy()
+    out["market_verified"] = False
+    out["market_round"] = pd.NA
+    out["market_overall_pick"] = pd.NA
+    if not os.path.exists(market_adp_path):
+        return out
+    adp = pd.read_csv(market_adp_path)
+    adp["market_round"] = (adp["market_overall_pick"] / 16.0).apply(lambda p: int(-(-p // 1)))
+    lookup = adp.set_index("player_name")[["market_overall_pick", "market_round"]]
+    for name, row in lookup.iterrows():
+        mask = out["player_name"] == name
+        if mask.any():
+            out.loc[mask, "market_overall_pick"] = row["market_overall_pick"]
+            out.loc[mask, "market_round"] = row["market_round"]
+            out.loc[mask, "market_verified"] = True
+    return out
 
 
 FULL_SEASON_AVAILABLE_WEEKS = 16.0  # a healthy player's real season, net of their own bye
