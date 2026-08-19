@@ -33,6 +33,14 @@ Writes:
     never be conflated. market_verified=False means this player hasn't
     been checked against real consensus and market_round is unset; do not
     treat vor_round as a stand-in for it.
+    tier/tier_dropoff/tier_market_rounds are the real, position-relative
+    cliff analysis -- see compute_position_tiers()/compute_tier_dropoff()
+    in value.py for why a flat overall rank hides this. tier_dropoff is
+    the real points lost falling from this player's tier to the next
+    tier down at the same position; tier_market_rounds is the real,
+    verified consensus-ADP round span covering *that next tier* (the
+    matched "how much runway before the fallback is gone too" signal,
+    blank where nothing in the fallback tier has been market-verified).
 """
 from __future__ import annotations
 
@@ -53,7 +61,14 @@ from .schedule_strength import (
     week_range_multiplier,
 )
 from .teams import idp_bucket, to_nickname
-from .value import apply_bell_cow_scarcity, compute_vor, position_vor, rank_from_vor
+from .value import (
+    apply_bell_cow_scarcity,
+    compute_position_tiers,
+    compute_tier_dropoff,
+    compute_vor,
+    position_vor,
+    rank_from_vor,
+)
 
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 SKILL_INPUTS_PATH = os.path.join(BASE_DIR, "data", "projections", "inputs_2026.csv")
@@ -170,6 +185,8 @@ def build(
     out = apply_bell_cow_scarcity(out)
     out = rank_from_vor(out)
     out = attach_market_adp(out, MARKET_ADP_PATH)
+    out = compute_position_tiers(out)
+    out = compute_tier_dropoff(out)
 
     return out.sort_values("overall_rank").reset_index(drop=True)
 

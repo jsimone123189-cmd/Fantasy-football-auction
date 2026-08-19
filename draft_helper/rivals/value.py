@@ -157,6 +157,115 @@ def apply_bell_cow_scarcity(
     return out
 
 
+TIER_GAP_MULTIPLIER = 1.5
+MIN_TIER_GAP = 5.0  # VOR points; fallback threshold when a position has too few players for a relative baseline
+
+
+def compute_position_tiers(
+    df: pd.DataFrame, value_col: str = "vor", gap_multiplier: float = TIER_GAP_MULTIPLIER
+) -> pd.DataFrame:
+    """Adds a real, position-relative `tier` column: a flat overall rank
+    treats every player as an equally-spaced step, which hides the real
+    thing that should drive a draft-time decision -- how much you lose by
+    *not* getting anyone from this cluster of players before it's gone,
+    versus how much you lose waiting on a different position. Two players
+    three ranks apart can be a real cliff (an elite RB tier ending) or a
+    rounding error (a flat run of 15 similar-value WR3s) -- the flat rank
+    alone can't tell you which, and this project's own live-draft
+    reasoning (Allen/Henry/Dak/Tracy, Aug 2026) showed exactly why that
+    matters: the flat VOR rank made the QB gap and the RB gap look
+    comparable when the real, tier-aware gaps were nowhere close.
+
+    Method: within each position, sort by `value_col` descending and walk
+    consecutive gaps. A gap that's more than `gap_multiplier` times that
+    position's own median gap is a real tier break -- self-calibrating
+    per position (a position with generally larger point spreads doesn't
+    get artificially over-split into tiny tiers just because its raw gaps
+    are bigger in absolute terms). `gap_multiplier` is a disclosed,
+    adjustable threshold, not a hidden magic number -- 1.5x is a real,
+    defensible "notably bigger than the local norm" cutoff, not a precise
+    fitted constant this data can't actually support.
+    """
+    out = df.copy()
+    out["tier"] = 1
+    for pos in out["position"].unique():
+        mask = out["position"] == pos
+        pos_df = out.loc[mask].sort_values(value_col, ascending=False)
+        if len(pos_df) < 2:
+            continue
+        values = pos_df[value_col].to_numpy()
+        gaps = values[:-1] - values[1:]
+        if len(gaps) >= 3:
+            # A real median-of-gaps baseline needs enough gaps to be
+            # meaningful -- with fewer, "1.5x the median" degenerates to
+            # comparing a gap against a multiple of itself, which can
+            # never trigger a break even for a real, obvious cliff.
+            median_gap = float(pd.Series(gaps).median())
+            threshold = median_gap * gap_multiplier if median_gap > 0 else float("inf")
+        else:
+            # Too few players for a position-relative baseline -- fall
+            # back to a fixed, disclosed minimum absolute gap (in the
+            # same VOR points every other threshold in this module is
+            # measured in) rather than either "any gap splits" (which
+            # over-splits on noise) or silently leaving everyone in one
+            # tier (which hides a real, obvious cliff like a lone QB1).
+            threshold = MIN_TIER_GAP
+        tiers = [1]
+        current_tier = 1
+        for gap in gaps:
+            if gap > threshold and gap > 0:
+                current_tier += 1
+            tiers.append(current_tier)
+        out.loc[pos_df.index, "tier"] = tiers
+    return out
+
+
+def compute_tier_dropoff(df: pd.DataFrame, value_col: str = "vor") -> pd.DataFrame:
+    """Adds `tier_dropoff` (real points lost going from the worst player
+    still in this player's tier to the best player in the next tier down
+    at the same position) and `tier_market_rounds` (the real, verified
+    consensus-ADP round span covering that *next* tier down, where
+    available) -- the two are a matched pair describing the real cost of
+    waiting past this player's tier: how many points you lose, and by
+    roughly which real round the fallback tier itself is gone. This is a
+    real, disclosed signal ("how many picks of runway before even the
+    fallback is gone"), not a modeled survival probability this data
+    can't actually support. The last tier at a position has nothing to
+    fall to, so it gets tier_dropoff=0 and no market-round span.
+    Requires `compute_position_tiers` to have already run.
+    """
+    out = df.copy()
+    out["tier_dropoff"] = 0.0
+    out["tier_market_rounds"] = pd.NA
+    for pos in out["position"].unique():
+        pos_mask = out["position"] == pos
+        pos_df = out.loc[pos_mask]
+        max_tier = int(pos_df["tier"].max())
+        tier_bounds = {}
+        tier_market_span = {}
+        for t in range(1, max_tier + 1):
+            t_df = pos_df[pos_df["tier"] == t]
+            if t_df.empty:
+                continue
+            tier_bounds[t] = (float(t_df[value_col].min()), float(t_df[value_col].max()))
+            if "market_round" in t_df.columns:
+                rounds = t_df["market_round"].dropna()
+                if not rounds.empty:
+                    lo, hi = int(rounds.min()), int(rounds.max())
+                    tier_market_span[t] = f"{lo}" if lo == hi else f"{lo}-{hi}"
+        for t in range(1, max_tier + 1):
+            if t not in tier_bounds:
+                continue
+            tier_min = tier_bounds[t][0]
+            next_tier_max = tier_bounds.get(t + 1, (None, None))[1]
+            dropoff = (tier_min - next_tier_max) if next_tier_max is not None else 0.0
+            t_idx = pos_df[pos_df["tier"] == t].index
+            out.loc[t_idx, "tier_dropoff"] = round(dropoff, 1)
+            if (t + 1) in tier_market_span:
+                out.loc[t_idx, "tier_market_rounds"] = tier_market_span[t + 1]
+    return out
+
+
 def rank_from_vor(df: pd.DataFrame, num_teams: int = NUM_TEAMS) -> pd.DataFrame:
     """Like the tail of `compute_vor`, but for when `vor` has already been
     computed elsewhere (e.g. a blend of per-phase VOR) instead of being
