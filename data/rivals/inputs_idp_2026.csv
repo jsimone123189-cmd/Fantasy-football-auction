@@ -5,14 +5,14 @@ Quinnen Williams,DT,DAL,17,1.733,1.8,0.2,0.167,0.2,0.0,0.0,0.0,low,"Full-time st
 Dexter Lawrence,NT,CIN,16,0.824,1.0,0.235,0.029,0.0,0.0,0.0,0.235,medium,"Starting nose tackle, Bengals depth chart"
 Christian Wilkins,DT,Free agent (unsigned),13,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,high,Unsigned as of Aug 2026 -- games_proj discounted for a landing-spot/ramp-up gap even if he signs before the draft.
 Vita Vea,DT,TB,16,0.941,1.059,0.176,0.265,0.0,0.059,0.0,0.118,medium,Full-time nose/interior run-stuffer if he stays; trade destination unresolved as of Aug 2026
-DeForest Buckner,DT,IND,12,3.0,1.7,0.0,0.4,0.0,0.0,0.0,0.0,high,"Real 2025 season-ending injury on record -- games_proj discounted, not assumed fully recovered to a normal 17-game year."
+DeForest Buckner,DT,IND,14,3.0,1.7,0.0,0.4,0.0,0.0,0.0,0.0,high,"Real 2025 season-ending injury on record, but the same research confirms he's cleared/fully healthy for 2026 -- games_proj uses the real 'high risk' games count instead of the harsher unrecovered discount, since there's no specific 2026 games-missed signal left, just residual uncertainty until proven in game action."
 Jeffery Simmons,DT,TEN,17,2.6,1.867,1.133,0.733,0.2,0.0,0.0,0.2,low,"Full-time starting 3-tech/interior rusher, paired with John Franklin-Myers in new defensive scheme"
 Dre'Mont Jones,DE,NE,16,1.056,1.333,0.0,0.389,0.0,0.111,0.0,0.056,medium,Signed 3-yr/$39M FA deal with Patriots for 2026; expected interior/edge rotational-to-starting pass rusher
 Kris Jenkins,DT,CIN,16,1.286,1.286,0.357,0.107,0.0,0.0,0.0,0.071,medium,"Third-year DT expected to take a leap, full participant in same scheme for first time; part of DL rotation with Shemar Stewart, Myles Murphy, B.J. Hill"
 Alim McNeill,DT,DET,14,0.5,0.4,0.2,0.1,0.1,0.0,0.0,0.1,high,Starting DT alongside Tyleik Williams; aiming for full 3-down role after incomplete ACL recovery
 Zach Sieler,DT,MIA,17,1.706,1.059,0.706,0.324,0.059,0.059,0.0,0.118,low,"Team captain, full-time starting interior DL/run anchor"
 Grady Jarrett,DT,CHI,16,1.0,1.786,0.25,0.107,0.0,0.0,0.0,0.214,medium,Rotational interior DT / DT3-type role behind Dexter and rookie Shemar Turner; run-stuffing veteran depth
-Justin Madubuike,DT,BAL,12,2.5,1.0,0.0,1.0,0.0,0.0,0.0,0.0,high,"Real 2025 season-ending injury on record -- games_proj discounted, not assumed fully recovered to a normal 17-game year."
+Justin Madubuike,DT,BAL,14,2.5,1.0,0.0,1.0,0.0,0.0,0.0,0.0,high,"Real 2025 season-ending injury on record, but the same research confirms he's cleared/fully healthy for 2026 -- games_proj uses the real 'high risk' games count instead of the harsher unrecovered discount, since there's no specific 2026 games-missed signal left, just residual uncertainty until proven in game action."
 Derrick Brown,DT,CAR,12,1.941,2.353,0.294,0.294,0.059,0.0,0.0,0.412,medium,"Real 2025 season-ending injury on record -- games_proj discounted, not assumed fully recovered to a normal 17-game year."
 Foley Fatukasi,DT,HOU,14,1.25,0.75,0.0,0.375,0.0,0.0,0.0,0.0,high,Depth/rotational run-stuffing NT-DT; not a lock for major snaps
 Javon Hargrave,DT,GB,16,1.125,2.125,0.281,0.062,0.062,0.0,0.0,0.0,medium,"Projected primary nose tackle in new 3-4 scheme reunited with DC Jonathan Gannon; Wyatt at DT, McClellan depth NT"
@@ -26,7 +26,7 @@ Myles Garrett,DE,CLE,17,1.821,1.708,1.941,1.353,0.176,0.0,0.0,0.0,low,"Full-time
 Micah Parsons,DE,GB,12,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,high,"Real 2025 season-ending injury on record -- games_proj discounted, not assumed fully recovered to a normal 17-game year."
 T.J. Watt,DE,PIT,16,1.643,2.286,0.0,0.5,0.214,0.143,0.0,0.571,medium,Expected starting edge rusher again if healthy
 Maxx Crosby,DE,LV,17,3.0,0.0,1.867,0.667,0.067,0.0,0.0,0.0,low,"Full-time starting edge rusher, team focal point on a rebuilding roster"
-Nick Bosa,DE,SF,12,3.0,0.0,0.0,0.667,0.0,0.0,0.0,0.0,high,"Real 2025 season-ending injury on record -- games_proj discounted, not assumed fully recovered to a normal 17-game year."
+Nick Bosa,DE,SF,14,3.0,0.0,0.0,0.667,0.0,0.0,0.0,0.0,high,"Real 2025 season-ending injury on record, but the same research confirms he's cleared/fully healthy for 2026 -- games_proj uses the real 'high risk' games count instead of the harsher unrecovered discount, since there's no specific 2026 games-missed signal left, just residual uncertainty until proven in game action."
 Aidan Hutchinson,DE,DET,17,2.118,1.059,0.0,0.853,0.235,0.059,0.0,0.176,low,"Full-time starting edge rusher, entrenched"
 Trey Hendrickson,DE,CIN,14,1.571,0.714,0.0,0.571,0.0,0.0,0.0,0.0,high,"Expected starter if healthy, but real recent injury history"
 Brian Burns,DE,NYG,17,2.034,1.907,1.294,0.971,0.176,0.059,0.0,0.412,low,"Full-time starting edge rusher, entrenched, career year in 2025 [67 combined 2025 tackles found in research notes; solo/assist split estimated at this position's observed 52/48 average since the source didn't report the two separately -- not a fabricated total, just an estimated split.]"
@@ -39,14 +39,14 @@ Khalil Mack,DE,LAC,16,1.376,1.29,0.0,0.458,0.25,0.0,0.0,0.0,medium,"Starting edg
 Montez Sweat,DE,CHI,17,2.118,1.0,0.765,0.588,0.176,0.0,0.0,0.294,low,"Full-time starting edge rusher, entrenched under new coaching staff"
 Bradley Chubb,DE,Free agent (unsigned),13,1.412,1.353,0.471,0.5,0.118,0.059,0.0,0.0,high,Unsigned as of Aug 2026 -- games_proj discounted for a landing-spot/ramp-up gap even if he signs before the draft.
 Harold Landry,DE,NE,16,1.686,1.581,0.0,0.567,0.067,0.0,0.0,0.0,medium,"Starting edge rusher, signed 3yr/$43.5M deal in 2025 [49 combined 2025 tackles found in research notes; solo/assist split estimated at this position's observed 52/48 average since the source didn't report the two separately -- not a fabricated total, just an estimated split.]"
-Fred Warner,MLB,SF,12,4.667,3.667,0.0,0.0,0.333,0.167,0.0,0.5,medium,"Real 2025 season-ending injury on record -- games_proj discounted, not assumed fully recovered to a normal 17-game year."
+Fred Warner,MLB,SF,14,4.667,3.667,0.0,0.0,0.333,0.167,0.0,0.5,high,"Real 2025 season-ending injury on record, but the same research confirms he's cleared/fully healthy for 2026 -- games_proj uses the real 'high risk' games count instead of the harsher unrecovered discount, since there's no specific 2026 games-missed signal left, just residual uncertainty until proven in game action."
 Roquan Smith,ILB,BAL,17,5.067,3.6,0.0,0.0,0.0,0.0,0.2,0.0,low,"Starter, three-down, team captain"
 Zaire Franklin,ILB,GB,16,3.647,3.706,0.0,0.118,0.059,0.0,0.0,0.294,medium,"Starter at MLB, replacing Quay Walker"
 Bobby Wagner,MLB,Free agent (unsigned),13,4.647,4.882,0.0,0.265,0.0,0.0,0.118,0.235,high,Unsigned as of Aug 2026 -- games_proj discounted for a landing-spot/ramp-up gap even if he signs before the draft.
-Foyesade Oluokun,MLB,JAX,17,4.438,3.973,0.0,0.059,0.118,0.059,0.059,0.0,low,"Starter, three-down, iron man [143 combined 2025 tackles found in research notes; solo/assist split estimated at this position's observed 53/47 average since the source didn't report the two separately -- not a fabricated total, just an estimated split.]"
-Demario Davis,MLB,NYJ,16,4.438,3.973,0.294,0.0,0.118,0.059,0.0,0.118,medium,"Expected starter/leader for Jets defense [143 combined 2025 tackles found in research notes; solo/assist split estimated at this position's observed 53/47 average since the source didn't report the two separately -- not a fabricated total, just an estimated split.]"
-Blake Cashman,ILB,MIN,16,5.845,5.232,0.308,0.154,0.077,0.0,0.0,0.154,medium,"Starter, three-down when healthy [144 combined 2025 tackles found in research notes; solo/assist split estimated at this position's observed 53/47 average since the source didn't report the two separately -- not a fabricated total, just an estimated split.]"
-Ernest Jones IV,ILB,SEA,17,4.432,3.968,0.0,0.033,0.0,0.0,0.333,0.467,low,"Starter, three-down [126 combined 2025 tackles found in research notes; solo/assist split estimated at this position's observed 53/47 average since the source didn't report the two separately -- not a fabricated total, just an estimated split.]"
+Foyesade Oluokun,MLB,JAX,17,4.417,3.995,0.0,0.059,0.118,0.059,0.059,0.0,low,"Starter, three-down, iron man [143 combined 2025 tackles found in research notes; solo/assist split estimated at this position's observed 53/47 average since the source didn't report the two separately -- not a fabricated total, just an estimated split.]"
+Demario Davis,MLB,NYJ,16,4.417,3.995,0.294,0.0,0.118,0.059,0.0,0.118,medium,"Expected starter/leader for Jets defense [143 combined 2025 tackles found in research notes; solo/assist split estimated at this position's observed 53/47 average since the source didn't report the two separately -- not a fabricated total, just an estimated split.]"
+Blake Cashman,ILB,MIN,16,5.816,5.261,0.308,0.154,0.077,0.0,0.0,0.154,medium,"Starter, three-down when healthy [144 combined 2025 tackles found in research notes; solo/assist split estimated at this position's observed 53/47 average since the source didn't report the two separately -- not a fabricated total, just an estimated split.]"
+Ernest Jones IV,ILB,SEA,17,4.411,3.989,0.0,0.033,0.0,0.0,0.333,0.467,low,"Starter, three-down [126 combined 2025 tackles found in research notes; solo/assist split estimated at this position's observed 53/47 average since the source didn't report the two separately -- not a fabricated total, just an estimated split.]"
 Bobby Okereke,ILB,Free agent (unsigned),13,6.059,2.353,0.0,0.059,0.0,0.0,0.118,0.353,high,Unsigned as of Aug 2026 -- games_proj discounted for a landing-spot/ramp-up gap even if he signs before the draft.
 Kaden Elliss,OLB,NO,16,3.471,2.824,0.0,0.206,0.059,0.0,0.059,0.353,medium,"Expected starter/defensive play-caller, replacing Demario Davis"
 Nick Bolton,ILB,KC,17,4.294,4.765,0.0,0.059,0.059,0.0,0.059,0.353,low,"Starter, three-down"
@@ -87,7 +87,7 @@ Payton Wilson,ILB,PIT,17,4.353,3.059,0.0,0.0,0.059,0.0,0.059,0.118,low,"Starter,
 Jack Sanborn,ILB,DAL,14,2.667,3.0,0.167,0.0,0.0,0.0,0.0,0.0,high,Rotational/injury recovery
 Tyrel Dodson,ILB,MIA,17,4.5,3.562,0.0,0.0,0.062,0.062,0.062,0.188,low,"Starter, three-down"
 Matt Milano,OLB,Free agent (unsigned),13,3.0,2.583,0.0,0.292,0.083,0.0,0.0,0.0,high,Unsigned as of Aug 2026 -- games_proj discounted for a landing-spot/ramp-up gap even if he signs before the draft.
-Baron Browning,OLB,ARI,16,1.196,1.071,0.267,0.133,0.0,0.067,0.067,0.067,medium,"Rotational/situational pass rusher [34 combined 2025 tackles found in research notes; solo/assist split estimated at this position's observed 53/47 average since the source didn't report the two separately -- not a fabricated total, just an estimated split.]"
+Baron Browning,OLB,ARI,16,1.19,1.076,0.267,0.133,0.0,0.067,0.067,0.067,medium,"Rotational/situational pass rusher [34 combined 2025 tackles found in research notes; solo/assist split estimated at this position's observed 53/47 average since the source didn't report the two separately -- not a fabricated total, just an estimated split.]"
 Troy Andersen,ILB,ATL,14,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,high,Depth/injury question mark
 Nakobe Dean,ILB,LV,16,3.0,2.5,0.0,0.4,0.2,0.0,0.0,0.1,medium,"Starter, paired with Quay Walker"
 Jeremiah Trotter Jr.,ILB,PHI,16,0.0,0.0,0.0,0.031,0.0,0.0,0.0,0.062,medium,"Rotational, competing for snaps"
@@ -108,10 +108,12 @@ Smael Mondon Jr.,ILB,PHI,14,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,high,Depth/rotationa
 Jihaad Campbell,ILB,PHI,17,3.647,1.059,0.118,0.0,0.059,0.059,0.059,0.176,low,"Entrenched starter, ascending"
 Sonny Styles,LB,WAS,16,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,medium,Day 1 starter expected (rookie)
 Arvell Reese,LB,NYG,16,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,medium,Day 1 starter expected (rookie)
+Quay Walker,ILB,LV,16,4.143,5.0,0.571,0.179,0.0,0.0,0.0,0.357,medium,"Starter, new starting MLB for Raiders"
+Nate Landman,ILB,LAR,17,3.765,4.0,0.0,0.147,0.235,0.0,0.059,0.353,low,"Starter, leading tackler for Rams"
 Kyle Hamilton,S,BAL,17,3.688,2.875,0.438,0.062,0.125,0.0,0.25,0.375,low,Starter - box/hybrid safety
 Antoine Winfield Jr.,S,TB,17,3.118,2.353,0.235,0.059,0.059,0.059,0.118,0.471,low,Starter - box/slot hybrid safety
 Derwin James Jr.,S,LAC,17,3.125,2.75,0.469,0.125,0.062,0.0,0.188,0.438,low,Starter - box/blitzing safety
-Brian Branch,S/CB,DET,12,4.0,2.25,0.0,0.208,0.083,0.0,0.0,0.75,high,"Real 2025 season-ending injury on record -- games_proj discounted, not assumed fully recovered to a normal 17-game year."
+Brian Branch,S/CB,DET,14,4.0,2.25,0.0,0.208,0.083,0.0,0.0,0.75,high,"Real 2025 season-ending injury on record, but the same research confirms he's cleared/fully healthy for 2026 -- games_proj uses the real 'high risk' games count instead of the harsher unrecovered discount, since there's no specific 2026 games-missed signal left, just residual uncertainty until proven in game action."
 Xavier McKinney,S,GB,16,3.375,3.312,0.0,0.062,0.062,0.0,0.125,0.625,medium,Starter - single-high/box hybrid safety
 Budda Baker,S,ARI,17,3.562,3.938,0.0,0.031,0.0,0.062,0.062,0.312,low,Starter - box safety
 Talanoa Hufanga,S,DEN,17,3.941,2.294,0.0,0.176,0.059,0.0,0.0,0.647,low,Starter - box/blitzing safety

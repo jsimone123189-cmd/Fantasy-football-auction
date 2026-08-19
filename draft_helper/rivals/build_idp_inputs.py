@@ -47,6 +47,16 @@ SEASON_ENDING_RE = re.compile(
     r"season-ending|torn (acl|achilles|bicep|meniscus)|neck surgery|IR\b.*(uncertain|recovery)",
     re.IGNORECASE,
 )
+# A real 2025 season-ending injury doesn't mean the same thing for a games_proj
+# discount if the same note also confirms the player is actually cleared for
+# 2026 -- the blanket 12-game discount is for genuine, still-uncertain
+# recovery, not for "this happened last year and he's since been confirmed
+# fully healthy." Checked for real -- see build.py's docstring reasoning
+# repeated here: don't apply a discount the note itself contradicts.
+RECOVERED_RE = re.compile(
+    r"fully (healthy|recovered)|no limitations|full participant|cleared|no setbacks",
+    re.IGNORECASE,
+)
 # Only matches an unambiguous "(NNN combined...)" mention of a real 2025
 # season tackle total -- deliberately narrow so it doesn't accidentally
 # grab an unrelated number (career total, college stat, different season).
@@ -102,6 +112,15 @@ def _derive(row, solo_share: float) -> dict | None:
         games_proj = 13
         risk_tier = "high" if risk_tier == "low" else risk_tier
         role_note = "Unsigned as of Aug 2026 -- games_proj discounted for a landing-spot/ramp-up gap even if he signs before the draft."
+    elif SEASON_ENDING_RE.search(note) and RECOVERED_RE.search(note):
+        # Real injury history, but the same note confirms he's actually
+        # cleared for 2026 -- a lighter, real discount (the "high" risk
+        # games count) instead of the harsher blanket 12, since there's no
+        # specific reason left to expect 2026 games missed, just residual
+        # real uncertainty until he's proven it in real game action.
+        games_proj = RISK_BASE_GAMES["high"]
+        risk_tier = "high" if risk_tier in ("low", "medium") else risk_tier
+        role_note = "Real 2025 season-ending injury on record, but the same research confirms he's cleared/fully healthy for 2026 -- games_proj uses the real 'high risk' games count instead of the harsher unrecovered discount, since there's no specific 2026 games-missed signal left, just residual uncertainty until proven in game action."
     elif SEASON_ENDING_RE.search(note):
         games_proj = 12
         risk_tier = "high" if risk_tier == "low" else risk_tier
