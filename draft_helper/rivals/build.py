@@ -26,7 +26,12 @@ Writes:
     vor_round additionally weight weeks 9-12 (the knockout bracket) more
     heavily via LATE_WEIGHT below, per explicit request to prioritize
     "good enough" weeks 4-8 and "best" weeks 9-12 -- see
-    _rescale_to_scored_weeks() and the vor blend in build().
+    _rescale_to_scored_weeks() and the vor blend in build(). That
+    playoff tilt itself only applies at full strength through a
+    position's real replacement rank plus a grace window -- see
+    effective_late_weight() for why deep bench/streaming-tier players
+    taper back to neutral instead of getting the same treatment as a
+    real, plannable starter.
     market_round/market_overall_pick are real, sourced consensus ADP
     (data/research/market_adp_2026.csv), kept deliberately separate from
     vor_round -- see attach_market_adp()'s docstring for why the two must
@@ -68,6 +73,7 @@ from .value import (
     compute_vor,
     position_vor,
     rank_from_vor,
+    replacement_ranks,
 )
 
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
@@ -178,7 +184,7 @@ def build(
     out = compute_vor(out, value_col="projected_points")
     vor_early = position_vor(out, "points_early")
     vor_late = position_vor(out, "points_late")
-    out["vor"] = (vor_early + LATE_WEIGHT * vor_late).round(1)
+    out["vor"] = (vor_early + effective_late_weight(out) * vor_late).round(1)
     # Real, lead-role RB scarcity correction -- see apply_bell_cow_scarcity's
     # docstring. Applied last, after the phase blend, since it's a
     # season-long workload signal, not a per-phase one.
@@ -252,6 +258,48 @@ FULL_SEASON_AVAILABLE_WEEKS = 16.0  # a healthy player's real season, net of the
 # deliberate tilt on `playoff_weighted_points` (used only for VOR/rank),
 # never on `projected_points` (the honest, unweighted real projection).
 LATE_WEIGHT = 1.5
+
+# Below this many rounds deep at a position, LATE_WEIGHT tapers to neutral
+# (1.0) instead of the full playoff tilt -- see effective_late_weight()'s
+# docstring for the real reasoning (Aug 2026, prompted directly by a user
+# catch during a live mock: late-round IDP/bench value looked wrong
+# relative to a league-customized outside tool, and the real reason was
+# this tilt being applied somewhere it doesn't belong).
+LATE_WEIGHT_TAPER_ROUNDS = 3
+
+
+def effective_late_weight(out: pd.DataFrame, num_teams: int = 16) -> pd.Series:
+    """A player drafted as a plausible active starter is worth building
+    around the playoff schedule for -- that's the whole reason LATE_WEIGHT
+    exists. A player drafted in the double-digit rounds as bench depth,
+    a handcuff, or streaming insurance is not: nobody drafts a round-15
+    IDP piece with a specific plan to start him in the championship week,
+    and whoever *is* starting that roster spot by the playoffs is far more
+    likely to have arrived via trade or waiver than to be this exact
+    draft-day pick. Applying the same playoff tilt to both groups rewards
+    a deep bench player for a good weeks 9-12 schedule that's largely
+    theoretical, and can silently drag a real, useful bench piece down
+    for a bad one -- neither has much to do with why you'd actually
+    draft that player.
+
+    Real dividing line, not an arbitrary round cutoff: a position's own
+    replacement rank (the same line `position_vor` already draws between
+    "a real rosterable starter/flex" and "waiver-wire tier"). Full
+    LATE_WEIGHT applies through replacement rank plus a
+    `LATE_WEIGHT_TAPER_ROUNDS`-round grace window (bench depth just past
+    the line is still a real injury-replacement/flex candidate, not pure
+    handcuff speculation); beyond that, it tapers linearly to 1.0
+    (neutral -- early and late weeks weighted equally) over the same
+    number of rounds, rather than a hard cliff at one exact rank that
+    would make two adjacent players swing wildly in relative value.
+    """
+    ranks = replacement_ranks(num_teams)
+    pos_rank = out["pos_rank"]
+    replacement = out["position"].map(ranks).fillna(pos_rank.max())
+    grace = LATE_WEIGHT_TAPER_ROUNDS * num_teams
+    taper_span = grace if grace > 0 else 1
+    rounds_past_grace = ((pos_rank - replacement - grace) / taper_span).clip(lower=0, upper=1)
+    return LATE_WEIGHT - rounds_past_grace * (LATE_WEIGHT - 1.0)
 
 
 def _effective_weeks(bye_week, week_range) -> int:
