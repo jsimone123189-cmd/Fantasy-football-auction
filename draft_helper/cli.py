@@ -10,6 +10,7 @@ from dotenv import load_dotenv
 from . import fetch_history, storage
 from .analysis.cheat_sheet import generate_cheat_sheet, load_projections
 from .analysis.draft_grade import grade_draft
+from .analysis.free_agents import compute_free_agents
 from .analysis.inflation import build_position_rank_curve
 from .analysis.roster_needs import parse_slots
 from .analysis.tendencies import build_tendency_profiles, format_profile_text
@@ -249,6 +250,31 @@ def grade(log_path, projections, starting_slots, title, eyebrow, out_path):
     with open(out_path, "w") as f:
         f.write(html_out)
     print(f"\nWrote {out_path} ({len(html_out)} bytes)")
+
+
+@cli.command("free-agents")
+@click.option("--draft", "draft_path", required=True, help="Draft/roster log CSV with a player_name column "
+              "(e.g. data/raw/2026_draft.csv) -- everyone in it is treated as rostered.")
+@click.option("--projections", required=True, help="This year's full player pool CSV with a $ column "
+              "(cheat_sheet_2026.csv's target_price, or a projections file with baseline_value).")
+@click.option("--position", default=None, help="Optional position filter, e.g. RB.")
+@click.option("--top", default=40, type=int, help="How many rows to print/save.")
+@click.option("--out", "out_path", default=None, help="Optional path to save the full list as CSV.")
+def free_agents_cmd(draft_path, projections, position, top, out_path):
+    """List this year's best remaining free agents: full player pool minus everyone already
+    rostered (name-normalized so Jr./Sr./II/III suffix mismatches don't produce false positives).
+    Re-run this after any week's adds/drops are logged to keep the board current.
+    """
+    draft_df = pd.read_csv(draft_path)
+    proj_df = pd.read_csv(projections)
+    fa = compute_free_agents(draft_df, proj_df)
+    if position:
+        fa = fa[fa["position"].str.upper() == position.upper()]
+    value_col = "target_price" if "target_price" in fa.columns else "baseline_value"
+    print(fa[["player_name", "position", "projected_points", value_col]].head(top).to_string(index=False))
+    if out_path:
+        fa.to_csv(out_path, index=False)
+        print(f"\nWrote {len(fa)} free agents to {out_path}")
 
 
 if __name__ == "__main__":

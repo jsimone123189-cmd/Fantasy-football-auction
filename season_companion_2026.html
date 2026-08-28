@@ -113,6 +113,28 @@ table.dollars td.num { font-family: var(--font-mono); text-align: right; }
 .moves-empty b { color: var(--ink-dim); }
 
 footer.foot { margin-top: 60px; padding-top: 20px; border-top: 1px solid var(--line); font-size: 12px; color: var(--ink-faint); }
+
+.rank-controls { display: flex; flex-wrap: wrap; gap: 8px; align-items: center; margin: 14px 0 8px; }
+.rank-search {
+  background: var(--bg-elevated); border: 1px solid var(--line-strong); color: var(--ink);
+  border-radius: 8px; padding: 7px 10px; font-size: 13px; font-family: var(--font-body);
+  flex: 1 1 180px; min-width: 140px;
+}
+.rank-search:focus { outline: 1px solid var(--accent); }
+.pos-filter-chip {
+  background: var(--bg-elevated); border: 1px solid var(--line-strong); color: var(--ink-dim);
+  border-radius: 20px; padding: 6px 12px; font-size: 12px; font-weight: 700; cursor: pointer;
+  font-family: var(--font-body);
+}
+.pos-filter-chip.active { background: var(--accent); color: var(--accent-ink); border-color: var(--accent); }
+.rank-table-wrap { max-height: 560px; overflow-y: auto; border: 1px solid var(--line-strong); border-radius: 10px; }
+.rank-table-wrap table.dollars { margin: 0; }
+.rank-table-wrap thead th { position: sticky; top: 0; background: var(--bg-elevated); }
+.rank-table-wrap table.dollars th.sortable { cursor: pointer; user-select: none; white-space: nowrap; }
+.rank-table-wrap table.dollars th.sortable:hover { color: var(--ink); }
+.rank-table-wrap table.dollars th.sortable .arrow { display: inline-block; width: 10px; opacity: 0.5; }
+.rank-table-wrap table.dollars th.sortable.active .arrow { opacity: 1; color: var(--accent); }
+.rank-count { font-size: 12px; color: var(--ink-faint); margin: 0 0 6px; }
 </style>
 
 <div class="wrap">
@@ -539,6 +561,143 @@ footer.foot { margin-top: 60px; padding-top: 20px; border-top: 1px solid var(--l
         </tbody>
       </table>
     </div>
+    </div>
+  </section>
+
+  <section>
+    <h2 class="section-title">Free agent board</h2>
+    <p class="section-dek">Full 269-player pool minus everyone already rostered across all 12 teams
+      (name-matched so a Jr./Sr./II/III suffix mismatch never produces a false "available" listing).
+      Sortable, filterable, searchable. Regenerated fresh from <span class="mono">draft-helper free-agents</span>
+      &mdash; rerun after any week's adds/drops to keep it current.</p>
+    <div class="callout">
+      <b>Top target right now: Tyrone Tracy Jr. (RB, $14 value, 172 projected points)</b> &mdash; a real
+      Giants committee back nobody in the league drafted. That's a bigger point total than half the RBs that
+      actually got bid on tonight. Everyone else worth a claim this week is well below $10 in fair value &mdash;
+      see the FAAB guide below for how much of your $100 budget that's actually worth risking.
+    </div>
+    <div class="rank-controls">
+      <input id="fa-search" class="rank-search" type="text" placeholder="Search a player...">
+      <button class="pos-filter-chip active" data-pos="ALL">ALL</button>
+      <button class="pos-filter-chip" data-pos="QB">QB</button>
+      <button class="pos-filter-chip" data-pos="RB">RB</button>
+      <button class="pos-filter-chip" data-pos="WR">WR</button>
+      <button class="pos-filter-chip" data-pos="TE">TE</button>
+      <button class="pos-filter-chip" data-pos="DEF">DEF</button>
+    </div>
+    <p id="fa-count" class="rank-count">111 of 111 free agents</p>
+    <div class="rank-table-wrap">
+      <table class="dollars" id="fa-table">
+        <thead>
+          <tr>
+            <th class="sortable active" data-key="rank">#<span class="arrow">&#9650;</span></th>
+            <th class="sortable" data-key="name">Player<span class="arrow"></span></th>
+            <th class="sortable" data-key="pos">Pos<span class="arrow"></span></th>
+            <th class="num sortable" data-key="pts">Proj. Pts<span class="arrow"></span></th>
+            <th class="num sortable" data-key="price">Fair Value<span class="arrow"></span></th>
+          </tr>
+        </thead>
+        <tbody id="fa-tbody"></tbody>
+      </table>
+    </div>
+    <script type="application/json" id="fa-data">[{"rank":1,"name":"Tyrone Tracy Jr.","pos":"RB","price":13.9,"pts":171.8},{"rank":2,"name":"Najee Harris","pos":"RB","price":5.1,"pts":89.2},{"rank":3,"name":"Jalen Nailor","pos":"WR","price":4.7,"pts":111.0},{"rank":4,"name":"Jordyn Tyson","pos":"WR","price":4.4,"pts":103.1},{"rank":5,"name":"Isiah Pacheco","pos":"RB","price":3.9,"pts":72.7},{"rank":6,"name":"Travis Hunter","pos":"WR","price":3.3,"pts":96.1},{"rank":7,"name":"Khalil Shakir","pos":"WR","price":3.3,"pts":95.9},{"rank":8,"name":"T.J. Hockenson","pos":"TE","price":3.1,"pts":96.5},{"rank":9,"name":"Tyreek Hill","pos":"WR","price":2.5,"pts":87.6},{"rank":10,"name":"Ravens","pos":"DEF","price":2.5,"pts":223.0},{"rank":11,"name":"Cooper Kupp","pos":"WR","price":2.1,"pts":86.2},{"rank":12,"name":"Bills","pos":"DEF","price":2.1,"pts":214.5},{"rank":13,"name":"Devin Singletary","pos":"RB","price":2.1,"pts":50.9},{"rank":14,"name":"David Njoku","pos":"TE","price":2.0,"pts":78.0},{"rank":15,"name":"Chiefs","pos":"DEF","price":1.8,"pts":214.5},{"rank":16,"name":"Calvin Ridley","pos":"WR","price":1.8,"pts":83.9},{"rank":17,"name":"Evan Engram","pos":"TE","price":1.5,"pts":73.7},{"rank":18,"name":"Austin Ekeler","pos":"RB","price":1.4,"pts":42.6},{"rank":19,"name":"Hunter Henry","pos":"TE","price":1.3,"pts":65.5},{"rank":20,"name":"Jauan Jennings","pos":"WR","price":1.3,"pts":79.4},{"rank":21,"name":"Bengals","pos":"DEF","price":1.1,"pts":214.5},{"rank":22,"name":"Rashod Bateman","pos":"WR","price":1.1,"pts":77.4},{"rank":23,"name":"Dolphins","pos":"DEF","price":1.0,"pts":105.9},{"rank":24,"name":"Buccaneers","pos":"DEF","price":1.0,"pts":135.3},{"rank":25,"name":"Falcons","pos":"DEF","price":1.0,"pts":120.3},{"rank":26,"name":"Titans","pos":"DEF","price":1.0,"pts":120.3},{"rank":27,"name":"Saints","pos":"DEF","price":1.0,"pts":135.3},{"rank":28,"name":"Giants","pos":"DEF","price":1.0,"pts":135.3},{"rank":29,"name":"Packers","pos":"DEF","price":1.0,"pts":214.5},{"rank":30,"name":"Lions","pos":"DEF","price":1.0,"pts":214.5},{"rank":31,"name":"49ers","pos":"DEF","price":1.0,"pts":154.9},{"rank":32,"name":"Cowboys","pos":"DEF","price":1.0,"pts":154.9},{"rank":33,"name":"Commanders","pos":"DEF","price":1.0,"pts":135.3},{"rank":34,"name":"Raiders","pos":"DEF","price":1.0,"pts":105.9},{"rank":35,"name":"Cardinals","pos":"DEF","price":1.0,"pts":105.9},{"rank":36,"name":"Jets","pos":"DEF","price":1.0,"pts":105.9},{"rank":37,"name":"Christian Kirk","pos":"WR","price":1.0,"pts":61.5},{"rank":38,"name":"Marvin Mims Jr.","pos":"WR","price":1.0,"pts":72.1},{"rank":39,"name":"Colts","pos":"DEF","price":1.0,"pts":135.3},{"rank":40,"name":"Panthers","pos":"DEF","price":1.0,"pts":135.3},{"rank":41,"name":"Browns","pos":"DEF","price":1.0,"pts":120.3},{"rank":42,"name":"Ollie Gordon II","pos":"RB","price":1.0,"pts":17.1},{"rank":43,"name":"Trey Benson","pos":"RB","price":1.0,"pts":23.3},{"rank":44,"name":"Gus Edwards","pos":"RB","price":1.0,"pts":27.6},{"rank":45,"name":"James Conner","pos":"RB","price":1.0,"pts":28.0},{"rank":46,"name":"Justice Hill","pos":"RB","price":1.0,"pts":31.4},{"rank":47,"name":"Kaleb Johnson","pos":"RB","price":1.0,"pts":29.3},{"rank":48,"name":"Jayden Higgins","pos":"WR","price":1.0,"pts":40.6},{"rank":49,"name":"Devin Neal","pos":"RB","price":1.0,"pts":11.0},{"rank":50,"name":"Miles Sanders","pos":"RB","price":1.0,"pts":19.5},{"rank":51,"name":"Kimani Vidal","pos":"RB","price":1.0,"pts":19.4},{"rank":52,"name":"Ty Chandler","pos":"RB","price":1.0,"pts":21.7},{"rank":53,"name":"Roschon Johnson","pos":"RB","price":1.0,"pts":21.5},{"rank":54,"name":"Braelon Allen","pos":"RB","price":1.0,"pts":27.4},{"rank":55,"name":"Kaelon Black","pos":"RB","price":1.0,"pts":27.5},{"rank":56,"name":"Darnell Mooney","pos":"WR","price":1.0,"pts":50.8},{"rank":57,"name":"Adonai Mitchell","pos":"WR","price":1.0,"pts":50.5},{"rank":58,"name":"Marquise Brown","pos":"WR","price":1.0,"pts":55.0},{"rank":59,"name":"Ja'Kobi Lane","pos":"WR","price":1.0,"pts":51.2},{"rank":60,"name":"Cade Otton","pos":"TE","price":1.0,"pts":51.9},{"rank":61,"name":"Kenneth Gainwell","pos":"RB","price":1.0,"pts":33.9},{"rank":62,"name":"Dylan Sampson","pos":"RB","price":1.0,"pts":36.3},{"rank":63,"name":"Isaac Guerendo","pos":"RB","price":1.0,"pts":34.2},{"rank":64,"name":"Jaylen Wright","pos":"RB","price":1.0,"pts":36.3},{"rank":65,"name":"Jaydon Blue","pos":"RB","price":1.0,"pts":36.5},{"rank":66,"name":"Jerome Ford","pos":"RB","price":1.0,"pts":39.3},{"rank":67,"name":"Zamir White","pos":"RB","price":1.0,"pts":37.0},{"rank":68,"name":"Keon Coleman","pos":"WR","price":1.0,"pts":39.3},{"rank":69,"name":"Jack Bech","pos":"WR","price":1.0,"pts":38.9},{"rank":70,"name":"Elic Ayomanor","pos":"WR","price":1.0,"pts":37.7},{"rank":71,"name":"Xavier Legette","pos":"WR","price":1.0,"pts":36.9},{"rank":72,"name":"Pat Freiermuth","pos":"TE","price":1.0,"pts":51.3},{"rank":73,"name":"Elijah Arroyo","pos":"TE","price":1.0,"pts":11.4},{"rank":74,"name":"Terrance Ferguson","pos":"TE","price":1.0,"pts":12.1},{"rank":75,"name":"Mason Taylor","pos":"TE","price":1.0,"pts":17.8},{"rank":76,"name":"Brenton Strange","pos":"TE","price":1.0,"pts":17.9},{"rank":77,"name":"Jonnu Smith","pos":"TE","price":1.0,"pts":19.0},{"rank":78,"name":"Luke Musgrave","pos":"TE","price":1.0,"pts":19.9},{"rank":79,"name":"Noah Fant","pos":"TE","price":1.0,"pts":25.7},{"rank":80,"name":"Zach Ertz","pos":"TE","price":1.0,"pts":25.7},{"rank":81,"name":"Chig Okonkwo","pos":"TE","price":1.0,"pts":47.0},{"rank":82,"name":"Ja'Tavion Sanders","pos":"TE","price":1.0,"pts":26.0},{"rank":83,"name":"Cole Kmet","pos":"TE","price":1.0,"pts":42.3},{"rank":84,"name":"Daniel Jones","pos":"QB","price":1.0,"pts":161.5},{"rank":85,"name":"Justin Fields","pos":"QB","price":1.0,"pts":21.2},{"rank":86,"name":"Gunnar Helm","pos":"TE","price":1.0,"pts":10.9},{"rank":87,"name":"Anthony Richardson Sr.","pos":"QB","price":1.0,"pts":26.8},{"rank":88,"name":"Russell Wilson","pos":"QB","price":1.0,"pts":20.5},{"rank":89,"name":"Fernando Mendoza","pos":"QB","price":1.0,"pts":14.9},{"rank":90,"name":"Aaron Rodgers","pos":"QB","price":1.0,"pts":116.7},{"rank":91,"name":"Kirk Cousins","pos":"QB","price":1.0,"pts":123.9},{"rank":92,"name":"Cam Ward","pos":"QB","price":1.0,"pts":129.4},{"rank":93,"name":"Tua Tagovailoa","pos":"QB","price":1.0,"pts":108.5},{"rank":94,"name":"J.J. McCarthy","pos":"QB","price":1.0,"pts":68.1},{"rank":95,"name":"Bryce Young","pos":"QB","price":1.0,"pts":145.6},{"rank":96,"name":"Geno Smith","pos":"QB","price":1.0,"pts":143.1},{"rank":97,"name":"Michael Penix Jr.","pos":"QB","price":1.0,"pts":46.0},{"rank":98,"name":"Jacoby Brissett","pos":"QB","price":1.0,"pts":100.3},{"rank":99,"name":"Deshaun Watson","pos":"QB","price":1.0,"pts":94.9},{"rank":100,"name":"Dontayvion Wicks","pos":"WR","price":1.0,"pts":30.7},{"rank":101,"name":"Kyle Williams","pos":"WR","price":1.0,"pts":29.3},{"rank":102,"name":"Tre Harris","pos":"WR","price":1.0,"pts":29.1},{"rank":103,"name":"Isaac TeSlaa","pos":"WR","price":1.0,"pts":23.2},{"rank":104,"name":"Diontae Johnson","pos":"WR","price":1.0,"pts":19.6},{"rank":105,"name":"Tank Dell","pos":"WR","price":1.0,"pts":18.8},{"rank":106,"name":"Josh Reynolds","pos":"WR","price":1.0,"pts":18.7},{"rank":107,"name":"Demario Douglas","pos":"WR","price":1.0,"pts":17.9},{"rank":108,"name":"Curtis Samuel","pos":"WR","price":1.0,"pts":12.5},{"rank":109,"name":"Jalin Hyatt","pos":"WR","price":1.0,"pts":12.1},{"rank":110,"name":"Skyy Moore","pos":"WR","price":1.0,"pts":11.4},{"rank":111,"name":"Ricky Pearsall","pos":"WR","price":1.0,"pts":0.0}]</script>
+    <script>(function () {
+  var data = JSON.parse(document.getElementById('fa-data').textContent);
+  var tbody = document.getElementById('fa-tbody');
+  var countEl = document.getElementById('fa-count');
+  var searchEl = document.getElementById('fa-search');
+  var chips = document.querySelectorAll('#fa-table').length ? document.querySelectorAll('.pos-filter-chip') : [];
+  var headers = document.querySelectorAll('#fa-table th.sortable');
+  var state = { sortKey: 'rank', sortDir: 1, pos: 'ALL', q: '' };
+
+  function apply() {
+    var rows = data.filter(function (r) {
+      if (state.pos !== 'ALL' && r.pos !== state.pos) return false;
+      if (state.q && r.name.toLowerCase().indexOf(state.q) === -1) return false;
+      return true;
+    });
+    rows.sort(function (a, b) {
+      var av = a[state.sortKey], bv = b[state.sortKey];
+      if (typeof av === 'string') { av = av.toLowerCase(); bv = bv.toLowerCase(); }
+      if (av < bv) return -1 * state.sortDir;
+      if (av > bv) return 1 * state.sortDir;
+      return 0;
+    });
+    tbody.innerHTML = rows.map(function (r) {
+      return '<tr><td class="num mono">' + r.rank + '</td><td>' + r.name +
+        '<span class="pos-tag2">' + r.pos + '</span></td><td class="num mono">' +
+        Math.round(r.pts) + '</td><td class="num mono px">$' +
+        r.price.toFixed(1) + '</td></tr>';
+    }).join('');
+    countEl.textContent = rows.length + ' of ' + data.length + ' free agents';
+  }
+
+  headers.forEach(function (h) {
+    h.addEventListener('click', function () {
+      var key = h.getAttribute('data-key');
+      if (state.sortKey === key) { state.sortDir *= -1; } else { state.sortKey = key; state.sortDir = 1; }
+      headers.forEach(function (x) { x.classList.remove('active'); x.querySelector('.arrow').textContent = ''; });
+      h.classList.add('active');
+      h.querySelector('.arrow').textContent = state.sortDir === 1 ? '\u25B2' : '\u25BC';
+      apply();
+    });
+  });
+
+  chips.forEach(function (c) {
+    c.addEventListener('click', function () {
+      chips.forEach(function (x) { x.classList.remove('active'); });
+      c.classList.add('active');
+      state.pos = c.getAttribute('data-pos');
+      apply();
+    });
+  });
+
+  searchEl.addEventListener('input', function () {
+    state.q = searchEl.value.trim().toLowerCase();
+    apply();
+  });
+
+  apply();
+})();</script>
+  </section>
+
+  <section>
+    <h2 class="section-title">Weekly lineup recommendations</h2>
+    <p class="section-dek">Not live yet &mdash; this needs real weekly inputs I don't have access to
+      (injury designations, opponent matchups, actual snap counts as the season develops). Here's how it'll work
+      once games start:</p>
+    <div class="callout">
+      Each week, send your current injury report / questionable-doubtful-out designations for your roster (a
+      screenshot of the Yahoo lineup page works great, same as everything else this season). I'll compare your
+      bench against your starters using the projection model already built for this league, factor in the
+      matchup context you give me, and recommend any starts/sits worth changing &mdash; plus flag anything on
+      your bench that outprojects a struggling starter.
+    </div>
+  </section>
+
+  <section>
+    <h2 class="section-title">Trade analyzer</h2>
+    <p class="section-dek">Ready whenever you want to run a real trade through it. Describe the players on each
+      side (your team or any two teams in the league) and I'll grade it using this same league-specific
+      projection/value model: who gains more projected points, who gains more surplus value, and whether it
+      fixes a real roster need (like JP'Marrgan Chase's and Bye Week's missing DEF).</p>
+    <div class="callout">
+      No trades proposed yet. Bring me one anytime &mdash; "would X-for-Y make sense" or "what should I offer
+      [team] for [player]" both work.
+    </div>
+  </section>
+
+  <section>
+    <h2 class="section-title">FAAB bid guide</h2>
+    <p class="section-dek">Waiting on your league's real bid history to calibrate this properly &mdash; the same
+      "price against your league's own real behavior, not a generic formula" approach used for the auction
+      curve all draft season.</p>
+    <div class="callout">
+      <b>What to send:</b> past FAAB bids (winning $ amount out of the $100 budget, the player, and roughly what
+      tier/role he was at the time) for as many past waiver claims as you can pull together &mdash; a screenshot
+      of Yahoo's transaction history works. Once I have that, I'll build the same kind of real price curve used
+      for the auction (bid $ as a share of the $100 budget vs. the player's real value/opportunity) so
+      recommended bids reflect how <i>this</i> room actually bids, not a league-average guess.
     </div>
   </section>
 
