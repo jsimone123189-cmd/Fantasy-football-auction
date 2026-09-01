@@ -97,6 +97,10 @@ table.dollars td.num { font-family: var(--font-mono); text-align: right; }
   font-size: 9px; font-weight: 800; color: var(--accent-ink); background: var(--accent);
   border-radius: 4px; padding: 1px 4px; margin-left: 5px;
 }
+.status-badge {
+  font-size: 9px; font-weight: 800; color: #fff; background: var(--danger);
+  border-radius: 4px; padding: 1px 4px; margin-left: 5px;
+}
 .power-table-wrap { overflow-x: auto; }
 
 .roster-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 14px; }
@@ -194,12 +198,12 @@ footer.foot { margin-top: 60px; padding-top: 20px; border-top: 1px solid var(--l
         <div><span class="v mono">$199</span><span class="l">spent</span></div>
         <div><span class="v mono pos">+$9</span><span class="l">value surplus</span></div>
       </div>
-      <p class="narrative">No history to compare Uncle Lou against yet, but the tape speaks for itself: Bijan at $70 anchors the league's best pure point total (1672) alongside Achane ($42) and Jacobs ($24, the single best value pick in the whole draft at +$26). Three legitimate RB1s on one roster is about as clean a start as a new owner could ask for. Worth watching whether this is going to be a stars-and-scrubs identity going forward, or a one-time land grab at a stacked position.</p>
+      <p class="narrative">No history to compare Uncle Lou against yet, but the tape speaks for itself: Bijan at $70 anchors the league's best pure point total (1672) alongside Achane ($42) and Jacobs ($24, the single best value pick in the whole draft at +$26 -- at the time). Three legitimate RB1s on one roster was about as clean a start as a new owner could ask for. <b class="neg">Update (Sept 2026): Jacobs was placed on the NFL Commissioner Exempt List Aug 30 (domestic-abuse charge) -- he cannot practice or play, no defined end date. The $24 bargain is now a real, immediate hole, not a strength.</b></p>
       <div class="value-row">
         <span class="best">Best value: Josh Jacobs <b class="pos mono">+$26</b></span>
         <span class="worst">Worst value: Bijan Robinson <b class="neg mono">$-14</b></span>
       </div>
-      <div class="needs-line">Starting lineup full</div>
+      <div class="needs-line"><b class="neg">Josh Jacobs on Commissioner Exempt List (out indefinitely) -- needs an RB replacement off waivers now</b></div>
     </div>
 
     <div class="grade-card">
@@ -557,7 +561,7 @@ footer.foot { margin-top: 60px; padding-top: 20px; border-top: 1px solid var(--l
       </div>
       <table class="dollars roster-table">
         <tbody>
-<tr><td class="num mono">2</td><td>Bijan Robinson<span class="pos-tag2">RB</span></td><td class="num mono px">$70</td></tr><tr><td class="num mono">18</td><td>Eagles<span class="pos-tag2">DEF</span></td><td class="num mono px">$3</td></tr><tr><td class="num mono">19</td><td>Josh Jacobs<span class="pos-tag2">RB</span></td><td class="num mono px">$24</td></tr><tr><td class="num mono">20</td><td>De&#x27;Von Achane<span class="pos-tag2">RB</span></td><td class="num mono px">$42</td></tr><tr><td class="num mono">52</td><td>Dallas Goedert<span class="pos-tag2">TE</span></td><td class="num mono px">$6</td></tr><tr><td class="num mono">54</td><td>DJ Moore<span class="pos-tag2">WR</span></td><td class="num mono px">$14</td></tr><tr><td class="num mono">61</td><td>Emeka Egbuka<span class="pos-tag2">WR</span></td><td class="num mono px">$21</td></tr><tr><td class="num mono">92</td><td>Chris Godwin Jr.<span class="pos-tag2">WR</span></td><td class="num mono px">$7</td></tr><tr><td class="num mono">98</td><td>Bo Nix<span class="pos-tag2">QB</span></td><td class="num mono px">$6</td></tr><tr><td class="num mono">131</td><td>Tyler Shough<span class="pos-tag2">QB</span></td><td class="num mono px">$1</td></tr><tr><td class="num mono">140</td><td>Xavier Worthy<span class="pos-tag2">WR</span></td><td class="num mono px">$1</td></tr><tr><td class="num mono">149</td><td>Sam Darnold<span class="pos-tag2">QB</span></td><td class="num mono px">$1</td></tr><tr><td class="num mono">156</td><td>Jake Ferguson<span class="pos-tag2">TE</span></td><td class="num mono px">$1</td></tr><tr><td class="num mono">157</td><td>Tank Bigsby<span class="pos-tag2">RB</span></td><td class="num mono px">$2</td></tr>
+<tr><td class="num mono">2</td><td>Bijan Robinson<span class="pos-tag2">RB</span></td><td class="num mono px">$70</td></tr><tr><td class="num mono">18</td><td>Eagles<span class="pos-tag2">DEF</span></td><td class="num mono px">$3</td></tr><tr><td class="num mono">19</td><td>Josh Jacobs<span class="status-badge">EXEMPT</span><span class="pos-tag2">RB</span></td><td class="num mono px">$24</td></tr><tr><td class="num mono">20</td><td>De&#x27;Von Achane<span class="pos-tag2">RB</span></td><td class="num mono px">$42</td></tr><tr><td class="num mono">52</td><td>Dallas Goedert<span class="pos-tag2">TE</span></td><td class="num mono px">$6</td></tr><tr><td class="num mono">54</td><td>DJ Moore<span class="pos-tag2">WR</span></td><td class="num mono px">$14</td></tr><tr><td class="num mono">61</td><td>Emeka Egbuka<span class="pos-tag2">WR</span></td><td class="num mono px">$21</td></tr><tr><td class="num mono">92</td><td>Chris Godwin Jr.<span class="pos-tag2">WR</span></td><td class="num mono px">$7</td></tr><tr><td class="num mono">98</td><td>Bo Nix<span class="pos-tag2">QB</span></td><td class="num mono px">$6</td></tr><tr><td class="num mono">131</td><td>Tyler Shough<span class="pos-tag2">QB</span></td><td class="num mono px">$1</td></tr><tr><td class="num mono">140</td><td>Xavier Worthy<span class="pos-tag2">WR</span></td><td class="num mono px">$1</td></tr><tr><td class="num mono">149</td><td>Sam Darnold<span class="pos-tag2">QB</span></td><td class="num mono px">$1</td></tr><tr><td class="num mono">156</td><td>Jake Ferguson<span class="pos-tag2">TE</span></td><td class="num mono px">$1</td></tr><tr><td class="num mono">157</td><td>Tank Bigsby<span class="pos-tag2">RB</span></td><td class="num mono px">$2</td></tr>
         </tbody>
       </table>
     </div>
