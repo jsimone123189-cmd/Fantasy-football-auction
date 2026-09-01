@@ -1,0 +1,723 @@
+<title>Top Teamz &middot; 2026 Season Companion</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+:root {
+  --bg: #12151b; --bg-elevated: #1a1f28; --bg-card: #1f2530;
+  --ink: #eee9dd; --ink-dim: #9aa0ab; --ink-faint: #6b7180;
+  --accent: #d9a441; --accent-ink: #12151b;
+  --good: #5fa98c; --good-bg: rgba(95, 169, 140, 0.14);
+  --warn: #e0982f; --warn-bg: rgba(224, 152, 47, 0.14);
+  --danger: #c1553d; --danger-bg: rgba(193, 85, 61, 0.16);
+  --line: rgba(238, 233, 221, 0.12); --line-strong: rgba(238, 233, 221, 0.22);
+  --font-body: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  --font-mono: ui-monospace, "SF Mono", "Cascadia Code", Menlo, Consolas, monospace;
+}
+:root[data-theme="light"] {
+  --bg: #f2efe4; --bg-elevated: #ffffff; --bg-card: #fbfaf5;
+  --ink: #1c1f26; --ink-dim: #5b5f6b; --ink-faint: #878c98;
+  --accent: #b9812a; --accent-ink: #ffffff;
+  --good: #2f7d63; --good-bg: rgba(47, 125, 99, 0.10);
+  --warn: #a66a1a; --warn-bg: rgba(166, 106, 26, 0.10);
+  --danger: #a83f2a; --danger-bg: rgba(168, 63, 42, 0.10);
+  --line: rgba(28, 31, 38, 0.10); --line-strong: rgba(28, 31, 38, 0.20);
+}
+@media (prefers-color-scheme: light) {
+  :root:not([data-theme="dark"]) {
+    --bg: #f2efe4; --bg-elevated: #ffffff; --bg-card: #fbfaf5;
+    --ink: #1c1f26; --ink-dim: #5b5f6b; --ink-faint: #878c98;
+    --accent: #b9812a; --accent-ink: #ffffff;
+    --good: #2f7d63; --good-bg: rgba(47, 125, 99, 0.10);
+    --warn: #a66a1a; --warn-bg: rgba(166, 106, 26, 0.10);
+    --danger: #a83f2a; --danger-bg: rgba(168, 63, 42, 0.10);
+    --line: rgba(28, 31, 38, 0.10); --line-strong: rgba(28, 31, 38, 0.20);
+  }
+}
+* { box-sizing: border-box; }
+html, body { margin: 0; padding: 0; }
+body { background: var(--bg); color: var(--ink); font-family: var(--font-body); line-height: 1.55; }
+.mono { font-family: var(--font-mono); font-variant-numeric: tabular-nums; }
+h1, h2, h3 { text-wrap: balance; margin: 0; }
+a { color: var(--accent); }
+.wrap { max-width: 1080px; margin: 0 auto; padding: 48px 20px 80px; }
+.eyebrow { font-size: 11px; letter-spacing: 0.16em; text-transform: uppercase; color: var(--accent); font-weight: 800; margin-bottom: 10px; }
+h1.title { font-size: clamp(28px, 6vw, 40px); font-weight: 800; letter-spacing: -0.02em; margin-bottom: 10px; }
+p.dek { font-size: 16px; color: var(--ink-dim); max-width: 68ch; }
+.stat-grid {
+  display: grid; grid-template-columns: repeat(auto-fit, minmax(130px, 1fr));
+  gap: 1px; background: var(--line-strong); border: 1px solid var(--line-strong);
+  border-radius: 12px; overflow: hidden; margin: 32px 0;
+}
+.stat-tile { background: var(--bg-elevated); padding: 16px 14px; }
+.stat-tile .num { font-family: var(--font-mono); font-size: 22px; font-weight: 800; color: var(--accent); }
+.stat-tile .lbl { font-size: 11px; color: var(--ink-faint); margin-top: 4px; line-height: 1.3; }
+section { margin: 48px 0; }
+h2.section-title {
+  font-size: 12px; text-transform: uppercase; letter-spacing: 0.1em; font-weight: 800;
+  color: var(--ink-faint); border-bottom: 1px solid var(--line-strong); padding-bottom: 10px; margin-bottom: 8px;
+}
+p.section-dek { font-size: 14px; color: var(--ink-dim); max-width: 72ch; margin: 0 0 20px; }
+.callout {
+  background: var(--bg-elevated); border: 1px solid var(--line-strong); border-left: 3px solid var(--accent);
+  border-radius: 8px; padding: 14px 16px; font-size: 13px; color: var(--ink-dim); margin-bottom: 24px;
+}
+.callout b { color: var(--ink); }
+
+.grade-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 14px; }
+.grade-card { background: var(--bg-elevated); border: 1px solid var(--line-strong); border-radius: 12px; padding: 16px 18px; }
+.grade-card-head { display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 12px; }
+.team-nm { display: block; font-weight: 800; font-size: 15px; }
+.mgr { display: block; font-size: 11px; color: var(--ink-faint); margin-top: 2px; }
+.mgr-inline { font-size: 11px; color: var(--ink-faint); margin-left: 6px; }
+.grade {
+  display: inline-block; font-weight: 800; font-size: 15px; padding: 3px 12px; border-radius: 999px;
+  font-family: var(--font-mono); flex: none;
+}
+.grade.good { background: var(--good-bg); color: var(--good); }
+.grade.mid { background: var(--warn-bg); color: var(--warn); }
+.grade.bad { background: var(--danger-bg); color: var(--danger); }
+.grade-stats { display: flex; gap: 18px; margin-bottom: 12px; padding-bottom: 12px; border-bottom: 1px solid var(--line); }
+.grade-stats > div { display: flex; flex-direction: column; }
+.grade-stats .v { font-size: 15px; font-weight: 800; }
+.grade-stats .l { font-size: 10px; color: var(--ink-faint); text-transform: uppercase; letter-spacing: 0.05em; margin-top: 2px; }
+.pos { color: var(--good); } .neg { color: var(--danger); }
+.narrative { font-size: 13px; color: var(--ink-dim); line-height: 1.6; margin: 0 0 12px; }
+.value-row { display: flex; flex-direction: column; gap: 4px; font-size: 12px; color: var(--ink-faint); margin-bottom: 8px; }
+.needs-line { font-size: 12px; color: var(--ink-faint); }
+
+table.dollars { width: 100%; border-collapse: collapse; font-size: 13px; margin-top: 8px; }
+table.dollars th { text-align: left; font-size: 10px; text-transform: uppercase; letter-spacing: 0.06em; color: var(--ink-faint); padding: 6px 10px; border-bottom: 1px solid var(--line-strong); }
+table.dollars td { padding: 7px 10px; border-bottom: 1px solid var(--line); }
+table.dollars td.num { font-family: var(--font-mono); text-align: right; }
+.team-name { font-weight: 700; }
+.pos-tag2 {
+  font-size: 10px; font-weight: 800; color: var(--ink-faint);
+  border: 1px solid var(--line-strong); border-radius: 5px; padding: 1px 5px; margin-left: 7px;
+}
+.k-badge {
+  font-size: 9px; font-weight: 800; color: var(--accent-ink); background: var(--accent);
+  border-radius: 4px; padding: 1px 4px; margin-left: 5px;
+}
+.power-table-wrap { overflow-x: auto; }
+
+.roster-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 14px; }
+.roster-card { background: var(--bg-elevated); border: 1px solid var(--line-strong); border-radius: 12px; padding: 14px 16px; }
+.roster-head { display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 4px; }
+.waiver-info { font-size: 11px; color: var(--ink-faint); text-align: right; }
+.roster-table { margin-top: 4px; }
+.roster-table td { padding: 5px 8px; font-size: 12px; }
+
+.moves-empty {
+  background: var(--bg-elevated); border: 1px dashed var(--line-strong); border-radius: 12px;
+  padding: 28px 20px; text-align: center; color: var(--ink-faint); font-size: 13px;
+}
+.moves-empty b { color: var(--ink-dim); }
+
+footer.foot { margin-top: 60px; padding-top: 20px; border-top: 1px solid var(--line); font-size: 12px; color: var(--ink-faint); }
+
+.rank-controls { display: flex; flex-wrap: wrap; gap: 8px; align-items: center; margin: 14px 0 8px; }
+.rank-search {
+  background: var(--bg-elevated); border: 1px solid var(--line-strong); color: var(--ink);
+  border-radius: 8px; padding: 7px 10px; font-size: 13px; font-family: var(--font-body);
+  flex: 1 1 180px; min-width: 140px;
+}
+.rank-search:focus { outline: 1px solid var(--accent); }
+.pos-filter-chip {
+  background: var(--bg-elevated); border: 1px solid var(--line-strong); color: var(--ink-dim);
+  border-radius: 20px; padding: 6px 12px; font-size: 12px; font-weight: 700; cursor: pointer;
+  font-family: var(--font-body);
+}
+.pos-filter-chip.active { background: var(--accent); color: var(--accent-ink); border-color: var(--accent); }
+.rank-table-wrap { max-height: 560px; overflow-y: auto; border: 1px solid var(--line-strong); border-radius: 10px; }
+.rank-table-wrap table.dollars { margin: 0; }
+.rank-table-wrap thead th { position: sticky; top: 0; background: var(--bg-elevated); }
+.rank-table-wrap table.dollars th.sortable { cursor: pointer; user-select: none; white-space: nowrap; }
+.rank-table-wrap table.dollars th.sortable:hover { color: var(--ink); }
+.rank-table-wrap table.dollars th.sortable .arrow { display: inline-block; width: 10px; opacity: 0.5; }
+.rank-table-wrap table.dollars th.sortable.active .arrow { opacity: 1; color: var(--accent); }
+.rank-count { font-size: 12px; color: var(--ink-faint); margin: 0 0 6px; }
+</style>
+
+<div class="wrap">
+  <header class="hero">
+    <div class="eyebrow">The Top Teamz &middot; est. 2020</div>
+    <h1 class="title">2026 Season Companion</h1>
+    <p class="dek">Draft grades, a season outlook, every roster, and a running log of moves &mdash; the one place
+      that stays live for The Top Teamz from draft night through the fantasy playoffs.</p>
+  </header>
+
+  <div class="stat-grid">
+    <div class="stat-tile"><div class="num">12</div><div class="lbl">teams drafted</div></div>
+    <div class="stat-tile"><div class="num">168</div><div class="lbl">total picks</div></div>
+    <div class="stat-tile"><div class="num">5</div><div class="lbl">locked keepers</div></div>
+    <div class="stat-tile"><div class="num">$70</div><div class="lbl">highest price (Bijan Robinson)</div></div>
+    <div class="stat-tile"><div class="num">2</div><div class="lbl">teams with zero DEF drafted</div></div>
+  </div>
+
+  <section>
+    <h2 class="section-title">2026 draft grades</h2>
+    <p class="section-dek">Half roster strength (projected points from each team's best possible starting
+      lineup), half auction value (this year's fair price per your league's real historical curve vs. what was
+      actually paid). Skipping a backup DEF/QB/TE isn't penalized here &mdash; only an empty starting slot is.</p>
+    <div class="callout">
+      <b>On keeper "worst values":</b> every locked keeper (Judkins, Mahomes, Skattebo, Dowdle, Waddle) shows up
+      as a below-market price on its own team's card. That's expected, not a mistake &mdash; a keeper price is
+      last year's bargain plus the league's standard +$10 tax, so it will almost never look like a "value" pick
+      against a fresh open-market price. Ignore that one line per team; it doesn't reflect a real drafting error.
+    </div>
+    <div class="grade-grid">
+
+    <div class="grade-card">
+      <div class="grade-card-head">
+        <div><span class="team-nm">Calvin and Hobbes</span><span class="mgr">justin s (you)</span></div>
+        <span class="grade good">A+</span>
+      </div>
+      <div class="grade-stats">
+        <div><span class="v mono">1668</span><span class="l">starting pts</span></div>
+        <div><span class="v mono">$200</span><span class="l">spent</span></div>
+        <div><span class="v mono pos">+$75</span><span class="l">value surplus</span></div>
+      </div>
+      <p class="narrative">Textbook you: five RBs (Taylor, Hampton, Henderson, Hubbard, kept Judkins) for a combined $148 of your $200, against four cheap-ish WRs and a $1 QB. That's your career 1.37x RB bias showing up even stronger than usual, and it paid off &mdash; Omarion Hampton at $48 and Jonathan Taylor at $61 both graded as fair-to-good value, and DK Metcalf at $6 was the single best bargain on your roster (+$21 vs. fair value). The one real cost: Judkins grades as your worst value at $15, but that's the known price of keeping a $5 breakout at +$10 &mdash; not a mistake, just what the keeper tax always looks like on paper. Highest starting-lineup points of anyone paired with a real surplus is a genuinely elite draft.</p>
+      <div class="value-row">
+        <span class="best">Best value: DK Metcalf <b class="pos mono">+$21</b></span>
+        <span class="worst">Worst value: Quinshon Judkins <b class="neg mono">$-15</b></span>
+      </div>
+      <div class="needs-line">Starting lineup full</div>
+    </div>
+
+    <div class="grade-card">
+      <div class="grade-card-head">
+        <div><span class="team-nm">Wild Bill</span><span class="mgr">Uncle Lou</span></div>
+        <span class="grade good">A</span>
+      </div>
+      <div class="grade-stats">
+        <div><span class="v mono">1672</span><span class="l">starting pts</span></div>
+        <div><span class="v mono">$199</span><span class="l">spent</span></div>
+        <div><span class="v mono pos">+$9</span><span class="l">value surplus</span></div>
+      </div>
+      <p class="narrative">No history to compare Uncle Lou against yet, but the tape speaks for itself: Bijan at $70 anchors the league's best pure point total (1672) alongside Achane ($42) and Jacobs ($24, the single best value pick in the whole draft at +$26). Three legitimate RB1s on one roster is about as clean a start as a new owner could ask for. Worth watching whether this is going to be a stars-and-scrubs identity going forward, or a one-time land grab at a stacked position.</p>
+      <div class="value-row">
+        <span class="best">Best value: Josh Jacobs <b class="pos mono">+$26</b></span>
+        <span class="worst">Worst value: Bijan Robinson <b class="neg mono">$-14</b></span>
+      </div>
+      <div class="needs-line">Starting lineup full</div>
+    </div>
+
+    <div class="grade-card">
+      <div class="grade-card-head">
+        <div><span class="team-nm">HitmonAchanes</span><span class="mgr">Kerri</span></div>
+        <span class="grade good">A-</span>
+      </div>
+      <div class="grade-stats">
+        <div><span class="v mono">1684</span><span class="l">starting pts</span></div>
+        <div><span class="v mono">$200</span><span class="l">spent</span></div>
+        <div><span class="v mono pos">+$2</span><span class="l">value surplus</span></div>
+      </div>
+      <p class="narrative">The literal best starting lineup in the league by raw points (1684), and it came without wrecking the budget &mdash; a near-even value trade (+$2 surplus). Consistent with Kerri's historical DEF/QB lean, she still grabbed two QBs (Burrow, Mayfield) and a DEF, but this year the real story is receiver depth: Drake London and Nico Collins for a combined $84 gives her two true WR1s, plus a five-deep RB room including her kept Dowdle. If there's a risk, it's that London graded as her worst value pick (-$15) in a WR market that ran hot across the whole league this year.</p>
+      <div class="value-row">
+        <span class="best">Best value: Kyren Williams <b class="pos mono">+$15</b></span>
+        <span class="worst">Worst value: Drake London <b class="neg mono">$-15</b></span>
+      </div>
+      <div class="needs-line">Starting lineup full</div>
+    </div>
+
+    <div class="grade-card">
+      <div class="grade-card-head">
+        <div><span class="team-nm">Team Mel</span><span class="mgr">Malvyn</span></div>
+        <span class="grade mid">B+</span>
+      </div>
+      <div class="grade-stats">
+        <div><span class="v mono">1529</span><span class="l">starting pts</span></div>
+        <div><span class="v mono">$200</span><span class="l">spent</span></div>
+        <div><span class="v mono neg">-$2</span><span class="l">value surplus</span></div>
+      </div>
+      <p class="narrative">About as true-to-form as it gets: Brock Bowers at $43 is exactly the kind of top-tier TE spend that matches Malvyn's league-leading 2.45x TE bias, and rostering three quarterbacks (Hurts, kept Mahomes, Malik Willis) matches the 1.94x QB habit just as clearly. The offense is stud-heavy at the top (Barkley $50, Bowers $43, A.J. Brown $42 &mdash; $135 on three picks) with thin, cheap depth below it. A solid B+ team that lives or dies with those three studs staying on the field.</p>
+      <div class="value-row">
+        <span class="best">Best value: Jalen Hurts <b class="pos mono">+$9</b></span>
+        <span class="worst">Worst value: Patrick Mahomes <b class="neg mono">$-15</b></span>
+      </div>
+      <div class="needs-line">Starting lineup full</div>
+    </div>
+
+    <div class="grade-card">
+      <div class="grade-card-head">
+        <div><span class="team-nm">Tee Time</span><span class="mgr">Lou</span></div>
+        <span class="grade mid">B-</span>
+      </div>
+      <div class="grade-stats">
+        <div><span class="v mono">1517</span><span class="l">starting pts</span></div>
+        <div><span class="v mono">$200</span><span class="l">spent</span></div>
+        <div><span class="v mono neg">-$10</span><span class="l">value surplus</span></div>
+      </div>
+      <p class="narrative">Balanced and unremarkable in the best way, same as always &mdash; Lou's the owner who doesn't distort the market anywhere in particular, and this draft (Cook $60, Jefferson $50, then a long tail of $1&ndash;3 depth) matches that read exactly. No keeper again, extending his career 2% keep rate. Justin Jefferson at $50 was fair-to-good value (+$8); Rashee Rice at $28 was the one real overpay (-$19). A safe, middle-of-the-pack B- team without much boom or bust attached to it.</p>
+      <div class="value-row">
+        <span class="best">Best value: Justin Jefferson <b class="pos mono">+$8</b></span>
+        <span class="worst">Worst value: Rashee Rice <b class="neg mono">$-19</b></span>
+      </div>
+      <div class="needs-line">Starting lineup full</div>
+    </div>
+
+    <div class="grade-card">
+      <div class="grade-card-head">
+        <div><span class="team-nm">The Gungans</span><span class="mgr">Kassandra</span></div>
+        <span class="grade mid">C+</span>
+      </div>
+      <div class="grade-stats">
+        <div><span class="v mono">1531</span><span class="l">starting pts</span></div>
+        <div><span class="v mono">$200</span><span class="l">spent</span></div>
+        <div><span class="v mono neg">-$22</span><span class="l">value surplus</span></div>
+      </div>
+      <p class="narrative">Kassandra's one full season of history called her a stars-early, DEF/TE/QB-heavy owner who once put 38% of her budget on a single pick &mdash; and Ja'Marr Chase at $62 (31% of this year's budget) plus Josh Allen at $40 and Tyler Warren at $18 says that read holds up. The odd wrinkle: she rostered <b>two</b> defenses (Jaguars $1, Broncos $3) instead of a second bench skill player, which is a real opportunity cost in a league where DEF is streamed for $1 off waivers anyway. A concentrated, high-variance C+ roster that needs Jeanty and Jeremiyah Love (her worst value pick, -$10) to hit.</p>
+      <div class="value-row">
+        <span class="best">Best value: Tyler Allgeier <b class="pos mono">+$3</b></span>
+        <span class="worst">Worst value: Jeremiyah Love <b class="neg mono">$-10</b></span>
+      </div>
+      <div class="needs-line">Starting lineup full</div>
+    </div>
+
+    <div class="grade-card">
+      <div class="grade-card-head">
+        <div><span class="team-nm">Surrender Your Booty</span><span class="mgr">Scott</span></div>
+        <span class="grade mid">C</span>
+      </div>
+      <div class="grade-stats">
+        <div><span class="v mono">1533</span><span class="l">starting pts</span></div>
+        <div><span class="v mono">$198</span><span class="l">spent</span></div>
+        <div><span class="v mono neg">-$26</span><span class="l">value surplus</span></div>
+      </div>
+      <p class="narrative">Textbook Scott: two studs early (Smith-Njigba $61, Chase Brown $55 &mdash; $116 combined) then a real dollar-bin the rest of the way, exactly the top-heavy, DEF-punting shape his history predicts (lowest DEF bias in the league, and the Patriots DEF here cost exactly $1). Smith-Njigba graded as the single worst value at wide receiver leaguewide (-$14) &mdash; not a bad player, just a market that ran hot on him specifically. A perfectly on-brand, middling C draft.</p>
+      <div class="value-row">
+        <span class="best">Best value: Alec Pierce <b class="pos mono">+$9</b></span>
+        <span class="worst">Worst value: Jaxon Smith-Njigba <b class="neg mono">$-14</b></span>
+      </div>
+      <div class="needs-line">Starting lineup full</div>
+    </div>
+
+    <div class="grade-card">
+      <div class="grade-card-head">
+        <div><span class="team-nm">Jeff</span><span class="mgr">Katie</span></div>
+        <span class="grade mid">C-</span>
+      </div>
+      <div class="grade-stats">
+        <div><span class="v mono">1427</span><span class="l">starting pts</span></div>
+        <div><span class="v mono">$200</span><span class="l">spent</span></div>
+        <div><span class="v mono neg">-$4</span><span class="l">value surplus</span></div>
+      </div>
+      <p class="narrative">Katie's first draft as an owner, and she came out swinging: Gibbs ($67), Nacua ($55), and Lamb ($55) eat 88% of her entire budget on three picks &mdash; about as extreme a stars-and-scrubs bet as anyone in the league made. All three graded roughly fair value, so the studs themselves aren't the problem; the risk is the bench, which is almost entirely $1&ndash;4 flier picks (RJ Harvey, Josh Downs, Trevor Lawrence) with no real depth if any of the big three misses time. High ceiling, low floor for a rookie GM.</p>
+      <div class="value-row">
+        <span class="best">Best value: Jahmyr Gibbs <b class="pos mono">+$9</b></span>
+        <span class="worst">Worst value: CeeDee Lamb <b class="neg mono">$-7</b></span>
+      </div>
+      <div class="needs-line">Starting lineup full</div>
+    </div>
+
+    <div class="grade-card">
+      <div class="grade-card-head">
+        <div><span class="team-nm">The Wet Bandits</span><span class="mgr">Bob Zanneo</span></div>
+        <span class="grade bad">D+</span>
+      </div>
+      <div class="grade-stats">
+        <div><span class="v mono">1485</span><span class="l">starting pts</span></div>
+        <div><span class="v mono">$200</span><span class="l">spent</span></div>
+        <div><span class="v mono neg">-$35</span><span class="l">value surplus</span></div>
+      </div>
+      <p class="narrative">A real departure from form: Bob Zanneo carried the league's highest-tenure keeper habit for years and kept nobody this time. The money went to two big-ticket RBs instead (Henry $42, Walker $46 &mdash; $88 combined), which is more concentrated than his usual textbook-average shape. George Pickens at $38 graded as the single worst value pick of the entire draft outside the keeper tax (-$26) and is the one swing factor most likely to define whether this D+ grade looks better or worse by midseason.</p>
+      <div class="value-row">
+        <span class="best">Best value: Tre Tucker <b class="pos mono">+$6</b></span>
+        <span class="worst">Worst value: George Pickens <b class="neg mono">$-26</b></span>
+      </div>
+      <div class="needs-line">Starting lineup full</div>
+    </div>
+
+    <div class="grade-card">
+      <div class="grade-card-head">
+        <div><span class="team-nm">Baby Mama</span><span class="mgr">Jillian</span></div>
+        <span class="grade bad">D-</span>
+      </div>
+      <div class="grade-stats">
+        <div><span class="v mono">1415</span><span class="l">starting pts</span></div>
+        <div><span class="v mono">$198</span><span class="l">spent</span></div>
+        <div><span class="v mono neg">-$48</span><span class="l">value surplus</span></div>
+      </div>
+      <p class="narrative">Jillian already carries the league's highest average keeper cost, and this year's Skattebo keeper at $17 keeps that streak alive. But the rest of the draft ran cold: McCaffrey ($58) and DeVonta Smith ($44) anchor the roster, and Smith graded as the worst individual value pick anywhere in the league this year (-$30). Her usual DEF/TE/QB-early lean shows up in Lamar Jackson at $15, but the overall point total (1415) sits in the bottom third &mdash; a keeper-driven strategy that needs a bounce-back season from Smith to look any better than a D-.</p>
+      <div class="value-row">
+        <span class="best">Best value: Christian McCaffrey <b class="pos mono">+$10</b></span>
+        <span class="worst">Worst value: DeVonta Smith <b class="neg mono">$-30</b></span>
+      </div>
+      <div class="needs-line">Starting lineup full</div>
+    </div>
+
+    <div class="grade-card">
+      <div class="grade-card-head">
+        <div><span class="team-nm">JP&#x27;Marrgan Chase</span><span class="mgr">gregg</span></div>
+        <span class="grade bad">F</span>
+      </div>
+      <div class="grade-stats">
+        <div><span class="v mono">1271</span><span class="l">starting pts</span></div>
+        <div><span class="v mono">$197</span><span class="l">spent</span></div>
+        <div><span class="v mono neg">-$41</span><span class="l">value surplus</span></div>
+      </div>
+      <p class="narrative">The WR premium is exactly where gregg's history says it would be &mdash; Amon-Ra St. Brown ($59), Garrett Wilson ($23), and his kept Waddle ($20) add up to $102 on three receivers, dead-on his career 1.31x WR bias. The problem is everywhere else: this is one of only two rosters in the league with <b>zero</b> defense drafted, and the lowest starting-lineup point total (1271) outside the very bottom. Grabbing a streaming DEF off waivers before Week 1 isn't optional here, it's the first move of the season.</p>
+      <div class="value-row">
+        <span class="best">Best value: Zach Charbonnet <b class="pos mono">+$5</b></span>
+        <span class="worst">Worst value: Jaylen Waddle <b class="neg mono">$-20</b></span>
+      </div>
+      <div class="needs-line"><b class="neg">Needs a DEF off waivers</b></div>
+    </div>
+
+    <div class="grade-card">
+      <div class="grade-card-head">
+        <div><span class="team-nm">Bye Week</span><span class="mgr">CMK21</span></div>
+        <span class="grade bad">F</span>
+      </div>
+      <div class="grade-stats">
+        <div><span class="v mono">1102</span><span class="l">starting pts</span></div>
+        <div><span class="v mono">$173</span><span class="l">spent</span></div>
+        <div><span class="v mono neg">-$73</span><span class="l">value surplus</span></div>
+      </div>
+      <p class="narrative">The one real outlier of the draft: CMK21's history says he never walks away with a true dollar-bin roster (0% of his picks have ever gone for exactly $1) and leans DEF-heavy &mdash; this year he left $27 completely unspent <i>and</i> is the other team with zero defense drafted. Both are real breaks from form, not just variance. The roster itself (Hall, Olave, Nabers, McMillan) has real talent but the lowest starting point total in the league (1102) and the worst value grade (-$73) make this the draft most worth revisiting on waivers immediately &mdash; there's $27 sitting there to spend and a DEF slot standing empty.</p>
+      <div class="value-row">
+        <span class="best">Best value: Breece Hall <b class="pos mono">+$5</b></span>
+        <span class="worst">Worst value: Chris Olave <b class="neg mono">$-21</b></span>
+      </div>
+      <div class="needs-line"><b class="neg">Needs a DEF off waivers</b></div>
+    </div>
+    </div>
+  </section>
+
+  <section>
+    <h2 class="section-title">2026 season outlook</h2>
+    <p class="section-dek">Ranked by projected starting-lineup points &mdash; a real signal of roster strength
+      today, but not a standings prediction. Your own league's 6-year history shows no single draft-day metric
+      reliably predicts who wins (weakest-to-strongest correlations all fell under |r| = 0.25) &mdash; injuries,
+      waiver-wire management, and in-season trades move the real standings more than the draft alone ever does.
+      Read this as "who's best-positioned today," not "who's going to finish where."</p>
+    <div class="power-table-wrap">
+      <table class="dollars">
+        <thead><tr><th>#</th><th>Team</th><th class="num">Starting pts</th><th class="num">Grade</th></tr></thead>
+        <tbody>
+<tr><td class="num mono">1</td><td class="team-name">Calvin and Hobbes<span class="mgr-inline">justin s (you)</span></td><td class="num mono">1668</td><td class="num mono">A+</td></tr>
+<tr><td class="num mono">2</td><td class="team-name">Wild Bill<span class="mgr-inline">Uncle Lou</span></td><td class="num mono">1672</td><td class="num mono">A</td></tr>
+<tr><td class="num mono">3</td><td class="team-name">HitmonAchanes<span class="mgr-inline">Kerri</span></td><td class="num mono">1684</td><td class="num mono">A-</td></tr>
+<tr><td class="num mono">4</td><td class="team-name">Team Mel<span class="mgr-inline">Malvyn</span></td><td class="num mono">1529</td><td class="num mono">B+</td></tr>
+<tr><td class="num mono">5</td><td class="team-name">Tee Time<span class="mgr-inline">Lou</span></td><td class="num mono">1517</td><td class="num mono">B-</td></tr>
+<tr><td class="num mono">6</td><td class="team-name">The Gungans<span class="mgr-inline">Kassandra</span></td><td class="num mono">1531</td><td class="num mono">C+</td></tr>
+<tr><td class="num mono">7</td><td class="team-name">Surrender Your Booty<span class="mgr-inline">Scott</span></td><td class="num mono">1533</td><td class="num mono">C</td></tr>
+<tr><td class="num mono">8</td><td class="team-name">Jeff<span class="mgr-inline">Katie</span></td><td class="num mono">1427</td><td class="num mono">C-</td></tr>
+<tr><td class="num mono">9</td><td class="team-name">The Wet Bandits<span class="mgr-inline">Bob Zanneo</span></td><td class="num mono">1485</td><td class="num mono">D+</td></tr>
+<tr><td class="num mono">10</td><td class="team-name">Baby Mama<span class="mgr-inline">Jillian</span></td><td class="num mono">1415</td><td class="num mono">D-</td></tr>
+<tr><td class="num mono">11</td><td class="team-name">JP&#x27;Marrgan Chase<span class="mgr-inline">gregg</span></td><td class="num mono">1271</td><td class="num mono">F</td></tr>
+<tr><td class="num mono">12</td><td class="team-name">Bye Week<span class="mgr-inline">CMK21</span></td><td class="num mono">1102</td><td class="num mono">F</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </section>
+
+  <section>
+    <h2 class="section-title">Full rosters &amp; waiver position</h2>
+    <p class="section-dek">Every team's 14-man roster as drafted, plus waiver budget and priority as of draft
+      night. <span class="k-badge">K</span> marks a locked 2026 keeper.</p>
+    <div class="roster-grid">
+
+    <div class="roster-card">
+      <div class="roster-head">
+        <div><span class="team-nm">Baby Mama</span><span class="mgr">Jillian</span></div>
+        <div class="waiver-info"><span class="mono">$100</span> waiver &middot; priority <span class="mono">#10</span></div>
+      </div>
+      <table class="dollars roster-table">
+        <tbody>
+<tr><td class="num mono">3</td><td>Christian McCaffrey<span class="pos-tag2">RB</span></td><td class="num mono px">$58</td></tr><tr><td class="num mono">14</td><td>DeVonta Smith<span class="pos-tag2">WR</span></td><td class="num mono px">$44</td></tr><tr><td class="num mono">15</td><td>Tucker Kraft<span class="pos-tag2">TE</span></td><td class="num mono px">$13</td></tr><tr><td class="num mono">43</td><td>Zay Flowers<span class="pos-tag2">WR</span></td><td class="num mono px">$22</td></tr><tr><td class="num mono">45</td><td>Lamar Jackson<span class="pos-tag2">QB</span></td><td class="num mono px">$15</td></tr><tr><td class="num mono">63</td><td>Mike Evans<span class="pos-tag2">WR</span></td><td class="num mono px">$10</td></tr><tr><td class="num mono">78</td><td>Carnell Tate<span class="pos-tag2">WR</span></td><td class="num mono px">$9</td></tr><tr><td class="num mono">94</td><td>Keaton Mitchell<span class="pos-tag2">RB</span></td><td class="num mono px">$2</td></tr><tr><td class="num mono">111</td><td>Vikings<span class="pos-tag2">DEF</span></td><td class="num mono px">$1</td></tr><tr><td class="num mono">118</td><td>Stefon Diggs<span class="pos-tag2">WR</span></td><td class="num mono px">$2</td></tr><tr><td class="num mono">122</td><td>Aaron Jones Sr.<span class="pos-tag2">RB</span></td><td class="num mono px">$1</td></tr><tr><td class="num mono">123</td><td>Kenny Gainwell<span class="pos-tag2">RB</span></td><td class="num mono px">$2</td></tr><tr><td class="num mono">124</td><td>Matthew Stafford<span class="pos-tag2">QB</span></td><td class="num mono px">$2</td></tr><tr><td class="num mono">164</td><td>Cam Skattebo <span class="k-badge">K</span><span class="pos-tag2">RB</span></td><td class="num mono px">$17</td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div class="roster-card">
+      <div class="roster-head">
+        <div><span class="team-nm">Bye Week</span><span class="mgr">CMK21</span></div>
+        <div class="waiver-info"><span class="mono">$100</span> waiver &middot; priority <span class="mono">#8</span></div>
+      </div>
+      <table class="dollars roster-table">
+        <tbody>
+<tr><td class="num mono">34</td><td>Breece Hall<span class="pos-tag2">RB</span></td><td class="num mono px">$16</td></tr><tr><td class="num mono">41</td><td>Chris Olave<span class="pos-tag2">WR</span></td><td class="num mono px">$31</td></tr><tr><td class="num mono">47</td><td>Malik Nabers<span class="pos-tag2">WR</span></td><td class="num mono px">$28</td></tr><tr><td class="num mono">53</td><td>Tetairoa McMillan<span class="pos-tag2">WR</span></td><td class="num mono px">$26</td></tr><tr><td class="num mono">77</td><td>Justin Herbert<span class="pos-tag2">QB</span></td><td class="num mono px">$5</td></tr><tr><td class="num mono">83</td><td>Parker Washington<span class="pos-tag2">WR</span></td><td class="num mono px">$9</td></tr><tr><td class="num mono">85</td><td>Wan&#x27;Dale Robinson<span class="pos-tag2">WR</span></td><td class="num mono px">$4</td></tr><tr><td class="num mono">86</td><td>Jayden Daniels<span class="pos-tag2">QB</span></td><td class="num mono px">$13</td></tr><tr><td class="num mono">88</td><td>Jadarian Price<span class="pos-tag2">RB</span></td><td class="num mono px">$9</td></tr><tr><td class="num mono">97</td><td>Jacory Croskey-Merritt<span class="pos-tag2">RB</span></td><td class="num mono px">$6</td></tr><tr><td class="num mono">100</td><td>Blake Corum<span class="pos-tag2">RB</span></td><td class="num mono px">$7</td></tr><tr><td class="num mono">101</td><td>Jordy Tyson<span class="pos-tag2">WR</span></td><td class="num mono px">$6</td></tr><tr><td class="num mono">103</td><td>MarShawn Lloyd<span class="pos-tag2">RB</span></td><td class="num mono px">$4</td></tr><tr><td class="num mono">107</td><td>Harold Fannin Jr.<span class="pos-tag2">TE</span></td><td class="num mono px">$9</td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div class="roster-card">
+      <div class="roster-head">
+        <div><span class="team-nm">Calvin and Hobbes</span><span class="mgr">justin s (you)</span></div>
+        <div class="waiver-info"><span class="mono">$100</span> waiver &middot; priority <span class="mono">#7</span></div>
+      </div>
+      <table class="dollars roster-table">
+        <tbody>
+<tr><td class="num mono">11</td><td>Jonathan Taylor<span class="pos-tag2">RB</span></td><td class="num mono px">$61</td></tr><tr><td class="num mono">39</td><td>Omarion Hampton<span class="pos-tag2">RB</span></td><td class="num mono px">$48</td></tr><tr><td class="num mono">55</td><td>Terry McLaurin<span class="pos-tag2">WR</span></td><td class="num mono px">$15</td></tr><tr><td class="num mono">70</td><td>Marvin Harrison Jr.<span class="pos-tag2">WR</span></td><td class="num mono px">$7</td></tr><tr><td class="num mono">72</td><td>Sam LaPorta<span class="pos-tag2">TE</span></td><td class="num mono px">$6</td></tr><tr><td class="num mono">73</td><td>TreVeyon Henderson<span class="pos-tag2">RB</span></td><td class="num mono px">$14</td></tr><tr><td class="num mono">75</td><td>Chuba Hubbard<span class="pos-tag2">RB</span></td><td class="num mono px">$6</td></tr><tr><td class="num mono">87</td><td>Rams<span class="pos-tag2">DEF</span></td><td class="num mono px">$6</td></tr><tr><td class="num mono">90</td><td>DK Metcalf<span class="pos-tag2">WR</span></td><td class="num mono px">$6</td></tr><tr><td class="num mono">95</td><td>Brian Thomas Jr.<span class="pos-tag2">WR</span></td><td class="num mono px">$8</td></tr><tr><td class="num mono">96</td><td>J.K. Dobbins<span class="pos-tag2">RB</span></td><td class="num mono px">$4</td></tr><tr><td class="num mono">133</td><td>C.J. Stroud<span class="pos-tag2">QB</span></td><td class="num mono px">$1</td></tr><tr><td class="num mono">142</td><td>Oronde Gadsden<span class="pos-tag2">TE</span></td><td class="num mono px">$3</td></tr><tr><td class="num mono">168</td><td>Quinshon Judkins <span class="k-badge">K</span><span class="pos-tag2">RB</span></td><td class="num mono px">$15</td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div class="roster-card">
+      <div class="roster-head">
+        <div><span class="team-nm">HitmonAchanes</span><span class="mgr">Kerri</span></div>
+        <div class="waiver-info"><span class="mono">$100</span> waiver &middot; priority <span class="mono">#6</span></div>
+      </div>
+      <table class="dollars roster-table">
+        <tbody>
+<tr><td class="num mono">10</td><td>Drake London<span class="pos-tag2">WR</span></td><td class="num mono px">$47</td></tr><tr><td class="num mono">21</td><td>Nico Collins<span class="pos-tag2">WR</span></td><td class="num mono px">$37</td></tr><tr><td class="num mono">32</td><td>Kyren Williams<span class="pos-tag2">RB</span></td><td class="num mono px">$27</td></tr><tr><td class="num mono">36</td><td>Tony Pollard<span class="pos-tag2">RB</span></td><td class="num mono px">$5</td></tr><tr><td class="num mono">46</td><td>Bucky Irving<span class="pos-tag2">RB</span></td><td class="num mono px">$23</td></tr><tr><td class="num mono">56</td><td>Davante Adams<span class="pos-tag2">WR</span></td><td class="num mono px">$12</td></tr><tr><td class="num mono">66</td><td>Joe Burrow<span class="pos-tag2">QB</span></td><td class="num mono px">$10</td></tr><tr><td class="num mono">79</td><td>Kyle Pitts Sr.<span class="pos-tag2">TE</span></td><td class="num mono px">$4</td></tr><tr><td class="num mono">80</td><td>Jonathon Brooks<span class="pos-tag2">RB</span></td><td class="num mono px">$11</td></tr><tr><td class="num mono">84</td><td>Travis Kelce<span class="pos-tag2">TE</span></td><td class="num mono px">$5</td></tr><tr><td class="num mono">89</td><td>Seahawks<span class="pos-tag2">DEF</span></td><td class="num mono px">$4</td></tr><tr><td class="num mono">113</td><td>Baker Mayfield<span class="pos-tag2">QB</span></td><td class="num mono px">$3</td></tr><tr><td class="num mono">114</td><td>Keenan Allen<span class="pos-tag2">WR</span></td><td class="num mono px">$1</td></tr><tr><td class="num mono">167</td><td>Rico Dowdle <span class="k-badge">K</span><span class="pos-tag2">RB</span></td><td class="num mono px">$11</td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div class="roster-card">
+      <div class="roster-head">
+        <div><span class="team-nm">JP&#x27;Marrgan Chase</span><span class="mgr">gregg</span></div>
+        <div class="waiver-info"><span class="mono">$100</span> waiver &middot; priority <span class="mono">#5</span></div>
+      </div>
+      <table class="dollars roster-table">
+        <tbody>
+<tr><td class="num mono">9</td><td>Amon-Ra St. Brown<span class="pos-tag2">WR</span></td><td class="num mono px">$59</td></tr><tr><td class="num mono">13</td><td>Colston Loveland<span class="pos-tag2">TE</span></td><td class="num mono px">$26</td></tr><tr><td class="num mono">22</td><td>Garrett Wilson<span class="pos-tag2">WR</span></td><td class="num mono px">$23</td></tr><tr><td class="num mono">31</td><td>D&#x27;Andre Swift<span class="pos-tag2">RB</span></td><td class="num mono px">$16</td></tr><tr><td class="num mono">44</td><td>Javonte Williams<span class="pos-tag2">RB</span></td><td class="num mono px">$27</td></tr><tr><td class="num mono">48</td><td>Rhamondre Stevenson<span class="pos-tag2">RB</span></td><td class="num mono px">$10</td></tr><tr><td class="num mono">102</td><td>Jared Goff<span class="pos-tag2">QB</span></td><td class="num mono px">$3</td></tr><tr><td class="num mono">121</td><td>Brock Purdy<span class="pos-tag2">QB</span></td><td class="num mono px">$2</td></tr><tr><td class="num mono">125</td><td>De&#x27;Zhaun Stribling<span class="pos-tag2">WR</span></td><td class="num mono px">$4</td></tr><tr><td class="num mono">139</td><td>Jonah Coleman<span class="pos-tag2">RB</span></td><td class="num mono px">$4</td></tr><tr><td class="num mono">143</td><td>KC Concepcion<span class="pos-tag2">WR</span></td><td class="num mono px">$1</td></tr><tr><td class="num mono">151</td><td>Jakobi Meyers<span class="pos-tag2">WR</span></td><td class="num mono px">$1</td></tr><tr><td class="num mono">158</td><td>Zach Charbonnet<span class="pos-tag2">RB</span></td><td class="num mono px">$1</td></tr><tr><td class="num mono">166</td><td>Jaylen Waddle <span class="k-badge">K</span><span class="pos-tag2">WR</span></td><td class="num mono px">$20</td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div class="roster-card">
+      <div class="roster-head">
+        <div><span class="team-nm">Jeff</span><span class="mgr">Katie</span></div>
+        <div class="waiver-info"><span class="mono">$100</span> waiver &middot; priority <span class="mono">#2</span></div>
+      </div>
+      <table class="dollars roster-table">
+        <tbody>
+<tr><td class="num mono">1</td><td>Jahmyr Gibbs<span class="pos-tag2">RB</span></td><td class="num mono px">$67</td></tr><tr><td class="num mono">8</td><td>Puka Nacua<span class="pos-tag2">WR</span></td><td class="num mono px">$55</td></tr><tr><td class="num mono">17</td><td>CeeDee Lamb<span class="pos-tag2">WR</span></td><td class="num mono px">$55</td></tr><tr><td class="num mono">24</td><td>Trevor Lawrence<span class="pos-tag2">QB</span></td><td class="num mono px">$4</td></tr><tr><td class="num mono">67</td><td>Dalton Kincaid<span class="pos-tag2">TE</span></td><td class="num mono px">$2</td></tr><tr><td class="num mono">69</td><td>Chargers<span class="pos-tag2">DEF</span></td><td class="num mono px">$2</td></tr><tr><td class="num mono">104</td><td>Josh Downs<span class="pos-tag2">WR</span></td><td class="num mono px">$4</td></tr><tr><td class="num mono">105</td><td>Kyle Monangai<span class="pos-tag2">RB</span></td><td class="num mono px">$3</td></tr><tr><td class="num mono">112</td><td>RJ Harvey<span class="pos-tag2">RB</span></td><td class="num mono px">$3</td></tr><tr><td class="num mono">146</td><td>Kyler Murray<span class="pos-tag2">QB</span></td><td class="num mono px">$1</td></tr><tr><td class="num mono">154</td><td>Juwan Johnson<span class="pos-tag2">TE</span></td><td class="num mono px">$1</td></tr><tr><td class="num mono">159</td><td>Rashid Shaheed<span class="pos-tag2">WR</span></td><td class="num mono px">$1</td></tr><tr><td class="num mono">161</td><td>Emmett Johnson<span class="pos-tag2">RB</span></td><td class="num mono px">$1</td></tr><tr><td class="num mono">163</td><td>Denzel Boston<span class="pos-tag2">WR</span></td><td class="num mono px">$1</td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div class="roster-card">
+      <div class="roster-head">
+        <div><span class="team-nm">Surrender Your Booty</span><span class="mgr">Scott</span></div>
+        <div class="waiver-info"><span class="mono">$100</span> waiver &middot; priority <span class="mono">#12</span></div>
+      </div>
+      <table class="dollars roster-table">
+        <tbody>
+<tr><td class="num mono">23</td><td>Jaxon Smith-Njigba<span class="pos-tag2">WR</span></td><td class="num mono px">$61</td></tr><tr><td class="num mono">28</td><td>Chase Brown<span class="pos-tag2">RB</span></td><td class="num mono px">$55</td></tr><tr><td class="num mono">57</td><td>David Montgomery<span class="pos-tag2">RB</span></td><td class="num mono px">$19</td></tr><tr><td class="num mono">65</td><td>Jameson Williams<span class="pos-tag2">WR</span></td><td class="num mono px">$13</td></tr><tr><td class="num mono">74</td><td>Drake Maye<span class="pos-tag2">QB</span></td><td class="num mono px">$8</td></tr><tr><td class="num mono">76</td><td>Bhayshul Tuten<span class="pos-tag2">RB</span></td><td class="num mono px">$26</td></tr><tr><td class="num mono">93</td><td>Jaxson Dart<span class="pos-tag2">QB</span></td><td class="num mono px">$2</td></tr><tr><td class="num mono">108</td><td>Jordan Mason<span class="pos-tag2">RB</span></td><td class="num mono px">$3</td></tr><tr><td class="num mono">120</td><td>Isaiah Likely<span class="pos-tag2">TE</span></td><td class="num mono px">$2</td></tr><tr><td class="num mono">128</td><td>Quentin Johnston<span class="pos-tag2">WR</span></td><td class="num mono px">$2</td></tr><tr><td class="num mono">130</td><td>Jalen Coker<span class="pos-tag2">WR</span></td><td class="num mono px">$2</td></tr><tr><td class="num mono">134</td><td>Makai Lemon<span class="pos-tag2">WR</span></td><td class="num mono px">$2</td></tr><tr><td class="num mono">137</td><td>Alec Pierce<span class="pos-tag2">WR</span></td><td class="num mono px">$2</td></tr><tr><td class="num mono">148</td><td>Patriots<span class="pos-tag2">DEF</span></td><td class="num mono px">$1</td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div class="roster-card">
+      <div class="roster-head">
+        <div><span class="team-nm">Team Mel</span><span class="mgr">Malvyn</span></div>
+        <div class="waiver-info"><span class="mono">$100</span> waiver &middot; priority <span class="mono">#1</span></div>
+      </div>
+      <table class="dollars roster-table">
+        <tbody>
+<tr><td class="num mono">4</td><td>Saquon Barkley<span class="pos-tag2">RB</span></td><td class="num mono px">$50</td></tr><tr><td class="num mono">6</td><td>Brock Bowers<span class="pos-tag2">TE</span></td><td class="num mono px">$43</td></tr><tr><td class="num mono">16</td><td>A.J. Brown<span class="pos-tag2">WR</span></td><td class="num mono px">$42</td></tr><tr><td class="num mono">27</td><td>Ladd McConkey<span class="pos-tag2">WR</span></td><td class="num mono px">$21</td></tr><tr><td class="num mono">38</td><td>Jalen Hurts<span class="pos-tag2">QB</span></td><td class="num mono px">$12</td></tr><tr><td class="num mono">60</td><td>Texans<span class="pos-tag2">DEF</span></td><td class="num mono px">$4</td></tr><tr><td class="num mono">99</td><td>Jerry Jeudy<span class="pos-tag2">WR</span></td><td class="num mono px">$2</td></tr><tr><td class="num mono">106</td><td>Michael Pittman Jr.<span class="pos-tag2">WR</span></td><td class="num mono px">$3</td></tr><tr><td class="num mono">116</td><td>Jayden Reed<span class="pos-tag2">WR</span></td><td class="num mono px">$2</td></tr><tr><td class="num mono">119</td><td>Rachaad White<span class="pos-tag2">RB</span></td><td class="num mono px">$3</td></tr><tr><td class="num mono">129</td><td>Mike Washington Jr.<span class="pos-tag2">WR</span></td><td class="num mono px">$1</td></tr><tr><td class="num mono">138</td><td>Mark Andrews<span class="pos-tag2">TE</span></td><td class="num mono px">$1</td></tr><tr><td class="num mono">155</td><td>Malik Willis<span class="pos-tag2">QB</span></td><td class="num mono px">$1</td></tr><tr><td class="num mono">165</td><td>Patrick Mahomes <span class="k-badge">K</span><span class="pos-tag2">QB</span></td><td class="num mono px">$15</td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div class="roster-card">
+      <div class="roster-head">
+        <div><span class="team-nm">Tee Time</span><span class="mgr">Lou</span></div>
+        <div class="waiver-info"><span class="mono">$100</span> waiver &middot; priority <span class="mono">#3</span></div>
+      </div>
+      <table class="dollars roster-table">
+        <tbody>
+<tr><td class="num mono">25</td><td>James Cook III<span class="pos-tag2">RB</span></td><td class="num mono px">$60</td></tr><tr><td class="num mono">26</td><td>Justin Jefferson<span class="pos-tag2">WR</span></td><td class="num mono px">$50</td></tr><tr><td class="num mono">42</td><td>Travis Etienne Jr.<span class="pos-tag2">RB</span></td><td class="num mono px">$17</td></tr><tr><td class="num mono">50</td><td>Rashee Rice<span class="pos-tag2">WR</span></td><td class="num mono px">$28</td></tr><tr><td class="num mono">59</td><td>Tee Higgins<span class="pos-tag2">WR</span></td><td class="num mono px">$25</td></tr><tr><td class="num mono">68</td><td>Caleb Williams<span class="pos-tag2">QB</span></td><td class="num mono px">$8</td></tr><tr><td class="num mono">82</td><td>Steelers<span class="pos-tag2">DEF</span></td><td class="num mono px">$1</td></tr><tr><td class="num mono">110</td><td>Michael Wilson<span class="pos-tag2">WR</span></td><td class="num mono px">$3</td></tr><tr><td class="num mono">115</td><td>George Kittle<span class="pos-tag2">TE</span></td><td class="num mono px">$3</td></tr><tr><td class="num mono">117</td><td>Tyjae Spears<span class="pos-tag2">RB</span></td><td class="num mono px">$1</td></tr><tr><td class="num mono">127</td><td>Jordan Addison<span class="pos-tag2">WR</span></td><td class="num mono px">$1</td></tr><tr><td class="num mono">136</td><td>Brian Robinson<span class="pos-tag2">RB</span></td><td class="num mono px">$1</td></tr><tr><td class="num mono">145</td><td>Kenyon Sadiq<span class="pos-tag2">TE</span></td><td class="num mono px">$1</td></tr><tr><td class="num mono">153</td><td>Ray Davis<span class="pos-tag2">RB</span></td><td class="num mono px">$1</td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div class="roster-card">
+      <div class="roster-head">
+        <div><span class="team-nm">The Gungans</span><span class="mgr">Kassandra</span></div>
+        <div class="waiver-info"><span class="mono">$100</span> waiver &middot; priority <span class="mono">#9</span></div>
+      </div>
+      <table class="dollars roster-table">
+        <tbody>
+<tr><td class="num mono">5</td><td>Ja&#x27;Marr Chase<span class="pos-tag2">WR</span></td><td class="num mono px">$62</td></tr><tr><td class="num mono">7</td><td>Ashton Jeanty<span class="pos-tag2">RB</span></td><td class="num mono px">$33</td></tr><tr><td class="num mono">12</td><td>Josh Allen<span class="pos-tag2">QB</span></td><td class="num mono px">$40</td></tr><tr><td class="num mono">40</td><td>Jaguars<span class="pos-tag2">DEF</span></td><td class="num mono px">$1</td></tr><tr><td class="num mono">49</td><td>Tyler Warren<span class="pos-tag2">TE</span></td><td class="num mono px">$18</td></tr><tr><td class="num mono">51</td><td>Jeremiyah Love<span class="pos-tag2">RB</span></td><td class="num mono px">$18</td></tr><tr><td class="num mono">58</td><td>Rome Odunze<span class="pos-tag2">WR</span></td><td class="num mono px">$12</td></tr><tr><td class="num mono">64</td><td>Broncos<span class="pos-tag2">DEF</span></td><td class="num mono px">$3</td></tr><tr><td class="num mono">71</td><td>Christian Watson<span class="pos-tag2">WR</span></td><td class="num mono px">$8</td></tr><tr><td class="num mono">132</td><td>Woody Marks<span class="pos-tag2">RB</span></td><td class="num mono px">$1</td></tr><tr><td class="num mono">141</td><td>Matthew Golden<span class="pos-tag2">WR</span></td><td class="num mono px">$1</td></tr><tr><td class="num mono">150</td><td>Jordan Love<span class="pos-tag2">QB</span></td><td class="num mono px">$1</td></tr><tr><td class="num mono">160</td><td>Tyler Allgeier<span class="pos-tag2">RB</span></td><td class="num mono px">$1</td></tr><tr><td class="num mono">162</td><td>Dalton Schultz<span class="pos-tag2">TE</span></td><td class="num mono px">$1</td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div class="roster-card">
+      <div class="roster-head">
+        <div><span class="team-nm">The Wet Bandits</span><span class="mgr">Bob Zanneo</span></div>
+        <div class="waiver-info"><span class="mono">$100</span> waiver &middot; priority <span class="mono">#4</span></div>
+      </div>
+      <table class="dollars roster-table">
+        <tbody>
+<tr><td class="num mono">29</td><td>George Pickens<span class="pos-tag2">WR</span></td><td class="num mono px">$38</td></tr><tr><td class="num mono">30</td><td>Trey McBride<span class="pos-tag2">TE</span></td><td class="num mono px">$29</td></tr><tr><td class="num mono">33</td><td>Derrick Henry<span class="pos-tag2">RB</span></td><td class="num mono px">$42</td></tr><tr><td class="num mono">35</td><td>Kenneth Walker III<span class="pos-tag2">RB</span></td><td class="num mono px">$46</td></tr><tr><td class="num mono">37</td><td>Luther Burden III<span class="pos-tag2">WR</span></td><td class="num mono px">$16</td></tr><tr><td class="num mono">62</td><td>Dak Prescott<span class="pos-tag2">QB</span></td><td class="num mono px">$11</td></tr><tr><td class="num mono">81</td><td>Bears<span class="pos-tag2">DEF</span></td><td class="num mono px">$1</td></tr><tr><td class="num mono">91</td><td>Jaylen Warren<span class="pos-tag2">RB</span></td><td class="num mono px">$8</td></tr><tr><td class="num mono">109</td><td>Courtland Sutton<span class="pos-tag2">WR</span></td><td class="num mono px">$3</td></tr><tr><td class="num mono">126</td><td>Chris Rodriguez Jr.<span class="pos-tag2">RB</span></td><td class="num mono px">$1</td></tr><tr><td class="num mono">135</td><td>Deebo Samuel Sr.<span class="pos-tag2">WR</span></td><td class="num mono px">$1</td></tr><tr><td class="num mono">144</td><td>Tre Tucker<span class="pos-tag2">WR</span></td><td class="num mono px">$1</td></tr><tr><td class="num mono">147</td><td>Romeo Doubs<span class="pos-tag2">WR</span></td><td class="num mono px">$2</td></tr><tr><td class="num mono">152</td><td>Alvin Kamara<span class="pos-tag2">RB</span></td><td class="num mono px">$1</td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div class="roster-card">
+      <div class="roster-head">
+        <div><span class="team-nm">Wild Bill</span><span class="mgr">Uncle Lou</span></div>
+        <div class="waiver-info"><span class="mono">$100</span> waiver &middot; priority <span class="mono">#11</span></div>
+      </div>
+      <table class="dollars roster-table">
+        <tbody>
+<tr><td class="num mono">2</td><td>Bijan Robinson<span class="pos-tag2">RB</span></td><td class="num mono px">$70</td></tr><tr><td class="num mono">18</td><td>Eagles<span class="pos-tag2">DEF</span></td><td class="num mono px">$3</td></tr><tr><td class="num mono">19</td><td>Josh Jacobs<span class="pos-tag2">RB</span></td><td class="num mono px">$24</td></tr><tr><td class="num mono">20</td><td>De&#x27;Von Achane<span class="pos-tag2">RB</span></td><td class="num mono px">$42</td></tr><tr><td class="num mono">52</td><td>Dallas Goedert<span class="pos-tag2">TE</span></td><td class="num mono px">$6</td></tr><tr><td class="num mono">54</td><td>DJ Moore<span class="pos-tag2">WR</span></td><td class="num mono px">$14</td></tr><tr><td class="num mono">61</td><td>Emeka Egbuka<span class="pos-tag2">WR</span></td><td class="num mono px">$21</td></tr><tr><td class="num mono">92</td><td>Chris Godwin Jr.<span class="pos-tag2">WR</span></td><td class="num mono px">$7</td></tr><tr><td class="num mono">98</td><td>Bo Nix<span class="pos-tag2">QB</span></td><td class="num mono px">$6</td></tr><tr><td class="num mono">131</td><td>Tyler Shough<span class="pos-tag2">QB</span></td><td class="num mono px">$1</td></tr><tr><td class="num mono">140</td><td>Xavier Worthy<span class="pos-tag2">WR</span></td><td class="num mono px">$1</td></tr><tr><td class="num mono">149</td><td>Sam Darnold<span class="pos-tag2">QB</span></td><td class="num mono px">$1</td></tr><tr><td class="num mono">156</td><td>Jake Ferguson<span class="pos-tag2">TE</span></td><td class="num mono px">$1</td></tr><tr><td class="num mono">157</td><td>Tank Bigsby<span class="pos-tag2">RB</span></td><td class="num mono px">$2</td></tr>
+        </tbody>
+      </table>
+    </div>
+    </div>
+  </section>
+
+  <section>
+    <h2 class="section-title">Free agent board</h2>
+    <p class="section-dek">Full 269-player pool minus everyone already rostered across all 12 teams
+      (name-matched so a Jr./Sr./II/III suffix mismatch never produces a false "available" listing).
+      Sortable, filterable, searchable. Regenerated fresh from <span class="mono">draft-helper free-agents</span>
+      &mdash; rerun after any week's adds/drops to keep it current.</p>
+    <div class="callout">
+      <b>Top target right now: Tyrone Tracy Jr. (RB, $14 value, 172 projected points)</b> &mdash; a real
+      Giants committee back nobody in the league drafted. That's a bigger point total than half the RBs that
+      actually got bid on tonight. Everyone else worth a claim this week is well below $10 in fair value &mdash;
+      see the FAAB guide below for how much of your $100 budget that's actually worth risking.
+    </div>
+    <div class="rank-controls">
+      <input id="fa-search" class="rank-search" type="text" placeholder="Search a player...">
+      <button class="pos-filter-chip active" data-pos="ALL">ALL</button>
+      <button class="pos-filter-chip" data-pos="QB">QB</button>
+      <button class="pos-filter-chip" data-pos="RB">RB</button>
+      <button class="pos-filter-chip" data-pos="WR">WR</button>
+      <button class="pos-filter-chip" data-pos="TE">TE</button>
+      <button class="pos-filter-chip" data-pos="DEF">DEF</button>
+    </div>
+    <p id="fa-count" class="rank-count">111 of 111 free agents</p>
+    <div class="rank-table-wrap">
+      <table class="dollars" id="fa-table">
+        <thead>
+          <tr>
+            <th class="sortable active" data-key="rank">#<span class="arrow">&#9650;</span></th>
+            <th class="sortable" data-key="name">Player<span class="arrow"></span></th>
+            <th class="sortable" data-key="pos">Pos<span class="arrow"></span></th>
+            <th class="num sortable" data-key="pts">Proj. Pts<span class="arrow"></span></th>
+            <th class="num sortable" data-key="price">Fair Value<span class="arrow"></span></th>
+          </tr>
+        </thead>
+        <tbody id="fa-tbody"></tbody>
+      </table>
+    </div>
+    <script type="application/json" id="fa-data">[{"rank":1,"name":"Tyrone Tracy Jr.","pos":"RB","price":13.9,"pts":171.8},{"rank":2,"name":"Najee Harris","pos":"RB","price":5.1,"pts":89.2},{"rank":3,"name":"Jalen Nailor","pos":"WR","price":4.7,"pts":111.0},{"rank":4,"name":"Jordyn Tyson","pos":"WR","price":4.4,"pts":103.1},{"rank":5,"name":"Isiah Pacheco","pos":"RB","price":3.9,"pts":72.7},{"rank":6,"name":"Travis Hunter","pos":"WR","price":3.3,"pts":96.1},{"rank":7,"name":"Khalil Shakir","pos":"WR","price":3.3,"pts":95.9},{"rank":8,"name":"T.J. Hockenson","pos":"TE","price":3.1,"pts":96.5},{"rank":9,"name":"Tyreek Hill","pos":"WR","price":2.5,"pts":87.6},{"rank":10,"name":"Ravens","pos":"DEF","price":2.5,"pts":223.0},{"rank":11,"name":"Cooper Kupp","pos":"WR","price":2.1,"pts":86.2},{"rank":12,"name":"Bills","pos":"DEF","price":2.1,"pts":214.5},{"rank":13,"name":"Devin Singletary","pos":"RB","price":2.1,"pts":50.9},{"rank":14,"name":"David Njoku","pos":"TE","price":2.0,"pts":78.0},{"rank":15,"name":"Chiefs","pos":"DEF","price":1.8,"pts":214.5},{"rank":16,"name":"Calvin Ridley","pos":"WR","price":1.8,"pts":83.9},{"rank":17,"name":"Evan Engram","pos":"TE","price":1.5,"pts":73.7},{"rank":18,"name":"Austin Ekeler","pos":"RB","price":1.4,"pts":42.6},{"rank":19,"name":"Hunter Henry","pos":"TE","price":1.3,"pts":65.5},{"rank":20,"name":"Jauan Jennings","pos":"WR","price":1.3,"pts":79.4},{"rank":21,"name":"Bengals","pos":"DEF","price":1.1,"pts":214.5},{"rank":22,"name":"Rashod Bateman","pos":"WR","price":1.1,"pts":77.4},{"rank":23,"name":"Dolphins","pos":"DEF","price":1.0,"pts":105.9},{"rank":24,"name":"Buccaneers","pos":"DEF","price":1.0,"pts":135.3},{"rank":25,"name":"Falcons","pos":"DEF","price":1.0,"pts":120.3},{"rank":26,"name":"Titans","pos":"DEF","price":1.0,"pts":120.3},{"rank":27,"name":"Saints","pos":"DEF","price":1.0,"pts":135.3},{"rank":28,"name":"Giants","pos":"DEF","price":1.0,"pts":135.3},{"rank":29,"name":"Packers","pos":"DEF","price":1.0,"pts":214.5},{"rank":30,"name":"Lions","pos":"DEF","price":1.0,"pts":214.5},{"rank":31,"name":"49ers","pos":"DEF","price":1.0,"pts":154.9},{"rank":32,"name":"Cowboys","pos":"DEF","price":1.0,"pts":154.9},{"rank":33,"name":"Commanders","pos":"DEF","price":1.0,"pts":135.3},{"rank":34,"name":"Raiders","pos":"DEF","price":1.0,"pts":105.9},{"rank":35,"name":"Cardinals","pos":"DEF","price":1.0,"pts":105.9},{"rank":36,"name":"Jets","pos":"DEF","price":1.0,"pts":105.9},{"rank":37,"name":"Christian Kirk","pos":"WR","price":1.0,"pts":61.5},{"rank":38,"name":"Marvin Mims Jr.","pos":"WR","price":1.0,"pts":72.1},{"rank":39,"name":"Colts","pos":"DEF","price":1.0,"pts":135.3},{"rank":40,"name":"Panthers","pos":"DEF","price":1.0,"pts":135.3},{"rank":41,"name":"Browns","pos":"DEF","price":1.0,"pts":120.3},{"rank":42,"name":"Ollie Gordon II","pos":"RB","price":1.0,"pts":17.1},{"rank":43,"name":"Trey Benson","pos":"RB","price":1.0,"pts":23.3},{"rank":44,"name":"Gus Edwards","pos":"RB","price":1.0,"pts":27.6},{"rank":45,"name":"James Conner","pos":"RB","price":1.0,"pts":28.0},{"rank":46,"name":"Justice Hill","pos":"RB","price":1.0,"pts":31.4},{"rank":47,"name":"Kaleb Johnson","pos":"RB","price":1.0,"pts":29.3},{"rank":48,"name":"Jayden Higgins","pos":"WR","price":1.0,"pts":40.6},{"rank":49,"name":"Devin Neal","pos":"RB","price":1.0,"pts":11.0},{"rank":50,"name":"Miles Sanders","pos":"RB","price":1.0,"pts":19.5},{"rank":51,"name":"Kimani Vidal","pos":"RB","price":1.0,"pts":19.4},{"rank":52,"name":"Ty Chandler","pos":"RB","price":1.0,"pts":21.7},{"rank":53,"name":"Roschon Johnson","pos":"RB","price":1.0,"pts":21.5},{"rank":54,"name":"Braelon Allen","pos":"RB","price":1.0,"pts":27.4},{"rank":55,"name":"Kaelon Black","pos":"RB","price":1.0,"pts":27.5},{"rank":56,"name":"Darnell Mooney","pos":"WR","price":1.0,"pts":50.8},{"rank":57,"name":"Adonai Mitchell","pos":"WR","price":1.0,"pts":50.5},{"rank":58,"name":"Marquise Brown","pos":"WR","price":1.0,"pts":55.0},{"rank":59,"name":"Ja'Kobi Lane","pos":"WR","price":1.0,"pts":51.2},{"rank":60,"name":"Cade Otton","pos":"TE","price":1.0,"pts":51.9},{"rank":61,"name":"Kenneth Gainwell","pos":"RB","price":1.0,"pts":33.9},{"rank":62,"name":"Dylan Sampson","pos":"RB","price":1.0,"pts":36.3},{"rank":63,"name":"Isaac Guerendo","pos":"RB","price":1.0,"pts":34.2},{"rank":64,"name":"Jaylen Wright","pos":"RB","price":1.0,"pts":36.3},{"rank":65,"name":"Jaydon Blue","pos":"RB","price":1.0,"pts":36.5},{"rank":66,"name":"Jerome Ford","pos":"RB","price":1.0,"pts":39.3},{"rank":67,"name":"Zamir White","pos":"RB","price":1.0,"pts":37.0},{"rank":68,"name":"Keon Coleman","pos":"WR","price":1.0,"pts":39.3},{"rank":69,"name":"Jack Bech","pos":"WR","price":1.0,"pts":38.9},{"rank":70,"name":"Elic Ayomanor","pos":"WR","price":1.0,"pts":37.7},{"rank":71,"name":"Xavier Legette","pos":"WR","price":1.0,"pts":36.9},{"rank":72,"name":"Pat Freiermuth","pos":"TE","price":1.0,"pts":51.3},{"rank":73,"name":"Elijah Arroyo","pos":"TE","price":1.0,"pts":11.4},{"rank":74,"name":"Terrance Ferguson","pos":"TE","price":1.0,"pts":12.1},{"rank":75,"name":"Mason Taylor","pos":"TE","price":1.0,"pts":17.8},{"rank":76,"name":"Brenton Strange","pos":"TE","price":1.0,"pts":17.9},{"rank":77,"name":"Jonnu Smith","pos":"TE","price":1.0,"pts":19.0},{"rank":78,"name":"Luke Musgrave","pos":"TE","price":1.0,"pts":19.9},{"rank":79,"name":"Noah Fant","pos":"TE","price":1.0,"pts":25.7},{"rank":80,"name":"Zach Ertz","pos":"TE","price":1.0,"pts":25.7},{"rank":81,"name":"Chig Okonkwo","pos":"TE","price":1.0,"pts":47.0},{"rank":82,"name":"Ja'Tavion Sanders","pos":"TE","price":1.0,"pts":26.0},{"rank":83,"name":"Cole Kmet","pos":"TE","price":1.0,"pts":42.3},{"rank":84,"name":"Daniel Jones","pos":"QB","price":1.0,"pts":161.5},{"rank":85,"name":"Justin Fields","pos":"QB","price":1.0,"pts":21.2},{"rank":86,"name":"Gunnar Helm","pos":"TE","price":1.0,"pts":10.9},{"rank":87,"name":"Anthony Richardson Sr.","pos":"QB","price":1.0,"pts":26.8},{"rank":88,"name":"Russell Wilson","pos":"QB","price":1.0,"pts":20.5},{"rank":89,"name":"Fernando Mendoza","pos":"QB","price":1.0,"pts":14.9},{"rank":90,"name":"Aaron Rodgers","pos":"QB","price":1.0,"pts":116.7},{"rank":91,"name":"Kirk Cousins","pos":"QB","price":1.0,"pts":123.9},{"rank":92,"name":"Cam Ward","pos":"QB","price":1.0,"pts":129.4},{"rank":93,"name":"Tua Tagovailoa","pos":"QB","price":1.0,"pts":108.5},{"rank":94,"name":"J.J. McCarthy","pos":"QB","price":1.0,"pts":68.1},{"rank":95,"name":"Bryce Young","pos":"QB","price":1.0,"pts":145.6},{"rank":96,"name":"Geno Smith","pos":"QB","price":1.0,"pts":143.1},{"rank":97,"name":"Michael Penix Jr.","pos":"QB","price":1.0,"pts":46.0},{"rank":98,"name":"Jacoby Brissett","pos":"QB","price":1.0,"pts":100.3},{"rank":99,"name":"Deshaun Watson","pos":"QB","price":1.0,"pts":94.9},{"rank":100,"name":"Dontayvion Wicks","pos":"WR","price":1.0,"pts":30.7},{"rank":101,"name":"Kyle Williams","pos":"WR","price":1.0,"pts":29.3},{"rank":102,"name":"Tre Harris","pos":"WR","price":1.0,"pts":29.1},{"rank":103,"name":"Isaac TeSlaa","pos":"WR","price":1.0,"pts":23.2},{"rank":104,"name":"Diontae Johnson","pos":"WR","price":1.0,"pts":19.6},{"rank":105,"name":"Tank Dell","pos":"WR","price":1.0,"pts":18.8},{"rank":106,"name":"Josh Reynolds","pos":"WR","price":1.0,"pts":18.7},{"rank":107,"name":"Demario Douglas","pos":"WR","price":1.0,"pts":17.9},{"rank":108,"name":"Curtis Samuel","pos":"WR","price":1.0,"pts":12.5},{"rank":109,"name":"Jalin Hyatt","pos":"WR","price":1.0,"pts":12.1},{"rank":110,"name":"Skyy Moore","pos":"WR","price":1.0,"pts":11.4},{"rank":111,"name":"Ricky Pearsall","pos":"WR","price":1.0,"pts":0.0}]</script>
+    <script>(function () {
+  var data = JSON.parse(document.getElementById('fa-data').textContent);
+  var tbody = document.getElementById('fa-tbody');
+  var countEl = document.getElementById('fa-count');
+  var searchEl = document.getElementById('fa-search');
+  var chips = document.querySelectorAll('#fa-table').length ? document.querySelectorAll('.pos-filter-chip') : [];
+  var headers = document.querySelectorAll('#fa-table th.sortable');
+  var state = { sortKey: 'rank', sortDir: 1, pos: 'ALL', q: '' };
+
+  function apply() {
+    var rows = data.filter(function (r) {
+      if (state.pos !== 'ALL' && r.pos !== state.pos) return false;
+      if (state.q && r.name.toLowerCase().indexOf(state.q) === -1) return false;
+      return true;
+    });
+    rows.sort(function (a, b) {
+      var av = a[state.sortKey], bv = b[state.sortKey];
+      if (typeof av === 'string') { av = av.toLowerCase(); bv = bv.toLowerCase(); }
+      if (av < bv) return -1 * state.sortDir;
+      if (av > bv) return 1 * state.sortDir;
+      return 0;
+    });
+    tbody.innerHTML = rows.map(function (r) {
+      return '<tr><td class="num mono">' + r.rank + '</td><td>' + r.name +
+        '<span class="pos-tag2">' + r.pos + '</span></td><td class="num mono">' +
+        Math.round(r.pts) + '</td><td class="num mono px">$' +
+        r.price.toFixed(1) + '</td></tr>';
+    }).join('');
+    countEl.textContent = rows.length + ' of ' + data.length + ' free agents';
+  }
+
+  headers.forEach(function (h) {
+    h.addEventListener('click', function () {
+      var key = h.getAttribute('data-key');
+      if (state.sortKey === key) { state.sortDir *= -1; } else { state.sortKey = key; state.sortDir = 1; }
+      headers.forEach(function (x) { x.classList.remove('active'); x.querySelector('.arrow').textContent = ''; });
+      h.classList.add('active');
+      h.querySelector('.arrow').textContent = state.sortDir === 1 ? '\u25B2' : '\u25BC';
+      apply();
+    });
+  });
+
+  chips.forEach(function (c) {
+    c.addEventListener('click', function () {
+      chips.forEach(function (x) { x.classList.remove('active'); });
+      c.classList.add('active');
+      state.pos = c.getAttribute('data-pos');
+      apply();
+    });
+  });
+
+  searchEl.addEventListener('input', function () {
+    state.q = searchEl.value.trim().toLowerCase();
+    apply();
+  });
+
+  apply();
+})();</script>
+  </section>
+
+  <section>
+    <h2 class="section-title">Weekly lineup recommendations</h2>
+    <p class="section-dek">Not live yet &mdash; this needs real weekly inputs I don't have access to
+      (injury designations, opponent matchups, actual snap counts as the season develops). Here's how it'll work
+      once games start:</p>
+    <div class="callout">
+      Each week, send your current injury report / questionable-doubtful-out designations for your roster (a
+      screenshot of the Yahoo lineup page works great, same as everything else this season). I'll compare your
+      bench against your starters using the projection model already built for this league, factor in the
+      matchup context you give me, and recommend any starts/sits worth changing &mdash; plus flag anything on
+      your bench that outprojects a struggling starter.
+    </div>
+  </section>
+
+  <section>
+    <h2 class="section-title">Trade analyzer</h2>
+    <p class="section-dek">Ready whenever you want to run a real trade through it. Describe the players on each
+      side (your team or any two teams in the league) and I'll grade it using this same league-specific
+      projection/value model: who gains more projected points, who gains more surplus value, and whether it
+      fixes a real roster need (like JP'Marrgan Chase's and Bye Week's missing DEF).</p>
+    <div class="callout">
+      No trades proposed yet. Bring me one anytime &mdash; "would X-for-Y make sense" or "what should I offer
+      [team] for [player]" both work.
+    </div>
+  </section>
+
+  <section>
+    <h2 class="section-title">FAAB bid guide</h2>
+    <p class="section-dek">Waiting on your league's real bid history to calibrate this properly &mdash; the same
+      "price against your league's own real behavior, not a generic formula" approach used for the auction
+      curve all draft season.</p>
+    <div class="callout">
+      <b>What to send:</b> past FAAB bids (winning $ amount out of the $100 budget, the player, and roughly what
+      tier/role he was at the time) for as many past waiver claims as you can pull together &mdash; a screenshot
+      of Yahoo's transaction history works. Once I have that, I'll build the same kind of real price curve used
+      for the auction (bid $ as a share of the $100 budget vs. the player's real value/opportunity) so
+      recommended bids reflect how <i>this</i> room actually bids, not a league-average guess.
+    </div>
+  </section>
+
+  <section>
+    <h2 class="section-title">Season moves log</h2>
+    <p class="section-dek">Empty for now &mdash; the draft is day one of the season. Send a screenshot or
+      description of any waiver claim, add/drop, or trade as it happens (yours or anyone else's) and this section
+      builds out over the season: who added/dropped whom, trade details, and how it shifts each team's outlook
+      above. Same workflow that built the draft history itself.</p>
+    <div class="moves-empty">
+      No moves logged yet. <b>Next update:</b> send the first waiver-wire or trade activity once Week 1 rosters lock.
+    </div>
+  </section>
+
+  <footer class="foot">
+    Grades computed from each team's real drafted roster against this year's league-specific salary curve and
+    the from-scratch opportunity/efficiency projection model. Season outlook is starting-lineup point projection
+    only &mdash; a snapshot of today's roster strength, not a simulation of the season. Manager/team mapping and
+    waiver order pulled directly from the league's Yahoo manager page. Keeper eligibility for 2027: any 2026 pick
+    at $10 or less becomes keeper-eligible next year at this year's price + $10 (hard $20 ceiling) &mdash; that
+    read gets added here once it's useful, closer to the 2027 offseason.
+  </footer>
+</div>
