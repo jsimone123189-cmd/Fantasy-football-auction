@@ -1,10 +1,10 @@
 player_name,position,nfl_team,games_proj,solo_pg,ast_pg,tfl_pg,sack_pg,ff_pg,fr_pg,int_pg,pd_pg,risk_tier,role_note
-Chris Jones,DT,KC,17,0.882,0.824,0.361,0.447,0.056,0.023,0.0,0.15,low,"Full-time 3-tech/interior pass rusher, every-down starter"
+Chris Jones,DT,KC,16,0.882,0.824,0.361,0.447,0.056,0.023,0.0,0.15,medium,"Full-time 3-tech/interior pass rusher, every-down starter"
 Jalen Carter,DT,PHI,16,1.75,1.0,0.528,0.367,0.056,0.023,0.0,0.383,medium,"Full-time interior starter under Vic Fangio, 3-tech pass-rush emphasis"
 Quinnen Williams,DT,DAL,17,1.733,1.8,0.461,0.325,0.156,0.023,0.0,0.091,low,"Full-time starter, anchors Cowboys DL alongside Kenny Clark"
 Dexter Lawrence,NT,CIN,16,0.824,1.0,0.478,0.256,0.056,0.023,0.0,0.209,medium,"Starting nose tackle, Bengals depth chart"
 Christian Wilkins,DT,Free agent (unsigned),13,0.0,0.0,0.361,0.242,0.056,0.023,0.0,0.091,high,Unsigned as of Aug 2026 -- games_proj discounted for a landing-spot/ramp-up gap even if he signs before the draft.
-Vita Vea,DT,TB,16,0.941,1.059,0.449,0.374,0.056,0.052,0.0,0.15,medium,Full-time nose/interior run-stuffer if he stays; trade destination unresolved as of Aug 2026
+Vita Vea,DT,TB,17,0.941,1.059,0.449,0.374,0.056,0.052,0.0,0.15,low,Full-time nose/interior run-stuffer if he stays; trade destination unresolved as of Aug 2026
 DeForest Buckner,DT,IND,14,3.0,1.7,0.361,0.442,0.056,0.023,0.0,0.091,high,"Real 2025 season-ending injury on record, but the same research confirms he's cleared/fully healthy for 2026 -- games_proj uses the real 'high risk' games count instead of the harsher unrecovered discount, since there's no specific 2026 games-missed signal left, just residual uncertainty until proven in game action."
 Jeffery Simmons,DT,TEN,17,2.6,1.867,0.928,0.608,0.156,0.023,0.0,0.191,low,"Full-time starting 3-tech/interior rusher, paired with John Franklin-Myers in new defensive scheme"
 Dre'Mont Jones,DE,NE,16,1.056,1.333,0.361,0.436,0.056,0.078,0.0,0.119,medium,Signed 3-yr/$39M FA deal with Patriots for 2026; expected interior/edge rotational-to-starting pass rusher
@@ -12,9 +12,9 @@ Kris Jenkins,DT,CIN,16,1.286,1.286,0.539,0.295,0.056,0.023,0.0,0.127,medium,"Thi
 Alim McNeill,DT,DET,14,0.5,0.4,0.461,0.292,0.106,0.023,0.0,0.141,high,Starting DT alongside Tyleik Williams; aiming for full 3-down role after incomplete ACL recovery
 Zach Sieler,DT,MIA,17,1.706,1.059,0.714,0.403,0.086,0.052,0.0,0.15,low,"Team captain, full-time starting interior DL/run anchor"
 Grady Jarrett,DT,CHI,16,1.0,1.786,0.486,0.295,0.056,0.023,0.0,0.198,medium,Rotational interior DT / DT3-type role behind Dexter and rookie Shemar Turner; run-stuffing veteran depth
-Justin Madubuike,DT,BAL,14,2.5,1.0,0.361,0.742,0.056,0.023,0.0,0.091,high,"Real 2025 season-ending injury on record, but the same research confirms he's cleared/fully healthy for 2026 -- games_proj uses the real 'high risk' games count instead of the harsher unrecovered discount, since there's no specific 2026 games-missed signal left, just residual uncertainty until proven in game action."
+Nnamdi Madubuike,DT,BAL,14,2.5,1.0,0.361,0.742,0.056,0.023,0.0,0.091,high,"Real 2025 season-ending injury on record, but the same research confirms he's cleared/fully healthy for 2026 -- games_proj uses the real 'high risk' games count instead of the harsher unrecovered discount, since there's no specific 2026 games-missed signal left, just residual uncertainty until proven in game action."
 Derrick Brown,DT,CAR,12,1.941,2.353,0.508,0.389,0.086,0.023,0.0,0.297,medium,"Real 2025 season-ending injury on record -- games_proj discounted, not assumed fully recovered to a normal 17-game year."
-Foley Fatukasi,DT,HOU,14,1.25,0.75,0.361,0.429,0.056,0.023,0.0,0.091,high,Depth/rotational run-stuffing NT-DT; not a lock for major snaps
+Foley Fatukasi,DT,LV,14,1.25,0.75,0.361,0.429,0.056,0.023,0.0,0.091,high,Depth/rotational run-stuffing NT-DT; not a lock for major snaps
 Javon Hargrave,DT,GB,16,1.125,2.125,0.501,0.273,0.088,0.023,0.0,0.091,medium,"Projected primary nose tackle in new 3-4 scheme reunited with DC Jonathan Gannon; Wyatt at DT, McClellan depth NT"
 Sheldon Rankins,DT,HOU,16,1.059,1.353,0.361,0.33,0.056,0.052,0.0,0.091,medium,"Rotational interior DT, run-stuffing/pass-rush depth"
 Jordan Davis,NT,PHI,17,1.882,2.118,0.626,0.374,0.056,0.023,0.0,0.267,low,"Full-time nose tackle, run anchor with growing pass rush"
@@ -50,12 +50,12 @@ Foyesade Oluokun,MLB,JAX,17,4.465,3.947,0.189,0.096,0.11,0.069,0.08,0.158,low,"S
 Demario Davis,MLB,NYJ,16,4.465,3.947,0.336,0.067,0.11,0.069,0.051,0.217,medium,"Expected starter/leader for Jets defense [143 combined 2025 tackles found in research notes; solo/assist split estimated at this position's observed 53/47 average since the source didn't report the two separately -- not a fabricated total, just an estimated split.]"
 Blake Cashman,ILB,MIN,16,5.879,5.198,0.343,0.144,0.089,0.04,0.051,0.235,medium,"Starter, three-down when healthy [144 combined 2025 tackles found in research notes; solo/assist split estimated at this position's observed 53/47 average since the source didn't report the two separately -- not a fabricated total, just an estimated split.]"
 Ernest Jones IV,ILB,SEA,17,4.458,3.942,0.189,0.083,0.051,0.04,0.217,0.391,low,"Starter, three-down [126 combined 2025 tackles found in research notes; solo/assist split estimated at this position's observed 53/47 average since the source didn't report the two separately -- not a fabricated total, just an estimated split.]"
-Bobby Okereke,ILB,Free agent (unsigned),13,6.059,2.353,0.189,0.096,0.051,0.04,0.11,0.334,high,Unsigned as of Aug 2026 -- games_proj discounted for a landing-spot/ramp-up gap even if he signs before the draft.
+Bobby Okereke,ILB,CAR,14,6.059,2.353,0.189,0.096,0.051,0.04,0.11,0.334,high,"Signed a 1-year deal with Carolina around the Aug 30-31, 2026 cutdown deadline -- a very late signing behind incumbent Devin Lloyd, likely depth/insurance rather than a clear three-down job."
 Kaden Elliss,OLB,NO,16,3.471,2.824,0.189,0.17,0.08,0.04,0.08,0.334,medium,"Expected starter/defensive play-caller, replacing Demario Davis"
 Nick Bolton,ILB,KC,17,4.294,4.765,0.189,0.096,0.08,0.04,0.08,0.334,low,"Starter, three-down"
 Tremaine Edmunds,MLB,NYG,16,4.692,3.923,0.189,0.105,0.051,0.078,0.205,0.504,medium,"Expected starter, but coming off poor late-2025 stretch"
 Josey Jewell,ILB,Free agent (unsigned),14,0.0,0.0,0.189,0.067,0.051,0.04,0.051,0.158,high,"N/A -- did not play 2025, health clearance uncertain"
-Frankie Luvu,OLB,WAS,14,2.471,2.588,0.189,0.155,0.11,0.04,0.051,0.334,high,Uncertain -- Commanders reportedly considering cutting him pre-2026
+Frankie Luvu,OLB,WAS,14,2.471,2.588,0.189,0.155,0.11,0.04,0.051,0.334,high,"Made Washington's 53-man roster (not cut, despite earlier speculation), but rookie Sonny Styles and Leo Chenal have reportedly pushed him down the depth chart -- likely a backup/rotational role now rather than his prior every-down role."
 Devin Bush,ILB,CHI,16,3.706,3.647,0.189,0.126,0.11,0.04,0.139,0.158,medium,Expected starter
 Willie Gay Jr.,OLB,MIA,14,0.588,0.588,0.189,0.126,0.051,0.04,0.051,0.217,high,"Rotational, re-signed 1yr deal for 2026"
 Terrel Bernard,MLB,BUF,16,3.667,1.75,0.189,0.067,0.051,0.04,0.092,0.283,medium,"Starter when healthy, but recent injury history"
@@ -91,16 +91,16 @@ Jack Sanborn,ILB,DAL,14,2.667,3.0,0.273,0.067,0.051,0.04,0.051,0.158,high,Rotati
 Tyrel Dodson,ILB,MIA,17,4.5,3.562,0.189,0.067,0.082,0.071,0.082,0.252,low,"Starter, three-down"
 Matt Milano,OLB,Free agent (unsigned),13,3.0,2.583,0.189,0.213,0.093,0.04,0.051,0.158,high,Unsigned as of Aug 2026 -- games_proj discounted for a landing-spot/ramp-up gap even if he signs before the draft.
 Baron Browning,OLB,ARI,16,1.203,1.064,0.323,0.133,0.051,0.073,0.084,0.191,medium,"Rotational/situational pass rusher [34 combined 2025 tackles found in research notes; solo/assist split estimated at this position's observed 53/47 average since the source didn't report the two separately -- not a fabricated total, just an estimated split.]"
-Troy Andersen,ILB,ATL,14,0.0,0.0,0.189,0.067,0.051,0.04,0.051,0.158,high,Depth/injury question mark
+Troy Andersen,ILB,FA,14,0.0,0.0,0.189,0.067,0.051,0.04,0.051,0.158,high,Released by Atlanta in Aug 2026 after opening camp on PUP again and being deemed not healthy enough to practice -- recurring injury history now cost him the roster spot.
 Nakobe Dean,ILB,LV,16,3.0,2.5,0.189,0.267,0.151,0.04,0.051,0.208,medium,"Starter, paired with Quay Walker"
 Jeremiah Trotter Jr.,ILB,PHI,16,0.0,0.0,0.189,0.082,0.051,0.04,0.051,0.189,medium,"Rotational, competing for snaps"
-Junior Colson,ILB,LAC,12,0.0,0.0,0.189,0.067,0.051,0.04,0.051,0.158,high,"Real 2025 season-ending injury on record -- games_proj discounted, not assumed fully recovered to a normal 17-game year."
-Alex Singleton,ILB,Denver Broncos (pending 2026 FA),12,3.375,5.062,0.189,0.098,0.082,0.04,0.051,0.158,medium,"Real 2025 season-ending injury on record -- games_proj discounted, not assumed fully recovered to a normal 17-game year."
+Junior Colson,ILB,FA,13,0.0,0.0,0.189,0.067,0.051,0.04,0.051,0.158,very_high,Unsigned as of Aug 2026 -- games_proj discounted for a landing-spot/ramp-up gap even if he signs before the draft.
+Alex Singleton,ILB,DEN,12,3.375,5.062,0.189,0.098,0.082,0.04,0.051,0.158,medium,"Real 2025 season-ending injury on record -- games_proj discounted, not assumed fully recovered to a normal 17-game year."
 Oren Burks,ILB,CIN,14,1.643,0.0,0.189,0.067,0.051,0.04,0.051,0.158,high,Rotational/backup
 Elandon Roberts,OLB,LV,16,2.471,2.824,0.366,0.067,0.051,0.069,0.051,0.187,medium,Starter/thumper role
 Kamu Grugier-Hill,OLB,MIN,14,0.0,0.0,0.189,0.067,0.051,0.04,0.051,0.158,high,Depth linebacker/special teams
 Josh Ross,ILB,MIN (practice squad),14,0.0,0.0,0.189,0.067,0.051,0.04,0.051,0.158,high,Deep depth/practice squad
-Anfernee Orji,ILB,TEN,14,0.0,0.0,0.189,0.067,0.051,0.04,0.051,0.158,high,Uncertain -- recovering from ACL
+Anfernee Orji,ILB,Uncertain,11,0.0,0.0,0.189,0.067,0.051,0.04,0.051,0.158,very_high,Tennessee cut ties with him in 2026; some reporting suggests a possible Giants signing (July 2026) but that destination is not independently confirmed.
 Cody Simon,ILB,ARI,16,2.562,2.188,0.189,0.082,0.051,0.071,0.051,0.22,medium,"Starter, ascending role"
 Chazz Surratt,ILB,SEA,14,0.0,0.0,0.189,0.067,0.051,0.04,0.051,0.158,high,"Special teams/depth, re-signed for 2026"
 Barrett Carter,LB,CIN,16,3.118,3.118,0.189,0.067,0.051,0.04,0.08,0.275,medium,"Starter, strong rookie campaign"
@@ -134,7 +134,7 @@ Talanoa Hufanga,S,DEN,17,3.941,2.294,0.1,0.113,0.05,0.014,0.061,0.602,low,Starte
 Kam Curl,S,LAR,17,4.647,2.529,0.1,0.083,0.05,0.014,0.12,0.426,low,Starter - box safety
 Chamarri Conner,S,KC,16,4.412,2.471,0.1,0.083,0.079,0.014,0.091,0.337,medium,Starter - strong safety
 Nick Cross,S,IND,17,4.235,2.824,0.1,0.098,0.05,0.014,0.091,0.426,low,Starter - box safety
-Dane Belton,S,NYG,17,3.529,3.529,0.1,0.083,0.108,0.014,0.091,0.426,low,Starter - box safety
+Dane Belton,S,NYJ,16,3.529,3.529,0.1,0.083,0.108,0.014,0.091,0.426,medium,"Signed a 1yr/$4M deal with the Jets in March 2026, not still with the Giants. In an open competition for the starting safety job with Andre Cisco and Malachi Moore as of Aug 18, 2026 -- not a locked-in starter."
 Jeremy Chinn,S,LV,16,4.2,3.4,0.1,0.058,0.087,0.014,0.061,0.345,medium,Starter - box/hybrid safety
 Nick Scott,S,CAR,17,3.765,2.765,0.1,0.024,0.02,0.043,0.091,0.367,low,Starter - box safety
 Geno Stone,S,CIN,17,3.824,2.294,0.1,0.083,0.02,0.014,0.12,0.396,low,Starter - single-high/box hybrid
@@ -151,21 +151,21 @@ Andrew Wingard,S,ARI,16,2.812,2.438,0.271,0.024,0.02,0.045,0.093,0.56,medium,Com
 Dadrion Taylor-Demerson,S,ARI,16,2.667,2.25,0.12,0.024,0.02,0.014,0.145,0.528,medium,Competing for starting job
 Jessie Bates III,S,ATL,17,3.353,2.412,0.129,0.024,0.05,0.014,0.149,0.455,low,Starter - free safety
 Jevon Holland,S,NYG,16,2.714,1.786,0.117,0.024,0.02,0.014,0.061,0.457,medium,Starter - safety
-DeShon Elliott,S,PIT,12,4.0,3.6,0.15,0.124,0.12,0.014,0.161,0.478,high,"Real 2025 season-ending injury on record -- games_proj discounted, not assumed fully recovered to a normal 17-game year."
+DeShon Elliott,S,PIT,14,4.0,3.6,0.15,0.124,0.12,0.014,0.161,0.478,high,Starter - strong safety (if healthy)
 Julian Love,S,SEA,17,1.353,0.0,0.1,0.024,0.02,0.014,0.091,0.455,low,Starter - safety
 Quan Martin,S,WAS,17,3.059,2.765,0.217,0.024,0.05,0.014,0.061,0.367,low,Starter - box safety
 Malik Hooker,S,DAL,16,2.333,2.0,0.266,0.024,0.02,0.014,0.061,0.32,medium,Starter/rotational safety
 Camryn Bynum,S,IND,17,2.941,1.824,0.188,0.054,0.05,0.043,0.179,0.514,low,Starter - safety
 Xavier Watts,S,ATL,17,3.471,2.176,0.1,0.024,0.02,0.043,0.208,0.602,low,Starter - safety
-Nick Emmanwori,S,SEA,14,4.0,1.786,0.296,0.114,0.02,0.014,0.097,0.671,high,Starter - hybrid box/rookie standout
+Nick Emmanwori,S,SEA,16,4.0,1.786,0.296,0.114,0.02,0.014,0.097,0.671,medium,Starter - hybrid box/rookie standout
 Kevin Winston Jr.,S,TEN,16,2.1,1.3,0.35,0.074,0.02,0.014,0.061,0.378,medium,Starter - safety (2026)
 Amani Hooker,S,TEN,17,3.625,1.438,0.1,0.056,0.02,0.014,0.061,0.528,low,Starter - safety
 Jalen Pitre,S,HOU,16,3.071,2.214,0.207,0.024,0.02,0.014,0.204,0.707,medium,Starter - box/slot safety
 Calen Bullock,S,HOU,17,2.588,1.176,0.1,0.024,0.05,0.014,0.179,0.573,low,Starter - free safety
-Jaylen Reed,S,HOU,14,1.286,0.714,0.1,0.024,0.02,0.085,0.061,0.278,high,Rotational/depth safety
+Jaylen Reed,S,NE,14,1.286,0.714,0.1,0.024,0.02,0.085,0.061,0.278,high,Rotational/depth safety
 Caleb Downs,S,DAL,16,0.0,0.0,0.1,0.024,0.02,0.014,0.061,0.278,medium,Rookie starter - hybrid safety/slot
 A.J. Haulcy,S,IND,16,0.0,0.0,0.1,0.024,0.02,0.014,0.061,0.278,medium,Rookie starter - strong safety
-Julian Blackmon,S,FA,13,0.0,0.0,0.1,0.024,0.02,0.014,0.061,0.278,high,Unsigned as of Aug 2026 -- games_proj discounted for a landing-spot/ramp-up gap even if he signs before the draft.
+Julian Blackmon,S,NO,13,0.0,0.0,0.1,0.024,0.02,0.014,0.061,0.278,high,Unsigned as of Aug 2026 -- games_proj discounted for a landing-spot/ramp-up gap even if he signs before the draft.
 Devon Witherspoon,CB,SEA,16,4.0,2.0,0.1,0.045,0.02,0.055,0.103,0.57,medium,Starter - outside corner
 Trent McDuffie,CB,LAR,16,3.462,1.385,0.138,0.063,0.059,0.052,0.33,0.278,medium,Starter - outside corner
 Christian Gonzalez,CB,NE,16,3.857,1.071,0.135,0.024,0.02,0.014,0.061,0.636,medium,Starter - outside corner
@@ -193,15 +193,15 @@ Dru Phillips,CB,NYG,17,2.882,1.0,0.1,0.024,0.02,0.043,0.12,0.631,low,Starter - s
 Tyrique Stevenson,CB,CHI,16,2.769,1.0,0.1,0.024,0.097,0.091,0.1,0.663,medium,Starter - outside corner
 Jaylon Johnson,CB,CHI,14,2.143,0.286,0.242,0.024,0.02,0.014,0.133,0.421,high,Starter - outside corner (if healthy)
 Charvarius Ward,CB,IND,14,2.429,1.143,0.1,0.024,0.02,0.085,0.061,0.778,high,Starter - outside corner (if healthy)
-Trevon Diggs,CB,GB,14,2.222,0.778,0.1,0.024,0.02,0.014,0.061,0.278,high,Rotational/depth corner
+Trevon Diggs,CB,SEA,14,2.222,0.778,0.1,0.024,0.02,0.014,0.061,0.278,high,Rotational/depth corner
 Paulson Adebo,CB,NYG,16,4.667,1.417,0.1,0.024,0.02,0.014,0.103,0.612,medium,Starter - outside corner
-Marshon Lattimore,CB,WAS,14,1.778,1.222,0.183,0.024,0.02,0.069,0.061,0.667,high,Starter - outside corner (if healthy)
-Kaiir Elam,CB,TEN,14,1.571,0.786,0.135,0.024,0.02,0.085,0.061,0.35,high,Rotational/depth corner
+Marshon Lattimore,CB,WAS,13,1.778,1.222,0.183,0.024,0.02,0.069,0.061,0.667,very_high,Unsigned as of Aug 2026 -- games_proj discounted for a landing-spot/ramp-up gap even if he signs before the draft.
+Kaiir Elam,CB,LAC (practice squad),11,1.571,0.786,0.135,0.024,0.02,0.085,0.061,0.35,very_high,"Left Tennessee via free agency (March 2026), signed with the Chiefs, then released by Kansas City at Aug 30 2026 cutdowns; now on the Chargers practice squad, not any active 53-man roster."
 Coby Bryant,S/CB,CHI,17,2.6,1.667,0.1,0.024,0.053,0.014,0.195,0.512,low,Starter - slot/hybrid DB
 Chidobe Awuzie,CB,BAL,16,1.812,0.0,0.1,0.024,0.02,0.014,0.061,0.497,medium,Starter/rotational corner
 Eric Murray,S,JAX,16,2.667,1.833,0.183,0.066,0.062,0.055,0.103,0.528,medium,Starter - safety
 Antonio Johnson,S,JAX,17,2.0,1.059,0.1,0.083,0.02,0.014,0.208,0.543,low,Starter - safety
 Josh Metellus,S,MIN,16,3.0,3.143,0.1,0.042,0.02,0.014,0.133,0.493,medium,Starter - box safety
-Andre Cisco,S,NYJ,14,3.25,1.875,0.256,0.024,0.02,0.076,0.061,0.341,high,Starter/rotational safety
-Hunter Wohler,S,IND,12,0.0,0.0,0.1,0.024,0.02,0.014,0.061,0.278,high,"Real 2025 season-ending injury on record -- games_proj discounted, not assumed fully recovered to a normal 17-game year."
+Andre Cisco,S,NYJ,14,3.25,1.875,0.256,0.024,0.02,0.076,0.061,0.341,high,"Re-signed to a new 1-year deal (~$5.25M) in March 2026; in an open camp competition with Dane Belton (and Malachi Moore) for the starting job as of Aug 26, 2026 -- not a settled starter/rotational role."
+Hunter Wohler,S,IND,14,0.0,0.0,0.1,0.024,0.02,0.014,0.061,0.278,high,Competing for starting SS job vs. rookie A.J. Haulcy
 Quentin Lake,S,LAR,16,3.7,2.4,0.1,0.074,0.07,0.014,0.111,0.778,medium,"Starter, injury-shortened season but healthy for playoffs/2026"

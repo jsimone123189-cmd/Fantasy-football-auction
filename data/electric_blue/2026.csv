@@ -1,315 +1,315 @@
 player_name,position,nfl_team,projected_points,floor,ceiling,risk_tier,explanation,pos_rank,replacement_points,vor,overall_rank,vor_round,bye_week
-Jahmyr Gibbs,RB,Lions,343.8,292.2,405.7,low,"17.0 carries/g x 5.34 YPC | 5.0 targets/g, half-PPR | +13 pts from yardage milestone bonuses",1,141.8,202.0,1,1,6.0
-Christian McCaffrey,RB,49ers,316.8,237.6,405.5,medium,"19.8 carries/g x 3.99 YPC | 6.0 targets/g, half-PPR | +8 pts from yardage milestone bonuses",2,141.8,175.0,2,1,8.0
+Jahmyr Gibbs,RB,Lions,343.8,292.2,405.7,low,"17.0 carries/g x 5.34 YPC | 5.0 targets/g, half-PPR | +13 pts from yardage milestone bonuses",1,140.3,203.5,1,1,6.0
+Christian McCaffrey,RB,49ers,316.8,237.6,405.5,medium,"19.8 carries/g x 3.99 YPC | 6.0 targets/g, half-PPR | +8 pts from yardage milestone bonuses",2,140.3,176.5,2,1,8.0
 Josh Allen,QB,Bills,444.4,377.7,524.3,low,"35.0 pass att/g x 7.6 YPA, 6.2% TD rate (1pt/25 pass yds here) | 8.5 rush att/g at 5.2 YPC | +5 pts from yardage milestone bonuses",1,270.6,173.8,3,1,7.0
-Bijan Robinson,RB,Falcons,306.5,229.9,392.4,medium,"17.3 carries/g x 4.70 YPC | 5.5 targets/g, half-PPR | +9 pts from yardage milestone bonuses",3,141.8,164.7,4,1,11.0
-Jonathan Taylor,RB,Colts,306.3,229.7,392.0,medium,"19.0 carries/g x 4.94 YPC | 2.5 targets/g, half-PPR | +14 pts from yardage milestone bonuses",4,141.8,164.5,5,1,13.0
+Bijan Robinson,RB,Falcons,306.5,229.9,392.4,medium,"17.3 carries/g x 4.70 YPC | 5.5 targets/g, half-PPR | +9 pts from yardage milestone bonuses",3,140.3,166.2,4,1,11.0
+Jonathan Taylor,RB,Colts,306.3,229.7,392.0,medium,"19.0 carries/g x 4.94 YPC | 2.5 targets/g, half-PPR | +14 pts from yardage milestone bonuses",4,140.3,166.0,5,1,13.0
 Ja'Marr Chase,WR,Bengals,306.0,260.1,361.1,low,"10.8 targets/g, 68% catch rate, 9.2 yds/target | +9 pts from yardage milestone bonuses",1,145.5,160.5,6,1,6.0
-James Cook III,RB,Bills,285.2,242.4,336.5,low,"18.0 carries/g x 4.74 YPC | 2.6 targets/g, half-PPR | +11 pts from yardage milestone bonuses",5,141.8,143.4,7,1,7.0
-Chase Brown,RB,Bengals,272.5,204.4,348.9,medium,"15.9 carries/g x 4.33 YPC | 5.2 targets/g, half-PPR | +5 pts from yardage milestone bonuses",6,141.8,130.7,8,1,6.0
-Derrick Henry,RB,Ravens,266.6,200.0,341.3,medium,"16.2 carries/g x 4.94 YPC | 1.5 targets/g, half-PPR | +8 pts from yardage milestone bonuses",7,141.8,124.8,9,1,13.0
-Kyren Williams,RB,Rams,263.6,197.7,337.3,medium,"16.9 carries/g x 4.30 YPC | 2.6 targets/g, half-PPR | +6 pts from yardage milestone bonuses",8,141.8,121.8,10,1,11.0
-Saquon Barkley,RB,Eagles,262.0,196.5,335.3,medium,"18.7 carries/g x 4.10 YPC | 2.5 targets/g, half-PPR | +8 pts from yardage milestone bonuses",9,141.8,120.2,11,1,10.0
+James Cook III,RB,Bills,285.2,242.4,336.5,low,"18.0 carries/g x 4.74 YPC | 2.6 targets/g, half-PPR | +11 pts from yardage milestone bonuses",5,140.3,144.9,7,1,7.0
+Chase Brown,RB,Bengals,272.5,204.4,348.9,medium,"15.9 carries/g x 4.33 YPC | 5.2 targets/g, half-PPR | +5 pts from yardage milestone bonuses",6,140.3,132.2,8,1,6.0
+Derrick Henry,RB,Ravens,266.6,200.0,341.3,medium,"16.2 carries/g x 4.94 YPC | 1.5 targets/g, half-PPR | +8 pts from yardage milestone bonuses",7,140.3,126.3,9,1,13.0
+Kyren Williams,RB,Rams,263.6,197.7,337.3,medium,"16.9 carries/g x 4.30 YPC | 2.6 targets/g, half-PPR | +6 pts from yardage milestone bonuses",8,140.3,123.3,10,1,11.0
+Saquon Barkley,RB,Eagles,262.0,196.5,335.3,medium,"18.7 carries/g x 4.10 YPC | 2.5 targets/g, half-PPR | +8 pts from yardage milestone bonuses",9,140.3,121.7,11,1,10.0
 Justin Jefferson,WR,Vikings,260.2,221.2,307.1,low,"10.0 targets/g, 68% catch rate, 9.0 yds/target | +7 pts from yardage milestone bonuses",2,145.5,114.7,12,1,6.0
 Lamar Jackson,QB,Ravens,381.5,286.1,488.3,medium,"29.1 pass att/g x 7.8 YPA, 6.1% TD rate (1pt/25 pass yds here) | 10.0 rush att/g at 5.8 YPC | +3 pts from yardage milestone bonuses",2,270.6,110.9,13,2,13.0
 Puka Nacua,WR,Rams,252.2,189.2,322.8,medium,"10.2 targets/g, 72% catch rate, 8.5 yds/target | +6 pts from yardage milestone bonuses",3,145.5,106.7,14,2,11.0
 Jalen Hurts,QB,Eagles,375.4,281.5,480.5,medium,"30.4 pass att/g x 7.0 YPA, 4.4% TD rate (1pt/25 pass yds here) | 10.0 rush att/g at 4.0 YPC",3,270.6,104.8,15,2,10.0
-Omarion Hampton,RB,Chargers,244.1,183.1,312.4,medium,"17.3 carries/g x 4.40 YPC | 2.8 targets/g, half-PPR | +7 pts from yardage milestone bonuses",10,141.8,102.3,16,2,7.0
-De'Von Achane,RB,Dolphins,238.9,179.2,305.8,medium,"12.4 carries/g x 4.92 YPC | 5.0 targets/g, half-PPR",11,141.8,97.1,17,2,6.0
+Omarion Hampton,RB,Chargers,244.1,183.1,312.4,medium,"17.3 carries/g x 4.40 YPC | 2.8 targets/g, half-PPR | +7 pts from yardage milestone bonuses",10,140.3,103.8,16,2,7.0
+De'Von Achane,RB,Dolphins,238.9,179.2,305.8,medium,"12.4 carries/g x 4.92 YPC | 5.0 targets/g, half-PPR",11,140.3,98.6,17,2,6.0
 CeeDee Lamb,WR,Cowboys,238.9,179.2,305.8,medium,"9.9 targets/g, 68% catch rate, 8.2 yds/target | +5 pts from yardage milestone bonuses",4,145.5,93.4,18,2,14.0
 Jaxon Smith-Njigba,WR,Seahawks,238.1,202.4,280.9,low,"9.3 targets/g, 70% catch rate, 8.5 yds/target | +5 pts from yardage milestone bonuses",5,145.5,92.6,19,2,11.0
 Patrick Mahomes,QB,Chiefs,361.9,307.6,427.0,low,"38.1 pass att/g x 7.2 YPA, 5.1% TD rate (1pt/25 pass yds here) | 4.0 rush att/g at 5.5 YPC | +6 pts from yardage milestone bonuses",4,270.6,91.3,20,2,5.0
 Joe Burrow,QB,Bengals,361.0,270.7,462.0,medium,"39.1 pass att/g x 7.6 YPA, 6.1% TD rate (1pt/25 pass yds here) | 2.5 rush att/g at 4.0 YPC | +9 pts from yardage milestone bonuses",5,270.6,90.4,21,2,6.0
-Brock Bowers,TE,Raiders,172.6,129.4,220.9,medium,"9.3 targets/g, 72% catch rate, 6.5 yds/target",1,82.8,89.8,22,2,13.0
-Trey McBride,TE,Cardinals,170.5,127.9,218.3,medium,"8.5 targets/g, 75% catch rate, 6.5 yds/target",2,82.8,87.7,23,2,14.0
-Amon-Ra St. Brown,WR,Lions,228.1,193.9,269.2,low,"9.3 targets/g, 75% catch rate, 7.8 yds/target | +3 pts from yardage milestone bonuses",6,145.5,82.6,24,2,6.0
-Jayden Daniels,QB,Commanders,351.4,263.6,449.8,medium,"32.3 pass att/g x 7.5 YPA, 4.5% TD rate (1pt/25 pass yds here) | 8.0 rush att/g at 5.5 YPC | +3 pts from yardage milestone bonuses",6,270.6,80.8,25,3,7.0
-Bucky Irving,RB,Buccaneers,218.3,163.7,279.4,medium,"15.0 carries/g x 4.70 YPC | 3.5 targets/g, half-PPR | +5 pts from yardage milestone bonuses",12,141.8,76.5,26,3,10.0
-A.J. Brown,WR,Patriots,220.4,138.9,313.0,high,"8.8 targets/g, 65% catch rate, 8.5 yds/target | +4 pts from yardage milestone bonuses",7,145.5,74.9,27,3,11.0
-Kenneth Walker III,RB,Chiefs,215.6,161.7,275.9,medium,"14.9 carries/g x 4.54 YPC | 3.2 targets/g, half-PPR | +4 pts from yardage milestone bonuses",13,141.8,73.8,28,3,5.0
-Ka'imi Fairbairn,K,HOU,219.9,186.9,259.4,low,"2.93 FG made/g (1.27 under 40 @3pt, 1.07 @4pt, 0.60 @5pt) | 1.87 XP made/g",1,151.0,68.9,29,3,
-Javonte Williams,RB,Cowboys,210.1,157.6,269.0,medium,"15.6 carries/g x 4.03 YPC | 3.2 targets/g, half-PPR",14,141.8,68.3,30,3,14.0
-David Montgomery,RB,Texans,208.9,156.7,267.4,medium,"15.3 carries/g x 4.30 YPC | 2.0 targets/g, half-PPR | +3 pts from yardage milestone bonuses",15,141.8,67.1,31,3,8.0
+Amon-Ra St. Brown,WR,Lions,228.1,193.9,269.2,low,"9.3 targets/g, 75% catch rate, 7.8 yds/target | +3 pts from yardage milestone bonuses",6,145.5,82.6,22,2,6.0
+Jayden Daniels,QB,Commanders,351.4,263.6,449.8,medium,"32.3 pass att/g x 7.5 YPA, 4.5% TD rate (1pt/25 pass yds here) | 8.0 rush att/g at 5.5 YPC | +3 pts from yardage milestone bonuses",6,270.6,80.8,23,2,7.0
+Brock Bowers,TE,Raiders,172.6,129.4,220.9,medium,"9.3 targets/g, 72% catch rate, 6.5 yds/target",1,92.1,80.5,24,2,13.0
+Trey McBride,TE,Cardinals,170.5,127.9,218.3,medium,"8.5 targets/g, 75% catch rate, 6.5 yds/target",2,92.1,78.4,25,3,14.0
+Bucky Irving,RB,Buccaneers,218.3,163.7,279.4,medium,"15.0 carries/g x 4.70 YPC | 3.5 targets/g, half-PPR | +5 pts from yardage milestone bonuses",12,140.3,78.0,26,3,10.0
+Kenneth Walker III,RB,Chiefs,215.6,161.7,275.9,medium,"14.9 carries/g x 4.54 YPC | 3.2 targets/g, half-PPR | +4 pts from yardage milestone bonuses",13,140.3,75.3,27,3,5.0
+A.J. Brown,WR,Patriots,220.4,138.9,313.0,high,"8.8 targets/g, 65% catch rate, 8.5 yds/target | +4 pts from yardage milestone bonuses",7,145.5,74.9,28,3,11.0
+Javonte Williams,RB,Cowboys,210.1,157.6,269.0,medium,"15.6 carries/g x 4.03 YPC | 3.2 targets/g, half-PPR",14,140.3,69.8,29,3,14.0
+Ka'imi Fairbairn,K,HOU,219.9,186.9,259.4,low,"2.93 FG made/g (1.27 under 40 @3pt, 1.07 @4pt, 0.60 @5pt) | 1.87 XP made/g",1,151.0,68.9,30,3,
+David Montgomery,RB,Texans,208.9,156.7,267.4,medium,"15.3 carries/g x 4.30 YPC | 2.0 targets/g, half-PPR | +3 pts from yardage milestone bonuses",15,140.3,68.6,31,3,8.0
 Nico Collins,WR,Texans,212.1,159.0,271.4,medium,"8.9 targets/g, 66% catch rate, 8.8 yds/target | +4 pts from yardage milestone bonuses",8,145.5,66.6,32,3,8.0
-Travis Etienne Jr.,RB,Saints,203.1,152.3,259.9,medium,"14.7 carries/g x 4.20 YPC | 3.5 targets/g, half-PPR",16,141.8,61.3,33,3,8.0
+Travis Etienne Jr.,RB,Saints,203.1,152.3,259.9,medium,"14.7 carries/g x 4.20 YPC | 3.5 targets/g, half-PPR",16,140.3,62.8,33,3,8.0
 Drake London,WR,Falcons,206.6,154.9,264.4,medium,"9.2 targets/g, 63% catch rate, 8.0 yds/target | +4 pts from yardage milestone bonuses",9,145.5,61.1,34,3,11.0
-Ashton Jeanty,RB,Raiders,200.3,150.2,256.3,medium,"15.3 carries/g x 4.13 YPC | 3.5 targets/g, half-PPR",17,141.8,58.5,35,3,13.0
+Ashton Jeanty,RB,Raiders,200.3,150.2,256.3,medium,"15.3 carries/g x 4.13 YPC | 3.5 targets/g, half-PPR",17,140.3,60.0,35,3,13.0
 Drake Maye,QB,Patriots,328.6,246.4,420.6,medium,"33.3 pass att/g x 7.4 YPA, 4.9% TD rate (1pt/25 pass yds here) | 5.0 rush att/g at 4.8 YPC | +4 pts from yardage milestone bonuses",7,270.6,58.0,36,3,11.0
-Breece Hall,RB,Jets,195.4,146.6,250.2,medium,"13.5 carries/g x 4.03 YPC | 4.0 targets/g, half-PPR",18,141.8,53.6,37,4,13.0
+Breece Hall,RB,Jets,195.4,146.6,250.2,medium,"13.5 carries/g x 4.03 YPC | 4.0 targets/g, half-PPR",18,140.3,55.1,37,4,13.0
 Jason Myers,K,SEA,202.0,171.7,238.4,low,"2.41 FG made/g (1.12 under 40 @3pt, 0.77 @4pt, 0.53 @5pt) | 2.82 XP made/g",2,151.0,51.0,38,4,
-Chuba Hubbard,RB,Panthers,185.8,139.3,237.8,medium,"14.7 carries/g x 4.20 YPC | 2.5 targets/g, half-PPR",19,141.8,44.0,39,4,5.0
-Eagles,DEF,Eagles,163.5,122.6,209.3,medium,"Elite-tier defense (10.5-win Vegas total) | ~3.1 sacks/g, ~1.05 INT/g, ~18.5 pts allowed/g (no yards-allowed component in this league's DEF rules, unlike Top Teamz)",6,120.9,42.6,40,4,10.0
-Chiefs,DEF,Chiefs,163.5,122.6,209.3,medium,"Elite-tier defense (10.5-win Vegas total) | ~3.1 sacks/g, ~1.05 INT/g, ~18.5 pts allowed/g (no yards-allowed component in this league's DEF rules, unlike Top Teamz)",5,120.9,42.6,41,4,5.0
-Rams,DEF,Rams,163.5,122.6,209.3,medium,"Elite-tier defense (11.5-win Vegas total) | ~3.1 sacks/g, ~1.05 INT/g, ~18.5 pts allowed/g (no yards-allowed component in this league's DEF rules, unlike Top Teamz)",9,120.9,42.6,42,4,11.0
-Lions,DEF,Lions,163.5,122.6,209.3,medium,"Elite-tier defense (10.5-win Vegas total) | ~3.1 sacks/g, ~1.05 INT/g, ~18.5 pts allowed/g (no yards-allowed component in this league's DEF rules, unlike Top Teamz)",8,120.9,42.6,43,4,6.0
-Packers,DEF,Packers,163.5,122.6,209.3,medium,"Elite-tier defense (10.5-win Vegas total) | ~3.1 sacks/g, ~1.05 INT/g, ~18.5 pts allowed/g (no yards-allowed component in this league's DEF rules, unlike Top Teamz)",7,120.9,42.6,44,4,11.0
-Seahawks,DEF,Seahawks,163.5,122.6,209.3,medium,"Elite-tier defense (10.5-win Vegas total) | ~3.1 sacks/g, ~1.05 INT/g, ~18.5 pts allowed/g (no yards-allowed component in this league's DEF rules, unlike Top Teamz)",10,120.9,42.6,45,4,11.0
-Bills,DEF,Bills,163.5,122.6,209.3,medium,"Elite-tier defense (10.5-win Vegas total) | ~3.1 sacks/g, ~1.05 INT/g, ~18.5 pts allowed/g (no yards-allowed component in this league's DEF rules, unlike Top Teamz)",1,120.9,42.6,46,4,7.0
-Patriots,DEF,Patriots,163.5,122.6,209.3,medium,"Elite-tier defense (10.5-win Vegas total) | ~3.1 sacks/g, ~1.05 INT/g, ~18.5 pts allowed/g (no yards-allowed component in this league's DEF rules, unlike Top Teamz)",2,120.9,42.6,47,4,11.0
-Ravens,DEF,Ravens,163.5,122.6,209.3,medium,"Elite-tier defense (11.5-win Vegas total) | ~3.1 sacks/g, ~1.05 INT/g, ~18.5 pts allowed/g (no yards-allowed component in this league's DEF rules, unlike Top Teamz)",3,120.9,42.6,48,4,13.0
-Bengals,DEF,Bengals,163.5,122.6,209.3,medium,"Elite-tier defense (10.5-win Vegas total) | ~3.1 sacks/g, ~1.05 INT/g, ~18.5 pts allowed/g (no yards-allowed component in this league's DEF rules, unlike Top Teamz)",4,120.9,42.6,49,5,6.0
-TreVeyon Henderson,RB,Patriots,184.3,138.2,235.9,medium,"10.4 carries/g x 4.50 YPC | 4.5 targets/g, half-PPR",20,141.8,42.5,50,5,11.0
-D'Andre Swift,RB,Bears,180.9,135.7,231.6,medium,"13.3 carries/g x 4.30 YPC | 3.7 targets/g, half-PPR",21,141.8,39.1,51,5,10.0
-Tyler Warren,TE,Colts,121.7,91.3,155.8,medium,"6.6 targets/g, 68% catch rate, 6.0 yds/target",3,82.8,38.9,52,5,13.0
-DK Metcalf,WR,Steelers,182.3,136.7,233.3,medium,"8.0 targets/g, 60% catch rate, 8.2 yds/target",10,145.5,36.8,53,5,9.0
-Brandon Aubrey,K,DAL,187.0,159.0,220.7,low,"2.12 FG made/g (0.88 under 40 @3pt, 0.59 @4pt, 0.65 @5pt) | 2.77 XP made/g",3,151.0,36.0,54,5,
-Caleb Williams,QB,Bears,306.3,192.9,434.9,high,"35.3 pass att/g x 6.9 YPA, 4.1% TD rate (1pt/25 pass yds here) | 5.0 rush att/g at 4.5 YPC | +3 pts from yardage milestone bonuses",8,270.6,35.7,55,5,10.0
-Colston Loveland,TE,Bears,118.5,88.8,151.6,medium,"6.2 targets/g, 68% catch rate, 6.5 yds/target",4,82.8,35.7,56,5,10.0
-Ladd McConkey,WR,Chargers,180.2,135.2,230.7,medium,"8.0 targets/g, 68% catch rate, 7.8 yds/target",11,145.5,34.7,57,5,7.0
-Sam LaPorta,TE,Lions,116.0,87.0,148.4,medium,"5.9 targets/g, 70% catch rate, 6.0 yds/target",5,82.8,33.2,58,5,6.0
-Cam Skattebo,RB,Giants,173.2,109.1,245.9,high,"13.2 carries/g x 4.23 YPC | 4.0 targets/g, half-PPR",22,141.8,31.4,59,5,8.0
-Marvin Harrison Jr.,WR,Cardinals,176.5,132.4,225.9,medium,"8.5 targets/g, 60% catch rate, 7.8 yds/target",12,145.5,31.0,60,5,14.0
-Baker Mayfield,QB,Buccaneers,299.8,224.9,383.8,medium,"35.0 pass att/g x 7.2 YPA, 4.6% TD rate (1pt/25 pass yds here) | 3.0 rush att/g at 4.0 YPC | +4 pts from yardage milestone bonuses",9,270.6,29.2,61,6,10.0
-Tyrone Tracy Jr.,RB,Giants,170.9,107.7,242.7,high,"13.2 carries/g x 4.23 YPC | 3.0 targets/g, half-PPR",23,141.8,29.1,62,6,8.0
-Kyle Pitts,TE,Falcons,111.3,70.1,158.0,high,"6.1 targets/g, 75% catch rate, 7.6 yds/target",6,82.8,28.5,63,6,11.0
-Jared Goff,QB,Lions,297.8,253.1,351.4,low,"32.3 pass att/g x 7.6 YPA, 5.9% TD rate (1pt/25 pass yds here) | pocket passer, minimal rushing equity | +4 pts from yardage milestone bonuses",10,270.6,27.2,64,6,6.0
-J.K. Dobbins,RB,Broncos,167.7,105.6,238.1,high,"15.1 carries/g x 4.61 YPC | 2.0 targets/g, half-PPR | +4 pts from yardage milestone bonuses",24,141.8,25.9,65,6,10.0
-Garrett Wilson,WR,Jets,170.0,127.5,217.6,medium,"8.8 targets/g, 60% catch rate, 7.0 yds/target",13,145.5,24.5,66,6,13.0
-Malik Nabers,WR,Giants,168.9,106.4,239.8,high,"8.6 targets/g, 65% catch rate, 8.0 yds/target",14,145.5,23.4,67,6,8.0
-Travis Kelce,TE,Chiefs,104.5,65.8,148.3,high,"6.2 targets/g, 68% catch rate, 5.5 yds/target",7,82.8,21.7,68,6,5.0
-Bhayshul Tuten,RB,Jaguars,162.9,102.6,231.3,high,"14.0 carries/g x 4.20 YPC | 2.5 targets/g, half-PPR",25,141.8,21.1,69,6,7.0
-Emeka Egbuka,WR,Buccaneers,166.6,125.0,213.3,medium,"7.5 targets/g, 65% catch rate, 7.5 yds/target",15,145.5,21.1,70,6,10.0
-Tucker Kraft,TE,Packers,103.8,77.9,132.9,medium,"5.4 targets/g, 68% catch rate, 6.5 yds/target",8,82.8,21.0,71,6,11.0
-Jaylen Warren,RB,Steelers,162.8,102.5,231.1,high,"11.5 carries/g x 4.30 YPC | 3.2 targets/g, half-PPR",26,141.8,21.0,72,6,9.0
-Mike Evans,WR,49ers,166.4,124.8,213.0,medium,"7.4 targets/g, 60% catch rate, 8.0 yds/target",16,145.5,20.9,73,7,8.0
-Tee Higgins,WR,Bengals,165.2,123.9,211.5,medium,"7.2 targets/g, 62% catch rate, 8.2 yds/target",17,145.5,19.7,74,7,6.0
-Bo Nix,QB,Broncos,289.6,217.2,370.7,medium,"33.7 pass att/g x 7.0 YPA, 4.2% TD rate (1pt/25 pass yds here) | 4.0 rush att/g at 4.5 YPC",11,270.6,19.0,75,7,10.0
-Cameron Dicker,K,LAC,170.0,144.5,200.6,low,"2.23 FG made/g (1.23 under 40 @3pt, 0.71 @4pt, 0.29 @5pt) | 2.00 XP made/g",4,151.0,19.0,76,7,
-Eddy Pineiro,K,SF,170.0,144.5,200.6,low,"2.00 FG made/g (0.86 under 40 @3pt, 0.71 @4pt, 0.43 @5pt) | 2.43 XP made/g",5,151.0,19.0,77,7,
-Charlie Smyth,K,NO,170.0,144.5,200.6,low,"2.00 FG made/g (0.83 under 40 @3pt, 0.50 @4pt, 0.67 @5pt) | 2.17 XP made/g",6,151.0,19.0,78,7,
-George Kittle,TE,49ers,101.2,75.9,129.6,medium,"5.4 targets/g, 68% catch rate, 7.0 yds/target",9,82.8,18.4,79,7,8.0
-Christian Watson,WR,Packers,163.9,122.9,209.8,medium,"7.3 targets/g, 58% catch rate, 8.0 yds/target",18,145.5,18.4,80,7,11.0
-Oronde Gadsden II,TE,Chargers,98.6,74.0,126.3,medium,"4.7 targets/g, 72% catch rate, 9.5 yds/target",10,82.8,15.8,81,7,7.0
-DJ Moore,WR,Bills,161.2,120.9,206.3,medium,"7.7 targets/g, 62% catch rate, 7.5 yds/target",19,145.5,15.7,82,7,7.0
-Terry McLaurin,WR,Commanders,159.7,119.8,204.4,medium,"7.3 targets/g, 63% catch rate, 7.8 yds/target",20,145.5,14.2,83,7,7.0
-T.J. Hockenson,TE,Vikings,96.5,72.4,123.5,medium,"5.5 targets/g, 68% catch rate, 6.0 yds/target",11,82.8,13.7,84,7,6.0
-Cam Little,K,JAX,164.0,139.4,193.6,low,"1.76 FG made/g (0.82 under 40 @3pt, 0.47 @4pt, 0.47 @5pt) | 2.94 XP made/g",7,151.0,13.0,85,8,
-Mark Andrews,TE,Ravens,94.9,71.2,121.5,medium,"4.8 targets/g, 65% catch rate, 6.5 yds/target",12,82.8,12.1,86,8,13.0
-Dalton Schultz,TE,Texans,94.0,70.5,120.4,medium,"5.5 targets/g, 78% catch rate, 6.7 yds/target",13,82.8,11.2,87,8,8.0
-Rome Odunze,WR,Bears,155.0,116.3,198.5,medium,"7.3 targets/g, 60% catch rate, 7.5 yds/target",21,145.5,9.5,88,8,10.0
-DeVonta Smith,WR,Eagles,154.1,115.5,197.2,medium,"7.3 targets/g, 68% catch rate, 7.0 yds/target",22,145.5,8.6,89,8,10.0
-Will Reichard,K,MIN,159.0,135.2,187.6,low,"1.94 FG made/g (0.88 under 40 @3pt, 0.41 @4pt, 0.65 @5pt) | 1.82 XP made/g",8,151.0,8.0,90,8,
-Quinshon Judkins,RB,Browns,149.0,111.8,190.8,medium,"14.7 carries/g x 3.65 YPC | 2.6 targets/g, half-PPR",27,141.8,7.2,91,8,11.0
-Brian Thomas Jr.,WR,Jaguars,152.7,96.2,216.9,high,"7.0 targets/g, 60% catch rate, 8.5 yds/target",23,145.5,7.2,92,8,7.0
-Davante Adams,WR,Rams,151.3,113.5,193.7,medium,"7.1 targets/g, 65% catch rate, 7.2 yds/target",24,145.5,5.8,93,8,11.0
-Chase McLaughlin,K,TB,156.0,132.6,184.1,low,"1.88 FG made/g (0.88 under 40 @3pt, 0.35 @4pt, 0.65 @5pt) | 1.88 XP made/g",9,151.0,5.0,94,8,
-Tetairoa McMillan,WR,Panthers,150.3,112.7,192.3,medium,"7.1 targets/g, 58% catch rate, 7.8 yds/target",25,145.5,4.8,95,8,5.0
-Jacory Croskey-Merritt,RB,Commanders,146.0,92.0,207.3,high,"12.7 carries/g x 4.10 YPC | 2.5 targets/g, half-PPR",28,141.8,4.2,96,8,7.0
-George Pickens,WR,Cowboys,149.6,112.2,191.5,medium,"6.8 targets/g, 58% catch rate, 8.0 yds/target",26,145.5,4.1,97,9,14.0
-Alec Pierce,WR,Colts,149.6,112.2,191.4,medium,"5.6 targets/g, 60% catch rate, 13.4 yds/target | +4 pts from yardage milestone bonuses",27,145.5,4.1,98,9,13.0
-Harrison Mevis,K,LAR,154.9,131.6,182.7,low,"1.33 FG made/g (0.67 under 40 @3pt, 0.56 @4pt, 0.11 @5pt) | 4.33 XP made/g",10,151.0,3.9,99,9,
+Chuba Hubbard,RB,Panthers,185.8,139.3,237.8,medium,"14.7 carries/g x 4.20 YPC | 2.5 targets/g, half-PPR",19,140.3,45.5,39,4,5.0
+TreVeyon Henderson,RB,Patriots,184.3,138.2,235.9,medium,"10.4 carries/g x 4.50 YPC | 4.5 targets/g, half-PPR",20,140.3,44.0,40,4,11.0
+Eagles,DEF,Eagles,163.5,122.6,209.3,medium,"Elite-tier defense (10.5-win Vegas total) | ~3.1 sacks/g, ~1.05 INT/g, ~18.5 pts allowed/g (no yards-allowed component in this league's DEF rules, unlike Top Teamz)",6,120.9,42.6,41,4,10.0
+Bengals,DEF,Bengals,163.5,122.6,209.3,medium,"Elite-tier defense (10.5-win Vegas total) | ~3.1 sacks/g, ~1.05 INT/g, ~18.5 pts allowed/g (no yards-allowed component in this league's DEF rules, unlike Top Teamz)",4,120.9,42.6,42,4,6.0
+Bills,DEF,Bills,163.5,122.6,209.3,medium,"Elite-tier defense (10.5-win Vegas total) | ~3.1 sacks/g, ~1.05 INT/g, ~18.5 pts allowed/g (no yards-allowed component in this league's DEF rules, unlike Top Teamz)",1,120.9,42.6,43,4,7.0
+Seahawks,DEF,Seahawks,163.5,122.6,209.3,medium,"Elite-tier defense (10.5-win Vegas total) | ~3.1 sacks/g, ~1.05 INT/g, ~18.5 pts allowed/g (no yards-allowed component in this league's DEF rules, unlike Top Teamz)",10,120.9,42.6,44,4,11.0
+Patriots,DEF,Patriots,163.5,122.6,209.3,medium,"Elite-tier defense (10.5-win Vegas total) | ~3.1 sacks/g, ~1.05 INT/g, ~18.5 pts allowed/g (no yards-allowed component in this league's DEF rules, unlike Top Teamz)",2,120.9,42.6,45,4,11.0
+Chiefs,DEF,Chiefs,163.5,122.6,209.3,medium,"Elite-tier defense (10.5-win Vegas total) | ~3.1 sacks/g, ~1.05 INT/g, ~18.5 pts allowed/g (no yards-allowed component in this league's DEF rules, unlike Top Teamz)",5,120.9,42.6,46,4,5.0
+Ravens,DEF,Ravens,163.5,122.6,209.3,medium,"Elite-tier defense (11.5-win Vegas total) | ~3.1 sacks/g, ~1.05 INT/g, ~18.5 pts allowed/g (no yards-allowed component in this league's DEF rules, unlike Top Teamz)",3,120.9,42.6,47,4,13.0
+Rams,DEF,Rams,163.5,122.6,209.3,medium,"Elite-tier defense (11.5-win Vegas total) | ~3.1 sacks/g, ~1.05 INT/g, ~18.5 pts allowed/g (no yards-allowed component in this league's DEF rules, unlike Top Teamz)",9,120.9,42.6,48,4,11.0
+Lions,DEF,Lions,163.5,122.6,209.3,medium,"Elite-tier defense (10.5-win Vegas total) | ~3.1 sacks/g, ~1.05 INT/g, ~18.5 pts allowed/g (no yards-allowed component in this league's DEF rules, unlike Top Teamz)",8,120.9,42.6,49,5,6.0
+Packers,DEF,Packers,163.5,122.6,209.3,medium,"Elite-tier defense (10.5-win Vegas total) | ~3.1 sacks/g, ~1.05 INT/g, ~18.5 pts allowed/g (no yards-allowed component in this league's DEF rules, unlike Top Teamz)",7,120.9,42.6,50,5,11.0
+D'Andre Swift,RB,Bears,180.9,135.7,231.6,medium,"13.3 carries/g x 4.30 YPC | 3.7 targets/g, half-PPR",21,140.3,40.6,51,5,10.0
+DK Metcalf,WR,Steelers,182.3,136.7,233.3,medium,"8.0 targets/g, 60% catch rate, 8.2 yds/target",10,145.5,36.8,52,5,9.0
+Brandon Aubrey,K,DAL,187.0,159.0,220.7,low,"2.12 FG made/g (0.88 under 40 @3pt, 0.59 @4pt, 0.65 @5pt) | 2.77 XP made/g",3,151.0,36.0,53,5,
+Caleb Williams,QB,Bears,306.3,192.9,434.9,high,"35.3 pass att/g x 6.9 YPA, 4.1% TD rate (1pt/25 pass yds here) | 5.0 rush att/g at 4.5 YPC | +3 pts from yardage milestone bonuses",8,270.6,35.7,54,5,10.0
+Ladd McConkey,WR,Chargers,180.2,135.2,230.7,medium,"8.0 targets/g, 68% catch rate, 7.8 yds/target",11,145.5,34.7,55,5,7.0
+Cam Skattebo,RB,Giants,173.2,109.1,245.9,high,"13.2 carries/g x 4.23 YPC | 4.0 targets/g, half-PPR",22,140.3,32.9,56,5,8.0
+Marvin Harrison Jr.,WR,Cardinals,176.5,132.4,225.9,medium,"8.5 targets/g, 60% catch rate, 7.8 yds/target",12,145.5,31.0,57,5,14.0
+Tyrone Tracy Jr.,RB,Giants,170.9,107.7,242.7,high,"13.2 carries/g x 4.23 YPC | 3.0 targets/g, half-PPR",23,140.3,30.6,58,5,8.0
+Tyler Warren,TE,Colts,121.7,91.3,155.8,medium,"6.6 targets/g, 68% catch rate, 6.0 yds/target",3,92.1,29.6,59,5,13.0
+Baker Mayfield,QB,Buccaneers,299.8,224.9,383.8,medium,"35.0 pass att/g x 7.2 YPA, 4.6% TD rate (1pt/25 pass yds here) | 3.0 rush att/g at 4.0 YPC | +4 pts from yardage milestone bonuses",9,270.6,29.2,60,5,10.0
+J.K. Dobbins,RB,Broncos,167.7,105.6,238.1,high,"15.1 carries/g x 4.61 YPC | 2.0 targets/g, half-PPR | +4 pts from yardage milestone bonuses",24,140.3,27.4,61,6,10.0
+Jared Goff,QB,Lions,297.8,253.1,351.4,low,"32.3 pass att/g x 7.6 YPA, 5.9% TD rate (1pt/25 pass yds here) | pocket passer, minimal rushing equity | +4 pts from yardage milestone bonuses",10,270.6,27.2,62,6,6.0
+Colston Loveland,TE,Bears,118.5,88.8,151.6,medium,"6.2 targets/g, 68% catch rate, 6.5 yds/target",4,92.1,26.4,63,6,10.0
+Garrett Wilson,WR,Jets,170.0,127.5,217.6,medium,"8.8 targets/g, 60% catch rate, 7.0 yds/target",13,145.5,24.5,64,6,13.0
+Sam LaPorta,TE,Lions,116.0,87.0,148.4,medium,"5.9 targets/g, 70% catch rate, 6.0 yds/target",5,92.1,23.9,65,6,6.0
+Malik Nabers,WR,Giants,168.9,106.4,239.8,high,"8.6 targets/g, 65% catch rate, 8.0 yds/target",14,145.5,23.4,66,6,8.0
+Jaylen Warren,RB,Steelers,162.8,102.5,231.1,high,"11.5 carries/g x 4.30 YPC | 3.2 targets/g, half-PPR",25,140.3,22.5,67,6,9.0
+Emeka Egbuka,WR,Buccaneers,166.6,125.0,213.3,medium,"7.5 targets/g, 65% catch rate, 7.5 yds/target",15,145.5,21.1,68,6,10.0
+Mike Evans,WR,49ers,166.4,124.8,213.0,medium,"7.4 targets/g, 60% catch rate, 8.0 yds/target",16,145.5,20.9,69,6,8.0
+Tee Higgins,WR,Bengals,165.2,123.9,211.5,medium,"7.2 targets/g, 62% catch rate, 8.2 yds/target",17,145.5,19.7,70,6,6.0
+Kyle Pitts,TE,Falcons,111.3,70.1,158.0,high,"6.1 targets/g, 75% catch rate, 7.6 yds/target",6,92.1,19.2,71,6,11.0
+Bo Nix,QB,Broncos,289.6,217.2,370.7,medium,"33.7 pass att/g x 7.0 YPA, 4.2% TD rate (1pt/25 pass yds here) | 4.0 rush att/g at 4.5 YPC",11,270.6,19.0,72,6,10.0
+Eddy Pineiro,K,SF,170.0,144.5,200.6,low,"2.00 FG made/g (0.86 under 40 @3pt, 0.71 @4pt, 0.43 @5pt) | 2.43 XP made/g",5,151.0,19.0,73,7,
+Charlie Smyth,K,NO,170.0,144.5,200.6,low,"2.00 FG made/g (0.83 under 40 @3pt, 0.50 @4pt, 0.67 @5pt) | 2.17 XP made/g",6,151.0,19.0,74,7,
+Cameron Dicker,K,LAC,170.0,144.5,200.6,low,"2.23 FG made/g (1.23 under 40 @3pt, 0.71 @4pt, 0.29 @5pt) | 2.00 XP made/g",4,151.0,19.0,75,7,
+Christian Watson,WR,Packers,163.9,122.9,209.8,medium,"7.3 targets/g, 58% catch rate, 8.0 yds/target",18,145.5,18.4,76,7,11.0
+DJ Moore,WR,Bills,161.2,120.9,206.3,medium,"7.7 targets/g, 62% catch rate, 7.5 yds/target",19,145.5,15.7,77,7,7.0
+Terry McLaurin,WR,Commanders,159.7,119.8,204.4,medium,"7.3 targets/g, 63% catch rate, 7.8 yds/target",20,145.5,14.2,78,7,7.0
+Cam Little,K,JAX,164.0,139.4,193.6,low,"1.76 FG made/g (0.82 under 40 @3pt, 0.47 @4pt, 0.47 @5pt) | 2.94 XP made/g",7,151.0,13.0,79,7,
+Travis Kelce,TE,Chiefs,104.5,65.8,148.3,high,"6.2 targets/g, 68% catch rate, 5.5 yds/target",7,92.1,12.4,80,7,5.0
+Tucker Kraft,TE,Packers,103.8,65.4,147.4,high,"5.4 targets/g, 68% catch rate, 6.5 yds/target",8,92.1,11.7,81,7,11.0
+Rome Odunze,WR,Bears,155.0,116.3,198.5,medium,"7.3 targets/g, 60% catch rate, 7.5 yds/target",21,145.5,9.5,82,7,10.0
+George Kittle,TE,49ers,101.2,75.9,129.6,medium,"5.4 targets/g, 68% catch rate, 7.0 yds/target",9,92.1,9.1,83,7,8.0
+Quinshon Judkins,RB,Browns,149.0,111.8,190.8,medium,"14.7 carries/g x 3.65 YPC | 2.6 targets/g, half-PPR",26,140.3,8.7,84,7,11.0
+DeVonta Smith,WR,Eagles,154.1,115.5,197.2,medium,"7.3 targets/g, 68% catch rate, 7.0 yds/target",22,145.5,8.6,85,8,10.0
+Will Reichard,K,MIN,159.0,135.2,187.6,low,"1.94 FG made/g (0.88 under 40 @3pt, 0.41 @4pt, 0.65 @5pt) | 1.82 XP made/g",8,151.0,8.0,86,8,
+Brian Thomas Jr.,WR,Jaguars,152.7,96.2,216.9,high,"7.0 targets/g, 60% catch rate, 8.5 yds/target",23,145.5,7.2,87,8,7.0
+Oronde Gadsden II,TE,Chargers,98.6,74.0,126.3,medium,"4.7 targets/g, 72% catch rate, 9.5 yds/target",10,92.1,6.5,88,8,7.0
+Davante Adams,WR,Rams,151.3,113.5,193.7,medium,"7.1 targets/g, 65% catch rate, 7.2 yds/target",24,145.5,5.8,89,8,11.0
+Jacory Croskey-Merritt,RB,Commanders,146.0,92.0,207.3,high,"12.7 carries/g x 4.10 YPC | 2.5 targets/g, half-PPR",27,140.3,5.7,90,8,7.0
+Chase McLaughlin,K,TB,156.0,132.6,184.1,low,"1.88 FG made/g (0.88 under 40 @3pt, 0.35 @4pt, 0.65 @5pt) | 1.88 XP made/g",9,151.0,5.0,91,8,
+Tetairoa McMillan,WR,Panthers,150.3,112.7,192.3,medium,"7.1 targets/g, 58% catch rate, 7.8 yds/target",25,145.5,4.8,92,8,5.0
+T.J. Hockenson,TE,Vikings,96.5,72.4,123.5,medium,"5.5 targets/g, 68% catch rate, 6.0 yds/target",11,92.1,4.4,93,8,6.0
+Alec Pierce,WR,Colts,149.6,112.2,191.4,medium,"5.6 targets/g, 60% catch rate, 13.4 yds/target | +4 pts from yardage milestone bonuses",27,145.5,4.1,94,8,13.0
+George Pickens,WR,Cowboys,149.6,112.2,191.5,medium,"6.8 targets/g, 58% catch rate, 8.0 yds/target",26,145.5,4.1,95,8,14.0
+Harrison Mevis,K,LAR,154.9,131.6,182.7,low,"1.33 FG made/g (0.67 under 40 @3pt, 0.56 @4pt, 0.11 @5pt) | 4.33 XP made/g",10,151.0,3.9,96,8,
+Mark Andrews,TE,Ravens,94.9,71.2,121.5,medium,"4.8 targets/g, 65% catch rate, 6.5 yds/target",12,92.1,2.8,97,9,13.0
+Dalton Schultz,TE,Texans,94.0,70.5,120.4,medium,"5.5 targets/g, 78% catch rate, 6.7 yds/target",13,92.1,1.9,98,9,8.0
+Tony Pollard,RB,Titans,141.8,106.4,181.6,medium,"11.2 carries/g x 3.84 YPC | 2.8 targets/g, half-PPR",28,140.3,1.5,99,9,9.0
 Jake Bates,K,DET,152.0,129.2,179.3,low,"1.59 FG made/g (0.82 under 40 @3pt, 0.53 @4pt, 0.23 @5pt) | 3.18 XP made/g",11,151.0,1.0,100,9,
 Zay Flowers,WR,Ravens,145.8,109.4,186.7,medium,"7.3 targets/g, 68% catch rate, 7.0 yds/target",28,145.5,0.3,101,9,13.0
-Chris Olave,WR,Saints,145.5,109.1,186.2,medium,"7.6 targets/g, 63% catch rate, 7.5 yds/target",29,145.5,0.0,102,9,8.0
+Broncos,DEF,Broncos,120.9,90.7,154.8,medium,"Good-tier defense (9.5-win Vegas total) | ~2.7 sacks/g, ~0.90 INT/g, ~20.5 pts allowed/g (no yards-allowed component in this league's DEF rules, unlike Top Teamz)",13,120.9,0.0,102,9,10.0
 Chargers,DEF,Chargers,120.9,90.7,154.8,medium,"Good-tier defense (9.5-win Vegas total) | ~2.7 sacks/g, ~0.90 INT/g, ~20.5 pts allowed/g (no yards-allowed component in this league's DEF rules, unlike Top Teamz)",12,120.9,0.0,103,9,7.0
-Cowboys,DEF,Cowboys,120.9,90.7,154.8,medium,"Good-tier defense (9.5-win Vegas total) | ~2.7 sacks/g, ~0.90 INT/g, ~20.5 pts allowed/g (no yards-allowed component in this league's DEF rules, unlike Top Teamz)",14,120.9,0.0,104,9,14.0
-Broncos,DEF,Broncos,120.9,90.7,154.8,medium,"Good-tier defense (9.5-win Vegas total) | ~2.7 sacks/g, ~0.90 INT/g, ~20.5 pts allowed/g (no yards-allowed component in this league's DEF rules, unlike Top Teamz)",13,120.9,0.0,105,9,10.0
-Dak Prescott,QB,Cowboys,270.6,170.5,384.2,high,"37.4 pass att/g x 7.3 YPA, 5.1% TD rate (1pt/25 pass yds here) | 2.5 rush att/g at 3.5 YPC | +5 pts from yardage milestone bonuses",12,270.6,0.0,106,9,14.0
-Bears,DEF,Bears,120.9,90.7,154.8,medium,"Good-tier defense (9.5-win Vegas total) | ~2.7 sacks/g, ~0.90 INT/g, ~20.5 pts allowed/g (no yards-allowed component in this league's DEF rules, unlike Top Teamz)",15,120.9,0.0,107,9,10.0
+Texans,DEF,Texans,120.9,90.7,154.8,medium,"Good-tier defense (9.5-win Vegas total) | ~2.7 sacks/g, ~0.90 INT/g, ~20.5 pts allowed/g (no yards-allowed component in this league's DEF rules, unlike Top Teamz)",11,120.9,0.0,104,9,8.0
+Dak Prescott,QB,Cowboys,270.6,170.5,384.2,high,"37.4 pass att/g x 7.3 YPA, 5.1% TD rate (1pt/25 pass yds here) | 2.5 rush att/g at 3.5 YPC | +5 pts from yardage milestone bonuses",12,270.6,0.0,105,9,14.0
+Cowboys,DEF,Cowboys,120.9,90.7,154.8,medium,"Good-tier defense (9.5-win Vegas total) | ~2.7 sacks/g, ~0.90 INT/g, ~20.5 pts allowed/g (no yards-allowed component in this league's DEF rules, unlike Top Teamz)",14,120.9,0.0,106,9,14.0
+Hunter Henry,TE,Patriots,92.1,58.0,130.8,high,"5.9 targets/g, 68% catch rate, 5.5 yds/target",14,92.1,0.0,107,9,11.0
 Chris Boswell,K,PIT,151.0,128.3,178.2,low,"1.59 FG made/g (0.47 under 40 @3pt, 0.59 @4pt, 0.53 @5pt) | 2.47 XP made/g",12,151.0,0.0,108,9,
-Dallas Goedert,TE,Eagles,82.8,62.1,106.0,medium,"4.9 targets/g, 68% catch rate, 6.0 yds/target",14,82.8,0.0,109,10,10.0
-Tony Pollard,RB,Titans,141.8,106.4,181.6,medium,"11.2 carries/g x 3.84 YPC | 2.8 targets/g, half-PPR",29,141.8,0.0,110,10,9.0
-Texans,DEF,Texans,120.9,90.7,154.8,medium,"Good-tier defense (9.5-win Vegas total) | ~2.7 sacks/g, ~0.90 INT/g, ~20.5 pts allowed/g (no yards-allowed component in this league's DEF rules, unlike Top Teamz)",11,120.9,0.0,111,10,8.0
-49ers,DEF,49ers,120.9,90.7,154.8,medium,"Good-tier defense (9.5-win Vegas total) | ~2.7 sacks/g, ~0.90 INT/g, ~20.5 pts allowed/g (no yards-allowed component in this league's DEF rules, unlike Top Teamz)",16,120.9,0.0,112,10,8.0
+Bears,DEF,Bears,120.9,90.7,154.8,medium,"Good-tier defense (9.5-win Vegas total) | ~2.7 sacks/g, ~0.90 INT/g, ~20.5 pts allowed/g (no yards-allowed component in this league's DEF rules, unlike Top Teamz)",15,120.9,0.0,109,10,10.0
+49ers,DEF,49ers,120.9,90.7,154.8,medium,"Good-tier defense (9.5-win Vegas total) | ~2.7 sacks/g, ~0.90 INT/g, ~20.5 pts allowed/g (no yards-allowed component in this league's DEF rules, unlike Top Teamz)",16,120.9,0.0,110,10,8.0
+Rhamondre Stevenson,RB,Patriots,140.3,105.2,179.6,medium,"11.4 carries/g x 4.00 YPC | 2.5 targets/g, half-PPR",29,140.3,0.0,111,10,11.0
+Chris Olave,WR,Saints,145.5,109.1,186.2,medium,"7.6 targets/g, 63% catch rate, 7.5 yds/target",29,145.5,0.0,112,10,8.0
 Luther Burden III,WR,Bears,145.3,109.0,186.0,medium,"7.1 targets/g, 68% catch rate, 7.5 yds/target",30,145.5,-0.2,113,10,10.0
 Justin Herbert,QB,Chargers,269.3,228.9,317.8,low,"32.9 pass att/g x 7.3 YPA, 4.6% TD rate (1pt/25 pass yds here) | 3.0 rush att/g at 4.0 YPC | +3 pts from yardage milestone bonuses",13,270.6,-1.3,114,10,7.0
 Cairo Santos,K,CHI,149.6,127.2,176.6,low,"1.67 FG made/g (0.73 under 40 @3pt, 0.67 @4pt, 0.27 @5pt) | 2.60 XP made/g",13,151.0,-1.4,115,10,
-Rhamondre Stevenson,RB,Patriots,140.3,105.2,179.6,medium,"11.4 carries/g x 4.00 YPC | 2.5 targets/g, half-PPR",30,141.8,-1.5,116,10,11.0
+Harrison Butker,K,KC,149.0,126.6,175.8,low,"1.94 FG made/g (1.12 under 40 @3pt, 0.53 @4pt, 0.29 @5pt) | 1.82 XP made/g",14,151.0,-2.0,116,10,
 Andy Borregales,K,NE,149.0,126.6,175.8,low,"1.59 FG made/g (0.94 under 40 @3pt, 0.41 @4pt, 0.23 @5pt) | 3.12 XP made/g",15,151.0,-2.0,117,10,
-Harrison Butker,K,KC,149.0,126.6,175.8,low,"1.94 FG made/g (1.12 under 40 @3pt, 0.53 @4pt, 0.29 @5pt) | 1.82 XP made/g",14,151.0,-2.0,118,10,
-Spencer Shrader,K,IND,148.2,111.1,189.7,medium,"2.60 FG made/g (2.00 under 40 @3pt, 0.40 @4pt, 0.20 @5pt) | 2.80 XP made/g",16,151.0,-2.8,119,10,
-David Njoku,TE,Chargers,78.0,58.5,99.9,medium,"4.7 targets/g, 68% catch rate, 6.0 yds/target",15,82.8,-4.8,120,10,7.0
-Matthew Stafford,QB,Rams,265.5,199.1,339.8,medium,"33.6 pass att/g x 7.4 YPA, 5.9% TD rate (1pt/25 pass yds here) | pocket passer, minimal rushing equity | +3 pts from yardage milestone bonuses",14,270.6,-5.1,121,11,11.0
-Josh Jacobs,RB,Packers,135.0,67.5,216.1,very_high,"18.0 carries/g x 4.44 YPC | 2.5 targets/g, half-PPR | +4 pts from yardage milestone bonuses",31,141.8,-6.8,122,11,11.0
-Xavier Worthy,WR,Chiefs,138.2,103.6,176.9,medium,"6.2 targets/g, 58% catch rate, 8.0 yds/target",31,145.5,-7.3,123,11,5.0
-Joey Slye,K,TEN,143.4,121.9,169.2,low,"1.75 FG made/g (0.75 under 40 @3pt, 0.44 @4pt, 0.56 @5pt) | 1.62 XP made/g",17,151.0,-7.6,124,11,
-Jameson Williams,WR,Lions,137.5,103.1,176.0,medium,"5.9 targets/g, 58% catch rate, 8.5 yds/target",32,145.5,-8.0,125,11,6.0
-Dalton Kincaid,TE,Bills,74.0,46.6,105.1,high,"4.6 targets/g, 68% catch rate, 5.5 yds/target",16,82.8,-8.8,126,11,7.0
-C.J. Stroud,QB,Texans,261.5,196.1,334.7,medium,"34.6 pass att/g x 6.8 YPA, 4.2% TD rate (1pt/25 pass yds here) | 3.0 rush att/g at 4.5 YPC",15,270.6,-9.1,127,11,8.0
-Evan Engram,TE,Broncos,73.7,55.2,94.3,medium,"5.0 targets/g, 65% catch rate, 5.5 yds/target",17,82.8,-9.1,128,11,10.0
-Courtland Sutton,WR,Broncos,136.3,102.2,174.5,medium,"6.4 targets/g, 58% catch rate, 7.5 yds/target",33,145.5,-9.2,129,11,10.0
-Rashee Rice,WR,Chiefs,133.7,84.2,189.8,high,"6.7 targets/g, 65% catch rate, 7.0 yds/target",34,145.5,-11.8,130,11,5.0
-Jeremiyah Love,RB,Cardinals,130.0,65.0,208.0,very_high,"10.8 carries/g x 4.40 YPC | 3.3 targets/g, half-PPR",32,141.8,-11.8,131,11,14.0
-Ben Sauls,K,NYG,138.7,104.0,177.5,medium,"2.67 FG made/g (2.33 under 40 @3pt, 0.33 @4pt, 0.00 @5pt) | 2.33 XP made/g",19,151.0,-12.3,132,11,
-Zane Gonzalez,K,ATL,138.7,104.0,177.5,medium,"2.11 FG made/g (0.44 under 40 @3pt, 0.89 @4pt, 0.78 @5pt) | 1.89 XP made/g",18,151.0,-12.3,133,12,
-Brandon McManus,K,GB,137.2,116.6,161.9,low,"1.71 FG made/g (1.29 under 40 @3pt, 0.21 @4pt, 0.21 @5pt) | 2.29 XP made/g",20,151.0,-13.8,134,12,
-Brock Purdy,QB,49ers,256.3,192.2,328.0,medium,"30.7 pass att/g x 7.8 YPA, 5.3% TD rate (1pt/25 pass yds here) | 2.5 rush att/g at 4.0 YPC",16,270.6,-14.3,135,12,8.0
-Evan McPherson,K,CIN,136.0,115.6,160.5,low,"1.47 FG made/g (0.59 under 40 @3pt, 0.59 @4pt, 0.29 @5pt) | 2.41 XP made/g",21,151.0,-15.0,136,12,
-Nick Folk,K,NYJ,135.0,114.7,159.3,low,"1.75 FG made/g (0.87 under 40 @3pt, 0.44 @4pt, 0.44 @5pt) | 1.38 XP made/g",22,151.0,-16.0,137,12,
-Jordan Addison,WR,Vikings,128.7,96.5,164.8,medium,"6.5 targets/g, 62% catch rate, 7.5 yds/target",35,145.5,-16.8,138,12,6.0
-Wil Lutz,K,DEN,134.0,113.9,158.1,low,"1.65 FG made/g (1.24 under 40 @3pt, 0.18 @4pt, 0.23 @5pt) | 2.29 XP made/g",23,151.0,-17.0,139,12,
-Hunter Henry,TE,Chargers,65.5,41.2,92.9,high,"4.2 targets/g, 68% catch rate, 5.5 yds/target",18,82.8,-17.3,140,12,7.0
-Jaylen Waddle,WR,Broncos,128.2,96.1,164.0,medium,"6.4 targets/g, 65% catch rate, 7.5 yds/target",36,145.5,-17.3,141,12,10.0
-Graham Gano,K,NYG,132.6,112.7,156.5,low,"1.80 FG made/g (1.40 under 40 @3pt, 0.20 @4pt, 0.20 @5pt) | 1.80 XP made/g",24,151.0,-18.4,142,12,
-Commanders,DEF,Commanders,101.3,76.0,129.7,medium,"Average-tier defense (7.5-win Vegas total) | ~2.3 sacks/g, ~0.75 INT/g, ~22.5 pts allowed/g (no yards-allowed component in this league's DEF rules, unlike Top Teamz)",21,120.9,-19.6,143,12,7.0
-Saints,DEF,Saints,101.3,76.0,129.7,medium,"Average-tier defense (7.5-win Vegas total) | ~2.3 sacks/g, ~0.75 INT/g, ~22.5 pts allowed/g (no yards-allowed component in this league's DEF rules, unlike Top Teamz)",23,120.9,-19.6,144,12,8.0
-Buccaneers,DEF,Buccaneers,101.3,76.0,129.7,medium,"Average-tier defense (8.5-win Vegas total) | ~2.3 sacks/g, ~0.75 INT/g, ~22.5 pts allowed/g (no yards-allowed component in this league's DEF rules, unlike Top Teamz)",25,120.9,-19.6,145,13,10.0
-Panthers,DEF,Panthers,101.3,76.0,129.7,medium,"Average-tier defense (7.5-win Vegas total) | ~2.3 sacks/g, ~0.75 INT/g, ~22.5 pts allowed/g (no yards-allowed component in this league's DEF rules, unlike Top Teamz)",24,120.9,-19.6,146,13,5.0
-Steelers,DEF,Steelers,101.3,76.0,129.7,medium,"Average-tier defense (8.5-win Vegas total) | ~2.3 sacks/g, ~0.75 INT/g, ~22.5 pts allowed/g (no yards-allowed component in this league's DEF rules, unlike Top Teamz)",17,120.9,-19.6,147,13,9.0
-Colts,DEF,Colts,101.3,76.0,129.7,medium,"Average-tier defense (7.5-win Vegas total) | ~2.3 sacks/g, ~0.75 INT/g, ~22.5 pts allowed/g (no yards-allowed component in this league's DEF rules, unlike Top Teamz)",18,120.9,-19.6,148,13,13.0
-Jaguars,DEF,Jaguars,101.3,76.0,129.7,medium,"Average-tier defense (8.5-win Vegas total) | ~2.3 sacks/g, ~0.75 INT/g, ~22.5 pts allowed/g (no yards-allowed component in this league's DEF rules, unlike Top Teamz)",19,120.9,-19.6,149,13,7.0
-Giants,DEF,Giants,101.3,76.0,129.7,medium,"Average-tier defense (7.5-win Vegas total) | ~2.3 sacks/g, ~0.75 INT/g, ~22.5 pts allowed/g (no yards-allowed component in this league's DEF rules, unlike Top Teamz)",20,120.9,-19.6,150,13,8.0
-Vikings,DEF,Vikings,101.3,76.0,129.7,medium,"Average-tier defense (8.5-win Vegas total) | ~2.3 sacks/g, ~0.75 INT/g, ~22.5 pts allowed/g (no yards-allowed component in this league's DEF rules, unlike Top Teamz)",22,120.9,-19.6,151,13,6.0
-Trevor Lawrence,QB,Jaguars,250.7,188.0,320.9,medium,"34.0 pass att/g x 6.9 YPA, 3.9% TD rate (1pt/25 pass yds here) | 3.0 rush att/g at 4.0 YPC",17,270.6,-19.9,152,13,7.0
-Tre Tucker,WR,Raiders,125.2,93.9,160.2,medium,"6.7 targets/g, 62% catch rate, 8.5 yds/target",37,145.5,-20.3,153,13,13.0
-Jordan Love,QB,Packers,250.3,187.7,320.3,medium,"32.3 pass att/g x 7.2 YPA, 4.9% TD rate (1pt/25 pass yds here) | 3.0 rush att/g at 4.0 YPC",18,270.6,-20.3,154,13,11.0
-Tank Bigsby,RB,Eagles,121.1,90.8,155.0,medium,"9.9 carries/g x 4.40 YPC | 1.0 targets/g, half-PPR",33,141.8,-20.7,155,13,10.0
-Rico Dowdle,RB,Steelers,118.8,89.1,152.0,medium,"13.0 carries/g x 4.10 YPC | 2.5 targets/g, half-PPR",34,141.8,-23.0,156,13,9.0
+Spencer Shrader,K,IND,148.2,111.1,189.7,medium,"2.60 FG made/g (2.00 under 40 @3pt, 0.40 @4pt, 0.20 @5pt) | 2.80 XP made/g",16,151.0,-2.8,118,10,
+Matthew Stafford,QB,Rams,265.5,199.1,339.8,medium,"33.6 pass att/g x 7.4 YPA, 5.9% TD rate (1pt/25 pass yds here) | pocket passer, minimal rushing equity | +3 pts from yardage milestone bonuses",14,270.6,-5.1,119,10,11.0
+Josh Jacobs,RB,Packers,135.0,67.5,216.1,very_high,"18.0 carries/g x 4.44 YPC | 2.5 targets/g, half-PPR | +4 pts from yardage milestone bonuses",30,140.3,-5.3,120,10,11.0
+Xavier Worthy,WR,Chiefs,138.2,103.6,176.9,medium,"6.2 targets/g, 58% catch rate, 8.0 yds/target",31,145.5,-7.3,121,11,5.0
+Joey Slye,K,TEN,143.4,121.9,169.2,low,"1.75 FG made/g (0.75 under 40 @3pt, 0.44 @4pt, 0.56 @5pt) | 1.62 XP made/g",17,151.0,-7.6,122,11,
+Jameson Williams,WR,Lions,137.5,103.1,176.0,medium,"5.9 targets/g, 58% catch rate, 8.5 yds/target",32,145.5,-8.0,123,11,6.0
+C.J. Stroud,QB,Texans,261.5,196.1,334.7,medium,"34.6 pass att/g x 6.8 YPA, 4.2% TD rate (1pt/25 pass yds here) | 3.0 rush att/g at 4.5 YPC",15,270.6,-9.1,124,11,8.0
+Courtland Sutton,WR,Broncos,136.3,102.2,174.5,medium,"6.4 targets/g, 58% catch rate, 7.5 yds/target",33,145.5,-9.2,125,11,10.0
+Dallas Goedert,TE,Eagles,82.8,62.1,106.0,medium,"4.9 targets/g, 68% catch rate, 6.0 yds/target",15,92.1,-9.3,126,11,10.0
+Jeremiyah Love,RB,Cardinals,130.0,65.0,208.0,very_high,"10.8 carries/g x 4.40 YPC | 3.3 targets/g, half-PPR",31,140.3,-10.3,127,11,14.0
+Rashee Rice,WR,Chiefs,133.7,84.2,189.8,high,"6.7 targets/g, 65% catch rate, 7.0 yds/target",34,145.5,-11.8,128,11,5.0
+Zane Gonzalez,K,ATL,138.7,104.0,177.5,medium,"2.11 FG made/g (0.44 under 40 @3pt, 0.89 @4pt, 0.78 @5pt) | 1.89 XP made/g",18,151.0,-12.3,129,11,
+Ben Sauls,K,NYG,138.7,104.0,177.5,medium,"2.67 FG made/g (2.33 under 40 @3pt, 0.33 @4pt, 0.00 @5pt) | 2.33 XP made/g",19,151.0,-12.3,130,11,
+Brandon McManus,K,GB,137.2,116.6,161.9,low,"1.71 FG made/g (1.29 under 40 @3pt, 0.21 @4pt, 0.21 @5pt) | 2.29 XP made/g",20,151.0,-13.8,131,11,
+David Njoku,TE,Chargers,78.0,58.5,99.9,medium,"4.7 targets/g, 68% catch rate, 6.0 yds/target",16,92.1,-14.1,132,11,7.0
+Brock Purdy,QB,49ers,256.3,192.2,328.0,medium,"30.7 pass att/g x 7.8 YPA, 5.3% TD rate (1pt/25 pass yds here) | 2.5 rush att/g at 4.0 YPC",16,270.6,-14.3,133,12,8.0
+Evan McPherson,K,CIN,136.0,115.6,160.5,low,"1.47 FG made/g (0.59 under 40 @3pt, 0.59 @4pt, 0.29 @5pt) | 2.41 XP made/g",21,151.0,-15.0,134,12,
+Nick Folk,K,NYJ,135.0,114.7,159.3,low,"1.75 FG made/g (0.87 under 40 @3pt, 0.44 @4pt, 0.44 @5pt) | 1.38 XP made/g",22,151.0,-16.0,135,12,
+Jordan Addison,WR,Vikings,128.7,96.5,164.8,medium,"6.5 targets/g, 62% catch rate, 7.5 yds/target",35,145.5,-16.8,136,12,6.0
+Wil Lutz,K,DEN,134.0,113.9,158.1,low,"1.65 FG made/g (1.24 under 40 @3pt, 0.18 @4pt, 0.23 @5pt) | 2.29 XP made/g",23,151.0,-17.0,137,12,
+Jaylen Waddle,WR,Broncos,128.2,96.1,164.0,medium,"6.4 targets/g, 65% catch rate, 7.5 yds/target",36,145.5,-17.3,138,12,10.0
+Dalton Kincaid,TE,Bills,74.0,46.6,105.1,high,"4.6 targets/g, 68% catch rate, 5.5 yds/target",17,92.1,-18.1,139,12,7.0
+Evan Engram,TE,Broncos,73.7,55.2,94.3,medium,"5.0 targets/g, 65% catch rate, 5.5 yds/target",18,92.1,-18.4,140,12,10.0
+Graham Gano,K,NYG,132.6,112.7,156.5,low,"1.80 FG made/g (1.40 under 40 @3pt, 0.20 @4pt, 0.20 @5pt) | 1.80 XP made/g",24,151.0,-18.4,141,12,
+Bhayshul Tuten,RB,Jaguars,121.3,76.4,172.2,high,"9.5 carries/g x 4.20 YPC | 2.5 targets/g, half-PPR",32,140.3,-19.0,142,12,7.0
+Tank Bigsby,RB,Eagles,121.1,90.8,155.0,medium,"9.9 carries/g x 4.40 YPC | 1.0 targets/g, half-PPR",33,140.3,-19.2,143,12,10.0
+Colts,DEF,Colts,101.3,76.0,129.7,medium,"Average-tier defense (7.5-win Vegas total) | ~2.3 sacks/g, ~0.75 INT/g, ~22.5 pts allowed/g (no yards-allowed component in this league's DEF rules, unlike Top Teamz)",18,120.9,-19.6,144,12,13.0
+Jaguars,DEF,Jaguars,101.3,76.0,129.7,medium,"Average-tier defense (8.5-win Vegas total) | ~2.3 sacks/g, ~0.75 INT/g, ~22.5 pts allowed/g (no yards-allowed component in this league's DEF rules, unlike Top Teamz)",19,120.9,-19.6,145,13,7.0
+Giants,DEF,Giants,101.3,76.0,129.7,medium,"Average-tier defense (7.5-win Vegas total) | ~2.3 sacks/g, ~0.75 INT/g, ~22.5 pts allowed/g (no yards-allowed component in this league's DEF rules, unlike Top Teamz)",20,120.9,-19.6,146,13,8.0
+Panthers,DEF,Panthers,101.3,76.0,129.7,medium,"Average-tier defense (7.5-win Vegas total) | ~2.3 sacks/g, ~0.75 INT/g, ~22.5 pts allowed/g (no yards-allowed component in this league's DEF rules, unlike Top Teamz)",24,120.9,-19.6,147,13,5.0
+Saints,DEF,Saints,101.3,76.0,129.7,medium,"Average-tier defense (7.5-win Vegas total) | ~2.3 sacks/g, ~0.75 INT/g, ~22.5 pts allowed/g (no yards-allowed component in this league's DEF rules, unlike Top Teamz)",23,120.9,-19.6,148,13,8.0
+Commanders,DEF,Commanders,101.3,76.0,129.7,medium,"Average-tier defense (7.5-win Vegas total) | ~2.3 sacks/g, ~0.75 INT/g, ~22.5 pts allowed/g (no yards-allowed component in this league's DEF rules, unlike Top Teamz)",21,120.9,-19.6,149,13,7.0
+Vikings,DEF,Vikings,101.3,76.0,129.7,medium,"Average-tier defense (8.5-win Vegas total) | ~2.3 sacks/g, ~0.75 INT/g, ~22.5 pts allowed/g (no yards-allowed component in this league's DEF rules, unlike Top Teamz)",22,120.9,-19.6,150,13,6.0
+Buccaneers,DEF,Buccaneers,101.3,76.0,129.7,medium,"Average-tier defense (8.5-win Vegas total) | ~2.3 sacks/g, ~0.75 INT/g, ~22.5 pts allowed/g (no yards-allowed component in this league's DEF rules, unlike Top Teamz)",25,120.9,-19.6,151,13,10.0
+Steelers,DEF,Steelers,101.3,76.0,129.7,medium,"Average-tier defense (8.5-win Vegas total) | ~2.3 sacks/g, ~0.75 INT/g, ~22.5 pts allowed/g (no yards-allowed component in this league's DEF rules, unlike Top Teamz)",17,120.9,-19.6,152,13,9.0
+Trevor Lawrence,QB,Jaguars,250.7,188.0,320.9,medium,"34.0 pass att/g x 6.9 YPA, 3.9% TD rate (1pt/25 pass yds here) | 3.0 rush att/g at 4.0 YPC",17,270.6,-19.9,153,13,7.0
+Tre Tucker,WR,Raiders,125.2,93.9,160.2,medium,"6.7 targets/g, 62% catch rate, 8.5 yds/target",37,145.5,-20.3,154,13,13.0
+Jordan Love,QB,Packers,250.3,187.7,320.3,medium,"32.3 pass att/g x 7.2 YPA, 4.9% TD rate (1pt/25 pass yds here) | 3.0 rush att/g at 4.0 YPC",18,270.6,-20.3,155,13,11.0
+Rico Dowdle,RB,Steelers,118.8,89.1,152.0,medium,"13.0 carries/g x 4.10 YPC | 2.5 targets/g, half-PPR",34,140.3,-21.5,156,13,9.0
 Jerry Jeudy,WR,Browns,121.9,76.8,173.0,high,"6.6 targets/g, 60% catch rate, 7.5 yds/target",38,145.5,-23.6,157,14,11.0
-Matt Prater,K,BUF,122.4,104.1,144.5,low,"1.20 FG made/g (0.73 under 40 @3pt, 0.40 @4pt, 0.07 @5pt) | 3.07 XP made/g",25,151.0,-28.6,158,14,
-Parker Washington,WR,Jaguars,116.7,87.5,149.3,medium,"5.5 targets/g, 72% catch rate, 9.6 yds/target",39,145.5,-28.8,159,14,7.0
-Jakobi Meyers,WR,Jaguars,115.6,86.7,147.9,medium,"6.0 targets/g, 70% catch rate, 8.5 yds/target",40,145.5,-29.9,160,14,7.0
-Sam Darnold,QB,Seahawks,240.2,180.1,307.4,medium,"31.4 pass att/g x 7.1 YPA, 4.7% TD rate (1pt/25 pass yds here) | 2.0 rush att/g at 3.5 YPC",19,270.6,-30.4,161,14,11.0
-Cade Otton,TE,Buccaneers,51.9,38.9,66.4,medium,"3.5 targets/g, 65% catch rate, 5.5 yds/target",19,82.8,-30.9,162,14,10.0
-Pat Freiermuth,TE,Steelers,51.3,38.5,65.7,medium,"3.5 targets/g, 65% catch rate, 5.5 yds/target",20,82.8,-31.5,163,14,9.0
-Carnell Tate,WR,Titans,112.2,70.7,159.3,high,"6.3 targets/g, 62% catch rate, 8.0 yds/target",41,145.5,-33.3,164,14,9.0
-Michael Pittman Jr.,WR,Steelers,112.0,84.0,143.4,medium,"6.0 targets/g, 63% catch rate, 7.0 yds/target",42,145.5,-33.5,165,14,9.0
-Michael Badgley,K,BUF,117.1,99.5,138.2,low,"1.22 FG made/g (0.44 under 40 @3pt, 0.56 @4pt, 0.22 @5pt) | 2.22 XP made/g",26,151.0,-33.9,166,14,
-Jake Moody,K,WSH,117.0,87.8,149.8,medium,"2.11 FG made/g (1.33 under 40 @3pt, 0.56 @4pt, 0.22 @5pt) | 1.67 XP made/g",27,151.0,-34.0,167,14,
-Jalen Nailor,WR,Raiders,111.4,83.5,142.6,medium,"5.7 targets/g, 65% catch rate, 9.0 yds/target",43,145.5,-34.1,168,14,13.0
-Parker Romo,K,ATL,116.6,99.1,137.5,low,"1.57 FG made/g (1.28 under 40 @3pt, 0.14 @4pt, 0.14 @5pt) | 1.71 XP made/g",28,151.0,-34.4,169,15,
-Titans,DEF,Titans,86.3,64.7,110.5,medium,"Below-average-tier defense (6.5-win Vegas total) | ~2.0 sacks/g, ~0.65 INT/g, ~24.5 pts allowed/g (no yards-allowed component in this league's DEF rules, unlike Top Teamz)",27,120.9,-34.6,170,15,9.0
-Falcons,DEF,Falcons,86.3,64.7,110.5,medium,"Below-average-tier defense (6.5-win Vegas total) | ~2.0 sacks/g, ~0.65 INT/g, ~24.5 pts allowed/g (no yards-allowed component in this league's DEF rules, unlike Top Teamz)",28,120.9,-34.6,171,15,11.0
-Browns,DEF,Browns,86.3,64.7,110.5,medium,"Below-average-tier defense (6.5-win Vegas total) | ~2.0 sacks/g, ~0.65 INT/g, ~24.5 pts allowed/g (no yards-allowed component in this league's DEF rules, unlike Top Teamz)",26,120.9,-34.6,172,15,11.0
-Jake Elliott,K,PHI,116.0,98.6,136.8,low,"1.18 FG made/g (0.53 under 40 @3pt, 0.41 @4pt, 0.23 @5pt) | 2.41 XP made/g",29,151.0,-35.0,173,15,
-Aaron Jones,RB,Vikings,106.5,67.1,151.3,high,"10.5 carries/g x 4.15 YPC | 3.0 targets/g, half-PPR",35,141.8,-35.3,174,15,6.0
-Chig Okonkwo,TE,Titans,47.0,29.6,66.7,high,"3.4 targets/g, 65% catch rate, 6.0 yds/target",21,82.8,-35.8,175,15,9.0
-Juwan Johnson,TE,Saints,44.2,27.8,62.8,high,"3.5 targets/g, 62% catch rate, 5.5 yds/target",22,82.8,-38.6,176,15,8.0
+Pat Freiermuth,TE,Steelers,66.0,49.5,84.4,medium,"4.5 targets/g, 65% catch rate, 5.5 yds/target",19,92.1,-26.1,158,14,9.0
+Matt Prater,K,BUF,122.4,104.1,144.5,low,"1.20 FG made/g (0.73 under 40 @3pt, 0.40 @4pt, 0.07 @5pt) | 3.07 XP made/g",25,151.0,-28.6,159,14,
+Parker Washington,WR,Jaguars,116.7,87.5,149.3,medium,"5.5 targets/g, 72% catch rate, 9.6 yds/target",39,145.5,-28.8,160,14,7.0
+Stefon Diggs,WR,Commanders,116.0,87.0,148.5,medium,"6.1 targets/g, 63% catch rate, 7.5 yds/target",40,145.5,-29.5,161,14,7.0
+Jakobi Meyers,WR,Jaguars,115.6,86.7,147.9,medium,"6.0 targets/g, 70% catch rate, 8.5 yds/target",41,145.5,-29.9,162,14,7.0
+Sam Darnold,QB,Seahawks,240.2,180.1,307.4,medium,"31.4 pass att/g x 7.1 YPA, 4.7% TD rate (1pt/25 pass yds here) | 2.0 rush att/g at 3.5 YPC",19,270.6,-30.4,163,14,11.0
+Matthew Golden,WR,Packers,115.0,86.2,147.2,medium,"6.1 targets/g, 60% catch rate, 7.0 yds/target",42,145.5,-30.5,164,14,11.0
+Carnell Tate,WR,Titans,112.2,70.7,159.3,high,"6.3 targets/g, 62% catch rate, 8.0 yds/target",43,145.5,-33.3,165,14,9.0
+Michael Pittman Jr.,WR,Steelers,112.0,84.0,143.4,medium,"6.0 targets/g, 63% catch rate, 7.0 yds/target",44,145.5,-33.5,166,14,9.0
+Aaron Jones,RB,Vikings,106.5,67.1,151.3,high,"10.5 carries/g x 4.15 YPC | 3.0 targets/g, half-PPR",35,140.3,-33.8,167,14,6.0
+Michael Badgley,K,BUF,117.1,99.5,138.2,low,"1.22 FG made/g (0.44 under 40 @3pt, 0.56 @4pt, 0.22 @5pt) | 2.22 XP made/g",26,151.0,-33.9,168,14,
+Jake Moody,K,WSH,117.0,87.8,149.8,medium,"2.11 FG made/g (1.33 under 40 @3pt, 0.56 @4pt, 0.22 @5pt) | 1.67 XP made/g",27,151.0,-34.0,169,15,
+Jalen Nailor,WR,Raiders,111.4,83.5,142.6,medium,"5.7 targets/g, 65% catch rate, 9.0 yds/target",45,145.5,-34.1,170,15,13.0
+Parker Romo,K,ATL,116.6,99.1,137.5,low,"1.57 FG made/g (1.28 under 40 @3pt, 0.14 @4pt, 0.14 @5pt) | 1.71 XP made/g",28,151.0,-34.4,171,15,
+Titans,DEF,Titans,86.3,64.7,110.5,medium,"Below-average-tier defense (6.5-win Vegas total) | ~2.0 sacks/g, ~0.65 INT/g, ~24.5 pts allowed/g (no yards-allowed component in this league's DEF rules, unlike Top Teamz)",27,120.9,-34.6,172,15,9.0
+Falcons,DEF,Falcons,86.3,64.7,110.5,medium,"Below-average-tier defense (6.5-win Vegas total) | ~2.0 sacks/g, ~0.65 INT/g, ~24.5 pts allowed/g (no yards-allowed component in this league's DEF rules, unlike Top Teamz)",28,120.9,-34.6,173,15,11.0
+Browns,DEF,Browns,86.3,64.7,110.5,medium,"Below-average-tier defense (6.5-win Vegas total) | ~2.0 sacks/g, ~0.65 INT/g, ~24.5 pts allowed/g (no yards-allowed component in this league's DEF rules, unlike Top Teamz)",26,120.9,-34.6,174,15,11.0
+Jake Elliott,K,PHI,116.0,98.6,136.8,low,"1.18 FG made/g (0.53 under 40 @3pt, 0.41 @4pt, 0.23 @5pt) | 2.41 XP made/g",29,151.0,-35.0,175,15,
+Malik Willis,QB,Dolphins,235.6,117.8,377.0,very_high,"30.2 pass att/g x 6.5 YPA, 2.6% TD rate (1pt/25 pass yds here) | 5.5 rush att/g at 5.0 YPC",20,270.6,-35.0,176,15,6.0
 Andre Szmyt,K,CLE,112.0,95.2,132.2,low,"1.41 FG made/g (0.82 under 40 @3pt, 0.29 @4pt, 0.29 @5pt) | 1.47 XP made/g",30,151.0,-39.0,177,15,
-Ryan Fitzgerald,K,CAR,111.0,94.4,131.0,low,"1.41 FG made/g (0.82 under 40 @3pt, 0.47 @4pt, 0.12 @5pt) | 1.59 XP made/g",31,151.0,-40.0,178,15,
-Cole Kmet,TE,Bears,42.3,26.7,60.1,high,"3.1 targets/g, 62% catch rate, 5.5 yds/target",23,82.8,-40.5,179,15,10.0
-Tyler Loop,K,BAL,110.1,82.6,141.0,medium,"1.76 FG made/g (1.24 under 40 @3pt, 0.47 @4pt, 0.06 @5pt) | 2.59 XP made/g",32,151.0,-40.9,180,15,
-Zach Charbonnet,RB,Seahawks,100.9,50.4,161.4,very_high,"12.7 carries/g x 4.44 YPC | 2.5 targets/g, half-PPR",36,141.8,-40.9,181,16,11.0
-Kenyon Sadiq,TE,Jets,41.1,20.5,65.8,very_high,"3.6 targets/g, 68% catch rate, 8.0 yds/target",24,82.8,-41.7,182,16,13.0
-Daniel Jones,QB,Colts,228.5,144.0,324.5,high,"30.3 pass att/g x 6.8 YPA, 3.2% TD rate (1pt/25 pass yds here) | 6.0 rush att/g at 4.5 YPC",20,270.6,-42.1,183,16,13.0
-Jayden Reed,WR,Packers,102.8,77.1,131.6,medium,"5.4 targets/g, 62% catch rate, 7.0 yds/target",44,145.5,-42.7,184,16,11.0
-Quentin Johnston,WR,Chargers,99.7,74.8,127.6,medium,"5.2 targets/g, 58% catch rate, 7.0 yds/target",45,145.5,-45.8,185,16,7.0
-Deebo Samuel,WR,49ers,99.6,74.7,127.5,medium,"5.0 targets/g, 65% catch rate, 6.5 yds/target",46,145.5,-45.9,186,16,8.0
-Chris Godwin Jr.,WR,Buccaneers,99.4,74.5,127.2,medium,"5.5 targets/g, 68% catch rate, 6.5 yds/target",47,145.5,-46.1,187,16,10.0
+Zach Charbonnet,RB,Seahawks,100.9,50.4,161.4,very_high,"12.7 carries/g x 4.44 YPC | 2.5 targets/g, half-PPR",36,140.3,-39.4,178,15,11.0
+Ryan Fitzgerald,K,CAR,111.0,94.4,131.0,low,"1.41 FG made/g (0.82 under 40 @3pt, 0.47 @4pt, 0.12 @5pt) | 1.59 XP made/g",31,151.0,-40.0,179,15,
+Cade Otton,TE,Buccaneers,51.9,38.9,66.4,medium,"3.5 targets/g, 65% catch rate, 5.5 yds/target",20,92.1,-40.2,180,15,10.0
+Tyler Loop,K,BAL,110.1,82.6,141.0,medium,"1.76 FG made/g (1.24 under 40 @3pt, 0.47 @4pt, 0.06 @5pt) | 2.59 XP made/g",32,151.0,-40.9,181,16,
+Daniel Jones,QB,Colts,228.5,144.0,324.5,high,"30.3 pass att/g x 6.8 YPA, 3.2% TD rate (1pt/25 pass yds here) | 6.0 rush att/g at 4.5 YPC",21,270.6,-42.1,182,16,13.0
+Jayden Reed,WR,Packers,102.8,77.1,131.6,medium,"5.4 targets/g, 62% catch rate, 7.0 yds/target",46,145.5,-42.7,183,16,11.0
+Chig Okonkwo,TE,Titans,47.0,29.6,66.7,high,"3.4 targets/g, 65% catch rate, 6.0 yds/target",21,92.1,-45.1,184,16,9.0
+Quentin Johnston,WR,Chargers,99.7,74.8,127.6,medium,"5.2 targets/g, 58% catch rate, 7.0 yds/target",47,145.5,-45.8,185,16,7.0
+Deebo Samuel,WR,49ers,99.6,74.7,127.5,medium,"5.0 targets/g, 65% catch rate, 6.5 yds/target",48,145.5,-45.9,186,16,8.0
+Chris Godwin Jr.,WR,Buccaneers,99.4,74.5,127.2,medium,"5.5 targets/g, 68% catch rate, 6.5 yds/target",49,145.5,-46.1,187,16,10.0
 Blake Grupe,K,IND,104.8,78.6,134.2,medium,"1.81 FG made/g (1.19 under 40 @3pt, 0.19 @4pt, 0.44 @5pt) | 1.56 XP made/g",33,151.0,-46.2,188,16,
-Dolphins,DEF,Dolphins,71.9,53.9,92.0,medium,"Poor-tier defense (4.5-win Vegas total) | ~1.7 sacks/g, ~0.55 INT/g, ~27.0 pts allowed/g (no yards-allowed component in this league's DEF rules, unlike Top Teamz)",29,120.9,-49.0,189,16,6.0
-Raiders,DEF,Raiders,71.9,53.9,92.0,medium,"Poor-tier defense (5.5-win Vegas total) | ~1.7 sacks/g, ~0.55 INT/g, ~27.0 pts allowed/g (no yards-allowed component in this league's DEF rules, unlike Top Teamz)",31,120.9,-49.0,190,16,13.0
-Cardinals,DEF,Cardinals,71.9,53.9,92.0,medium,"Poor-tier defense (3.5-win Vegas total) | ~1.7 sacks/g, ~0.55 INT/g, ~27.0 pts allowed/g (no yards-allowed component in this league's DEF rules, unlike Top Teamz)",32,120.9,-49.0,191,16,14.0
-Jets,DEF,Jets,71.9,53.9,92.0,medium,"Poor-tier defense (5.5-win Vegas total) | ~1.7 sacks/g, ~0.55 INT/g, ~27.0 pts allowed/g (no yards-allowed component in this league's DEF rules, unlike Top Teamz)",30,120.9,-49.0,192,16,13.0
-Jaxson Dart,QB,Giants,221.5,110.7,354.3,very_high,"30.3 pass att/g x 6.5 YPA, 3.0% TD rate (1pt/25 pass yds here) | 6.0 rush att/g at 5.0 YPC",21,270.6,-49.1,193,17,8.0
-RJ Harvey,RB,Broncos,92.4,58.2,131.2,high,"7.6 carries/g x 4.30 YPC | 2.5 targets/g, half-PPR",37,141.8,-49.4,194,17,10.0
-Travis Hunter,WR,Jaguars,96.1,60.6,136.5,high,"5.5 targets/g, 62% catch rate, 6.5 yds/target",48,145.5,-49.4,195,17,7.0
-Isaiah Likely,TE,Ravens,33.3,21.0,47.3,high,"2.4 targets/g, 65% catch rate, 6.0 yds/target",25,82.8,-49.5,196,17,13.0
-Khalil Shakir,WR,Bills,95.9,71.9,122.7,medium,"5.1 targets/g, 68% catch rate, 6.5 yds/target",49,145.5,-49.6,197,17,7.0
-Riley Patterson,K,MIA,100.9,75.7,129.2,medium,"1.59 FG made/g (0.77 under 40 @3pt, 0.65 @4pt, 0.18 @5pt) | 2.00 XP made/g",34,151.0,-50.1,198,17,
-Chad Ryland,K,ARI,99.4,74.6,127.3,medium,"1.47 FG made/g (0.71 under 40 @3pt, 0.41 @4pt, 0.35 @5pt) | 2.12 XP made/g",35,151.0,-51.6,199,17,
-Bryce Young,QB,Panthers,218.2,137.5,309.8,high,"31.3 pass att/g x 6.5 YPA, 3.3% TD rate (1pt/25 pass yds here) | 4.0 rush att/g at 4.0 YPC",22,270.6,-52.4,200,17,5.0
-Najee Harris,RB,Chargers,89.2,56.2,126.7,high,"8.2 carries/g x 4.00 YPC | 1.9 targets/g, half-PPR",38,141.8,-52.6,201,17,7.0
-Matthew Golden,WR,Packers,92.7,58.4,131.6,high,"4.9 targets/g, 60% catch rate, 7.0 yds/target",50,145.5,-52.8,202,17,11.0
-Josh Downs,WR,Colts,92.0,69.0,117.7,medium,"5.6 targets/g, 68% catch rate, 6.0 yds/target",51,145.5,-53.5,203,17,13.0
-De'Zhaun Stribling,WR,49ers,91.5,57.6,129.9,high,"5.1 targets/g, 62% catch rate, 8.0 yds/target",52,145.5,-54.0,204,17,8.0
-Geno Smith,QB,Jets,216.5,162.3,277.1,medium,"34.0 pass att/g x 6.8 YPA, 3.0% TD rate (1pt/25 pass yds here) | 2.0 rush att/g at 3.5 YPC",23,270.6,-54.1,205,18,13.0
-Joshua Karty,K,ARI,94.2,70.7,120.6,medium,"1.25 FG made/g (0.75 under 40 @3pt, 0.38 @4pt, 0.12 @5pt) | 2.88 XP made/g",36,151.0,-56.8,206,18,
-Ja'Tavion Sanders,TE,Panthers,26.0,16.4,36.9,high,"2.5 targets/g, 62% catch rate, 5.5 yds/target",26,82.8,-56.8,207,18,5.0
-Noah Fant,TE,Saints,25.7,12.8,41.0,very_high,"2.5 targets/g, 62% catch rate, 5.5 yds/target",28,82.8,-57.1,208,18,8.0
-Zach Ertz,TE,Free agent,25.7,12.8,41.1,very_high,"3.0 targets/g, 68% catch rate, 5.5 yds/target",27,82.8,-57.1,209,18,
-Matthew Wright,K,HOU,93.5,79.5,110.3,low,"1.25 FG made/g (0.50 under 40 @3pt, 0.75 @4pt, 0.00 @5pt) | 1.00 XP made/g",37,151.0,-57.5,210,18,
-Tyreek Hill,WR,Free agent,87.8,43.9,140.5,very_high,"6.0 targets/g, 62% catch rate, 8.5 yds/target",53,145.5,-57.7,211,18,
-Cooper Kupp,WR,Seahawks,86.2,64.7,110.3,medium,"4.9 targets/g, 68% catch rate, 6.5 yds/target",54,145.5,-59.3,212,18,11.0
-Denzel Boston,WR,Browns,85.2,53.7,121.0,high,"4.6 targets/g, 62% catch rate, 8.5 yds/target",55,145.5,-60.3,213,18,11.0
-Christian Kirk,WR,49ers,84.4,63.3,108.1,medium,"5.1 targets/g, 65% catch rate, 7.0 yds/target",56,145.5,-61.1,214,18,8.0
-Calvin Ridley,WR,Titans,83.9,52.8,119.1,high,"4.8 targets/g, 60% catch rate, 7.5 yds/target",57,145.5,-61.6,215,18,9.0
+RJ Harvey,RB,Broncos,92.4,58.2,131.2,high,"7.6 carries/g x 4.30 YPC | 2.5 targets/g, half-PPR",37,140.3,-47.9,189,16,10.0
+Juwan Johnson,TE,Saints,44.2,27.8,62.8,high,"3.5 targets/g, 62% catch rate, 5.5 yds/target",22,92.1,-47.9,190,16,8.0
+Jets,DEF,Jets,71.9,53.9,92.0,medium,"Poor-tier defense (5.5-win Vegas total) | ~1.7 sacks/g, ~0.55 INT/g, ~27.0 pts allowed/g (no yards-allowed component in this league's DEF rules, unlike Top Teamz)",30,120.9,-49.0,191,16,13.0
+Raiders,DEF,Raiders,71.9,53.9,92.0,medium,"Poor-tier defense (5.5-win Vegas total) | ~1.7 sacks/g, ~0.55 INT/g, ~27.0 pts allowed/g (no yards-allowed component in this league's DEF rules, unlike Top Teamz)",31,120.9,-49.0,192,16,13.0
+Cardinals,DEF,Cardinals,71.9,53.9,92.0,medium,"Poor-tier defense (3.5-win Vegas total) | ~1.7 sacks/g, ~0.55 INT/g, ~27.0 pts allowed/g (no yards-allowed component in this league's DEF rules, unlike Top Teamz)",32,120.9,-49.0,193,17,14.0
+Dolphins,DEF,Dolphins,71.9,53.9,92.0,medium,"Poor-tier defense (4.5-win Vegas total) | ~1.7 sacks/g, ~0.55 INT/g, ~27.0 pts allowed/g (no yards-allowed component in this league's DEF rules, unlike Top Teamz)",29,120.9,-49.0,194,17,6.0
+Jaxson Dart,QB,Giants,221.5,110.7,354.3,very_high,"30.3 pass att/g x 6.5 YPA, 3.0% TD rate (1pt/25 pass yds here) | 6.0 rush att/g at 5.0 YPC",22,270.6,-49.1,195,17,8.0
+Travis Hunter,WR,Jaguars,96.1,60.6,136.5,high,"5.5 targets/g, 62% catch rate, 6.5 yds/target",50,145.5,-49.4,196,17,7.0
+Khalil Shakir,WR,Bills,95.9,71.9,122.7,medium,"5.1 targets/g, 68% catch rate, 6.5 yds/target",51,145.5,-49.6,197,17,7.0
+Cole Kmet,TE,Bears,42.3,26.7,60.1,high,"3.1 targets/g, 62% catch rate, 5.5 yds/target",23,92.1,-49.8,198,17,10.0
+Riley Patterson,K,MIA,100.9,75.7,129.2,medium,"1.59 FG made/g (0.77 under 40 @3pt, 0.65 @4pt, 0.18 @5pt) | 2.00 XP made/g",34,151.0,-50.1,199,17,
+Kenyon Sadiq,TE,Jets,41.1,20.5,65.8,very_high,"3.6 targets/g, 68% catch rate, 8.0 yds/target",24,92.1,-51.0,200,17,13.0
+Najee Harris,RB,Chargers,89.2,56.2,126.7,high,"8.2 carries/g x 4.00 YPC | 1.9 targets/g, half-PPR",38,140.3,-51.1,201,17,7.0
+Chad Ryland,K,ARI,99.4,74.6,127.3,medium,"1.47 FG made/g (0.71 under 40 @3pt, 0.41 @4pt, 0.35 @5pt) | 2.12 XP made/g",35,151.0,-51.6,202,17,
+Bryce Young,QB,Panthers,218.2,137.5,309.8,high,"31.3 pass att/g x 6.5 YPA, 3.3% TD rate (1pt/25 pass yds here) | 4.0 rush att/g at 4.0 YPC",23,270.6,-52.4,203,17,5.0
+Josh Downs,WR,Colts,92.0,69.0,117.7,medium,"5.6 targets/g, 68% catch rate, 6.0 yds/target",52,145.5,-53.5,204,17,13.0
+De'Zhaun Stribling,WR,49ers,91.5,57.6,129.9,high,"5.1 targets/g, 62% catch rate, 8.0 yds/target",53,145.5,-54.0,205,18,8.0
+Geno Smith,QB,Jets,216.5,162.3,277.1,medium,"34.0 pass att/g x 6.8 YPA, 3.0% TD rate (1pt/25 pass yds here) | 2.0 rush att/g at 3.5 YPC",24,270.6,-54.1,206,18,13.0
+Joshua Karty,K,ARI,94.2,70.7,120.6,medium,"1.25 FG made/g (0.75 under 40 @3pt, 0.38 @4pt, 0.12 @5pt) | 2.88 XP made/g",36,151.0,-56.8,207,18,
+Chris Rodriguez Jr.,RB,Jaguars,83.1,52.4,118.0,high,"8.0 carries/g x 4.10 YPC | 2.5 targets/g, half-PPR",39,140.3,-57.2,208,18,7.0
+Matthew Wright,K,HOU,93.5,79.5,110.3,low,"1.25 FG made/g (0.50 under 40 @3pt, 0.75 @4pt, 0.00 @5pt) | 1.00 XP made/g",37,151.0,-57.5,209,18,
+Isaiah Likely,TE,Ravens,33.3,21.0,47.3,high,"2.4 targets/g, 65% catch rate, 6.0 yds/target",25,92.1,-58.8,210,18,13.0
+Cooper Kupp,WR,Seahawks,86.2,64.7,110.3,medium,"4.9 targets/g, 68% catch rate, 6.5 yds/target",54,145.5,-59.3,211,18,11.0
+Denzel Boston,WR,Browns,85.2,53.7,121.0,high,"4.6 targets/g, 62% catch rate, 8.5 yds/target",55,145.5,-60.3,212,18,11.0
+Christian Kirk,WR,49ers,84.4,63.3,108.1,medium,"5.1 targets/g, 65% catch rate, 7.0 yds/target",56,145.5,-61.1,213,18,8.0
+Calvin Ridley,WR,Titans,83.9,52.8,119.1,high,"4.8 targets/g, 60% catch rate, 7.5 yds/target",57,145.5,-61.6,214,18,9.0
+Brian Robinson,RB,Falcons,78.7,49.6,111.7,high,"7.7 carries/g x 4.00 YPC | 1.5 targets/g, half-PPR",40,140.3,-61.6,215,18,11.0
 Jordyn Tyson,WR,Saints,83.9,52.9,119.1,high,"5.6 targets/g, 62% catch rate, 8.5 yds/target",58,145.5,-61.6,216,18,8.0
-Luke Musgrave,TE,Packers,19.9,9.9,31.8,very_high,"2.0 targets/g, 60% catch rate, 5.5 yds/target",29,82.8,-62.9,217,19,11.0
-Brian Robinson,RB,Falcons,78.7,49.6,111.7,high,"7.7 carries/g x 4.00 YPC | 1.5 targets/g, half-PPR",39,141.8,-63.1,218,19,11.0
-Tyler Shough,QB,Saints,207.0,130.4,294.0,high,"32.3 pass att/g x 6.8 YPA, 3.3% TD rate (1pt/25 pass yds here) | 3.0 rush att/g at 4.0 YPC",24,270.6,-63.6,219,19,8.0
-Jonnu Smith,TE,Free agent,19.0,9.5,30.4,very_high,"3.0 targets/g, 65% catch rate, 5.5 yds/target",30,82.8,-63.8,220,19,
-KC Concepcion,WR,Browns,81.5,51.4,115.8,high,"4.6 targets/g, 62% catch rate, 8.0 yds/target",59,145.5,-64.0,221,19,11.0
-Harold Fannin Jr.,TE,Browns,17.9,8.9,28.6,very_high,"2.0 targets/g, 60% catch rate, 5.5 yds/target",32,82.8,-64.9,222,19,11.0
-Brenton Strange,TE,Jaguars,17.9,9.0,28.7,very_high,"2.0 targets/g, 60% catch rate, 5.5 yds/target",31,82.8,-64.9,223,19,7.0
-Mason Taylor,TE,Giants,17.8,8.9,28.5,very_high,"2.0 targets/g, 60% catch rate, 5.5 yds/target",33,82.8,-65.0,224,19,8.0
-Tyler Allgeier,RB,Cardinals,76.3,48.0,108.3,high,"8.1 carries/g x 4.10 YPC | 0.9 targets/g, half-PPR",40,141.8,-65.5,225,19,14.0
-Cam Ward,QB,Titans,204.5,102.3,327.3,very_high,"31.0 pass att/g x 6.5 YPA, 2.7% TD rate (1pt/25 pass yds here) | 4.0 rush att/g at 4.5 YPC",25,270.6,-66.1,226,19,9.0
-Jauan Jennings,WR,Vikings,79.4,59.5,101.6,medium,"4.5 targets/g, 65% catch rate, 6.5 yds/target",60,145.5,-66.1,227,19,6.0
-Matt Gay,K,LV,83.4,62.6,106.8,medium,"1.42 FG made/g (1.42 under 40 @3pt, 0.00 @4pt, 0.00 @5pt) | 2.17 XP made/g",38,151.0,-67.6,228,19,
-Rashod Bateman,WR,Ravens,77.4,58.1,99.1,medium,"4.4 targets/g, 62% catch rate, 7.0 yds/target",61,145.5,-68.1,229,20,13.0
-Isiah Pacheco,RB,Lions,72.7,45.8,103.3,high,"8.5 carries/g x 4.13 YPC | 1.5 targets/g, half-PPR",41,141.8,-69.1,230,20,6.0
-Terrance Ferguson,TE,Rams,12.1,6.0,19.3,very_high,"1.5 targets/g, 58% catch rate, 5.5 yds/target",34,82.8,-70.7,231,20,11.0
-Elijah Arroyo,TE,Seahawks,11.4,5.7,18.3,very_high,"1.5 targets/g, 58% catch rate, 5.5 yds/target",35,82.8,-71.4,232,20,11.0
-Gunnar Helm,TE,Titans,10.9,5.4,17.4,very_high,"1.5 targets/g, 58% catch rate, 5.5 yds/target",36,82.8,-71.9,233,20,9.0
-Wan'Dale Robinson,WR,Titans,73.3,54.9,93.8,medium,"4.8 targets/g, 68% catch rate, 6.0 yds/target",62,145.5,-72.2,234,20,9.0
-Alvin Kamara,RB,Saints,68.5,34.3,109.7,very_high,"5.9 carries/g x 4.00 YPC | 3.5 targets/g, half-PPR",42,141.8,-73.3,235,20,8.0
-Rachaad White,RB,Commanders,68.4,43.1,97.1,high,"5.9 carries/g x 3.90 YPC | 2.5 targets/g, half-PPR",43,141.8,-73.4,236,20,7.0
-Marvin Mims Jr.,WR,Broncos,72.1,45.4,102.4,high,"4.0 targets/g, 60% catch rate, 7.5 yds/target",63,145.5,-73.4,237,20,10.0
-Kyle Monangai,RB,Bears,64.5,40.6,91.6,high,"6.1 carries/g x 4.60 YPC | 1.6 targets/g, half-PPR",44,141.8,-77.3,238,20,10.0
-Kirk Cousins,QB,Raiders,192.7,121.4,273.6,high,"34.0 pass att/g x 6.8 YPA, 2.9% TD rate (1pt/25 pass yds here) | pocket passer, minimal rushing equity",26,270.6,-77.9,239,20,13.0
+Tyler Shough,QB,Saints,207.0,130.4,294.0,high,"32.3 pass att/g x 6.8 YPA, 3.3% TD rate (1pt/25 pass yds here) | 3.0 rush att/g at 4.0 YPC",25,270.6,-63.6,217,19,8.0
+Tyler Allgeier,RB,Cardinals,76.3,48.0,108.3,high,"8.1 carries/g x 4.10 YPC | 0.9 targets/g, half-PPR",41,140.3,-64.0,218,19,14.0
+KC Concepcion,WR,Browns,81.5,51.4,115.8,high,"4.6 targets/g, 62% catch rate, 8.0 yds/target",59,145.5,-64.0,219,19,11.0
+Ja'Tavion Sanders,TE,Panthers,26.0,16.4,36.9,high,"2.5 targets/g, 62% catch rate, 5.5 yds/target",26,92.1,-66.1,220,19,5.0
+Cam Ward,QB,Titans,204.5,102.3,327.3,very_high,"31.0 pass att/g x 6.5 YPA, 2.7% TD rate (1pt/25 pass yds here) | 4.0 rush att/g at 4.5 YPC",26,270.6,-66.1,221,19,9.0
+Jauan Jennings,WR,Vikings,79.4,59.5,101.6,medium,"4.5 targets/g, 65% catch rate, 6.5 yds/target",60,145.5,-66.1,222,19,6.0
+Noah Fant,TE,Saints,25.7,12.8,41.0,very_high,"2.5 targets/g, 62% catch rate, 5.5 yds/target",28,92.1,-66.4,223,19,8.0
+Zach Ertz,TE,Free agent,25.7,12.8,41.1,very_high,"3.0 targets/g, 68% catch rate, 5.5 yds/target",27,92.1,-66.4,224,19,
+Matt Gay,K,LV,83.4,62.6,106.8,medium,"1.42 FG made/g (1.42 under 40 @3pt, 0.00 @4pt, 0.00 @5pt) | 2.17 XP made/g",38,151.0,-67.6,225,19,
+Isiah Pacheco,RB,Lions,72.7,45.8,103.3,high,"8.5 carries/g x 4.13 YPC | 1.5 targets/g, half-PPR",42,140.3,-67.6,226,19,6.0
+Rashod Bateman,WR,Ravens,77.4,58.1,99.1,medium,"4.4 targets/g, 62% catch rate, 7.0 yds/target",61,145.5,-68.1,227,19,13.0
+Alvin Kamara,RB,Saints,68.5,34.3,109.7,very_high,"5.9 carries/g x 4.00 YPC | 3.5 targets/g, half-PPR",43,140.3,-71.8,228,19,8.0
+Rachaad White,RB,Commanders,68.4,43.1,97.1,high,"5.9 carries/g x 3.90 YPC | 2.5 targets/g, half-PPR",44,140.3,-71.9,229,20,7.0
+Luke Musgrave,TE,Packers,19.9,9.9,31.8,very_high,"2.0 targets/g, 60% catch rate, 5.5 yds/target",29,92.1,-72.2,230,20,11.0
+Wan'Dale Robinson,WR,Titans,73.3,54.9,93.8,medium,"4.8 targets/g, 68% catch rate, 6.0 yds/target",62,145.5,-72.2,231,20,9.0
+Jonnu Smith,TE,Free agent,19.0,9.5,30.4,very_high,"3.0 targets/g, 65% catch rate, 5.5 yds/target",30,92.1,-73.1,232,20,
+Marvin Mims Jr.,WR,Broncos,72.1,45.4,102.4,high,"4.0 targets/g, 60% catch rate, 7.5 yds/target",63,145.5,-73.4,233,20,10.0
+Brenton Strange,TE,Jaguars,17.9,9.0,28.7,very_high,"2.0 targets/g, 60% catch rate, 5.5 yds/target",31,92.1,-74.2,234,20,7.0
+Harold Fannin Jr.,TE,Browns,17.9,8.9,28.6,very_high,"2.0 targets/g, 60% catch rate, 5.5 yds/target",32,92.1,-74.2,235,20,11.0
+Mason Taylor,TE,Giants,17.8,8.9,28.5,very_high,"2.0 targets/g, 60% catch rate, 5.5 yds/target",33,92.1,-74.3,236,20,8.0
+Kyle Monangai,RB,Bears,64.5,40.6,91.6,high,"6.1 carries/g x 4.60 YPC | 1.6 targets/g, half-PPR",45,140.3,-75.8,237,20,10.0
+Keenan Allen,WR,Colts,69.2,51.9,88.6,medium,"4.5 targets/g, 66% catch rate, 6.5 yds/target",64,145.5,-76.3,238,20,13.0
+Kirk Cousins,QB,Raiders,192.7,121.4,273.6,high,"34.0 pass att/g x 6.8 YPA, 2.9% TD rate (1pt/25 pass yds here) | pocket passer, minimal rushing equity",27,270.6,-77.9,239,20,13.0
 Younghoe Koo,K,NYJ,71.5,53.6,91.5,medium,"1.00 FG made/g (0.67 under 40 @3pt, 0.33 @4pt, 0.00 @5pt) | 2.17 XP made/g",39,151.0,-79.5,240,20,
-Romeo Doubs,WR,Patriots,64.7,48.5,82.8,medium,"3.9 targets/g, 60% catch rate, 6.5 yds/target",64,145.5,-80.8,241,21,11.0
-Jonathon Brooks,RB,Panthers,59.7,29.8,95.5,very_high,"7.8 carries/g x 3.90 YPC | 2.0 targets/g, half-PPR",45,141.8,-82.1,242,21,5.0
-Jordan Mason,RB,Vikings,56.0,35.3,79.6,high,"11.0 carries/g x 4.10 YPC | 1.5 targets/g, half-PPR",46,141.8,-85.8,243,21,6.0
-Kyler Murray,QB,Vikings,183.7,91.8,293.9,very_high,"30.0 pass att/g x 6.9 YPA, 3.8% TD rate (1pt/25 pass yds here) | 6.0 rush att/g at 5.0 YPC",27,270.6,-86.9,244,21,6.0
-Makai Lemon,WR,Eagles,58.2,36.6,82.6,high,"3.4 targets/g, 62% catch rate, 7.5 yds/target",65,145.5,-87.3,245,21,10.0
-Keaton Mitchell,RB,Chargers,54.3,34.2,77.2,high,"5.1 carries/g x 4.80 YPC | 1.4 targets/g, half-PPR",47,141.8,-87.5,246,21,7.0
-Rashid Shaheed,WR,Seahawks,57.7,36.3,81.9,high,"3.4 targets/g, 62% catch rate, 7.5 yds/target",66,145.5,-87.8,247,21,11.0
-Daniel Carlson,K,LV,60.6,38.2,86.0,high,"1.29 FG made/g (0.65 under 40 @3pt, 0.35 @4pt, 0.29 @5pt) | 1.24 XP made/g",40,151.0,-90.4,248,21,
-Marquise Brown,WR,Eagles,55.0,34.6,78.1,high,"3.4 targets/g, 60% catch rate, 7.0 yds/target",67,145.5,-90.5,249,21,10.0
-Blake Corum,RB,Rams,51.3,32.3,72.8,high,"5.6 carries/g x 4.10 YPC | 1.1 targets/g, half-PPR",48,141.8,-90.5,250,21,11.0
-Devin Singletary,RB,Giants,50.9,32.1,72.3,high,"4.7 carries/g x 3.84 YPC | 2.0 targets/g, half-PPR",49,141.8,-90.9,251,21,8.0
-Aaron Rodgers,QB,Steelers,176.7,111.3,250.9,high,"32.0 pass att/g x 6.9 YPA, 4.0% TD rate (1pt/25 pass yds here) | pocket passer, minimal rushing equity",28,270.6,-93.9,252,21,9.0
-Ja'Kobi Lane,WR,Ravens,51.2,32.3,72.7,high,"2.9 targets/g, 60% catch rate, 8.0 yds/target",68,145.5,-94.3,253,22,13.0
-Darnell Mooney,WR,Giants,50.8,32.0,72.2,high,"3.5 targets/g, 60% catch rate, 6.5 yds/target",69,145.5,-94.7,254,22,8.0
-Adonai Mitchell,WR,Jets,50.5,31.8,71.7,high,"3.6 targets/g, 58% catch rate, 7.0 yds/target",70,145.5,-95.0,255,22,13.0
-Ray Davis,RB,Bills,46.2,29.1,65.7,high,"5.3 carries/g x 4.03 YPC | 1.1 targets/g, half-PPR",50,141.8,-95.6,256,22,7.0
-Chris Rodriguez Jr.,RB,Jaguars,45.6,28.7,64.7,high,"5.0 carries/g x 4.10 YPC | 1.0 targets/g, half-PPR",51,141.8,-96.2,257,22,7.0
-Jonah Coleman,RB,Broncos,45.3,28.5,64.3,high,"4.3 carries/g x 4.40 YPC | 1.0 targets/g, half-PPR",52,141.8,-96.5,258,22,10.0
-Tyjae Spears,RB,Titans,42.9,27.0,60.9,high,"4.3 carries/g x 3.84 YPC | 1.9 targets/g, half-PPR",53,141.8,-98.9,259,22,9.0
-Austin Ekeler,RB,Free agent,42.6,21.3,68.2,very_high,"4.0 carries/g x 3.80 YPC | 3.0 targets/g, half-PPR",54,141.8,-99.2,260,22,
-MarShawn Lloyd,RB,Packers,39.7,19.9,63.6,very_high,"4.2 carries/g x 4.44 YPC | 1.5 targets/g, half-PPR",55,141.8,-102.1,261,22,11.0
-Keenan Allen,WR,Free agent,43.2,21.6,69.1,very_high,"4.5 targets/g, 68% catch rate, 6.5 yds/target",71,145.5,-102.3,262,22,
-Jerome Ford,RB,Browns,39.3,24.7,55.8,high,"4.3 carries/g x 3.65 YPC | 2.0 targets/g, half-PPR",56,141.8,-102.5,263,22,11.0
-Zamir White,RB,Raiders,37.0,23.3,52.6,high,"4.5 carries/g x 3.94 YPC | 1.0 targets/g, half-PPR",57,141.8,-104.8,264,22,13.0
-Jayden Higgins,WR,Texans,40.6,25.6,57.6,high,"3.0 targets/g, 60% catch rate, 6.5 yds/target",72,145.5,-104.9,265,23,8.0
-Jaydon Blue,RB,Cowboys,36.5,18.3,58.4,very_high,"4.2 carries/g x 4.03 YPC | 1.6 targets/g, half-PPR",58,141.8,-105.3,266,23,14.0
-Jaylen Wright,RB,Dolphins,36.3,22.9,51.6,high,"4.4 carries/g x 3.94 YPC | 1.0 targets/g, half-PPR",59,141.8,-105.5,267,23,6.0
-Dylan Sampson,RB,Browns,36.3,22.9,51.6,high,"4.8 carries/g x 3.84 YPC | 2.5 targets/g, half-PPR",60,141.8,-105.5,268,23,11.0
-Keon Coleman,WR,Bills,39.3,24.7,55.7,high,"3.1 targets/g, 58% catch rate, 6.5 yds/target",73,145.5,-106.2,269,23,7.0
-Jack Bech,WR,Raiders,38.9,24.5,55.2,high,"3.1 targets/g, 60% catch rate, 6.0 yds/target",74,145.5,-106.6,270,23,13.0
-Tua Tagovailoa,QB,Falcons,163.1,102.7,231.6,high,"31.6 pass att/g x 7.2 YPA, 3.6% TD rate (1pt/25 pass yds here) | 1.5 rush att/g at 3.0 YPC",29,270.6,-107.5,271,23,11.0
-Isaac Guerendo,RB,49ers,34.2,17.1,54.8,very_high,"4.3 carries/g x 4.30 YPC | 1.0 targets/g, half-PPR",61,141.8,-107.6,272,23,8.0
-Elic Ayomanor,WR,Titans,37.7,23.7,53.5,high,"2.9 targets/g, 58% catch rate, 6.5 yds/target",75,145.5,-107.8,273,23,9.0
-Kenneth Gainwell,RB,Buccaneers,33.9,16.9,54.2,very_high,"4.0 carries/g x 3.90 YPC | 1.5 targets/g, half-PPR",62,141.8,-107.9,274,23,10.0
-Jacoby Brissett,QB,Cardinals,162.0,102.1,230.1,high,"30.9 pass att/g x 6.4 YPA, 2.4% TD rate (1pt/25 pass yds here) | 3.0 rush att/g at 3.5 YPC",30,270.6,-108.6,275,23,14.0
-Xavier Legette,WR,Panthers,36.9,23.3,52.4,high,"3.0 targets/g, 58% catch rate, 6.5 yds/target",76,145.5,-108.6,276,23,5.0
-Justice Hill,RB,Ravens,31.4,15.7,50.2,very_high,"3.2 carries/g x 4.03 YPC | 1.5 targets/g, half-PPR",63,141.8,-110.4,277,24,13.0
-Kaleb Johnson,RB,Steelers,29.3,14.6,46.8,very_high,"4.0 carries/g x 4.00 YPC | 1.0 targets/g, half-PPR",64,141.8,-112.5,278,24,9.0
-Stefon Diggs,WR,Free agent,32.8,16.4,52.4,very_high,"4.0 targets/g, 62% catch rate, 6.5 yds/target",77,145.5,-112.7,279,24,
-James Conner,RB,Cardinals,28.0,17.7,39.8,high,"4.0 carries/g x 4.00 YPC | 0.9 targets/g, half-PPR",65,141.8,-113.8,280,24,14.0
-Gus Edwards,RB,Uncertain,27.6,13.8,44.2,very_high,"4.0 carries/g x 4.10 YPC | 0.5 targets/g, half-PPR",66,141.8,-114.2,281,24,
-Kaelon Black,RB,49ers,27.5,13.7,44.0,very_high,"3.2 carries/g x 4.40 YPC | 1.0 targets/g, half-PPR",67,141.8,-114.3,282,24,8.0
-Braelon Allen,RB,Jets,27.4,13.7,43.9,very_high,"3.6 carries/g x 3.94 YPC | 1.0 targets/g, half-PPR",68,141.8,-114.4,283,24,13.0
-Dontayvion Wicks,WR,Eagles,30.7,19.4,43.6,high,"2.5 targets/g, 58% catch rate, 6.5 yds/target",78,145.5,-114.8,284,24,10.0
-Mike Washington Jr.,RB,Raiders,25.7,16.2,36.5,high,"3.2 carries/g x 4.33 YPC | 1.0 targets/g, half-PPR",69,141.8,-116.1,285,24,13.0
-Kyle Williams,WR,Patriots,29.3,14.6,46.8,very_high,"2.5 targets/g, 58% catch rate, 6.0 yds/target",79,145.5,-116.2,286,24,11.0
-Tre Harris,WR,Chargers,29.1,14.5,46.5,very_high,"2.4 targets/g, 58% catch rate, 6.5 yds/target",80,145.5,-116.4,287,24,7.0
-Trey Benson,RB,Cardinals,23.3,11.6,37.2,very_high,"3.6 carries/g x 4.00 YPC | 0.9 targets/g, half-PPR",70,141.8,-118.5,288,24,14.0
-Ty Chandler,RB,Vikings,21.7,10.9,34.7,very_high,"3.0 carries/g x 4.00 YPC | 1.0 targets/g, half-PPR",71,141.8,-120.1,289,25,6.0
-Roschon Johnson,RB,Bears,21.5,10.8,34.4,very_high,"3.1 carries/g x 3.90 YPC | 1.1 targets/g, half-PPR",72,141.8,-120.3,290,25,10.0
-Emmett Johnson,RB,Chiefs,20.8,10.4,33.3,very_high,"3.2 carries/g x 3.93 YPC | 1.1 targets/g, half-PPR",73,141.8,-121.0,291,25,5.0
-Woody Marks,RB,Texans,19.8,9.9,31.7,very_high,"3.1 carries/g x 4.00 YPC | 1.0 targets/g, half-PPR",74,141.8,-122.0,292,25,8.0
-Isaac TeSlaa,WR,Lions,23.2,11.6,37.1,very_high,"2.0 targets/g, 60% catch rate, 6.0 yds/target",81,145.5,-122.3,293,25,6.0
-Miles Sanders,RB,Cowboys,19.5,9.8,31.3,very_high,"3.1 carries/g x 3.93 YPC | 1.1 targets/g, half-PPR",75,141.8,-122.3,294,25,14.0
-Kimani Vidal,RB,Chargers,19.4,9.7,31.1,very_high,"3.1 carries/g x 4.00 YPC | 0.9 targets/g, half-PPR",76,141.8,-122.4,295,25,7.0
-Jalen Coker,WR,Panthers,22.9,11.4,36.6,very_high,"2.0 targets/g, 58% catch rate, 6.0 yds/target",82,145.5,-122.6,296,25,5.0
-Ollie Gordon II,RB,Dolphins,17.1,8.5,27.3,very_high,"2.6 carries/g x 3.84 YPC | 1.0 targets/g, half-PPR",77,141.8,-124.7,297,25,6.0
-Deshaun Watson,QB,Browns,145.7,72.9,233.1,very_high,"31.6 pass att/g x 6.5 YPA, 2.9% TD rate (1pt/25 pass yds here) | 4.0 rush att/g at 4.0 YPC",31,270.6,-124.9,298,25,11.0
-Diontae Johnson,WR,Free agent,19.6,9.8,31.4,very_high,"3.0 targets/g, 62% catch rate, 6.0 yds/target",83,145.5,-125.9,299,25,
-Tank Dell,WR,Texans,18.8,9.4,30.1,very_high,"2.0 targets/g, 60% catch rate, 6.0 yds/target",84,145.5,-126.7,300,25,8.0
-Josh Reynolds,WR,Uncertain,18.7,9.4,30.0,very_high,"2.0 targets/g, 58% catch rate, 6.0 yds/target",85,145.5,-126.8,301,26,
-Demario Douglas,WR,Patriots,17.9,8.9,28.6,very_high,"2.0 targets/g, 60% catch rate, 5.5 yds/target",86,145.5,-127.6,302,26,11.0
-Devin Neal,RB,Uncertain,11.0,5.5,17.6,very_high,"2.0 carries/g x 3.90 YPC | 1.0 targets/g, half-PPR",78,141.8,-130.8,303,26,
-Curtis Samuel,WR,Free agent,12.5,6.2,20.0,very_high,"2.5 targets/g, 60% catch rate, 5.5 yds/target",87,145.5,-133.0,304,26,
-Jalin Hyatt,WR,Uncertain,12.1,6.1,19.4,very_high,"1.5 targets/g, 58% catch rate, 6.0 yds/target",88,145.5,-133.4,305,26,
-Skyy Moore,WR,Packers,11.4,5.7,18.3,very_high,"1.5 targets/g, 58% catch rate, 5.5 yds/target",89,145.5,-134.1,306,26,11.0
-Ricky Pearsall,WR,49ers,0.0,0.0,0.0,very_high,"3.0 targets/g, 60% catch rate, 6.5 yds/target",90,145.5,-145.5,307,26,8.0
-J.J. McCarthy,QB,Vikings,103.3,51.6,165.3,very_high,"28.0 pass att/g x 6.7 YPA, 3.3% TD rate (1pt/25 pass yds here) | 4.0 rush att/g at 4.5 YPC",32,270.6,-167.3,308,26,6.0
-Michael Penix Jr.,QB,Falcons,73.1,36.6,117.0,very_high,"28.6 pass att/g x 7.0 YPA, 3.6% TD rate (1pt/25 pass yds here) | 2.0 rush att/g at 3.5 YPC",33,270.6,-197.5,309,26,11.0
-Anthony Richardson Sr.,QB,Colts,35.6,17.8,57.0,very_high,"18.2 pass att/g x 6.5 YPA, 3.2% TD rate (1pt/25 pass yds here) | 7.0 rush att/g at 5.0 YPC",34,270.6,-235.0,310,26,13.0
-Russell Wilson,QB,Giants,34.2,17.1,54.8,very_high,"22.2 pass att/g x 6.7 YPA, 2.9% TD rate (1pt/25 pass yds here) | 1.5 rush att/g at 3.0 YPC",35,270.6,-236.4,311,26,8.0
+Terrance Ferguson,TE,Rams,12.1,6.0,19.3,very_high,"1.5 targets/g, 58% catch rate, 5.5 yds/target",34,92.1,-80.0,241,21,11.0
+Jonathon Brooks,RB,Panthers,59.7,29.8,95.5,very_high,"7.8 carries/g x 3.90 YPC | 2.0 targets/g, half-PPR",46,140.3,-80.6,242,21,5.0
+Elijah Arroyo,TE,Seahawks,11.4,5.7,18.3,very_high,"1.5 targets/g, 58% catch rate, 5.5 yds/target",35,92.1,-80.7,243,21,11.0
+Romeo Doubs,WR,Patriots,64.7,48.5,82.8,medium,"3.9 targets/g, 60% catch rate, 6.5 yds/target",65,145.5,-80.8,244,21,11.0
+Gunnar Helm,TE,Titans,10.9,5.4,17.4,very_high,"1.5 targets/g, 58% catch rate, 5.5 yds/target",36,92.1,-81.2,245,21,9.0
+Jordan Mason,RB,Vikings,56.0,35.3,79.6,high,"11.0 carries/g x 4.10 YPC | 1.5 targets/g, half-PPR",47,140.3,-84.3,246,21,6.0
+Keaton Mitchell,RB,Chargers,54.3,34.2,77.2,high,"5.1 carries/g x 4.80 YPC | 1.4 targets/g, half-PPR",48,140.3,-86.0,247,21,7.0
+Kyler Murray,QB,Vikings,183.7,91.8,293.9,very_high,"30.0 pass att/g x 6.9 YPA, 3.8% TD rate (1pt/25 pass yds here) | 6.0 rush att/g at 5.0 YPC",28,270.6,-86.9,248,21,6.0
+Makai Lemon,WR,Eagles,58.2,36.6,82.6,high,"3.4 targets/g, 62% catch rate, 7.5 yds/target",66,145.5,-87.3,249,21,10.0
+Rashid Shaheed,WR,Seahawks,57.7,36.3,81.9,high,"3.4 targets/g, 62% catch rate, 7.5 yds/target",67,145.5,-87.8,250,21,11.0
+Blake Corum,RB,Rams,51.3,32.3,72.8,high,"5.6 carries/g x 4.10 YPC | 1.1 targets/g, half-PPR",49,140.3,-89.0,251,21,11.0
+Devin Singletary,RB,Giants,50.9,32.1,72.3,high,"4.7 carries/g x 3.84 YPC | 2.0 targets/g, half-PPR",50,140.3,-89.4,252,21,8.0
+Daniel Carlson,K,LV,60.6,38.2,86.0,high,"1.29 FG made/g (0.65 under 40 @3pt, 0.35 @4pt, 0.29 @5pt) | 1.24 XP made/g",40,151.0,-90.4,253,22,
+Marquise Brown,WR,Eagles,55.0,34.6,78.1,high,"3.4 targets/g, 60% catch rate, 7.0 yds/target",68,145.5,-90.5,254,22,10.0
+Aaron Rodgers,QB,Steelers,176.7,111.3,250.9,high,"32.0 pass att/g x 6.9 YPA, 4.0% TD rate (1pt/25 pass yds here) | pocket passer, minimal rushing equity",29,270.6,-93.9,255,22,9.0
+Ray Davis,RB,Bills,46.2,29.1,65.7,high,"5.3 carries/g x 4.03 YPC | 1.1 targets/g, half-PPR",51,140.3,-94.1,256,22,7.0
+Ja'Kobi Lane,WR,Ravens,51.2,32.3,72.7,high,"2.9 targets/g, 60% catch rate, 8.0 yds/target",69,145.5,-94.3,257,22,13.0
+Darnell Mooney,WR,Giants,50.8,32.0,72.2,high,"3.5 targets/g, 60% catch rate, 6.5 yds/target",70,145.5,-94.7,258,22,8.0
+Jonah Coleman,RB,Broncos,45.3,28.5,64.3,high,"4.3 carries/g x 4.40 YPC | 1.0 targets/g, half-PPR",52,140.3,-95.0,259,22,10.0
+Adonai Mitchell,WR,Jets,50.5,31.8,71.7,high,"3.6 targets/g, 58% catch rate, 7.0 yds/target",71,145.5,-95.0,260,22,13.0
+Tyjae Spears,RB,Titans,42.9,27.0,60.9,high,"4.3 carries/g x 3.84 YPC | 1.9 targets/g, half-PPR",53,140.3,-97.4,261,22,9.0
+Austin Ekeler,RB,Free agent,42.6,21.3,68.2,very_high,"4.0 carries/g x 3.80 YPC | 3.0 targets/g, half-PPR",54,140.3,-97.7,262,22,
+MarShawn Lloyd,RB,Packers,39.7,19.9,63.6,very_high,"4.2 carries/g x 4.44 YPC | 1.5 targets/g, half-PPR",55,140.3,-100.6,263,22,11.0
+Jerome Ford,RB,Browns,39.3,24.7,55.8,high,"4.3 carries/g x 3.65 YPC | 2.0 targets/g, half-PPR",56,140.3,-101.0,264,22,11.0
+Tyreek Hill,WR,Free agent,43.9,22.0,70.3,very_high,"6.0 targets/g, 62% catch rate, 8.5 yds/target",72,145.5,-101.6,265,23,
+Zamir White,RB,Raiders,37.0,23.3,52.6,high,"4.5 carries/g x 3.94 YPC | 1.0 targets/g, half-PPR",57,140.3,-103.3,266,23,13.0
+Jaydon Blue,RB,Cowboys,36.5,18.3,58.4,very_high,"4.2 carries/g x 4.03 YPC | 1.6 targets/g, half-PPR",58,140.3,-103.8,267,23,14.0
+Dylan Sampson,RB,Browns,36.3,22.9,51.6,high,"4.8 carries/g x 3.84 YPC | 2.5 targets/g, half-PPR",60,140.3,-104.0,268,23,11.0
+Jaylen Wright,RB,Dolphins,36.3,22.9,51.6,high,"4.4 carries/g x 3.94 YPC | 1.0 targets/g, half-PPR",59,140.3,-104.0,269,23,6.0
+Jayden Higgins,WR,Texans,40.6,25.6,57.6,high,"3.0 targets/g, 60% catch rate, 6.5 yds/target",73,145.5,-104.9,270,23,8.0
+Isaac Guerendo,RB,49ers,34.2,17.1,54.8,very_high,"4.3 carries/g x 4.30 YPC | 1.0 targets/g, half-PPR",61,140.3,-106.1,271,23,8.0
+Keon Coleman,WR,Bills,39.3,24.7,55.7,high,"3.1 targets/g, 58% catch rate, 6.5 yds/target",74,145.5,-106.2,272,23,7.0
+Kenneth Gainwell,RB,Buccaneers,33.9,16.9,54.2,very_high,"4.0 carries/g x 3.90 YPC | 1.5 targets/g, half-PPR",62,140.3,-106.4,273,23,10.0
+Jack Bech,WR,Raiders,38.9,24.5,55.2,high,"3.1 targets/g, 60% catch rate, 6.0 yds/target",75,145.5,-106.6,274,23,13.0
+Tua Tagovailoa,QB,Falcons,163.1,102.7,231.6,high,"31.6 pass att/g x 7.2 YPA, 3.6% TD rate (1pt/25 pass yds here) | 1.5 rush att/g at 3.0 YPC",30,270.6,-107.5,275,23,11.0
+Elic Ayomanor,WR,Titans,37.7,23.7,53.5,high,"2.9 targets/g, 58% catch rate, 6.5 yds/target",76,145.5,-107.8,276,23,9.0
+Xavier Legette,WR,Panthers,36.9,23.3,52.4,high,"3.0 targets/g, 58% catch rate, 6.5 yds/target",77,145.5,-108.6,277,24,5.0
+Jacoby Brissett,QB,Cardinals,162.0,102.1,230.1,high,"30.9 pass att/g x 6.4 YPA, 2.4% TD rate (1pt/25 pass yds here) | 3.0 rush att/g at 3.5 YPC",31,270.6,-108.6,278,24,14.0
+Justice Hill,RB,Ravens,31.4,15.7,50.2,very_high,"3.2 carries/g x 4.03 YPC | 1.5 targets/g, half-PPR",63,140.3,-108.9,279,24,13.0
+Kaleb Johnson,RB,Steelers,29.3,14.6,46.8,very_high,"4.0 carries/g x 4.00 YPC | 1.0 targets/g, half-PPR",64,140.3,-111.0,280,24,9.0
+James Conner,RB,Cardinals,28.0,17.7,39.8,high,"4.0 carries/g x 4.00 YPC | 0.9 targets/g, half-PPR",65,140.3,-112.3,281,24,14.0
+Gus Edwards,RB,Uncertain,27.6,13.8,44.2,very_high,"4.0 carries/g x 4.10 YPC | 0.5 targets/g, half-PPR",66,140.3,-112.7,282,24,
+Kaelon Black,RB,49ers,27.5,13.7,44.0,very_high,"3.2 carries/g x 4.40 YPC | 1.0 targets/g, half-PPR",67,140.3,-112.8,283,24,8.0
+Braelon Allen,RB,Jets,27.4,13.7,43.9,very_high,"3.6 carries/g x 3.94 YPC | 1.0 targets/g, half-PPR",68,140.3,-112.9,284,24,13.0
+Mike Washington Jr.,RB,Raiders,25.7,16.2,36.5,high,"3.2 carries/g x 4.33 YPC | 1.0 targets/g, half-PPR",69,140.3,-114.6,285,24,13.0
+Dontayvion Wicks,WR,Eagles,30.7,19.4,43.6,high,"2.5 targets/g, 58% catch rate, 6.5 yds/target",78,145.5,-114.8,286,24,10.0
+Kyle Williams,WR,Patriots,29.3,14.6,46.8,very_high,"2.5 targets/g, 58% catch rate, 6.0 yds/target",79,145.5,-116.2,287,24,11.0
+Tre Harris,WR,Chargers,29.1,14.5,46.5,very_high,"2.4 targets/g, 58% catch rate, 6.5 yds/target",80,145.5,-116.4,288,24,7.0
+Trey Benson,RB,Cardinals,23.3,11.6,37.2,very_high,"3.6 carries/g x 4.00 YPC | 0.9 targets/g, half-PPR",70,140.3,-117.0,289,25,14.0
+Ty Chandler,RB,Vikings,21.7,10.9,34.7,very_high,"3.0 carries/g x 4.00 YPC | 1.0 targets/g, half-PPR",71,140.3,-118.6,290,25,6.0
+Roschon Johnson,RB,Bears,21.5,10.8,34.4,very_high,"3.1 carries/g x 3.90 YPC | 1.1 targets/g, half-PPR",72,140.3,-118.8,291,25,10.0
+Emmett Johnson,RB,Chiefs,20.8,10.4,33.3,very_high,"3.2 carries/g x 3.93 YPC | 1.1 targets/g, half-PPR",73,140.3,-119.5,292,25,5.0
+Woody Marks,RB,Texans,19.8,9.9,31.7,very_high,"3.1 carries/g x 4.00 YPC | 1.0 targets/g, half-PPR",74,140.3,-120.5,293,25,8.0
+Miles Sanders,RB,Cowboys,19.5,9.8,31.3,very_high,"3.1 carries/g x 3.93 YPC | 1.1 targets/g, half-PPR",75,140.3,-120.8,294,25,14.0
+Kimani Vidal,RB,Chargers,19.4,9.7,31.1,very_high,"3.1 carries/g x 4.00 YPC | 0.9 targets/g, half-PPR",76,140.3,-120.9,295,25,7.0
+Isaac TeSlaa,WR,Lions,23.2,11.6,37.1,very_high,"2.0 targets/g, 60% catch rate, 6.0 yds/target",81,145.5,-122.3,296,25,6.0
+Jalen Coker,WR,Panthers,22.9,11.4,36.6,very_high,"2.0 targets/g, 58% catch rate, 6.0 yds/target",82,145.5,-122.6,297,25,5.0
+Ollie Gordon II,RB,Dolphins,17.1,8.5,27.3,very_high,"2.6 carries/g x 3.84 YPC | 1.0 targets/g, half-PPR",77,140.3,-123.2,298,25,6.0
+Deshaun Watson,QB,Browns,145.7,72.9,233.1,very_high,"31.6 pass att/g x 6.5 YPA, 2.9% TD rate (1pt/25 pass yds here) | 4.0 rush att/g at 4.0 YPC",32,270.6,-124.9,299,25,11.0
+Diontae Johnson,WR,Free agent,19.6,9.8,31.4,very_high,"3.0 targets/g, 62% catch rate, 6.0 yds/target",83,145.5,-125.9,300,25,
+Tank Dell,WR,Texans,18.8,9.4,30.1,very_high,"2.0 targets/g, 60% catch rate, 6.0 yds/target",84,145.5,-126.7,301,26,8.0
+Josh Reynolds,WR,Uncertain,18.7,9.4,30.0,very_high,"2.0 targets/g, 58% catch rate, 6.0 yds/target",85,145.5,-126.8,302,26,
+Demario Douglas,WR,Patriots,17.9,8.9,28.6,very_high,"2.0 targets/g, 60% catch rate, 5.5 yds/target",86,145.5,-127.6,303,26,11.0
+Devin Neal,RB,Saints,10.7,5.3,17.1,very_high,"2.0 carries/g x 3.90 YPC | 1.0 targets/g, half-PPR",78,140.3,-129.6,304,26,8.0
+Curtis Samuel,WR,Free agent,12.5,6.2,20.0,very_high,"2.5 targets/g, 60% catch rate, 5.5 yds/target",87,145.5,-133.0,305,26,
+Skyy Moore,WR,Packers,11.4,5.7,18.3,very_high,"1.5 targets/g, 58% catch rate, 5.5 yds/target",88,145.5,-134.1,306,26,11.0
+Jalin Hyatt,WR,Giants (practice squad),1.5,0.8,2.4,very_high,"1.5 targets/g, 58% catch rate, 6.0 yds/target",89,145.5,-144.0,307,26,
+Ricky Pearsall,WR,49ers,0.0,0.0,0.0,very_high,"3.0 targets/g, 60% catch rate, 6.5 yds/target",90,145.5,-145.5,308,26,8.0
+J.J. McCarthy,QB,Vikings,103.3,51.6,165.3,very_high,"28.0 pass att/g x 6.7 YPA, 3.3% TD rate (1pt/25 pass yds here) | 4.0 rush att/g at 4.5 YPC",33,270.6,-167.3,309,26,6.0
+Michael Penix Jr.,QB,Falcons,73.1,36.6,117.0,very_high,"28.6 pass att/g x 7.0 YPA, 3.6% TD rate (1pt/25 pass yds here) | 2.0 rush att/g at 3.5 YPC",34,270.6,-197.5,310,26,11.0
+Anthony Richardson Sr.,QB,Colts,35.6,17.8,57.0,very_high,"18.2 pass att/g x 6.5 YPA, 3.2% TD rate (1pt/25 pass yds here) | 7.0 rush att/g at 5.0 YPC",35,270.6,-235.0,311,26,13.0
 Justin Fields,QB,Chiefs,26.6,13.3,42.5,very_high,"18.5 pass att/g x 6.2 YPA, 3.4% TD rate (1pt/25 pass yds here) | 8.0 rush att/g at 5.5 YPC",36,270.6,-244.0,312,26,5.0
 Fernando Mendoza,QB,Raiders,23.7,11.8,37.9,very_high,"18.5 pass att/g x 6.5 YPA, 2.6% TD rate (1pt/25 pass yds here) | 3.0 rush att/g at 4.5 YPC",37,270.6,-246.9,313,27,13.0
-Malik Willis,QB,Dolphins,0.0,0.0,0.0,very_high,"0.0 pass att/g x 0.0 YPA, 0.0% TD rate (1pt/25 pass yds here) | pocket passer, minimal rushing equity",38,270.6,-270.6,314,27,6.0
+Russell Wilson,QB,Not on NFL roster (retired to broadcasting),0.0,0.0,0.0,very_high,"22.0 pass att/g x 6.7 YPA, 3.3% TD rate (1pt/25 pass yds here) | 1.5 rush att/g at 3.0 YPC",38,270.6,-270.6,314,27,
