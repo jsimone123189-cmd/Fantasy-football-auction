@@ -115,7 +115,18 @@ def project_wr_te(row, team: TeamContext) -> dict:
     targets_pg = _num(row, "targets_pg") * team.pass_funnel_mult * team.pass_gamescript_mult
     catch_rate = _num(row, "catch_rate", 0.62)
     ypt = _num(row, "ypt")
-    td_rate = _num(row, "td_rate_per_target") * team.scoring_mult
+    # Real bug found live (Sept 2026): some rows record this rate under
+    # "rec_td_rate" instead of "td_rate_per_target" -- both names got used
+    # across different research passes for the same real quantity (TDs per
+    # target). Reading only "td_rate_per_target" silently scored every
+    # "rec_td_rate" row's touchdowns as zero with no error, which is exactly
+    # the kind of thing that looks like a conservative research call instead
+    # of what it actually was: a real scoring bug. Fall back to whichever
+    # column is actually populated on this row.
+    td_rate_raw = row.get("td_rate_per_target")
+    if td_rate_raw is None or (isinstance(td_rate_raw, float) and td_rate_raw != td_rate_raw):
+        td_rate_raw = row.get("rec_td_rate")
+    td_rate = _num({"v": td_rate_raw}, "v") * team.scoring_mult
 
     rush_att_pg = _num(row, "rush_att_pg")
     ypc = _num(row, "ypc")
