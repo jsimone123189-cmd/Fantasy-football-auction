@@ -41,6 +41,22 @@ SOURCE_FILES = ["idp_dl_2026.csv", "idp_lb_2026.csv", "idp_db_2026.csv"]
 
 RISK_BASE_GAMES = {"low": 17, "medium": 16, "high": 14, "very_high": 11}
 
+# Real problem found live during a draft (Aug 2026): sack/TFL/forced-fumble/INT/
+# pass-defended rates were being carried straight from 2025 into the 2026
+# per-game rate with zero regression. That's fine for solo/assisted tackles --
+# snap-share/role driven, stable year over year -- but these "splash play"
+# counting stats are matchup/scheme/luck-driven and known to be far less
+# repeatable, even when the 2025 number is real and verified: Myles Garrett's
+# 23 sacks is an actual, confirmed NFL single-season record, not a data error,
+# but projecting a repeat of a record-breaking outlier as next year's baseline
+# rate is not a reasonable forecast. BOOM_BUST_SHRINKAGE is the weight kept on
+# the player's own observed rate; the rest regresses toward this position
+# file's average rate among players who actually reported that stat. 0.5 is a
+# real, disclosed modeling choice (roughly matching the moderate year-over-year
+# correlation sack rates show in practice) -- not a precise empirical fit.
+BOOM_BUST_SHRINKAGE = 0.5
+BOOM_BUST_STATS = ("tfl_2025", "sacks_2025", "ff_2025", "fr_2025", "int_2025", "pd_2025")
+
 RETIRED_RE = re.compile(r"\bretir", re.IGNORECASE)
 UNSIGNED_RE = re.compile(r"unsigned|free agent \(unsigned|no 2026 team", re.IGNORECASE)
 SEASON_ENDING_RE = re.compile(
@@ -81,7 +97,33 @@ def _solo_share(df: pd.DataFrame) -> float:
     return float((both["solo_tackles_2025"] / (both["solo_tackles_2025"] + both["ast_tackles_2025"])).mean())
 
 
-def _derive(row, solo_share: float) -> dict | None:
+def _position_mean_rates(df: pd.DataFrame) -> dict:
+    """Real, data-derived average per-game rate for each boom/bust stat,
+    computed only from players in this same position file who actually
+    reported that stat (never invented) -- the regression target for
+    _shrink below.
+    """
+    means = {}
+    for stat_col in BOOM_BUST_STATS:
+        if stat_col not in df.columns:
+            means[stat_col] = 0.0
+            continue
+        rates = []
+        for _, r in df.iterrows():
+            total = r.get(stat_col)
+            games = r.get("games_played_2025")
+            if pd.isna(total) or pd.isna(games) or not games:
+                continue
+            rates.append(float(total) / float(games))
+        means[stat_col] = (sum(rates) / len(rates)) if rates else 0.0
+    return means
+
+
+def _shrink(rate: float, pos_mean: float) -> float:
+    return BOOM_BUST_SHRINKAGE * rate + (1 - BOOM_BUST_SHRINKAGE) * pos_mean
+
+
+def _derive(row, solo_share: float, pos_means: dict) -> dict | None:
     note = f"{row.get('role_2026', '')} {row.get('depth_chart_note', '')}"
     risk_tier = str(row.get("risk_tier", "medium") or "medium").strip().lower()
     if risk_tier not in RISK_BASE_GAMES:
@@ -131,6 +173,13 @@ def _derive(row, solo_share: float) -> dict | None:
 
     games = games_2025 if games_2025 and float(games_2025) > 0 else games_proj
 
+    tfl_pg = _shrink(_rate(row.get("tfl_2025"), games), pos_means["tfl_2025"])
+    sack_pg = _shrink(_rate(row.get("sacks_2025"), games), pos_means["sacks_2025"])
+    ff_pg = _shrink(_rate(row.get("ff_2025"), games), pos_means["ff_2025"])
+    fr_pg = _shrink(_rate(row.get("fr_2025"), games), pos_means["fr_2025"])
+    int_pg = _shrink(_rate(row.get("int_2025"), games), pos_means["int_2025"])
+    pd_pg = _shrink(_rate(row.get("pd_2025"), games), pos_means["pd_2025"])
+
     return {
         "player_name": row["player_name"],
         "position": row["position"],
@@ -138,12 +187,12 @@ def _derive(row, solo_share: float) -> dict | None:
         "games_proj": games_proj,
         "solo_pg": round(_rate(solo_total, games), 3),
         "ast_pg": round(_rate(ast_total, games), 3),
-        "tfl_pg": round(_rate(row.get("tfl_2025"), games), 3),
-        "sack_pg": round(_rate(row.get("sacks_2025"), games), 3),
-        "ff_pg": round(_rate(row.get("ff_2025"), games), 3),
-        "fr_pg": round(_rate(row.get("fr_2025"), games), 3),
-        "int_pg": round(_rate(row.get("int_2025"), games), 3),
-        "pd_pg": round(_rate(row.get("pd_2025"), games), 3),
+        "tfl_pg": round(tfl_pg, 3),
+        "sack_pg": round(sack_pg, 3),
+        "ff_pg": round(ff_pg, 3),
+        "fr_pg": round(fr_pg, 3),
+        "int_pg": round(int_pg, 3),
+        "pd_pg": round(pd_pg, 3),
         "risk_tier": risk_tier,
         "role_note": (role_note or str(row.get("role_2026", ""))) + backfill_note,
     }
@@ -157,8 +206,9 @@ def build() -> pd.DataFrame:
             continue
         df = pd.read_csv(path)
         solo_share = _solo_share(df)
+        pos_means = _position_mean_rates(df)
         for _, row in df.iterrows():
-            derived = _derive(row, solo_share)
+            derived = _derive(row, solo_share, pos_means)
             if derived is not None:
                 rows.append(derived)
     return pd.DataFrame(rows)
