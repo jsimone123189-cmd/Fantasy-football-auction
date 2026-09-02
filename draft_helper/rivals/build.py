@@ -95,6 +95,35 @@ def _explain(row_result: dict, extra: str = "") -> str:
     return " | ".join(parts)
 
 
+# Real two-way players: modeled as two separate rows above (one offense,
+# one IDP) since that's how every other player's projection is built, but
+# a genuine two-way player occupies exactly one real roster spot and racks
+# up both stat lines in the same real games -- Rivals scores full IDP, so
+# that CB/DB production is real added value, not a separate draftable
+# asset. Combined here, before bye weeks/VOR/ranking, into a single row
+# under the primary (offense) position so the rest of the pipeline treats
+# him as what he actually is: one player, one score.
+TWO_WAY_PLAYERS = {"Travis Hunter": "WR"}
+
+
+def _combine_two_way_players(out: pd.DataFrame) -> pd.DataFrame:
+    for name, primary_pos in TWO_WAY_PLAYERS.items():
+        rows_for = out[out["player_name"] == name]
+        if len(rows_for) < 2:
+            continue
+        primary = rows_for[rows_for["position"] == primary_pos]
+        secondary = rows_for[rows_for["position"] != primary_pos]
+        if primary.empty or secondary.empty:
+            continue
+        p_idx = primary.index[0]
+        out.loc[p_idx, "projected_points"] = round(rows_for["projected_points"].sum(), 1)
+        out.loc[p_idx, "floor"] = round(rows_for["floor"].sum(), 1)
+        out.loc[p_idx, "ceiling"] = round(rows_for["ceiling"].sum(), 1)
+        out.loc[p_idx, "explanation"] = " || ".join(rows_for["explanation"].tolist())
+        out = out.drop(index=secondary.index)
+    return out.reset_index(drop=True)
+
+
 def build(
     skill_inputs_path=SKILL_INPUTS_PATH,
     team_context_path=TEAM_CONTEXT_PATH,
@@ -166,6 +195,7 @@ def build(
             })
 
     out = pd.DataFrame(rows)
+    out = _combine_two_way_players(out)
 
     if os.path.exists(bye_weeks_path):
         byes = pd.read_csv(bye_weeks_path)[["team", "bye_week"]]

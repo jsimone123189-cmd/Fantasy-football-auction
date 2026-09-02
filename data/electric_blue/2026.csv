@@ -165,16 +165,16 @@ Jets,DEF,Jets,71.9,53.9,92.0,medium,"Poor-tier defense (5.5-win Vegas total) | ~
 Dolphins,DEF,Dolphins,71.9,53.9,92.0,medium,"Poor-tier defense (4.5-win Vegas total) | ~1.7 sacks/g, ~0.55 INT/g, ~27.0 pts allowed/g (no yards-allowed component in this league's DEF rules, unlike Top Teamz)",29,120.9,-49.0,164,14,6.0
 Jaxson Dart,QB,Giants,221.5,110.7,354.3,very_high,"30.3 pass att/g x 6.5 YPA, 3.0% TD rate (1pt/25 pass yds here) | 6.0 rush att/g at 5.0 YPC",22,270.6,-49.1,165,14,8.0
 RJ Harvey,RB,Broncos,92.4,58.2,131.2,high,"7.6 carries/g x 4.30 YPC | 2.5 targets/g, half-PPR",38,141.8,-49.4,166,14,10.0
-Travis Hunter,WR,Jaguars,96.1,60.6,136.5,high,"5.5 targets/g, 62% catch rate, 6.5 yds/target",52,145.5,-49.4,167,14,7.0
-Khalil Shakir,WR,Bills,95.9,71.9,122.7,medium,"5.1 targets/g, 68% catch rate, 6.5 yds/target",53,145.5,-49.6,168,14,7.0
-Juwan Johnson,TE,Saints,44.2,27.8,62.8,high,"3.5 targets/g, 62% catch rate, 5.5 yds/target",24,94.0,-49.8,169,15,8.0
-Cole Kmet,TE,Bears,42.3,26.7,60.1,high,"3.1 targets/g, 62% catch rate, 5.5 yds/target",25,94.0,-51.7,170,15,10.0
-Bryce Young,QB,Panthers,218.2,137.5,309.8,high,"31.3 pass att/g x 6.5 YPA, 3.3% TD rate (1pt/25 pass yds here) | 4.0 rush att/g at 4.0 YPC",23,270.6,-52.4,171,15,5.0
-Najee Harris,RB,Chargers,89.2,56.2,126.7,high,"8.2 carries/g x 4.00 YPC | 1.9 targets/g, half-PPR",39,141.8,-52.6,172,15,7.0
-Kenyon Sadiq,TE,Jets,41.1,20.5,65.8,very_high,"3.6 targets/g, 68% catch rate, 8.0 yds/target",26,94.0,-52.9,173,15,13.0
-Josh Downs,WR,Colts,92.0,69.0,117.7,medium,"5.6 targets/g, 68% catch rate, 6.0 yds/target",54,145.5,-53.5,174,15,13.0
-De'Zhaun Stribling,WR,49ers,91.5,57.6,129.9,high,"5.1 targets/g, 62% catch rate, 8.0 yds/target",55,145.5,-54.0,175,15,8.0
-Geno Smith,QB,Jets,216.5,162.3,277.1,medium,"34.0 pass att/g x 6.8 YPA, 3.0% TD rate (1pt/25 pass yds here) | 2.0 rush att/g at 3.5 YPC",24,270.6,-54.1,176,15,13.0
+Khalil Shakir,WR,Bills,95.9,71.9,122.7,medium,"5.1 targets/g, 68% catch rate, 6.5 yds/target",52,145.5,-49.6,167,14,7.0
+Juwan Johnson,TE,Saints,44.2,27.8,62.8,high,"3.5 targets/g, 62% catch rate, 5.5 yds/target",24,94.0,-49.8,168,14,8.0
+Cole Kmet,TE,Bears,42.3,26.7,60.1,high,"3.1 targets/g, 62% catch rate, 5.5 yds/target",25,94.0,-51.7,169,15,10.0
+Bryce Young,QB,Panthers,218.2,137.5,309.8,high,"31.3 pass att/g x 6.5 YPA, 3.3% TD rate (1pt/25 pass yds here) | 4.0 rush att/g at 4.0 YPC",23,270.6,-52.4,170,15,5.0
+Najee Harris,RB,Chargers,89.2,56.2,126.7,high,"8.2 carries/g x 4.00 YPC | 1.9 targets/g, half-PPR",39,141.8,-52.6,171,15,7.0
+Kenyon Sadiq,TE,Jets,41.1,20.5,65.8,very_high,"3.6 targets/g, 68% catch rate, 8.0 yds/target",26,94.0,-52.9,172,15,13.0
+Josh Downs,WR,Colts,92.0,69.0,117.7,medium,"5.6 targets/g, 68% catch rate, 6.0 yds/target",53,145.5,-53.5,173,15,13.0
+De'Zhaun Stribling,WR,49ers,91.5,57.6,129.9,high,"5.1 targets/g, 62% catch rate, 8.0 yds/target",54,145.5,-54.0,174,15,8.0
+Geno Smith,QB,Jets,216.5,162.3,277.1,medium,"34.0 pass att/g x 6.8 YPA, 3.0% TD rate (1pt/25 pass yds here) | 2.0 rush att/g at 3.5 YPC",24,270.6,-54.1,175,15,13.0
+Travis Hunter,WR,Jaguars,89.7,56.5,127.4,high,"5.5 targets/g, 62% catch rate, 6.5 yds/target",55,145.5,-55.8,176,15,7.0
 Chris Rodriguez Jr.,RB,Jaguars,83.1,52.4,118.0,high,"8.0 carries/g x 4.10 YPC | 2.5 targets/g, half-PPR",40,141.8,-58.7,177,15,7.0
 Cooper Kupp,WR,Seahawks,86.2,64.7,110.3,medium,"4.9 targets/g, 68% catch rate, 6.5 yds/target",56,145.5,-59.3,178,15,11.0
 Denzel Boston,WR,Browns,85.2,53.7,121.0,high,"4.6 targets/g, 62% catch rate, 8.5 yds/target",57,145.5,-60.3,179,15,11.0

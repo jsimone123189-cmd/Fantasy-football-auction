@@ -6,6 +6,7 @@ from draft_helper.rivals.teams import idp_bucket, to_nickname
 from draft_helper.rivals.value import compute_vor, replacement_ranks
 from draft_helper.rivals.model import project_idp, project_kicker
 from draft_helper.rivals.mock_draft import optimal_lineup_points, simulate_draft
+from draft_helper.rivals.build import _combine_two_way_players
 
 
 def test_score_offense_full_ppr():
@@ -137,3 +138,37 @@ def test_simulate_draft_respects_roster_position_caps():
     for roster in rosters.values():
         qb_count = sum(1 for p in roster if p["position"] == "QB")
         assert qb_count <= 3
+
+
+def test_combine_two_way_players_sums_offense_and_defense_into_one_row():
+    out = pd.DataFrame([
+        {"player_name": "Travis Hunter", "position": "WR", "nfl_team": "Jaguars",
+         "projected_points": 60.0, "floor": 38.0, "ceiling": 85.0, "explanation": "offense side"},
+        {"player_name": "Travis Hunter", "position": "DB", "nfl_team": "JAX",
+         "projected_points": 45.0, "floor": 30.0, "ceiling": 60.0, "explanation": "defense side"},
+        {"player_name": "Someone Else", "position": "WR", "nfl_team": "Lions",
+         "projected_points": 100.0, "floor": 80.0, "ceiling": 120.0, "explanation": "unrelated"},
+    ])
+    combined = _combine_two_way_players(out)
+    assert len(combined) == 2  # the DB row for Travis Hunter is gone
+    hunter = combined[combined.player_name == "Travis Hunter"].iloc[0]
+    assert hunter["position"] == "WR"
+    assert hunter["projected_points"] == pytest.approx(105.0)
+    assert hunter["floor"] == pytest.approx(68.0)
+    assert hunter["ceiling"] == pytest.approx(145.0)
+    assert "offense side" in hunter["explanation"] and "defense side" in hunter["explanation"]
+    # untouched, single-position player passes through unchanged
+    other = combined[combined.player_name == "Someone Else"].iloc[0]
+    assert other["projected_points"] == pytest.approx(100.0)
+
+
+def test_combine_two_way_players_is_a_noop_when_only_one_row_exists():
+    # Guards against a future data gap silently "combining" a single row
+    # with itself if the secondary-position research row goes missing.
+    out = pd.DataFrame([
+        {"player_name": "Travis Hunter", "position": "WR", "nfl_team": "Jaguars",
+         "projected_points": 60.0, "floor": 38.0, "ceiling": 85.0, "explanation": "offense side"},
+    ])
+    combined = _combine_two_way_players(out)
+    assert len(combined) == 1
+    assert combined.iloc[0]["projected_points"] == pytest.approx(60.0)

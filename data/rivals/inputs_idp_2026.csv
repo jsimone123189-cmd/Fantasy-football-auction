@@ -124,84 +124,85 @@ Dee Winters,ILB,DAL,17,3.941,2.0,0.425,0.067,0.051,0.04,0.08,0.305,low,"Starter,
 DeMarvion Overshown,ILB,DAL,14,2.477,2.19,0.273,0.067,0.051,0.04,0.051,0.158,high,"Real 2025 season-ending injury on record, but the same research confirms he's cleared/fully healthy for 2026 -- games_proj uses the real 'high risk' games count instead of the harsher unrecovered discount, since there's no specific 2026 games-missed signal left, just residual uncertainty until proven in game action. [28 combined 2025 tackles found in research notes; solo/assist split estimated at this position's observed 53/47 average since the source didn't report the two separately -- not a fabricated total, just an estimated split.]"
 Eric Wilson,ILB,MIN,17,3.529,3.235,0.189,0.258,0.169,0.04,0.051,0.158,low,"Starter, three-down alongside Blake Cashman"
 Andrew Van Ginkel,OLB,MIN,16,2.333,2.167,0.189,0.358,0.051,0.123,0.092,0.533,medium,"Starter, edge/OLB pass rusher"
-Kyle Hamilton,S,BAL,17,3.688,2.875,0.318,0.056,0.083,0.014,0.186,0.466,low,Starter - box/hybrid safety
-Antoine Winfield Jr.,S,TB,17,3.118,2.353,0.217,0.054,0.05,0.043,0.12,0.514,low,Starter - box/slot hybrid safety
-Derwin James Jr.,S,LAC,17,3.125,2.75,0.334,0.087,0.051,0.014,0.155,0.497,low,Starter - box/blitzing safety
-Brian Branch,S/CB,DET,14,4.0,2.25,0.1,0.129,0.062,0.014,0.061,0.653,high,"Real 2025 season-ending injury on record, but the same research confirms he's cleared/fully healthy for 2026 -- games_proj uses the real 'high risk' games count instead of the harsher unrecovered discount, since there's no specific 2026 games-missed signal left, just residual uncertainty until proven in game action."
-Xavier McKinney,S,GB,16,3.375,3.312,0.1,0.056,0.051,0.014,0.124,0.591,medium,Starter - single-high/box hybrid safety
-Budda Baker,S,ARI,17,3.562,3.938,0.1,0.04,0.02,0.045,0.093,0.435,low,Starter - box safety
-Talanoa Hufanga,S,DEN,17,3.941,2.294,0.1,0.113,0.05,0.014,0.061,0.602,low,Starter - box/blitzing safety
-Kam Curl,S,LAR,17,4.647,2.529,0.1,0.083,0.05,0.014,0.12,0.426,low,Starter - box safety
-Chamarri Conner,S,KC,16,4.412,2.471,0.1,0.083,0.079,0.014,0.091,0.337,medium,Starter - strong safety
-Nick Cross,S,IND,17,4.235,2.824,0.1,0.098,0.05,0.014,0.091,0.426,low,Starter - box safety
-Dane Belton,S,NYJ,16,3.529,3.529,0.1,0.083,0.108,0.014,0.091,0.426,medium,"Signed a 1yr/$4M deal with the Jets in March 2026, not still with the Giants. In an open competition for the starting safety job with Andre Cisco and Malachi Moore as of Aug 18, 2026 -- not a locked-in starter."
-Jeremy Chinn,S,LV,16,4.2,3.4,0.1,0.058,0.087,0.014,0.061,0.345,medium,Starter - box/hybrid safety
-Nick Scott,S,CAR,17,3.765,2.765,0.1,0.024,0.02,0.043,0.091,0.367,low,Starter - box safety
-Geno Stone,S,CIN,17,3.824,2.294,0.1,0.083,0.02,0.014,0.12,0.396,low,Starter - single-high/box hybrid
-Tre'von Moehrig,S,CAR,17,4.062,2.375,0.537,0.118,0.02,0.014,0.093,0.341,low,Starter - box safety
-Kevin Byard III,S,NE,17,3.588,1.882,0.217,0.024,0.02,0.014,0.267,0.514,low,Starter - free safety
-Tykee Smith,S,TB,17,3.812,2.438,0.1,0.087,0.083,0.014,0.093,0.685,low,Starter - deep safety
-Jordan Battle,S,CIN,17,3.529,3.824,0.158,0.024,0.079,0.014,0.179,0.455,low,Starter - safety
-Minkah Fitzpatrick,S,MIA,16,4.214,1.643,0.1,0.06,0.056,0.085,0.097,0.493,medium,Starter - free safety
-Kerby Joseph,S,DET,14,2.333,0.667,0.1,0.024,0.02,0.014,0.311,0.612,high,Starter - single-high safety (if healthy)
-Isaiah Pola-Mao,S,LV,16,3.412,2.0,0.276,0.024,0.02,0.014,0.12,0.396,medium,Starter - safety
-Grant Delpit,S,CLE,17,2.824,2.412,0.232,0.113,0.079,0.072,0.091,0.396,low,Starter - safety
-Jalen Thompson,S,DAL,17,3.867,2.467,0.133,0.058,0.053,0.014,0.061,0.478,low,Starter - safety
-Andrew Wingard,S,ARI,16,2.812,2.438,0.271,0.024,0.02,0.045,0.093,0.56,medium,Competing for starting job
-Dadrion Taylor-Demerson,S,ARI,16,2.667,2.25,0.12,0.024,0.02,0.014,0.145,0.528,medium,Competing for starting job
-Jessie Bates III,S,ATL,17,3.353,2.412,0.129,0.024,0.05,0.014,0.149,0.455,low,Starter - free safety
-Jevon Holland,S,NYG,16,2.714,1.786,0.117,0.024,0.02,0.014,0.061,0.457,medium,Starter - safety
-DeShon Elliott,S,PIT,14,4.0,3.6,0.15,0.124,0.12,0.014,0.161,0.478,high,Starter - strong safety (if healthy)
-Julian Love,S,SEA,17,1.353,0.0,0.1,0.024,0.02,0.014,0.091,0.455,low,Starter - safety
-Quan Martin,S,WAS,17,3.059,2.765,0.217,0.024,0.05,0.014,0.061,0.367,low,Starter - box safety
-Malik Hooker,S,DAL,16,2.333,2.0,0.266,0.024,0.02,0.014,0.061,0.32,medium,Starter/rotational safety
-Camryn Bynum,S,IND,17,2.941,1.824,0.188,0.054,0.05,0.043,0.179,0.514,low,Starter - safety
-Xavier Watts,S,ATL,17,3.471,2.176,0.1,0.024,0.02,0.043,0.208,0.602,low,Starter - safety
-Nick Emmanwori,S,SEA,16,4.0,1.786,0.296,0.114,0.02,0.014,0.097,0.671,medium,Starter - hybrid box/rookie standout
-Kevin Winston Jr.,S,TEN,16,2.1,1.3,0.35,0.074,0.02,0.014,0.061,0.378,medium,Starter - safety (2026)
-Amani Hooker,S,TEN,17,3.625,1.438,0.1,0.056,0.02,0.014,0.061,0.528,low,Starter - safety
-Jalen Pitre,S,HOU,16,3.071,2.214,0.207,0.024,0.02,0.014,0.204,0.707,medium,Starter - box/slot safety
-Calen Bullock,S,HOU,17,2.588,1.176,0.1,0.024,0.05,0.014,0.179,0.573,low,Starter - free safety
-Jaylen Reed,S,NE,14,1.286,0.714,0.1,0.024,0.02,0.085,0.061,0.278,high,Rotational/depth safety
-Caleb Downs,S,DAL,16,0.0,0.0,0.1,0.024,0.02,0.014,0.061,0.278,medium,Rookie starter - hybrid safety/slot
-A.J. Haulcy,S,IND,16,0.0,0.0,0.1,0.024,0.02,0.014,0.061,0.278,medium,Rookie starter - strong safety
-Julian Blackmon,S,NO,13,0.0,0.0,0.1,0.024,0.02,0.014,0.061,0.278,high,Unsigned as of Aug 2026 -- games_proj discounted for a landing-spot/ramp-up gap even if he signs before the draft.
-Devon Witherspoon,CB,SEA,16,4.0,2.0,0.1,0.045,0.02,0.055,0.103,0.57,medium,Starter - outside corner
-Trent McDuffie,CB,LAR,16,3.462,1.385,0.138,0.063,0.059,0.052,0.33,0.278,medium,Starter - outside corner
-Christian Gonzalez,CB,NE,16,3.857,1.071,0.135,0.024,0.02,0.014,0.061,0.636,medium,Starter - outside corner
-DaRon Bland,CB,DAL,16,3.75,2.333,0.225,0.024,0.02,0.014,0.103,0.528,medium,Starter - outside corner
-Patrick Surtain II,CB,DEN,16,2.643,0.714,0.1,0.024,0.02,0.014,0.097,0.707,medium,Starter - outside corner
-Sauce Gardner,CB,IND,16,2.545,0.727,0.1,0.024,0.02,0.014,0.061,0.688,medium,Starter - outside corner
-Marlon Humphrey,CB,BAL,17,3.533,1.0,0.2,0.058,0.053,0.047,0.195,0.712,low,Starter - outside corner
-Nate Wiggins,CB,BAL,17,3.353,1.118,0.1,0.024,0.02,0.014,0.149,0.69,low,Starter - outside corner
-Riley Moss,CB,DEN,17,3.353,1.353,0.1,0.054,0.02,0.014,0.091,0.837,low,Starter - outside corner
-Cooper DeJean,CB,PHI,17,4.0,1.812,0.1,0.024,0.02,0.014,0.124,0.778,low,Starter - slot/outside corner
-Quinyon Mitchell,CB,PHI,16,2.188,0.625,0.1,0.024,0.051,0.014,0.061,0.81,medium,Starter - outside corner
-Kool-Aid McKinstry,CB,NO,17,3.471,1.0,0.188,0.024,0.02,0.014,0.149,0.778,low,Starter - outside corner
-Kamari Lassiter,CB,HOU,17,3.875,1.812,0.318,0.024,0.02,0.014,0.186,0.81,low,Starter - outside corner
-Derek Stingley Jr.,CB,HOU,16,1.529,0.588,0.1,0.024,0.05,0.014,0.179,0.72,medium,Starter - outside corner
-Denzel Ward,CB,CLE,16,1.933,0.667,0.133,0.024,0.02,0.014,0.095,0.578,medium,Starter - outside corner
-Christian Benford,CB,BUF,16,2.286,0.786,0.171,0.096,0.02,0.085,0.133,0.421,medium,Starter - outside corner
-Emmanuel Forbes Jr.,CB,LAR,17,1.882,0.765,0.1,0.024,0.05,0.014,0.149,0.808,low,Starter - outside corner
-Mike Jackson,CB,CAR,17,3.176,0.824,0.1,0.024,0.05,0.014,0.179,0.837,low,Starter - outside corner
-Tyson Campbell,CB,CLE/JAX,17,3.176,1.941,0.1,0.024,0.079,0.014,0.091,0.808,low,Starter - outside corner
-Dee Alford,CB,ATL,17,3.438,0.75,0.1,0.087,0.051,0.045,0.155,0.685,low,Starter - slot/outside corner
-Rasul Douglas,CB,MIA,16,2.467,1.667,0.1,0.058,0.053,0.014,0.128,0.712,medium,Starter - outside corner
-Alontae Taylor,CB,NO,17,3.471,1.412,0.1,0.083,0.02,0.014,0.12,0.602,low,Starter - outside corner
-Mike Sainristil,CB,WAS,17,2.706,1.824,0.129,0.024,0.05,0.014,0.179,0.631,low,Starter - slot corner
-Dru Phillips,CB,NYG,17,2.882,1.0,0.1,0.024,0.02,0.043,0.12,0.631,low,Starter - slot corner
-Tyrique Stevenson,CB,CHI,16,2.769,1.0,0.1,0.024,0.097,0.091,0.1,0.663,medium,Starter - outside corner
-Jaylon Johnson,CB,CHI,14,2.143,0.286,0.242,0.024,0.02,0.014,0.133,0.421,high,Starter - outside corner (if healthy)
-Charvarius Ward,CB,IND,14,2.429,1.143,0.1,0.024,0.02,0.085,0.061,0.778,high,Starter - outside corner (if healthy)
-Trevon Diggs,CB,SEA,14,2.222,0.778,0.1,0.024,0.02,0.014,0.061,0.278,high,Rotational/depth corner
-Paulson Adebo,CB,NYG,16,4.667,1.417,0.1,0.024,0.02,0.014,0.103,0.612,medium,Starter - outside corner
-Marshon Lattimore,CB,WAS,13,1.778,1.222,0.183,0.024,0.02,0.069,0.061,0.667,very_high,Unsigned as of Aug 2026 -- games_proj discounted for a landing-spot/ramp-up gap even if he signs before the draft.
-Kaiir Elam,CB,LAC (practice squad),11,1.571,0.786,0.135,0.024,0.02,0.085,0.061,0.35,very_high,"Left Tennessee via free agency (March 2026), signed with the Chiefs, then released by Kansas City at Aug 30 2026 cutdowns; now on the Chargers practice squad, not any active 53-man roster."
-Coby Bryant,S/CB,CHI,17,2.6,1.667,0.1,0.024,0.053,0.014,0.195,0.512,low,Starter - slot/hybrid DB
-Chidobe Awuzie,CB,BAL,16,1.812,0.0,0.1,0.024,0.02,0.014,0.061,0.497,medium,Starter/rotational corner
-Eric Murray,S,JAX,16,2.667,1.833,0.183,0.066,0.062,0.055,0.103,0.528,medium,Starter - safety
-Antonio Johnson,S,JAX,17,2.0,1.059,0.1,0.083,0.02,0.014,0.208,0.543,low,Starter - safety
-Josh Metellus,S,MIN,16,3.0,3.143,0.1,0.042,0.02,0.014,0.133,0.493,medium,Starter - box safety
-Andre Cisco,S,NYJ,14,3.25,1.875,0.256,0.024,0.02,0.076,0.061,0.341,high,"Re-signed to a new 1-year deal (~$5.25M) in March 2026; in an open camp competition with Dane Belton (and Malachi Moore) for the starting job as of Aug 26, 2026 -- not a settled starter/rotational role."
-Hunter Wohler,S,IND,14,0.0,0.0,0.1,0.024,0.02,0.014,0.061,0.278,high,Competing for starting SS job vs. rookie A.J. Haulcy
-Quentin Lake,S,LAR,16,3.7,2.4,0.1,0.074,0.07,0.014,0.111,0.778,medium,"Starter, injury-shortened season but healthy for playoffs/2026"
+Kyle Hamilton,S,BAL,17,3.688,2.875,0.316,0.055,0.082,0.013,0.185,0.465,low,Starter - box/hybrid safety
+Antoine Winfield Jr.,S,TB,17,3.118,2.353,0.215,0.054,0.049,0.043,0.119,0.513,low,Starter - box/slot hybrid safety
+Derwin James Jr.,S,LAC,17,3.125,2.75,0.332,0.087,0.051,0.013,0.154,0.496,low,Starter - box/blitzing safety
+Brian Branch,S/CB,DET,14,4.0,2.25,0.097,0.128,0.062,0.013,0.06,0.653,high,"Real 2025 season-ending injury on record, but the same research confirms he's cleared/fully healthy for 2026 -- games_proj uses the real 'high risk' games count instead of the harsher unrecovered discount, since there's no specific 2026 games-missed signal left, just residual uncertainty until proven in game action."
+Xavier McKinney,S,GB,16,3.375,3.312,0.097,0.055,0.051,0.013,0.123,0.59,medium,Starter - single-high/box hybrid safety
+Budda Baker,S,ARI,17,3.562,3.938,0.097,0.04,0.02,0.045,0.092,0.434,low,Starter - box safety
+Talanoa Hufanga,S,DEN,17,3.941,2.294,0.097,0.112,0.049,0.013,0.06,0.601,low,Starter - box/blitzing safety
+Kam Curl,S,LAR,17,4.647,2.529,0.097,0.083,0.049,0.013,0.119,0.425,low,Starter - box safety
+Chamarri Conner,S,KC,16,4.412,2.471,0.097,0.083,0.079,0.013,0.09,0.336,medium,Starter - strong safety
+Nick Cross,S,IND,17,4.235,2.824,0.097,0.098,0.049,0.013,0.09,0.425,low,Starter - box safety
+Dane Belton,S,NYJ,16,3.529,3.529,0.097,0.083,0.108,0.013,0.09,0.425,medium,"Signed a 1yr/$4M deal with the Jets in March 2026, not still with the Giants. In an open competition for the starting safety job with Andre Cisco and Malachi Moore as of Aug 18, 2026 -- not a locked-in starter."
+Jeremy Chinn,S,LV,16,4.2,3.4,0.097,0.057,0.087,0.013,0.06,0.344,medium,Starter - box/hybrid safety
+Nick Scott,S,CAR,17,3.765,2.765,0.097,0.024,0.02,0.043,0.09,0.366,low,Starter - box safety
+Geno Stone,S,CIN,17,3.824,2.294,0.097,0.083,0.02,0.013,0.119,0.395,low,Starter - single-high/box hybrid
+Tre'von Moehrig,S,CAR,17,4.062,2.375,0.535,0.118,0.02,0.013,0.092,0.34,low,Starter - box safety
+Kevin Byard III,S,NE,17,3.588,1.882,0.215,0.024,0.02,0.013,0.266,0.513,low,Starter - free safety
+Tykee Smith,S,TB,17,3.812,2.438,0.097,0.087,0.082,0.013,0.092,0.684,low,Starter - deep safety
+Jordan Battle,S,CIN,17,3.529,3.824,0.156,0.024,0.079,0.013,0.178,0.454,low,Starter - safety
+Minkah Fitzpatrick,S,MIA,16,4.214,1.643,0.097,0.06,0.056,0.085,0.096,0.492,medium,Starter - free safety
+Kerby Joseph,S,DET,14,2.333,0.667,0.097,0.024,0.02,0.013,0.31,0.611,high,Starter - single-high safety (if healthy)
+Isaiah Pola-Mao,S,LV,16,3.412,2.0,0.274,0.024,0.02,0.013,0.119,0.395,medium,Starter - safety
+Grant Delpit,S,CLE,17,2.824,2.412,0.23,0.112,0.079,0.072,0.09,0.395,low,Starter - safety
+Jalen Thompson,S,DAL,17,3.867,2.467,0.131,0.057,0.053,0.013,0.06,0.478,low,Starter - safety
+Andrew Wingard,S,ARI,16,2.812,2.438,0.269,0.024,0.02,0.045,0.092,0.559,medium,Competing for starting job
+Dadrion Taylor-Demerson,S,ARI,16,2.667,2.25,0.118,0.024,0.02,0.013,0.144,0.528,medium,Competing for starting job
+Jessie Bates III,S,ATL,17,3.353,2.412,0.127,0.024,0.049,0.013,0.149,0.454,low,Starter - free safety
+Jevon Holland,S,NYG,16,2.714,1.786,0.115,0.024,0.02,0.013,0.06,0.456,medium,Starter - safety
+DeShon Elliott,S,PIT,14,4.0,3.6,0.147,0.124,0.12,0.013,0.16,0.478,high,Starter - strong safety (if healthy)
+Julian Love,S,SEA,17,1.353,0.0,0.097,0.024,0.02,0.013,0.09,0.454,low,Starter - safety
+Quan Martin,S,WAS,17,3.059,2.765,0.215,0.024,0.049,0.013,0.06,0.366,low,Starter - box safety
+Malik Hooker,S,DAL,16,2.333,2.0,0.264,0.024,0.02,0.013,0.06,0.319,medium,Starter/rotational safety
+Camryn Bynum,S,IND,17,2.941,1.824,0.185,0.054,0.049,0.043,0.178,0.513,low,Starter - safety
+Xavier Watts,S,ATL,17,3.471,2.176,0.097,0.024,0.02,0.043,0.208,0.601,low,Starter - safety
+Nick Emmanwori,S,SEA,16,4.0,1.786,0.294,0.113,0.02,0.013,0.096,0.67,medium,Starter - hybrid box/rookie standout
+Kevin Winston Jr.,S,TEN,16,2.1,1.3,0.347,0.074,0.02,0.013,0.06,0.378,medium,Starter - safety (2026)
+Amani Hooker,S,TEN,17,3.625,1.438,0.097,0.055,0.02,0.013,0.06,0.528,low,Starter - safety
+Jalen Pitre,S,HOU,16,3.071,2.214,0.204,0.024,0.02,0.013,0.203,0.706,medium,Starter - box/slot safety
+Calen Bullock,S,HOU,17,2.588,1.176,0.097,0.024,0.049,0.013,0.178,0.572,low,Starter - free safety
+Jaylen Reed,S,NE,14,1.286,0.714,0.097,0.024,0.02,0.085,0.06,0.278,high,Rotational/depth safety
+Caleb Downs,S,DAL,16,0.0,0.0,0.097,0.024,0.02,0.013,0.06,0.278,medium,Rookie starter - hybrid safety/slot
+A.J. Haulcy,S,IND,16,0.0,0.0,0.097,0.024,0.02,0.013,0.06,0.278,medium,Rookie starter - strong safety
+Julian Blackmon,S,NO,13,0.0,0.0,0.097,0.024,0.02,0.013,0.06,0.278,high,Unsigned as of Aug 2026 -- games_proj discounted for a landing-spot/ramp-up gap even if he signs before the draft.
+Devon Witherspoon,CB,SEA,16,4.0,2.0,0.097,0.045,0.02,0.055,0.102,0.569,medium,Starter - outside corner
+Trent McDuffie,CB,LAR,16,3.462,1.385,0.136,0.063,0.058,0.052,0.33,0.278,medium,Starter - outside corner
+Christian Gonzalez,CB,NE,16,3.857,1.071,0.133,0.024,0.02,0.013,0.06,0.635,medium,Starter - outside corner
+DaRon Bland,CB,DAL,16,3.75,2.333,0.222,0.024,0.02,0.013,0.102,0.528,medium,Starter - outside corner
+Patrick Surtain II,CB,DEN,16,2.643,0.714,0.097,0.024,0.02,0.013,0.096,0.706,medium,Starter - outside corner
+Sauce Gardner,CB,IND,16,2.545,0.727,0.097,0.024,0.02,0.013,0.06,0.687,medium,Starter - outside corner
+Marlon Humphrey,CB,BAL,17,3.533,1.0,0.197,0.057,0.053,0.047,0.194,0.711,low,Starter - outside corner
+Nate Wiggins,CB,BAL,17,3.353,1.118,0.097,0.024,0.02,0.013,0.149,0.689,low,Starter - outside corner
+Riley Moss,CB,DEN,17,3.353,1.353,0.097,0.054,0.02,0.013,0.09,0.836,low,Starter - outside corner
+Cooper DeJean,CB,PHI,17,4.0,1.812,0.097,0.024,0.02,0.013,0.123,0.778,low,Starter - slot/outside corner
+Quinyon Mitchell,CB,PHI,16,2.188,0.625,0.097,0.024,0.051,0.013,0.06,0.809,medium,Starter - outside corner
+Kool-Aid McKinstry,CB,NO,17,3.471,1.0,0.185,0.024,0.02,0.013,0.149,0.778,low,Starter - outside corner
+Kamari Lassiter,CB,HOU,17,3.875,1.812,0.316,0.024,0.02,0.013,0.185,0.809,low,Starter - outside corner
+Derek Stingley Jr.,CB,HOU,16,1.529,0.588,0.097,0.024,0.049,0.013,0.178,0.719,medium,Starter - outside corner
+Denzel Ward,CB,CLE,16,1.933,0.667,0.131,0.024,0.02,0.013,0.094,0.578,medium,Starter - outside corner
+Christian Benford,CB,BUF,16,2.286,0.786,0.169,0.096,0.02,0.085,0.132,0.42,medium,Starter - outside corner
+Emmanuel Forbes Jr.,CB,LAR,17,1.882,0.765,0.097,0.024,0.049,0.013,0.149,0.807,low,Starter - outside corner
+Mike Jackson,CB,CAR,17,3.176,0.824,0.097,0.024,0.049,0.013,0.178,0.836,low,Starter - outside corner
+Tyson Campbell,CB,CLE/JAX,17,3.176,1.941,0.097,0.024,0.079,0.013,0.09,0.807,low,Starter - outside corner
+Dee Alford,CB,ATL,17,3.438,0.75,0.097,0.087,0.051,0.045,0.154,0.684,low,Starter - slot/outside corner
+Rasul Douglas,CB,MIA,16,2.467,1.667,0.097,0.057,0.053,0.013,0.127,0.711,medium,Starter - outside corner
+Alontae Taylor,CB,NO,17,3.471,1.412,0.097,0.083,0.02,0.013,0.119,0.601,low,Starter - outside corner
+Mike Sainristil,CB,WAS,17,2.706,1.824,0.127,0.024,0.049,0.013,0.178,0.631,low,Starter - slot corner
+Dru Phillips,CB,NYG,17,2.882,1.0,0.097,0.024,0.02,0.043,0.119,0.631,low,Starter - slot corner
+Tyrique Stevenson,CB,CHI,16,2.769,1.0,0.097,0.024,0.097,0.09,0.099,0.662,medium,Starter - outside corner
+Jaylon Johnson,CB,CHI,14,2.143,0.286,0.24,0.024,0.02,0.013,0.132,0.42,high,Starter - outside corner (if healthy)
+Charvarius Ward,CB,IND,14,2.429,1.143,0.097,0.024,0.02,0.085,0.06,0.778,high,Starter - outside corner (if healthy)
+Trevon Diggs,CB,SEA,14,2.222,0.778,0.097,0.024,0.02,0.013,0.06,0.278,high,Rotational/depth corner
+Paulson Adebo,CB,NYG,16,4.667,1.417,0.097,0.024,0.02,0.013,0.102,0.611,medium,Starter - outside corner
+Marshon Lattimore,CB,WAS,13,1.778,1.222,0.181,0.024,0.02,0.069,0.06,0.666,very_high,Unsigned as of Aug 2026 -- games_proj discounted for a landing-spot/ramp-up gap even if he signs before the draft.
+Kaiir Elam,CB,LAC (practice squad),11,1.571,0.786,0.133,0.024,0.02,0.085,0.06,0.349,very_high,"Left Tennessee via free agency (March 2026), signed with the Chiefs, then released by Kansas City at Aug 30 2026 cutdowns; now on the Chargers practice squad, not any active 53-man roster."
+Coby Bryant,S/CB,CHI,17,2.6,1.667,0.097,0.024,0.053,0.013,0.194,0.511,low,Starter - slot/hybrid DB
+Chidobe Awuzie,CB,BAL,16,1.812,0.0,0.097,0.024,0.02,0.013,0.06,0.496,medium,Starter/rotational corner
+Eric Murray,S,JAX,16,2.667,1.833,0.181,0.066,0.062,0.055,0.102,0.528,medium,Starter - safety
+Antonio Johnson,S,JAX,17,2.0,1.059,0.097,0.083,0.02,0.013,0.208,0.542,low,Starter - safety
+Josh Metellus,S,MIN,16,3.0,3.143,0.097,0.042,0.02,0.013,0.132,0.492,medium,Starter - box safety
+Andre Cisco,S,NYJ,14,3.25,1.875,0.253,0.024,0.02,0.076,0.06,0.34,high,"Re-signed to a new 1-year deal (~$5.25M) in March 2026; in an open camp competition with Dane Belton (and Malachi Moore) for the starting job as of Aug 26, 2026 -- not a settled starter/rotational role."
+Hunter Wohler,S,IND,14,0.0,0.0,0.097,0.024,0.02,0.013,0.06,0.278,high,Competing for starting SS job vs. rookie A.J. Haulcy
+Quentin Lake,S,LAR,16,3.7,2.4,0.097,0.074,0.07,0.013,0.11,0.778,medium,"Starter, injury-shortened season but healthy for playoffs/2026"
+Travis Hunter,CB,JAX,14,1.381,0.762,0.097,0.024,0.02,0.013,0.06,0.492,high,"Real two-way starter -- HC Liam Coen confirmed he plays ""both sides of the football just as we drafted him to do,"" with a real, reported uptick in CB snaps expected vs his rookie season. [15 combined 2025 tackles found in research notes; solo/assist split estimated at this position's observed 64/36 average since the source didn't report the two separately -- not a fabricated total, just an estimated split.]"
