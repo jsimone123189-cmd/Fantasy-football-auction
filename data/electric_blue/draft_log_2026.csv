@@ -1,0 +1,169 @@
+pick,team_name,player_name,position,nfl_team,is_keeper
+1,Jahmyracle Whip,Jahmyr Gibbs,RB,Lions,False
+24,Jahmyracle Whip,Ashton Jeanty,RB,Raiders,False
+25,Jahmyracle Whip,Javonte Williams,RB,Cowboys,False
+48,Jahmyracle Whip,Christian Watson,WR,Packers,False
+49,Jahmyracle Whip,Jameson Williams,WR,Lions,False
+72,Jahmyracle Whip,Caleb Williams,QB,Bears,False
+73,Jahmyracle Whip,Jonathon Brooks,RB,Panthers,False
+96,Jahmyracle Whip,KC Concepcion,WR,Browns,False
+97,Jahmyracle Whip,Jordan Addison,WR,Vikings,False
+120,Jahmyracle Whip,Dalton Kincaid,TE,Bills,True
+121,Jahmyracle Whip,Malik Willis,QB,Dolphins,False
+144,Jahmyracle Whip,Dylan Sampson,RB,Browns,False
+145,Jahmyracle Whip,Greg Dulcich,TE,Dolphins,False
+168,Jahmyracle Whip,Chargers,DEF,Chargers,False
+2,Surrender Your Booty,Bijan Robinson,RB,Falcons,False
+23,Surrender Your Booty,Kyren Williams,RB,Rams,False
+26,Surrender Your Booty,Chris Olave,WR,Saints,False
+47,Surrender Your Booty,Parker Washington,WR,Jaguars,False
+50,Surrender Your Booty,Tyler Warren,TE,Colts,False
+71,Surrender Your Booty,Rico Dowdle,RB,Steelers,False
+74,Surrender Your Booty,DK Metcalf,WR,Steelers,False
+95,Surrender Your Booty,Kenneth Gainwell,RB,Buccaneers,False
+98,Surrender Your Booty,Jalen Coker,WR,Panthers,False
+119,Surrender Your Booty,Chris Rodriguez Jr.,RB,Jaguars,False
+122,Surrender Your Booty,Xavier Worthy,WR,Chiefs,False
+143,Surrender Your Booty,Brock Purdy,QB,49ers,False
+146,Surrender Your Booty,Braelon Allen,RB,Jets,False
+167,Surrender Your Booty,Tre Harris,WR,Chargers,False
+3,Ron Mexico's Perro,Ja'Marr Chase,WR,Bengals,False
+22,Ron Mexico's Perro,Brock Bowers,TE,Raiders,False
+27,Ron Mexico's Perro,Malik Nabers,WR,Giants,False
+46,Ron Mexico's Perro,DJ Moore,WR,Bills,False
+51,Ron Mexico's Perro,Bhayshul Tuten,RB,Jaguars,False
+70,Ron Mexico's Perro,Joe Burrow,QB,Bengals,False
+75,Ron Mexico's Perro,Tony Pollard,RB,Titans,False
+94,Ron Mexico's Perro,Justin Herbert,QB,Chargers,False
+99,Ron Mexico's Perro,Stefon Diggs,WR,Commanders,False
+118,Ron Mexico's Perro,Khalil Shakir,WR,Bills,True
+123,Ron Mexico's Perro,Rachaad White,RB,Commanders,False
+142,Ron Mexico's Perro,Dallas Goedert,TE,Eagles,False
+147,Ron Mexico's Perro,Rashid Shaheed,WR,Seahawks,False
+166,Ron Mexico's Perro,Eagles,DEF,Eagles,False
+4,LaPorta Potty,Puka Nacua,WR,Rams,False
+21,LaPorta Potty,George Pickens,WR,Cowboys,False
+28,LaPorta Potty,Josh Allen,QB,Bills,False
+45,LaPorta Potty,Bucky Irving,RB,Buccaneers,False
+52,LaPorta Potty,David Montgomery,RB,Texans,False
+69,LaPorta Potty,Harold Fannin Jr.,TE,Browns,False
+76,LaPorta Potty,Josh Downs,WR,Colts,False
+93,LaPorta Potty,Jayden Reed,WR,Packers,False
+100,LaPorta Potty,Jordan Mason,RB,Vikings,False
+117,LaPorta Potty,Courtland Sutton,WR,Broncos,False
+124,LaPorta Potty,Aaron Jones,RB,Vikings,False
+141,LaPorta Potty,Mark Andrews,TE,Ravens,False
+148,LaPorta Potty,Broncos,DEF,Broncos,False
+165,LaPorta Potty,Tyler Shough,QB,Saints,False
+5,Wild Bill,Amon-Ra St. Brown,WR,Lions,False
+20,Wild Bill,Nico Collins,WR,Texans,False
+29,Wild Bill,Jeremiyah Love,RB,Cardinals,False
+44,Wild Bill,Terry McLaurin,WR,Commanders,False
+53,Wild Bill,Jadarian Price,RB,Seahawks,False
+68,Wild Bill,Marvin Harrison Jr.,WR,Cardinals,False
+77,Wild Bill,Brian Thomas Jr.,WR,Jaguars,False
+92,Wild Bill,Jaxson Dart,QB,Giants,False
+101,Wild Bill,Isaiah Likely,TE,Giants,False
+116,Wild Bill,Chris Godwin Jr.,WR,Buccaneers,True
+125,Wild Bill,Tyjae Spears,RB,Titans,False
+140,Wild Bill,Deebo Samuel,WR,49ers,False
+149,Wild Bill,Kyler Murray,QB,Vikings,False
+164,Wild Bill,Seahawks,DEF,Seahawks,False
+6,Swifties and a Tight End,Jonathan Taylor,RB,Colts,False
+19,Swifties and a Tight End,Derrick Henry,RB,Ravens,False
+30,Swifties and a Tight End,DeVonta Smith,WR,Eagles,False
+43,Swifties and a Tight End,Tetairoa McMillan,WR,Panthers,False
+54,Swifties and a Tight End,Tucker Kraft,TE,Packers,False
+67,Swifties and a Tight End,Michael Wilson,WR,Cardinals,False
+78,Swifties and a Tight End,Trevor Lawrence,QB,Jaguars,False
+91,Swifties and a Tight End,Matthew Golden,WR,Packers,False
+102,Swifties and a Tight End,RJ Harvey,RB,Broncos,False
+115,Swifties and a Tight End,Zach Charbonnet,RB,Seahawks,False
+126,Swifties and a Tight End,Keaton Mitchell,RB,Chargers,False
+139,Swifties and a Tight End,Texans,DEF,Texans,False
+150,Swifties and a Tight End,Keenan Allen,WR,Colts,False
+163,Swifties and a Tight End,Demond Claiborne,RB,Vikings,False
+7,Lamb Over Rice,Jaxon Smith-Njigba,WR,Seahawks,False
+18,Lamb Over Rice,Chase Brown,RB,Bengals,False
+31,Lamb Over Rice,Zay Flowers,WR,Ravens,False
+42,Lamb Over Rice,D'Andre Swift,RB,Bears,False
+55,Lamb Over Rice,Rhamondre Stevenson,RB,Patriots,False
+66,Lamb Over Rice,Rome Odunze,WR,Bears,False
+79,Lamb Over Rice,Jalen Hurts,QB,Eagles,False
+90,Lamb Over Rice,Blake Corum,RB,Rams,False
+103,Lamb Over Rice,Michael Pittman Jr.,WR,Steelers,False
+114,Lamb Over Rice,Colston Loveland,TE,Bears,True
+127,Lamb Over Rice,Jordyn Tyson,WR,Saints,False
+138,Lamb Over Rice,Tre Tucker,WR,Raiders,False
+151,Lamb Over Rice,Jaylin Noel,WR,Texans,False
+162,Lamb Over Rice,Terrance Ferguson,TE,Rams,False
+8,Matty Ice Age,De'Von Achane,RB,Dolphins,False
+17,Matty Ice Age,Drake London,WR,Falcons,False
+32,Matty Ice Age,Rashee Rice,WR,Chiefs,False
+41,Matty Ice Age,Travis Etienne Jr.,RB,Saints,False
+56,Matty Ice Age,Davante Adams,WR,Rams,False
+65,Matty Ice Age,Mike Evans,WR,49ers,False
+80,Matty Ice Age,Dak Prescott,QB,Cowboys,False
+89,Matty Ice Age,J.K. Dobbins,RB,Broncos,False
+104,Matty Ice Age,Travis Kelce,TE,Chiefs,False
+113,Matty Ice Age,Kyle Monangai,RB,Bears,False
+128,Matty Ice Age,Woody Marks,RB,Texans,False
+137,Matty Ice Age,Matthew Stafford,QB,Rams,False
+152,Matty Ice Age,Chig Okonkwo,TE,Commanders,False
+161,Matty Ice Age,Patriots,DEF,Patriots,False
+9,Puka Nicoclear!,James Cook III,RB,Bills,False
+16,Puka Nicoclear!,A.J. Brown,WR,Patriots,False
+33,Puka Nicoclear!,Trey McBride,TE,Cardinals,False
+40,Puka Nicoclear!,Garrett Wilson,WR,Jets,False
+57,Puka Nicoclear!,Quinshon Judkins,RB,Browns,False
+64,Puka Nicoclear!,Carnell Tate,WR,Titans,False
+81,Puka Nicoclear!,Bo Nix,QB,Broncos,False
+88,Puka Nicoclear!,Jacory Croskey-Merritt,RB,Commanders,False
+105,Puka Nicoclear!,Makai Lemon,WR,Eagles,False
+112,Puka Nicoclear!,Cam Skattebo,RB,Giants,True
+129,Puka Nicoclear!,Denzel Boston,WR,Browns,False
+136,Puka Nicoclear!,Emmett Johnson,RB,Chiefs,False
+153,Puka Nicoclear!,Cyrus Allen,WR,Chiefs,False
+160,Puka Nicoclear!,Jared Goff,QB,Lions,False
+10,Hall Too Well,Saquon Barkley,RB,Eagles,False
+15,Hall Too Well,CeeDee Lamb,WR,Cowboys,False
+34,Hall Too Well,Breece Hall,RB,Jets,False
+39,Hall Too Well,Emeka Egbuka,WR,Buccaneers,False
+58,Hall Too Well,Drake Maye,QB,Patriots,False
+63,Hall Too Well,Jaylen Warren,RB,Steelers,False
+82,Hall Too Well,George Kittle,TE,49ers,False
+87,Hall Too Well,Quentin Johnston,WR,Chargers,False
+106,Hall Too Well,Wan'Dale Robinson,WR,Titans,False
+111,Hall Too Well,Jonah Coleman,RB,Broncos,False
+130,Hall Too Well,Jakobi Meyers,WR,Jaguars,False
+135,Hall Too Well,Juwan Johnson,TE,Saints,False
+154,Hall Too Well,Luther Burden III,WR,Bears,True
+159,Hall Too Well,Vikings,DEF,Vikings,False
+11,By The Beard of Zeus,Christian McCaffrey,RB,49ers,False
+14,By The Beard of Zeus,Kenneth Walker III,RB,Chiefs,False
+35,By The Beard of Zeus,Tee Higgins,WR,Bengals,False
+38,By The Beard of Zeus,Jaylen Waddle,WR,Broncos,False
+59,By The Beard of Zeus,Jayden Daniels,QB,Commanders,False
+62,By The Beard of Zeus,Sam LaPorta,TE,Lions,False
+83,By The Beard of Zeus,Alec Pierce,WR,Colts,False
+86,By The Beard of Zeus,De'Zhaun Stribling,WR,49ers,False
+107,By The Beard of Zeus,Mike Washington Jr.,RB,Raiders,False
+110,By The Beard of Zeus,Ricky Pearsall,WR,49ers,False
+131,By The Beard of Zeus,Kaelon Black,RB,49ers,False
+134,By The Beard of Zeus,Jaguars,DEF,Jaguars,False
+155,By The Beard of Zeus,Tyler Allgeier,RB,Cardinals,True
+158,By The Beard of Zeus,Isaac TeSlaa,WR,Lions,False
+12,3peat Worthy,Omarion Hampton,RB,Chargers,False
+13,3peat Worthy,Justin Jefferson,WR,Vikings,False
+36,3peat Worthy,Ladd McConkey,WR,Chargers,False
+37,3peat Worthy,Lamar Jackson,QB,Ravens,False
+60,3peat Worthy,MarShawn Lloyd,RB,Packers,False
+61,3peat Worthy,TreVeyon Henderson,RB,Patriots,False
+84,3peat Worthy,Kyle Pitts,TE,Falcons,False
+85,3peat Worthy,Chuba Hubbard,RB,Panthers,False
+108,3peat Worthy,Rams,DEF,Rams,False
+109,3peat Worthy,Josh Jacobs,RB,Packers,False
+132,3peat Worthy,Romeo Doubs,WR,Patriots,False
+133,3peat Worthy,Jake Ferguson,TE,Cowboys,False
+156,3peat Worthy,Dontayvion Wicks,WR,Eagles,False
+157,3peat Worthy,Pat Bryant,WR,Broncos,False
