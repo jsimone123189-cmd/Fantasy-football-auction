@@ -1,9 +1,8 @@
 """Electric Blue projection model. Skill positions (QB/RB/WR/TE) reuse the
 same real opportunity/efficiency inputs as Top Teamz and Rivals FCL (same
 real players, same real 2026 team environments) -- only the scoring changes.
-Kicker reuses the same real 2025 kicker research gathered for Rivals FCL
-(data/research/kickers_2026.csv), rescored under Electric Blue's fully
-distance-tiered kicker rules. DEF reuses Top Teamz's team-quality tier model
+No kicker this season (confirmed live during the 2026 draft -- this league
+dropped the K slot entirely). DEF reuses Top Teamz's team-quality tier model
 (draft_helper.projections.def_model), rescored under Electric Blue's
 points-allowed-only DEF rules (no yards-allowed tier here).
 """
@@ -12,7 +11,7 @@ from __future__ import annotations
 from draft_helper.projections.def_model import TIERS, _win_total_tier
 from draft_helper.projections.team_context import TeamContext
 
-from .scoring import expected_milestone_bonus, score_defense, score_kicker, score_offense
+from .scoring import expected_milestone_bonus, score_defense, score_offense
 
 GAMES_DEFAULT = 17.0
 
@@ -140,22 +139,6 @@ def project_qb(row, team: TeamContext) -> dict:
     ]
     if bonus >= 3:
         drivers.append(f"+{bonus:.0f} pts from yardage milestone bonuses")
-    return _finalize(median, row, drivers)
-
-
-def project_kicker(row) -> dict:
-    games = _num(row, "games_proj", GAMES_DEFAULT)
-    fg_made_pg = _num(row, "fg_made_pg")
-    fg_40_49_pg = _num(row, "fg_40_49_pg")
-    fg_50plus_pg = _num(row, "fg_50plus_pg")
-    fg_under_40_pg = max(fg_made_pg - fg_40_49_pg - fg_50plus_pg, 0.0)
-    xp_made_pg = _num(row, "xp_made_pg")
-
-    median = score_kicker(fg_under_40_pg, fg_40_49_pg, fg_50plus_pg, xp_made_pg) * games
-    drivers = [
-        f"{fg_made_pg:.2f} FG made/g ({fg_under_40_pg:.2f} under 40 @3pt, {fg_40_49_pg:.2f} @4pt, {fg_50plus_pg:.2f} @5pt)",
-        f"{xp_made_pg:.2f} XP made/g",
-    ]
     return _finalize(median, row, drivers)
 
 

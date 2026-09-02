@@ -13,20 +13,21 @@ import pandas as pd
 
 from .value import NUM_TEAMS, STARTERS
 
-ROSTER_MAX = {"QB": 2, "RB": 6, "WR": 6, "TE": 2, "K": 1, "DEF": 1}
+ROSTER_MAX = {"QB": 2, "RB": 6, "WR": 6, "TE": 2, "DEF": 1}
 ROUNDS = 14
 FLEX_ELIGIBLE = {"RB", "WR", "TE"}
 
-# Real 7-season market behavior in this exact league (see tendencies.py /
-# def_and_kicker_draft_rounds): K and DEF have NEVER been drafted before
-# round 8 (earliest of either), averaging round ~13. Pure VOR ranks a top
-# K/DEF as high as round 3-4 on paper because of this league's flat,
-# generous distance-tiered K scoring and points-allowed-only DEF scoring
-# -- a real gap over replacement level, but one the real market has
-# never actually paid for. Modeling every team as pure-VOR BPA would
-# draft a kicker in round 6, which contradicts this league's own
-# documented history; deferred here for all teams to match reality.
-DEFER_POSITIONS = {"K", "DEF"}
+# Real multi-season market behavior in this exact league (see tendencies.py /
+# def_and_kicker_draft_rounds, which covers past seasons that did have a K
+# slot): DEF has never been drafted before round 8, averaging round ~13.
+# Pure VOR ranks a top DEF as high as round 3-4 on paper because of this
+# league's points-allowed-only DEF scoring -- a real gap over replacement
+# level, but one the real market has never actually paid for. Modeling
+# every team as pure-VOR BPA would draft DEF in round 6, which contradicts
+# this league's own documented history; deferred here for all teams to
+# match reality. No kicker this season -- confirmed live during the 2026
+# draft that this league dropped the K slot entirely.
+DEFER_POSITIONS = {"DEF"}
 DEFER_UNTIL_ROUND = ROUNDS - 1
 
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))

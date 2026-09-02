@@ -1,10 +1,14 @@
 """Builds data/electric_blue/2026.csv -- the full Electric Blue projection
-set (QB/RB/WR/TE/K/DEF) with VOR-based snake-draft ranking.
+set (QB/RB/WR/TE/DEF) with VOR-based snake-draft ranking.
+
+No kicker here -- confirmed live during the 2026 draft that this league
+has no K slot this season (past seasons did; see tendencies.py's real
+historical K/DEF market-timing analysis, which is unaffected by this).
 
 Reuses real inputs already gathered for the other two leagues: skill-
-position opportunity/efficiency (Top Teamz), kicker research (Rivals FCL),
-and team context/DEF tiers (Top Teamz) -- only the scoring formula and
-roster shape are Electric Blue's own.
+position opportunity/efficiency (Top Teamz) and team context/DEF tiers
+(Top Teamz) -- only the scoring formula and roster shape are Electric
+Blue's own.
 
 Run as: python -m draft_helper.electric_blue.build
 """
@@ -16,13 +20,12 @@ import pandas as pd
 
 from draft_helper.projections.team_context import DEFAULT_IMPLIED_PPG, TeamContext, load_team_contexts
 
-from .model import SKILL_PROJECTORS, project_defense, project_kicker
+from .model import SKILL_PROJECTORS, project_defense
 from .value import compute_vor
 
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 SKILL_INPUTS_PATH = os.path.join(BASE_DIR, "data", "projections", "inputs_2026.csv")
 TEAM_CONTEXT_PATH = os.path.join(BASE_DIR, "data", "research", "team_context_2026.csv")
-KICKER_INPUTS_PATH = os.path.join(BASE_DIR, "data", "rivals", "inputs_kicker_2026.csv")
 BYE_WEEKS_PATH = os.path.join(BASE_DIR, "data", "research", "bye_weeks_2026.csv")
 OUT_PATH = os.path.join(BASE_DIR, "data", "electric_blue", "2026.csv")
 
@@ -51,16 +54,6 @@ def build() -> pd.DataFrame:
             result = projector(row, team_ctx)
             rows.append({
                 "player_name": row["player_name"], "position": position, "nfl_team": team_name,
-                "projected_points": result["projected_points"], "floor": result["floor"],
-                "ceiling": result["ceiling"], "risk_tier": result["risk_tier"], "explanation": _explain(result),
-            })
-
-    if os.path.exists(KICKER_INPUTS_PATH):
-        kicker_inputs = pd.read_csv(KICKER_INPUTS_PATH)
-        for _, row in kicker_inputs.iterrows():
-            result = project_kicker(row)
-            rows.append({
-                "player_name": row["player_name"], "position": "K", "nfl_team": str(row.get("nfl_team", "")).strip(),
                 "projected_points": result["projected_points"], "floor": result["floor"],
                 "ceiling": result["ceiling"], "risk_tier": result["risk_tier"], "explanation": _explain(result),
             })

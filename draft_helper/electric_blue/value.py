@@ -1,9 +1,10 @@
 """Snake-draft VOR ranking for Electric Blue -- same approach as Rivals FCL
 (no auction $ here either), but a different roster shape: QB, RB, RB, WR,
-WR, TE, W/R/T flex, K, DEF (12 teams). The flex is a true 3-way RB/WR/TE
-split rather than Rivals' RB/WR-leaning split, since this is half-PPR (not
-full) and has 2 dedicated RB slots already, so there's less structural bias
-toward any one flex-eligible position.
+WR, TE, W/R/T flex, DEF (12 teams; no kicker slot this season, confirmed
+live during the 2026 draft -- this league dropped K entirely). The flex is
+a true 3-way RB/WR/TE split rather than Rivals' RB/WR-leaning split, since
+this is half-PPR (not full) and has 2 dedicated RB slots already, so
+there's less structural bias toward any one flex-eligible position.
 """
 from __future__ import annotations
 
@@ -12,7 +13,7 @@ import math
 import pandas as pd
 
 NUM_TEAMS = 12
-STARTERS = {"QB": 1, "RB": 2, "WR": 2, "TE": 1, "K": 1, "DEF": 1}
+STARTERS = {"QB": 1, "RB": 2, "WR": 2, "TE": 1, "DEF": 1}
 FLEX_SLOTS_PER_TEAM = 1
 FLEX_SHARE = {"RB": 0.40, "WR": 0.45, "TE": 0.15}
 

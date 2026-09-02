@@ -2,7 +2,7 @@ import pandas as pd
 import pytest
 
 from draft_helper.electric_blue.scoring import (
-    expected_milestone_bonus, score_defense, score_kicker, score_offense,
+    expected_milestone_bonus, score_defense, score_offense,
 )
 from draft_helper.electric_blue.dename import (
     apply as dename_apply, load_season_rosters, resolve_manager, resolve_team_name,
@@ -23,11 +23,6 @@ def test_score_offense_interception_is_minus_one():
     # Confirmed real rule: -1 INT here, not -2 like Top Teamz/Rivals.
     pts = score_offense(dict(pass_yards=300, interceptions=1))
     assert pts == pytest.approx(300 * 0.04 - 1)
-
-
-def test_kicker_scoring_flat_under_40_tiered_above():
-    pts = score_kicker(fg_under_40=2, fg_40_49=1, fg_50plus=1, xp_made=3)
-    assert pts == pytest.approx(2 * 3 + 1 * 4 + 1 * 5 + 3 * 1)
 
 
 def test_defense_scoring_has_no_yards_allowed_tier():
@@ -158,9 +153,8 @@ def test_reach_summary_flags_consistent_early_drafter():
     assert other_row["avg_reach_rounds"] < 0
 
 
-def test_replacement_ranks_no_flex_share_for_def_or_k():
+def test_replacement_ranks_no_flex_share_for_def():
     ranks = replacement_ranks(num_teams=12)
-    assert ranks["K"] == 12
     assert ranks["DEF"] == 12
     assert ranks["QB"] == 12
 
@@ -174,12 +168,12 @@ def test_replacement_ranks_two_dedicated_rb_and_wr_slots():
 
 def test_compute_vor_orders_by_value_over_replacement():
     df = pd.DataFrame([
-        {"player_name": f"K{i}", "position": "K", "projected_points": 200 - i * 5}
+        {"player_name": f"DEF{i}", "position": "DEF", "projected_points": 200 - i * 5}
         for i in range(15)
     ])
     out = compute_vor(df, num_teams=12)
-    best = out[out.player_name == "K0"].iloc[0]
-    replacement = out[out.player_name == "K11"].iloc[0]  # 12th K = replacement level
+    best = out[out.player_name == "DEF0"].iloc[0]
+    replacement = out[out.player_name == "DEF11"].iloc[0]  # 12th DEF = replacement level
     assert best["vor"] > 0
     assert replacement["vor"] == pytest.approx(0, abs=0.01)
 

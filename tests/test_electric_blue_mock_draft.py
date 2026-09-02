@@ -15,24 +15,22 @@ def _pool():
         rows.append({"player_name": f"QB{i}", "position": "QB", "nfl_team": "X", "projected_points": 250 - i, "vor": 90 - i})
     for i in range(24):
         rows.append({"player_name": f"TE{i}", "position": "TE", "nfl_team": "X", "projected_points": 120 - i, "vor": 40 - i})
-    # K/DEF given artificially high VOR -- exactly the real-world distortion
+    # DEF given artificially high VOR -- exactly the real-world distortion
     # this league's actual scoring produces -- to prove the deferral rule
     # actually overrides raw VOR rather than coincidentally not mattering.
-    for i in range(5):
-        rows.append({"player_name": f"K{i}", "position": "K", "nfl_team": "X", "projected_points": 180 - i, "vor": 150 - i})
     for i in range(5):
         rows.append({"player_name": f"DEF{i}", "position": "DEF", "nfl_team": "X", "projected_points": 175 - i, "vor": 145 - i})
     return pd.DataFrame(rows)
 
 
-def test_kicker_and_def_are_never_drafted_before_the_deferral_round():
+def test_def_is_never_drafted_before_the_deferral_round():
     pool = _pool()
     rosters = simulate_draft(pool, num_teams=12, rounds=14)
     picks_per_team = 14
     for slot, roster in rosters.items():
         for i, pick in enumerate(roster):
             rnd = i + 1  # each team's own Nth pick == round N
-            if pick["position"] in ("K", "DEF"):
+            if pick["position"] == "DEF":
                 assert rnd >= 13, f"slot {slot} drafted {pick['player_name']} ({pick['position']}) in round {rnd}"
 
 
@@ -65,8 +63,7 @@ def test_optimal_lineup_points_uses_flex_for_best_remaining_rwt():
         {"position": "WR", "projected_points": 130},
         {"position": "WR", "projected_points": 100},
         {"position": "TE", "projected_points": 80},
-        {"position": "K", "projected_points": 60},
         {"position": "DEF", "projected_points": 50},
     ]
     total = optimal_lineup_points(roster)
-    assert total == 300 + 200 + 150 + 130 + 100 + 80 + 60 + 50 + 140
+    assert total == 300 + 200 + 150 + 130 + 100 + 80 + 50 + 140

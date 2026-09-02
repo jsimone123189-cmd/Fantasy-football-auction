@@ -38,13 +38,6 @@ RUSH_YARD_BONUSES = [(100, 2), (200, 4), (297, 25)]
 REC_YARD_BONUSES = [(100, 1), (200, 3), (337, 25)]
 BONUS_CV = {"pass": 0.28, "rush": 0.42, "rec": 0.48}
 
-KICKER_SCORING_BY_DISTANCE = {
-    "under_40": 3,   # FG 0-19, 20-29, 30-39 all score the same flat 3
-    "40_49": 4,
-    "50plus": 5,
-    "xp_made": 1,
-}
-
 DEF_SCORING = {
     "sack": 1,
     "interception": 2,
@@ -87,15 +80,6 @@ def expected_milestone_bonus(games: float, pass_ypg: float = 0.0, rush_ypg: floa
         for threshold, bonus in bonuses:
             per_game += _normal_survival(threshold, ypg, sd) * bonus
     return per_game * games
-
-
-def score_kicker(fg_under_40: float, fg_40_49: float, fg_50plus: float, xp_made: float) -> float:
-    return (
-        fg_under_40 * KICKER_SCORING_BY_DISTANCE["under_40"]
-        + fg_40_49 * KICKER_SCORING_BY_DISTANCE["40_49"]
-        + fg_50plus * KICKER_SCORING_BY_DISTANCE["50plus"]
-        + xp_made * KICKER_SCORING_BY_DISTANCE["xp_made"]
-    )
 
 
 def _tiered_points(value: float, tiers: list[tuple[float, float]]) -> float:
