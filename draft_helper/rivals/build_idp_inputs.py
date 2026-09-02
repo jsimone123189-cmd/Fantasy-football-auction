@@ -41,6 +41,19 @@ SOURCE_FILES = ["idp_dl_2026.csv", "idp_lb_2026.csv", "idp_db_2026.csv"]
 
 RISK_BASE_GAMES = {"low": 17, "medium": 16, "high": 14, "very_high": 11}
 
+# Explicit, disclosed real-role-change multipliers on top of a player's own
+# observed tackle/PD rate, for cases where real, specific 2026 reporting
+# says usage is materially different from the raw historical rate -- not a
+# guess, a named, sourced adjustment. Travis Hunter: real reporting (Aug-
+# Sept 2026, Jaguars beat coverage) confirms a real uptick in his CB usage
+# for 2026 vs his rookie-year defensive snap share; his matching offensive
+# targets_pg was trimmed down in data/projections/inputs_2026.csv for the
+# same reason (a two-way player's total snaps are a real, finite budget --
+# more defense plausibly means somewhat less offense, not both growing
+# independently). See rivals/build.py's TWO_WAY_PLAYERS for how his
+# offense and defense rows get combined into one player.
+ROLE_CHANGE_MULT = {"Travis Hunter": 1.2}
+
 # Real problem found live during a draft (Aug 2026): sack/TFL/forced-fumble/INT/
 # pass-defended rates were being carried straight from 2025 into the 2026
 # per-game rate with zero regression. That's fine for solo/assisted tackles --
@@ -180,19 +193,21 @@ def _derive(row, solo_share: float, pos_means: dict) -> dict | None:
     int_pg = _shrink(_rate(row.get("int_2025"), games), pos_means["int_2025"])
     pd_pg = _shrink(_rate(row.get("pd_2025"), games), pos_means["pd_2025"])
 
+    tackle_role_mult = ROLE_CHANGE_MULT.get(row["player_name"], 1.0)
+
     return {
         "player_name": row["player_name"],
         "position": row["position"],
         "nfl_team": row.get("nfl_team", ""),
         "games_proj": games_proj,
-        "solo_pg": round(_rate(solo_total, games), 3),
-        "ast_pg": round(_rate(ast_total, games), 3),
+        "solo_pg": round(_rate(solo_total, games) * tackle_role_mult, 3),
+        "ast_pg": round(_rate(ast_total, games) * tackle_role_mult, 3),
         "tfl_pg": round(tfl_pg, 3),
         "sack_pg": round(sack_pg, 3),
         "ff_pg": round(ff_pg, 3),
         "fr_pg": round(fr_pg, 3),
         "int_pg": round(int_pg, 3),
-        "pd_pg": round(pd_pg, 3),
+        "pd_pg": round(pd_pg * tackle_role_mult, 3),
         "risk_tier": risk_tier,
         "role_note": (role_note or str(row.get("role_2026", ""))) + backfill_note,
     }
