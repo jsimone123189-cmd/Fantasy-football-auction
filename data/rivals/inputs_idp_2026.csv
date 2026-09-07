@@ -42,7 +42,7 @@ John Franklin-Myers,DE,TEN,17,0.75,0.812,0.353,0.474,0.056,0.027,0.0,0.089,low,"
 Byron Young,DE,LA,17,2.647,2.176,0.353,0.593,0.085,0.027,0.0,0.089,low,"Full-time starting edge rusher, dominant duo with Jared Verse"
 Nik Bonitto,DE,DEN,17,1.824,0.882,0.353,0.651,0.115,0.027,0.0,0.119,low,"Full-time starting edge rusher, elite pass rusher"
 Austin Booker,DE,CHI,16,2.1,1.4,0.353,0.465,0.106,0.027,0.0,0.089,medium,"Real rotational-to-starting edge rusher, one of Chicago's top-2 sack producers in 2025 alongside Montez Sweat, under contract through 2027"
-Chase Young,DE,NO,17,1.833,1.333,0.811,0.656,0.139,0.152,0.0,0.256,low,Re-signed 3yr/$51M with the Saints; entering 2026 as the team's top pass-rush threat following Cameron Jordan's departure
+Chase Young,DE,NO,14,1.833,1.333,0.811,0.656,0.139,0.152,0.0,0.256,high,Re-signed 3yr/$51M with the Saints; entering 2026 as the team's top pass-rush threat following Cameron Jordan's departure
 Fred Warner,MLB,SF,14,4.667,3.667,0.215,0.075,0.219,0.123,0.051,0.409,high,"Real 2025 season-ending injury on record, but the same research confirms he's cleared/fully healthy for 2026 -- games_proj uses the real 'high risk' games count instead of the harsher unrecovered discount, since there's no specific 2026 games-missed signal left, just residual uncertainty until proven in game action."
 Roquan Smith,ILB,BAL,17,5.067,3.6,0.215,0.075,0.052,0.039,0.151,0.159,low,"Starter, three-down, team captain"
 Zaire Franklin,ILB,GB,16,3.647,3.706,0.215,0.134,0.082,0.039,0.051,0.306,medium,"Starter at MLB, replacing Quay Walker"
