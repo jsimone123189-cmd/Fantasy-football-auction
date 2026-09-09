@@ -70,7 +70,7 @@ ROLE_CHANGE_MULT = {"Travis Hunter": 1.2}
 BOOM_BUST_SHRINKAGE = 0.5
 BOOM_BUST_STATS = ("tfl_2025", "sacks_2025", "ff_2025", "fr_2025", "int_2025", "pd_2025")
 
-RETIRED_RE = re.compile(r"\bretir", re.IGNORECASE)
+RETIRED_RE = re.compile(r"\bretired\b", re.IGNORECASE)
 UNSIGNED_RE = re.compile(r"unsigned|free agent \(unsigned|no 2026 team", re.IGNORECASE)
 SEASON_ENDING_RE = re.compile(
     r"season-ending|torn (acl|achilles|bicep|meniscus)|neck surgery|IR\b.*(uncertain|recovery)",
