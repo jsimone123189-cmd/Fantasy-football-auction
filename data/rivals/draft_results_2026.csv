@@ -1,0 +1,305 @@
+pick,round,team,player,pos
+1,1,Welcome To The Big Show,Jahmyr Gibbs,RB
+2,1,A.I see what you done there?,Bijan Robinson,RB
+3,1,Spokane Jackalopes,Ja'Marr Chase,WR
+4,1,The Leviathan,Puka Nacua,WR
+5,1,Calculated chaos,CeeDee Lamb,WR
+6,1,The Jaxsen Tyus's,Christian McCaffrey,RB
+7,1,Legion of worst,Jonathan Taylor,RB
+8,1,Steely,Jaxon Smith-Njigba,WR
+9,1,RigoRigo,James Cook III,RB
+10,1,Church of Gronk,Amon-Ra St. Brown,WR
+11,1,Favre Dolar Footlong,Justin Jefferson,WR
+12,1,MMFFL,De'Von Achane,RB
+13,1,WashMo,A.J. Brown,WR
+14,1,Southeastern FL,Chase Brown,RB
+15,1,GeetheWhiz,Nico Collins,WR
+16,1,SD Boyz,Derrick Henry,RB
+17,2,SD Boyz,Saquon Barkley,RB
+18,2,GeetheWhiz,Kyren Williams,RB
+19,2,Southeastern FL,Drake London,WR
+20,2,WashMo,Omarion Hampton,RB
+21,2,MMFFL,Chris Olave,WR
+22,2,Favre Dolar Footlong,Rashee Rice,WR
+23,2,Church of Gronk,Brock Bowers,TE
+24,2,RigoRigo,Garrett Wilson,WR
+25,2,Steely,Kenneth Walker III,RB
+26,2,Calculated chaos,Trey McBride,TE
+27,2,The Jaxsen Tyus's,Ashton Jeanty,RB
+28,2,Legion of worst,DeVonta Smith,WR
+29,2,The Leviathan,Josh Allen,QB
+30,2,Spokane Jackalopes,Javonte Williams,RB
+31,2,A.I see what you done there?,Jeremiyah Love,RB
+32,2,Welcome To The Big Show,Emeka Egbuka,WR
+33,3,Welcome To The Big Show,Malik Nabers,WR
+34,3,A.I see what you done there?,Zay Flowers,WR
+35,3,Spokane Jackalopes,D'Andre Swift,RB
+36,3,The Leviathan,George Pickens,WR
+37,3,Legion of worst,Tee Higgins,WR
+38,3,The Jaxsen Tyus's,Tetairoa McMillan,WR
+39,3,Calculated chaos,Lamar Jackson,QB
+40,3,Steely,Jaylen Waddle,WR
+41,3,RigoRigo,Tyler Warren,TE
+42,3,Church of Gronk,David Montgomery,RB
+43,3,Favre Dolar Footlong,Ladd McConkey,WR
+44,3,MMFFL,Colston Loveland,TE
+45,3,WashMo,Davante Adams,WR
+46,3,Southeastern FL,Luther Burden III,WR
+47,3,GeetheWhiz,Travis Etienne Jr.,RB
+48,3,SD Boyz,Terry McLaurin,WR
+49,4,SD Boyz,Rome Odunze,WR
+50,4,GeetheWhiz,Jameson Williams,WR
+51,4,Southeastern FL,Breece Hall,RB
+52,4,WashMo,DJ Moore,WR
+53,4,MMFFL,Drake Maye,QB
+54,4,Favre Dolar Footlong,Cam Skattebo,RB
+55,4,Church of Gronk,Bhayshul Tuten,RB
+56,4,RigoRigo,Rachaad White,RB
+57,4,Steely,Mike Evans,WR
+58,4,Calculated chaos,Marvin Harrison Jr.,WR
+59,4,The Jaxsen Tyus's,Parker Washington,WR
+60,4,Legion of worst,Joe Burrow,QB
+61,4,The Leviathan,Bucky Irving,RB
+62,4,Spokane Jackalopes,Christian Watson,WR
+63,4,A.I see what you done there?,Tucker Kraft,TE
+64,4,Welcome To The Big Show,Quinshon Judkins,RB
+65,5,Welcome To The Big Show,Jayden Daniels,QB
+66,5,A.I see what you done there?,Chris Godwin Jr.,WR
+67,5,Spokane Jackalopes,Caleb Williams,QB
+68,5,The Leviathan,Jadarian Price,RB
+69,5,Legion of worst,De'Zhaun Stribling,WR
+70,5,The Jaxsen Tyus's,Carnell Tate,WR
+71,5,Calculated chaos,Alec Pierce,WR
+72,5,Steely,Harold Fannin Jr.,TE
+73,5,RigoRigo,Rashid Shaheed,WR
+74,5,Church of Gronk,Brian Thomas Jr.,WR
+75,5,Favre Dolar Footlong,TreVeyon Henderson,RB
+76,5,MMFFL,Rhamondre Stevenson,RB
+77,5,WashMo,Dak Prescott,QB
+78,5,Southeastern FL,Stefon Diggs,WR
+79,5,GeetheWhiz,MarShawn Lloyd,RB
+80,5,SD Boyz,Jalen Hurts,QB
+81,6,SD Boyz,Kyle Pitts,TE
+82,6,GeetheWhiz,RJ Harvey,RB
+83,6,Southeastern FL,Jordan Addison,WR
+84,6,WashMo,Sam LaPorta,TE
+85,6,MMFFL,Michael Pittman Jr.,WR
+86,6,Favre Dolar Footlong,Wan'Dale Robinson,WR
+87,6,Church of Gronk,DK Metcalf,WR
+88,6,RigoRigo,Deebo Samuel,WR
+89,6,Steely,Jaylen Warren,RB
+90,6,Legion of worst,Michael Wilson,WR
+91,6,The Jaxsen Tyus's,Jonathon Brooks,RB
+92,6,Calculated chaos,Jordyn Brooks,LB
+93,6,The Leviathan,Quentin Johnston,WR
+94,6,Spokane Jackalopes,Makai Lemon,WR
+95,6,A.I see what you done there?,Jalen Coker,WR
+96,6,Welcome To The Big Show,Courtland Sutton,WR
+97,7,Welcome To The Big Show,Dallas Goedert,TE
+98,7,A.I see what you done there?,Josh Downs,WR
+99,7,Spokane Jackalopes,Kyle Monangai,RB
+100,7,The Leviathan,George Kittle,TE
+101,7,Legion of worst,Blake Corum,RB
+102,7,The Jaxsen Tyus's,Trevor Lawrence,QB
+103,7,Calculated chaos,Rico Dowdle,RB
+104,7,Steely,J.K. Dobbins,RB
+105,7,RigoRigo,Chuba Hubbard,RB
+106,7,Church of Gronk,Jacory Croskey-Merritt,RB
+107,7,Favre Dolar Footlong,KC Concepcion,WR
+108,7,MMFFL,Jayden Reed,WR
+109,7,WashMo,Travis Hunter,WR
+110,7,Southeastern FL,Josh Jacobs,RB
+111,7,GeetheWhiz,Myles Garrett,DL
+112,7,SD Boyz,Jakobi Meyers,WR
+113,8,SD Boyz,Aidan Hutchinson,DL
+114,8,GeetheWhiz,Travis Kelce,TE
+115,8,Southeastern FL,Xavier Worthy,WR
+116,8,WashMo,Tony Pollard,RB
+117,8,MMFFL,Brandon Aubrey,K
+118,8,Favre Dolar Footlong,Justin Herbert,QB
+119,8,Church of Gronk,Bo Nix,QB
+120,8,RigoRigo,Maxx Crosby,DL
+121,8,Steely,Carson Schwesinger,LB
+122,8,Legion of worst,Blake Cashman,LB
+123,8,The Jaxsen Tyus's,Isaiah Likely,TE
+124,8,Calculated chaos,Jeffery Simmons,DL
+125,8,The Leviathan,Jack Campbell,LB
+126,8,Spokane Jackalopes,Nick Bolton,LB
+127,8,A.I see what you done there?,Jordan Love,QB
+128,8,Welcome To The Big Show,Will Anderson Jr.,DL
+129,9,Welcome To The Big Show,Roquan Smith,LB
+130,9,A.I see what you done there?,Patrick Mahomes,QB
+131,9,Spokane Jackalopes,Khalil Shakir,WR
+132,9,The Leviathan,Danielle Hunter,DL
+133,9,Legion of worst,Brian Burns,LB
+134,9,The Jaxsen Tyus's,Tremaine Edmunds,LB
+135,9,Calculated chaos,Jake Ferguson,TE
+136,9,Steely,Matthew Golden,WR
+137,9,RigoRigo,Fred Warner,LB
+138,9,Church of Gronk,Jordan Mason,RB
+139,9,Favre Dolar Footlong,Nick Bosa,DL
+140,9,MMFFL,Foyesade Oluokun,LB
+141,9,WashMo,Cedric Gray,LB
+142,9,Southeastern FL,Kyler Murray,QB
+143,9,GeetheWhiz,Cooper DeJean,DB
+144,9,SD Boyz,Alex Singleton,LB
+145,10,SD Boyz,Derwin James Jr.,DB
+146,10,GeetheWhiz,Brock Purdy,QB
+147,10,Southeastern FL,Dalton Kincaid,TE
+148,10,WashMo,Jared Verse,DL
+149,10,MMFFL,Austin Booker,DL
+150,10,Favre Dolar Footlong,Kyle Hamilton,DB
+151,10,Church of Gronk,Zack Baun,LB
+152,10,RigoRigo,Jaxson Dart,QB
+153,10,Steely,Josh Hines-Allen,DL
+154,10,Calculated chaos,Kenneth Gainwell,RB
+155,10,The Jaxsen Tyus's,Romeo Doubs,WR
+156,10,Legion of worst,Brenton Strange,TE
+157,10,The Leviathan,Budda Baker,DB
+158,10,Spokane Jackalopes,Derrick Brown,DL
+159,10,A.I see what you done there?,Ernest Jones IV,LB
+160,10,Welcome To The Big Show,Jordyn Tyson,WR
+161,11,Welcome To The Big Show,Nick Cross,DB
+162,11,A.I see what you done there?,Aaron Jones,RB
+163,11,Spokane Jackalopes,Talanoa Hufanga,DB
+164,11,The Leviathan,Mike Washington Jr.,RB
+165,11,Legion of worst,Chris Rodriguez Jr.,RB
+166,11,The Jaxsen Tyus's,Tyler Allgeier,RB
+167,11,Calculated chaos,Jeremy Chinn,DB
+168,11,Steely,Nick Emmanwori,DB
+169,11,RigoRigo,Chamarri Conner,DB
+170,11,Church of Gronk,Kevin Byard III,DB
+171,11,Favre Dolar Footlong,Mark Andrews,TE
+172,11,MMFFL,Keenan Allen,WR
+173,11,WashMo,Tre Tucker,WR
+174,11,Southeastern FL,Tank Bigsby,RB
+175,11,GeetheWhiz,Dontayvion Wicks,WR
+176,11,SD Boyz,Jared Goff,QB
+177,12,SD Boyz,Denzel Boston,WR
+178,12,GeetheWhiz,Malik Willis,QB
+179,12,Southeastern FL,Terrance Ferguson,TE
+180,12,WashMo,Juwan Johnson,TE
+181,12,MMFFL,Jessie Bates III,DB
+182,12,Favre Dolar Footlong,Dalton Schultz,TE
+183,12,Church of Gronk,DeForest Buckner,DL
+184,12,RigoRigo,Oronde Gadsden II,TE
+185,12,Steely,Matthew Stafford,QB
+186,12,Calculated chaos,Jamien Sherwood,LB
+187,12,The Jaxsen Tyus's,Daniel Jones,QB
+188,12,Legion of worst,Montez Sweat,DL
+189,12,The Leviathan,Dexter Lawrence,DL
+190,12,Spokane Jackalopes,Kayshon Boutte,WR
+191,12,A.I see what you done there?,Trey Hendrickson,DL
+192,12,Welcome To The Big Show,Jauan Jennings,WR
+193,13,Welcome To The Big Show,Zach Charbonnet,RB
+194,13,A.I see what you done there?,Tykee Smith,DB
+195,13,Spokane Jackalopes,Woody Marks,RB
+196,13,The Leviathan,Cyrus Allen,WR
+197,13,Legion of worst,Malik Washington,WR
+198,13,The Jaxsen Tyus's,Chase Young,DL
+199,13,Calculated chaos,Baker Mayfield,QB
+200,13,Steely,Jonah Coleman,RB
+201,13,RigoRigo,Jake Bates,K
+202,13,Church of Gronk,Dylan Sampson,RB
+203,13,Favre Dolar Footlong,Tyler Shough,QB
+204,13,MMFFL,Brian Robinson,RB
+205,13,WashMo,Jalen McMillan,WR
+206,13,Southeastern FL,Ka'imi Fairbairn,K
+207,13,GeetheWhiz,Malachi Fields,WR
+208,13,SD Boyz,Alvin Kamara,RB
+209,14,SD Boyz,Chig Okonkwo,TE
+210,14,GeetheWhiz,Greg Dulcich,TE
+211,14,Southeastern FL,Kaelon Black,RB
+212,14,WashMo,Keaton Mitchell,RB
+213,14,MMFFL,T.J. Hockenson,TE
+214,14,Favre Dolar Footlong,Tyjae Spears,RB
+215,14,Church of Gronk,Cameron Dicker,K
+216,14,RigoRigo,C.J. Stroud,QB
+217,14,Steely,Ja'Kobi Lane,WR
+218,14,Calculated chaos,Evan McPherson,K
+219,14,The Jaxsen Tyus's,Jason Myers,K
+220,14,Legion of worst,Kamari Lassiter,DB
+221,14,The Leviathan,Kenyon Sadiq,TE
+222,14,Spokane Jackalopes,Hunter Henry,TE
+223,14,A.I see what you done there?,Jerry Jeudy,WR
+224,14,Welcome To The Big Show,Braelon Allen,RB
+225,15,Welcome To The Big Show,Sam Darnold,QB
+226,15,A.I see what you done there?,Jihaad Campbell,LB
+227,15,Spokane Jackalopes,Quay Walker,LB
+228,15,The Leviathan,Cam Ward,QB
+229,15,Legion of worst,Emmett Johnson,RB
+230,15,The Jaxsen Tyus's,Xavier McKinney,DB
+231,15,Calculated chaos,Jalen Carter,DL
+232,15,Steely,Edgerrin Cooper,LB
+233,15,RigoRigo,Justice Hill,RB
+234,15,Church of Gronk,Tyrone Tracy Jr.,RB
+235,15,Favre Dolar Footlong,AJ Barner,TE
+236,15,MMFFL,Tank Dell,WR
+237,15,WashMo,Nate Landman,LB
+238,15,Southeastern FL,Michael Penix Jr.,QB
+239,15,GeetheWhiz,Caleb Downs,DB
+240,15,SD Boyz,Cam Little,K
+241,16,SD Boyz,Adonai Mitchell,WR
+242,16,GeetheWhiz,Zaire Franklin,LB
+243,16,Southeastern FL,Cameron Heyward,DL
+244,16,WashMo,Kaleb Johnson,RB
+245,16,MMFFL,Bryce Young,QB
+246,16,Favre Dolar Footlong,Devin Lloyd,LB
+247,16,Church of Gronk,Jalen Nailor,WR
+248,16,RigoRigo,Cooper Kupp,WR
+249,16,Steely,Pat Freiermuth,TE
+250,16,Calculated chaos,Devaughn Vele,WR
+251,16,The Jaxsen Tyus's,Omar Cooper Jr.,WR
+252,16,Legion of worst,Chris Bell,WR
+253,16,The Leviathan,Isaac TeSlaa,WR
+254,16,Spokane Jackalopes,George Holani,RB
+255,16,A.I see what you done there?,Mack Wilson Sr.,LB
+256,16,Welcome To The Big Show,Evan Engram,TE
+257,17,Welcome To The Big Show,Andy Borregales,K
+258,17,A.I see what you done there?,Harrison Mevis,K
+259,17,Spokane Jackalopes,Jordan Battle,DB
+260,17,The Leviathan,Tyler Loop,K
+261,17,Legion of worst,Eddy Pineiro,K
+262,17,The Jaxsen Tyus's,Ray Davis,RB
+263,17,Calculated chaos,Ted Hurst III,WR
+264,17,Steely,Harrison Butker,K
+265,17,RigoRigo,Tyrel Dodson,LB
+266,17,Church of Gronk,Zachariah Branch,WR
+267,17,Favre Dolar Footlong,Spencer Shrader,K
+268,17,MMFFL,Ryan Flournoy,WR
+269,17,WashMo,Jalen Ramsey,DB
+270,17,Southeastern FL,Devin Bush,LB
+271,17,GeetheWhiz,Caleb Douglas,WR
+272,17,SD Boyz,Laiatu Latu,DL
+273,18,SD Boyz,Riley Moss,DB
+274,18,GeetheWhiz,David Bailey,DL
+275,18,Southeastern FL,Kam Curl,DB
+276,18,WashMo,Kimani Vidal,RB
+277,18,MMFFL,Antonio Williams,WR
+278,18,Favre Dolar Footlong,Malik Davis,RB
+279,18,Church of Gronk,Michael Mayer,TE
+280,18,RigoRigo,Samaje Perine,RB
+281,18,Steely,Micah Parsons,DL
+282,18,Calculated chaos,Chris Brooks,RB
+283,18,The Jaxsen Tyus's,Calvin Ridley,WR
+284,18,Legion of worst,Eli Raridon,TE
+285,18,The Leviathan,Christian Gonzalez,DB
+286,18,Spokane Jackalopes,Leonard Williams,DL
+287,18,A.I see what you done there?,Tre'von Moehrig,DB
+288,18,Welcome To The Big Show,Patrick Queen,LB
+289,19,Welcome To The Big Show,Tyreek Hill,WR
+290,19,A.I see what you done there?,Tre Harris,WR
+291,19,Spokane Jackalopes,Cairo Santos,K
+292,19,The Leviathan,James Conner,RB
+293,19,Legion of worst,Jacoby Brissett,QB
+294,19,The Jaxsen Tyus's,Tyler Bass,K
+295,19,Calculated chaos,Marlon Humphrey,DB
+296,19,Steely,Germie Bernard,WR
+297,19,RigoRigo,T.J. Edwards,LB
+298,19,Church of Gronk,Nicholas Singleton,RB
+299,19,Favre Dolar Footlong,Travon Walker,DL
+300,19,MMFFL,Trey Smack,K
+301,19,WashMo,Will Reichard,K
+302,19,Southeastern FL,Robert Spillane,LB
+303,19,GeetheWhiz,Jacob Rodriguez,LB
+304,19,SD Boyz,Azeez Al-Shaair,LB
