@@ -845,7 +845,7 @@ table.dollars td.num { font-family: var(--font-mono); text-align: right; }
   <header class="hero">
     <div class="eyebrow">Rivals League &middot; Fantrax &middot; Rivals FCL &middot; inaugural season</div>
     <h1 class="title">Rivals FCL Draft Intelligence</h1>
-    <p class="dek">16 teams, full PPR + full IDP + kicker, live online snake draft Aug 30, 2026 (18 rounds). No
+    <p class="dek">16 teams, full PPR + full IDP + kicker, live online snake draft Aug 30, 2026 (19 rounds). No
       league history exists yet &mdash; every ranking here is a from-scratch 2026 projection built the same way
       as the Top Teamz board (real opportunity/efficiency research, real 2025 IDP counting stats, real 2026 bye
       weeks), scored against Rivals FCL's actual confirmed rules and ranked by value over replacement (VOR) since
@@ -853,7 +853,7 @@ table.dollars td.num { font-family: var(--font-mono); text-align: right; }
   </header>
 
   <div class="stat-grid">
-    <div class="stat-tile"><div class="num">16</div><div class="lbl">teams, snake draft, 18 rounds</div></div>
+    <div class="stat-tile"><div class="num">16</div><div class="lbl">teams, snake draft, 19 rounds</div></div>
     <div class="stat-tile"><div class="num">1.0</div><div class="lbl">pt/reception (full PPR, not half)</div></div>
     <div class="stat-tile"><div class="num">9</div><div class="lbl">scored weeks: wk4&ndash;12 only</div></div>
     <div class="stat-tile"><div class="num">6</div><div class="lbl">teams on bye in wk11 &mdash; the champ. round</div></div>
@@ -1043,9 +1043,9 @@ table.dollars td.num { font-family: var(--font-mono); text-align: right; }
       4&ndash;12), so the totals read lower than a generic full-season projection &mdash; it's the ranking
       between slots that matters, not the raw number.</p>
     <p style="margin-top:-6px;"><b>What this section actually measures, stated plainly (Aug 2026):</b> this is "if
-      you could choose to draft <i>all 18 rounds</i> from one slot, which is structurally best" &mdash; a full
+      you could choose to draft <i>all 19 rounds</i> from one slot, which is structurally best" &mdash; a full
       hypothetical slot swap. It is <b>not</b> a way to evaluate your real pick-5 trade, which only changed 3 of
-      your 18 picks (rounds 1, 6, 8) &mdash; the other 15 are still your original slot-7 sequence. An earlier
+      your 19 picks (rounds 1, 6, 8) &mdash; the other 16 are still your original slot-7 sequence. An earlier
       version of this section used this full-slot comparison to cast doubt on that trade, which was a real
       mistake: comparing two different things and treating the mismatch as a finding. The correct, apples-to-apples
       answer on the trade itself is the pick-for-pick comparison earlier in this report ("Real total predicted
@@ -1054,20 +1054,20 @@ table.dollars td.num { font-family: var(--font-mono); text-align: right; }
     <p><b>Also fixed here:</b> the neutral simulator had a real bug of its own, caught while checking this ranking
       &mdash; a pure best-value-available bot has no rule against leaving a mandatory starting position empty, and
       once RB was correctly priced as scarce, one slot's specific run of turns happened to never have an RB be the
-      single best player available, leaving it with a real, unrealistic zero at RB for all 18 rounds. No actual
+      single best player available, leaving it with a real, unrealistic zero at RB for all 19 rounds. No actual
       manager would ever do that. Fixed by giving every simulated team a real "don't leave a starting slot empty"
       rule once it's out of rounds to keep waiting &mdash; every slot now fills all 8 mandatory positions.</p>
     <div class="target-grid">
       <div class="target-row">
-        <span class="pn">Best slot: #2</span><span class="px">1,056.9 pts</span>
-        <span class="why">Also strong: #9, #16, #1 (1,013&ndash;1,025 pts) &mdash; land a real bell-cow RB or alpha
+        <span class="pn">Best slot: #9</span><span class="px">1,091.0 pts</span>
+        <span class="why">Also strong: #8, #12, #4 (1,064&ndash;1,074 pts) &mdash; land a real bell-cow RB or alpha
           WR before the tier clears, several with a favorable wheel at the round 1/2 turn.</span>
       </div>
       <div class="target-row avoid-row">
-        <span class="pn">Worst slot (full-18-round hypothetical): #5</span><span class="px">932.8 pts</span>
+        <span class="pn">Worst slot (full-19-round hypothetical): #5</span><span class="px">988.9 pts</span>
         <span class="why watch">16th of 16 &mdash; a structural finding about the slot, not your real roster</span>
-        <span class="why">Also weak: #14, #8 (963&ndash;965 pts). Real, but scoped correctly this time: this
-          describes drafting all 18 rounds from #5, which isn't your actual situation &mdash; you only have #5 for
+        <span class="why">Also weak: #10, #6 (990&ndash;1,021 pts). Real, but scoped correctly this time: this
+          describes drafting all 19 rounds from #5, which isn't your actual situation &mdash; you only have #5 for
           round 1. See the pick-for-pick trade analysis above for what your real, partial move to #5 actually did
           to your total.</span>
       </div>
@@ -1285,7 +1285,7 @@ table.dollars td.num { font-family: var(--font-mono); text-align: right; }
     <p>Applied to the season structure above: rounds 1&ndash;9 are your group-stage foundation (take the board as
       shown &mdash; floor matters more than ceiling in Weeks 4&ndash;8); rounds 10&ndash;13 are exactly where your
       DB2/DL depth picks collide with the Week 11 landmine cluster, so that's where value-hunting shifts to
-      bye-aware value-hunting; rounds 14&ndash;18 are your only real shot at Week 9&ndash;12 ceiling plays &mdash;
+      bye-aware value-hunting; rounds 14&ndash;19 are your only real shot at Week 9&ndash;12 ceiling plays &mdash;
       spend them on upside/role-clarity bets, not safe-but-capped depth, since a bench player who never starts is
       worthless in single elimination.</p>
 

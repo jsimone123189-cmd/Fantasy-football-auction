@@ -28,7 +28,7 @@ def _empirical_flex_share(pool: pd.DataFrame, trials: int, seed: int) -> dict:
     for _ in range(trials):
         jittered = pool.copy()
         jittered["vor"] = jittered["vor"] + [rng.uniform(-0.5, 0.5) for _ in range(len(jittered))]
-        rosters = simulate_draft(jittered, num_teams=16, rounds=18)
+        rosters = simulate_draft(jittered, num_teams=16, rounds=19)
 
         for roster in rosters.values():
             by_pos: dict[str, list[dict]] = {}

@@ -23,7 +23,7 @@ import pandas as pd
 from .value import FLEX_SHARE, NUM_TEAMS, STARTERS
 
 ROSTER_MAX = {"QB": 3, "RB": 4, "WR": 5, "TE": 3, "DL": 3, "LB": 3, "DB": 3, "K": 2}
-ROUNDS = 18
+ROUNDS = 19
 FLEX_ELIGIBLE = {"RB", "WR", "TE"}
 
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
@@ -47,7 +47,7 @@ def simulate_draft(pool: pd.DataFrame, num_teams: int = NUM_TEAMS, rounds: int =
     legitimately never have a given position be the single highest-VOR
     player at any of its specific turns across a whole draft -- e.g. once
     RB is correctly priced as scarce, a bot picking from a slot whose turns
-    happen to fall right after each round's best RB is gone can go all 18
+    happen to fall right after each round's best RB is gone can go all 19
     rounds without ever rostering one, leaving that starting slot at a
     real 0 points. No actual manager would do that, and it's not a real
     property of the slot -- it's a simulator artifact. The fix: once the
