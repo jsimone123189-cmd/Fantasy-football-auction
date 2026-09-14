@@ -7,9 +7,9 @@ Half-PPR, 1pt/25 pass yards (not Top Teamz's 1pt/50 or Rivals' 1pt/25 --
 coincidentally the same rate as Rivals, but everything else differs), three-
 tier stacking yardage milestone bonuses on ALL THREE of passing/rushing/
 receiving yards (Top Teamz only has pass+rush bonuses; Rivals has none at
-all), fully distance-tiered kicker scoring (not flat+bonus like Rivals),
-and points-allowed-only DEF scoring (no yards-allowed tier, unlike Top
-Teamz).
+all), no kicker (dropped from the league for 2026 -- no K roster slot, no
+kicker scoring), and points-allowed-only DEF scoring (no yards-allowed
+tier, unlike Top Teamz).
 """
 from __future__ import annotations
 
