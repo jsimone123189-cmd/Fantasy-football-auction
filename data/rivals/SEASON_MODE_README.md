@@ -26,12 +26,22 @@ draft-era `data/rivals/2026.csv` was for the draft itself.
   (theirs or an observed one worth tracking).
 - `weekly_scores_2026.csv` -- long-format log, one row per (week,
   player_name) once real games start scoring (Week 4+): `week,
-  player_name, team_owner, position, points, note`. Populate this by
+  player_name, team_owner, position, points`. Populate this by
   looking up real box scores and scoring them under this league's real
   rules (`draft_helper/rivals/model.py`'s scoring functions) when the user
   asks about a given week, or asks for a waiver-wire scan. This is what
   "log scores for waiver decisions" means in practice -- it's not automatic,
-  it happens each time the user checks in.
+  it happens each time the user checks in. **No per-row `note` column** --
+  keep it to 5 columns; a repeated explanatory sentence on every row bloats
+  the file for no reason (this file gets re-read into context most weeks).
+  Any caveat that applies to a whole week (e.g. "Weeks 1-3 don't count
+  toward standings") belongs here in the README once, not on every row.
+  Same rule for `team_scores_2026.csv`.
+
+  **Weeks 1-3 (2026) don't count toward Rivals FCL standings** -- the
+  scored season is Weeks 4-12 only (see the league facts at the top of
+  this file). Early-week rows in this log are real signal for waiver/
+  lineup decisions, not scored results.
 - `draft_grades_2026.md` -- the full draft postmortem/grades, frozen as of
   the end of the draft. Doesn't get overwritten during the season; season
   performance gets tracked in the files above instead.
