@@ -30,7 +30,7 @@ updated by hand (by Claude, prompted by the user) as real events happen.
 
 ## Which team is "you"
 
-**3peat Worthy** (manager: justin s, per `research/managers_by_season.csv`).
+**Daejon Love the Game** (manager: justin s, per `research/managers_by_season.csv`).
 Flagged as `is_you=True` in `faab_2026.csv`.
 
 ## When a real waiver move happens

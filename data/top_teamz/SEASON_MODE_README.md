@@ -2,7 +2,7 @@
 
 12-team auction ($200 draft budget), 0.5 PPR, full season (Weeks 1-17/18,
 no delayed-scoring window like Rivals). $100 season FAAB per team plus
-numbered waiver priority (1-12). Your team is **Calvin and Hobbes**
+numbered waiver priority (1-12). Your team is **Maserati Marv**
 (manager "justin s" -- explicitly marked "(you)" in the prior
 `season_companion_2026.html`).
 
@@ -42,7 +42,7 @@ ongoing season/waiver work.
   numbers as a reasonable guess, not confirmed fact, until the user
   verifies the real FAAB ledger.
 - `moves_log_2026.csv` -- the 3 real season moves captured in the prior
-  HTML doc: a trade (Calvin and Hobbes <-> Bye Week, TreVeyon Henderson
+  HTML doc: a trade (Maserati Marv <-> Bye Week, TreVeyon Henderson
   for Jayden Daniels) and 2 waiver adds (Bye Week added Ravens D/ST, Tee
   Time dropped Kenyon Sadiq for Kaleb Johnson). Add a new row here for
   every future move, in addition to updating `draft_results_2026.csv` and
