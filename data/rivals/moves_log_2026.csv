@@ -1,2 +1,5 @@
 date,team,move_type,player_added,player_dropped,faab_spent,note
 2026-09-19,Calculated chaos,BID_LOST,Chuba Hubbard,,0,"You bid $96, lost. Favre Dollar Footlong won with $430. No FAAB spent (blind bids only cost on a win). Singletary was NOT dropped -- the planned Hubbard-for-Singletary swap did not happen. Real market calibration: Rivals RB1-tier waiver value can run 4x+ higher than expected -- treat this league's RB scarcity bidding as more aggressive than the Yahoo leagues."
+2026-09-19,Calculated chaos,ADD,Baker Mayfield,,1,Re-added Baker Mayfield for $1 after an earlier accidental drop -- backup QB / trade depth.
+2026-09-19,Calculated chaos,ADD,Myles Garrett,,5,"Added Myles Garrett (DL/LB) for $5, picked up off waivers after GeetheWhiz cut him."
+2026-09-19,Calculated chaos,DROP,,Jalen Carter,0,Dropped Jalen Carter -- flagged with an injury/questionable tag on Fantrax at the time of the drop.
