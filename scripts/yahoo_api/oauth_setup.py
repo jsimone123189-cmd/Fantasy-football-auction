@@ -39,6 +39,11 @@ def print_auth_url():
         "redirect_uri": creds["redirect_uri"],
         "response_type": "code",
         "language": "en-us",
+        # Yahoo's Fantasy Sports API has, in practice, mostly gated access via
+        # the app's "API Permissions" checkbox (developer.yahoo.com/apps) rather
+        # than this scope param -- but requesting it explicitly is free and some
+        # accounts do need it, so include it on every login.
+        "scope": "fspt-r",
     }
     print(f"{AUTH_URL}?{urlencode(params)}")
 
