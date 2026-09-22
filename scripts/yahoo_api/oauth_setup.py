@@ -17,7 +17,7 @@ import base64
 import json
 import sys
 from pathlib import Path
-from urllib.parse import urlencode
+from urllib.parse import parse_qs, urlencode, urlparse
 
 import requests
 
@@ -53,8 +53,21 @@ def _basic_auth_header(creds):
     return base64.b64encode(raw).decode()
 
 
-def exchange_code(code):
+def extract_code(code_or_url):
+    """Accepts either a bare code or the full (failed-to-load) redirect URL
+    and returns just the code."""
+    value = code_or_url.strip()
+    if value.startswith("http://") or value.startswith("https://"):
+        codes = parse_qs(urlparse(value).query).get("code")
+        if not codes:
+            raise ValueError(f"No 'code' query parameter found in URL: {value}")
+        return codes[0]
+    return value
+
+
+def exchange_code(code_or_url):
     creds = load_creds()
+    code = extract_code(code_or_url)
     resp = requests.post(
         TOKEN_URL,
         headers={
