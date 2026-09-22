@@ -28,6 +28,22 @@ updated by hand (by Claude, prompted by the user) as real events happen.
   box scores scored under `draft_helper/electric_blue/scoring.py`'s real
   rules -- not automatic.
 
+  **Weeks 1-2 (2026) sourcing note**: the Yahoo Fantasy Sports API is
+  currently blocked account-wide (Yahoo pulled self-serve API access
+  clean off in July 2026; an access request is in with Yahoo's new
+  manual-review program, ETA 1-2 weeks). Weeks 1-2 were instead computed
+  from real per-play box score data pulled directly from ESPN's public
+  scoreboard/summary API (passing/rushing/receiving/fumbles/return stats
+  + team defensive stats), scored under this file's exact rules above
+  (including deterministic per-game yardage milestone bonuses -- not the
+  probabilistic season-projection version in `scoring.py`). A handful of
+  rostered players had zero stat line or no game appearance at all in
+  both weeks (flagged in the `note` column) -- that's a real signal
+  (inactive/injured/off-roster), not a lookup failure, but isn't
+  independently confirmed against news; verify before treating as fact.
+  Once Yahoo access is approved, prefer official Yahoo box scores for any
+  future week over this ESPN-sourced method.
+
 ## Which team is "you"
 
 **Daejon Love the Game** (manager: justin s, per `research/managers_by_season.csv`).
