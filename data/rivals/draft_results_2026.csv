@@ -109,7 +109,7 @@ pick,round,team,player,pos
 108,7,MMFFL,Jayden Reed,WR
 109,7,WashMo,Travis Hunter,WR
 110,7,Southeastern FL,Josh Jacobs,RB
-111,7,GeetheWhiz,Myles Garrett,DL
+111,7,Calculated chaos,Myles Garrett,DL
 112,7,SD Boyz,Jakobi Meyers,WR
 113,8,SD Boyz,Aidan Hutchinson,DL
 114,8,GeetheWhiz,Travis Kelce,TE
@@ -165,14 +165,13 @@ pick,round,team,player,pos
 164,11,The Leviathan,Mike Washington Jr.,RB
 165,11,Legion of worst,Chris Rodriguez Jr.,RB
 166,11,The Jaxsen Tyus's,Tyler Allgeier,RB
-167,11,Calculated chaos,Jeremy Chinn,DB
 168,11,Steely,Nick Emmanwori,DB
 169,11,RigoRigo,Chamarri Conner,DB
 170,11,Church of Gronk,Kevin Byard III,DB
 171,11,Favre Dolar Footlong,Mark Andrews,TE
 172,11,MMFFL,Keenan Allen,WR
 173,11,WashMo,Tre Tucker,WR
-174,11,Southeastern FL,Tank Bigsby,RB
+174,11,Calculated chaos,Tank Bigsby,RB
 175,11,GeetheWhiz,Dontayvion Wicks,WR
 176,11,SD Boyz,Jared Goff,QB
 177,12,SD Boyz,Denzel Boston,WR
@@ -229,7 +228,6 @@ pick,round,team,player,pos
 228,15,The Leviathan,Cam Ward,QB
 229,15,Legion of worst,Emmett Johnson,RB
 230,15,The Jaxsen Tyus's,Xavier McKinney,DB
-231,15,Calculated chaos,Jalen Carter,DL
 232,15,Steely,Edgerrin Cooper,LB
 233,15,RigoRigo,Justice Hill,RB
 234,15,Church of Gronk,Tyrone Tracy Jr.,RB
@@ -293,7 +291,6 @@ pick,round,team,player,pos
 292,19,The Leviathan,James Conner,RB
 293,19,Legion of worst,Jacoby Brissett,QB
 294,19,The Jaxsen Tyus's,Tyler Bass,K
-295,19,Calculated chaos,Marlon Humphrey,DB
 296,19,Steely,Germie Bernard,WR
 297,19,RigoRigo,T.J. Edwards,LB
 298,19,Church of Gronk,Nicholas Singleton,RB
@@ -303,3 +300,5 @@ pick,round,team,player,pos
 302,19,Southeastern FL,Robert Spillane,LB
 303,19,GeetheWhiz,Jacob Rodriguez,LB
 304,19,SD Boyz,Azeez Al-Shaair,LB
+FA,,Calculated chaos,Byron Murphy Jr.,DB
+FA,,Calculated chaos,Andrew Wingard,DB

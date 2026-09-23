@@ -3,3 +3,6 @@ date,team,move_type,player_added,player_dropped,faab_spent,note
 2026-09-19,Calculated chaos,ADD,Baker Mayfield,,1,Re-added Baker Mayfield for $1 after an earlier accidental drop -- backup QB / trade depth.
 2026-09-19,Calculated chaos,ADD,Myles Garrett,,5,"Added Myles Garrett (DL/LB) for $5, picked up off waivers after GeetheWhiz cut him."
 2026-09-19,Calculated chaos,DROP,,Jalen Carter,0,Dropped Jalen Carter -- flagged with an injury/questionable tag on Fantrax at the time of the drop.
+2026-09-23,Calculated chaos,ADD,Tank Bigsby,Devin Singletary,21,"Won waiver claim, $21 bid. Bigsby had been on Southeastern FL's roster in our records -- they must have cut him unlogged before this claim; draft_results_2026.csv corrected to reflect he's now yours. Singletary was already showing as available in our records (a pre-existing gap, not caused by this move) -- no file change needed for him beyond this note."
+2026-09-23,Calculated chaos,ADD,Byron Murphy Jr.,Marlon Humphrey,1,"Won waiver claim, $1 bid -- real Vikings starting outside CB for Humphrey."
+2026-09-23,Calculated chaos,ADD,Andrew Wingard,Jeremy Chinn,1,"Won waiver claim, $1 bid -- Cardinals S competing for a starting job, for Chinn."
